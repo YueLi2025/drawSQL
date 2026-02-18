@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-mysql-export-2026-02-09_laraveltalk
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] How many people signed up last month?
+2. [EASY] How many messages do we have?
+3. [EASY] Show me all of our messages.
+4. [EASY] Can you look up a specific message?
+5. [EASY] What messages were added or changed recently?
+6. [EASY] What are the different message values we have?
+7. [EASY] How many conversations do we have?
+8. [EASY] Show me all of our conversations.
+9. [MEDIUM] Who are our most active users?
+10. [MEDIUM] How many messages did we have last month?
+11. [MEDIUM] Break it down by type or category—how many messages in each?
+12. [MEDIUM] Are there any messages that don't have a match somewhere else?
+13. [MEDIUM] For each group, what's in the top 3?
+14. [MEDIUM] Show me each conversation along with its related details.
+15. [MEDIUM] How many conversations did we have last month?
+16. [MEDIUM] Break it down by type or category—how many conversations in each?
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?

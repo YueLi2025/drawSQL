@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-mysql-export-2026-02-09_diaspora
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] How many people signed up last month?
+2. [EASY] How many people are on each team?
+3. [EASY] Which invitations haven't been accepted yet?
+4. [EASY] How many account deletions do we have?
+5. [EASY] Show me all of our account deletions.
+6. [EASY] Can you look up a specific account deletion?
+7. [EASY] What are the different person id values we have?
+8. [EASY] How many team members do we have?
+9. [MEDIUM] Who are our most active users?
+10. [MEDIUM] Break it down by type or category—how many account deletions in each?
+11. [MEDIUM] Are there any account deletions that don't have a match somewhere else?
+12. [MEDIUM] For each group, what's in the top 3?
+13. [MEDIUM] How many team members did we have last month?
+14. [MEDIUM] Break it down by type or category—how many team members in each?
+15. [MEDIUM] Are there any team members that don't have a match somewhere else?
+16. [MEDIUM] Break it down by type or category—how many aspect visibilities in each?
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?

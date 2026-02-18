@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-mysql-export-2026-02-02_wagtail
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] How many people signed up last month?
+2. [EASY] How many auth group do we have?
+3. [EASY] Show me all of our auth group.
+4. [EASY] Can you look up a specific auth group?
+5. [EASY] Find the auth group with a certain name or email.
+6. [EASY] What are the different name values we have?
+7. [EASY] How many auth group permissions do we have?
+8. [EASY] Show me all of our auth group permissions.
+9. [MEDIUM] Who are our most active users?
+10. [MEDIUM] Show me each auth group along with its related details.
+11. [MEDIUM] Break it down by type or category—how many auth group in each?
+12. [MEDIUM] Are there any auth group that don't have a match somewhere else?
+13. [MEDIUM] For each group, what's in the top 3?
+14. [MEDIUM] Break it down by type or category—how many auth group permissions in each?
+15. [MEDIUM] Are there any auth group permissions that don't have a match somewhere else?
+16. [MEDIUM] Show me each auth permission along with its related details.
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?

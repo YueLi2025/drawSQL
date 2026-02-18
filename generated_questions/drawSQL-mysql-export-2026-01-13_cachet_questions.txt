@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-mysql-export-2026-01-13_cachet
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] How many incidents did we have this month?
+2. [EASY] Which components are currently down or having issues?
+3. [EASY] How many people are subscribed to get status updates?
+4. [EASY] What maintenance is scheduled for the next week?
+5. [EASY] How many people signed up last month?
+6. [EASY] How many activity log entries do we have?
+7. [EASY] Show me all of our activity log entries.
+8. [EASY] Can you look up a specific activity log entry?
+9. [MEDIUM] What's the latest update on each incident?
+10. [MEDIUM] How many components do we have in each group?
+11. [MEDIUM] Who are our most active users?
+12. [MEDIUM] How many activity log entries did we have last month?
+13. [MEDIUM] Break it down by type or category—how many activity log entries in each?
+14. [MEDIUM] Are there any activity log entries that don't have a match somewhere else?
+15. [MEDIUM] For each group, what's in the top 3?
+16. [MEDIUM] Show me each component group along with its related details.
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?

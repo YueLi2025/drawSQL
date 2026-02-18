@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-mysql-export-2026-02-09_servermonitor
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] How many people signed up last month?
+2. [EASY] How many checks do we have?
+3. [EASY] Show me all of our checks.
+4. [EASY] Can you look up a specific check?
+5. [EASY] Which checks are currently active or turned on?
+6. [EASY] What checks were added or changed recently?
+7. [EASY] What are the different host id values we have?
+8. [EASY] How many hosts do we have?
+9. [MEDIUM] Who are our most active users?
+10. [MEDIUM] How many checks did we have last month?
+11. [MEDIUM] Break it down by type or category—how many checks in each?
+12. [MEDIUM] Are there any checks that don't have a match somewhere else?
+13. [MEDIUM] For each group, what's in the top 3?
+14. [MEDIUM] Show me each host along with its related details.
+15. [MEDIUM] How many hosts did we have last month?
+16. [MEDIUM] Break it down by type or category—how many hosts in each?
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?

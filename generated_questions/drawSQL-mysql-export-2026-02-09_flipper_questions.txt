@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-mysql-export-2026-02-09_flipper
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] How many flipper features do we have?
+2. [EASY] Show me all of our flipper features.
+3. [EASY] Can you look up a specific flipper feature?
+4. [EASY] What flipper features were added or changed recently?
+5. [EASY] How many flipper gates do we have?
+6. [EASY] Show me all of our flipper gates.
+7. [EASY] Can you look up a specific flipper gate?
+8. [EASY] What flipper gates were added or changed recently?
+9. [MEDIUM] How many flipper features did we have last month?
+10. [MEDIUM] Break it down by type or category—how many flipper features in each?
+11. [MEDIUM] Are there any flipper features that don't have a match somewhere else?
+12. [MEDIUM] For each group, what's in the top 3?
+13. [MEDIUM] What's our total or average value across all flipper gates?
+14. [MEDIUM] How many flipper gates did we have last month?
+15. [MEDIUM] Break it down by type or category—how many flipper gates in each?
+16. [MEDIUM] Which flipper gate has the highest or lowest value?
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?

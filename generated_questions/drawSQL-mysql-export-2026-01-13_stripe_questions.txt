@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-mysql-export-2026-01-13_stripe
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] Which customers have an active subscription?
+2. [EASY] How many people signed up last month?
+3. [EASY] How many users do we have?
+4. [EASY] Show me all of our users.
+5. [EASY] Can you look up a specific user?
+6. [EASY] What users were added or changed recently?
+7. [EASY] What are the different stripe id values we have?
+8. [EASY] How many subscriptions do we have?
+9. [MEDIUM] How much money did we make this month?
+10. [MEDIUM] Who are our most active users?
+11. [MEDIUM] How many users did we have last month?
+12. [MEDIUM] Break it down by type or category—how many users in each?
+13. [MEDIUM] Are there any users that don't have a match somewhere else?
+14. [MEDIUM] For each group, what's in the top 3?
+15. [MEDIUM] Show me each subscription along with its related details.
+16. [MEDIUM] What's our total or average quantity across all subscriptions?
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?

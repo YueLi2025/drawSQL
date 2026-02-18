@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-mysql-export-2026-02-03_emails
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] How many people signed up last month?
+2. [EASY] How many team members do we have?
+3. [EASY] Show me all of our team members.
+4. [EASY] Can you look up a specific team member?
+5. [EASY] What team members were added or changed recently?
+6. [EASY] What are the different user type values we have?
+7. [EASY] How many heya campaign receipts do we have?
+8. [EASY] Show me all of our heya campaign receipts.
+9. [MEDIUM] Who are our most active users?
+10. [MEDIUM] How many team members did we have last month?
+11. [MEDIUM] Break it down by type or category—how many team members in each?
+12. [MEDIUM] Are there any team members that don't have a match somewhere else?
+13. [MEDIUM] For each group, what's in the top 3?
+14. [MEDIUM] How many heya campaign receipts did we have last month?
+15. [MEDIUM] Break it down by type or category—how many heya campaign receipts in each?
+16. [MEDIUM] Are there any heya campaign receipts that don't have a match somewhere else?
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?

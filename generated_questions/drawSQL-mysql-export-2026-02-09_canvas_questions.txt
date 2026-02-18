@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-mysql-export-2026-02-09_canvas
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] How many people signed up last month?
+2. [EASY] How many posts do we have?
+3. [EASY] Show me all of our posts.
+4. [EASY] Can you look up a specific post?
+5. [EASY] Find the post with a certain name or email.
+6. [EASY] What posts were added or changed recently?
+7. [EASY] What are the different slug values we have?
+8. [EASY] What are the different tag id values we have?
+9. [MEDIUM] Who are our most active users?
+10. [MEDIUM] Show me each post along with its related details.
+11. [MEDIUM] How many posts did we have last month?
+12. [MEDIUM] Break it down by type or category—how many posts in each?
+13. [MEDIUM] Are there any posts that don't have a match somewhere else?
+14. [MEDIUM] For each group, what's in the top 3?
+15. [MEDIUM] Show me each tag along with its related details.
+16. [MEDIUM] How many tags did we have last month?
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?

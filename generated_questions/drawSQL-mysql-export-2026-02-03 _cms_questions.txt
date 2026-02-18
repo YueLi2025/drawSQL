@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-mysql-export-2026-02-03 _cms
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] How many bootstrap4 alerts bootstrap4alerts do we have?
+2. [EASY] Show me all of our bootstrap4 alerts bootstrap4alerts.
+3. [EASY] Can you look up a specific bootstrap4 alerts bootstrap4alert?
+4. [EASY] What are the different cmsplugin ptr id values we have?
+5. [EASY] How many bootstrap4 badge bootstrap4badge do we have?
+6. [EASY] Show me all of our bootstrap4 badge bootstrap4badge.
+7. [EASY] Can you look up a specific bootstrap4 badge bootstrap4badge?
+8. [EASY] How many bootstrap4 card bootstrap4card do we have?
+9. [MEDIUM] Show me each bootstrap4 alerts bootstrap4alert along with its related details.
+10. [MEDIUM] Break it down by type or category—how many bootstrap4 alerts bootstrap4alerts in each?
+11. [MEDIUM] Are there any bootstrap4 alerts bootstrap4alerts that don't have a match somewhere else?
+12. [MEDIUM] For each group, what's in the top 3?
+13. [MEDIUM] Show me each bootstrap4 badge bootstrap4badge along with its related details.
+14. [MEDIUM] Break it down by type or category—how many bootstrap4 badge bootstrap4badge in each?
+15. [MEDIUM] Are there any bootstrap4 badge bootstrap4badge that don't have a match somewhere else?
+16. [MEDIUM] Show me each bootstrap4 card bootstrap4card along with its related details.
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?

@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-mysql-export-2026-02-02_silk
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] How many silk profile do we have?
+2. [EASY] Show me all of our silk profile.
+3. [EASY] Can you look up a specific silk profile?
+4. [EASY] Find the silk profile with a certain name or email.
+5. [EASY] What are the different name values we have?
+6. [EASY] How many silk profile queries do we have?
+7. [EASY] Show me all of our silk profile queries.
+8. [EASY] Can you look up a specific silk profile query?
+9. [MEDIUM] Show me each silk profile along with its related details.
+10. [MEDIUM] Break it down by type or category—how many silk profile in each?
+11. [MEDIUM] Are there any silk profile that don't have a match somewhere else?
+12. [MEDIUM] For each group, what's in the top 3?
+13. [MEDIUM] Break it down by type or category—how many silk profile queries in each?
+14. [MEDIUM] Are there any silk profile queries that don't have a match somewhere else?
+15. [MEDIUM] Show me each silk request along with its related details.
+16. [MEDIUM] Break it down by type or category—how many silk request in each?
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?

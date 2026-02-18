@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-pgsql-export-2026-02-09_djpaypal
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] Which customers have an active subscription?
+2. [EASY] How many people signed up last month?
+3. [EASY] How many djpaypal billingagreement do we have?
+4. [EASY] Show me all of our djpaypal billingagreement.
+5. [EASY] Can you look up a specific djpaypal billingagreement?
+6. [EASY] Find the djpaypal billingagreement with a certain name or email.
+7. [EASY] What djpaypal billingagreement were added or changed recently?
+8. [EASY] What are the different name values we have?
+9. [MEDIUM] How much money did we make this month?
+10. [MEDIUM] Who are our most active users?
+11. [MEDIUM] Show me each djpaypal billingagreement along with its related details.
+12. [MEDIUM] How many djpaypal billingagreement did we have last month?
+13. [MEDIUM] Break it down by type or category—how many djpaypal billingagreement in each?
+14. [MEDIUM] Are there any djpaypal billingagreement that don't have a match somewhere else?
+15. [MEDIUM] For each group, what's in the top 3?
+16. [MEDIUM] How many djpaypal billingplan did we have last month?
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?

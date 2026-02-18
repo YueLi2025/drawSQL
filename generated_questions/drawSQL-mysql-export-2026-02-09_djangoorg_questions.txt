@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-mysql-export-2026-02-09_djangoorg
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] How many people signed up last month?
+2. [EASY] How many users do we have?
+3. [EASY] Show me all of our users.
+4. [EASY] Can you look up a specific user?
+5. [EASY] How many organizations organization do we have?
+6. [EASY] Show me all of our organizations organization.
+7. [EASY] Can you look up a specific organizations organization?
+8. [EASY] Find the organizations organization with a certain name or email.
+9. [MEDIUM] Who are our most active users?
+10. [MEDIUM] Show me each user along with its related details.
+11. [MEDIUM] Break it down by type or category—how many users in each?
+12. [MEDIUM] Are there any users that don't have a match somewhere else?
+13. [MEDIUM] For each group, what's in the top 3?
+14. [MEDIUM] Show me each organizations organization along with its related details.
+15. [MEDIUM] Break it down by type or category—how many organizations organization in each?
+16. [MEDIUM] Are there any organizations organization that don't have a match somewhere else?
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?

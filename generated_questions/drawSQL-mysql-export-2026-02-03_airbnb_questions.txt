@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-mysql-export-2026-02-03_airbnb
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] What rooms are available in a certain price range?
+2. [EASY] Which rooms have the most bedrooms or bathrooms?
+3. [EASY] What reservations do we have coming up?
+4. [EASY] What do guests think of our rooms? What are the ratings?
+5. [EASY] How many people signed up last month?
+6. [EASY] How many users do we have?
+7. [EASY] Show me all of our users.
+8. [EASY] Can you look up a specific user?
+9. [MEDIUM] How much revenue did we make from reservations last month?
+10. [MEDIUM] Which rooms have the best reviews?
+11. [MEDIUM] Who are our most active users?
+12. [MEDIUM] Show me each user along with its related details.
+13. [MEDIUM] How many users did we have last month?
+14. [MEDIUM] Break it down by type or category—how many users in each?
+15. [MEDIUM] Are there any users that don't have a match somewhere else?
+16. [MEDIUM] For each group, what's in the top 3?
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?

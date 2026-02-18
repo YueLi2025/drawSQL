@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-mysql-export-2026-02-09_freescout
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] How many tickets are still open?
+2. [EASY] Which tickets were created this week?
+3. [EASY] How many people signed up last month?
+4. [EASY] How many activity logs do we have?
+5. [EASY] Show me all of our activity logs.
+6. [EASY] Can you look up a specific activity log?
+7. [EASY] Find the activity log with a certain name or email.
+8. [EASY] What activity logs were added or changed recently?
+9. [MEDIUM] How long does it take us to resolve tickets on average?
+10. [MEDIUM] Who are our most active users?
+11. [MEDIUM] How many activity logs did we have last month?
+12. [MEDIUM] Break it down by type or category—how many activity logs in each?
+13. [MEDIUM] Are there any activity logs that don't have a match somewhere else?
+14. [MEDIUM] For each group, what's in the top 3?
+15. [MEDIUM] Break it down by type or category—how many attachments in each?
+16. [MEDIUM] Are there any attachments that don't have a match somewhere else?
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?

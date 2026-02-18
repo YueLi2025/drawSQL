@@ -1,0 +1,24 @@
+# Natural Language SQL Questions: drawSQL-mysql-export-2026-02-03_school
+# Questions a non-technical person might ask about this data
+============================================================
+
+1. [EASY] What rooms are available in a certain price range?
+2. [EASY] Which rooms have the most bedrooms or bathrooms?
+3. [EASY] How many people signed up last month?
+4. [EASY] How many account sectors do we have?
+5. [EASY] Show me all of our account sectors.
+6. [EASY] Can you look up a specific account sector?
+7. [EASY] Find the account sector with a certain name or email.
+8. [EASY] What account sectors were added or changed recently?
+9. [MEDIUM] Who are our most active users?
+10. [MEDIUM] How many account sectors did we have last month?
+11. [MEDIUM] Break it down by type or category—how many account sectors in each?
+12. [MEDIUM] Are there any account sectors that don't have a match somewhere else?
+13. [MEDIUM] For each group, what's in the top 3?
+14. [MEDIUM] What's our total or average amount across all accounts?
+15. [MEDIUM] How many accounts did we have last month?
+16. [MEDIUM] Break it down by type or category—how many accounts in each?
+17. [HARD] I need a report that pulls together info from several different places.
+18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
+19. [HARD] Who or what is the best in each group?
+20. [HARD] Which ones are above average compared to others in their group?
