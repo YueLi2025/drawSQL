@@ -1,0 +1,139 @@
+================================================================================
+TEMPLATE EXTRACTION RULES
+================================================================================
+Extract SQL templates by replacing concrete identifiers and literals with
+placeholder tokens. Input: SQLite-dialect SQL (sql_sqlite). Output: template.
+
+--------------------------------------------------------------------------------
+1. PREPROCESSING
+--------------------------------------------------------------------------------
+- Strip comments: /* ... */ and -- ... (replace with newline if multiline)
+- Remove blank lines from output
+- All matching is case-insensitive unless noted
+
+--------------------------------------------------------------------------------
+2. LITERAL REPLACEMENT (applied first)
+--------------------------------------------------------------------------------
+- TRUE, FALSE          -> boolean
+- Numeric literals     -> num  (integers, decimals, scientific notation)
+- Single-quoted '...'  -> string (unless starts with { or [ -> jsonb;
+                          or matches date pattern YYYY-MM-DD -> date)
+- Double-quoted "..."   -> string (unless starts with { or [ -> jsonb)
+
+--------------------------------------------------------------------------------
+3. PLACEHOLDER TYPES
+--------------------------------------------------------------------------------
+Schema-bound (from all_databases_schema):
+  table_name   - table in schema
+  col_name     - column in schema
+
+DDL-created (not in schema):
+  new_table    - table created by CREATE TABLE (non-temp)
+  new_view     - view created by CREATE VIEW
+  new_column   - column created by ADD COLUMN or in CREATE TABLE
+  temp_table   - table created by CREATE TEMP/TEMPORARY TABLE
+
+CTE and aliases:
+  CTE              - common table expression (WITH name AS (...))
+  table_alias0..N  - table/row-source alias (FROM t AS x, json_each(...) AS x)
+  column_alias0..N - column alias (SELECT expr AS x)
+
+--------------------------------------------------------------------------------
+4. TABLE NAME REPLACEMENT
+--------------------------------------------------------------------------------
+Context                    | In schema/CTE     | Not in schema
+---------------------------|-------------------|------------------
+WITH name AS (             | CTE               | -
+ALTER TABLE name           | table_name        | new_table
+CREATE INDEX ... ON name   | table_name        | new_table
+INSERT INTO name           | CTE/table_name    | new_table
+DELETE FROM name           | CTE/table_name    | new_table
+UPDATE name ... SET        | CTE/table_name    | new_table
+CREATE VIEW name           | -                 | new_view
+CREATE TABLE name          | -                 | new_table
+CREATE TEMP TABLE name     | -                 | temp_table
+FROM name / JOIN name      | CTE/table_name    | new_table
+INTO name                  | CTE/table_name    | new_table
+USING name                 | CTE/table_name    | new_table
+ON name FOR EACH ROW       | table_name        | new_table  (trigger)
+DROP TRIGGER ... ON name   | table_name        | new_table
+COMMENT ON COLUMN name.    | table_name        | new_table
+REFERENCES name (          | table_name        | new_table
+public.name / pg_catalog.name | table_name   | new_table  (livesqlbench)
+
+- Wildcard: table* in FROM/JOIN -> strip * then apply same rules
+- Qualified table names (DB.SCHEMA.TABLE): use last segment for schema lookup
+
+--------------------------------------------------------------------------------
+5. COLUMN NAME REPLACEMENT
+--------------------------------------------------------------------------------
+Context                    | In schema         | Not in schema
+---------------------------|-------------------|------------------
+ADD COLUMN name            | -                 | new_column
+qualifier.name (qualified) | qual=table/CTE/   | new_column
+  (table.col, alias.col)   | alias; col in    |
+                           | schema -> col_name|
+Unqualified name           | col_name (if in   | (not replaced)
+  (standalone identifier)  | all_cols)         |
+INSERT INTO t (col, ...)   | col_name          | new_column
+CREATE TABLE t (col type)  | -                 | new_column
+CREATE INDEX ... (col)     | col_name          | new_column
+
+- qualifier: table_name, CTE, or table_aliasN
+- Exclude: SQL keywords, "value" (json_each), placeholder prefixes
+- Column aliases (AS name) -> column_aliasN, not col_name
+
+--------------------------------------------------------------------------------
+6. TABLE ALIAS DETECTION
+--------------------------------------------------------------------------------
+- FROM table AS alias, JOIN table AS alias  -> alias = table_aliasN
+- json_each(...) AS alias, json_tree(...) AS alias  -> alias = table_aliasN
+- Skip if alias is SQL keyword, schema table name, or "using"
+- Replace all occurrences of alias with table_aliasN (except in alias-defining position)
+
+--------------------------------------------------------------------------------
+7. COLUMN ALIAS DETECTION
+--------------------------------------------------------------------------------
+- AS name when followed by , ) newline or end  -> name = column_aliasN
+- Skip if name is SQL keyword, table alias, schema table, or CTE name
+- Replace all occurrences with column_aliasN (avoid overlap with table alias spans)
+
+--------------------------------------------------------------------------------
+8. QUALIFIED REFERENCES (qualifier.column)
+--------------------------------------------------------------------------------
+- qualifier: replace with table_name, CTE, or table_aliasN per table rules
+- column: replace with col_name (if in schema) or new_column (else)
+- Apply from right to left to avoid position shifts
+
+--------------------------------------------------------------------------------
+9. DEDUPLICATION
+--------------------------------------------------------------------------------
+- Deduplicate replacements by (start, end) before applying
+- Same span replaced multiple times -> keep one replacement
+- Apply replacements from right to left (descending start position)
+
+--------------------------------------------------------------------------------
+10. SCHEMA LOOKUP
+--------------------------------------------------------------------------------
+- Schema source: all_databases_schema.csv (database_name, table_name, column_name)
+- For each query: resolve benchmark db -> schema database(s) via DDL paths
+- Merge schema from multiple schema DBs when benchmark uses several
+- Table match: table_name (full or last segment of qualified name)
+- Column match: column_name in any (table, column) pair
+
+--------------------------------------------------------------------------------
+11. SPECIAL CASES
+--------------------------------------------------------------------------------
+- No schema: replace only literals, return as-is for identifiers
+- INSERT INTO CTE: treat as CTE
+- CREATE TABLE (col type, ...): each col before type -> new_column
+- schema.name (public.X, pg_catalog.X): replace X per table rules
+
+--------------------------------------------------------------------------------
+12. PLACEHOLDER NAMING
+--------------------------------------------------------------------------------
+- table_alias0, table_alias1, ... (order of first occurrence)
+- column_alias0, column_alias1, ...
+- Do not replace identifiers that already match placeholder prefixes
+
+================================================================================
