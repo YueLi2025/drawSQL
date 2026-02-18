@@ -1,0 +1,38 @@
+id	generalized_template	count
+1	SELECT * FROM variable LIMIT variable;	326
+2	SELECT COUNT(*) FROM variable WHERE variable >= DATE(variable, variable);	182
+3	SELECT * FROM variable;	165
+4	SELECT COUNT(*) FROM variable;	163
+5	SELECT variable, COUNT(*) AS COUNT FROM variable GROUP BY variable;	161
+6	SELECT * FROM variable WHERE variable = variable;	152
+7	SELECT * FROM variable ORDER BY variable DESC LIMIT variable;	115
+8	WITH variable AS ( SELECT variable, COUNT(*) AS variable FROM variable GROUP BY variable ) SELECT * FROM variable WHERE variable > variable ORDER BY variable DESC;	88
+9	SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY variable ORDER BY variable DESC) AS variable FROM variable ) WHERE variable = variable;	87
+10	SELECT variable.*, variable.* FROM variable variable LEFT JOIN variable variable ON variable = variable;	64
+11	SELECT * FROM variable WHERE variable NOT IN (SELECT DISTINCT variable FROM variable WHERE variable IS NOT NULL);	62
+12	SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY variable ORDER BY variable DESC) AS variable FROM variable ) WHERE variable <= variable;	48
+13	SELECT * FROM variable LEFT JOIN variable ON variable = variable;	46
+14	SELECT * FROM variable LEFT JOIN variable ON variable = variable LEFT JOIN variable ON variable = variable;	25
+15	SELECT * FROM variable WHERE variable > (SELECT AVG(variable) FROM variable);	20
+16	SELECT * FROM variable variable WHERE variable > ( SELECT AVG(variable) FROM variable variable WHERE variable = variable );	19
+17	SELECT SUM(variable) AS variable, AVG(variable) AS variable FROM variable;	9
+18	SELECT STRFTIME(variable, variable) AS variable, variable(*) AS variable FROM variable WHERE variable >= DATE(variable, variable) GROUP BY variable ORDER BY variable;	5
+19	SELECT * FROM variable LEFT JOIN variable ON variable = variable LEFT JOIN variable ON variable = variable LEFT JOIN variable ON variable = variable;	5
+20	SELECT COUNT(*) FROM variable WHERE STRFTIME(variable, variable) = STRFTIME(variable, variable);	1
+21	SELECT * FROM variable WHERE variable != variable AND variable = variable;	1
+22	SELECT * FROM variable WHERE variable BETWEEN DATE(variable) AND DATE(variable, variable) AND (variable IS NULL OR variable > DATETIME(variable));	1
+23	SELECT variable.*, variable, variable, variable AS variable FROM variable variable LEFT JOIN ( SELECT variable.* FROM variable variable INNER JOIN ( SELECT variable, MAX(variable) AS variable FROM variable GROUP BY variable ) variable ON variable = variable AND variable = variable ) variable ON variable = variable;	1
+24	SELECT variable AS variable, COUNT(variable) AS variable FROM variable variable LEFT JOIN variable variable ON variable = variable GROUP BY variable, variable;	1
+25	SELECT * FROM variable WHERE variable BETWEEN variable AND variable ORDER BY variable;	1
+26	SELECT * FROM variable ORDER BY variable DESC, variable DESC LIMIT variable;	1
+27	SELECT * FROM variable WHERE variable >= DATE(variable) ORDER BY variable ASC;	1
+28	SELECT variable.*, AVG(variable) AS variable FROM variable variable GROUP BY variable;	1
+29	SELECT SUM(variable) AS variable FROM variable WHERE variable >= DATE(variable, variable);	1
+30	SELECT variable.*, AVG(variable) AS variable FROM variable variable JOIN variable variable ON variable = variable JOIN variable variable ON variable = variable GROUP BY variable ORDER BY variable DESC;	1
+31	SELECT COUNT(*) FROM variable WHERE variable IN (variable, variable, variable);	1
+32	SELECT * FROM variable WHERE variable >= DATE(variable, variable);	1
+33	SELECT variable.*, COUNT(*) AS variable FROM variable variable LEFT JOIN variable variable ON variable = variable GROUP BY variable ORDER BY variable DESC;	1
+34	SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY GROUP ORDER BY variable DESC) AS variable FROM variable ) WHERE variable <= variable;	1
+35	SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY GROUP ORDER BY variable DESC) AS variable FROM variable ) WHERE variable = variable;	1
+36	SELECT * FROM variable LEFT JOIN variable ON variable = variable LEFT JOIN variable ON variable = variable LEFT JOIN variable ON variable = variable LEFT JOIN variable ON variable = variable;	1
+37	SELECT variable, COUNT(*) AS variable FROM variable GROUP BY variable;	1
