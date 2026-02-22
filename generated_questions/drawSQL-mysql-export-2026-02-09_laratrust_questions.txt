@@ -1,24 +1,28 @@
 # Natural Language SQL Questions: drawSQL-mysql-export-2026-02-09_laratrust
-# Questions a non-technical person might ask about this data
+# 24 questions (8 easy, 8 medium, 8 hard)
 ============================================================
 
-1. [EASY] How many people signed up last month?
-2. [EASY] How many permission role do we have?
+1. [EASY] How many users signed up since created_at=date?
+2. [EASY] How many permission role do we have in total?
 3. [EASY] Show me all of our permission role.
-4. [EASY] Can you look up a specific permission role?
-5. [EASY] What are the different permission id values we have?
-6. [EASY] How many users do we have?
+4. [EASY] Can you look up the permission role with id=num?
+5. [EASY] What are the most recent permission role ordered by permission_id?
+6. [EASY] How many users do we have in total?
 7. [EASY] Show me all of our users.
-8. [EASY] Can you look up a specific user?
-9. [MEDIUM] Who are our most active users?
-10. [MEDIUM] Break it down by type or category—how many permission role in each?
-11. [MEDIUM] Are there any permission role that don't have a match somewhere else?
-12. [MEDIUM] For each group, what's in the top 3?
-13. [MEDIUM] Break it down by type or category—how many users in each?
-14. [MEDIUM] Are there any users that don't have a match somewhere else?
-15. [MEDIUM] Show me each permission along with its related details.
-16. [MEDIUM] How many permissions did we have last month?
-17. [HARD] I need a report that pulls together info from several different places.
-18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
-19. [HARD] Who or what is the best in each group?
-20. [HARD] Which ones are above average compared to others in their group?
+8. [EASY] Can you look up the user with id=num?
+9. [MEDIUM] Who are the most active users based on activity count?
+10. [MEDIUM] Break down the permission role by permission_id — how many in each?
+11. [MEDIUM] Are there any permission role that don't have a match in related tables?
+12. [MEDIUM] For each group, what are the top 3 permission role?
+13. [MEDIUM] Which permission role have duplicate or repeated values?
+14. [MEDIUM] Break down the users by user_type — how many in each?
+15. [MEDIUM] Are there any users that don't have a match in related tables?
+16. [MEDIUM] For each group, what are the top 3 users?
+17. [HARD] Pull together a report on permission role joining all related tables.
+18. [HARD] Who or what is the best in each group of permission role?
+19. [HARD] Which permission role are above average compared to others in their group?
+20. [HARD] Do a multi-step analysis: group permission role, filter, then rank the results.
+21. [HARD] Find permission role that exist in one table but not in a related table.
+22. [HARD] Combine data from permission_role, permission_user, and permissions in a single report.
+23. [HARD] Rank all permission role within their groups and show the top performers.
+24. [HARD] Pull together a report on users joining all related tables.

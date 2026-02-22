@@ -1,24 +1,28 @@
 # Natural Language SQL Questions: drawSQL-mysql-export-2026-02-02_cabot
-# Questions a non-technical person might ask about this data
+# 24 questions (8 easy, 8 medium, 8 hard)
 ============================================================
 
-1. [EASY] How many people signed up last month?
-2. [EASY] How many alert acknowledgement do we have?
+1. [EASY] How many users signed up since created_at=date?
+2. [EASY] How many alert acknowledgement do we have in total?
 3. [EASY] Show me all of our alert acknowledgement.
-4. [EASY] Can you look up a specific alert acknowledgement?
-5. [EASY] What are the different time values we have?
-6. [EASY] How many alert plugin do we have?
+4. [EASY] Can you look up the alert acknowledgement with id=num?
+5. [EASY] What are the most recent alert acknowledgement ordered by time?
+6. [EASY] How many alert plugin do we have in total?
 7. [EASY] Show me all of our alert plugin.
-8. [EASY] Can you look up a specific alert plugin?
-9. [MEDIUM] Who are our most active users?
-10. [MEDIUM] Break it down by type or category—how many alert acknowledgement in each?
-11. [MEDIUM] Are there any alert acknowledgement that don't have a match somewhere else?
-12. [MEDIUM] For each group, what's in the top 3?
-13. [MEDIUM] Show me each alert plugin along with its related details.
-14. [MEDIUM] Break it down by type or category—how many alert plugin in each?
-15. [MEDIUM] Are there any alert plugin that don't have a match somewhere else?
-16. [MEDIUM] Break it down by type or category—how many users in each?
-17. [HARD] I need a report that pulls together info from several different places.
-18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
-19. [HARD] Who or what is the best in each group?
-20. [HARD] Which ones are above average compared to others in their group?
+8. [EASY] Can you look up the alert plugin with id=num?
+9. [MEDIUM] Who are the most active users based on activity count?
+10. [MEDIUM] Break down the alert acknowledgement by time — how many in each?
+11. [MEDIUM] Are there any alert acknowledgement that don't have a match in related tables?
+12. [MEDIUM] For each group, what are the top 3 alert acknowledgement?
+13. [MEDIUM] Which alert acknowledgement have duplicate or repeated values?
+14. [MEDIUM] Show me each alert plugin along with its related details from other tables.
+15. [MEDIUM] Break down the alert plugin by polumorphic_ctype — how many in each?
+16. [MEDIUM] Are there any alert plugin that don't have a match in related tables?
+17. [HARD] Pull together a report on alert acknowledgement joining all related tables.
+18. [HARD] Who or what is the best in each group of alert acknowledgement?
+19. [HARD] Which alert acknowledgement are above average compared to others in their group?
+20. [HARD] Do a multi-step analysis: group alert acknowledgement, filter, then rank the results.
+21. [HARD] Find alert acknowledgement that exist in one table but not in a related table.
+22. [HARD] Combine data from alert_acknowledgement, alert_plugin, and alert_plugin_user_data in a single report.
+23. [HARD] Rank all alert acknowledgement within their groups and show the top performers.
+24. [HARD] Pull together a report on alert plugin joining all related tables.

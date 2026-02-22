@@ -1,24 +1,28 @@
 # Natural Language SQL Questions: drawSQL-mysql-export-2026-02-09_paddle
-# Questions a non-technical person might ask about this data
+# 24 questions (8 easy, 8 medium, 8 hard)
 ============================================================
 
-1. [EASY] Which customers have an active subscription?
-2. [EASY] How many customers do we have?
+1. [EASY] Which customers have status=string for their subscription?
+2. [EASY] How many customers do we have in total?
 3. [EASY] Show me all of our customers.
-4. [EASY] Can you look up a specific customer?
-5. [EASY] What customers were added or changed recently?
-6. [EASY] What are the different billable id values we have?
-7. [EASY] How many subscriptions do we have?
+4. [EASY] Can you look up the customer with id=num?
+5. [EASY] How many customers were created since updated_at=date?
+6. [EASY] What are the most recent customers ordered by billable_id?
+7. [EASY] How many subscriptions do we have in total?
 8. [EASY] Show me all of our subscriptions.
-9. [MEDIUM] How much money did we make this month?
-10. [MEDIUM] What are our best-selling products?
-11. [MEDIUM] How many customers did we have last month?
-12. [MEDIUM] Break it down by type or category—how many customers in each?
-13. [MEDIUM] Are there any customers that don't have a match somewhere else?
-14. [MEDIUM] For each group, what's in the top 3?
-15. [MEDIUM] What's our total or average quantity across all subscriptions?
-16. [MEDIUM] How many subscriptions did we have last month?
-17. [HARD] I need a report that pulls together info from several different places.
-18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
-19. [HARD] Who or what is the best in each group?
-20. [HARD] Which ones are above average compared to others in their group?
+9. [MEDIUM] How much revenue since created_at=date?
+10. [MEDIUM] How many customers were added since updated_at=date?
+11. [MEDIUM] Break down the customers by billable_type — how many in each?
+12. [MEDIUM] Are there any customers that don't have a match in related tables?
+13. [MEDIUM] For each group, what are the top 3 customers?
+14. [MEDIUM] How did the number of customers change month over month?
+15. [MEDIUM] Which customers have duplicate or repeated values?
+16. [MEDIUM] What's our total and average quantity across all subscriptions?
+17. [HARD] Pull together a report on customers joining all related tables.
+18. [HARD] Who or what is the best in each group of customers?
+19. [HARD] Which customers are above average compared to others in their group?
+20. [HARD] Do a multi-step analysis: group customers, filter, then rank the results.
+21. [HARD] Show the running total of customers over time based on updated_at.
+22. [HARD] Find customers that exist in one table but not in a related table.
+23. [HARD] Combine data from customers, subscriptions, and receipts in a single report.
+24. [HARD] Rank all customers within their groups and show the top performers.

@@ -1,24 +1,28 @@
 # Natural Language SQL Questions: drawSQL-mysql-export-2026-02-09_bouncer
-# Questions a non-technical person might ask about this data
+# 24 questions (8 easy, 8 medium, 8 hard)
 ============================================================
 
-1. [EASY] How many abilities do we have?
+1. [EASY] How many abilities do we have in total?
 2. [EASY] Show me all of our abilities.
-3. [EASY] Can you look up a specific ability?
-4. [EASY] Find the ability with a certain name or email.
-5. [EASY] What abilities were added or changed recently?
-6. [EASY] What are the different name values we have?
-7. [EASY] How many assigned roles do we have?
+3. [EASY] Can you look up the ability with id=num?
+4. [EASY] Find the ability where name=string.
+5. [EASY] How many abilities were created since created_at=date?
+6. [EASY] What are the most recent abilities ordered by name?
+7. [EASY] How many assigned roles do we have in total?
 8. [EASY] Show me all of our assigned roles.
-9. [MEDIUM] Show me each ability along with its related details.
-10. [MEDIUM] How many abilities did we have last month?
-11. [MEDIUM] Break it down by type or category—how many abilities in each?
-12. [MEDIUM] Are there any abilities that don't have a match somewhere else?
-13. [MEDIUM] For each group, what's in the top 3?
-14. [MEDIUM] Break it down by type or category—how many assigned roles in each?
-15. [MEDIUM] Are there any assigned roles that don't have a match somewhere else?
-16. [MEDIUM] Break it down by type or category—how many permissions in each?
-17. [HARD] I need a report that pulls together info from several different places.
-18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
-19. [HARD] Who or what is the best in each group?
-20. [HARD] Which ones are above average compared to others in their group?
+9. [MEDIUM] Show me each ability along with its related details from other tables.
+10. [MEDIUM] How many abilities were added since created_at=date?
+11. [MEDIUM] Break down the abilities by entity_type — how many in each?
+12. [MEDIUM] Are there any abilities that don't have a match in related tables?
+13. [MEDIUM] For each group, what are the top 3 abilities?
+14. [MEDIUM] How did the number of abilities change month over month?
+15. [MEDIUM] Which abilities have duplicate or repeated values?
+16. [MEDIUM] Break down the assigned roles by entity_type — how many in each?
+17. [HARD] Pull together a report on abilities joining all related tables.
+18. [HARD] Who or what is the best in each group of abilities?
+19. [HARD] Which abilities are above average compared to others in their group?
+20. [HARD] Do a multi-step analysis: group abilities, filter, then rank the results.
+21. [HARD] Show the running total of abilities over time based on created_at.
+22. [HARD] Find abilities that exist in one table but not in a related table.
+23. [HARD] Combine data from abilities, assigned_roles, and permissions in a single report.
+24. [HARD] Rank all abilities within their groups and show the top performers.

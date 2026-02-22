@@ -11,12 +11,12 @@ from collections import Counter
 
 def main():
     base_dir = Path(__file__).parent
-    input_path = base_dir / "sql_templates.csv"
+    input_path = base_dir / "all_sql_queries.csv"
     output_path = base_dir / "distinct_templates.csv"
 
     templates = []
     with open(input_path, encoding="utf-8") as f:
-        reader = csv.DictReader(f)
+        reader = csv.DictReader(f, delimiter="\t")
         for row in reader:
             templates.append(row["template"])
 

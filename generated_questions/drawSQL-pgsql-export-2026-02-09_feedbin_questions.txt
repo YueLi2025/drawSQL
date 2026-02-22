@@ -1,24 +1,28 @@
 # Natural Language SQL Questions: drawSQL-pgsql-export-2026-02-09_feedbin
-# Questions a non-technical person might ask about this data
+# 24 questions (8 easy, 8 medium, 8 hard)
 ============================================================
 
-1. [EASY] How many people signed up last month?
-2. [EASY] How many activity log entries do we have?
+1. [EASY] How many users signed up since created_at=date?
+2. [EASY] How many activity log entries do we have in total?
 3. [EASY] Show me all of our activity log entries.
-4. [EASY] Can you look up a specific activity log entry?
-5. [EASY] Find the activity log entry with a certain name or email.
-6. [EASY] Which activity log entries are currently active or turned on?
-7. [EASY] What activity log entries were added or changed recently?
-8. [EASY] What are the different user id values we have?
-9. [MEDIUM] Who are our most active users?
-10. [MEDIUM] Show me each activity log entry along with its related details.
-11. [MEDIUM] How many activity log entries did we have last month?
-12. [MEDIUM] Break it down by type or category—how many activity log entries in each?
-13. [MEDIUM] Are there any activity log entries that don't have a match somewhere else?
-14. [MEDIUM] For each group, what's in the top 3?
-15. [MEDIUM] Show me each authentication token along with its related details.
-16. [MEDIUM] How many authentication tokens did we have last month?
-17. [HARD] I need a report that pulls together info from several different places.
-18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
-19. [HARD] Who or what is the best in each group?
-20. [HARD] Which ones are above average compared to others in their group?
+4. [EASY] Can you look up the activity log entry with id=num?
+5. [EASY] Find the activity log entry where title=string.
+6. [EASY] Which activity log entries have status=num?
+7. [EASY] How many activity log entries were created since created_at=date?
+8. [EASY] What are the most recent activity log entries ordered by user_id?
+9. [MEDIUM] Who are the most active users based on activity count?
+10. [MEDIUM] Show me each activity log entry along with its related details from other tables.
+11. [MEDIUM] How many activity log entries were added since created_at=date?
+12. [MEDIUM] Break down the activity log entries by action_type — how many in each?
+13. [MEDIUM] Are there any activity log entries that don't have a match in related tables?
+14. [MEDIUM] For each group, what are the top 3 activity log entries?
+15. [MEDIUM] How did the number of activity log entries change month over month?
+16. [MEDIUM] Which activity log entries have duplicate or repeated values?
+17. [HARD] Pull together a report on activity log entries joining all related tables.
+18. [HARD] Who or what is the best in each group of activity log entries?
+19. [HARD] Which activity log entries are above average compared to others in their group?
+20. [HARD] Do a multi-step analysis: group activity log entries, filter, then rank the results.
+21. [HARD] Show the running total of activity log entries over time based on created_at.
+22. [HARD] Find activity log entries that exist in one table but not in a related table.
+23. [HARD] Combine data from actions, authentication_tokens, and billing_events in a single report.
+24. [HARD] Rank all activity log entries within their groups and show the top performers.

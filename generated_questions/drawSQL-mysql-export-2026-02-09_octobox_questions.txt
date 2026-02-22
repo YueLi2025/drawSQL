@@ -1,24 +1,28 @@
 # Natural Language SQL Questions: drawSQL-mysql-export-2026-02-09_octobox
-# Questions a non-technical person might ask about this data
+# 24 questions (8 easy, 8 medium, 8 hard)
 ============================================================
 
-1. [EASY] How many people signed up last month?
-2. [EASY] How many app installation permissions do we have?
+1. [EASY] How many users signed up since created_at=date?
+2. [EASY] How many app installation permissions do we have in total?
 3. [EASY] Show me all of our app installation permissions.
-4. [EASY] Can you look up a specific app installation permission?
-5. [EASY] What app installation permissions were added or changed recently?
-6. [EASY] What are the different app installation id values we have?
-7. [EASY] How many app installations do we have?
+4. [EASY] Can you look up the app installation permission with id=num?
+5. [EASY] How many app installation permissions were created since created_at=date?
+6. [EASY] What are the most recent app installation permissions ordered by app_installation_id?
+7. [EASY] How many app installations do we have in total?
 8. [EASY] Show me all of our app installations.
-9. [MEDIUM] Who are our most active users?
-10. [MEDIUM] How many app installation permissions did we have last month?
-11. [MEDIUM] Break it down by type or category—how many app installation permissions in each?
-12. [MEDIUM] Are there any app installation permissions that don't have a match somewhere else?
-13. [MEDIUM] For each group, what's in the top 3?
-14. [MEDIUM] Show me each app installation along with its related details.
-15. [MEDIUM] How many app installations did we have last month?
-16. [MEDIUM] Break it down by type or category—how many app installations in each?
-17. [HARD] I need a report that pulls together info from several different places.
-18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
-19. [HARD] Who or what is the best in each group?
-20. [HARD] Which ones are above average compared to others in their group?
+9. [MEDIUM] Who are the most active users based on activity count?
+10. [MEDIUM] How many app installation permissions were added since created_at=date?
+11. [MEDIUM] Break down the app installation permissions by app_installation_id — how many in each?
+12. [MEDIUM] Are there any app installation permissions that don't have a match in related tables?
+13. [MEDIUM] For each group, what are the top 3 app installation permissions?
+14. [MEDIUM] How did the number of app installation permissions change month over month?
+15. [MEDIUM] Which app installation permissions have duplicate or repeated values?
+16. [MEDIUM] Show me each app installation along with its related details from other tables.
+17. [HARD] Pull together a report on app installation permissions joining all related tables.
+18. [HARD] Who or what is the best in each group of app installation permissions?
+19. [HARD] Which app installation permissions are above average compared to others in their group?
+20. [HARD] Do a multi-step analysis: group app installation permissions, filter, then rank the results.
+21. [HARD] Show the running total of app installation permissions over time based on created_at.
+22. [HARD] Find app installation permissions that exist in one table but not in a related table.
+23. [HARD] Combine data from app_installation_permissions, app_installations, and comments in a single report.
+24. [HARD] Rank all app installation permissions within their groups and show the top performers.

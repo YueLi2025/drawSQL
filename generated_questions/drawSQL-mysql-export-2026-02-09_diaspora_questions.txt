@@ -1,24 +1,28 @@
 # Natural Language SQL Questions: drawSQL-mysql-export-2026-02-09_diaspora
-# Questions a non-technical person might ask about this data
+# 24 questions (8 easy, 8 medium, 8 hard)
 ============================================================
 
-1. [EASY] How many people signed up last month?
-2. [EASY] How many people are on each team?
-3. [EASY] Which invitations haven't been accepted yet?
-4. [EASY] How many account deletions do we have?
-5. [EASY] Show me all of our account deletions.
-6. [EASY] Can you look up a specific account deletion?
-7. [EASY] What are the different person id values we have?
-8. [EASY] How many team members do we have?
-9. [MEDIUM] Who are our most active users?
-10. [MEDIUM] Break it down by type or category—how many account deletions in each?
-11. [MEDIUM] Are there any account deletions that don't have a match somewhere else?
-12. [MEDIUM] For each group, what's in the top 3?
-13. [MEDIUM] How many team members did we have last month?
-14. [MEDIUM] Break it down by type or category—how many team members in each?
-15. [MEDIUM] Are there any team members that don't have a match somewhere else?
-16. [MEDIUM] Break it down by type or category—how many aspect visibilities in each?
-17. [HARD] I need a report that pulls together info from several different places.
-18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
-19. [HARD] Who or what is the best in each group?
-20. [HARD] Which ones are above average compared to others in their group?
+1. [EASY] How many users signed up since created_at=date?
+2. [EASY] How many members are on each team?
+3. [EASY] How many account deletions do we have in total?
+4. [EASY] Show me all of our account deletions.
+5. [EASY] Can you look up the account deletion with id=num?
+6. [EASY] How many account deletions were created since completed_at=date?
+7. [EASY] What are the most recent account deletions ordered by person_id?
+8. [EASY] How many team members do we have in total?
+9. [MEDIUM] Who are the most active users based on activity count?
+10. [MEDIUM] How many account deletions were added since completed_at=date?
+11. [MEDIUM] Break down the account deletions by person_id — how many in each?
+12. [MEDIUM] Are there any account deletions that don't have a match in related tables?
+13. [MEDIUM] For each group, what are the top 3 account deletions?
+14. [MEDIUM] How did the number of account deletions change month over month?
+15. [MEDIUM] Which account deletions have duplicate or repeated values?
+16. [MEDIUM] How many team members were added since created_at=date?
+17. [HARD] Pull together a report on account deletions joining all related tables.
+18. [HARD] Who or what is the best in each group of account deletions?
+19. [HARD] Which account deletions are above average compared to others in their group?
+20. [HARD] Do a multi-step analysis: group account deletions, filter, then rank the results.
+21. [HARD] Show the running total of account deletions over time based on completed_at.
+22. [HARD] Find account deletions that exist in one table but not in a related table.
+23. [HARD] Combine data from account_deletions, aspect_memberships, and aspect_visibilities in a single report.
+24. [HARD] Rank all account deletions within their groups and show the top performers.

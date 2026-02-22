@@ -38,12 +38,28 @@ SQL_COMMANDS = {
     "COUNT", "SUM", "AVG", "MAX", "MIN", "TOTAL", "GROUP_CONCAT",
     # Date/time functions (SQL commands)
     "strftime", "date", "datetime", "time", "julianday",
-    # Other
+    # DDL
+    "CREATE", "ALTER", "DROP", "TRUNCATE", "RENAME", "TABLE", "VIEW",
+    "INDEX", "COLUMN", "DATABASE", "SCHEMA", "TRIGGER", "PROCEDURE",
+    "FUNCTION", "SEQUENCE", "TEMP", "TEMPORARY", "IF",
+    "PRIMARY", "KEY", "FOREIGN", "REFERENCES", "CHECK", "DEFAULT",
+    "CONSTRAINT", "UNIQUE", "ADD", "MODIFY",
+    # DCL
+    "GRANT", "REVOKE",
+    # TCL
+    "COMMIT", "ROLLBACK", "SAVEPOINT", "BEGIN", "TRANSACTION", "START",
+    # Other SQL commands (from image)
+    "WITH", "EXPLAIN", "ANALYZE", "CALL", "DO", "VACUUM", "SHOW", "DESCRIBE",
+    # Scalar / other functions
     "CAST", "COALESCE", "IFNULL", "NULLIF", "TYPEOF", "REPLACE",
     "SUBSTR", "LENGTH", "UPPER", "LOWER", "TRIM", "INSTR",
     "ABS", "ROUND", "RANDOM", "HEX", "QUOTE", "ZEROBLOB",
     "GLOB", "PRINTF", "UNICODE", "LIKELIHOOD", "LIKELY", "UNLIKELY",
     "IIF", "FILTER",
+    # Extra
+    "TOP", "FETCH", "NEXT", "FIRST", "ONLY", "PERCENT",
+    "LIKE", "ILIKE", "SIMILAR", "TO", "ANY", "SOME",
+    "TRUE", "FALSE",
 }
 
 # Lowercase set for matching

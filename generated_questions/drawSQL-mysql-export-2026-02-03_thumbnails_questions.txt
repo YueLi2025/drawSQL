@@ -1,24 +1,28 @@
 # Natural Language SQL Questions: drawSQL-mysql-export-2026-02-03_thumbnails
-# Questions a non-technical person might ask about this data
+# 24 questions (8 easy, 8 medium, 8 hard)
 ============================================================
 
-1. [EASY] How many easy thumbnails source do we have?
+1. [EASY] How many easy thumbnails source do we have in total?
 2. [EASY] Show me all of our easy thumbnails source.
-3. [EASY] Can you look up a specific easy thumbnails source?
-4. [EASY] Find the easy thumbnails source with a certain name or email.
-5. [EASY] What are the different storage hash values we have?
-6. [EASY] How many easy thumbnails thumbnail do we have?
+3. [EASY] Can you look up the easy thumbnails source with id=num?
+4. [EASY] Find the easy thumbnails source where name=string.
+5. [EASY] What are the most recent easy thumbnails source ordered by storage_hash?
+6. [EASY] How many easy thumbnails thumbnail do we have in total?
 7. [EASY] Show me all of our easy thumbnails thumbnail.
-8. [EASY] Can you look up a specific easy thumbnails thumbnail?
-9. [MEDIUM] Show me each easy thumbnails source along with its related details.
-10. [MEDIUM] Break it down by type or category—how many easy thumbnails source in each?
-11. [MEDIUM] Are there any easy thumbnails source that don't have a match somewhere else?
-12. [MEDIUM] For each group, what's in the top 3?
-13. [MEDIUM] Show me each easy thumbnails thumbnail along with its related details.
-14. [MEDIUM] Break it down by type or category—how many easy thumbnails thumbnail in each?
-15. [MEDIUM] Are there any easy thumbnails thumbnail that don't have a match somewhere else?
-16. [MEDIUM] Break it down by type or category—how many easy thumbnails thumbnaildimensions in each?
-17. [HARD] I need a report that pulls together info from several different places.
-18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
-19. [HARD] Who or what is the best in each group?
-20. [HARD] Which ones are above average compared to others in their group?
+8. [EASY] Can you look up the easy thumbnails thumbnail with id=num?
+9. [MEDIUM] Show me each easy thumbnails source along with its related details from other tables.
+10. [MEDIUM] Break down the easy thumbnails source by storage_hash — how many in each?
+11. [MEDIUM] Are there any easy thumbnails source that don't have a match in related tables?
+12. [MEDIUM] For each group, what are the top 3 easy thumbnails source?
+13. [MEDIUM] Which easy thumbnails source have duplicate or repeated values?
+14. [MEDIUM] Show me each easy thumbnails thumbnail along with its related details from other tables.
+15. [MEDIUM] Break down the easy thumbnails thumbnail by storage_hash — how many in each?
+16. [MEDIUM] Are there any easy thumbnails thumbnail that don't have a match in related tables?
+17. [HARD] Pull together a report on easy thumbnails source joining all related tables.
+18. [HARD] Who or what is the best in each group of easy thumbnails source?
+19. [HARD] Which easy thumbnails source are above average compared to others in their group?
+20. [HARD] Do a multi-step analysis: group easy thumbnails source, filter, then rank the results.
+21. [HARD] Find easy thumbnails source that exist in one table but not in a related table.
+22. [HARD] Combine data from easy_thumbnails_source, easy_thumbnails_thumbnail, and easy_thumbnails_thumbnaildimensions in a single report.
+23. [HARD] Rank all easy thumbnails source within their groups and show the top performers.
+24. [HARD] Pull together a report on easy thumbnails thumbnail joining all related tables.

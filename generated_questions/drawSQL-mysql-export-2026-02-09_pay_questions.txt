@@ -1,24 +1,28 @@
 # Natural Language SQL Questions: drawSQL-mysql-export-2026-02-09_pay
-# Questions a non-technical person might ask about this data
+# 24 questions (8 easy, 8 medium, 8 hard)
 ============================================================
 
-1. [EASY] Which customers have an active subscription?
-2. [EASY] How many pay charges do we have?
+1. [EASY] Which customers have status=string for their subscription?
+2. [EASY] How many pay charges do we have in total?
 3. [EASY] Show me all of our pay charges.
-4. [EASY] Can you look up a specific pay charge?
-5. [EASY] What pay charges were added or changed recently?
-6. [EASY] What pay charges fall within a certain price range?
-7. [EASY] What are the different owner type values we have?
-8. [EASY] How many subscriptions do we have?
-9. [MEDIUM] How much money did we make this month?
-10. [MEDIUM] What's our total or average amount across all pay charges?
-11. [MEDIUM] How many pay charges did we have last month?
-12. [MEDIUM] Break it down by type or category—how many pay charges in each?
-13. [MEDIUM] Which pay charge has the highest or lowest amount?
-14. [MEDIUM] Are there any pay charges that don't have a match somewhere else?
-15. [MEDIUM] For each group, what's in the top 3?
-16. [MEDIUM] What's our total or average quantity across all subscriptions?
-17. [HARD] I need a report that pulls together info from several different places.
-18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
-19. [HARD] Who or what is the best in each group?
-20. [HARD] Which ones are above average compared to others in their group?
+4. [EASY] Can you look up the pay charge with id=num?
+5. [EASY] How many pay charges were created since created_at=date?
+6. [EASY] What pay charges have amount between num and num?
+7. [EASY] What are the most recent pay charges ordered by owner_type?
+8. [EASY] How many subscriptions do we have in total?
+9. [MEDIUM] How much revenue since created_at=date?
+10. [MEDIUM] What's our total and average amount across all pay charges?
+11. [MEDIUM] Which pay charge has the highest amount?
+12. [MEDIUM] How many pay charges were added since created_at=date?
+13. [MEDIUM] Break down the pay charges by owner_type — how many in each?
+14. [MEDIUM] Are there any pay charges that don't have a match in related tables?
+15. [MEDIUM] For each group, what are the top 3 pay charges?
+16. [MEDIUM] How did the number of pay charges change month over month?
+17. [HARD] Pull together a report on pay charges joining all related tables.
+18. [HARD] Which pay charge has the best amount in each owner_type?
+19. [HARD] Which pay charges have amount above average compared to others in their group?
+20. [HARD] Do a multi-step analysis: group pay charges, filter, then rank the results.
+21. [HARD] Show the running total of pay charges over time based on created_at.
+22. [HARD] Find pay charges that exist in one table but not in a related table.
+23. [HARD] Rank all pay charges by amount within each owner_type and show percentiles.
+24. [HARD] Pull together a report on subscriptions joining all related tables.

@@ -1,24 +1,28 @@
 # Natural Language SQL Questions: drawSQL-mysql-export-2026-01-13_ticket
-# Questions a non-technical person might ask about this data
+# 24 questions (8 easy, 8 medium, 8 hard)
 ============================================================
 
-1. [EASY] How many tickets are still open?
-2. [EASY] Which tickets were created this week?
-3. [EASY] How many permissions do we have?
+1. [EASY] How many tickets have status=num indicating open?
+2. [EASY] Which tickets were created since created_at=date?
+3. [EASY] How many permissions do we have in total?
 4. [EASY] Show me all of our permissions.
-5. [EASY] Can you look up a specific permission?
-6. [EASY] Find the permission with a certain name or email.
-7. [EASY] What permissions were added or changed recently?
-8. [EASY] What are the different name values we have?
-9. [MEDIUM] How long does it take us to resolve tickets on average?
-10. [MEDIUM] Show me each permission along with its related details.
-11. [MEDIUM] How many permissions did we have last month?
-12. [MEDIUM] Break it down by type or category—how many permissions in each?
-13. [MEDIUM] Are there any permissions that don't have a match somewhere else?
-14. [MEDIUM] For each group, what's in the top 3?
-15. [MEDIUM] Show me each role along with its related details.
-16. [MEDIUM] How many roles did we have last month?
-17. [HARD] I need a report that pulls together info from several different places.
-18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
-19. [HARD] Who or what is the best in each group?
-20. [HARD] Which ones are above average compared to others in their group?
+5. [EASY] Can you look up the permission with id=num?
+6. [EASY] Find the permission where name=string.
+7. [EASY] How many permissions were created since created_at=date?
+8. [EASY] What are the most recent permissions ordered by name?
+9. [MEDIUM] What's the average resolution time for tickets?
+10. [MEDIUM] Show me each permission along with its related details from other tables.
+11. [MEDIUM] How many permissions were added since created_at=date?
+12. [MEDIUM] Break down the permissions by name — how many in each?
+13. [MEDIUM] Are there any permissions that don't have a match in related tables?
+14. [MEDIUM] For each group, what are the top 3 permissions?
+15. [MEDIUM] How did the number of permissions change month over month?
+16. [MEDIUM] Which permissions have duplicate or repeated values?
+17. [HARD] Pull together a report on permissions joining all related tables.
+18. [HARD] Who or what is the best in each group of permissions?
+19. [HARD] Which permissions are above average compared to others in their group?
+20. [HARD] Do a multi-step analysis: group permissions, filter, then rank the results.
+21. [HARD] Show the running total of permissions over time based on created_at.
+22. [HARD] Find permissions that exist in one table but not in a related table.
+23. [HARD] Combine data from permissions, roles, and model_has_permissions in a single report.
+24. [HARD] Rank all permissions within their groups and show the top performers.

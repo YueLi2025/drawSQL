@@ -1,24 +1,28 @@
 # Natural Language SQL Questions: drawSQL-mysql-export-2026-02-09_love
-# Questions a non-technical person might ask about this data
+# 24 questions (8 easy, 8 medium, 8 hard)
 ============================================================
 
-1. [EASY] How many love reactant reaction counters do we have?
+1. [EASY] How many love reactant reaction counters do we have in total?
 2. [EASY] Show me all of our love reactant reaction counters.
-3. [EASY] Can you look up a specific love reactant reaction counter?
-4. [EASY] What love reactant reaction counters were added or changed recently?
-5. [EASY] What are the different reactant id values we have?
-6. [EASY] How many love reactant reaction totals do we have?
+3. [EASY] Can you look up the love reactant reaction counter with id=num?
+4. [EASY] How many love reactant reaction counters were created since created_at=date?
+5. [EASY] What are the most recent love reactant reaction counters ordered by reactant_id?
+6. [EASY] How many love reactant reaction totals do we have in total?
 7. [EASY] Show me all of our love reactant reaction totals.
-8. [EASY] Can you look up a specific love reactant reaction total?
-9. [MEDIUM] How many love reactant reaction counters did we have last month?
-10. [MEDIUM] Break it down by type or category—how many love reactant reaction counters in each?
-11. [MEDIUM] Are there any love reactant reaction counters that don't have a match somewhere else?
-12. [MEDIUM] For each group, what's in the top 3?
-13. [MEDIUM] How many love reactant reaction totals did we have last month?
-14. [MEDIUM] Break it down by type or category—how many love reactant reaction totals in each?
-15. [MEDIUM] Are there any love reactant reaction totals that don't have a match somewhere else?
-16. [MEDIUM] Show me each love reactant along with its related details.
-17. [HARD] I need a report that pulls together info from several different places.
-18. [HARD] Can you do a multi-step analysis: group things, filter, then rank the results?
-19. [HARD] Who or what is the best in each group?
-20. [HARD] Which ones are above average compared to others in their group?
+8. [EASY] Can you look up the love reactant reaction total with id=num?
+9. [MEDIUM] How many love reactant reaction counters were added since created_at=date?
+10. [MEDIUM] Break down the love reactant reaction counters by reaction_type_id — how many in each?
+11. [MEDIUM] Are there any love reactant reaction counters that don't have a match in related tables?
+12. [MEDIUM] For each group, what are the top 3 love reactant reaction counters?
+13. [MEDIUM] How did the number of love reactant reaction counters change month over month?
+14. [MEDIUM] Which love reactant reaction counters have duplicate or repeated values?
+15. [MEDIUM] How many love reactant reaction totals were added since created_at=date?
+16. [MEDIUM] Break down the love reactant reaction totals by reactant_id — how many in each?
+17. [HARD] Pull together a report on love reactant reaction counters joining all related tables.
+18. [HARD] Who or what is the best in each group of love reactant reaction counters?
+19. [HARD] Which love reactant reaction counters are above average compared to others in their group?
+20. [HARD] Do a multi-step analysis: group love reactant reaction counters, filter, then rank the results.
+21. [HARD] Show the running total of love reactant reaction counters over time based on created_at.
+22. [HARD] Find love reactant reaction counters that exist in one table but not in a related table.
+23. [HARD] Combine data from love_reactant_reaction_counters, love_reactant_reaction_totals, and love_reactants in a single report.
+24. [HARD] Rank all love reactant reaction counters within their groups and show the top performers.

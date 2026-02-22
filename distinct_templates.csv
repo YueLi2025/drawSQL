@@ -1,72 +1,83 @@
 template	count
-SELECT * FROM table_name LIMIT num;	324
-SELECT COUNT(*) FROM table_name WHERE col_name >= date(string, string);	180
-SELECT * FROM table_name;	163
-SELECT COUNT(*) FROM table_name;	161
-SELECT col_name, COUNT(*) as count FROM table_name GROUP BY col_name;	153
-SELECT * FROM table_name ORDER BY col_name DESC LIMIT num;	112
-SELECT * FROM table_name WHERE id = num;	98
-WITH grouped AS ( SELECT col_name, COUNT(*) as cnt FROM table_name GROUP BY col_name ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;	85
-SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY col_name ORDER BY id DESC) as column_alias0 FROM table_name ) WHERE column_alias0 = num;	76
-SELECT * FROM table_name WHERE id NOT IN (SELECT DISTINCT col_name FROM table_name WHERE col_name IS NOT NULL);	59
-SELECT table_alias0.*, table_alias1.* FROM table_name table_alias0 LEFT JOIN table_name table_alias1 ON table_alias1.col_name = table_alias0.id;	55
-SELECT * FROM table_name WHERE col_name = num;	52
-SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY col_name ORDER BY id DESC) as column_alias0 FROM table_name ) WHERE column_alias0 <= num;	46
-SELECT * FROM table_name LEFT JOIN table_name ON table_name.col_name = table_name.id;	44
-SELECT * FROM table_name LEFT JOIN table_name ON table_name.col_name = table_name.id LEFT JOIN table_name ON table_name.col_name = table_name.id;	21
-SELECT * FROM table_name WHERE value > (SELECT AVG(value) FROM table_name);	14
-SELECT * FROM table_name table_alias0 WHERE col_name > ( SELECT AVG(col_name) FROM table_name table_alias1 WHERE table_alias1.col_name = table_alias0.col_name );	10
-SELECT SUM(col_name) as column_alias0, AVG(col_name) as average FROM table_name;	7
-SELECT table_alias0.*, table_alias1.* FROM table_name table_alias0 LEFT JOIN table_name table_alias1 ON table_alias1.id = table_alias0.col_name;	7
-SELECT * FROM table_name table_alias0 WHERE value > ( SELECT AVG(value) FROM table_name table_alias1 WHERE table_alias1.col_name = table_alias0.col_name );	6
-SELECT * FROM table_name WHERE col_name > (SELECT AVG(col_name) FROM table_name);	6
-SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY col_name ORDER BY col_name DESC) as column_alias0 FROM table_name ) WHERE column_alias0 = num;	6
-SELECT strftime(string, col_name) as column_alias0, column_alias1(*) as column_alias1 FROM table_name WHERE col_name >= date(string, string) GROUP BY column_alias0 ORDER BY column_alias0;	5
+SELECT COUNT(*) FROM table_name WHERE col_name >= date(string, string);	238
+SELECT COUNT(*) FROM table_name;	171
+SELECT * FROM table_name;	164
+WITH grouped AS ( SELECT col_name, COUNT(*) as cnt FROM table_name GROUP BY col_name ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;	157
+SELECT * FROM table_name LIMIT num;	156
+SELECT strftime(string, col_name) as column_alias0, column_alias1(*) as column_alias1 FROM table_name WHERE col_name >= date(string, string) GROUP BY column_alias0 ORDER BY column_alias0;	142
+SELECT * FROM table_name ORDER BY col_name DESC LIMIT num;	132
+SELECT * FROM table_name WHERE id = num;	95
+SELECT col_name, COUNT(*) as count FROM table_name GROUP BY col_name;	88
+SELECT * FROM table_name WHERE id NOT IN (SELECT DISTINCT col_name FROM table_name WHERE col_name IS NOT NULL);	83
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY col_name ORDER BY id DESC) as column_alias0 FROM table_name ) WHERE column_alias0 = num;	82
+SELECT *, COUNT(*) OVER (ORDER BY col_name) as column_alias0 FROM table_name ORDER BY col_name;	69
+SELECT * FROM table_name ORDER BY id DESC LIMIT num;	63
+SELECT *, ROW_NUMBER() OVER (ORDER BY id DESC) as column_alias0 FROM table_name;	60
+SELECT * FROM table_name LEFT JOIN table_name ON table_name.col_name = table_name.id;	56
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY col_name ORDER BY id DESC) as column_alias0 FROM table_name ) WHERE column_alias0 <= num;	49
+SELECT * FROM table_name WHERE col_name = string;	47
+SELECT table_alias0.*, table_alias1.* FROM table_name table_alias0 LEFT JOIN table_name table_alias1 ON table_alias1.col_name = table_alias0.id;	46
+SELECT * FROM table_name LEFT JOIN table_name ON table_name.id = table_name.col_name LEFT JOIN table_name ON table_name.id = table_name.col_name;	34
+SELECT * FROM table_name LEFT JOIN table_name ON table_name.col_name = table_name.id LEFT JOIN table_name ON table_name.col_name = table_name.id;	30
+SELECT * FROM table_name LEFT JOIN table_name ON table_name.id = table_name.id LEFT JOIN table_name ON table_name.id = table_name.id;	16
+SELECT * FROM table_name ORDER BY created_at DESC LIMIT num;	9
+SELECT col_name, COUNT(*) as member_count FROM table_name GROUP BY col_name;	8
+SELECT * FROM table_name WHERE col_name = num;	8
+SELECT * FROM table_name LEFT JOIN table_name ON table_name.id = table_name.col_name LEFT JOIN table_name ON table_name.id = table_name.id;	7
+SELECT * FROM table_name LEFT JOIN table_name ON table_name.id = table_name.col_name LEFT JOIN table_name ON table_name.id = table_name.col_name LEFT JOIN table_name ON table_name.id = table_name.col_name;	6
+SELECT * FROM table_name LEFT JOIN table_name ON table_name.id = table_name.id LEFT JOIN table_name ON table_name.id = table_name.col_name;	6
+SELECT SUM(col_name) as column_alias0, AVG(col_name) as average FROM table_name;	5
+SELECT COUNT(*) FROM col_name WHERE col_name >= date(string, string);	4
+SELECT table_alias0.*, table_alias1.* FROM table_name table_alias0 LEFT JOIN table_name table_alias1 ON table_alias1.id = table_alias0.col_name;	4
+SELECT * FROM table_name WHERE col_name BETWEEN num AND num ORDER BY col_name;	4
 SELECT * FROM table_name LEFT JOIN table_name ON table_name.col_name = table_name.id LEFT JOIN table_name ON table_name.col_name = table_name.id LEFT JOIN table_name ON table_name.col_name = table_name.id;	3
-SELECT value, COUNT(*) as count FROM table_name GROUP BY value;	3
-SELECT id, COUNT(*) as count FROM table_name GROUP BY id;	3
-SELECT COUNT(*) FROM col_name WHERE col_name >= date(string, string);	2
+SELECT * FROM table_name ORDER BY value DESC LIMIT num;	3
+SELECT * FROM table_name WHERE col_name != num AND col_name = num;	2
 SELECT COUNT(*) FROM col_name;	2
 SELECT * FROM col_name;	2
-SELECT * FROM col_name WHERE id = num;	2
-SELECT * FROM col_name LIMIT num;	2
-SELECT table_alias0.*, table_alias1.* FROM col_name table_alias0 LEFT JOIN col_name table_alias1 ON table_alias1.col_name = table_alias0.id;	2
-SELECT col_name, COUNT(*) as count FROM col_name GROUP BY col_name;	2
-WITH grouped AS ( SELECT id, COUNT(*) as cnt FROM table_name GROUP BY id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;	2
+SELECT * FROM col_name ORDER BY col_name DESC LIMIT num;	2
+SELECT * FROM col_name WHERE id NOT IN (SELECT DISTINCT col_name FROM col_name WHERE col_name IS NOT NULL);	2
+SELECT strftime(string, col_name) as column_alias0, column_alias1(*) as column_alias1 FROM col_name WHERE col_name >= date(string, string) GROUP BY column_alias0 ORDER BY column_alias0;	2
+WITH grouped AS ( SELECT col_name, COUNT(*) as cnt FROM col_name GROUP BY col_name ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;	2
+SELECT * FROM table_name LEFT JOIN table_name ON table_name.col_name = table_name.ID;	2
+SELECT * FROM table_name LEFT JOIN table_name ON table_name.id = table_name.col_name LEFT JOIN table_name ON table_name.id = table_name.id LEFT JOIN table_name ON table_name.id = table_name.col_name;	2
 SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY id ORDER BY id DESC) as column_alias0 FROM table_name ) WHERE column_alias0 = num;	2
+WITH grouped AS ( SELECT id, COUNT(*) as cnt FROM table_name GROUP BY id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;	2
 SELECT * FROM table_name WHERE id NOT IN (SELECT DISTINCT id FROM table_name WHERE id IS NOT NULL);	2
-SELECT * FROM table_name LEFT JOIN table_name ON table_name.id = table_name.col_name LEFT JOIN table_name ON table_name.id = table_name.col_name LEFT JOIN table_name ON table_name.id = table_name.col_name;	2
-SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY col_name ORDER BY col_name DESC) as column_alias0 FROM table_name ) WHERE column_alias0 <= num;	2
+SELECT * FROM table_name LEFT JOIN table_name ON table_name.id = table_name.col_name LEFT JOIN table_name ON table_name.col_name = table_name.id;	2
 SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY col_name ORDER BY value DESC) as column_alias0 FROM table_name ) WHERE column_alias0 = num;	2
 SELECT SUM(value) as column_alias0, AVG(value) as average FROM table_name;	2
-SELECT * FROM table_name ORDER BY value DESC LIMIT num;	2
-SELECT * FROM table_name table_alias0 WHERE value > ( SELECT AVG(value) FROM table_name table_alias1 WHERE table_alias1.group = table_alias0.group );	2
-SELECT COUNT(*) FROM table_name WHERE strftime(string, col_name) = strftime(string, string);	1
-SELECT * FROM table_name WHERE col_name != num AND col_name = num;	1
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY col_name ORDER BY col_name DESC) as column_alias0 FROM table_name ) WHERE column_alias0 <= num;	2
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY col_name ORDER BY col_name DESC) as column_alias0 FROM table_name ) WHERE column_alias0 = num;	2
+SELECT *, SUM(col_name) OVER (ORDER BY col_name) as column_alias0 FROM table_name ORDER BY col_name;	2
 SELECT * FROM table_name WHERE col_name BETWEEN date(string) AND date(string, string) AND (col_name IS NULL OR col_name > datetime(string));	1
 SELECT table_alias0.*, iu.col_name, iu.col_name, iu.col_name as column_alias0 FROM table_name table_alias0 LEFT JOIN ( SELECT table_alias1.* FROM table_name table_alias1 INNER JOIN ( SELECT col_name, MAX(col_name) as column_alias1 FROM table_name GROUP BY col_name ) iu2 ON table_alias1.col_name = iu2.col_name AND table_alias1.col_name = iu2.column_alias1 ) iu ON iu.col_name = table_alias0.id;	1
 SELECT table_alias0.col_name as column_alias0, COUNT(table_alias1.id) as column_alias1 FROM table_name table_alias0 LEFT JOIN table_name table_alias1 ON table_alias1.col_name = table_alias0.id GROUP BY table_alias0.id, table_alias0.col_name;	1
-SELECT * FROM col_name ORDER BY col_name DESC LIMIT num;	1
-SELECT * FROM col_name WHERE id NOT IN (SELECT DISTINCT col_name FROM col_name WHERE col_name IS NOT NULL);	1
+SELECT * FROM table_name WHERE value > (SELECT AVG(value) FROM table_name);	1
+SELECT * FROM col_name WHERE id = num;	1
+SELECT table_alias0.*, table_alias1.* FROM col_name table_alias0 LEFT JOIN col_name table_alias1 ON table_alias1.col_name = table_alias0.id;	1
+SELECT * FROM col_name ORDER BY id DESC LIMIT num;	1
 SELECT * FROM col_name LEFT JOIN col_name ON col_name.col_name = col_name.id LEFT JOIN col_name ON col_name.col_name = col_name.id;	1
-WITH grouped AS ( SELECT col_name, COUNT(*) as cnt FROM col_name GROUP BY col_name ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;	1
 SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY col_name ORDER BY id DESC) as column_alias0 FROM col_name ) WHERE column_alias0 = num;	1
-SELECT * FROM col_name table_alias0 WHERE value > ( SELECT AVG(value) FROM col_name table_alias1 WHERE table_alias1.col_name = table_alias0.col_name );	1
-SELECT * FROM table_name LEFT JOIN table_name ON table_name.col_name = table_name.ID;	1
-SELECT * FROM table_name WHERE col_name BETWEEN num AND num ORDER BY col_name;	1
-SELECT * FROM table_name ORDER BY col_name DESC, col_name DESC LIMIT num;	1
-SELECT * FROM table_name WHERE col_name >= date(string) ORDER BY col_name ASC;	1
-SELECT table_alias0.*, AVG(table_alias0.col_name) as avg_rating FROM table_name table_alias0 GROUP BY table_alias0.col_name;	1
+SELECT *, COUNT(*) OVER (ORDER BY col_name) as column_alias0 FROM col_name ORDER BY col_name;	1
+SELECT * FROM col_name LEFT JOIN col_name ON col_name.id = col_name.col_name LEFT JOIN col_name ON col_name.id = col_name.col_name;	1
+SELECT *, ROW_NUMBER() OVER (ORDER BY id DESC) as column_alias0 FROM col_name;	1
+SELECT * FROM table_name LEFT JOIN table_name ON table_name.col_name = table_name.col_name LEFT JOIN table_name ON table_name.col_name = table_name.col_name;	1
+SELECT * FROM table_name table_alias0 WHERE value > ( SELECT AVG(value) FROM table_name table_alias1 WHERE table_alias1.col_name = table_alias0.col_name );	1
 SELECT SUM(col_name) as total_revenue FROM table_name WHERE col_name >= date(string, string);	1
 SELECT table_alias0.*, AVG(table_alias2.col_name) as column_alias0 FROM table_name table_alias0 JOIN table_name table_alias1 ON table_alias1.col_name = table_alias0.id JOIN table_name table_alias2 ON table_alias2.col_name = table_alias1.id GROUP BY table_alias0.id ORDER BY column_alias0 DESC;	1
-SELECT * FROM table_name LEFT JOIN table_name ON table_name.id = table_name.col_name LEFT JOIN table_name ON table_name.col_name = table_name.id;	1
-SELECT COUNT(*) FROM table_name WHERE col_name IN (string, string, num);	1
+SELECT * FROM table_name LEFT JOIN table_name ON table_name.id = table_name.id LEFT JOIN table_name ON table_name.id = table_name.col_name LEFT JOIN table_name ON table_name.id = table_name.col_name;	1
+SELECT * FROM table_name WHERE col_name = boolean;	1
+SELECT COUNT(*) FROM table_name WHERE col_name = num;	1
 SELECT * FROM table_name WHERE col_name >= date(string, string);	1
+SELECT AVG(julianday(col_name) - julianday(col_name)) as avg_days FROM table_name;	1
+SELECT * FROM table_name WHERE value BETWEEN num AND num ORDER BY value;	1
 SELECT table_alias0.*, COUNT(*) as column_alias0 FROM table_name table_alias0 LEFT JOIN table_name table_alias1 ON table_alias1.col_name = table_alias0.id GROUP BY table_alias0.id ORDER BY column_alias0 DESC;	1
+SELECT value, COUNT(*) as count FROM table_name GROUP BY value;	1
 SELECT * FROM table_name LEFT JOIN table_name ON table_name.col_name = table_name.col_name LEFT JOIN table_name ON table_name.col_name = table_name.id;	1
-SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY group ORDER BY value DESC) as column_alias0 FROM table_name ) WHERE column_alias0 <= num;	1
-SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY group ORDER BY value DESC) as column_alias0 FROM table_name ) WHERE column_alias0 = num;	1
-SELECT * FROM table_name LEFT JOIN table_name ON table_name.id = table_name.col_name LEFT JOIN table_name ON table_name.id = table_name.col_name;	1
+SELECT *, SUM(value) OVER (ORDER BY col_name) as column_alias0 FROM table_name ORDER BY col_name;	1
+SELECT *, ROW_NUMBER() OVER (ORDER BY value DESC) as column_alias0 FROM table_name;	1
+SELECT *, ROW_NUMBER() OVER (ORDER BY col_name DESC) as column_alias0 FROM table_name;	1
 SELECT * FROM table_name LEFT JOIN table_name ON table_name.id = table_name.col_name;	1
 SELECT * FROM table_name LEFT JOIN table_name ON table_name.id = table_name.col_name LEFT JOIN table_name ON table_name.id = table_name.col_name LEFT JOIN table_name ON table_name.id = table_name.col_name LEFT JOIN table_name ON table_name.id = table_name.col_name;	1
-SELECT col_name, COUNT(*) as member_count FROM table_name GROUP BY col_name;	1
+SELECT * FROM table_name table_alias0 WHERE col_name > ( SELECT AVG(col_name) FROM table_name table_alias1 WHERE table_alias1.col_name = table_alias0.col_name );	1
