@@ -1,0 +1,5654 @@
+index,template,count
+1,"SELECT
+    CAST(strftime(string, col_name) AS column_alias0) AS string,
+    SUM(col_name)  AS string,
+    SUM(col_name)  AS string
+FROM new_table
+WHERE col_name = string
+  AND col_name IS NOT NULL
+  AND CAST(strftime(string, col_name) AS column_alias0) BETWEEN num AND num
+GROUP BY CAST(strftime(string, col_name) AS column_alias0)
+ORDER BY string;",1
+2,"SELECT
+    COUNT(*) AS string
+FROM table_name AS string
+INNER JOIN (
+    SELECT DISTINCT col_name
+    FROM table_name AS table_alias0,
+         json_each(col_name) AS table_alias1 lang
+    WHERE LOWER(VALUE:CAST(name AS column_alias0)) = string
+) AS string
+    ON col_name = col_name
+INNER JOIN (
+    SELECT DISTINCT col_name
+    FROM table_name
+    WHERE LOWER(col_name) = string
+) AS string
+    ON col_name = col_name
+WHERE col_name IS NOT NULL
+  AND LENGTH(col_name) > num
+  AND LENGTH(col_name) < num
+  AND NOT REGEXP_LIKE(LOWER(LTRIM(col_name)), string);",1
+3,"SELECT
+    COUNT_IFCAST(LOWER(table_alias0.col_name) LIKE string AS column_alias0)
+    /
+    NULLIF(COUNT(*), num)                                       AS column_alias1
+FROM table_name table_alias0
+WHERE LOWER(table_alias0.col_name) LIKE string
+  AND NOT EXISTS (
+        SELECT num
+        FROM table_name table_alias1,
+             json_each(table_alias1.col_name) AS table_alias2
+        WHERE table_alias1.col_name = table_alias0.col_name
+          AND LOWER(f.value:CAST(name AS column_alias2)) LIKE string
+  );",1
+4,"SELECT
+    TO_DATE(datetime(col_name / num)) AS Date,
+    TO_CHAR(
+        SUM(
+            (CASE WHEN col_name LIKE string THEN num ELSE -num END) *
+            CAST(string || LTRIM(
+                SUBSTRING(col_name, CASE WHEN col_name LIKE string THEN num ELSE num END, num),
+                string
+            ) AS column_alias0) / num
+        ),
+        string
+    ) AS string
+FROM table_name
+WHERE
+    col_name = string
+    AND (col_name LIKE string OR col_name LIKE string)
+    AND col_name >= num AND col_name < num
+GROUP BY
+    Date
+ORDER BY
+    Date DESC;",1
+5,"SELECT
+    q.string,
+    q.col_name,
+    q.string
+FROM (
+    WITH CTE AS (
+        SELECT
+            table_alias0.col_name,
+            table_alias0.col_name
+        FROM table_name table_alias0
+        WHERE table_alias0.col_name = string
+          AND table_alias0.col_name NOT LIKE string
+          AND COALESCE(CAST(table_alias0.col_name:string AS column_alias0), num)
+        AND num=num , table_alias0.col_name DESC
+        ) = num
+    ),
+    latest_project AS (
+        SELECT
+            table_alias1.col_name AS column_alias1,
+            table_alias1.col_name
+        FROM table_name table_alias1
+        WHERE table_alias1.col_name = string
+        AND num=num
+    ),
+    package_project AS (
+        SELECT DISTINCT
+            table_alias2.col_name,
+            table_alias2.col_name,
+            table_alias2.col_name
+        FROM table_name table_alias2
+        WHERE table_alias2.col_name = string
+          AND table_alias2.col_name = string
+          AND table_alias2.col_name = string
+    )
+    SELECT
+        table_alias3.col_name AS string,
+        table_alias3.col_name AS column_alias2,
+        table_alias5.col_name AS string,
+        ROW_NUMBER() OVER (
+            PARTITION BY table_alias3.col_name
+            ORDER BY table_alias5.col_name DESC, table_alias4.col_name
+        ) AS column_alias3
+    FROM CTE table_alias3
+    JOIN new_table table_alias4
+      ON table_alias4.col_name = table_alias3.col_name
+     AND table_alias4.col_name = table_alias3.col_name
+    JOIN new_table table_alias5
+      ON table_alias5.col_name = table_alias4.col_name
+) q
+WHERE q.new_column = num
+ORDER BY q.string DESC, q.string
+LIMIT num",1
+6,"SELECT
+    sm.col_name,
+    sm.col_name,
+    sm.col_name,
+    sm.string
+FROM (
+    SELECT
+        wd.col_name,
+        MIN(wd.col_name) AS column_alias0,
+        MIN(wd.col_name) AS column_alias1,
+        SUM(wd.col_name) / num AS string,
+        COUNT(*) AS string,
+        COUNT(DISTINCT wd.string) AS string,
+        COUNT(DISTINCT wd.string) AS string,
+        COUNT(DISTINCT wd.string) AS string,
+        COUNT(DISTINCT wd.string) AS string,
+        COUNT(DISTINCT wd.col_name) AS string,
+        COUNT(DISTINCT wd.col_name) AS string,
+        COUNT(DISTINCT wd.string) AS string,
+        COUNT(DISTINCT wd.string) AS string,
+        COUNT(DISTINCT wd.string) AS string,
+        COUNT(DISTINCT wd.string) AS string,
+        COUNT(DISTINCT CASE WHEN wd.string IS NOT NULL THEN wd.string END) AS string,
+        MIN(wd.string) AS string,
+        MAX(wd.string) AS string,
+        MIN(wd.string) AS string,
+        MAX(wd.string) AS string
+    FROM (
+        SELECT
+            f.col_name,
+            f.col_name,
+            f.col_name,
+            f.col_name,
+            CONCAT(TO_VARCHAR(f.string), string, TO_VARCHAR(f.string)) AS string,
+            f.string,
+            f.string,
+            f.string,
+            f.string,
+            f.col_name,
+            f.col_name,
+            f.string,
+            f.string,
+            f.string,
+            f.string,
+            f.string,
+            ROUND(ABS(LEAD(f.string) OVER (PARTITION BY f.col_name ORDER BY f.string) - f.string), num) AS string
+        FROM (
+            SELECT
+                table_alias0.col_name,
+                table_alias0.col_name,
+                table_alias0.col_name,
+                table_alias0.col_name,
+                TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)) AS string,
+                ROUND(TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)), num) AS string,
+                ROUND(TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)), num) AS string,
+                ROUND(TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)), num) AS string,
+                ROUND(TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)), num) AS string,
+                ROUND(TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)), num) AS string,
+                table_alias0.col_name,
+                table_alias0.col_name,
+                TO_VARCHAR(table_alias0.col_name) AS string,
+                ROUND(TRY_TO_DOUBLE(table_alias0.CAST(col_name AS column_alias2)), num) AS string,
+                ROUND(TRY_TO_DOUBLE(table_alias0.CAST(col_name AS column_alias2)), num) AS string,
+                ROUND(TRY_TO_DOUBLE(table_alias0.CAST(col_name AS column_alias2)), num) AS string,
+                TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)) * TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2))
+                  - TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)) * TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)) AS string
+            FROM table_name table_alias0
+            WHERE NVL(UPPER(table_alias0.col_name), string) != string
+              AND table_alias0.col_name = string
+              AND table_alias0.col_name NOT IN (string, string)
+              AND NOT (UPPER(TO_VARCHAR(table_alias0.col_name)) LIKE string)
+              AND table_alias0.col_name IS NOT NULL
+              AND table_alias0.col_name IS NOT NULL
+              AND table_alias0.col_name IS NOT NULL
+              AND table_alias0.col_name IS NOT NULL
+              AND table_alias0.col_name IS NOT NULL
+              AND table_alias0.col_name IS NOT NULL
+              AND TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)) IS NOT NULL
+              AND TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)) IS NOT NULL
+              AND TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)) IS NOT NULL
+              AND TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)) IS NOT NULL
+              AND TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)) IS NOT NULL
+              AND TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)) IS NOT NULL
+              AND TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)) IS NOT NULL
+              AND TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)) IS NOT NULL
+              AND TRY_TO_DOUBLE(table_alias0.CAST(col_name[num] AS column_alias2)) IS NOT NULL
+        ) f
+    ) wd
+    GROUP BY wd.col_name
+) sm
+WHERE sm.string = sm.string
+  AND sm.string = num
+  AND sm.string = num
+  AND sm.string = num
+  AND sm.string = num
+  AND sm.string = num
+  AND sm.string = num
+  AND sm.string <= num
+  AND (sm.string = num OR sm.string = sm.string)
+  AND sm.string <= num
+  AND sm.string <= num
+  AND sm.string <= num
+  AND ABS(sm.string) BETWEEN num AND num
+  AND ABS(sm.string) BETWEEN num AND num
+ORDER BY sm.string DESC
+LIMIT num;",1
+7,"SELECT
+  c.name AS category_name,
+  SUM(DATEDIFF(string, TRY_datetime(r.rental_date), TRY_datetime(r.return_date)))/num AS total_rental_hours
+FROM RENTAL r
+JOIN INVENTORY i ON r.inventory_id = i.inventory_id
+JOIN FILM_CATEGORY fc ON i.film_id = fc.film_id
+JOIN CATEGORY c ON fc.category_id = c.category_id
+JOIN CUSTOMER cu ON r.customer_id = cu.customer_id
+JOIN ADDRESS a ON cu.address_id = a.address_id
+JOIN CITY ci ON a.city_id = ci.city_id
+WHERE TRY_datetime(r.rental_date) IS NOT NULL
+  AND TRY_datetime(r.return_date) IS NOT NULL
+  AND (ci.city ILIKE string OR ci.city ILIKE string)
+GROUP BY c.category_id, c.name
+ORDER BY total_rental_hours DESC
+LIMIT num;",1
+8,"SELECT
+  col_name,
+  col_name AS column_alias0,
+  col_name AS column_alias1,
+  string || col_name AS column_alias2,
+  ROUND(SUM(col_name) / num) AS string
+FROM table_name
+WHERE
+  col_name IN (string,string)
+  AND col_name = string
+  AND COALESCE(ARRAY_SIZE(col_name), num) = num
+  AND COALESCE(ARRAY_SIZE(col_name), num) = num
+  AND COALESCE(ARRAY_SIZE(col_name), num) = num
+GROUP BY
+  col_name,
+  col_name,
+  col_name,
+  string || col_name
+ORDER BY
+  string DESC;",1
+9,"SELECT
+  d.full_name AS name,
+  t.year AS year,
+  c.name AS constructor_name,
+  t.num_unique_rounds AS num_unique_rounds
+FROM (
+  SELECT
+    r.driver_id,
+    ra.year,
+    MIN_BY(r.constructor_id, ra.round) AS first_constructor_id,
+    MAX_BY(r.constructor_id, ra.round) AS last_constructor_id,
+    COUNT(DISTINCT ra.round) AS num_unique_rounds
+  FROM F1.F1.RESULTS r
+  JOIN F1.F1.RACES ra ON r.race_id = ra.race_id
+  WHERE ra.year BETWEEN num AND num
+  GROUP BY r.driver_id, ra.year
+  HAVING
+    COUNT(DISTINCT ra.round) >= num
+    AND MIN_BY(r.constructor_id, ra.round) = MAX_BY(r.constructor_id, ra.round)
+) t
+JOIN F1.F1.DRIVERS d ON t.driver_id = d.driver_id
+JOIN F1.F1.CONSTRUCTORS c ON t.first_constructor_id = c.constructor_id
+ORDER BY name, year",1
+10,"SELECT
+  date(datetime(col_name / num, string)) AS column_alias0,
+  SUM(col_name) AS string,
+  SUM(col_name) AS column_alias1,
+  COUNT(DISTINCT col_name) AS string,
+  SUM(col_name - col_name) AS string,
+  CASE WHEN SUM(col_name) = num THEN NULL ELSE SUM(col_name - col_name) / SUM(col_name) END AS string
+FROM table_name AS string
+JOIN table_name AS string
+  ON col_name = col_name
+JOIN table_name AS table_alias0
+  ON col_name = col_name
+WHERE col_name = string
+  AND col_name = string
+  AND datetime(col_name / num) >= string
+  AND datetime(col_name / num) < string
+GROUP BY num
+ORDER BY num;",1
+11,"SELECT
+  strftime(string, date(datetime(col_name / num)), string) AS string,
+  column_alias0 AS column_alias0,
+  column_alias1 AS column_alias1,
+  column_alias2 AS column_alias2,
+  COUNT(DISTINCT col_name) AS string,
+  COUNT(DISTINCT col_name) AS string,
+  SUM(COALESCE(col_name,num)) - SUM(COALESCE(col_name,num)) AS string
+FROM table_name ORDERS
+JOIN table_name USERS
+  ON col_name = col_name
+JOIN table_name ORDER_ITEMS
+  ON col_name = col_name
+JOIN table_name INVENTORY_ITEMS
+  ON col_name = col_name
+WHERE
+  col_name >= num
+  AND col_name < num
+  AND col_name >= num
+  AND col_name < num
+  AND col_name >= num
+  AND col_name < num
+GROUP BY
+  date(datetime(col_name / num, string)),
+  column_alias0,
+  column_alias1,
+  column_alias2
+ORDER BY
+  string,
+  column_alias0,
+  column_alias1,
+  column_alias2;",1
+12,"SELECT
+  table_alias0.col_name AS column_alias0,
+  table_alias0.col_name AS column_alias1,
+  datetime(table_alias0.col_name / num) AS column_alias2,
+  table_alias0.col_name AS column_alias3,
+  (table_alias0.col_name || string || table_alias0.col_name) AS column_alias4,
+  table_alias0.col_name AS column_alias5,
+  table_alias0.col_name AS column_alias6,
+  CAST(table_alias0.col_name AS column_alias7) AS column_alias8,
+  (CAST(strftime(string, CURRENT_DATE) AS column_alias9) - CAST(table_alias0.col_name AS column_alias7)) AS column_alias10,
+  CASE
+    WHEN (CAST(strftime(string, CURRENT_DATE) AS column_alias9) - CAST(table_alias0.col_name AS column_alias7)) < num THEN string
+    WHEN (CAST(strftime(string, CURRENT_DATE) AS column_alias9) - CAST(table_alias0.col_name AS column_alias7)) BETWEEN num AND num THEN string
+    ELSE string
+  END AS string,
+  table_alias0.col_name AS column_alias11,
+  table_alias2.col_name AS column_alias12
+FROM table_name table_alias0
+LEFT JOIN table_name table_alias1
+  ON table_alias1.col_name = CAST(table_alias0.col_name AS column_alias13)
+LEFT JOIN table_name table_alias2
+  ON table_alias2.col_name = table_alias1.col_name
+WHERE
+  table_alias0.col_name IS NOT NULL AND TRIM(table_alias0.col_name) != string
+  AND table_alias0.col_name IS NOT NULL
+  AND table_alias0.col_name IS NOT NULL AND TRIM(table_alias0.col_name) != string
+  AND datetime(table_alias0.col_name / num) BETWEEN datetime(string) AND datetime(string)
+ORDER BY table_alias0.col_name DESC
+LIMIT num;",1
+13,"SELECT 
+    CASE delivery_month 
+        WHEN num THEN string
+        WHEN num THEN string 
+        WHEN num THEN string
+        WHEN num THEN string
+        WHEN num THEN string
+        WHEN num THEN string
+        WHEN num THEN string
+        WHEN num THEN string
+        WHEN num THEN string
+        WHEN num THEN string
+        WHEN num THEN string
+        WHEN num THEN string
+    END as Month,
+    SUM(CASE WHEN delivery_year = num THEN delivered_orders ELSE num END) as string,
+    SUM(CASE WHEN delivery_year = num THEN delivered_orders ELSE num END) as string,
+    SUM(CASE WHEN delivery_year = num THEN delivered_orders ELSE num END) as string
+FROM (
+    SELECT 
+        CAST(strftime(string, datetime(order_delivered_customer_date, string) AS INTEGER)) as delivery_year,
+        CAST(strftime(string, datetime(order_delivered_customer_date, string) AS INTEGER)) as delivery_month,
+        COUNT(*) as delivered_orders
+    FROM BRAZILIAN_E_COMMERCE.BRAZILIAN_E_COMMERCE.OLIST_ORDERS 
+    WHERE order_status = string 
+        AND order_delivered_customer_date IS NOT NULL 
+        AND order_delivered_customer_date != string
+        AND CAST(strftime(string, datetime(order_delivered_customer_date, string) AS INTEGER)) IN (num, num, num)
+    GROUP BY delivery_year, delivery_month
+) monthly_data
+GROUP BY delivery_month
+ORDER BY delivery_month",1
+14,"SELECT 
+    CAST(strftime(string, TO_DATE(w.whsle_date) AS INTEGER)) as year,
+    c.category_name,
+    ROUND(AVG(w.string), num) as avg_wholesale_price,
+    ROUND(MAX(w.string), num) as max_wholesale_price,
+    ROUND(MIN(w.string), num) as min_wholesale_price,
+    ROUND(MAX(w.string) - MIN(w.string), num) as wholesale_price_difference,
+    ROUND(SUM(w.string * t.string), num) as total_wholesale_price,
+    ROUND(SUM(t.string * t.string), num) as total_selling_price,
+    ROUND(AVG(l.string), num) as avg_loss_rate,
+    ROUND(SUM(w.string * t.string * l.string / num), num) as total_loss,
+    ROUND(SUM(t.string * t.string) - 
+          SUM(w.string * t.string) - 
+          SUM(w.string * t.string * l.string / num), num) as profit
+FROM VEG_WHSLE_DF w
+JOIN VEG_TXN_DF t ON w.item_code = t.item_code AND w.whsle_date = t.txn_date
+JOIN VEG_CAT c ON w.item_code = c.item_code
+JOIN VEG_LOSS_RATE_DF l ON w.item_code = l.item_code
+WHERE CAST(strftime(string, TO_DATE(w.whsle_date) AS INTEGER)) BETWEEN num AND num
+    AND t.string = string
+GROUP BY CAST(strftime(string, TO_DATE(w.whsle_date) AS INTEGER)), c.category_name
+ORDER BY year, c.category_name",1
+15,"SELECT 
+    table_alias0.col_name:CAST(name AS column_alias0) as column_alias1,
+    COUNT(*) as column_alias2
+FROM table_name table_alias0
+WHERE table_alias0.col_name = string
+AND table_alias0.col_name IS NOT NULL
+AND EXISTS (
+    SELECT num 
+    FROM table_name table_alias1
+    WHERE table_alias1.col_name = table_alias0.col_name:CAST(name AS column_alias0)
+    AND table_alias1.col_name LIKE string
+    AND table_alias1.col_name < num
+    AND table_alias1.col_name LIKE string
+)
+GROUP BY column_alias1
+ORDER BY column_alias2 DESC
+LIMIT num;",1
+16,"SELECT CONCAT(first_name, string, last_name) AS string
+FROM FILM AS string
+JOIN LANGUAGE AS l ON language_id = language_id
+JOIN FILM_CATEGORY AS string ON film_id = film_id
+JOIN CATEGORY AS c ON category_id = category_id
+JOIN FILM_ACTOR AS string ON film_id = film_id
+JOIN ACTOR AS a ON actor_id = actor_id
+WHERE UPPER(name) = string
+  AND UPPER(name) = string
+  AND rating IN (string, string)
+  AND length <= num
+  AND TRY_TO_NUMBER(release_year) BETWEEN num AND num
+GROUP BY num
+ORDER BY COUNT(DISTINCT film_id) DESC, string
+LIMIT num;",1
+17,"SELECT COUNT(*) AS string
+FROM (
+  SELECT table_alias0.col_name
+  FROM table_name AS table_alias0,
+       json_each(table_alias0.col_name) AS table_alias1
+  WHERE table_alias0.col_name = string
+    AND table_alias0.col_name = string
+    AND table_alias0.col_name BETWEEN num AND num
+  GROUP BY table_alias0.col_name
+  HAVING SUM(CASE WHEN REGEXP_LIKE(table_alias1.value:CAST(column_alias0 AS column_alias0), string, string) THEN num ELSE num END) = num
+);",1
+18,"SELECT COUNT(DISTINCT col_name) AS string
+FROM table_name
+WHERE col_name = string
+  AND col_name IN (
+    string,
+    string,
+    string,
+    string
+  );",1
+19,"SELECT COUNT(DISTINCT col_name) AS string
+FROM table_name
+WHERE col_name IS NOT NULL
+  AND LOWER(col_name(col_name)) = string
+  AND LOWER(col_name(col_name)) IN (string, string);",1
+20,"SELECT COUNT(DISTINCT input_sessions.session) as unique_sessions
+FROM (
+    SELECT DISTINCT session, stamp
+    FROM FORM_LOG
+    WHERE path = string
+) as input_sessions
+INNER JOIN (
+    SELECT DISTINCT session, stamp
+    FROM FORM_LOG
+    WHERE path = string
+) as confirm_sessions
+    ON input_sessions.session = confirm_sessions.session
+WHERE input_sessions.stamp < confirm_sessions.stamp",1
+21,"SELECT DISTINCT
+  table_alias0.col_name
+FROM table_name AS table_alias0
+INNER JOIN table_name AS table_alias1
+  ON table_alias0.col_name = table_alias1.col_name
+WHERE
+  table_alias0.col_name = string
+  AND table_alias0.col_name = string
+  AND table_alias1.col_name:CAST(CodeMeaning AS column_alias0) = string",1
+22,"SELECT table_alias1.col_name AS column_alias0
+FROM table_name table_alias0
+JOIN table_name table_alias1
+ON table_alias0.col_name = table_alias1.col_name
+WHERE table_alias0.col_name ILIKE string AND table_alias0.col_name = num
+ORDER BY table_alias0.col_name DESC NULLS LAST
+LIMIT num;",1
+23,"SELECT w1.name as wrestler1, w2.name as wrestler2
+FROM WWE.WWE.MATCHES m
+JOIN WWE.WWE.WRESTLERS w1 ON m.winner_id = w1.CAST(id AS TEXT)
+JOIN WWE.WWE.WRESTLERS w2 ON m.loser_id = w2.CAST(id AS TEXT)
+WHERE m.title_id IN (SELECT CAST(id AS TEXT) FROM WWE.WWE.BELTS WHERE name LIKE string) 
+AND m.title_change = num 
+AND m.duration IS NOT NULL 
+AND m.duration != string 
+ORDER BY m.duration ASC 
+LIMIT num",1
+24,"WITH
+  CTE AS (
+    SELECT
+      table_alias0.col_name,
+      table_alias6.col_name:CAST(string AS column_alias0) AS string,
+      table_alias6.col_name:CAST(col_name AS column_alias0) AS string,
+      table_alias6.col_name:CAST(col_name AS column_alias0) AS string,
+      table_alias7.col_name:CAST(string AS column_alias0) AS string,
+      table_alias7.col_name:CAST(col_name AS column_alias0) AS string,
+      table_alias7.col_name:CAST(col_name AS column_alias0) AS string
+    FROM
+      table_name AS table_alias0,
+      json_each(table_alias0.col_name) AS table_alias3,
+      json_each(table_alias3.col_name:string) AS table_alias4,
+      json_each(table_alias4.col_name:string) AS table_alias5,
+      json_each(table_alias5.col_name:col_name) AS table_alias6,
+      json_each(table_alias5.col_name:string) AS table_alias7
+  ),
+  slide_embedding AS (
+    SELECT
+      col_name,
+      ARRAY_AGG(DISTINCT(CONCAT(string, string, string, string, string))) AS string
+    FROM
+      CTE
+    WHERE
+      string = string AND string = string 
+    GROUP BY
+      col_name
+  ),
+  slide_staining AS (
+    SELECT
+      col_name,
+      ARRAY_AGG(DISTINCT(CONCAT(string, string, string, string, string))) AS string
+    FROM
+      CTE
+    WHERE
+      string = string AND string = string 
+    GROUP BY
+      col_name
+  ),
+  embedding_data AS (
+    SELECT
+      table_alias0.col_name,
+      table_alias0.col_name,
+      table_alias1.string,
+      table_alias2.string
+    FROM
+      table_name AS table_alias0
+    LEFT JOIN
+      new_table AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+    LEFT JOIN
+      new_table AS table_alias2 ON table_alias0.col_name = table_alias2.col_name
+    WHERE
+      table_alias0.col_name = string
+  )
+SELECT
+  SPLIT_PART(CAST(table_alias8.col_name AS column_alias0), string, num) AS string,
+  SPLIT_PART(CAST(table_alias9.col_name AS column_alias0), string, num) AS string,
+  COUNT(*) AS string
+FROM
+  new_table
+  , json_each(embedding_data.string) AS table_alias8
+  , json_each(embedding_data.string) AS table_alias9
+GROUP BY
+  SPLIT_PART(CAST(table_alias8.col_name AS column_alias0), string, num),
+  SPLIT_PART(CAST(table_alias9.col_name AS column_alias0), string, num);",1
+25,"WITH
+  CTE AS (
+    SELECT string AS string
+  ),
+  users_base AS (
+    SELECT
+      col_name AS column_alias0,
+      CAST(datetime(col_name / num) AS DATE) AS string,
+      col_name
+    FROM table_name
+  ),
+  users_filtered AS (
+    SELECT table_alias0.*
+    FROM new_table table_alias0
+    JOIN CTE table_alias1 ON num=num
+    WHERE table_alias0.string <= table_alias1.string
+  ),
+  users_years AS (
+    SELECT
+      column_alias0,
+      string,
+      col_name,
+      (DATEDIFF(year, string, table_alias1.string)
+        - CASE WHEN date(string, table_alias1.string, string), string) > table_alias1.string THEN num ELSE num END
+      ) AS string
+    FROM new_table table_alias2
+    JOIN CTE table_alias1 ON num=num
+  ),
+  badges_per_user AS (
+    SELECT
+      column_alias0,
+      COUNT(*) AS string
+    FROM table_name
+    GROUP BY column_alias0
+  )
+SELECT
+  table_alias3.string AS string,
+  COALESCE(CAST(AVG(table_alias3.col_name) AS column_alias1), num) AS string,
+  COALESCE(CAST(AVG(COALESCE(table_alias4.string, num)) AS column_alias1), num) AS string,
+  COUNT(*) AS string
+FROM new_table table_alias3
+LEFT JOIN new_table table_alias4
+  ON table_alias3.col_name = table_alias4.col_name
+GROUP BY table_alias3.string
+ORDER BY table_alias3.string ASC;",1
+26,"WITH CTE AS (
+    SELECT
+        CASE
+            WHEN CAST(col_name[num] AS column_alias0) = string THEN string
+            ELSE string
+        END AS column_alias1,
+        column_alias2,
+        col_name,
+        col_name,
+        col_name
+    FROM table_name
+    WHERE LOWER(col_name) = string
+      AND CAST(col_name[num] AS column_alias0) IN (
+          string,
+          string
+      )
+),
+ranked_events AS (
+    SELECT
+        column_alias1,
+        column_alias2,
+        col_name,
+        col_name,
+        ROW_NUMBER() OVER (
+            PARTITION BY column_alias1
+            ORDER BY column_alias2, col_name, col_name
+        ) AS string
+    FROM CTE
+)
+SELECT
+    column_alias1,
+    datetime(column_alias2 / num) AS column_alias2,
+    col_name,
+    col_name
+FROM new_table
+WHERE string <= num
+ORDER BY column_alias2, col_name, column_alias1, col_name",1
+27,"WITH CTE AS (
+    SELECT
+        CAST(date(datetime(col_name / num, string)) AS DATE) AS string,
+        col_name,
+        SUM(col_name - COALESCE(col_name, num)) AS string
+    FROM table_name AS string
+    JOIN table_name AS string
+        ON col_name = col_name
+    JOIN table_name AS string
+        ON col_name = col_name
+    LEFT JOIN table_name AS string
+        ON col_name = col_name
+    WHERE col_name = string
+      AND col_name = string
+      AND datetime(col_name / num) >= datetime(string)
+      AND datetime(col_name / num) < datetime(string)
+      AND col_name IS NOT NULL
+    GROUP BY num, num
+),
+string AS (
+    SELECT
+        string,
+        SUM(string) AS string
+    FROM CTE
+    WHERE string >= string
+      AND string <= string
+    GROUP BY num
+),
+string AS (
+    SELECT
+        string,
+        string,
+        string - LAG(string) OVER (ORDER BY string) AS string
+    FROM CTE
+)
+SELECT
+    string,
+    string,
+    string
+FROM CTE
+WHERE string IS NOT NULL
+ORDER BY string DESC, string
+LIMIT num",1
+28,"WITH CTE AS (
+    SELECT
+        col_name
+    FROM table_name
+    WHERE
+        col_name = string
+        AND col_name <= num
+        AND col_name IN (string, string, string)
+),
+SNORA31_Expression AS (
+    SELECT
+        table_alias0.col_name,
+        LOG(num, AVG(table_alias0.col_name) + num) AS column_alias0
+    FROM table_name AS table_alias0
+    INNER JOIN CTE AS table_alias1
+        ON table_alias0.col_name = table_alias1.col_name
+    WHERE
+        table_alias0.col_name = string
+    GROUP BY
+        table_alias0.col_name
+),
+miRNA_Expression AS (
+    SELECT
+        table_alias0.col_name,
+        table_alias0.col_name,
+        AVG(table_alias0.col_name) AS column_alias1
+    FROM table_name AS table_alias0
+    INNER JOIN CTE AS table_alias1
+        ON table_alias0.col_name = table_alias1.col_name
+    GROUP BY
+        table_alias0.col_name,
+        table_alias0.col_name
+),
+CorrelationData AS (
+    SELECT
+        table_alias1.col_name,
+        CORR(table_alias0.new_column, table_alias1.new_column) AS column_alias2,
+        COUNT(*) AS column_alias3
+    FROM new_table AS table_alias0
+    INNER JOIN new_table AS table_alias1
+        ON table_alias0.col_name = table_alias1.col_name
+    GROUP BY
+        table_alias1.col_name
+)
+SELECT
+    col_name,
+    column_alias2 * SQRT((column_alias3 - num) / (num - column_alias2 * column_alias2)) AS column_alias4
+FROM new_table
+WHERE
+    column_alias3 > num
+    AND ABS(column_alias2) BETWEEN num AND num",1
+29,"WITH CTE AS (
+    SELECT
+        col_name AS column_alias0
+    FROM new_table
+    WHERE column_alias1 = string
+      AND col_name = string
+      AND col_name = string
+),
+string AS (
+    SELECT
+        table_alias0.col_name AS column_alias1,
+        string AS string
+    FROM CTE table_alias0
+    JOIN new_table table_alias1
+      ON table_alias1.col_name = table_alias0.col_name
+     AND table_alias1.col_name = string
+     AND table_alias1.col_name IS NOT NULL
+),
+string AS (
+    SELECT
+        column_alias1,
+        ST_AREA(ST_UNION_AGG(string)) AS string
+    FROM CTE
+    GROUP BY column_alias1
+),
+string AS (
+    SELECT column_alias1 AS column_alias0
+    FROM CTE
+    ORDER BY string DESC
+    LIMIT num
+)
+SELECT
+    table_alias2.col_name AS string,
+    table_alias2.col_name AS column_alias2,
+    table_alias2.col_name AS column_alias3
+FROM new_table table_alias2
+JOIN CTE table_alias3
+  ON table_alias2.col_name = table_alias3.col_name
+WHERE table_alias2.col_name = string
+  AND table_alias2.col_name IS NOT NULL
+  AND table_alias2.col_name IS NOT NULL
+  AND REGEXP_LIKE(table_alias2.col_name, string)
+  AND table_alias2.col_name IS NOT NULL AND TRIM(table_alias2.col_name) != string
+  AND table_alias2.col_name IS NOT NULL AND TRIM(table_alias2.col_name) != string
+ORDER BY table_alias2.col_name DESC, table_alias2.col_name DESC
+LIMIT num;",1
+30,"WITH CTE AS (
+    SELECT
+        col_name,
+        string AS column_alias0
+    FROM
+        table_name AS table_alias0
+    JOIN
+        table_name AS table_alias1
+        ON ST_CONTAINS(string, string)
+    , TABLE(json_each(col_name) AS table_alias2) AS string
+    WHERE
+        col_name = string
+        AND VALUE:CAST(string AS column_alias1) = string
+        AND VALUE:CAST(value AS column_alias1) IN (string, string, string)
+)
+SELECT
+    MIN(num)
+FROM
+    CTE AS string
+CROSS JOIN
+    CTE AS string
+WHERE
+    col_name < col_name",1
+31,"WITH CTE AS (
+    SELECT
+        column_alias0.col_name,
+        SUM(column_alias0.col_name) AS string
+    FROM new_table.new_column.Fact_CensusValues_ACS2021_ByZip AS column_alias0
+    JOIN new_table.new_column.LU_GeographyExpanded AS l ON column_alias0.col_name = l.col_name
+    WHERE l.col_name = string
+      AND column_alias0.col_name IN (string, string)
+    GROUP BY column_alias0.col_name
+),
+StateBenchmark AS (
+    SELECT
+        SUM(col_name) AS string
+    FROM new_table.new_column.Fact_StateBenchmark_ACS2021
+    WHERE col_name = string
+      AND col_name IN (string, string)
+),
+StatePopulation AS (
+    SELECT
+        MAX(col_name) AS string
+    FROM new_table.new_column.Fact_StateBenchmark_ACS2021
+    WHERE col_name = string
+)
+SELECT
+    table_alias0.col_name AS column_alias1,
+    table_alias0.string AS string,
+    table_alias1.string AS string,
+    table_alias2.string AS string
+FROM CTE table_alias0
+CROSS JOIN new_table table_alias1
+CROSS JOIN new_table table_alias2
+ORDER BY string DESC
+LIMIT num;",1
+32,"WITH CTE AS (
+    SELECT
+        column_alias1,
+        MIN(TRY_TO_DATE(date)) AS column_alias0
+    FROM table_name
+    WHERE col_name = string
+      AND TRY_TO_DATE(date) IS NOT NULL
+    GROUP BY column_alias1
+),
+string AS (
+    SELECT DISTINCT
+        column_alias1
+    FROM table_name
+    WHERE col_name IN (string,string,string,string,string,string,string,string,string)
+       OR col_name IN (string,string,string,string,string,string,string,string,string,string,string,string)
+),
+string AS (
+    SELECT DISTINCT
+        table_alias0.col_name AS column_alias1,
+        table_alias0.col_name,
+        table_alias0.col_name,
+        TRY_TO_DATE(table_alias0.col_name) AS column_alias2,
+        table_alias1.new_column
+    FROM table_name table_alias0
+    JOIN CTE table_alias1 ON table_alias0.col_name = table_alias1.col_name
+    JOIN CTE table_alias2 ON table_alias0.col_name = table_alias2.col_name
+    WHERE table_alias0.col_name = string
+      AND table_alias1.new_column BETWEEN TO_DATE(string) AND TO_DATE(string)
+      AND TRY_TO_DATE(table_alias0.col_name) IS NOT NULL
+),
+string AS (
+    SELECT
+        table_alias3.col_name,
+        COUNT(DISTINCT table_alias3.col_name) AS string
+    FROM table_name table_alias3
+    JOIN CTE table_alias4 ON table_alias3.col_name = table_alias4.col_name
+    WHERE TRY_TO_DATE(table_alias3.col_name) IS NOT NULL
+      AND TRY_TO_DATE(table_alias3.col_name) < table_alias4.new_column
+    GROUP BY table_alias3.col_name
+),
+string AS (
+    SELECT
+        table_alias5.col_name AS column_alias1,
+        COUNT(DISTINCT table_alias5.col_name) AS string
+    FROM table_name table_alias5
+    JOIN CTE table_alias4 ON table_alias5.col_name = table_alias4.col_name
+    JOIN table_name table_alias6 ON table_alias6.col_name = table_alias5.col_name
+    WHERE TRY_TO_DATE(table_alias6.col_name) IS NOT NULL
+      AND TRY_TO_DATE(table_alias6.col_name) >= table_alias4.new_column
+      AND TRY_TO_DATE(table_alias6.col_name) <= date(table_alias4.new_column, string)
+    GROUP BY table_alias5.col_name
+)
+SELECT
+    table_alias4.col_name,
+    table_alias4.col_name,
+    table_alias4.new_column,
+    COALESCE(table_alias7.string, num) AS string,
+    COALESCE(table_alias8.string, num) AS string
+FROM CTE table_alias4
+LEFT JOIN CTE table_alias7 ON table_alias7.col_name = table_alias4.col_name
+LEFT JOIN CTE table_alias8 ON table_alias8.col_name = table_alias4.col_name
+ORDER BY table_alias4.new_column, table_alias4.col_name",1
+33,"WITH CTE AS (
+    SELECT
+        date(date, string) AS column_alias0,
+        col_name,
+        SUM(col_name) AS column_alias1
+    FROM table_name
+    WHERE date >= string AND date < string AND col_name IS NOT NULL
+    GROUP BY num, num
+),
+TotalMonthlySales AS (
+    SELECT
+        column_alias0,
+        SUM(column_alias1) AS column_alias2
+    FROM CTE
+    GROUP BY num
+),
+MonthlyCategoryPercentage AS (
+    SELECT
+        table_alias0.new_column,
+        table_alias0.col_name,
+        (table_alias0.new_column / table_alias1.new_column) AS column_alias3
+    FROM CTE table_alias0
+    JOIN new_table table_alias1 ON table_alias0.new_column = table_alias1.new_column
+),
+EligibleCategories AS (
+    SELECT
+        col_name
+    FROM new_table
+    GROUP BY col_name
+    HAVING COUNT(DISTINCT column_alias0) >= num AND AVG(column_alias3) >= num
+)
+SELECT
+    table_alias2.col_name AS column_alias4,
+    table_alias3.col_name AS column_alias5
+FROM new_table AS table_alias2
+JOIN new_table AS table_alias3 ON table_alias2.new_column = table_alias3.new_column AND table_alias2.col_name < table_alias3.col_name
+WHERE table_alias2.col_name IN (SELECT col_name FROM new_table)
+  AND table_alias3.col_name IN (SELECT col_name FROM new_table)
+GROUP BY num, num
+ORDER BY CORR(table_alias2.new_column, table_alias3.new_column)
+LIMIT num;",1
+34,"WITH CTE AS (
+    SELECT
+        table_alias0.col_name,
+        ABS(table_alias1.col_name - table_alias0.col_name) AS column_alias0
+    FROM table_name AS table_alias0
+    JOIN table_name AS table_alias1
+        ON table_alias0.col_name = table_alias1.col_name
+    WHERE table_alias0.col_name IS NOT NULL AND table_alias1.col_name IS NOT NULL
+),
+vulnerable_pop_by_zip AS (
+    SELECT
+        col_name,
+        (col_name * num +
+         (col_name + col_name) * num +
+         col_name * num +
+         col_name * num +
+         col_name * num) AS column_alias1
+    FROM table_name
+    WHERE
+        col_name IS NOT NULL AND
+        col_name IS NOT NULL AND
+        col_name IS NOT NULL AND
+        col_name IS NOT NULL AND
+        col_name IS NOT NULL AND
+        col_name IS NOT NULL
+),
+joined_data AS (
+    SELECT
+        table_alias2.col_name,
+        table_alias0.new_column,
+        table_alias1.new_column
+    FROM CTE AS table_alias0
+    JOIN new_table AS table_alias1
+        ON table_alias0.col_name = table_alias1.col_name
+    JOIN table_name AS table_alias2
+        ON table_alias0.col_name = table_alias2.col_name
+)
+SELECT
+    col_name,
+    AVG(column_alias0) AS column_alias2,
+    AVG(column_alias1) AS column_alias3
+FROM new_table
+GROUP BY col_name
+ORDER BY column_alias2 DESC
+LIMIT num",1
+35,"WITH CTE AS (
+    SELECT
+        table_alias0.col_name,
+        table_alias0.col_name,
+        AVG(LOG(num, table_alias1.col_name + num)) AS column_alias0
+    FROM table_name AS table_alias0
+    JOIN table_name AS table_alias1
+        ON table_alias0.col_name = table_alias1.col_name
+    WHERE
+        table_alias0.col_name = string
+        AND table_alias1.col_name = string
+        AND table_alias0.col_name IS NOT NULL
+        AND NOT (table_alias0.col_name LIKE jsonb AND table_alias0.col_name LIKE string)
+    GROUP BY
+        table_alias0.col_name,
+        table_alias0.col_name
+)
+SELECT
+    col_name,
+    AVG(column_alias0)
+FROM CTE
+GROUP BY
+    col_name;",1
+36,"WITH CTE AS (
+    SELECT
+        table_alias0.col_name,
+        table_alias0.col_name,
+        COALESCE(table_alias0.col_name, table_alias0.col_name) AS column_alias0,
+        COALESCE(table_alias0.col_name, num) AS column_alias1,
+        COALESCE(table_alias0.col_name, num) AS column_alias2,
+        COALESCE(table_alias0.col_name, num) AS column_alias3,
+        COALESCE(table_alias0.col_name, num) * COALESCE(table_alias0.col_name, num) AS string,
+        b.col_name
+    FROM
+        new_table.new_column.TRANSACTIONS table_alias0
+        JOIN new_table.new_column.BLOCKS b
+            ON table_alias0.col_name = b.col_name
+    WHERE
+        table_alias0.col_name = num
+        AND TO_DATE(datetime(table_alias0.col_name / num)) = string
+),
+string AS (
+    SELECT
+        column_alias4,
+        SUM(column_alias5) AS string
+    FROM (
+        SELECT
+            table_alias0.col_name AS column_alias4,
+            -CAST(table_alias0.col_name AS col_name(num, num)) AS column_alias5
+        FROM
+            CTE table_alias0
+        UNION ALL
+        SELECT
+            table_alias0.col_name AS column_alias4,
+            CAST(table_alias0.col_name AS col_name(num, num)) AS column_alias5
+        FROM
+            CTE table_alias0
+        WHERE
+            table_alias0.col_name IS NOT NULL
+        UNION ALL
+        SELECT
+            table_alias0.col_name AS column_alias4,
+            -CAST(table_alias0.string AS col_name(num, num)) AS column_alias5
+        FROM
+            CTE table_alias0
+        UNION ALL
+        SELECT
+            table_alias0.col_name AS column_alias4,
+            CAST(table_alias0.string AS col_name(num, num)) AS column_alias5
+        FROM
+            CTE table_alias0
+    ) AS column_alias6
+    WHERE
+        column_alias4 IS NOT NULL
+    GROUP BY
+        column_alias4
+),
+string AS (
+    SELECT
+        column_alias4,
+        string
+    FROM
+        CTE
+    AND num=num
+),
+string AS (
+    SELECT
+        column_alias4,
+        string
+    FROM
+        CTE
+    AND num=num
+)
+SELECT
+    metrics.string,
+    metrics.col_name,
+    metrics.string
+FROM (
+    SELECT
+        string AS string,
+        table_alias1.col_name,
+        COALESCE(table_alias1.string, stats.string, num) AS string
+    FROM
+        (SELECT MAX(string) AS string FROM CTE) stats
+        LEFT JOIN CTE table_alias1 ON num = num
+    UNION ALL
+    SELECT
+        string AS string,
+        table_alias2.col_name,
+        COALESCE(table_alias2.string, stats.string, num) AS string
+    FROM
+        (SELECT MIN(string) AS string FROM CTE) stats
+        LEFT JOIN CTE table_alias2 ON num = num
+) metrics
+ORDER BY
+    metrics.string DESC;",1
+37,"WITH CTE AS (
+    SELECT 
+        CAST(strftime(string, datetime(col_name/num) AS column_alias0)) as column_alias1,
+        col_name,
+        col_name,
+        col_name, 
+        col_name,
+        col_name,
+        col_name
+    FROM new_table.new_column.TRANSACTIONS 
+    WHERE CAST(strftime(string, datetime(col_name/num) AS column_alias0)) = num
+      AND col_name = num
+),
+potential_coinjoins AS (
+    SELECT 
+        column_alias1,
+        col_name,
+        col_name,
+        col_name,
+        col_name,
+        col_name,
+        col_name
+    FROM CTE
+    WHERE col_name > num
+      AND col_name <= col_name
+),
+transactions_with_output_values AS (
+    SELECT 
+        table_alias0.new_column,
+        table_alias0.col_name,
+        table_alias0.col_name,
+        table_alias0.col_name,
+        table_alias0.col_name, 
+        table_alias0.col_name,
+        output_flat.col_name:CAST(col_name AS column_alias0) as column_alias2
+    FROM new_table table_alias0,
+    json_each(table_alias0.col_name) AS table_alias5
+),
+equal_value_groups AS (
+    SELECT 
+        column_alias1,
+        col_name,
+        col_name,
+        col_name,
+        col_name,
+        col_name,
+        column_alias2,
+        COUNT(*) OVER (PARTITION BY col_name, column_alias2) as column_alias3
+    FROM new_table
+    WHERE column_alias2 > num
+),
+coinjoin_transactions AS (
+    SELECT DISTINCT 
+        column_alias1,
+        col_name,
+        col_name, 
+        col_name,
+        col_name,
+        col_name
+    FROM new_table
+    WHERE column_alias3 >= num
+),
+monthly_coinjoin_stats AS (
+    SELECT 
+        column_alias1,
+        COUNT(*) as column_alias4,
+        SUM(col_name) as column_alias5,
+        SUM(col_name) as column_alias6,
+        SUM(col_name) as column_alias7
+    FROM new_table
+    GROUP BY column_alias1
+),
+table_alias1 AS (
+    SELECT 
+        column_alias1,
+        COUNT(*) as column_alias8,
+        SUM(col_name) as column_alias9,
+        SUM(col_name) as column_alias10,
+        SUM(col_name) as column_alias11
+    FROM CTE
+    GROUP BY column_alias1
+),
+table_alias3 AS (
+    SELECT 
+        table_alias0.new_column,
+        COALESCE(table_alias2.new_column, num) as column_alias4,
+        table_alias0.new_column,
+        COALESCE(table_alias2.new_column, num) as column_alias5,
+        COALESCE(table_alias2.new_column, num) as column_alias6,
+        table_alias0.new_column,
+        table_alias0.new_column,
+        COALESCE(table_alias2.new_column, num) as column_alias7,
+        table_alias0.new_column,
+        ROUND((COALESCECAST(table_alias2.new_column, num AS column_alias0) / table_alias0.new_column) * num, num) as column_alias12
+    new_table table_alias1 table_alias0
+    LEFT JOIN new_table table_alias2 ON table_alias0.new_column = table_alias2.new_column
+),
+highest_month AS (
+    SELECT 
+        column_alias1,
+        column_alias12,
+        ROW_NUMBER() OVER (ORDER BY column_alias12 new_table) as column_alias13
+    FROM table_alias3
+)
+SELECT 
+    mp.new_column as column_alias14,
+    ROUND((CAST(mp.new_column AS column_alias0) / mp.new_column) * num, num) as column_alias15,
+    ROUND(((CAST(mp.new_column AS column_alias0) / mp.new_column) + (CAST(mp.new_column AS column_alias0) / mp.new_column)) * num, num) as column_alias16,
+    mp.new_column
+new_table table_alias3 mp
+JOIN new_table table_alias4 ON mp.new_column = table_alias4.new_column
+WHERE table_alias4.new_column = num",1
+38,"WITH CTE AS (
+    SELECT 
+        DATE_PART(EPOCH_MICROSECOND, CAST(string AS column_alias0)) AS column_alias1,
+        DATE_PART(EPOCH_MICROSECOND, CAST(string AS column_alias0)) AS column_alias2
+),
+address_transactions AS (
+    SELECT 
+        CAST(FLATTENED.col_name AS column_alias0) AS column_alias3,
+        table_alias0.col_name AS column_alias4,
+        -table_alias0.col_name AS column_alias5,
+        table_alias0.col_name
+    FROM table_name table_alias0,
+    json_each(PARSE_JSON(table_alias0.col_name) AS table_alias2) FLATTENED
+    WHERE table_alias0.col_name BETWEEN (SELECT column_alias1 FROM CTE) AND (SELECT column_alias2 FROM CTE)
+    UNION ALL
+    SELECT 
+        CAST(FLATTENED.col_name AS column_alias0) AS column_alias3,
+        table_alias1.col_name AS column_alias4,
+        table_alias1.col_name AS column_alias5,
+        table_alias1.col_name
+    FROM table_name table_alias1,
+    json_each(PARSE_JSON(table_alias1.col_name) AS table_alias2) FLATTENED
+    WHERE table_alias1.col_name BETWEEN (SELECT column_alias1 FROM CTE) AND (SELECT column_alias2 FROM CTE)
+),
+address_balances AS (
+    SELECT 
+        column_alias3,
+        column_alias4,
+        SUM(column_alias5) AS column_alias6
+    FROM new_table
+    GROUP BY column_alias3, column_alias4
+)
+SELECT 
+    column_alias4,
+    MAX(column_alias6) AS column_alias7,
+    MIN(column_alias6) AS column_alias8
+FROM new_table
+GROUP BY column_alias4
+ORDER BY column_alias4;",1
+39,"WITH CTE AS (
+    SELECT 
+        MIN(col_name) AS string,
+        MAX(col_name)  AS string
+    FROM table_name
+    WHERE col_name ILIKE string      
+      AND col_name = string
+), laml_segments AS (
+    SELECT 
+        table_alias0.col_name,
+        table_alias0.col_name,
+        table_alias0.col_name,
+        table_alias0.col_name
+    FROM table_name table_alias0
+    WHERE table_alias0.col_name = string
+      AND table_alias0.col_name = string
+), overlaps AS (
+    SELECT 
+        table_alias1.col_name,
+        GREATEST(table_alias1.col_name, table_alias2.string) AS string,
+        LEAST(table_alias1.col_name,   table_alias2.string)   AS string,
+        table_alias1.col_name
+    FROM new_table table_alias1
+    CROSS JOIN CTE table_alias2
+    WHERE table_alias1.col_name   >= table_alias2.string   
+      AND table_alias1.col_name <= table_alias2.string     
+), weighted AS (
+    SELECT 
+        col_name,
+        SUM( (string - string + num) * col_name ) AS string,
+        SUM(  string - string + num )                  AS string
+    FROM new_table
+    GROUP BY col_name
+), per_case AS (
+    SELECT 
+        col_name,
+        string / string AS string
+    FROM new_table
+)
+SELECT col_name
+FROM new_table
+WHERE string = (
+    SELECT MAX(string) FROM new_table
+)
+ORDER BY col_name;",1
+40,"WITH CTE AS (
+    SELECT 
+        col_name,
+        MIN(col_name) as column_alias0,
+        MAX(col_name) as column_alias1,
+        COUNT(*) as column_alias2
+    FROM new_table.new_column._1000_GENOMES_PHASE_3_OPTIMIZED_SCHEMA_VARIANTS_20150220
+    WHERE col_name IN (string, string)
+    GROUP BY col_name
+),
+min_counts AS (
+    SELECT 
+        v.col_name,
+        v.col_name,
+        COUNT(*) as column_alias3
+    FROM new_table.new_column._1000_GENOMES_PHASE_3_OPTIMIZED_SCHEMA_VARIANTS_20150220 v
+    INNER JOIN CTE table_alias0 ON v.col_name = table_alias0.col_name
+    WHERE v.col_name = table_alias0.new_column
+    GROUP BY v.col_name, v.col_name
+),
+max_counts AS (
+    SELECT 
+        v.col_name,
+        v.col_name,
+        COUNT(*) as column_alias3
+    FROM new_table.new_column._1000_GENOMES_PHASE_3_OPTIMIZED_SCHEMA_VARIANTS_20150220 v
+    INNER JOIN CTE table_alias0 ON v.col_name = table_alias0.col_name
+    WHERE v.col_name = table_alias0.new_column
+    GROUP BY v.col_name, v.col_name
+)
+SELECT 
+    table_alias0.col_name,
+    table_alias0.new_column,
+    table_alias0.new_column,
+    COALESCE(table_alias1.new_column, num) * num / table_alias0.new_column AS column_alias4,
+    COALESCE(table_alias2.new_column, num) * num / table_alias0.new_column AS column_alias5
+FROM CTE table_alias0
+LEFT JOIN new_table table_alias1 ON table_alias0.col_name = table_alias1.col_name
+LEFT JOIN new_table table_alias2 ON table_alias0.col_name = table_alias2.col_name
+ORDER BY table_alias0.col_name;",1
+41,"WITH CTE AS (
+    SELECT 
+        column_alias1,
+        SUM(CASE WHEN column_alias3 = string THEN column_alias2 ELSE -column_alias2 END) AS column_alias0
+    FROM (
+        SELECT 
+            col_name AS column_alias1,
+            CAST(col_name AS col_name(num,num)) AS column_alias2,
+            string AS column_alias3
+        FROM new_table.new_column.TOKEN_TRANSFERS 
+        WHERE col_name = string
+        UNION ALL
+        SELECT 
+            col_name AS column_alias1,
+            CAST(col_name AS col_name(num,num)) AS column_alias2,
+            string AS column_alias3
+        FROM new_table.new_column.TOKEN_TRANSFERS 
+        WHERE col_name = string
+    )
+    WHERE column_alias1 != string
+    GROUP BY column_alias1
+)
+SELECT column_alias1
+FROM CTE
+WHERE column_alias0 > num
+ORDER BY column_alias0 ASC
+LIMIT num",1
+42,"WITH CTE AS (
+    SELECT 
+        column_alias5,
+        column_alias4.value:CAST(name AS column_alias0) as column_alias1,
+        ROW_NUMBER() OVER (PARTITION BY column_alias5 ORDER BY column_alias4.value:CAST(bytes AS column_alias2) DESC) as column_alias3
+    FROM new_table.new_column.LANGUAGES,
+         TABLE(json_each(PARSE_JSON(col_name) AS table_alias2)) as column_alias4
+    WHERE col_name != jsonb
+),
+primary_lang_only AS (
+    SELECT column_alias5, column_alias1
+    FROM CTE
+    WHERE column_alias3 = num
+),
+pull_requests_jan18 AS (
+    SELECT 
+        col_name:CAST(name AS column_alias0) as column_alias5,
+        COUNT(*) as column_alias6
+    FROM new_table.col_name._2023 
+    WHERE col_name = string
+        AND col_name >= num  
+        AND col_name < num   
+    GROUP BY col_name:CAST(name AS column_alias0)
+)
+SELECT 
+    table_alias0.new_column,
+    SUM(table_alias1.new_column) as column_alias7
+FROM new_table table_alias0
+JOIN new_table table_alias1 ON table_alias0.col_name = table_alias1.col_name
+GROUP BY table_alias0.new_column
+HAVING column_alias7 >= num
+ORDER BY column_alias7 DESC",1
+43,"WITH CTE AS (
+    SELECT  string AS column_alias0
+    FROM    table_name table_alias0
+            ,json_each(table_alias0.col_name) AS table_alias6
+    WHERE   table_alias0.col_name = string
+      AND   tag.value:CAST(string AS column_alias1)  = string
+      AND   tag.value:CAST(value AS column_alias1) = string
+    LIMIT num
+), candidate_raw AS (
+    SELECT  COALESCE(table_alias0.col_name, table_alias0.col_name)      AS column_alias2,
+            table_alias0.col_name                                 AS column_alias3,
+            table_alias0.col_name                                 AS column_alias4
+    FROM    table_name table_alias0
+            CROSS JOIN CTE table_alias1
+    WHERE   table_alias0.col_name = string
+      AND   table_alias0.col_name IS NOT NULL
+      AND   LOWER(TO_VARCHAR(table_alias0.col_name)) NOT ILIKE string
+      AND   ST_INTERSECTS(string, table_alias1.new_column)
+), name_tags AS (
+    SELECT  table_alias2.col_name,
+            MAX(tag.value:CAST(value AS column_alias1)) AS column_alias5
+    FROM    new_table table_alias2,
+            json_each(table_alias2.new_column) AS table_alias6
+    WHERE   tag.value:CAST(string AS column_alias1) = string
+    GROUP BY table_alias2.col_name
+), geom_candidates AS (
+    SELECT  column_alias2, string AS column_alias0
+    FROM    new_table
+), point_counts AS (
+    SELECT  table_alias3.col_name                         AS column_alias6,
+            table_alias4.new_column                   AS column_alias7,
+            COUNT(*)                      AS column_alias8
+    FROM        new_table table_alias3
+    LEFT JOIN   new_table table_alias4   ON table_alias4.col_name = table_alias3.col_name
+    JOIN        table_name table_alias5
+                ON table_alias5.col_name IS NOT NULL
+               AND ST_CONTAINS(table_alias3.new_column, string)
+    GROUP BY table_alias3.col_name, table_alias4.new_column
+)
+SELECT   column_alias6 AS column_alias2,
+         column_alias7,
+         column_alias8
+FROM     new_table
+ORDER BY column_alias8 DESC, column_alias7
+LIMIT num;",1
+44,"WITH CTE AS (
+    SELECT DISTINCT
+        col_name
+    FROM table_name
+    WHERE
+        col_name = string AND FILTER = string
+), PatientData AS (
+    SELECT
+        table_alias0.col_name,
+        CASE
+            WHEN table_alias1.col_name IS NOT NULL THEN string
+            ELSE string
+        END AS column_alias0
+    FROM table_name AS table_alias0
+    LEFT JOIN CTE AS table_alias1
+        ON table_alias0.col_name = table_alias1.col_name
+    WHERE
+        table_alias0.col_name = string
+        AND table_alias0.col_name IS NOT NULL
+), InitialContingency AS (
+    SELECT
+        col_name,
+        column_alias0,
+        COUNT(*) AS column_alias1
+    FROM new_table
+    GROUP BY
+        col_name,
+        column_alias0
+), FilteredContingency AS (
+    SELECT
+        col_name,
+        column_alias0,
+        column_alias1
+    FROM new_table
+    WHERE
+        col_name IN (
+            SELECT col_name
+            FROM new_table
+            GROUP BY col_name
+            HAVING SUM(column_alias1) > num
+        )
+        AND column_alias0 IN (
+            SELECT column_alias0
+            FROM new_table
+            GROUP BY column_alias0
+            HAVING SUM(column_alias1) > num
+        )
+), ChiSquareInput AS (
+    SELECT
+        col_name,
+        column_alias0,
+        column_alias1,
+        SUM(column_alias1) OVER (PARTITION BY col_name) AS column_alias2,
+        SUM(column_alias1) OVER (PARTITION BY column_alias0) AS column_alias3,
+        SUM(column_alias1) OVER () AS column_alias4
+    FROM new_table
+)
+SELECT
+    SUM(POWER(column_alias1 - (column_alias2 * column_alias3 / column_alias4), num) / (column_alias2 * column_alias3 / column_alias4))
+FROM new_table;",1
+45,"WITH CTE AS (
+    SELECT DISTINCT
+        table_alias0.col_name,
+        table_alias0.col_name,
+        table_alias0.col_name
+    FROM table_name AS table_alias0
+    JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+    WHERE table_alias0.col_name = string AND (table_alias1.col_name = string OR table_alias1.col_name = string)
+)
+SELECT
+    table_alias2.col_name AS column_alias0,
+    table_alias2.col_name,
+    table_alias3.col_name AS column_alias1,
+    COUNT(DISTINCT CASE
+        WHEN table_alias5.CAST(date AS column_alias2) >= date(table_alias3.CAST(date AS column_alias2), string) AND table_alias5.CAST(date AS column_alias2) < table_alias3.CAST(date AS column_alias2)
+        THEN table_alias4.col_name
+        ELSE NULL
+    END) AS column_alias3,
+    COUNT(DISTINCT CASE
+        WHEN table_alias5.CAST(date AS column_alias2) > table_alias3.CAST(date AS column_alias2) AND table_alias5.CAST(date AS column_alias2) <= date(table_alias3.CAST(date AS column_alias2), string)
+        THEN table_alias4.col_name
+        ELSE NULL
+    END) AS column_alias4,
+    table_alias2.col_name
+FROM CTE AS table_alias2
+JOIN table_name AS table_alias3 ON table_alias2.col_name = table_alias3.col_name
+LEFT JOIN table_name AS table_alias4 ON table_alias2.col_name = table_alias4.col_name
+LEFT JOIN table_name AS table_alias5 ON table_alias4.col_name = table_alias5.col_name
+GROUP BY
+    table_alias2.col_name,
+    table_alias2.col_name,
+    table_alias3.col_name,
+    table_alias2.col_name
+HAVING
+    column_alias3 > num OR column_alias4 > num
+ORDER BY
+    column_alias1",1
+46,"WITH CTE AS (
+    SELECT DISTINCT 
+        SUBSTRING(f.value:CAST(code AS column_alias0), num, num) AS column_alias1
+    FROM table_name table_alias0,
+    json_each(table_alias0.col_name) AS table_alias5
+    WHERE table_alias0.col_name = string 
+    AND table_alias0.col_name >= num 
+    AND table_alias0.col_name <= num
+),
+all_german_patents AS (
+    SELECT 
+        col_name,
+        col_name,
+        FLOOR(col_name / num) AS column_alias2,
+        f.value:CAST(code AS column_alias0) AS column_alias3,
+        SUBSTRING(column_alias3, num, num) AS column_alias1
+    FROM table_name table_alias0,
+    json_each(table_alias0.col_name) AS table_alias5
+    WHERE table_alias0.col_name = string 
+    AND table_alias0.col_name IS NOT NULL
+    AND table_alias0.col_name > num
+    AND column_alias1 IN (SELECT column_alias1 FROM CTE)
+),
+yearly_counts AS (
+    SELECT 
+        column_alias1,
+        column_alias2,
+        COUNT(DISTINCT col_name) AS column_alias4
+    FROM new_table
+    WHERE column_alias2 > num
+    GROUP BY column_alias1, column_alias2
+),
+ordered_counts AS (
+    SELECT 
+        column_alias1,
+        column_alias2,
+        column_alias4,
+        ROW_NUMBER() OVER (PARTITION BY column_alias1 ORDER BY column_alias2) AS column_alias5
+    FROM new_table
+),
+ema_calculated AS (
+    SELECT 
+        column_alias1,
+        column_alias2,
+        column_alias4,
+        column_alias4 AS column_alias6,
+        column_alias5
+    FROM new_table
+    WHERE column_alias5 = num
+    UNION ALL
+    SELECT 
+        table_alias1.new_column,
+        table_alias1.new_column,
+        table_alias1.new_column,
+        ROUND(num * table_alias1.new_column + num * table_alias2.new_column, num) AS column_alias6,
+        table_alias1.new_column
+    FROM new_table table_alias1
+    JOIN new_table table_alias2 ON table_alias1.new_column = table_alias2.new_column AND table_alias1.new_column = table_alias2.new_column + num
+),
+max_ema_per_cpc AS (
+    SELECT 
+        column_alias1,
+        column_alias2,
+        column_alias6,
+        ROW_NUMBER() OVER (PARTITION BY column_alias1 ORDER BY column_alias6 DESC, column_alias2 DESC) as column_alias7
+    FROM new_table
+)
+SELECT 
+    table_alias3.new_column AS column_alias8,
+    table_alias4.col_name AS column_alias9,
+    table_alias3.new_column AS column_alias10,
+    table_alias3.new_column AS column_alias11
+FROM new_table table_alias3
+LEFT JOIN table_name table_alias4 
+    ON table_alias3.new_column = table_alias4.col_name
+WHERE table_alias3.new_column = num
+ORDER BY table_alias3.new_column DESC",1
+47,"WITH CTE AS (
+    SELECT DISTINCT col_name AS string
+    FROM table_name table_alias0,
+         json_each(col_name) AS table_alias3
+    WHERE col_name IS NOT NULL
+      AND UPPER(CTE.value:CAST(name AS column_alias0)) LIKE string
+),
+string AS (
+    SELECT DISTINCT col_name AS string
+    FROM table_name string,
+         json_each(col_name) AS table_alias3
+         JOIN CTE table_alias1
+           ON CTE.value:CAST(col_name AS column_alias0) = string
+    WHERE col_name IS NOT NULL
+),
+string AS (
+    SELECT DISTINCT
+           string,
+           TRIM(LOWER(CTE.value:CAST(name AS column_alias0)))            AS string,
+           SUBSTR(col_name.value:CAST(code AS column_alias0) , num , num)         AS string
+    FROM CTE string
+         JOIN table_name string
+           ON col_name = string
+         , json_each(col_name) AS table_alias3
+         , json_each(col_name) AS table_alias4
+    WHERE CTE.value:name IS NOT NULL
+      AND LOWER(CTE.value:CAST(name AS column_alias0)) NOT LIKE string
+      AND col_name.value:CAST(string AS column_alias1) = num
+)
+SELECT
+       string                AS string,
+       col_name                    AS string,
+       COUNT(DISTINCT string)   AS string
+FROM CTE string
+     JOIN table_name table_alias2
+       ON col_name = string
+GROUP BY
+       string,
+       col_name
+ORDER BY
+       string DESC,
+       string,
+       string;",1
+48,"WITH CTE AS (
+    SELECT col_name
+    FROM new_table.new_column.GSOD2015
+    WHERE col_name = string
+      AND col_name = string
+      AND col_name = string
+),
+nyc_zips AS (
+    SELECT col_name, string AS column_alias0
+    FROM new_table.new_column.ZIP_CODES
+    WHERE col_name = string AND col_name ILIKE string
+),
+jul15_trips AS (
+    SELECT
+        t.col_name,
+        ST_POINT(t.col_name, t.col_name) AS column_alias1,
+        ST_POINT(t.col_name, t.col_name) AS column_alias2
+    FROM new_table.new_column.CITIBIKE_TRIPS t
+    CROSS JOIN CTE table_alias0
+    WHERE datetimeCAST(t.col_name / num AS column_alias3) = string
+)
+SELECT
+    table_alias2.col_name AS column_alias4,
+    table_alias3.col_name AS column_alias5
+FROM new_table table_alias1
+JOIN new_table table_alias2 ON ST_CONTAINS(table_alias2.new_column, table_alias1.new_column)
+JOIN new_table table_alias3 ON ST_CONTAINS(table_alias3.new_column, table_alias1.new_column)
+ORDER BY column_alias4 ASC, column_alias5 DESC
+LIMIT num;",1
+49,"WITH CTE AS (
+    SELECT column1 AS column_alias0
+    FROM (VALUES 
+        (string),
+        (string),
+        (string),
+        (string),
+        (string),
+        (string),
+        (string)
+    ) AS v(column1)
+),
+filtered AS (
+    SELECT
+        column_alias0,
+        DATE,
+        col_name
+    FROM new_table AS table_alias0
+    INNER JOIN CTE AS string
+        ON column_alias0 = column_alias0
+    WHERE col_name = string
+        AND DATE BETWEEN string AND string
+),
+string AS (
+    SELECT
+        column_alias0,
+        DATE AS column_alias1,
+        col_name AS string
+    FROM (
+        SELECT
+            column_alias0,
+            DATE,
+            col_name,
+            ROW_NUMBER() OVER (PARTITION BY column_alias0 ORDER BY DATE) AS string
+        FROM new_table
+    )
+    WHERE string = num
+),
+string AS (
+    SELECT
+        column_alias0,
+        DATE AS column_alias2,
+        col_name AS string
+    FROM (
+        SELECT
+            column_alias0,
+            DATE,
+            col_name,
+            ROW_NUMBER() OVER (PARTITION BY column_alias0 ORDER BY DATE DESC) AS string
+        FROM new_table
+    )
+    WHERE string = num
+),
+string AS (
+    SELECT
+        column_alias0,
+        DATE,
+        string / NULLIF(col_name, num) AS column_alias3
+    FROM (
+        SELECT
+            column_alias0,
+            DATE,
+            col_name,
+            LAG(col_name) OVER (PARTITION BY column_alias0 ORDER BY DATE) AS string
+        FROM new_table
+    )
+    WHERE string IS NOT NULL
+),
+string AS (
+    SELECT
+        column_alias0,
+        EXP(SUM(LN(ROUND(column_alias3)))) AS string
+    FROM CTE
+    WHERE column_alias3 >= num
+      AND ABS(column_alias3 - ROUND(column_alias3)) <= num
+    GROUP BY column_alias0
+)
+SELECT
+    column_alias0,
+    column_alias1,
+    column_alias2,
+    ROUND(string / COALESCE(string, num), num) AS string,
+    ROUND(string, num) AS string,
+    ROUND(((string - (string / COALESCE(string, num))) / (string / COALESCE(string, num))) * num, num) AS string
+FROM CTE AS string
+INNER JOIN CTE AS string
+    ON column_alias0 = column_alias0
+LEFT JOIN CTE AS table_alias1
+    ON column_alias0 = column_alias0
+ORDER BY column_alias0;",1
+50,"WITH CTE AS (
+    SELECT date(CURRENT_DATE(, string)) AS column_alias0
+),
+hail_events AS (
+    SELECT datetime(col_name / num) AS column_alias1,
+           col_name AS column_alias2,
+           col_name AS column_alias3
+    FROM table_name
+    WHERE UPPER(col_name) = string AND col_name IS NOT NULL AND col_name IS NOT NULL
+    UNION ALL
+    SELECT datetime(col_name / num), col_name, col_name
+    FROM table_name
+    WHERE UPPER(col_name) = string AND col_name IS NOT NULL AND col_name IS NOT NULL
+    UNION ALL
+    SELECT datetime(col_name / num), col_name, col_name
+    FROM table_name
+    WHERE UPPER(col_name) = string AND col_name IS NOT NULL AND col_name IS NOT NULL
+    UNION ALL
+    SELECT datetime(col_name / num), col_name, col_name
+    FROM table_name
+    WHERE UPPER(col_name) = string AND col_name IS NOT NULL AND col_name IS NOT NULL
+    UNION ALL
+    SELECT datetime(col_name / num), col_name, col_name
+    FROM table_name
+    WHERE UPPER(col_name) = string AND col_name IS NOT NULL AND col_name IS NOT NULL
+    UNION ALL
+    SELECT datetime(col_name / num), col_name, col_name
+    FROM table_name
+    WHERE UPPER(col_name) = string AND col_name IS NOT NULL AND col_name IS NOT NULL
+    UNION ALL
+    SELECT datetime(col_name / num), col_name, col_name
+    FROM table_name
+    WHERE UPPER(col_name) = string AND col_name IS NOT NULL AND col_name IS NOT NULL
+    UNION ALL
+    SELECT datetime(col_name / num), col_name, col_name
+    FROM table_name
+    WHERE UPPER(col_name) = string AND col_name IS NOT NULL AND col_name IS NOT NULL
+    UNION ALL
+    SELECT datetime(col_name / num), col_name, col_name
+    FROM table_name
+    WHERE UPPER(col_name) = string AND col_name IS NOT NULL AND col_name IS NOT NULL
+    UNION ALL
+    SELECT datetime(col_name / num), col_name, col_name
+    FROM table_name
+    WHERE UPPER(col_name) = string AND col_name IS NOT NULL AND col_name IS NOT NULL
+    UNION ALL
+    SELECT datetime(col_name / num), col_name, col_name
+    FROM table_name
+    WHERE UPPER(col_name) = string AND col_name IS NOT NULL AND col_name IS NOT NULL
+),
+recent_hail AS (
+    SELECT table_alias0.new_column, table_alias0.new_column, table_alias0.new_column
+    FROM new_table table_alias0
+    JOIN CTE table_alias1 ON table_alias0.new_column >= table_alias1.new_column
+),
+hail_with_zip AS (
+    SELECT table_alias3.col_name,
+           COUNT(*) AS column_alias4
+    FROM new_table table_alias2
+    JOIN table_name table_alias3
+      ON ST_WITHIN(ST_POINT(table_alias2.new_column, table_alias2.new_column), string)
+    GROUP BY table_alias3.col_name
+)
+SELECT col_name, column_alias4
+FROM new_table
+ORDER BY column_alias4 DESC, col_name
+FETCH FIRST num ROWS ONLY;",1
+51,"WITH CTE AS (
+    SELECT string AS column_alias0
+    UNION
+    SELECT DISTINCT column_alias0
+    FROM table_name
+    WHERE col_name = string
+),
+string AS (
+    SELECT
+        col_name,
+        COUNT(*) AS string
+    FROM table_name
+    WHERE column_alias0 IN (
+        SELECT column_alias0 FROM CTE
+    )
+    GROUP BY col_name
+)
+SELECT col_name, string
+FROM CTE
+AND num=num",1
+52,"WITH CTE AS (
+  SELECT
+    CAST(col_name AS column_alias0) AS string,
+    col_name,
+    col_name
+  FROM new_table
+  WHERE DATE = string
+    AND col_name IN (string, string)
+),
+string AS (
+  SELECT
+    string,
+    MAX(CASE WHEN col_name = string THEN col_name END) AS string,
+    MAX(CASE WHEN col_name = string THEN col_name END) AS string
+  FROM CTE
+  GROUP BY string
+)
+SELECT
+  col_name,
+  (num - string) * num AS string
+FROM new_table AS table_alias0
+JOIN CTE AS string
+  ON col_name = string
+WHERE
+  col_name = num
+  AND string > num
+  AND string IS NOT NULL
+ORDER BY
+  string DESC
+LIMIT num;",1
+53,"WITH CTE AS (
+  SELECT
+    DATE_FROM_PARTS(num, num, num) AS column_alias0
+  UNION ALL
+  SELECT
+    date(column_alias0, string)
+  FROM CTE
+  WHERE column_alias0 < string
+),
+filtered_data AS (
+  SELECT
+    strftime(string, TRY_TO_DATE(TO_VARCHAR(col_name)), string) AS column_alias1,
+    col_name
+  FROM
+    table_name,
+    json_each(col_name) AS table_alias2
+  WHERE
+    col_name = string
+    AND LOWER(abs.value:CAST(column_alias2 AS column_alias2)) LIKE string
+    AND col_name BETWEEN num AND num
+    AND col_name != num
+  GROUP BY column_alias1, col_name
+),
+monthly_counts AS (
+  SELECT
+    column_alias1,
+    COUNT(col_name) AS column_alias3
+  FROM new_table
+  GROUP BY column_alias1
+)
+SELECT
+  strftime(string, table_alias0.new_column) AS string,
+  COALESCE(table_alias1.new_column, num) AS string
+FROM CTE table_alias0
+LEFT JOIN new_table table_alias1
+  ON strftime(string, table_alias0.new_column) = table_alias1.new_column
+ORDER BY string",1
+54,"WITH CTE AS (
+  SELECT
+    MIN(col_name) AS column_alias0,
+    MAX(col_name) AS column_alias1
+  FROM table_name
+  WHERE
+    CAST(datetime(col_name / num) AS DATE) BETWEEN string AND string
+)
+SELECT
+  SUM(CASE WHEN table_alias0.col_name = table_alias1.new_column THEN num ELSE num END) - SUM(CASE WHEN table_alias0.col_name = table_alias1.new_column THEN num ELSE num END)
+FROM table_name AS table_alias0
+CROSS JOIN CTE AS table_alias1
+WHERE
+  CAST(datetime(table_alias0.col_name / num) AS DATE) BETWEEN string AND string",1
+55,"WITH CTE AS (
+  SELECT
+    col_name AS string,
+    col_name AS string,
+    COUNT(DISTINCT col_name) AS string
+  FROM table_name AS table_alias0
+  WHERE col_name IS NOT NULL
+    AND col_name IS NOT NULL
+    AND col_name != col_name
+  GROUP BY col_name, col_name
+)
+SELECT
+  COALESCE(col_name, col_name) AS string,
+  COALESCE(col_name, col_name) AS string,
+  string AS string,
+  COALESCE(string, num) AS string
+FROM CTE AS table_alias1
+LEFT JOIN CTE AS string
+  ON string = string
+ AND string = string
+LEFT JOIN table_name AS string
+  ON col_name = string
+LEFT JOIN table_name AS string
+  ON col_name = string
+ORDER BY string DESC,
+         COALESCE(string, num) DESC
+FETCH FIRST num ROWS ONLY;",1
+56,"WITH CTE AS (
+  SELECT
+    col_name,
+    TO_DATE(datetime(col_name / num)) AS column_alias0,
+    col_name,
+    col_name,
+    col_name
+  FROM table_name
+  WHERE TO_DATE(datetime(col_name / num)) BETWEEN string AND string
+    AND (
+      (string IS NOT NULL AND (
+         num, string)) <= num
+       ))
+      OR (string IS NOT NULL AND (
+         ST_CONTAINS(string, string))
+       ))
+    )
+),
+string AS (
+  SELECT
+    table_alias0.new_column AS column_alias0,
+    TO_DATE(datetime(CAST(VALUE:time AS column_alias1) / num)) AS string,
+    CAST(strftime(string, datetime(CAST(VALUE:time AS column_alias1) AS column_alias1) / num)) AS string,
+    ((CAST(VALUE:string AS column_alias2)) * num/num) + num AS column_alias3,
+    COALESCE(CAST(VALUE:string AS column_alias2), num) AS string,
+    CAST(VALUE:string AS column_alias2) AS string
+  FROM CTE table_alias0,
+       json_each(table_alias0.col_name) AS table_alias1 string
+),
+string AS (
+  SELECT
+    string,
+    MAX(column_alias3) AS string,
+    MIN(column_alias3) AS string,
+    AVG(column_alias3) AS string,
+    SUM(string) AS string,
+    AVG(CASE WHEN string BETWEEN num AND num THEN string END) AS string
+  FROM CTE
+  WHERE string = date(column_alias0, string)
+    AND string BETWEEN string AND string
+  GROUP BY string
+)
+SELECT
+  string,
+  string AS string,
+  string AS string,
+  string AS string,
+  string,
+  string,
+  CASE WHEN string < num THEN string ELSE num END AS string,
+  CASE WHEN string >= num THEN string ELSE num END AS string
+FROM CTE
+ORDER BY string ASC;",1
+57,"WITH CTE AS (
+  SELECT
+    col_name,
+    col_name
+  FROM table_name
+  WHERE
+    datetime(col_name / num) >= string AND datetime(col_name / num) < string
+), AgeBounds AS (
+  SELECT
+    col_name,
+    MIN(col_name) AS column_alias0,
+    MAX(col_name) AS column_alias1
+  FROM CTE
+  GROUP BY
+    col_name
+)
+SELECT
+  table_alias0.col_name,
+  COUNT(CASE WHEN table_alias0.col_name = table_alias1.new_column THEN num END) AS column_alias2,
+  COUNT(CASE WHEN table_alias0.col_name = table_alias1.new_column THEN num END) AS column_alias3
+FROM CTE AS table_alias0
+JOIN new_table AS table_alias1
+  ON table_alias0.col_name = table_alias1.col_name
+WHERE
+  table_alias0.col_name = table_alias1.new_column OR table_alias0.col_name = table_alias1.new_column
+GROUP BY
+  table_alias0.col_name;",1
+58,"WITH CTE AS (
+  SELECT
+    col_name,
+    col_name,
+    col_name,
+    col_name,
+    col_name,
+    col_name,
+    col_name,
+    col_name,
+    col_name
+  FROM table_name
+  WHERE UPPER(col_name) = string
+    AND col_name = string
+),
+series_sizes AS (
+  SELECT
+    col_name,
+    col_name,
+    SUMCAST(COALESCE(col_name, num) AS column_alias0) / (num * num) AS column_alias1
+  FROM CTE
+  GROUP BY col_name, col_name
+),
+patient_slice_intervals AS (
+  SELECT DISTINCT
+    col_name,
+    COALESCE(TRY_TO_DECIMAL(col_name), TRY_TO_DECIMAL(col_name)) AS column_alias2
+  FROM CTE
+  WHERE COALESCE(TRY_TO_DECIMAL(col_name), TRY_TO_DECIMAL(col_name)) IS NOT NULL
+),
+patient_slice_diff AS (
+  SELECT
+    col_name,
+    MAX(column_alias2) - MIN(column_alias2) AS column_alias3
+  FROM new_table
+  GROUP BY col_name
+),
+top3_by_slice AS (
+  SELECT col_name
+  FROM new_table
+  ORDER BY column_alias3 DESC NULLS LAST
+  LIMIT num
+),
+patient_exposure_values AS (
+  SELECT DISTINCT
+    col_name,
+    COALESCE(CAST(col_name AS column_alias4), CAST(TRY_TO_DECIMAL(col_name) AS column_alias4)) AS column_alias5
+  FROM CTE
+  WHERE COALESCE(CAST(col_name AS column_alias4), CAST(TRY_TO_DECIMAL(col_name) AS column_alias4)) IS NOT NULL
+),
+patient_exposure_diff AS (
+  SELECT
+    col_name,
+    MAX(column_alias5) - MIN(column_alias5) AS column_alias6
+  FROM new_table
+  GROUP BY col_name
+),
+top3_by_exposure AS (
+  SELECT col_name
+  FROM new_table
+  ORDER BY column_alias6 DESC NULLS LAST
+  LIMIT num
+)
+SELECT string AS column_alias7,
+       AVG(table_alias0.new_column) AS string
+FROM new_table table_alias0
+JOIN new_table table_alias1 USING (col_name)
+UNION ALL
+SELECT string AS column_alias7,
+       AVG(table_alias0.new_column) AS string
+FROM new_table table_alias0
+JOIN new_table table_alias1 USING (col_name);",1
+59,"WITH CTE AS (
+  SELECT
+    col_name,
+    col_name,
+    string AS column_alias0
+  FROM table_name
+  table_alias0 ALL
+  SELECT
+    col_name,
+    col_name,
+    string AS column_alias0
+  FROM table_name
+),
+string AS (
+  SELECT
+    DATE_PART(column_alias1, datetime(col_name, num)) AS column_alias1,
+    AVG(col_name) AS string
+  FROM CTE
+  WHERE column_alias0 = string
+    AND col_name IS NOT NULL
+    AND col_name IS NOT NULL
+  GROUP BY num
+),
+string AS (
+  SELECT
+    DATE_PART(column_alias1, datetime(col_name, num)) AS column_alias1,
+    AVG(col_name) AS string
+  FROM table_name
+  WHERE col_name IS NOT NULL
+    AND col_name IS NOT NULL
+  GROUP BY num
+)
+SELECT
+  table_alias1.new_column,
+  table_alias1.string - table_alias2.string AS column_alias2
+FROM CTE table_alias1
+JOIN CTE table_alias2
+  ON table_alias1.new_column = table_alias2.new_column
+ORDER BY table_alias1.new_column;",1
+60,"WITH CTE AS (
+  SELECT
+    column_alias0.col_name,
+    column_alias0.col_name,
+    column_alias0.col_name
+  FROM new_table.new_column.PLANET_FEATURES AS column_alias0,
+       json_each(column_alias0.col_name) AS table_alias5
+  WHERE column_alias0.col_name = string
+    AND tag.value:CAST(string AS column_alias1) = string
+    AND LOWER(TRIM(tag.value:CAST(value AS column_alias1))) = string
+    AND column_alias0.col_name IS NOT NULL
+    AND column_alias0.col_name IS NOT NULL
+),
+admin_polygons AS (
+  SELECT column_alias7, col_name
+  FROM (
+    SELECT table_alias0.*,
+           ROW_NUMBER() OVER (PARTITION BY table_alias0.col_name ORDER BY table_alias0.col_name DESC NULLS LAST, table_alias0.col_name ASC) AS column_alias2
+    FROM CTE table_alias0
+  ) WHERE column_alias2 = num
+),
+polygons_geog AS (
+  SELECT
+    column_alias7,
+    ST_GEOGRAPHYFROMWKB(col_name) AS string
+  FROM new_table
+),
+amenity_nodes AS (
+  SELECT DISTINCT
+    column_alias6.col_name AS column_alias3,
+    column_alias6.col_name AS column_alias4,
+    column_alias6.col_name AS column_alias5
+  FROM new_table.new_column.PLANET_NODES AS column_alias6,
+       json_each(column_alias6.col_name) AS table_alias5
+  WHERE tag.value:CAST(string AS column_alias1) = string
+    AND column_alias6.col_name IS NOT NULL
+    AND column_alias6.col_name IS NOT NULL
+),
+nodes_geog AS (
+  SELECT
+    column_alias3,
+    ST_MAKEPOINT(column_alias5, column_alias4) AS string
+  FROM new_table
+),
+counts_per_polygon AS (
+  SELECT
+    table_alias1.col_name AS column_alias7,
+    COALESCE(COUNT(DISTINCT table_alias2.new_column), num) AS string
+  FROM new_table table_alias1
+  LEFT JOIN new_table table_alias2
+    ON ST_DWITHIN(table_alias1.string, table_alias2.string, num)
+  GROUP BY table_alias1.col_name
+),
+median_val AS (
+  SELECT
+    PERCENTILE_CONT(num) WITHIN GROUP (ORDER BY string) AS string
+  FROM new_table
+),
+distances AS (
+  SELECT
+    table_alias3.col_name,
+    table_alias3.string,
+    ABS(table_alias3.string - table_alias4.string) AS string
+  FROM new_table table_alias3
+  CROSS JOIN new_table table_alias4
+)
+SELECT column_alias7
+FROM new_table
+ORDER BY string ASC NULLS LAST, column_alias7 ASC
+LIMIT num;",1
+61,"WITH CTE AS (
+  SELECT
+    column_alias4,
+    f.value:CAST(name AS column_alias0) AS column_alias1,
+    TRY_CAST(f.value:CAST(column_alias3 AS column_alias0) AS column_alias2) AS column_alias3
+  FROM new_table.new_column.LANGUAGES,
+       json_each(col_name) AS table_alias2
+),
+primary_lang AS (
+  SELECT
+    column_alias4,
+    column_alias1,
+    column_alias3,
+    ROW_NUMBER() OVER (
+      PARTITION BY column_alias4
+      ORDER BY column_alias3 DESC NULLS LAST, column_alias1 ASC
+    ) AS string
+  FROM CTE
+),
+js_primary_repos AS (
+  SELECT
+    column_alias4
+  FROM new_table
+  WHERE string = num
+    AND LOWER(column_alias1) = string
+),
+commits_agg AS (
+  SELECT
+    column_alias4,
+    COUNT(DISTINCT col_name) AS string
+  FROM new_table.new_column.SAMPLE_COMMITS
+  WHERE column_alias4 IS NOT NULL
+  GROUP BY column_alias4
+)
+SELECT
+  table_alias0.col_name AS column_alias4,
+  table_alias1.string AS string
+FROM new_table table_alias0
+JOIN new_table table_alias1
+  ON table_alias0.col_name = table_alias1.col_name
+ORDER BY
+  table_alias1.string DESC NULLS LAST,
+  table_alias0.col_name ASC
+LIMIT num;",1
+62,"WITH CTE AS (
+  SELECT
+    column_alias6,
+    MIN(col_name) AS string
+  FROM table_name
+  WHERE column_alias6 IS NOT NULL
+  GROUP BY column_alias6
+  HAVING MIN(col_name) BETWEEN num AND num
+),
+string AS (
+  SELECT
+    column_alias6,
+    string,
+    TRIM(column_alias0) AS column_alias0,
+    TRIM(column_alias1) AS column_alias1,
+    column_alias2 AS column_alias2,
+    column_alias3 AS column_alias3,
+    column_alias4 AS column_alias4
+  FROM CTE AS string
+  JOIN table_name AS table_alias0
+    ON column_alias6 = column_alias6
+),
+string AS (
+  SELECT
+    column_alias6,
+    LISTAGG(DISTINCT column_alias0, string) WITHIN GROUP (ORDER BY column_alias0) AS string
+  FROM CTE
+  GROUP BY column_alias6
+),
+string AS (
+  SELECT
+    column_alias6,
+    LISTAGG(DISTINCT column_alias1, string) WITHIN GROUP (ORDER BY column_alias1) AS string
+  FROM CTE
+  WHERE column_alias1 IS NOT NULL AND column_alias1 != string
+  GROUP BY column_alias6
+),
+string AS (
+  SELECT
+    column_alias6,
+    LISTAGG(DISTINCT TRIM(VALUE:CAST(code AS column_alias5)), string)
+      WITHIN GROUP (ORDER BY TRIM(VALUE:CAST(code AS column_alias5))) AS string
+  FROM CTE AS table_alias1,
+       json_each(column_alias2) AS table_alias4 string
+  WHERE VALUE:code IS NOT NULL
+    AND TRIM(VALUE:CAST(code AS column_alias5)) != string
+  GROUP BY column_alias6
+),
+string AS (
+  SELECT
+    column_alias6,
+    LISTAGG(DISTINCT TRIM(VALUE:CAST(code AS column_alias5)), string)
+      WITHIN GROUP (ORDER BY TRIM(VALUE:CAST(code AS column_alias5))) AS string
+  FROM CTE AS table_alias1,
+       json_each(column_alias3) AS table_alias4 string
+  WHERE VALUE:code IS NOT NULL
+    AND TRIM(VALUE:CAST(code AS column_alias5)) != string
+  GROUP BY column_alias6
+),
+string AS (
+  SELECT
+    column_alias6 AS string,
+    TRIM(VALUE:CAST(column_alias0 AS column_alias5)) AS string
+  FROM CTE AS table_alias1,
+       json_each(column_alias4) AS table_alias4 string
+  WHERE TRIM(VALUE:CAST(column_alias0 AS column_alias5)) IS NOT NULL
+    AND TRIM(VALUE:CAST(column_alias0 AS column_alias5)) != string
+),
+string AS (
+  SELECT DISTINCT
+    string,
+    column_alias6 AS string
+  FROM CTE AS string
+  JOIN table_name AS string
+    ON TRIM(column_alias0) = string
+  WHERE column_alias6 IS NOT NULL
+    AND column_alias6 != string
+),
+string AS (
+  SELECT
+    string AS column_alias6,
+    LISTAGG(DISTINCT string, string)
+      WITHIN GROUP (ORDER BY string) AS string
+  FROM CTE
+  GROUP BY string
+),
+string AS (
+  SELECT
+    column_alias6 AS string,
+    TRIM(VALUE:CAST(column_alias0 AS column_alias5)) AS string
+  FROM CTE AS table_alias1
+  JOIN table_name AS table_alias2
+    ON column_alias0 = column_alias0,
+       json_each(col_name) AS table_alias4 string
+  WHERE TRIM(VALUE:CAST(column_alias0 AS column_alias5)) IS NOT NULL
+    AND TRIM(VALUE:CAST(column_alias0 AS column_alias5)) != string
+),
+string AS (
+  SELECT DISTINCT
+    string,
+    column_alias6 AS string
+  FROM CTE AS string
+  JOIN table_name AS string
+    ON TRIM(column_alias0) = string
+  WHERE column_alias6 IS NOT NULL
+    AND column_alias6 != string
+),
+string AS (
+  SELECT
+    string AS column_alias6,
+    LISTAGG(DISTINCT string, string)
+      WITHIN GROUP (ORDER BY string) AS string
+  FROM CTE
+  GROUP BY string
+)
+SELECT
+  column_alias6,
+  TO_DATE(CAST(string AS column_alias5), string) AS string,
+  COALESCE(string, string) AS string,
+  COALESCE(string, string) AS string,
+  COALESCE(string, string) AS string,
+  COALESCE(string, string) AS string,
+  COALESCE(string, string) AS string,
+  COALESCE(string, string) AS string
+FROM CTE AS string
+LEFT JOIN CTE AS table_alias3 ON column_alias6 = column_alias6
+LEFT JOIN CTE AS string ON column_alias6 = column_alias6
+LEFT JOIN CTE AS string ON column_alias6 = column_alias6
+LEFT JOIN CTE AS string ON column_alias6 = column_alias6
+LEFT JOIN CTE AS string ON column_alias6 = column_alias6
+LEFT JOIN CTE AS string ON column_alias6 = column_alias6
+ORDER BY column_alias6;",1
+63,"WITH CTE AS (
+  SELECT
+    table_alias0.*,
+    datetime(col_name, num) AS string
+  FROM table_name table_alias0
+  WHERE col_name(datetime(col_name, num)) = num
+),
+string AS (
+  SELECT
+    table_alias0.*,
+    CAST(table_alias1.col_name AS column_alias0) AS string,
+    CAST(table_alias2.col_name AS column_alias0) AS string
+  FROM CTE table_alias0
+  JOIN table_name table_alias1
+    ON table_alias1.col_name = string
+   AND ST_WITHIN(ST_POINT(table_alias0.col_name, table_alias0.col_name), string)
+  JOIN table_name table_alias2
+    ON table_alias2.col_name = string
+   AND ST_WITHIN(ST_POINT(table_alias0.col_name, table_alias0.col_name), string)
+),
+string AS (
+  SELECT
+    table_alias3.*,
+    table_alias4.col_name AS string,
+    table_alias4.col_name AS string,
+    table_alias5.col_name AS string,
+    table_alias5.col_name AS string
+  FROM CTE table_alias3
+  JOIN table_name table_alias4
+    ON table_alias4.col_name = table_alias3.string
+  JOIN table_name table_alias5
+    ON table_alias5.col_name = table_alias3.string
+),
+string AS (
+  SELECT
+    table_alias6.col_name,
+    table_alias6.col_name,
+    table_alias6.col_name,
+    table_alias6.col_name,
+    NULLIF(table_alias6.col_name, num) AS column_alias1,
+    CAST(NULLIF(table_alias6.col_name, string) AS column_alias2) AS string,
+    NULLIF(table_alias6.col_name, num) AS string
+  FROM table_name table_alias6
+  WHERE table_alias6.col_name = string AND table_alias6.col_name = string
+),
+string AS (
+  SELECT
+    table_alias7.*,
+    table_alias8.new_column,
+    table_alias8.string,
+    table_alias8.string
+  FROM CTE table_alias7
+  LEFT JOIN CTE table_alias8
+    ON table_alias8.col_name = LPAD(CAST(CAST(strftime(string, table_alias7.string) AS column_alias3) AS column_alias4), num, string)
+   AND table_alias8.col_name = LPAD(CAST(CAST(strftime(string, table_alias7.string) AS column_alias3) AS column_alias4), num, string)
+   AND table_alias8.col_name = string
+),
+string AS (
+  SELECT
+    string,
+    string,
+    string,
+    string,
+    COUNT(*) AS string,
+    ROUND(AVG(col_name)/num, num) AS string,
+    ROUND(AVG(column_alias1), num) AS string,
+    ROUND(AVG(string * num), num) AS string,
+    ROUND(AVG(string * num), num) AS string
+  FROM CTE
+  GROUP BY string,string,string,string
+),
+string AS (
+  SELECT
+    string,
+    string,
+    CAST(strftime(string, string) AS column_alias3) AS string,
+    COUNT(*) AS string
+  FROM CTE
+  GROUP BY string,string,CAST(strftime(string, string) AS column_alias3)
+),
+string AS (
+  SELECT
+    string,
+    string,
+    string
+  FROM (
+    SELECT
+      string,
+      string,
+      string,
+      string,
+      ROW_NUMBER() OVER (
+        PARTITION BY string,string
+        ORDER BY string DESC, string
+      ) AS string
+    FROM CTE
+  )
+  WHERE string = num
+)
+SELECT
+  table_alias9.string,
+  table_alias9.string,
+  table_alias9.string,
+  table_alias9.string,
+  table_alias9.string,
+  table_alias9.string,
+  table_alias9.string,
+  table_alias9.string,
+  table_alias9.string,
+  table_alias10.string AS string
+FROM CTE table_alias9
+JOIN CTE table_alias10
+  ON table_alias9.string = table_alias10.string AND table_alias9.string = table_alias10.string
+ORDER BY table_alias9.string, table_alias9.string, table_alias9.string, table_alias9.string;",1
+64,"WITH CTE AS (
+  SELECT
+    table_alias0.col_name AS column_alias0,
+    TRIM(REPLACE(CAST(l.value AS column_alias1), string, string)) AS string
+  FROM table_name table_alias0,
+       json_each(SPLIT(table_alias0.col_name, string) AS table_alias3) l
+  WHERE table_alias0.col_name ILIKE string
+    AND NVL(table_alias0.col_name, num) = num
+    AND table_alias0.col_name IS NOT NULL
+),
+filtered_lines AS (
+  SELECT
+    table_alias1.col_name,
+    table_alias1.string
+  FROM CTE table_alias1
+  WHERE table_alias1.string != string
+    AND LTRIM(table_alias1.string) NOT LIKE string
+    AND LTRIM(table_alias1.string) NOT LIKE string
+),
+repo_languages AS (
+  SELECT
+    table_alias2.col_name,
+    TRIM(fl.value:CAST(name AS column_alias1)) AS string
+  FROM table_name table_alias2,
+       json_each(table_alias2.col_name) AS table_alias4
+  WHERE fl.value:name IS NOT NULL
+    AND TRIM(fl.value:CAST(name AS column_alias1)) != string
+)
+SELECT
+  table_alias3.string AS column_alias2,
+  COUNT(DISTINCT table_alias3.col_name) AS column_alias3,
+  LISTAGG(DISTINCT table_alias1.string, string) WITHIN GROUP (ORDER BY table_alias1.string) AS languages
+FROM new_table table_alias3
+LEFT JOIN new_table table_alias1
+  ON table_alias1.col_name = table_alias3.col_name
+GROUP BY table_alias3.string
+ORDER BY column_alias3 DESC, column_alias2 ASC",1
+65,"WITH CTE AS (
+  SELECT
+    table_alias0.col_name AS column_alias0,
+    table_alias1.col_name AS column_alias1,
+    (table_alias0.col_name * table_alias0.col_name) AS column_alias2
+  FROM table_name table_alias0
+  JOIN table_name table_alias1
+    ON table_alias0.col_name = table_alias1.col_name
+  WHERE table_alias0.col_name = num
+),
+miner_fee_income AS (
+  SELECT column_alias1 AS column_alias3, SUM(column_alias2) AS column_alias4
+  FROM CTE
+  WHERE column_alias1 IS NOT NULL
+  GROUP BY column_alias1
+),
+sender_fee_deduction AS (
+  SELECT column_alias0 AS column_alias3, -SUM(column_alias2) AS column_alias4
+  FROM CTE
+  WHERE column_alias0 IS NOT NULL
+  GROUP BY column_alias0
+),
+trace_inflows AS (
+  SELECT
+    table_alias2.col_name AS column_alias3,
+    SUM(table_alias2.col_name) AS column_alias4
+  FROM table_name table_alias2
+  WHERE table_alias2.col_name = num
+    AND table_alias2.col_name IS NOT NULL
+    AND (table_alias2.col_name IS NULL OR LOWER(table_alias2.col_name) != string)
+    AND (table_alias2.col_name IS NULL OR LOWER(table_alias2.col_name) NOT IN (string,string,string))
+  GROUP BY table_alias2.col_name
+),
+trace_outflows AS (
+  SELECT
+    table_alias2.col_name AS column_alias3,
+    -SUM(table_alias2.col_name) AS column_alias4
+  FROM table_name table_alias2
+  WHERE table_alias2.col_name = num
+    AND table_alias2.col_name IS NOT NULL
+    AND (table_alias2.col_name IS NULL OR LOWER(table_alias2.col_name) != string)
+    AND (table_alias2.col_name IS NULL OR LOWER(table_alias2.col_name) NOT IN (string,string,string))
+  GROUP BY table_alias2.col_name
+),
+all_flows AS (
+  SELECT column_alias3, column_alias4 FROM new_table
+  table_alias3 ALL
+  SELECT column_alias3, column_alias4 FROM new_table
+  table_alias3 ALL
+  SELECT column_alias3, column_alias4 FROM new_table
+  table_alias3 ALL
+  SELECT column_alias3, column_alias4 FROM new_table
+),
+net_balances AS (
+  SELECT column_alias3, SUM(column_alias4) AS column_alias5
+  FROM new_table
+  WHERE column_alias3 IS NOT NULL
+  GROUP BY column_alias3
+),
+top10 AS (
+  SELECT column_alias3, column_alias5
+  FROM new_table
+  ORDER BY column_alias5 DESC
+  LIMIT num
+)
+SELECT ROUND(AVG(column_alias5 / POWER(num, num)), num) AS column_alias6
+FROM new_table;",1
+66,"WITH CTE AS (
+  SELECT
+    table_alias0.col_name,
+    MIN(TRY_TO_DATE(table_alias0.col_name)) AS string
+  FROM table_name table_alias0
+  WHERE TRY_TO_DATE(table_alias0.col_name) IS NOT NULL
+  GROUP BY table_alias0.col_name
+),
+string AS (
+  SELECT DISTINCT
+    table_alias1.col_name AS column_alias0,
+    table_alias1.col_name AS string,
+    table_alias2.string AS string
+  FROM table_name table_alias1
+  JOIN CTE table_alias2
+    ON table_alias2.col_name = table_alias1.col_name
+  JOIN table_name table_alias3
+    ON table_alias3.col_name = table_alias1.col_name
+  WHERE table_alias1.col_name = string
+    AND table_alias3.col_name = string
+),
+string AS (
+  SELECT
+    table_alias4.col_name,
+    COUNT(DISTINCT table_alias4.col_name) AS string
+  FROM table_name table_alias4
+  JOIN CTE table_alias5
+    ON table_alias5.col_name = table_alias4.col_name
+  JOIN CTE table_alias6
+    ON table_alias6.col_name = table_alias4.col_name
+  WHERE table_alias6.string >= date(table_alias5.string, string)
+    AND table_alias6.string < table_alias5.string
+  GROUP BY table_alias4.col_name
+),
+string AS (
+  SELECT
+    table_alias7.col_name AS column_alias0,
+    COUNT(DISTINCT table_alias7.col_name) AS string
+  FROM table_name table_alias7
+  JOIN CTE table_alias5
+    ON table_alias5.col_name = table_alias7.col_name
+  JOIN CTE table_alias8
+    ON table_alias8.col_name = table_alias7.col_name
+  WHERE table_alias8.string >= table_alias5.string
+    AND table_alias8.string <= date(table_alias5.string, string)
+  GROUP BY table_alias7.col_name
+),
+string AS (
+  SELECT
+    table_alias7.col_name AS column_alias0,
+    COUNT(DISTINCT table_alias7.col_name) AS string
+  FROM table_name table_alias7
+  JOIN CTE table_alias5
+    ON table_alias5.col_name = table_alias7.col_name
+  JOIN CTE table_alias8
+    ON table_alias8.col_name = table_alias7.col_name
+  WHERE table_alias8.string >= table_alias5.string
+    AND table_alias8.string <= date(table_alias5.string, string)
+  GROUP BY table_alias7.col_name
+)
+SELECT
+  table_alias4.col_name,
+  table_alias4.string,
+  table_alias4.string,
+  COALESCE(table_alias9.string, num) AS string,
+  COALESCE(table_alias10.string, num) AS string,
+  COALESCE(table_alias11.string, num) AS string
+FROM CTE table_alias4
+LEFT JOIN CTE table_alias9
+  ON table_alias9.col_name = table_alias4.col_name
+LEFT JOIN CTE table_alias10
+  ON table_alias10.col_name = table_alias4.col_name
+LEFT JOIN CTE table_alias11
+  ON table_alias11.col_name = table_alias4.col_name
+WHERE COALESCE(table_alias9.string, num) > num
+  AND COALESCE(table_alias10.string, num) > num
+ORDER BY table_alias9.string DESC
+LIMIT num;",1
+67,"WITH CTE AS (
+  SELECT
+    table_alias0.col_name,
+    table_alias0.col_name,
+    table_alias0.col_name,
+    table_alias0.col_name,
+    table_alias0.col_name,
+    table_alias0.col_name,
+    table_alias0.col_name,
+    table_alias0.col_name,
+    table_alias0.col_name,
+    table_alias0.col_name,
+    table_alias0.col_name,
+    table_alias0.col_name,
+    table_alias0.col_name,
+    sd.col_name:CAST(string AS column_alias0) AS column_alias1,
+    pams.col_name:CAST(col_name AS column_alias0) AS column_alias2,
+    pams.col_name:CAST(string AS column_alias0) AS column_alias3
+  FROM table_name table_alias0
+  JOIN new_table(table_alias0.col_name) AS table_alias3
+  JOIN new_table(sd.col_name:string) AS table_alias4
+  JOIN new_table(pas.col_name:string) AS table_alias5
+  JOIN new_table(sd.col_name:string) AS table_alias6
+  JOIN new_table(sps.col_name:string) AS table_alias7
+  JOIN new_table(sp.col_name:col_name) AS table_alias8
+  LEFT JOIN new_table(sp.col_name:string, OUTER => num) AS table_alias9
+  WHERE table_alias0.col_name = string
+    AND table_alias0.col_name = string
+    AND (
+      table_alias0.col_name IN (string, string) OR
+      table_alias0.col_name IN (string, string) OR
+      table_alias0.col_name IN (string, string) OR
+      table_alias0.col_name IN (string, string)
+    )
+    AND cn.col_name:CAST(string AS column_alias0) = string
+    AND (
+      UPPER(COALESCE(sp.col_name:CAST(string AS column_alias0), string)) = string
+      OR UPPER(COALESCE(cc.col_name:CAST(string AS column_alias0), string)) = string
+    )
+    AND (
+      pams.col_name:CAST(col_name AS column_alias0) IN (string, string)
+      OR UPPER(COALESCE(pams.col_name:CAST(string AS column_alias0), string)) IN (string, string, string)
+    )
+),
+labeled AS (
+  SELECT DISTINCT
+    table_alias1.col_name,
+    table_alias1.col_name,
+    table_alias1.col_name,
+    table_alias1.col_name,
+    table_alias1.col_name,
+    table_alias1.col_name,
+    table_alias1.col_name,
+    table_alias1.col_name,
+    table_alias1.col_name,
+    table_alias1.col_name,
+    table_alias1.col_name,
+    table_alias1.new_column,
+    CASE
+      WHEN UPPER(COALESCE(table_alias1.new_column, string)) LIKE string THEN string
+      WHEN UPPER(COALESCE(table_alias1.new_column, string)) LIKE string OR UPPER(COALESCE(table_alias1.new_column, string)) LIKE string THEN string
+      WHEN table_alias1.new_column = string THEN string
+      WHEN table_alias1.new_column = string THEN string
+      ELSE NULL
+    END AS column_alias4,
+    CASE
+      WHEN ARRAY_CONTAINS(TO_VARIANT(string), table_alias1.col_name) THEN string
+      WHEN ARRAY_CONTAINS(TO_VARIANT(string), table_alias1.col_name) THEN string
+      ELSE string
+    END AS column_alias5,
+    CASE
+      WHEN table_alias1.col_name = string OR table_alias1.col_name = string THEN string
+      WHEN table_alias1.col_name = string OR table_alias1.col_name = string THEN string
+      ELSE NULL
+    END AS column_alias6
+  FROM CTE table_alias1
+)
+SELECT
+  table_alias2.col_name AS string,
+  table_alias2.col_name AS column_alias7,
+  table_alias2.new_column AS string,
+  table_alias2.col_name AS column_alias8,
+  table_alias2.col_name AS column_alias9,
+  table_alias2.col_name AS string,
+  table_alias2.col_name AS column_alias10,
+  table_alias2.col_name AS column_alias11,
+  table_alias2.col_name AS column_alias12,
+  ROUND(TRY_TO_DOUBLE(CAST(table_alias2.col_name[num] AS column_alias0)), num) AS string,
+  table_alias2.new_column AS string,
+  table_alias2.new_column AS column_alias4,
+  table_alias2.new_column AS string
+FROM new_table table_alias2
+WHERE table_alias2.new_column IN (string, string)
+  AND table_alias2.new_column IN (string, string)
+ORDER BY table_alias2.col_name ASC;",1
+68,"WITH CTE AS (
+  SELECT
+    table_alias0.col_name,
+    table_alias0.col_name,
+    table_alias1.col_name AS string,
+    SUM(table_alias1.col_name) OVER (PARTITION BY table_alias0.col_name) AS string
+  FROM new_table AS table_alias0
+  JOIN new_table AS table_alias1
+    ON table_alias0.col_name = table_alias1.col_name
+  WHERE
+    table_alias0.col_name = string AND table_alias1.col_name = string
+)
+SELECT
+  col_name,
+  string AS string,
+  col_name,
+  string AS string,
+  string / string AS string
+FROM CTE
+WHERE string > num",1
+69,"WITH CTE AS (
+  SELECT
+    table_alias4.new_column,
+    CAST(table_alias4.column_alias1 AS column_alias0) AS column_alias1
+  FROM table_name AS table_alias0,
+  json_each(table_alias0.col_name) AS table_alias4
+  WHERE table_alias0.col_name = string
+),
+candidate_patents_with_year AS (
+  SELECT
+    table_alias1.col_name,
+    table_alias2.col_name
+  FROM table_name AS table_alias1
+  JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name
+  WHERE table_alias1.col_name != num
+    AND CAST(strftime(string, TO_DATE(CAST(table_alias1.col_name AS column_alias2) AS column_alias3), string)) = num
+    AND table_alias1.col_name != string
+),
+candidate_embeddings_flat AS (
+  SELECT
+    table_alias3.col_name,
+    table_alias4.new_column,
+    CAST(table_alias4.column_alias1 AS column_alias0) AS column_alias1
+  FROM new_table AS table_alias3,
+  json_each(table_alias3.col_name) AS table_alias4
+)
+SELECT
+  table_alias3.col_name
+FROM new_table AS table_alias3
+JOIN CTE AS table_alias0 ON table_alias3.new_column = table_alias0.new_column
+GROUP BY table_alias3.col_name
+ORDER BY SUM(table_alias3.column_alias1 * table_alias0.column_alias1) DESC
+LIMIT num",1
+70,"WITH CTE AS (
+  SELECT
+    tr.col_name,
+    tr.col_name,
+    tr.col_name,
+    tr.col_name,
+    tr.col_name,
+    tr.col_name
+  FROM new_table.new_column.TOP_RISING_TERMS tr
+  WHERE tr.col_name IS NOT NULL
+  table_alias4 ALL
+  SELECT
+    ir.col_name,
+    ir.col_name,
+    ir.col_name,
+    ir.col_name,
+    ir.col_name,
+    ir.col_name
+  FROM new_table.new_column.INTERNATIONAL_TOP_RISING_TERMS ir
+  WHERE ir.col_name IS NOT NULL
+),
+latest_refresh AS (
+  SELECT MAX(column_alias0) AS column_alias0
+  FROM CTE
+),
+latest_week_in_latest AS (
+  SELECT MAX(table_alias0.col_name) AS column_alias1
+  FROM CTE table_alias0
+  JOIN new_table table_alias1 ON table_alias0.col_name = table_alias1.col_name
+),
+target AS (
+  SELECT date(table_alias2.col_name, string) AS string
+  FROM new_table table_alias2
+),
+cand_exact_latest AS (  
+  SELECT num AS column_alias2, table_alias0.col_name, table_alias0.col_name
+  FROM CTE table_alias0
+  JOIN new_table table_alias1 ON table_alias0.col_name = table_alias1.col_name
+  JOIN new_table table_alias3 ON table_alias0.col_name = table_alias3.string
+  GROUP BY table_alias0.col_name, table_alias0.col_name
+),
+cand_exact_any AS (     
+  SELECT num AS column_alias2, x.col_name, x.col_name
+  FROM (
+    SELECT table_alias0.col_name, table_alias0.col_name,
+           ROW_NUMBER() OVER (PARTITION BY table_alias0.col_name ORDER BY table_alias0.col_name DESC) AS column_alias3
+    FROM CTE table_alias0
+    JOIN new_table table_alias3 ON table_alias0.col_name = table_alias3.string
+  ) x
+  WHERE x.new_column = num
+),
+candidates AS (
+  SELECT * FROM new_table
+  table_alias4 ALL
+  SELECT * FROM new_table
+),
+selected_context AS (
+  SELECT column_alias0, column_alias1
+  FROM (
+    SELECT column_alias0, column_alias1,
+           ROW_NUMBER() OVER (ORDER BY column_alias2) AS column_alias3
+    FROM new_table
+  )
+  WHERE column_alias3 = num
+),
+rows_in_context AS (
+  SELECT table_alias0.*
+  FROM CTE table_alias0
+  JOIN new_table table_alias5
+    ON table_alias0.col_name = table_alias5.col_name
+   AND table_alias0.col_name = table_alias5.col_name
+),
+terms_aggregated AS (
+  SELECT
+    col_name,
+    MIN(col_name) AS column_alias4,
+    MAX(col_name) AS column_alias5,
+    MAX(col_name) AS column_alias6
+  FROM new_table
+  GROUP BY col_name
+)
+SELECT table_alias6.col_name
+FROM new_table table_alias6
+AND num=num;",1
+71,"WITH CTE AS (
+  SELECT 
+    col_name AS column_alias0,
+    SUM(CAST(col_name AS column_alias1)) AS column_alias2
+  FROM table_name
+  WHERE col_name = string
+    AND col_name != string
+  GROUP BY col_name
+),
+outflows AS (
+  SELECT 
+    col_name AS column_alias0,
+    SUM(CAST(col_name AS column_alias1)) AS column_alias3
+  FROM table_name
+  WHERE col_name = string
+    AND col_name != string
+  GROUP BY col_name
+),
+all_addresses AS (
+  SELECT column_alias0 FROM CTE
+  table_alias0
+  SELECT column_alias0 FROM new_table
+),
+net_balances AS (
+  SELECT 
+    table_alias1.col_name,
+    COALESCE(table_alias2.new_column, num) - COALESCE(table_alias3.new_column, num) AS column_alias4
+  FROM new_table table_alias1
+  LEFT JOIN CTE table_alias2 ON table_alias1.col_name = table_alias2.col_name
+  LEFT JOIN new_table table_alias3 ON table_alias1.col_name = table_alias3.col_name
+)
+SELECT 
+  SUM(CASE WHEN column_alias4 > num THEN column_alias4 ELSE num END) / POWER(num, num) AS column_alias5
+FROM new_table",1
+72,"WITH CTE AS (
+  SELECT 
+    col_name,
+    col_name,
+    col_name
+  FROM table_name
+  WHERE col_name ILIKE string
+    AND col_name IS NOT NULL
+    AND col_name != string
+),
+parsed_json AS (
+  SELECT 
+    col_name,
+    col_name,
+    TRY_PARSE_JSON(col_name) AS string
+  FROM CTE
+  WHERE TRY_PARSE_JSON(col_name) IS NOT NULL
+),
+require_sections AS (
+  SELECT 
+    col_name,
+    col_name,
+    string:string AS string
+  FROM new_table
+  WHERE string:string IS NOT NULL
+),
+flattened_packages AS (
+  SELECT 
+    table_alias0.col_name,
+    table_alias0.col_name,
+    CAST(f.new_column AS column_alias0) AS string
+  FROM new_table table_alias0,
+  json_each(table_alias0.string) AS table_alias1
+)
+SELECT 
+  string,
+  COUNT(*) AS column_alias1
+FROM new_table
+WHERE string IS NOT NULL
+GROUP BY string
+ORDER BY column_alias1 DESC, string",1
+73,"WITH CTE AS (
+  SELECT 
+    col_name,
+    col_name,
+    col_name,
+    COALESCE(column_alias5, col_name) AS string,
+    col_name,
+    column_alias4,
+    NULL AS column_alias0,
+    NULL AS column_alias1,
+    NULL AS column_alias2,
+    string AS column_alias3
+  FROM new_table.new_column.USERS_MESSAGES_PUSHNOTIFICATION_SEND_VIEW
+  WHERE col_name BETWEEN num AND num
+  UNION ALL
+  SELECT 
+    col_name,
+    col_name,
+    col_name,
+    COALESCE(column_alias5, col_name) AS string,
+    col_name,
+    column_alias4,
+    NULL AS column_alias0,
+    NULL AS column_alias1,
+    NULL AS column_alias2,
+    string AS column_alias3
+  FROM new_table.new_column.USERS_MESSAGES_PUSHNOTIFICATION_BOUNCE_VIEW
+  WHERE col_name BETWEEN num AND num
+  UNION ALL
+  SELECT 
+    col_name,
+    col_name,
+    col_name,
+    COALESCE(column_alias5, col_name) AS string,
+    col_name,
+    column_alias4,
+    column_alias0,
+    column_alias1,
+    column_alias2,
+    string AS column_alias3
+  FROM new_table.new_column.USERS_MESSAGES_PUSHNOTIFICATION_OPEN_VIEW
+  WHERE col_name BETWEEN num AND num
+  UNION ALL
+  SELECT 
+    col_name,
+    col_name,
+    col_name,
+    COALESCE(column_alias5, col_name) AS string,
+    col_name,
+    NULL AS column_alias4,
+    column_alias0,
+    column_alias1,
+    column_alias2,
+    string AS column_alias3
+  FROM new_table.new_column.USERS_MESSAGES_PUSHNOTIFICATION_INFLUENCEDOPEN_VIEW
+  WHERE col_name BETWEEN num AND num
+)
+SELECT 
+  col_name,
+  col_name,
+  col_name,
+  string AS column_alias5,
+  col_name,
+  column_alias4,
+  column_alias0,
+  column_alias1,
+  column_alias2,
+  SUM(CASE WHEN column_alias3 = string THEN num ELSE num END) AS string,
+  COUNT(DISTINCT CASE WHEN column_alias3 = string THEN col_name ELSE NULL END) AS string,
+  SUM(CASE WHEN column_alias3 = string THEN num ELSE num END) AS string,
+  COUNT(DISTINCT CASE WHEN column_alias3 = string THEN col_name ELSE NULL END) AS string,
+  SUM(CASE WHEN column_alias3 = string THEN num ELSE num END) AS string,
+  COUNT(DISTINCT CASE WHEN column_alias3 = string THEN col_name ELSE NULL END) AS string,
+  SUM(CASE WHEN column_alias3 = string THEN num ELSE num END) AS string,
+  COUNT(DISTINCT CASE WHEN column_alias3 = string THEN col_name ELSE NULL END) AS string
+FROM CTE
+GROUP BY 
+  col_name,
+  col_name,
+  col_name,
+  string,
+  col_name,
+  column_alias4,
+  column_alias0,
+  column_alias1,
+  column_alias2
+ORDER BY 
+  col_name,
+  col_name,
+  col_name
+LIMIT num",1
+74,"WITH CTE AS (
+  SELECT 
+    sf.col_name,
+    sc.col_name,
+    string as column_alias0
+  FROM new_table.new_column.SAMPLE_FILES sf 
+  JOIN new_table.new_column.SAMPLE_CONTENTS sc ON sf.col_name = sc.col_name 
+  WHERE sc.col_name = num 
+  AND sf.col_name ILIKE string
+),
+python_import_lines AS (
+  SELECT 
+    column_alias0,
+    col_name,
+    TRIM(column_alias2.value) as column_alias1
+  FROM CTE,
+  json_each(jsonb || replace(col_name, char(num), string) || string) AS column_alias2
+  WHERE TRIM(column_alias2.value) LIKE string 
+     OR TRIM(column_alias2.value) LIKE string
+),
+parsed_python_imports AS (
+  SELECT 
+    column_alias0,
+    CASE 
+      WHEN column_alias1 LIKE string AND column_alias1 NOT LIKE string THEN
+        TRIM(SPLIT_PART(SPLIT_PART(column_alias1, string, num), string, num))
+      WHEN column_alias1 LIKE string THEN
+        TRIM(SPLIT_PART(SPLIT_PART(column_alias1, string, num), string, num))
+      ELSE NULL
+    END as column_alias3
+  FROM new_table
+  WHERE column_alias1 IS NOT NULL AND column_alias1 != string
+),
+python_base_modules AS (
+  SELECT 
+    column_alias0,
+    SPLIT_PART(column_alias3, string, num) as column_alias4
+  FROM new_table
+  WHERE column_alias3 IS NOT NULL AND column_alias3 != string
+),
+python_results AS (
+  SELECT 
+    column_alias0,
+    column_alias4,
+    COUNT(*) as column_alias5
+  FROM new_table
+  WHERE column_alias4 IS NOT NULL AND column_alias4 != string
+  GROUP BY column_alias0, column_alias4
+),
+r_files AS (
+  SELECT 
+    col_name as column_alias6,
+    col_name,
+    string as column_alias0
+  FROM new_table.new_column.SAMPLE_CONTENTS 
+  WHERE col_name = num 
+  AND (col_name ILIKE string OR col_name ILIKE string OR col_name ILIKE string)
+),
+r_import_lines AS (
+  SELECT 
+    column_alias0,
+    column_alias6,
+    TRIM(column_alias2.value) as column_alias1
+  FROM new_table,
+  json_each(jsonb || replace(col_name, char(num), string) || string) AS column_alias2
+  WHERE TRIM(column_alias2.value) LIKE string 
+     OR TRIM(column_alias2.value) LIKE string
+),
+parsed_r_imports AS (
+  SELECT 
+    column_alias0,
+    CASE 
+      WHEN column_alias1 LIKE string THEN
+        TRIM(REPLACE(REPLACE(SPLIT_PART(SPLIT_PART(column_alias1, string, num), string, num), string, string), string, string))
+      WHEN column_alias1 LIKE string THEN
+        TRIM(REPLACE(REPLACE(SPLIT_PART(SPLIT_PART(column_alias1, string, num), string, num), string, string), string, string))
+      ELSE NULL
+    END as column_alias7
+  FROM new_table
+  WHERE column_alias1 IS NOT NULL AND column_alias1 != string
+),
+r_results AS (
+  SELECT 
+    column_alias0,
+    column_alias7 as column_alias4,
+    COUNT(*) as column_alias5
+  FROM new_table
+  WHERE column_alias7 IS NOT NULL AND column_alias7 != string
+  GROUP BY column_alias0, column_alias7
+),
+combined_results AS (
+  SELECT column_alias0, column_alias4, column_alias5 FROM new_table
+  table_alias0 ALL
+  SELECT column_alias0, column_alias4, column_alias5 FROM new_table
+)
+SELECT 
+  column_alias0,
+  column_alias4,
+  column_alias5
+FROM new_table
+ORDER BY column_alias0, column_alias5 DESC, column_alias4",1
+75,"WITH CTE AS (
+  SELECT COUNT(DISTINCT col_name) AS column_alias0
+  FROM table_name
+  WHERE col_name = string
+),
+string AS (
+  SELECT
+    table_alias0.col_name,
+    table_alias0.col_name,
+    table_alias0.col_name,
+    table_alias1.col_name,
+    table_alias0.col_name
+  FROM table_name table_alias0
+  JOIN table_name table_alias1
+    ON table_alias0.col_name = table_alias1.col_name
+   AND LEAST(table_alias0.col_name, table_alias1.col_name) - GREATEST(table_alias0.col_name, table_alias1.col_name) > num
+  WHERE table_alias0.col_name = string
+),
+string AS (
+  SELECT
+    col_name,
+    col_name,
+    col_name,
+    col_name,
+    MAX(col_name) AS string
+  FROM CTE
+  GROUP BY col_name, col_name, col_name, col_name
+),
+string AS (
+  SELECT
+    col_name,
+    col_name,
+    col_name,
+    MAX(string) AS string
+  FROM CTE
+  GROUP BY col_name, col_name, col_name
+),
+string AS (
+  SELECT
+    col_name,
+    col_name,
+    col_name,
+    CASE
+      WHEN string > num THEN string
+      WHEN string = num THEN string
+      WHEN string = num THEN string
+      WHEN string = num THEN string
+      WHEN string = num THEN string
+      ELSE string
+    END AS column_alias1
+  FROM CTE
+),
+string AS (
+  SELECT
+    col_name,
+    col_name,
+    SUM(CASE WHEN column_alias1 = string THEN num ELSE num END) AS string,
+    SUM(CASE WHEN column_alias1 = string THEN num ELSE num END) AS string,
+    SUM(CASE WHEN column_alias1 = string THEN num ELSE num END) AS string,
+    SUM(CASE WHEN column_alias1 = string THEN num ELSE num END) AS string,
+    SUM(CASE WHEN column_alias1 = string THEN num ELSE num END) AS string
+  FROM CTE
+  GROUP BY col_name, col_name
+)
+SELECT
+  table_alias2.col_name,
+  table_alias2.col_name,
+  num * table_alias2.string / table_alias3.new_column AS string,
+  num * table_alias2.string / table_alias3.new_column AS string,
+  num * table_alias2.string / table_alias3.new_column AS string,
+  num * table_alias2.string / table_alias3.new_column AS string,
+  num * table_alias2.string / table_alias3.new_column AS string
+FROM CTE table_alias2
+CROSS JOIN CTE table_alias3
+ORDER BY
+  CASE
+    WHEN REGEXP_LIKE(REGEXP_REPLACE(table_alias2.col_name, string, string), string)
+      THEN TO_NUMBER(REGEXP_REPLACE(table_alias2.col_name, string, string))
+    WHEN REGEXP_REPLACE(table_alias2.col_name, string, string) = string THEN num
+    WHEN REGEXP_REPLACE(table_alias2.col_name, string, string) = string THEN num
+    ELSE num
+  END,
+  table_alias2.col_name;",1
+76,"WITH CTE AS (
+  SELECT DISTINCT
+    UPPER(VALUE:CAST(name AS column_alias0)) AS string,
+    column_alias1 AS column_alias1,
+    CASE WHEN col_name IS NOT NULL AND col_name > num THEN FLOOR(col_name/num) END AS column_alias2,
+    column_alias3 AS column_alias3
+  FROM table_name AS table_alias0,
+       json_each(col_name) AS table_alias4 string,
+       json_each(col_name) AS table_alias4 string
+  WHERE UPPER(VALUE:CAST(code AS column_alias0)) LIKE string
+),
+string AS (
+  SELECT
+    string,
+    COUNT(DISTINCT column_alias1) AS string
+  FROM CTE
+  GROUP BY string
+),
+string AS (
+  SELECT
+    string,
+    column_alias2,
+    COUNT(DISTINCT column_alias1) AS string
+  FROM CTE
+  WHERE column_alias2 IS NOT NULL
+  GROUP BY string, column_alias2
+),
+string AS (
+  SELECT
+    string,
+    column_alias2 AS string,
+    string
+  FROM (
+    SELECT
+      string,
+      column_alias2,
+      string,
+      ROW_NUMBER() OVER (PARTITION BY string ORDER BY string DESC, column_alias2 ASC) AS string
+    FROM CTE
+  )
+  WHERE string = num
+),
+string AS (
+  SELECT
+    string,
+    column_alias2,
+    column_alias3,
+    COUNT(DISTINCT column_alias1) AS string
+  FROM CTE
+  WHERE column_alias2 IS NOT NULL
+  GROUP BY string, column_alias2, column_alias3
+),
+string AS (
+  SELECT
+    string,
+    column_alias2,
+    column_alias3 AS string,
+    string
+  FROM (
+    SELECT
+      string,
+      column_alias2,
+      column_alias3,
+      string,
+      ROW_NUMBER() OVER (PARTITION BY string, column_alias2 ORDER BY string DESC, column_alias3 ASC) AS string
+    FROM CTE
+  ) AS column_alias4
+  WHERE string = num
+),
+string AS (
+  SELECT
+    string,
+    string,
+    ROW_NUMBER() OVER (ORDER BY string DESC, string ASC) AS string
+  FROM CTE
+)
+SELECT
+  string,
+  string,
+  string,
+  string AS string,
+  string
+FROM CTE AS table_alias1
+JOIN CTE AS table_alias2
+  ON string = string
+LEFT JOIN CTE AS table_alias3
+  ON string = string
+ AND column_alias2 = string
+WHERE string <= num
+ORDER BY string DESC, string ASC;",1
+77,"WITH CTE AS (
+  SELECT DISTINCT
+    table_alias0.col_name AS column_alias0,
+    table_alias0.col_name
+  FROM table_name table_alias0
+  WHERE table_alias0.col_name = string
+    AND table_alias0.col_name IS NOT NULL
+),
+brca_patients AS (
+  SELECT DISTINCT
+    table_alias1.col_name
+  FROM table_name table_alias1
+  WHERE table_alias1.col_name = string
+),
+denom_hist AS (
+  SELECT
+    table_alias2.col_name,
+    table_alias3.col_name
+  FROM new_table table_alias2
+  JOIN CTE table_alias3
+    ON table_alias2.col_name = table_alias3.col_name
+),
+cdh1_mutants AS (
+  SELECT DISTINCT
+    table_alias1.col_name
+  FROM table_name table_alias1
+  WHERE table_alias1.col_name = string
+    AND table_alias1.col_name = string
+)
+SELECT
+  table_alias4.col_name AS column_alias1,
+  COUNT(DISTINCT CASE WHEN table_alias5.col_name IS NOT NULL THEN table_alias4.col_name END) AS string,
+  COUNT(DISTINCT table_alias4.col_name) AS column_alias2,
+  num * COUNT(DISTINCT CASE WHEN table_alias5.col_name IS NOT NULL THEN table_alias4.col_name END)
+    / NULLIF(COUNT(DISTINCT table_alias4.col_name), num) AS string
+FROM new_table table_alias4
+LEFT JOIN new_table table_alias5
+  ON table_alias4.col_name = table_alias5.col_name
+GROUP BY table_alias4.col_name
+ORDER BY string DESC
+LIMIT num;",1
+78,"WITH CTE AS (
+  SELECT DISTINCT column_alias0
+  FROM table_name
+  WHERE col_name = string
+    AND col_name = string
+    AND col_name = string
+  UNION
+  SELECT DISTINCT column_alias0
+  FROM table_name
+  WHERE col_name = string
+    AND col_name = string
+),
+string AS (
+  SELECT
+    table_alias0.col_name,
+    MAX(IFF(table_alias0.col_name = string, table_alias0.col_name, NULL))   AS string,
+    MAX(IFF(table_alias0.col_name = string, table_alias0.col_name, NULL))   AS string,
+    MAX(IFF(table_alias0.col_name = string, table_alias0.col_name, NULL)) AS string,
+    MAX(IFF(table_alias0.col_name = string, table_alias0.col_name, NULL))  AS string
+  FROM table_name table_alias0
+  WHERE table_alias0.col_name = string
+    AND table_alias0.col_name IN (string,string,string,string)
+    AND table_alias0.col_name LIKE string  
+  GROUP BY table_alias0.col_name
+)
+SELECT
+  table_alias1.col_name AS column_alias0,
+  table_alias0.string,
+  table_alias0.string,
+  table_alias0.string,
+  table_alias0.string,
+  table_alias1.col_name AS column_alias1,
+  table_alias1.col_name,
+  table_alias1.col_name,
+  table_alias1.col_name AS column_alias2,
+  table_alias1.col_name AS column_alias3,
+  table_alias1.col_name AS column_alias4,
+  table_alias1.col_name AS column_alias5,
+  table_alias1.col_name AS string,
+  table_alias1.col_name AS column_alias6,
+  table_alias1.col_name AS column_alias7,
+  table_alias1.col_name AS column_alias8
+FROM table_name table_alias1
+JOIN CTE table_alias2
+  ON table_alias1.col_name = table_alias2.col_name
+LEFT JOIN CTE table_alias0
+  ON table_alias0.col_name = table_alias1.col_name
+WHERE table_alias1.col_name = string
+ORDER BY table_alias1.col_name;",1
+79,"WITH CTE AS (
+  SELECT DISTINCT table_alias0.col_name
+  FROM table_name table_alias0, json_each(table_alias0.col_name) AS table_alias5
+  WHERE table_alias0.col_name IS NOT NULL
+    AND table_alias0.col_name > num
+    AND c.value:CAST(code AS column_alias0) LIKE string
+    AND table_alias0.col_name IS NOT NULL
+  UNION
+  SELECT DISTINCT table_alias0.col_name
+  FROM table_name table_alias0, json_each(table_alias0.col_name) AS table_alias6
+  WHERE table_alias0.col_name IS NOT NULL
+    AND table_alias0.col_name > num
+    AND i.value:CAST(code AS column_alias0) LIKE string
+    AND table_alias0.col_name IS NOT NULL
+),
+apps_with_meta AS (
+  SELECT
+    table_alias0.col_name,
+    CAST(FLOOR(table_alias0.col_name / num) AS column_alias1) AS column_alias2,
+    table_alias0.col_name,
+    table_alias0.col_name
+  FROM table_name table_alias0
+  JOIN CTE table_alias1 ON table_alias1.col_name = table_alias0.col_name
+),
+assignee_apps AS (
+  SELECT
+    UPPER(TRIM(ah.value:CAST(name AS column_alias0))) AS string,
+    table_alias2.col_name,
+    table_alias2.new_column
+  FROM new_table table_alias2,
+       json_each(table_alias2.col_name) AS table_alias7
+  WHERE ah.value:name IS NOT NULL
+  UNION ALL
+  SELECT
+    UPPER(TRIM(CAST(table_alias1.value AS column_alias0))) AS string,
+    table_alias2.col_name,
+    table_alias2.new_column
+  FROM new_table table_alias2,
+       json_each(table_alias2.col_name) AS table_alias8
+  WHERE (table_alias2.col_name IS NULL OR ARRAY_SIZE(table_alias2.col_name) = num)
+    AND table_alias1.value IS NOT NULL
+),
+assignee_totals AS (
+  SELECT
+    string,
+    COUNT(DISTINCT col_name) AS string
+  FROM new_table
+  GROUP BY string
+),
+top_assignee AS (
+  SELECT string
+  FROM new_table
+  AND num=num
+),
+year_counts AS (
+  SELECT
+    table_alias3.new_column AS column_alias3,
+    COUNT(DISTINCT table_alias3.col_name) AS string
+  FROM new_table table_alias3
+  JOIN new_table table_alias4 ON table_alias3.string = table_alias4.string
+  GROUP BY table_alias3.new_column
+)
+SELECT column_alias3
+FROM new_table
+AND num=num;",1
+80,"WITH CTE AS (
+  SELECT col_name AS column_alias0, column_alias1
+  FROM new_table.new_column.USERS
+  WHERE datetime(col_name / num) >= datetime(string)
+    AND datetime(col_name / num) < datetime(string)
+),
+orders_2019 AS (
+  SELECT col_name, column_alias0
+  FROM new_table.new_column.ORDERS
+  WHERE datetime(col_name / num) >= datetime(string)
+    AND datetime(col_name / num) < datetime(string)
+    AND col_name NOT IN (string,string)
+),
+order_items_valid AS (
+  SELECT col_name, col_name
+  FROM new_table.new_column.ORDER_ITEMS
+  WHERE col_name NOT IN (string,string)
+    AND col_name IS NOT NULL
+),
+per_order_revenue AS (
+  SELECT table_alias0.col_name, table_alias0.col_name,
+         SUM(table_alias1.col_name) AS string
+  FROM new_table table_alias0
+  JOIN new_table table_alias1
+    ON table_alias0.col_name = table_alias1.col_name
+  GROUP BY table_alias0.col_name, table_alias0.col_name
+),
+per_user AS (
+  SELECT table_alias2.col_name,
+         SUM(table_alias2.string) AS string,
+         COUNT(DISTINCT table_alias2.col_name) AS string,
+         SUM(table_alias2.string) / NULLIF(COUNT(DISTINCT table_alias2.col_name), num) AS string
+  FROM new_table table_alias2
+  GROUP BY table_alias2.col_name
+)
+SELECT table_alias3.col_name AS column_alias1
+FROM CTE table_alias3
+JOIN new_table table_alias4
+  ON table_alias3.col_name = table_alias4.col_name
+ORDER BY table_alias4.string DESC NULLS LAST, table_alias3.col_name ASC
+LIMIT num;",1
+81,"WITH CTE AS (
+  SELECT num AS column_alias0 UNION ALL
+  SELECT num UNION ALL
+  SELECT num UNION ALL
+  SELECT num UNION ALL
+  SELECT num UNION ALL
+  SELECT num UNION ALL
+  SELECT num
+),
+string AS (
+  SELECT DISTINCT
+    col_name AS string,
+    column_alias0 AS column_alias0,
+    CASE WHEN col_name ILIKE string THEN num ELSE num END AS string
+  FROM table_name AS table_alias0
+  JOIN table_name AS string
+    ON col_name = col_name
+  JOIN table_name AS string
+    ON col_name = col_name
+  LEFT JOIN table_name AS table_alias1
+    ON col_name = col_name
+  WHERE col_name = num
+    AND column_alias0 BETWEEN num AND num
+    AND col_name ILIKE string
+),
+string AS (
+  SELECT
+    column_alias0,
+    COUNT(DISTINCT string) AS string,
+    COUNT(DISTINCT CASE WHEN string = num THEN string END) AS string
+  FROM CTE
+  GROUP BY column_alias0
+),
+string AS (
+  SELECT DISTINCT
+    col_name AS string,
+    column_alias0 AS column_alias0,
+    CASE WHEN col_name ILIKE string THEN num ELSE num END AS string
+  FROM table_name AS table_alias0
+  JOIN table_name AS string
+    ON col_name = col_name
+  JOIN table_name AS string
+    ON col_name = col_name
+  LEFT JOIN table_name AS table_alias1
+    ON col_name = col_name
+  WHERE col_name = num
+    AND column_alias0 BETWEEN num AND num
+    AND col_name ILIKE string
+),
+string AS (
+  SELECT
+    column_alias0,
+    COUNT(DISTINCT string) AS string,
+    COUNT(DISTINCT CASE WHEN string = num THEN string END) AS string
+  FROM CTE
+  GROUP BY column_alias0
+)
+SELECT
+  column_alias0,
+  COALESCE(string, num) AS string,
+  COALESCE(string, num) AS string,
+  COALESCE(string, num) AS string,
+  COALESCE(string, num) AS string
+FROM CTE AS table_alias2
+LEFT JOIN CTE AS table_alias3
+  ON column_alias0 = column_alias0
+LEFT JOIN CTE AS string
+  ON column_alias0 = column_alias0
+ORDER BY column_alias0",1
+82,"WITH CTE AS (
+  SELECT table_alias0.col_name
+  FROM table_name table_alias0
+  WHERE table_alias0.col_name = string
+    AND table_alias0.col_name = string
+    AND table_alias0.col_name = string
+),
+refs AS (
+  SELECT table_alias1.col_name AS string, table_alias0.CAST(col_name AS column_alias0) AS string
+  FROM CTE table_alias1
+  JOIN table_name table_alias0 ON table_alias0.col_name = table_alias1.col_name
+  WHERE table_alias0.col_name IS NOT NULL
+  UNION ALL
+  SELECT table_alias1.col_name, f.col_name:CAST(col_name AS column_alias0)
+  FROM CTE table_alias1
+  JOIN table_name table_alias0 ON table_alias0.col_name = table_alias1.col_name,
+       json_each(table_alias0.col_name) AS table_alias4
+  WHERE f.col_name:col_name IS NOT NULL
+  UNION ALL
+  SELECT table_alias1.col_name, f.col_name:CAST(col_name AS column_alias0)
+  FROM CTE table_alias1
+  JOIN table_name table_alias0 ON table_alias0.col_name = table_alias1.col_name,
+       json_each(table_alias0.col_name) AS table_alias4
+  WHERE f.col_name:col_name IS NOT NULL
+  UNION ALL
+  SELECT table_alias1.col_name, f2.col_name:CAST(col_name AS column_alias0)
+  FROM CTE table_alias1
+  JOIN table_name table_alias0 ON table_alias0.col_name = table_alias1.col_name,
+       json_each(table_alias0.col_name) AS table_alias5,
+       json_each(f1.col_name:col_name) AS table_alias6
+  WHERE f2.col_name:col_name IS NOT NULL
+  UNION ALL
+  SELECT table_alias1.col_name, ri.col_name:CAST(col_name AS column_alias0)
+  FROM CTE table_alias1
+  JOIN table_name table_alias0 ON table_alias0.col_name = table_alias1.col_name,
+       json_each(table_alias0.col_name) AS table_alias7,
+       json_each(rs.col_name:string) AS table_alias8
+  WHERE ri.col_name:col_name IS NOT NULL
+  UNION ALL
+  SELECT table_alias1.col_name, ri.col_name:CAST(col_name AS column_alias0)
+  FROM CTE table_alias1
+  JOIN table_name table_alias0 ON table_alias0.col_name = table_alias1.col_name,
+       json_each(table_alias0.col_name) AS table_alias9,
+       json_each(rie.col_name:col_name) AS table_alias7,
+       json_each(rs.col_name:string) AS table_alias8
+  WHERE ri.col_name:col_name IS NOT NULL
+),
+seg_with_ref AS (
+  SELECT DISTINCT string
+  FROM new_table
+)
+SELECT
+  table_alias2.col_name:CAST(string AS column_alias0) AS string,
+  COUNT(*) AS count
+FROM table_name AS table_alias2
+JOIN new_table table_alias3
+  ON table_alias2.col_name = table_alias3.string
+GROUP BY num
+ORDER BY num DESC
+LIMIT num",1
+83,"WITH CTE AS (
+  SELECT table_alias0.col_name, table_alias0.col_name
+  FROM table_name table_alias0
+  WHERE table_alias0.col_name = string
+    AND table_alias0.col_name = string
+    AND table_alias0.col_name BETWEEN num AND num
+),
+string AS (
+  SELECT
+    table_alias1.col_name,
+    SUBSTRING(f.value:CAST(code AS column_alias0), num, num) AS string,
+    CASE WHEN f.value:CAST(string AS column_alias1) = num THEN num ELSE num END AS string
+  FROM CTE table_alias1,
+       json_each(table_alias1.col_name) AS table_alias2
+  WHERE f.value:code IS NOT NULL
+    AND SUBSTRING(f.value:CAST(code AS column_alias0), num, num) <> string
+),
+string AS (
+  SELECT
+    col_name,
+    string,
+    COUNT(*) AS string,
+    MAX(string) AS string
+  FROM new_table
+  GROUP BY col_name, string
+),
+string AS (
+  SELECT
+    col_name,
+    string,
+    ROW_NUMBER() OVER (
+      PARTITION BY col_name
+      ORDER BY string DESC, string DESC, string ASC
+    ) AS string
+  FROM new_table
+)
+SELECT
+  string AS string,
+  COUNT(*) AS string
+FROM new_table
+WHERE string = num
+GROUP BY string
+ORDER BY string DESC, string ASC
+LIMIT num;",1
+84,"WITH CTE AS (
+SELECT col_name, col_name, col_name
+FROM table_name
+WHERE col_name = string
+AND col_name >= num
+AND col_name <= num
+),
+citations_parsed AS (
+SELECT 
+    table_alias0.col_name AS column_alias0,
+    c.value:CAST(col_name AS column_alias1) AS column_alias2
+FROM table_name table_alias0,
+json_each(table_alias0.col_name) AS table_alias5
+WHERE table_alias0.col_name IS NOT NULL
+AND c.value:CAST(col_name AS column_alias1) IS NOT NULL
+AND c.value:CAST(col_name AS column_alias1) != string
+),
+temp_view_6 AS (
+SELECT 
+    table_alias1.new_column,
+    table_alias1.new_column,
+    table_alias2.col_name,
+    table_alias2.col_name
+FROM new_table table_alias1
+INNER JOIN CTE table_alias2 ON table_alias1.new_column = table_alias2.col_name
+),
+temp_view_7 AS (
+SELECT 
+    table_alias3.new_column,
+    COUNT(DISTINCT table_alias4.col_name) AS column_alias3
+FROM new_table table_alias3
+INNER JOIN table_name table_alias4 ON table_alias3.new_column = table_alias4.col_name
+WHERE table_alias4.col_name >= table_alias3.col_name
+AND table_alias4.col_name <= table_alias3.col_name + num
+GROUP BY table_alias3.new_column
+)
+SELECT COUNT(*) AS column_alias4
+FROM new_table
+WHERE column_alias3 = num",1
+85,"WITH CTE AS ( SELECT DISTINCT T1.col_name FROM new_table.new_column.LICENSES T1 JOIN new_table.new_column.LICENSES T2 ON LOWER(T1.col_name) = LOWER(T2.col_name) ), events_agg AS ( SELECT TRY_PARSE_JSON(E.col_name):CAST(name AS column_alias0) AS column_alias1, SUM(CASE WHEN E.col_name = string  THEN num ELSE num END) AS column_alias2, SUM(CASE WHEN E.col_name = string THEN num ELSE num END) AS column_alias3, SUM(CASE WHEN E.col_name = string THEN num ELSE num END) AS watch_events FROM new_table.new_column._202204 E WHERE datetime(E.col_name / num) >= string AND datetime(E.col_name / num) < string AND E.col_name IN (string,string,string) GROUP BY TRY_PARSE_JSON(E.col_name):CAST(name AS column_alias0) ), totals AS ( SELECT column_alias1, column_alias2 + column_alias3 + watch_events AS total_events FROM new_table ) SELECT table_alias0.col_name FROM new_table table_alias0 JOIN CTE table_alias1 ON table_alias0.col_name = table_alias1.col_name ORDER BY table_alias0.new_column DESC LIMIT num;",1
+86,"WITH CTE AS (SELECT col_name, value:CAST(string AS column_alias0) AS column_alias1, value:CAST(string AS column_alias0) AS column_alias2, value:CAST(string AS column_alias3) AS column_alias4, value:CAST(string AS column_alias3) AS column_alias5, value:CAST(column_alias6 AS column_alias0) AS column_alias6, value:string AS availability_date FROM new_table.new_column.REMOVED_CREATIVE_STATS, json_each(PARSE_JSON(col_name) AS table_alias1)), filtered_regions AS (SELECT col_name, datetime(column_alias1) AS string, datetime(column_alias2) AS string, column_alias4, column_alias5 FROM CTE WHERE column_alias6 = string AND availability_date IS NULL AND column_alias4 > num AND column_alias5 < num) SELECT T1.col_name, table_alias0.string, table_alias0.string, PARSE_JSON(T1.col_name)[num]:CAST(string AS column_alias0) AS string, PARSE_JSON(T1.col_name)[num]:CAST(string AS column_alias0) AS string, table_alias0.new_column, table_alias0.new_column FROM new_table.new_column.REMOVED_CREATIVE_STATS T1 INNER JOIN new_table table_alias0 ON T1.col_name = table_alias0.col_name WHERE (PARSE_JSON(T1.col_name):CAST(string AS column_alias0) != string OR PARSE_JSON(T1.col_name):CAST(string AS column_alias0) != string OR PARSE_JSON(T1.col_name):CAST(string AS column_alias0) != string OR PARSE_JSON(T1.col_name):CAST(string AS column_alias0) != string OR PARSE_JSON(T1.col_name):CAST(string AS column_alias0) != string) ORDER BY table_alias0.string DESC LIMIT num;",1
+87,"WITH CTE AS (SELECT pl.col_name, CASE WHEN pl.col_name = string THEN ST_GEOGFROMWKB(pl.col_name) ELSE ST_CENTROID(ST_GEOGFROMWKB(pl.col_name)) END as hospital_point FROM new_table.new_column.PLANET_LAYERS pl WHERE pl.col_name = string AND pl.col_name = string AND pl.col_name IS NOT NULL AND ST_X(CASE WHEN pl.col_name = string THEN ST_GEOGFROMWKB(pl.col_name) ELSE ST_CENTROID(ST_GEOGFROMWKB(pl.col_name)) END) BETWEEN num AND num AND ST_Y(CASE WHEN pl.col_name = string THEN ST_GEOGFROMWKB(pl.col_name) ELSE ST_CENTROID(ST_GEOGFROMWKB(pl.col_name)) END) BETWEEN num AND num), singapore_population_grids AS (SELECT col_name, col_name, col_name, col_name, ST_GEOGFROMWKB(col_name) as grid_point FROM new_table.new_column.POPULATION_GRID_1KM WHERE col_name = string AND col_name = string AND col_name > num), grid_distances AS (SELECT table_alias0.col_name, table_alias0.col_name, MIN(num) as min_distance_to_hospital FROM new_table table_alias0 CROSS JOIN CTE table_alias1 GROUP BY table_alias0.col_name, table_alias0.col_name), max_distance AS (SELECT MAX(min_distance_to_hospital) as maximum_distance FROM new_table), farthest_grid AS (SELECT table_alias2.col_name, table_alias2.col_name, table_alias2.new_column FROM new_table table_alias2, max_distance md WHERE table_alias2.new_column = md.new_column) SELECT SUM(col_name) as total_population FROM new_table",1
+88,"WITH CityPayments AS (
+  SELECT
+    C.customer_city,
+    SUM(P.payment_value) AS total_payment,
+    COUNT(DISTINCT O.order_id) AS delivered_order_count
+  FROM
+    OLIST_ORDERS AS O
+    JOIN OLIST_CUSTOMERS AS C
+      ON O.customer_id = C.customer_id
+    JOIN OLIST_ORDER_PAYMENTS AS P
+      ON O.order_id = P.order_id
+  WHERE
+    O.order_status = string
+  GROUP BY
+    C.customer_city
+), Top5Cities AS (
+  SELECT
+    total_payment,
+    delivered_order_count
+  FROM CityPayments
+  ORDER BY
+    total_payment ASC
+  LIMIT num
+)
+SELECT
+  AVG(total_payment),
+  AVG(delivered_order_count)
+FROM Top5Cities;",1
+89,"WITH CustomerOrderStats AS (
+    SELECT
+        C.customer_unique_id,
+        O.order_id,
+        datetime(O.order_purchase_timestamp) AS order_purchase_timestamp,
+        P.payment_value
+    FROM CUSTOMERS AS C
+    JOIN ORDERS AS O
+        ON C.customer_id = O.customer_id
+    JOIN ORDER_PAYMENTS AS P
+        ON O.order_id = P.order_id
+    WHERE O.order_status = string
+),
+MaxDate AS (
+    SELECT MAX(order_purchase_timestamp) AS string FROM CustomerOrderStats
+),
+RFM_Base AS (
+    SELECT
+        customer_unique_id,
+        DATEDIFF(day, MAX(order_purchase_timestamp), (SELECT string FROM MaxDate)) AS string,
+        COUNT(DISTINCT order_id) AS Frequency,
+        SUM(payment_value) AS string,
+        COUNT(DISTINCT order_id) AS string,
+        SUM(payment_value) AS string
+    FROM CustomerOrderStats
+    GROUP BY customer_unique_id
+),
+RFM_Scores AS (
+    SELECT
+        *,
+        NTILE(num) OVER (ORDER BY string ASC) AS R,
+        NTILE(num) OVER (ORDER BY Frequency DESC) AS string,
+        NTILE(num) OVER (ORDER BY string DESC) AS string
+    FROM RFM_Base
+),
+RFM_Segments AS (
+    SELECT
+        *,
+        CASE
+            WHEN R = num AND (string + string) BETWEEN num AND num THEN string
+            WHEN (R = num OR R = num) AND (string + string) BETWEEN num AND num THEN string
+            WHEN (R = num OR R = num) AND (string + string) BETWEEN num AND num THEN string
+            WHEN (R = num OR R = num) AND (string + string) BETWEEN num AND num THEN string
+            WHEN (R = num OR R = num) AND (string + string) BETWEEN num AND num THEN string
+            WHEN R = num AND (string + string) BETWEEN num AND num THEN string
+            WHEN R = num AND (string + string) BETWEEN num AND num THEN string
+            WHEN (R = num AND (string + string) BETWEEN num AND num) OR (R = num AND (string + string) BETWEEN num AND num) THEN string
+            WHEN R = num AND (string + string) BETWEEN num AND num THEN string
+            WHEN R = num AND (string + string) BETWEEN num AND num THEN string
+            WHEN R = num AND (string + string) BETWEEN num AND num THEN string
+            ELSE string
+        END AS string
+    FROM RFM_Scores
+)
+SELECT
+    string,
+    SUM(string) / SUM(string) AS string
+FROM RFM_Segments
+GROUP BY string
+ORDER BY string DESC",1
+90,"WITH FLIGHT_INFO AS (
+    SELECT    
+        FLIGHTS.flight_id,
+        PARSE_JSON(DEPARTURE.city):string AS string,
+        CAST(SUBSTR(DEPARTURE.coordinates, num, POSITION(string IN DEPARTURE.coordinates) - num) AS DOUBLE) AS string,
+        CAST(SUBSTR(DEPARTURE.coordinates, POSITION(string IN DEPARTURE.coordinates) + num, LENGTH(DEPARTURE.coordinates) - POSITION(string IN DEPARTURE.coordinates) - num) AS DOUBLE) AS string,
+        PARSE_JSON(ARRIVAL.city):string AS string,
+        CAST(SUBSTR(ARRIVAL.coordinates, num, POSITION(string IN ARRIVAL.coordinates) - num) AS DOUBLE) AS string,
+        CAST(SUBSTR(ARRIVAL.coordinates, POSITION(string IN ARRIVAL.coordinates) + num, LENGTH(ARRIVAL.coordinates) - POSITION(string IN ARRIVAL.coordinates) - num) AS DOUBLE) AS string
+    FROM
+        AIRLINES.AIRLINES.FLIGHTS 
+    LEFT JOIN AIRLINES.AIRLINES.AIRPORTS_DATA AS DEPARTURE ON FLIGHTS.departure_airport = DEPARTURE.airport_code
+    LEFT JOIN AIRLINES.AIRLINES.AIRPORTS_DATA AS ARRIVAL ON FLIGHTS.arrival_airport = ARRIVAL.airport_code
+)
+SELECT string FROM
+(
+    SELECT
+        FLOOR(string / num) * num AS string,
+        COUNT(*) AS string
+    FROM (
+        SELECT
+            string,
+            string,
+            AVG(string) AS string
+        FROM (
+            SELECT
+                string,
+                string,
+                num * num * ASIN(SQRT(
+                    POWER(SIN(RADIANS((string - string) / num)), num) +
+                    COS(RADIANS(string)) * COS(RADIANS(string)) *
+                    POWER(SIN(RADIANS((string - string) / num)), num)
+                )) AS string
+            FROM FLIGHT_INFO
+        ) AS subquery
+        GROUP BY string, string
+    ) AS distances
+    GROUP BY string
+    ORDER BY string
+    LIMIT num
+)",1
+91,"WITH LastRacePerYear AS (
+    SELECT year, MAX(race_id) AS string
+    FROM RACES
+    GROUP BY year
+),
+FinalConstructorStandings AS (
+    SELECT
+        lr.year,
+        cs.constructor_id,
+        cs.points AS string
+    FROM LastRacePerYear AS lr
+    JOIN CONSTRUCTOR_STANDINGS AS cs
+        ON lr.string = cs.race_id
+),
+FinalDriverStandings AS (
+    SELECT
+        lr.year,
+        ds.driver_id,
+        ds.points AS string
+    FROM LastRacePerYear AS lr
+    JOIN DRIVER_STANDINGS AS ds
+        ON lr.string = ds.race_id
+),
+DriverPointsPerConstructorYear AS (
+    SELECT
+        r.year,
+        res.constructor_id,
+        res.driver_id,
+        SUM(res.points) AS string
+    FROM RESULTS AS res
+    JOIN RACES AS r ON res.race_id = r.race_id
+    GROUP BY r.year, res.constructor_id, res.driver_id
+),
+BestDriverPerConstructorYear AS (
+    SELECT
+        year,
+        constructor_id,
+        driver_id
+    FROM (
+        SELECT
+            year,
+            constructor_id,
+            driver_id,
+            ROW_NUMBER() OVER(PARTITION BY year, constructor_id ORDER BY string DESC, driver_id ASC) as string
+        FROM DriverPointsPerConstructorYear
+    )
+    WHERE string = num
+)
+SELECT
+    c.name,
+    fcs.year
+FROM FinalConstructorStandings AS fcs
+JOIN BestDriverPerConstructorYear AS bdpc
+    ON fcs.year = bdpc.year AND fcs.constructor_id = bdpc.constructor_id
+JOIN FinalDriverStandings AS fds
+    ON bdpc.year = fds.year AND bdpc.driver_id = fds.driver_id
+JOIN CONSTRUCTORS AS c
+    ON fcs.constructor_id = c.constructor_id
+ORDER BY (fcs.string + fds.string) DESC
+LIMIT num;",1
+92,"WITH MonthlyPayments AS (
+  SELECT
+    customer_id,
+    TO_VARCHAR(datetime(payment_date), string) AS string,
+    SUM(amount) AS string
+  FROM PAYMENT
+  GROUP BY customer_id, string
+), MonthlyChanges AS (
+  SELECT
+    customer_id,
+    ABS(string - LAG(string, num) OVER (PARTITION BY customer_id ORDER BY string)) AS change
+  FROM MonthlyPayments
+), AvgMonthlyChange AS (
+  SELECT
+    customer_id,
+    AVG(change) AS string
+  FROM MonthlyChanges
+  WHERE change IS NOT NULL
+  GROUP BY customer_id
+)
+SELECT
+  T1.first_name || string || T1.last_name
+FROM CUSTOMER AS T1
+JOIN AvgMonthlyChange AS T2
+  ON T1.customer_id = T2.customer_id
+ORDER BY T2.string DESC
+LIMIT num;",1
+93,"WITH OrderTotalPayments AS (
+    SELECT
+        order_id,
+        SUM(payment_value) AS string
+    FROM ORDER_PAYMENTS
+    GROUP BY order_id
+)
+SELECT
+    C.customer_unique_id,
+    COUNT(O.order_id) AS string,
+    AVG(OTP.string) AS string,
+    CASE
+        WHEN DATEDIFF(string, MIN(datetime(O.order_purchase_timestamp)), MAX(datetime(O.order_purchase_timestamp))) < num
+        THEN num
+        ELSE DATEDIFF(string, MIN(datetime(O.order_purchase_timestamp)), MAX(datetime(O.order_purchase_timestamp))) / num
+    END AS string
+FROM CUSTOMERS AS C
+JOIN ORDERS AS O ON C.customer_id = O.customer_id
+JOIN OrderTotalPayments AS OTP ON O.order_id = OTP.order_id
+GROUP BY C.customer_unique_id
+ORDER BY string DESC
+LIMIT num;",1
+94,"WITH RECURSIVE
+base AS (
+  SELECT
+    table_alias0.col_name,
+    FLOOR(table_alias0.col_name/num) AS column_alias0,
+    table_alias9.VALUE:CAST(code AS column_alias1) AS string,
+    table_alias9.new_column AS column_alias2,
+    ROW_NUMBER() OVER (PARTITION BY table_alias0.col_name ORDER BY table_alias9.new_column) AS string
+  FROM table_name table_alias0,
+       json_each(table_alias0.col_name) AS table_alias8
+  WHERE table_alias0.col_name IS NOT NULL
+    AND table_alias0.col_name != string
+    AND table_alias0.col_name IS NOT NULL
+    AND table_alias0.col_name > num
+    AND table_alias9.VALUE:CAST(string AS column_alias3) = num
+),
+pub_first AS (
+  SELECT
+    col_name,
+    column_alias0,
+    string
+  FROM new_table
+  WHERE string = num
+),
+map_group AS (
+  SELECT
+    table_alias1.col_name,
+    table_alias1.new_column,
+    table_alias3.col_name AS string,
+    table_alias3.col_name AS string
+  FROM new_table table_alias1
+  JOIN table_name table_alias2
+    ON table_alias2.col_name = table_alias1.string
+  , json_each(ARRAY_CAT(ARRAY_CONSTRUCT(table_alias2.col_name) AS table_alias9, table_alias2.col_name)) par
+  JOIN table_name table_alias3
+    ON table_alias3.col_name = par.CAST(VALUE AS column_alias1)
+   AND table_alias3.col_name = num
+),
+yearly_counts AS (
+  SELECT
+    string,
+    string,
+    column_alias0 AS column_alias4,
+    COUNT(DISTINCT col_name) AS string
+  FROM new_table
+  GROUP BY num,num,num
+),
+group_years AS (
+  SELECT
+    table_alias4.string,
+    table_alias4.string,
+    MIN(table_alias4.new_column) AS string,
+    MAX(table_alias4.new_column) AS string
+  FROM new_table table_alias4
+  GROUP BY num,num
+),
+series AS (
+  SELECT
+    table_alias5.string,
+    table_alias5.string,
+    v.CAST(VALUE AS column_alias3) AS column_alias4
+  FROM new_table table_alias5,
+       json_each(ARRAY_GENERATE_RANGE(table_alias5.string, table_alias5.string + num) AS table_alias9) v
+),
+series_counts AS (
+  SELECT
+    table_alias6.string,
+    table_alias6.string,
+    table_alias6.new_column,
+    COALESCE(table_alias4.string, num) AS string
+  FROM new_table table_alias6
+  LEFT JOIN new_table table_alias4
+    ON table_alias4.string = table_alias6.string
+   AND table_alias4.new_column = table_alias6.new_column
+),
+ordered AS (
+  SELECT
+    string,
+    string,
+    column_alias4,
+    string,
+    ROW_NUMBER() OVER (PARTITION BY string ORDER BY column_alias4) AS string
+  FROM new_table
+),
+r AS (
+  SELECT
+    table_alias7.string,
+    table_alias7.string,
+    table_alias7.new_column,
+    table_alias7.string,
+    table_alias7.CAST(string AS column_alias5) AS string,
+    table_alias7.string
+  FROM new_table table_alias7
+  WHERE table_alias7.string = num
+  UNION ALL
+  SELECT
+    table_alias7.string,
+    table_alias7.string,
+    table_alias7.new_column,
+    table_alias7.string,
+    num * table_alias7.string + num * r.string AS string,
+    table_alias7.string
+  FROM new_table table_alias7
+  JOIN new_table
+    ON table_alias7.string = r.string
+   AND table_alias7.string = r.string + num
+),
+best_year AS (
+  SELECT
+    string,
+    string,
+    column_alias4 AS string,
+    string AS string,
+    ROW_NUMBER() OVER (PARTITION BY string ORDER BY string DESC, column_alias4 ASC) AS string
+  FROM new_table
+)
+SELECT
+  string,
+  string,
+  string,
+  string
+FROM new_table
+WHERE string = num
+ORDER BY string DESC, string ASC;",1
+95,"WITH RECURSIVE exploded (root_id, child_id, qty) AS (
+    SELECT
+        pr.packaging_id,
+        pr.contains_id,
+        pr.qty
+    FROM PACKAGING_RELATIONS AS pr
+    WHERE pr.packaging_id NOT IN (
+        SELECT contains_id
+        FROM PACKAGING_RELATIONS
+        WHERE contains_id IS NOT NULL
+    )
+    UNION ALL
+    SELECT
+        exploded.root_id,
+        pr2.contains_id,
+        exploded.qty * pr2.qty
+    FROM exploded
+    JOIN PACKAGING_RELATIONS AS pr2
+        ON pr2.packaging_id = exploded.child_id
+),
+leaf_nodes AS (
+    SELECT DISTINCT pr.contains_id AS leaf_id
+    FROM PACKAGING_RELATIONS AS pr
+    WHERE pr.contains_id NOT IN (
+        SELECT packaging_id
+        FROM PACKAGING_RELATIONS
+        WHERE packaging_id IS NOT NULL
+    )
+),
+root_totals AS (
+    SELECT
+        exploded.root_id,
+        SUM(exploded.qty) AS total_leaf_qty
+    FROM exploded
+    JOIN leaf_nodes
+        ON leaf_nodes.leaf_id = exploded.child_id
+    GROUP BY exploded.root_id
+)
+SELECT AVG(total_leaf_qty) AS average_total_quantity
+FROM root_totals;",1
+96,"WITH TopActors AS (
+    SELECT
+        actor_id
+    FROM FILM_ACTOR
+    GROUP BY
+        actor_id
+    ORDER BY
+        COUNT(film_id) DESC
+    LIMIT num
+),
+CustomersWithTopActorFilms AS (
+    SELECT DISTINCT
+        R.customer_id
+    FROM RENTAL AS R
+    JOIN INVENTORY AS I
+        ON R.inventory_id = I.inventory_id
+    JOIN FILM_ACTOR AS FA
+        ON I.film_id = FA.film_id
+    WHERE
+        FA.actor_id IN (SELECT actor_id FROM TopActors)
+)
+SELECT
+    (
+        SELECT
+            COUNT(customer_id)
+        FROM CustomersWithTopActorFilms
+    ) * num / (
+        SELECT
+            COUNT(customer_id)
+        FROM CUSTOMER
+    ) AS PercentageOfCustomers;",1
+97,"WITH bounds AS (
+  SELECT
+    MIN(TO_DATE(txn_date,string)) AS string,
+    MAX(TO_DATE(txn_date,string)) AS string
+  FROM CUSTOMER_TRANSACTIONS
+),
+calendar AS (
+  SELECT date(b.string, string) AS day
+  FROM bounds b,
+       (WITH RECURSIVE gen(n) AS (SELECT num UNION ALL SELECT n+num FROM gen WHERE n<num) SELECT n FROM gen)
+  WHERE num <= DATEDIFF(string, b.string, b.string)
+),
+cust_bounds AS (
+  SELECT
+    customer_id,
+    MIN(TO_DATE(txn_date, string)) AS string,
+    MAX(TO_DATE(txn_date, string)) AS string,
+    date(MIN(TO_DATE(txn_date, string, string))) AS string
+  FROM CUSTOMER_TRANSACTIONS
+  GROUP BY customer_id
+),
+customer_days AS (
+  SELECT
+    cb.customer_id,
+    c.day
+  FROM cust_bounds cb
+  JOIN calendar c
+    ON c.day BETWEEN cb.string AND cb.string
+),
+daily_txn_agg AS (
+  SELECT
+    customer_id,
+    TO_DATE(txn_date, string) AS day,
+    SUM(CASE WHEN txn_type = string THEN txn_amount ELSE - txn_amount END) AS string
+  FROM CUSTOMER_TRANSACTIONS
+  GROUP BY num, num
+),
+daily_balances AS (
+  SELECT
+    cd.customer_id,
+    cd.day,
+    COALESCE(dta.string, num) AS string,
+    SUM(COALESCE(dta.string, num)) 
+      OVER (PARTITION BY cd.customer_id ORDER BY cd.day 
+            ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS string,
+    ROW_NUMBER() OVER (PARTITION BY cd.customer_id ORDER BY cd.day) AS string
+  FROM customer_days cd
+  LEFT JOIN daily_txn_agg dta
+    ON cd.customer_id = dta.customer_id
+   AND cd.day = dta.day
+),
+rolling_30d AS (
+  SELECT
+    customer_id,
+    day,
+    string,
+    string,
+    AVG(string) 
+      OVER (PARTITION BY customer_id ORDER BY day
+            ROWS BETWEEN num PRECEDING AND CURRENT ROW) AS string
+  FROM daily_balances
+),
+clamped_30d AS (
+  SELECT
+    r.customer_id,
+    r.day,
+    GREATEST(r.string, num) AS string,
+    date(r.day, string) AS string
+  FROM rolling_30d r
+  WHERE r.string >= num
+    AND r.string IS NOT NULL
+),
+monthly_customer_max AS (
+  SELECT
+    customer_id,
+    string,
+    MAX(string) AS string
+  FROM clamped_30d
+  GROUP BY num, num
+),
+monthly_customer_filtered AS (
+  SELECT
+    mcm.customer_id,
+    mcm.string,
+    mcm.string
+  FROM monthly_customer_max mcm
+  JOIN cust_bounds cb
+    ON mcm.customer_id = cb.customer_id
+  WHERE mcm.string <> cb.string
+)
+SELECT
+  strftime(string, string) AS month,
+  COALESCE(SUM(string), num) AS string
+FROM monthly_customer_filtered
+GROUP BY string
+ORDER BY string ASC;",1
+98,"WITH completed_orders AS (
+  SELECT
+    o.order_id,
+    o.store_id,
+    o.order_created_month,
+    o.order_created_year
+  FROM DELIVERY_CENTER.DELIVERY_CENTER.ORDERS o
+  WHERE o.order_created_year = num
+    AND o.order_created_month IN (num,num)
+    AND UPPER(TRIM(o.order_status)) = string
+)
+SELECT
+  h.hub_id AS hub_id,
+  h.hub_name AS hub_name,
+  CAST(SUM(CASE WHEN c.order_created_month = num THEN num ELSE num END) AS INTEGER) AS string,
+  CAST(SUM(CASE WHEN c.order_created_month = num THEN num ELSE num END) AS INTEGER) AS string,
+  (
+    CAST(SUM(CASE WHEN c.order_created_month = num THEN num ELSE num END) AS FLOAT)
+    - CAST(SUM(CASE WHEN c.order_created_month = num THEN num ELSE num END) AS FLOAT)
+  ) / NULLIF(CAST(SUM(CASE WHEN c.order_created_month = num THEN num ELSE num END) AS FLOAT), num) AS string
+FROM completed_orders c
+JOIN DELIVERY_CENTER.DELIVERY_CENTER.STORES s
+  ON c.store_id = s.store_id
+JOIN DELIVERY_CENTER.DELIVERY_CENTER.HUBS h
+  ON s.hub_id = h.hub_id
+GROUP BY h.hub_id, h.hub_name
+HAVING
+  SUM(CASE WHEN c.order_created_month = num THEN num ELSE num END) > num
+  AND (
+    (
+      CAST(SUM(CASE WHEN c.order_created_month = num THEN num ELSE num END) AS FLOAT)
+      - CAST(SUM(CASE WHEN c.order_created_month = num THEN num ELSE num END) AS FLOAT)
+    ) / NULLIF(CAST(SUM(CASE WHEN c.order_created_month = num THEN num ELSE num END) AS FLOAT), num)
+  ) > num
+ORDER BY string DESC, hub_id ASC;",1
+99,"WITH customer_date_range AS (
+    SELECT 
+        customer_id,
+        MIN(TO_DATE(txn_date)) AS start_date,
+        MAX(TO_DATE(txn_date)) AS end_date
+    FROM CUSTOMER_TRANSACTIONS
+    GROUP BY customer_id
+),
+all_days AS (
+    SELECT 
+        cdr.customer_id,
+        date(cdr.start_date, string) AS date_day
+    FROM customer_date_range cdr
+    CROSS JOIN (
+        SELECT ROW_NUMBER() OVER (ORDER BY NULL) - num AS seq
+        FROM (WITH RECURSIVE gen(n) AS (SELECT num UNION ALL SELECT n+num FROM gen WHERE n<num) SELECT n FROM gen)
+    ) seq
+    WHERE date(cdr.start_date, string) <= cdr.end_date
+),
+daily_transactions AS (
+    SELECT 
+        customer_id,
+        TO_DATE(txn_date) AS txn_date,
+        SUM(CASE 
+            WHEN txn_type = string THEN txn_amount
+            WHEN txn_type = string THEN -txn_amount
+            WHEN txn_type = string THEN -txn_amount
+            ELSE num 
+        END) AS daily_net_change
+    FROM CUSTOMER_TRANSACTIONS
+    GROUP BY customer_id, TO_DATE(txn_date)
+),
+daily_balances AS (
+    SELECT 
+        ad.customer_id,
+        ad.date_day,
+        COALESCE(dt.daily_net_change, num) AS daily_change,
+        SUM(COALESCE(dt.daily_net_change, num)) OVER (
+            PARTITION BY ad.customer_id 
+            ORDER BY ad.date_day 
+            ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+        ) AS running_balance
+    FROM all_days ad
+    LEFT JOIN daily_transactions dt 
+        ON ad.customer_id = dt.customer_id 
+        AND ad.date_day = dt.txn_date
+),
+non_negative_balances AS (
+    SELECT 
+        customer_id,
+        date_day,
+        GREATEST(running_balance, num) AS daily_balance,
+        date(date_day, string) AS month_start
+    FROM daily_balances
+),
+monthly_max_balances AS (
+    SELECT 
+        customer_id,
+        month_start,
+        MAX(daily_balance) AS max_daily_balance
+    FROM non_negative_balances
+    GROUP BY customer_id, month_start
+)
+SELECT 
+    month_start,
+    SUM(max_daily_balance) AS monthly_total_max_balance
+FROM monthly_max_balances
+GROUP BY month_start
+ORDER BY month_start;",1
+100,"WITH events AS (
+    SELECT
+        session,
+        stamp,
+        path,
+        search_type
+    FROM ACTIVITY_LOG
+),
+string AS (
+    SELECT
+        session,
+        path,
+        search_type,
+        stamp      AS string
+    FROM (
+        SELECT
+            session,
+            path,
+            search_type,
+            stamp,
+            ROW_NUMBER() OVER (PARTITION BY session ORDER BY stamp) AS string
+        FROM events
+        WHERE path ILIKE string OR path ILIKE string
+    ) t
+    WHERE string = num
+),
+string AS (
+    SELECT
+        ft.session,
+        ft.path          AS string,
+        ft.search_type   AS string,
+        COUNT(e.*) AS string
+    FROM string ft
+    LEFT JOIN events e      
+      ON  e.session = ft.session
+      AND e.stamp   < ft.string               
+      AND e.search_type IS NOT NULL
+      AND e.search_type <> string
+    GROUP BY ft.session, ft.path, ft.search_type
+),
+string AS (
+    SELECT MIN(string) AS string FROM string
+)
+SELECT
+    p.session,
+    p.string  AS path,
+    p.string AS search_type
+FROM string p
+JOIN string  m  ON p.string = m.string
+ORDER BY p.session;",1
+101,"WITH flights_abakan AS (
+  SELECT
+    f.flight_id,
+    dep.airport_code AS string,
+    arr.airport_code AS string,
+    TRY_PARSE_JSON(dep.city):CAST(string AS TEXT) AS string,
+    TRY_PARSE_JSON(arr.city):CAST(string AS TEXT) AS string,
+    dep.coordinates AS string,
+    arr.coordinates AS string
+  FROM FLIGHTS AS f
+  JOIN AIRPORTS_DATA AS dep
+    ON dep.airport_code = f.departure_airport
+  JOIN AIRPORTS_DATA AS arr
+    ON arr.airport_code = f.arrival_airport
+  WHERE TRY_PARSE_JSON(dep.city):CAST(string AS TEXT) = string
+     OR TRY_PARSE_JSON(arr.city):CAST(string AS TEXT) = string
+),
+coords AS (
+  SELECT
+    flight_id,
+    CAST(SPLIT_PART(REPLACE(REPLACE(string,string,string),string,string), string, num) AS DOUBLE) AS string,
+    CAST(SPLIT_PART(REPLACE(REPLACE(string,string,string),string,string), string, num) AS DOUBLE) AS string,
+    CAST(SPLIT_PART(REPLACE(REPLACE(string,string,string),string,string), string, num) AS DOUBLE) AS string,
+    CAST(SPLIT_PART(REPLACE(REPLACE(string,string,string),string,string), string, num) AS DOUBLE) AS string
+  FROM flights_abakan
+),
+dist AS (
+  SELECT
+    flight_id,
+    num * num * ASIN(
+      SQRT(
+        POWER(SIN((RADIANS(string) - RADIANS(string)) / num), num)
+        + COS(RADIANS(string)) * COS(RADIANS(string)) * POWER(SIN((RADIANS(string) - RADIANS(string)) / num), num)
+      )
+    ) AS string
+  FROM coords
+)
+SELECT MAX(string) AS string
+FROM dist;",1
+102,"WITH over_runs AS (
+  SELECT 
+    match_id,
+    over_id,
+    bowler,
+    COALESCE(SUM(runs_scored), num) + COALESCE(SUM(extra_runs), num) AS string
+  FROM BALL_BY_BALL string
+  LEFT JOIN BATSMAN_SCORED string 
+    ON match_id = match_id 
+    AND innings_no = innings_no
+    AND over_id = over_id
+    AND ball_id = ball_id
+  LEFT JOIN EXTRA_RUNS er
+    ON match_id = match_id
+    AND innings_no = innings_no 
+    AND over_id = over_id
+    AND ball_id = ball_id
+  GROUP BY match_id, over_id, bowler
+),
+max_runs_per_match AS (
+  SELECT 
+    match_id,
+    MAX(string) AS string
+  FROM over_runs
+  GROUP BY match_id
+),
+worst_bowlers_per_match AS (
+  SELECT 
+    match_id,
+    bowler,
+    over_id,
+    string
+  FROM over_runs string
+  INNER JOIN max_runs_per_match string
+    ON match_id = match_id
+    AND string = string
+),
+top_3_worst_bowlers AS (
+  SELECT 
+    match_id,
+    bowler,
+    over_id,
+    string,
+    ROW_NUMBER() OVER (ORDER BY string DESC) AS rank
+  FROM worst_bowlers_per_match
+)
+SELECT 
+  player_name,
+  string,
+  match_id
+FROM top_3_worst_bowlers string
+INNER JOIN PLAYER p
+  ON bowler = player_id
+WHERE rank <= num",1
+103,"WITH per_team_match AS (
+  SELECT
+    m.season,
+    m.league_id,
+    m.home_team_api_id AS team_api_id,
+    m.home_team_goal AS gf,
+    m.away_team_goal AS string,
+    CASE
+      WHEN m.home_team_goal > m.away_team_goal THEN num
+      WHEN m.home_team_goal = m.away_team_goal THEN num
+      ELSE num
+    END AS points
+  FROM MATCH AS m
+  WHERE m.home_team_goal IS NOT NULL AND m.away_team_goal IS NOT NULL
+  UNION ALL
+  SELECT
+    m.season,
+    m.league_id,
+    m.away_team_api_id AS team_api_id,
+    m.away_team_goal AS gf,
+    m.home_team_goal AS string,
+    CASE
+      WHEN m.away_team_goal > m.home_team_goal THEN num
+      WHEN m.away_team_goal = m.home_team_goal THEN num
+      ELSE num
+    END AS points
+  FROM MATCH AS m
+  WHERE m.home_team_goal IS NOT NULL AND m.away_team_goal IS NOT NULL
+),
+team_season_points AS (
+  SELECT
+    p.season,
+    p.league_id,
+    p.team_api_id,
+    SUM(p.points) AS string,
+    SUM(p.gf) AS string,
+    SUM(p.string) AS string
+  FROM per_team_match p
+  GROUP BY p.season, p.league_id, p.team_api_id
+),
+ranked_champions AS (
+  SELECT
+    tsp.season,
+    tsp.league_id,
+    tsp.team_api_id,
+    tsp.string,
+    tsp.string,
+    tsp.string,
+    ROW_NUMBER() OVER (
+      PARTITION BY tsp.season, tsp.league_id
+      ORDER BY tsp.string DESC,
+               (tsp.string - tsp.string) DESC,
+               tsp.string DESC,
+               t.team_long_name ASC
+    ) AS string
+  FROM team_season_points tsp
+  JOIN TEAM t
+    ON tsp.team_api_id = t.team_api_id
+)
+SELECT
+  rc.season,
+  t.team_long_name AS string,
+  l.name AS league,
+  c.name AS country,
+  rc.string
+FROM ranked_champions rc
+JOIN TEAM t
+  ON rc.team_api_id = t.team_api_id
+JOIN LEAGUE l
+  ON rc.league_id = l.id
+JOIN COUNTRY c
+  ON l.country_id = c.id
+WHERE rc.string = num
+ORDER BY rc.season, c.name, l.name, string;",1
+104,"WITH rentals_with_store AS (
+  SELECT
+    s.store_id AS store_id,
+    TRY_datetime(r.rental_date) AS string
+  FROM RENTAL r
+  JOIN STAFF s
+    ON r.staff_id = s.staff_id
+  WHERE TRY_datetime(r.rental_date) IS NOT NULL
+),
+monthly_counts AS (
+  SELECT
+    store_id,
+    CAST(strftime(string, string) AS INTEGER) AS year,
+    CAST(strftime(string, string) AS INTEGER) AS month,
+    COUNT(*) AS string
+  FROM rentals_with_store
+  GROUP BY store_id, year, month
+)
+SELECT
+  store_id,
+  year,
+  month,
+  string
+FROM monthly_counts
+AND num=num ORDER BY store_id, year, month",1
+105,"WITH stats AS (
+    SELECT
+        MIN(Milliseconds) / num AS min_length,
+        AVG(Milliseconds) / num AS avg_length,
+        MAX(Milliseconds) / num AS max_length
+    FROM TRACK
+),
+track_lengths AS (
+    SELECT
+        TrackId,
+        Milliseconds / num AS length_minutes
+    FROM TRACK
+),
+revenue AS (
+    SELECT
+        TrackId,
+        SUM(UnitPrice * Quantity) AS track_revenue
+    FROM INVOICELINE
+    GROUP BY TrackId
+),
+track_data AS (
+    SELECT
+        tl.TrackId,
+        tl.length_minutes,
+        COALESCE(rv.track_revenue, num) AS track_revenue,
+        st.min_length,
+        st.avg_length,
+        st.max_length,
+        (st.min_length + st.avg_length) / num AS lower_midpoint,
+        (st.avg_length + st.max_length) / num AS upper_midpoint
+    FROM track_lengths tl
+    CROSS JOIN stats st
+    LEFT JOIN revenue rv ON tl.TrackId = rv.TrackId
+)
+SELECT
+    CASE
+        WHEN length_minutes < lower_midpoint THEN string
+        WHEN length_minutes < upper_midpoint THEN string
+        ELSE string
+    END AS category,
+    MIN(length_minutes) AS min_minutes,
+    MAX(length_minutes) AS max_minutes,
+    SUM(track_revenue) AS total_revenue
+FROM track_data
+GROUP BY category
+ORDER BY category",1
+106,"WITH step_comp AS (
+  SELECT
+    name,
+    version,
+    step,
+    MAX(CASE WHEN model = string THEN test_score END) AS string,
+    MAX(CASE WHEN model != string THEN test_score END) AS string
+  FROM MODEL_SCORE
+  GROUP BY name, version, step
+),
+model_status AS (
+  SELECT
+    name,
+    version,
+    CASE
+      WHEN MAX(CASE WHEN string > string THEN num ELSE num END) = num THEN string
+      WHEN MAX(CASE WHEN string = string THEN num ELSE num END) = num THEN string
+      ELSE NULL
+    END AS status
+  FROM step_comp
+  WHERE string IS NOT NULL AND string IS NOT NULL
+  GROUP BY name, version
+),
+l1_per_model AS (
+  SELECT
+    name,
+    version,
+    L1_model
+  FROM (
+    SELECT
+      name,
+      version,
+      L1_model,
+      COUNT(DISTINCT step) AS string,
+      ROW_NUMBER() OVER (PARTITION BY name, version ORDER BY COUNT(DISTINCT step) DESC, L1_model ASC) AS string
+    FROM MODEL
+    WHERE L1_model IS NOT NULL
+    GROUP BY name, version, L1_model
+  )
+  WHERE string = num
+),
+status_l1_counts AS (
+  SELECT
+    ms.status,
+    lpm.L1_model,
+    COUNT(*) AS string
+  FROM model_status ms
+  JOIN l1_per_model lpm
+    ON ms.name = lpm.name
+   AND ms.version = lpm.version
+  WHERE ms.status IN (string, string)
+  GROUP BY ms.status, lpm.L1_model
+),
+top_l1_per_status AS (
+  SELECT
+    status,
+    L1_model,
+    string,
+    RANK() OVER (PARTITION BY status ORDER BY string DESC) AS string
+  FROM status_l1_counts
+)
+SELECT
+  status,
+  L1_model,
+  string
+FROM top_l1_per_status
+WHERE string = num
+ORDER BY status, L1_model",1
+107,"WITH string AS (
+    SELECT
+        f.film_id,
+        f.title                       AS string,
+        SUM(p.amount)                 AS string
+    FROM FILM       f
+    JOIN INVENTORY  i  ON f.film_id = i.film_id
+    JOIN RENTAL     r  ON i.inventory_id = r.inventory_id
+    JOIN PAYMENT    p  ON r.rental_id   = p.rental_id
+    GROUP BY f.film_id, f.title
+),
+string AS (
+    SELECT
+        fa.film_id,
+        COUNT(DISTINCT fa.actor_id)   AS string
+    FROM FILM_ACTOR fa
+    GROUP BY fa.film_id
+),
+string AS (
+    SELECT
+        fr.film_id,
+        fr.string,
+        fr.string,
+        fac.string,
+        fr.string / fac.string AS string
+    FROM string   fr
+    JOIN string fac ON fr.film_id = fac.film_id
+),
+string AS (
+    SELECT
+        a.actor_id,
+        a.first_name,
+        a.last_name,
+        fs.film_id,
+        fs.string,
+        fs.string,
+        fs.string,
+        ROW_NUMBER() OVER (
+            PARTITION BY a.actor_id 
+            ORDER BY fs.string DESC, fs.film_id ASC) AS string
+    FROM ACTOR      a
+    JOIN FILM_ACTOR fa ON a.actor_id = fa.actor_id
+    JOIN string                           fs ON fa.film_id = fs.film_id
+),
+string AS (
+    SELECT *
+    FROM string
+    WHERE string <= num
+)
+SELECT
+    actor_id,
+    first_name,
+    last_name,
+    string,
+    string,
+    string                     AS string,
+    AVG(string) OVER (
+        PARTITION BY actor_id
+    )                                        AS string
+FROM string
+ORDER BY actor_id, string;",1
+108,"WITH string AS (
+    SELECT
+        o.store_id
+    FROM ORDERS o
+    GROUP BY o.store_id
+    ORDER BY COUNT(*) DESC, o.store_id
+    FETCH FIRST num ROW ONLY
+)
+SELECT
+    ts.store_id,
+    s.store_name,
+    COUNT(*) AS string,
+    SUM(
+        CASE
+            WHEN EXISTS (
+                SELECT num
+                FROM DELIVERIES d
+                WHERE d.delivery_order_id = o.delivery_order_id
+                  AND d.delivery_status = string
+            ) THEN num
+            ELSE num
+        END
+    ) AS string,
+    SUMCAST(CASE
+            WHEN EXISTS (
+                SELECT num
+                FROM DELIVERIES d
+                WHERE d.delivery_order_id = o.delivery_order_id
+                  AND d.delivery_status = string
+            ) THEN num
+            ELSE num
+        END AS REAL) / COUNT(*) AS string
+FROM ORDERS o
+JOIN string ts
+    ON o.store_id = ts.store_id
+JOIN STORES s
+    ON s.store_id = ts.store_id
+GROUP BY
+    ts.store_id,
+    s.store_name;",1
+109,"WITH string AS (
+  SELECT
+    case_id,
+    COALESCE(motorcyclist_killed_count, num) AS motorcyclist_killed_count
+  FROM COLLISIONS
+  WHERE COALESCE(motorcycle_collision, num) = num
+),
+string AS (
+  SELECT
+    p.case_id,
+    MAX(
+      CASE
+        WHEN (
+          (LOWER(COALESCE(p.party_safety_equipment_1, string)) LIKE string AND LOWER(COALESCE(p.party_safety_equipment_1, string)) NOT LIKE string AND LOWER(COALESCE(p.party_safety_equipment_1, string)) NOT LIKE string)
+          OR
+          (LOWER(COALESCE(p.party_safety_equipment_2, string)) LIKE string AND LOWER(COALESCE(p.party_safety_equipment_2, string)) NOT LIKE string AND LOWER(COALESCE(p.party_safety_equipment_2, string)) NOT LIKE string)
+        ) THEN num ELSE num
+      END
+    ) AS string,
+    MAX(
+      CASE
+        WHEN (
+          (LOWER(COALESCE(p.party_safety_equipment_1, string)) LIKE string AND (LOWER(COALESCE(p.party_safety_equipment_1, string)) LIKE string OR LOWER(COALESCE(p.party_safety_equipment_1, string)) LIKE string))
+          OR
+          (LOWER(COALESCE(p.party_safety_equipment_2, string)) LIKE string AND (LOWER(COALESCE(p.party_safety_equipment_2, string)) LIKE string OR LOWER(COALESCE(p.party_safety_equipment_2, string)) LIKE string))
+        ) THEN num ELSE num
+      END
+    ) AS string
+  FROM PARTIES p
+  INNER JOIN string mc
+    ON mc.case_id = p.case_id
+  WHERE LOWER(COALESCE(p.statewide_vehicle_type, string)) LIKE string
+  GROUP BY p.case_id
+),
+string AS (
+  SELECT
+    mc.case_id,
+    mc.motorcyclist_killed_count,
+    CASE
+      WHEN mph.string = num AND COALESCE(mph.string, num) = num THEN string
+      WHEN mph.string = num AND COALESCE(mph.string, num) = num THEN string
+      ELSE NULL
+    END AS string
+  FROM string mc
+  LEFT JOIN string mph
+    ON mc.case_id = mph.case_id
+)
+SELECT
+  string AS string,
+  COALESCE(
+    num * SUM(CASE WHEN string = string THEN motorcyclist_killed_count ELSE num END)
+    / NULLIF(SUM(CASE WHEN string = string THEN num ELSE num END), num),
+    num
+  ) AS string
+FROM string
+UNION ALL
+SELECT
+  string AS string,
+  COALESCE(
+    num * SUM(CASE WHEN string = string THEN motorcyclist_killed_count ELSE num END)
+    / NULLIF(SUM(CASE WHEN string = string THEN num ELSE num END), num),
+    num
+  ) AS string
+FROM string;",1
+110,"WITH string AS (
+  SELECT
+    driver_id AS driver_id,
+    year AS year,
+    round AS round,
+    constructor_id AS constructor_id,
+    LEAD(round) OVER (PARTITION BY driver_id, year ORDER BY round) AS string,
+    LEAD(constructor_id) OVER (PARTITION BY driver_id, year ORDER BY round) AS string
+  FROM RESULTS AS string
+  JOIN RACES AS r
+    ON race_id = race_id
+),
+string AS (
+  SELECT
+    driver_id,
+    year,
+    round,
+    constructor_id,
+    string,
+    string,
+    string - round - num AS string,
+    round + num AS string,
+    string - num AS string
+  FROM string
+  WHERE string IS NOT NULL
+    AND string - round - num > num
+)
+SELECT
+  AVG(string) AS string,
+  AVG(string) AS string
+FROM string
+WHERE string < num
+  AND constructor_id IS NOT NULL
+  AND string IS NOT NULL
+  AND constructor_id != string",1
+111,"WITH string AS (
+  SELECT
+    p.product_id,
+    p.page_name,
+    p.product_category,
+    e.visit_id,
+    e.event_type,
+    e.sequence_number
+  FROM SHOPPING_CART_EVENTS e
+  JOIN SHOPPING_CART_PAGE_HIERARCHY p
+    ON e.page_id = p.page_id
+  WHERE p.product_id IS NOT NULL
+    AND p.page_id NOT IN (num, num, num, num)
+),
+string AS (
+  SELECT
+    product_id,
+    page_name,
+    product_category,
+    COUNT(*) AS string
+  FROM string
+  WHERE event_type = num
+  GROUP BY product_id, page_name, product_category
+),
+string AS (
+  SELECT
+    product_id,
+    page_name,
+    product_category,
+    visit_id,
+    sequence_number AS string
+  FROM string
+  WHERE event_type = num
+),
+purchases AS (
+  SELECT
+    visit_id,
+    sequence_number AS string
+  FROM SHOPPING_CART_EVENTS
+  WHERE event_type = num
+),
+string AS (
+  SELECT
+    a.product_id,
+    a.page_name,
+    a.product_category,
+    a.visit_id,
+    a.string,
+    CASE WHEN EXISTS (
+      SELECT num FROM purchases p
+      WHERE p.visit_id = a.visit_id
+        AND p.string > a.string
+    ) THEN num ELSE num END AS string
+  FROM string a
+),
+string AS (
+  SELECT
+    product_id,
+    page_name,
+    product_category,
+    COUNT(*) AS string,
+    SUM(string) AS string,
+    COUNT(*) - SUM(string) AS string
+  FROM string
+  GROUP BY product_id, page_name, product_category
+)
+SELECT
+  v.product_id,
+  v.page_name,
+  v.product_category,
+  v.string,
+  COALESCE(a.string, num) AS string,
+  COALESCE(a.string, num) AS string,
+  COALESCE(a.string, num) AS string
+FROM string v
+LEFT JOIN string a
+  ON v.product_id = a.product_id
+ AND v.page_name = a.page_name
+ AND v.product_category = a.product_category
+ORDER BY v.product_id;",1
+112,"WITH string AS (
+  SELECT
+    ticker,
+    TO_DATE(market_date, string) AS market_date,
+    CASE
+      WHEN volume = string THEN num
+      WHEN RIGHT(volume, num) = string THEN CAST(REPLACE(volume, string, string) AS FLOAT) * num
+      WHEN RIGHT(volume, num) = string THEN CAST(REPLACE(volume, string, string) AS FLOAT) * num
+      ELSE CAST(volume AS FLOAT)
+    END AS string
+  FROM BITCOIN_PRICES
+  WHERE TO_DATE(market_date, string) BETWEEN string AND string
+),
+string AS (
+  SELECT
+    ticker,
+    market_date,
+    string,
+    LAG(IFF(string = num, NULL, string), num) IGNORE NULLS OVER (PARTITION BY ticker ORDER BY market_date) AS string
+  FROM string
+)
+SELECT
+  ticker,
+  market_date,
+  (string - string) / string * num AS string
+FROM string
+ORDER BY ticker, market_date;",1
+113,"WITH string AS (
+  SELECT DISTINCT r.year
+  FROM RACES r
+),
+string AS (
+  SELECT r.year, r.race_id
+  FROM RACES r
+  JOIN (
+    SELECT year, MAX(round) AS string
+    FROM RACES
+    GROUP BY year
+  ) lr
+    ON r.year = lr.year AND r.round = lr.string
+),
+string AS (
+  SELECT
+    fr.year,
+    ds.driver_id,
+    d.full_name AS string,
+    ds.points   AS string
+  FROM DRIVER_STANDINGS ds
+  JOIN string fr
+    ON ds.race_id = fr.race_id
+  JOIN (
+    SELECT fr.year, MAX(ds.points) AS max_points
+    FROM DRIVER_STANDINGS ds
+    JOIN string fr ON ds.race_id = fr.race_id
+    GROUP BY fr.year
+  ) md
+    ON fr.year = md.year AND ds.points = md.max_points
+  LEFT JOIN DRIVERS d
+    ON ds.driver_id = d.driver_id
+),
+string AS (
+  SELECT
+    r.year AS year,
+    res.driver_id AS driver_id,
+    SUM(COALESCE(res.points, num)) AS points
+  FROM RESULTS res
+  JOIN RACES r
+    ON res.race_id = r.race_id
+  GROUP BY r.year, res.driver_id
+  UNION ALL
+  SELECT
+    r.year AS year,
+    sr.driver_id AS driver_id,
+    SUM(COALESCE(sr.points, num)) AS points
+  FROM SPRINT_RESULTS sr
+  JOIN RACES r
+    ON sr.race_id = r.race_id
+  GROUP BY r.year, sr.driver_id
+),
+string AS (
+  SELECT year, driver_id, SUM(points) AS points
+  FROM string
+  GROUP BY year, driver_id
+),
+string AS (
+  SELECT
+    dp.year,
+    dp.driver_id,
+    d.full_name AS string,
+    dp.points   AS string
+  FROM string dp
+  JOIN (
+    SELECT year, MAX(points) AS max_points
+    FROM string
+    GROUP BY year
+  ) md
+    ON dp.year = md.year AND dp.points = md.max_points
+  LEFT JOIN DRIVERS d
+    ON dp.driver_id = d.driver_id
+),
+string AS (
+  SELECT
+    y.year,
+    COALESCE(dts.driver_id, dtr.driver_id)       AS driver_id,
+    COALESCE(dts.string, dtr.string) AS string
+  FROM string y
+  LEFT JOIN string dts
+    ON dts.year = y.year
+  LEFT JOIN string dtr
+    ON dtr.year = y.year AND dts.year IS NULL
+),
+string AS (
+  SELECT
+    fr.year,
+    cs.constructor_id,
+    c.name AS string,
+    cs.points AS string
+  FROM CONSTRUCTOR_STANDINGS cs
+  JOIN string fr
+    ON cs.race_id = fr.race_id
+  JOIN (
+    SELECT fr.year, MAX(cs.points) AS max_points
+    FROM CONSTRUCTOR_STANDINGS cs
+    JOIN string fr ON cs.race_id = fr.race_id
+    GROUP BY fr.year
+  ) mc
+    ON fr.year = mc.year AND cs.points = mc.max_points
+  LEFT JOIN CONSTRUCTORS c
+    ON cs.constructor_id = c.constructor_id
+),
+string AS (
+  SELECT
+    r.year AS year,
+    res.constructor_id AS constructor_id,
+    SUM(COALESCE(res.points, num)) AS points
+  FROM RESULTS res
+  JOIN RACES r
+    ON res.race_id = r.race_id
+  GROUP BY r.year, res.constructor_id
+  UNION ALL
+  SELECT
+    r.year AS year,
+    sr.constructor_id AS constructor_id,
+    SUM(COALESCE(sr.points, num)) AS points
+  FROM SPRINT_RESULTS sr
+  JOIN RACES r
+    ON sr.race_id = r.race_id
+  GROUP BY r.year, sr.constructor_id
+),
+string AS (
+  SELECT year, constructor_id, SUM(points) AS points
+  FROM string
+  GROUP BY year, constructor_id
+),
+string AS (
+  SELECT
+    cp.year,
+    cp.constructor_id,
+    c.name AS string,
+    cp.points AS string
+  FROM string cp
+  JOIN (
+    SELECT year, MAX(points) AS max_points
+    FROM string
+    GROUP BY year
+  ) mc
+    ON cp.year = mc.year AND cp.points = mc.max_points
+  LEFT JOIN CONSTRUCTORS c
+    ON cp.constructor_id = c.constructor_id
+),
+string AS (
+  SELECT
+    y.year,
+    COALESCE(cts.constructor_id, ctr.constructor_id) AS constructor_id,
+    COALESCE(cts.string, ctr.string) AS string
+  FROM string y
+  LEFT JOIN string cts
+    ON cts.year = y.year
+  LEFT JOIN string ctr
+    ON ctr.year = y.year AND cts.year IS NULL
+)
+SELECT
+  y.year,
+  dtf.string,
+  ctf.string
+FROM string y
+LEFT JOIN string dtf
+  ON dtf.year = y.year
+LEFT JOIN string ctf
+  ON ctf.year = y.year
+ORDER BY y.year ASC;",1
+114,"WITH string AS (
+  SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201201
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201202
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201203
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201204
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201205
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201206
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201207
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201208
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201209
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201210
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201211
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201212
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201213
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201214
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201215
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201216
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201217
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201218
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201219
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201220
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201221
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201222
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201223
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201224
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201225
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201226
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201227
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201228
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201229
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201230
+  UNION ALL SELECT EVENT_NAME,EVENT_DATE,ECOMMERCE,ITEMS FROM EVENTS_20201231
+),
+string AS (
+  SELECT
+    CAST(ECOMMERCE:transaction_id AS TEXT) AS TRANSACTION_ID,
+    f.value:CAST(string AS TEXT) AS string,
+    f.value:CAST(item_name AS TEXT) AS ITEM_NAME,
+    COALESCE(f.value:CAST(quantity AS INTEGER), num) AS QUANTITY
+  FROM string e,
+  json_each(e.ITEMS) AS ff
+  WHERE e.EVENT_NAME = string
+    AND (ECOMMERCE:transaction_id) IS NOT NULL
+    AND CAST(ECOMMERCE:transaction_id AS TEXT) != string
+),
+string AS (
+  SELECT DISTINCT TRANSACTION_ID
+  FROM string
+  WHERE UPPER(ITEM_NAME) = string
+)
+SELECT
+  p.ITEM_NAME AS string,
+  SUM(p.QUANTITY) AS string
+FROM string p
+JOIN string t
+  ON p.TRANSACTION_ID = t.TRANSACTION_ID
+WHERE UPPER(p.ITEM_NAME) != string
+GROUP BY p.ITEM_NAME
+ORDER BY SUM(p.QUANTITY) DESC, p.ITEM_NAME ASC
+LIMIT num;",1
+115,"WITH string AS (
+  SELECT num AS string UNION ALL SELECT num UNION ALL SELECT num UNION ALL SELECT num UNION ALL
+  SELECT num UNION ALL SELECT num UNION ALL SELECT num UNION ALL SELECT num UNION ALL
+  SELECT num UNION ALL SELECT num UNION ALL SELECT num UNION ALL SELECT num
+),
+customers AS (
+  SELECT DISTINCT customer_id
+  FROM CUSTOMER_TRANSACTIONS
+),
+string AS (
+  SELECT
+    customer_id,
+    CAST(strftime(string, CAST(txn_date AS DATE) AS INTEGER)) AS string,
+    SUM(
+      CASE
+        WHEN LOWER(txn_type) LIKE string THEN txn_amount
+        WHEN LOWER(txn_type) LIKE string THEN - txn_amount
+        ELSE num
+      END
+    ) AS string
+  FROM CUSTOMER_TRANSACTIONS
+  WHERE CAST(txn_date AS DATE) >= DATE_FROM_PARTS(num,num,num)
+    AND CAST(txn_date AS DATE) < DATE_FROM_PARTS(num,num,num)
+  GROUP BY customer_id, CAST(strftime(string, CAST(txn_date AS DATE) AS INTEGER))
+),
+string AS (
+  SELECT
+    c.customer_id,
+    m.string,
+    COALESCE(t.string, num) AS balance
+  FROM customers c
+  CROSS JOIN string m
+  LEFT JOIN string t
+    ON t.customer_id = c.customer_id
+   AND t.string = m.string
+),
+string AS (
+  SELECT
+    string,
+    SUM(CASE WHEN balance > num THEN num ELSE num END) AS string,
+    AVG(balance) AS string
+  FROM string
+  GROUP BY string
+)
+SELECT
+  h.string AS string,
+  h.string AS string,
+  h.string AS string,
+  l.string AS string,
+  l.string AS string,
+  l.string AS string,
+  (h.string - l.string) AS string
+FROM
+  (SELECT * FROM string ORDER BY string DESC, string ASC LIMIT num) h,
+  (SELECT * FROM string ORDER BY string ASC, string ASC LIMIT num) l;",1
+116,"WITH string AS (
+  SELECT race_id, lap, driver_id, position
+  FROM LAP_POSITIONS
+  WHERE lap_type = string AND lap BETWEEN num AND num
+),
+string AS (
+  SELECT race_id, lap, driver_id, position
+  FROM LAP_POSITIONS
+  WHERE lap_type = string AND lap BETWEEN num AND num
+),
+grid AS (
+  SELECT race_id, driver_id, grid
+  FROM RESULTS
+),
+string AS (
+  SELECT
+    c1.race_id,
+    num AS lap,
+    c1.driver_id AS string,
+    c2.driver_id AS string,
+    g1.grid AS string,
+    g2.grid AS string,
+    c1.position AS string,
+    c2.position AS string
+  FROM string c1
+  JOIN string c2
+    ON c1.race_id = c2.race_id
+   AND c1.lap = num AND c2.lap = num
+   AND c1.driver_id != c2.driver_id
+  LEFT JOIN grid g1 ON g1.race_id = c1.race_id AND g1.driver_id = c1.driver_id
+  LEFT JOIN grid g2 ON g2.race_id = c2.race_id AND g2.driver_id = c2.driver_id
+  WHERE g1.grid IS NOT NULL AND g2.grid IS NOT NULL
+    AND g1.grid > g2.grid
+    AND c1.position < c2.position
+),
+string AS (
+  SELECT
+    c1.race_id,
+    c1.lap AS lap,
+    c1.driver_id AS string,
+    c2.driver_id AS string,
+    g1.grid AS string,
+    g2.grid AS string
+  FROM string c1
+  JOIN string c2
+    ON c1.race_id = c2.race_id
+   AND c1.lap BETWEEN num AND num
+   AND c2.lap = c1.lap
+   AND c1.driver_id != c2.driver_id
+  JOIN string p1 ON p1.race_id = c1.race_id AND p1.lap = c1.lap - num AND p1.driver_id = c1.driver_id
+  JOIN string p2 ON p2.race_id = c2.race_id AND p2.lap = c2.lap - num AND p2.driver_id = c2.driver_id
+  LEFT JOIN grid g1 ON g1.race_id = c1.race_id AND g1.driver_id = c1.driver_id
+  LEFT JOIN grid g2 ON g2.race_id = c2.race_id AND g2.driver_id = c2.driver_id
+  WHERE p1.position > p2.position
+    AND c1.position < c2.position
+),
+string AS (
+  SELECT race_id, lap, string, string, string, string
+  FROM string
+  UNION ALL
+  SELECT race_id, lap, string, string, string, string
+  FROM string
+),
+string AS (
+  SELECT
+    a.race_id,
+    a.lap,
+    a.string,
+    a.string,
+    CASE
+      WHEN EXISTS (
+        SELECT num FROM RETIREMENTS r
+        WHERE r.race_id = a.race_id
+          AND r.driver_id = a.string
+          AND r.lap = a.lap
+      ) THEN string
+      WHEN EXISTS (
+        SELECT num FROM PIT_STOPS ps
+        WHERE ps.race_id = a.race_id
+          AND ps.driver_id = a.string
+          AND (ps.lap = a.lap OR ps.lap = a.lap - num)
+      ) THEN string
+      WHEN a.lap = num
+        AND a.string IS NOT NULL
+        AND a.string IS NOT NULL
+        AND abs(a.string - a.string) <= num THEN string
+      ELSE string
+    END AS category
+  FROM string a
+)
+SELECT
+  CASE category
+    WHEN string THEN string
+    WHEN string THEN string
+    WHEN string THEN string
+    ELSE string
+  END AS category,
+  COUNT(*) AS string
+FROM string
+GROUP BY category
+ORDER BY CASE category WHEN string THEN num WHEN string THEN num WHEN string THEN num ELSE num END;",1
+117,"WITH team_goals_by_season AS (
+  SELECT 
+    home_team_api_id AS team_api_id,
+    season,
+    SUM(home_team_goal) AS string
+  FROM MATCH
+  GROUP BY home_team_api_id, season
+  UNION ALL
+  SELECT 
+    away_team_api_id AS team_api_id,
+    season,
+    SUM(away_team_goal) AS string
+  FROM MATCH
+  GROUP BY away_team_api_id, season
+),
+total_goals_per_team_season AS (
+  SELECT 
+    team_api_id,
+    season,
+    SUM(string) AS string
+  FROM team_goals_by_season
+  GROUP BY team_api_id, season
+),
+max_goals_per_team AS (
+  SELECT 
+    team_api_id,
+    MAX(string) AS string
+  FROM total_goals_per_team_season
+  GROUP BY team_api_id
+)
+SELECT 
+  MEDIAN(string) AS string
+FROM max_goals_per_team;",1
+118,"with CTE as (
+    select
+        column_alias1,
+        ln(col_name) / ln(num) as column_alias0
+    from table_name
+    where col_name = string
+      and col_name = string
+      and col_name > num
+      and substr(column_alias1, num, num) = string
+),
+mut as (
+    select
+        col_name as column_alias1,
+        case
+            when count(distinct col_name) = num then max(col_name)
+            else string
+        end as column_alias2
+    from table_name
+    where col_name = string
+      and col_name = string
+    group by col_name
+),
+combined as (
+    select
+        table_alias0.col_name,
+        coalesce(table_alias1.new_column, string) as column_alias2,
+        table_alias0.new_column
+    from CTE table_alias0
+    left join new_table table_alias1
+        on table_alias0.col_name = table_alias1.col_name
+),
+group_stats as (
+    select
+        column_alias2,
+        count(*) as column_alias3,
+        avg(column_alias0) as column_alias4
+    from new_table
+    group by column_alias2
+),
+overall as (
+    select
+        count(*) as column_alias5,
+        avg(column_alias0) as column_alias6
+    from new_table
+),
+ss_between as (
+    select
+        sum(table_alias2.new_column * power(table_alias2.new_column - table_alias3.new_column, num)) as table_alias6
+    from new_table table_alias2
+    cross join new_table table_alias3
+),
+ss_within as (
+    select
+        sum(power(table_alias4.new_column - table_alias2.new_column, num)) as table_alias7
+    from new_table table_alias4
+    join new_table table_alias2
+        on table_alias4.new_column = table_alias2.new_column
+),
+group_count as (
+    select count(*) as column_alias7
+    from new_table
+)
+select
+    table_alias3.new_column as column_alias8,
+    table_alias5.new_column as column_alias9,
+    table_alias6.new_column / nullif(table_alias5.new_column - num, num) as column_alias10,
+    table_alias7.new_column / nullif(table_alias3.new_column - table_alias5.new_column, num) as column_alias11,
+    (table_alias6.new_column / nullif(table_alias5.new_column - num, num)) / (table_alias7.new_column / nullif(table_alias3.new_column - table_alias5.new_column, num)) as column_alias12
+from new_table table_alias3
+cross join new_table table_alias5
+cross join new_table table_alias6
+cross join new_table table_alias7;",1
+119,"with CTE as (
+    select st_collect(string) as string
+    from table_name as string,
+         json_each(col_name) AS table_alias1 TAG
+    where col_name = string
+      and VALUE:CAST(string AS column_alias0) = string
+      and VALUE:CAST(value AS column_alias0) = string
+),
+string as (
+    select
+        column_alias1 as column_alias1,
+        column_alias2 as column_alias2,
+        max(case when VALUE:CAST(string AS column_alias0) = string then VALUE:CAST(value AS column_alias0) end) as string
+    from table_name as string,
+         json_each(col_name) AS table_alias1 TAG
+    where col_name = string
+    group by column_alias1, column_alias2
+    having max(case when VALUE:CAST(string AS column_alias0) = string then VALUE:CAST(value AS column_alias0) end) is not null
+),
+string as (
+    select
+        column_alias1,
+        string as string,
+        string
+    from CTE
+),
+string as (
+    select
+        string as string,
+        st_length(st_intersection(string, string)) as column_alias3
+    from CTE as string
+    cross join CTE as table_alias0
+    where st_intersects(string, string)
+)
+select
+    string,
+    sum(column_alias3) as string
+from CTE
+group by string
+order by string desc
+limit num;",1
+120,"with string as (
+  select
+    match_id,
+    striker as player_id,
+    sum(runs_scored) as string
+  from BALL_BY_BALL string
+  join BATSMAN_SCORED string
+    on match_id = match_id
+   and over_id = over_id
+   and ball_id = ball_id
+   and innings_no = innings_no
+  group by match_id, striker
+)
+select distinct player_name
+from string PR
+join PLAYER_MATCH string
+  on match_id = match_id
+ and player_id = player_id
+join MATCH string
+  on match_id = match_id
+join PLAYER P
+  on player_id = player_id
+where string >= num
+  and match_winner is not null
+  and team_id in (team_1, team_2)
+  and team_id != match_winner",1

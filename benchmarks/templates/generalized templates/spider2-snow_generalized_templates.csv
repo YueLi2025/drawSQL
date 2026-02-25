@@ -1,0 +1,5654 @@
+index,generalized_template,count
+1,"SELECT
+    CAST(strftime(variable, variable) AS variable) AS variable,
+    SUM(variable)  AS variable,
+    SUM(variable)  AS variable
+FROM variable
+WHERE variable = variable
+  AND variable IS NOT NULL
+  AND CAST(strftime(variable, variable) AS variable) BETWEEN variable AND variable
+GROUP BY CAST(strftime(variable, variable) AS variable)
+ORDER BY variable;",1
+2,"SELECT
+    COUNT(*) AS variable
+FROM variable AS variable
+INNER JOIN (
+    SELECT DISTINCT variable
+    FROM variable AS variable,
+         json_each(variable) AS variable variable
+    WHERE LOWER(variable:CAST(variable AS variable)) = variable
+) AS variable
+    ON variable = variable
+INNER JOIN (
+    SELECT DISTINCT variable
+    FROM variable
+    WHERE LOWER(variable) = variable
+) AS variable
+    ON variable = variable
+WHERE variable IS NOT NULL
+  AND variable(variable) > variable
+  AND variable(variable) < variable
+  AND NOT variable(LOWER(variable(variable)), variable);",1
+3,"SELECT
+    variable(LOWER(variable.variable) LIKE variable AS variable)
+    /
+    variable(COUNT(*), variable)                                       AS variable
+FROM variable variable
+WHERE LOWER(variable.variable) LIKE variable
+  AND NOT EXISTS (
+        SELECT variable
+        FROM variable variable,
+             json_each(variable.variable) AS variable
+        WHERE variable.variable = variable.variable
+          AND LOWER(variable.variable:CAST(variable AS variable)) LIKE variable
+  );",1
+4,"SELECT
+    variable(datetime(variable / variable)) AS variable,
+    variable(
+        SUM(
+            (CASE WHEN variable LIKE variable THEN variable ELSE -variable END) *
+            CAST(variable || variable(
+                variable(variable, CASE WHEN variable LIKE variable THEN variable ELSE variable END, variable),
+                variable
+            ) AS variable) / variable
+        ),
+        variable
+    ) AS variable
+FROM variable
+WHERE
+    variable = variable
+    AND (variable LIKE variable OR variable LIKE variable)
+    AND variable >= variable AND variable < variable
+GROUP BY
+    variable
+ORDER BY
+    variable DESC;",1
+5,"SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable
+FROM (
+    WITH variable AS (
+        SELECT
+            variable.variable,
+            variable.variable
+        FROM variable variable
+        WHERE variable.variable = variable
+          AND variable.variable NOT LIKE variable
+          AND COALESCE(CAST(variable.variable:variable AS variable), variable)
+        AND variable=variable , variable.variable DESC
+        ) = variable
+    ),
+    variable AS (
+        SELECT
+            variable.variable AS variable,
+            variable.variable
+        FROM variable variable
+        WHERE variable.variable = variable
+        AND variable=variable
+    ),
+    variable AS (
+        SELECT DISTINCT
+            variable.variable,
+            variable.variable,
+            variable.variable
+        FROM variable variable
+        WHERE variable.variable = variable
+          AND variable.variable = variable
+          AND variable.variable = variable
+    )
+    SELECT
+        variable.variable AS variable,
+        variable.variable AS variable,
+        variable.variable AS variable,
+        variable() OVER (
+            PARTITION BY variable.variable
+            ORDER BY variable.variable DESC, variable.variable
+        ) AS variable
+    FROM variable variable
+    JOIN variable variable
+      ON variable.variable = variable.variable
+     AND variable.variable = variable.variable
+    JOIN variable variable
+      ON variable.variable = variable.variable
+) variable
+WHERE variable.variable = variable
+ORDER BY variable.variable DESC, variable.variable
+LIMIT variable",1
+6,"SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable
+FROM (
+    SELECT
+        variable.variable,
+        MIN(variable.variable) AS variable,
+        MIN(variable.variable) AS variable,
+        SUM(variable.variable) / variable AS variable,
+        COUNT(*) AS variable,
+        COUNT(DISTINCT variable.variable) AS variable,
+        COUNT(DISTINCT variable.variable) AS variable,
+        COUNT(DISTINCT variable.variable) AS variable,
+        COUNT(DISTINCT variable.variable) AS variable,
+        COUNT(DISTINCT variable.variable) AS variable,
+        COUNT(DISTINCT variable.variable) AS variable,
+        COUNT(DISTINCT variable.variable) AS variable,
+        COUNT(DISTINCT variable.variable) AS variable,
+        COUNT(DISTINCT variable.variable) AS variable,
+        COUNT(DISTINCT variable.variable) AS variable,
+        COUNT(DISTINCT CASE WHEN variable.variable IS NOT NULL THEN variable.variable END) AS variable,
+        MIN(variable.variable) AS variable,
+        MAX(variable.variable) AS variable,
+        MIN(variable.variable) AS variable,
+        MAX(variable.variable) AS variable
+    FROM (
+        SELECT
+            variable.variable,
+            variable.variable,
+            variable.variable,
+            variable.variable,
+            variable(variable(variable.variable), variable, variable(variable.variable)) AS variable,
+            variable.variable,
+            variable.variable,
+            variable.variable,
+            variable.variable,
+            variable.variable,
+            variable.variable,
+            variable.variable,
+            variable.variable,
+            variable.variable,
+            variable.variable,
+            variable.variable,
+            variable(ABS(variable(variable.variable) OVER (PARTITION BY variable.variable ORDER BY variable.variable) - variable.variable), variable) AS variable
+        FROM (
+            SELECT
+                variable.variable,
+                variable.variable,
+                variable.variable,
+                variable.variable,
+                variable(variable.CAST(variable[variable] AS variable)) AS variable,
+                variable(variable(variable.CAST(variable[variable] AS variable)), variable) AS variable,
+                variable(variable(variable.CAST(variable[variable] AS variable)), variable) AS variable,
+                variable(variable(variable.CAST(variable[variable] AS variable)), variable) AS variable,
+                variable(variable(variable.CAST(variable[variable] AS variable)), variable) AS variable,
+                variable(variable(variable.CAST(variable[variable] AS variable)), variable) AS variable,
+                variable.variable,
+                variable.variable,
+                variable(variable.variable) AS variable,
+                variable(variable(variable.CAST(variable AS variable)), variable) AS variable,
+                variable(variable(variable.CAST(variable AS variable)), variable) AS variable,
+                variable(variable(variable.CAST(variable AS variable)), variable) AS variable,
+                variable(variable.CAST(variable[variable] AS variable)) * variable(variable.CAST(variable[variable] AS variable))
+                  - variable(variable.CAST(variable[variable] AS variable)) * variable(variable.CAST(variable[variable] AS variable)) AS variable
+            FROM variable variable
+            WHERE variable(UPPER(variable.variable), variable) != variable
+              AND variable.variable = variable
+              AND variable.variable NOT IN (variable, variable)
+              AND NOT (UPPER(variable(variable.variable)) LIKE variable)
+              AND variable.variable IS NOT NULL
+              AND variable.variable IS NOT NULL
+              AND variable.variable IS NOT NULL
+              AND variable.variable IS NOT NULL
+              AND variable.variable IS NOT NULL
+              AND variable.variable IS NOT NULL
+              AND variable(variable.CAST(variable[variable] AS variable)) IS NOT NULL
+              AND variable(variable.CAST(variable[variable] AS variable)) IS NOT NULL
+              AND variable(variable.CAST(variable[variable] AS variable)) IS NOT NULL
+              AND variable(variable.CAST(variable[variable] AS variable)) IS NOT NULL
+              AND variable(variable.CAST(variable[variable] AS variable)) IS NOT NULL
+              AND variable(variable.CAST(variable[variable] AS variable)) IS NOT NULL
+              AND variable(variable.CAST(variable[variable] AS variable)) IS NOT NULL
+              AND variable(variable.CAST(variable[variable] AS variable)) IS NOT NULL
+              AND variable(variable.CAST(variable[variable] AS variable)) IS NOT NULL
+        ) variable
+    ) variable
+    GROUP BY variable.variable
+) variable
+WHERE variable.variable = variable.variable
+  AND variable.variable = variable
+  AND variable.variable = variable
+  AND variable.variable = variable
+  AND variable.variable = variable
+  AND variable.variable = variable
+  AND variable.variable = variable
+  AND variable.variable <= variable
+  AND (variable.variable = variable OR variable.variable = variable.variable)
+  AND variable.variable <= variable
+  AND variable.variable <= variable
+  AND variable.variable <= variable
+  AND ABS(variable.variable) BETWEEN variable AND variable
+  AND ABS(variable.variable) BETWEEN variable AND variable
+ORDER BY variable.variable DESC
+LIMIT variable;",1
+7,"SELECT
+  strftime(variable, variable(datetime(variable / variable)), variable) AS variable,
+  variable AS variable,
+  variable AS variable,
+  variable AS variable,
+  COUNT(DISTINCT variable) AS variable,
+  COUNT(DISTINCT variable) AS variable,
+  SUM(COALESCE(variable,variable)) - SUM(COALESCE(variable,variable)) AS variable
+FROM variable variable
+JOIN variable variable
+  ON variable = variable
+JOIN variable variable
+  ON variable = variable
+JOIN variable variable
+  ON variable = variable
+WHERE
+  variable >= variable
+  AND variable < variable
+  AND variable >= variable
+  AND variable < variable
+  AND variable >= variable
+  AND variable < variable
+GROUP BY
+  variable(datetime(variable / variable, variable)),
+  variable,
+  variable,
+  variable
+ORDER BY
+  variable,
+  variable,
+  variable,
+  variable;",1
+8,"SELECT
+  variable(datetime(variable / variable, variable)) AS variable,
+  SUM(variable) AS variable,
+  SUM(variable) AS variable,
+  COUNT(DISTINCT variable) AS variable,
+  SUM(variable - variable) AS variable,
+  CASE WHEN SUM(variable) = variable THEN NULL ELSE SUM(variable - variable) / SUM(variable) END AS variable
+FROM variable AS variable
+JOIN variable AS variable
+  ON variable = variable
+JOIN variable AS variable
+  ON variable = variable
+WHERE variable = variable
+  AND variable = variable
+  AND datetime(variable / variable) >= variable
+  AND datetime(variable / variable) < variable
+GROUP BY variable
+ORDER BY variable;",1
+9,"SELECT
+  variable,
+  variable AS variable,
+  variable AS variable,
+  variable || variable AS variable,
+  variable(SUM(variable) / variable) AS variable
+FROM variable
+WHERE
+  variable IN (variable,variable)
+  AND variable = variable
+  AND COALESCE(variable(variable), variable) = variable
+  AND COALESCE(variable(variable), variable) = variable
+  AND COALESCE(variable(variable), variable) = variable
+GROUP BY
+  variable,
+  variable,
+  variable,
+  variable || variable
+ORDER BY
+  variable DESC;",1
+10,"SELECT
+  variable.variable AS variable,
+  SUM(variable(variable, variable(variable.variable), variable(variable.variable)))/variable AS variable
+FROM variable variable
+JOIN variable variable ON variable.variable = variable.variable
+JOIN variable variable ON variable.variable = variable.variable
+JOIN variable variable ON variable.variable = variable.variable
+JOIN variable variable ON variable.variable = variable.variable
+JOIN variable variable ON variable.variable = variable.variable
+JOIN variable variable ON variable.variable = variable.variable
+WHERE variable(variable.variable) IS NOT NULL
+  AND variable(variable.variable) IS NOT NULL
+  AND (variable.variable variable variable OR variable.variable variable variable)
+GROUP BY variable.variable, variable.variable
+ORDER BY variable DESC
+LIMIT variable;",1
+11,"SELECT
+  variable.variable AS variable,
+  variable.variable AS variable,
+  datetime(variable.variable / variable) AS variable,
+  variable.variable AS variable,
+  (variable.variable || variable || variable.variable) AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  CAST(variable.variable AS variable) AS variable,
+  (CAST(strftime(variable, variable) AS variable) - CAST(variable.variable AS variable)) AS variable,
+  CASE
+    WHEN (CAST(strftime(variable, variable) AS variable) - CAST(variable.variable AS variable)) < variable THEN variable
+    WHEN (CAST(strftime(variable, variable) AS variable) - CAST(variable.variable AS variable)) BETWEEN variable AND variable THEN variable
+    ELSE variable
+  END AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable
+FROM variable variable
+LEFT JOIN variable variable
+  ON variable.variable = CAST(variable.variable AS variable)
+LEFT JOIN variable variable
+  ON variable.variable = variable.variable
+WHERE
+  variable.variable IS NOT NULL AND TRIM(variable.variable) != variable
+  AND variable.variable IS NOT NULL
+  AND variable.variable IS NOT NULL AND TRIM(variable.variable) != variable
+  AND datetime(variable.variable / variable) BETWEEN datetime(variable) AND datetime(variable)
+ORDER BY variable.variable DESC
+LIMIT variable;",1
+12,"SELECT
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable
+FROM (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable(variable.variable, variable.variable) AS variable,
+    variable(variable.variable, variable.variable) AS variable,
+    COUNT(DISTINCT variable.variable) AS variable
+  FROM variable.variable.variable variable
+  JOIN variable.variable.variable variable ON variable.variable = variable.variable
+  WHERE variable.variable BETWEEN variable AND variable
+  GROUP BY variable.variable, variable.variable
+  HAVING
+    COUNT(DISTINCT variable.variable) >= variable
+    AND variable(variable.variable, variable.variable) = variable(variable.variable, variable.variable)
+) variable
+JOIN variable.variable.variable variable ON variable.variable = variable.variable
+JOIN variable.variable.variable variable ON variable.variable = variable.variable
+ORDER BY variable, variable",1
+13,"SELECT 
+    CASE variable 
+        WHEN variable THEN variable
+        WHEN variable THEN variable 
+        WHEN variable THEN variable
+        WHEN variable THEN variable
+        WHEN variable THEN variable
+        WHEN variable THEN variable
+        WHEN variable THEN variable
+        WHEN variable THEN variable
+        WHEN variable THEN variable
+        WHEN variable THEN variable
+        WHEN variable THEN variable
+        WHEN variable THEN variable
+    END as variable,
+    SUM(CASE WHEN variable = variable THEN variable ELSE variable END) as variable,
+    SUM(CASE WHEN variable = variable THEN variable ELSE variable END) as variable,
+    SUM(CASE WHEN variable = variable THEN variable ELSE variable END) as variable
+FROM (
+    SELECT 
+        CAST(strftime(variable, datetime(variable, variable) AS variable)) as variable,
+        CAST(strftime(variable, datetime(variable, variable) AS variable)) as variable,
+        COUNT(*) as variable
+    FROM variable.variable.variable 
+    WHERE variable = variable 
+        AND variable IS NOT NULL 
+        AND variable != variable
+        AND CAST(strftime(variable, datetime(variable, variable) AS variable)) IN (variable, variable, variable)
+    GROUP BY variable, variable
+) variable
+GROUP BY variable
+ORDER BY variable",1
+14,"SELECT 
+    CAST(strftime(variable, variable(variable.variable) AS variable)) as variable,
+    variable.variable,
+    variable(AVG(variable.variable), variable) as variable,
+    variable(MAX(variable.variable), variable) as variable,
+    variable(MIN(variable.variable), variable) as variable,
+    variable(MAX(variable.variable) - MIN(variable.variable), variable) as variable,
+    variable(SUM(variable.variable * variable.variable), variable) as variable,
+    variable(SUM(variable.variable * variable.variable), variable) as variable,
+    variable(AVG(variable.variable), variable) as variable,
+    variable(SUM(variable.variable * variable.variable * variable.variable / variable), variable) as variable,
+    variable(SUM(variable.variable * variable.variable) - 
+          SUM(variable.variable * variable.variable) - 
+          SUM(variable.variable * variable.variable * variable.variable / variable), variable) as variable
+FROM variable variable
+JOIN variable variable ON variable.variable = variable.variable AND variable.variable = variable.variable
+JOIN variable variable ON variable.variable = variable.variable
+JOIN variable variable ON variable.variable = variable.variable
+WHERE CAST(strftime(variable, variable(variable.variable) AS variable)) BETWEEN variable AND variable
+    AND variable.variable = variable
+GROUP BY CAST(strftime(variable, variable(variable.variable) AS variable)), variable.variable
+ORDER BY variable, variable.variable",1
+15,"SELECT 
+    variable.variable:CAST(variable AS variable) as variable,
+    COUNT(*) as variable
+FROM variable variable
+WHERE variable.variable = variable
+AND variable.variable IS NOT NULL
+AND EXISTS (
+    SELECT variable 
+    FROM variable variable
+    WHERE variable.variable = variable.variable:CAST(variable AS variable)
+    AND variable.variable LIKE variable
+    AND variable.variable < variable
+    AND variable.variable LIKE variable
+)
+GROUP BY variable
+ORDER BY variable DESC
+LIMIT variable;",1
+16,"SELECT COUNT(*) AS variable
+FROM (
+  SELECT variable.variable
+  FROM variable AS variable,
+       json_each(variable.variable) AS variable
+  WHERE variable.variable = variable
+    AND variable.variable = variable
+    AND variable.variable BETWEEN variable AND variable
+  GROUP BY variable.variable
+  HAVING SUM(CASE WHEN variable(variable.variable:CAST(variable AS variable), variable, variable) THEN variable ELSE variable END) = variable
+);",1
+17,"SELECT COUNT(DISTINCT variable) AS variable
+FROM variable
+WHERE variable = variable
+  AND variable IN (
+    variable,
+    variable,
+    variable,
+    variable
+  );",1
+18,"SELECT COUNT(DISTINCT variable) AS variable
+FROM variable
+WHERE variable IS NOT NULL
+  AND LOWER(variable(variable)) = variable
+  AND LOWER(variable(variable)) IN (variable, variable);",1
+19,"SELECT COUNT(DISTINCT variable.variable) as variable
+FROM (
+    SELECT DISTINCT variable, variable
+    FROM variable
+    WHERE variable = variable
+) as variable
+INNER JOIN (
+    SELECT DISTINCT variable, variable
+    FROM variable
+    WHERE variable = variable
+) as variable
+    ON variable.variable = variable.variable
+WHERE variable.variable < variable.variable",1
+20,"SELECT DISTINCT
+  variable.variable
+FROM variable AS variable
+INNER JOIN variable AS variable
+  ON variable.variable = variable.variable
+WHERE
+  variable.variable = variable
+  AND variable.variable = variable
+  AND variable.variable:CAST(variable AS variable) = variable",1
+21,"SELECT variable(variable, variable, variable) AS variable
+FROM variable AS variable
+JOIN variable AS variable ON variable = variable
+JOIN variable AS variable ON variable = variable
+JOIN variable AS variable ON variable = variable
+JOIN variable AS variable ON variable = variable
+JOIN variable AS variable ON variable = variable
+WHERE UPPER(variable) = variable
+  AND UPPER(variable) = variable
+  AND variable IN (variable, variable)
+  AND variable <= variable
+  AND variable(variable) BETWEEN variable AND variable
+GROUP BY variable
+ORDER BY COUNT(DISTINCT variable) DESC, variable
+LIMIT variable;",1
+22,"SELECT variable.variable AS variable
+FROM variable variable
+JOIN variable variable
+ON variable.variable = variable.variable
+WHERE variable.variable variable variable AND variable.variable = variable
+ORDER BY variable.variable DESC variable variable
+LIMIT variable;",1
+23,"SELECT variable.variable as variable, variable.variable as variable
+FROM variable.variable.variable variable
+JOIN variable.variable.variable variable ON variable.variable = variable.CAST(variable AS variable)
+JOIN variable.variable.variable variable ON variable.variable = variable.CAST(variable AS variable)
+WHERE variable.variable IN (SELECT CAST(variable AS variable) FROM variable.variable.variable WHERE variable LIKE variable) 
+AND variable.variable = variable 
+AND variable.variable IS NOT NULL 
+AND variable.variable != variable 
+ORDER BY variable.variable ASC 
+LIMIT variable",1
+24,"WITH
+  variable AS (
+    SELECT
+      variable.variable,
+      variable.variable:CAST(variable AS variable) AS variable,
+      variable.variable:CAST(variable AS variable) AS variable,
+      variable.variable:CAST(variable AS variable) AS variable,
+      variable.variable:CAST(variable AS variable) AS variable,
+      variable.variable:CAST(variable AS variable) AS variable,
+      variable.variable:CAST(variable AS variable) AS variable
+    FROM
+      variable AS variable,
+      json_each(variable.variable) AS variable,
+      json_each(variable.variable:variable) AS variable,
+      json_each(variable.variable:variable) AS variable,
+      json_each(variable.variable:variable) AS variable,
+      json_each(variable.variable:variable) AS variable
+  ),
+  variable AS (
+    SELECT
+      variable,
+      variable(DISTINCT(variable(variable, variable, variable, variable, variable))) AS variable
+    FROM
+      variable
+    WHERE
+      variable = variable AND variable = variable 
+    GROUP BY
+      variable
+  ),
+  variable AS (
+    SELECT
+      variable,
+      variable(DISTINCT(variable(variable, variable, variable, variable, variable))) AS variable
+    FROM
+      variable
+    WHERE
+      variable = variable AND variable = variable 
+    GROUP BY
+      variable
+  ),
+  variable AS (
+    SELECT
+      variable.variable,
+      variable.variable,
+      variable.variable,
+      variable.variable
+    FROM
+      variable AS variable
+    LEFT JOIN
+      variable AS variable ON variable.variable = variable.variable
+    LEFT JOIN
+      variable AS variable ON variable.variable = variable.variable
+    WHERE
+      variable.variable = variable
+  )
+SELECT
+  variable(CAST(variable.variable AS variable), variable, variable) AS variable,
+  variable(CAST(variable.variable AS variable), variable, variable) AS variable,
+  COUNT(*) AS variable
+FROM
+  variable
+  , json_each(variable.variable) AS variable
+  , json_each(variable.variable) AS variable
+GROUP BY
+  variable(CAST(variable.variable AS variable), variable, variable),
+  variable(CAST(variable.variable AS variable), variable, variable);",1
+25,"WITH
+  variable AS (
+    SELECT variable AS variable
+  ),
+  variable AS (
+    SELECT
+      variable AS variable,
+      CAST(datetime(variable / variable) AS variable) AS variable,
+      variable
+    FROM variable
+  ),
+  variable AS (
+    SELECT variable.*
+    FROM variable variable
+    JOIN variable variable ON variable=variable
+    WHERE variable.variable <= variable.variable
+  ),
+  variable AS (
+    SELECT
+      variable,
+      variable,
+      variable,
+      (variable(variable, variable, variable.variable)
+        - CASE WHEN variable(variable, variable.variable, variable), variable) > variable.variable THEN variable ELSE variable END
+      ) AS variable
+    FROM variable variable
+    JOIN variable variable ON variable=variable
+  ),
+  variable AS (
+    SELECT
+      variable,
+      COUNT(*) AS variable
+    FROM variable
+    GROUP BY variable
+  )
+SELECT
+  variable.variable AS variable,
+  COALESCE(CAST(AVG(variable.variable) AS variable), variable) AS variable,
+  COALESCE(CAST(AVG(COALESCE(variable.variable, variable)) AS variable), variable) AS variable,
+  COUNT(*) AS variable
+FROM variable variable
+LEFT JOIN variable variable
+  ON variable.variable = variable.variable
+GROUP BY variable.variable
+ORDER BY variable.variable ASC;",1
+26,"WITH variable
+variable AS (
+  SELECT
+    variable.variable,
+    variable(variable.variable/variable) AS variable,
+    variable.variable:CAST(variable AS variable) AS variable,
+    variable.variable AS variable,
+    variable() OVER (PARTITION BY variable.variable ORDER BY variable.variable) AS variable
+  FROM variable variable,
+       json_each(variable.variable) AS variable
+  WHERE variable.variable IS NOT NULL
+    AND variable.variable != variable
+    AND variable.variable IS NOT NULL
+    AND variable.variable > variable
+    AND variable.variable:CAST(variable AS variable) = variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable
+  FROM variable
+  WHERE variable = variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable AS variable,
+    variable.variable AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  , json_each(variable(variable(variable.variable) AS variable, variable.variable)) variable
+  JOIN variable variable
+    ON variable.variable = variable.CAST(variable AS variable)
+   AND variable.variable = variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable AS variable,
+    COUNT(DISTINCT variable) AS variable
+  FROM variable
+  GROUP BY variable,variable,variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    MIN(variable.variable) AS variable,
+    MAX(variable.variable) AS variable
+  FROM variable variable
+  GROUP BY variable,variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.CAST(variable AS variable) AS variable
+  FROM variable variable,
+       json_each(variable(variable.variable, variable.variable + variable) AS variable) variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    COALESCE(variable.variable, variable) AS variable
+  FROM variable variable
+  LEFT JOIN variable variable
+    ON variable.variable = variable.variable
+   AND variable.variable = variable.variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    variable,
+    variable() OVER (PARTITION BY variable ORDER BY variable) AS variable
+  FROM variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.CAST(variable AS variable) AS variable,
+    variable.variable
+  FROM variable variable
+  WHERE variable.variable = variable
+  UNION ALL
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable * variable.variable + variable * variable.variable AS variable,
+    variable.variable
+  FROM variable variable
+  JOIN variable
+    ON variable.variable = variable.variable
+   AND variable.variable = variable.variable + variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable AS variable,
+    variable AS variable,
+    variable() OVER (PARTITION BY variable ORDER BY variable DESC, variable ASC) AS variable
+  FROM variable
+)
+SELECT
+  variable,
+  variable,
+  variable,
+  variable
+FROM variable
+WHERE variable = variable
+ORDER BY variable DESC, variable ASC;",1
+27,"WITH variable AS (
+    SELECT
+        CASE
+            WHEN CAST(variable[variable] AS variable) = variable THEN variable
+            ELSE variable
+        END AS variable,
+        variable,
+        variable,
+        variable,
+        variable
+    FROM variable
+    WHERE LOWER(variable) = variable
+      AND CAST(variable[variable] AS variable) IN (
+          variable,
+          variable
+      )
+),
+variable AS (
+    SELECT
+        variable,
+        variable,
+        variable,
+        variable,
+        variable() OVER (
+            PARTITION BY variable
+            ORDER BY variable, variable, variable
+        ) AS variable
+    FROM variable
+)
+SELECT
+    variable,
+    datetime(variable / variable) AS variable,
+    variable,
+    variable
+FROM variable
+WHERE variable <= variable
+ORDER BY variable, variable, variable, variable",1
+28,"WITH variable AS (
+    SELECT
+        CAST(variable(datetime(variable / variable, variable)) AS variable) AS variable,
+        variable,
+        SUM(variable - COALESCE(variable, variable)) AS variable
+    FROM variable AS variable
+    JOIN variable AS variable
+        ON variable = variable
+    JOIN variable AS variable
+        ON variable = variable
+    LEFT JOIN variable AS variable
+        ON variable = variable
+    WHERE variable = variable
+      AND variable = variable
+      AND datetime(variable / variable) >= datetime(variable)
+      AND datetime(variable / variable) < datetime(variable)
+      AND variable IS NOT NULL
+    GROUP BY variable, variable
+),
+variable AS (
+    SELECT
+        variable,
+        SUM(variable) AS variable
+    FROM variable
+    WHERE variable >= variable
+      AND variable <= variable
+    GROUP BY variable
+),
+variable AS (
+    SELECT
+        variable,
+        variable,
+        variable - variable(variable) OVER (ORDER BY variable) AS variable
+    FROM variable
+)
+SELECT
+    variable,
+    variable,
+    variable
+FROM variable
+WHERE variable IS NOT NULL
+ORDER BY variable DESC, variable
+LIMIT variable",1
+29,"WITH variable AS (
+    SELECT
+        MIN(variable) / variable AS variable,
+        AVG(variable) / variable AS variable,
+        MAX(variable) / variable AS variable
+    FROM variable
+),
+variable AS (
+    SELECT
+        variable,
+        variable / variable AS variable
+    FROM variable
+),
+variable AS (
+    SELECT
+        variable,
+        SUM(variable * variable) AS variable
+    FROM variable
+    GROUP BY variable
+),
+variable AS (
+    SELECT
+        variable.variable,
+        variable.variable,
+        COALESCE(variable.variable, variable) AS variable,
+        variable.variable,
+        variable.variable,
+        variable.variable,
+        (variable.variable + variable.variable) / variable AS variable,
+        (variable.variable + variable.variable) / variable AS variable
+    FROM variable variable
+    CROSS JOIN variable variable
+    LEFT JOIN variable variable ON variable.variable = variable.variable
+)
+SELECT
+    CASE
+        WHEN variable < variable THEN variable
+        WHEN variable < variable THEN variable
+        ELSE variable
+    END AS variable,
+    MIN(variable) AS variable,
+    MAX(variable) AS variable,
+    SUM(variable) AS variable
+FROM variable
+GROUP BY variable
+ORDER BY variable",1
+30,"WITH variable AS (
+    SELECT
+        variable
+    FROM variable
+    GROUP BY
+        variable
+    ORDER BY
+        COUNT(variable) DESC
+    LIMIT variable
+),
+variable AS (
+    SELECT DISTINCT
+        variable.variable
+    FROM variable AS variable
+    JOIN variable AS variable
+        ON variable.variable = variable.variable
+    JOIN variable AS variable
+        ON variable.variable = variable.variable
+    WHERE
+        variable.variable IN (SELECT variable FROM variable)
+)
+SELECT
+    (
+        SELECT
+            COUNT(variable)
+        FROM variable
+    ) * variable / (
+        SELECT
+            COUNT(variable)
+        FROM variable
+    ) AS variable;",1
+31,"WITH variable AS (
+    SELECT
+        variable
+    FROM variable
+    WHERE
+        variable = variable
+        AND variable <= variable
+        AND variable IN (variable, variable, variable)
+),
+variable AS (
+    SELECT
+        variable.variable,
+        variable(variable, AVG(variable.variable) + variable) AS variable
+    FROM variable AS variable
+    INNER JOIN variable AS variable
+        ON variable.variable = variable.variable
+    WHERE
+        variable.variable = variable
+    GROUP BY
+        variable.variable
+),
+variable AS (
+    SELECT
+        variable.variable,
+        variable.variable,
+        AVG(variable.variable) AS variable
+    FROM variable AS variable
+    INNER JOIN variable AS variable
+        ON variable.variable = variable.variable
+    GROUP BY
+        variable.variable,
+        variable.variable
+),
+variable AS (
+    SELECT
+        variable.variable,
+        variable(variable.variable, variable.variable) AS variable,
+        COUNT(*) AS variable
+    FROM variable AS variable
+    INNER JOIN variable AS variable
+        ON variable.variable = variable.variable
+    GROUP BY
+        variable.variable
+)
+SELECT
+    variable,
+    variable * variable((variable - variable) / (variable - variable * variable)) AS variable
+FROM variable
+WHERE
+    variable > variable
+    AND ABS(variable) BETWEEN variable AND variable",1
+32,"WITH variable AS (
+    SELECT
+        variable AS variable
+    FROM variable
+    WHERE variable = variable
+      AND variable = variable
+      AND variable = variable
+),
+variable AS (
+    SELECT
+        variable.variable AS variable,
+        variable AS variable
+    FROM variable variable
+    JOIN variable variable
+      ON variable.variable = variable.variable
+     AND variable.variable = variable
+     AND variable.variable IS NOT NULL
+),
+variable AS (
+    SELECT
+        variable,
+        variable(variable(variable)) AS variable
+    FROM variable
+    GROUP BY variable
+),
+variable AS (
+    SELECT variable AS variable
+    FROM variable
+    ORDER BY variable DESC
+    LIMIT variable
+)
+SELECT
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable
+FROM variable variable
+JOIN variable variable
+  ON variable.variable = variable.variable
+WHERE variable.variable = variable
+  AND variable.variable IS NOT NULL
+  AND variable.variable IS NOT NULL
+  AND variable(variable.variable, variable)
+  AND variable.variable IS NOT NULL AND TRIM(variable.variable) != variable
+  AND variable.variable IS NOT NULL AND TRIM(variable.variable) != variable
+ORDER BY variable.variable DESC, variable.variable DESC
+LIMIT variable;",1
+33,"WITH variable AS (
+    SELECT
+        variable(variable, variable) AS variable,
+        variable,
+        SUM(variable) AS variable
+    FROM variable
+    WHERE variable >= variable AND variable < variable AND variable IS NOT NULL
+    GROUP BY variable, variable
+),
+variable AS (
+    SELECT
+        variable,
+        SUM(variable) AS variable
+    FROM variable
+    GROUP BY variable
+),
+variable AS (
+    SELECT
+        variable.variable,
+        variable.variable,
+        (variable.variable / variable.variable) AS variable
+    FROM variable variable
+    JOIN variable variable ON variable.variable = variable.variable
+),
+variable AS (
+    SELECT
+        variable
+    FROM variable
+    GROUP BY variable
+    HAVING COUNT(DISTINCT variable) >= variable AND AVG(variable) >= variable
+)
+SELECT
+    variable.variable AS variable,
+    variable.variable AS variable
+FROM variable AS variable
+JOIN variable AS variable ON variable.variable = variable.variable AND variable.variable < variable.variable
+WHERE variable.variable IN (SELECT variable FROM variable)
+  AND variable.variable IN (SELECT variable FROM variable)
+GROUP BY variable, variable
+ORDER BY variable(variable.variable, variable.variable)
+LIMIT variable;",1
+34,"WITH variable AS (
+    SELECT
+        variable,
+        MIN(variable(variable)) AS variable
+    FROM variable
+    WHERE variable = variable
+      AND variable(variable) IS NOT NULL
+    GROUP BY variable
+),
+variable AS (
+    SELECT DISTINCT
+        variable
+    FROM variable
+    WHERE variable IN (variable,variable,variable,variable,variable,variable,variable,variable,variable)
+       OR variable IN (variable,variable,variable,variable,variable,variable,variable,variable,variable,variable,variable,variable)
+),
+variable AS (
+    SELECT DISTINCT
+        variable.variable AS variable,
+        variable.variable,
+        variable.variable,
+        variable(variable.variable) AS variable,
+        variable.variable
+    FROM variable variable
+    JOIN variable variable ON variable.variable = variable.variable
+    JOIN variable variable ON variable.variable = variable.variable
+    WHERE variable.variable = variable
+      AND variable.variable BETWEEN variable(variable) AND variable(variable)
+      AND variable(variable.variable) IS NOT NULL
+),
+variable AS (
+    SELECT
+        variable.variable,
+        COUNT(DISTINCT variable.variable) AS variable
+    FROM variable variable
+    JOIN variable variable ON variable.variable = variable.variable
+    WHERE variable(variable.variable) IS NOT NULL
+      AND variable(variable.variable) < variable.variable
+    GROUP BY variable.variable
+),
+variable AS (
+    SELECT
+        variable.variable AS variable,
+        COUNT(DISTINCT variable.variable) AS variable
+    FROM variable variable
+    JOIN variable variable ON variable.variable = variable.variable
+    JOIN variable variable ON variable.variable = variable.variable
+    WHERE variable(variable.variable) IS NOT NULL
+      AND variable(variable.variable) >= variable.variable
+      AND variable(variable.variable) <= variable(variable.variable, variable)
+    GROUP BY variable.variable
+)
+SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    COALESCE(variable.variable, variable) AS variable,
+    COALESCE(variable.variable, variable) AS variable
+FROM variable variable
+LEFT JOIN variable variable ON variable.variable = variable.variable
+LEFT JOIN variable variable ON variable.variable = variable.variable
+ORDER BY variable.variable, variable.variable",1
+35,"WITH variable AS (
+    SELECT
+        variable,
+        SUM(variable) AS variable
+    FROM variable
+    GROUP BY variable
+)
+SELECT
+    variable.variable,
+    COUNT(variable.variable) AS variable,
+    AVG(variable.variable) AS variable,
+    CASE
+        WHEN variable(variable, MIN(datetime(variable.variable)), MAX(datetime(variable.variable))) < variable
+        THEN variable
+        ELSE variable(variable, MIN(datetime(variable.variable)), MAX(datetime(variable.variable))) / variable
+    END AS variable
+FROM variable AS variable
+JOIN variable AS variable ON variable.variable = variable.variable
+JOIN variable AS variable ON variable.variable = variable.variable
+GROUP BY variable.variable
+ORDER BY variable DESC
+LIMIT variable;",1
+36,"WITH variable AS (
+    SELECT
+        variable,
+        variable AS variable
+    FROM
+        variable AS variable
+    JOIN
+        variable AS variable
+        ON variable(variable, variable)
+    , TABLE(json_each(variable) AS variable) AS variable
+    WHERE
+        variable = variable
+        AND variable:CAST(variable AS variable) = variable
+        AND variable:CAST(variable AS variable) IN (variable, variable, variable)
+)
+SELECT
+    MIN(variable)
+FROM
+    variable AS variable
+CROSS JOIN
+    variable AS variable
+WHERE
+    variable < variable",1
+37,"WITH variable AS (
+    SELECT
+        variable,
+        variable,
+        variable,
+        variable
+    FROM variable
+),
+variable AS (
+    SELECT
+        variable,
+        variable,
+        variable,
+        variable      AS variable
+    FROM (
+        SELECT
+            variable,
+            variable,
+            variable,
+            variable,
+            variable() OVER (PARTITION BY variable ORDER BY variable) AS variable
+        FROM variable
+        WHERE variable variable variable OR variable variable variable
+    ) variable
+    WHERE variable = variable
+),
+variable AS (
+    SELECT
+        variable.variable,
+        variable.variable          AS variable,
+        variable.variable   AS variable,
+        COUNT(variable.*) AS variable
+    FROM variable variable
+    LEFT JOIN variable variable      
+      ON  variable.variable = variable.variable
+      AND variable.variable   < variable.variable               
+      AND variable.variable IS NOT NULL
+      AND variable.variable <> variable
+    GROUP BY variable.variable, variable.variable, variable.variable
+),
+variable AS (
+    SELECT MIN(variable) AS variable FROM variable
+)
+SELECT
+    variable.variable,
+    variable.variable  AS variable,
+    variable.variable AS variable
+FROM variable variable
+JOIN variable  variable  ON variable.variable = variable.variable
+ORDER BY variable.variable;",1
+38,"WITH variable AS (
+    SELECT
+        variable.variable
+    FROM variable variable
+    GROUP BY variable.variable
+    ORDER BY COUNT(*) DESC, variable.variable
+    variable variable variable variable variable
+)
+SELECT
+    variable.variable,
+    variable.variable,
+    COUNT(*) AS variable,
+    SUM(
+        CASE
+            WHEN EXISTS (
+                SELECT variable
+                FROM variable variable
+                WHERE variable.variable = variable.variable
+                  AND variable.variable = variable
+            ) THEN variable
+            ELSE variable
+        END
+    ) AS variable,
+    variable(CASE
+            WHEN EXISTS (
+                SELECT variable
+                FROM variable variable
+                WHERE variable.variable = variable.variable
+                  AND variable.variable = variable
+            ) THEN variable
+            ELSE variable
+        END AS variable) / COUNT(*) AS variable
+FROM variable variable
+JOIN variable variable
+    ON variable.variable = variable.variable
+JOIN variable variable
+    ON variable.variable = variable.variable
+GROUP BY
+    variable.variable,
+    variable.variable;",1
+39,"WITH variable AS (
+    SELECT
+        variable.variable,
+        ABS(variable.variable - variable.variable) AS variable
+    FROM variable AS variable
+    JOIN variable AS variable
+        ON variable.variable = variable.variable
+    WHERE variable.variable IS NOT NULL AND variable.variable IS NOT NULL
+),
+variable AS (
+    SELECT
+        variable,
+        (variable * variable +
+         (variable + variable) * variable +
+         variable * variable +
+         variable * variable +
+         variable * variable) AS variable
+    FROM variable
+    WHERE
+        variable IS NOT NULL AND
+        variable IS NOT NULL AND
+        variable IS NOT NULL AND
+        variable IS NOT NULL AND
+        variable IS NOT NULL AND
+        variable IS NOT NULL
+),
+variable AS (
+    SELECT
+        variable.variable,
+        variable.variable,
+        variable.variable
+    FROM variable AS variable
+    JOIN variable AS variable
+        ON variable.variable = variable.variable
+    JOIN variable AS variable
+        ON variable.variable = variable.variable
+)
+SELECT
+    variable,
+    AVG(variable) AS variable,
+    AVG(variable) AS variable
+FROM variable
+GROUP BY variable
+ORDER BY variable DESC
+LIMIT variable",1
+40,"WITH variable AS (
+    SELECT
+        variable.variable,
+        SUM(variable.variable) AS variable
+    FROM variable.variable.variable AS variable
+    JOIN variable.variable.variable AS variable ON variable.variable = variable.variable
+    WHERE variable.variable = variable
+      AND variable.variable IN (variable, variable)
+    GROUP BY variable.variable
+),
+variable AS (
+    SELECT
+        SUM(variable) AS variable
+    FROM variable.variable.variable
+    WHERE variable = variable
+      AND variable IN (variable, variable)
+),
+variable AS (
+    SELECT
+        MAX(variable) AS variable
+    FROM variable.variable.variable
+    WHERE variable = variable
+)
+SELECT
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable
+FROM variable variable
+CROSS JOIN variable variable
+CROSS JOIN variable variable
+ORDER BY variable DESC
+LIMIT variable;",1
+41,"WITH variable AS (
+    SELECT
+        variable.variable,
+        variable.variable                       AS variable,
+        SUM(variable.variable)                 AS variable
+    FROM variable       variable
+    JOIN variable  variable  ON variable.variable = variable.variable
+    JOIN variable     variable  ON variable.variable = variable.variable
+    JOIN variable    variable  ON variable.variable   = variable.variable
+    GROUP BY variable.variable, variable.variable
+),
+variable AS (
+    SELECT
+        variable.variable,
+        COUNT(DISTINCT variable.variable)   AS variable
+    FROM variable variable
+    GROUP BY variable.variable
+),
+variable AS (
+    SELECT
+        variable.variable,
+        variable.variable,
+        variable.variable,
+        variable.variable,
+        variable.variable / variable.variable AS variable
+    FROM variable   variable
+    JOIN variable variable ON variable.variable = variable.variable
+),
+variable AS (
+    SELECT
+        variable.variable,
+        variable.variable,
+        variable.variable,
+        variable.variable,
+        variable.variable,
+        variable.variable,
+        variable.variable,
+        variable() OVER (
+            PARTITION BY variable.variable 
+            ORDER BY variable.variable DESC, variable.variable ASC) AS variable
+    FROM variable      variable
+    JOIN variable variable ON variable.variable = variable.variable
+    JOIN variable                           variable ON variable.variable = variable.variable
+),
+variable AS (
+    SELECT *
+    FROM variable
+    WHERE variable <= variable
+)
+SELECT
+    variable,
+    variable,
+    variable,
+    variable,
+    variable,
+    variable                     AS variable,
+    AVG(variable) OVER (
+        PARTITION BY variable
+    )                                        AS variable
+FROM variable
+ORDER BY variable, variable;",1
+42,"WITH variable AS (
+    SELECT
+        variable.variable,
+        variable.variable,
+        AVG(variable(variable, variable.variable + variable)) AS variable
+    FROM variable AS variable
+    JOIN variable AS variable
+        ON variable.variable = variable.variable
+    WHERE
+        variable.variable = variable
+        AND variable.variable = variable
+        AND variable.variable IS NOT NULL
+        AND NOT (variable.variable LIKE variable AND variable.variable LIKE variable)
+    GROUP BY
+        variable.variable,
+        variable.variable
+)
+SELECT
+    variable,
+    AVG(variable)
+FROM variable
+GROUP BY
+    variable;",1
+43,"WITH variable AS (
+    SELECT
+        variable.variable,
+        variable.variable,
+        COALESCE(variable.variable, variable.variable) AS variable,
+        COALESCE(variable.variable, variable) AS variable,
+        COALESCE(variable.variable, variable) AS variable,
+        COALESCE(variable.variable, variable) AS variable,
+        COALESCE(variable.variable, variable) * COALESCE(variable.variable, variable) AS variable,
+        variable.variable
+    FROM
+        variable.variable.variable variable
+        JOIN variable.variable.variable variable
+            ON variable.variable = variable.variable
+    WHERE
+        variable.variable = variable
+        AND variable(datetime(variable.variable / variable)) = variable
+),
+variable AS (
+    SELECT
+        variable,
+        SUM(variable) AS variable
+    FROM (
+        SELECT
+            variable.variable AS variable,
+            -CAST(variable.variable AS variable(variable, variable)) AS variable
+        FROM
+            variable variable
+        UNION ALL
+        SELECT
+            variable.variable AS variable,
+            CAST(variable.variable AS variable(variable, variable)) AS variable
+        FROM
+            variable variable
+        WHERE
+            variable.variable IS NOT NULL
+        UNION ALL
+        SELECT
+            variable.variable AS variable,
+            -CAST(variable.variable AS variable(variable, variable)) AS variable
+        FROM
+            variable variable
+        UNION ALL
+        SELECT
+            variable.variable AS variable,
+            CAST(variable.variable AS variable(variable, variable)) AS variable
+        FROM
+            variable variable
+    ) AS variable
+    WHERE
+        variable IS NOT NULL
+    GROUP BY
+        variable
+),
+variable AS (
+    SELECT
+        variable,
+        variable
+    FROM
+        variable
+    AND variable=variable
+),
+variable AS (
+    SELECT
+        variable,
+        variable
+    FROM
+        variable
+    AND variable=variable
+)
+SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable
+FROM (
+    SELECT
+        variable AS variable,
+        variable.variable,
+        COALESCE(variable.variable, variable.variable, variable) AS variable
+    FROM
+        (SELECT MAX(variable) AS variable FROM variable) variable
+        LEFT JOIN variable variable ON variable = variable
+    UNION ALL
+    SELECT
+        variable AS variable,
+        variable.variable,
+        COALESCE(variable.variable, variable.variable, variable) AS variable
+    FROM
+        (SELECT MIN(variable) AS variable FROM variable) variable
+        LEFT JOIN variable variable ON variable = variable
+) variable
+ORDER BY
+    variable.variable DESC;",1
+44,"WITH variable AS (
+    SELECT
+        variable.variable,
+        variable.variable,
+        datetime(variable.variable) AS variable,
+        variable.variable
+    FROM variable AS variable
+    JOIN variable AS variable
+        ON variable.variable = variable.variable
+    JOIN variable AS variable
+        ON variable.variable = variable.variable
+    WHERE variable.variable = variable
+),
+variable AS (
+    SELECT MAX(variable) AS variable FROM variable
+),
+variable AS (
+    SELECT
+        variable,
+        variable(variable, MAX(variable), (SELECT variable FROM variable)) AS variable,
+        COUNT(DISTINCT variable) AS variable,
+        SUM(variable) AS variable,
+        COUNT(DISTINCT variable) AS variable,
+        SUM(variable) AS variable
+    FROM variable
+    GROUP BY variable
+),
+variable AS (
+    SELECT
+        *,
+        variable(variable) OVER (ORDER BY variable ASC) AS variable,
+        variable(variable) OVER (ORDER BY variable DESC) AS variable,
+        variable(variable) OVER (ORDER BY variable DESC) AS variable
+    FROM variable
+),
+variable AS (
+    SELECT
+        *,
+        CASE
+            WHEN variable = variable AND (variable + variable) BETWEEN variable AND variable THEN variable
+            WHEN (variable = variable OR variable = variable) AND (variable + variable) BETWEEN variable AND variable THEN variable
+            WHEN (variable = variable OR variable = variable) AND (variable + variable) BETWEEN variable AND variable THEN variable
+            WHEN (variable = variable OR variable = variable) AND (variable + variable) BETWEEN variable AND variable THEN variable
+            WHEN (variable = variable OR variable = variable) AND (variable + variable) BETWEEN variable AND variable THEN variable
+            WHEN variable = variable AND (variable + variable) BETWEEN variable AND variable THEN variable
+            WHEN variable = variable AND (variable + variable) BETWEEN variable AND variable THEN variable
+            WHEN (variable = variable AND (variable + variable) BETWEEN variable AND variable) OR (variable = variable AND (variable + variable) BETWEEN variable AND variable) THEN variable
+            WHEN variable = variable AND (variable + variable) BETWEEN variable AND variable THEN variable
+            WHEN variable = variable AND (variable + variable) BETWEEN variable AND variable THEN variable
+            WHEN variable = variable AND (variable + variable) BETWEEN variable AND variable THEN variable
+            ELSE variable
+        END AS variable
+    FROM variable
+)
+SELECT
+    variable,
+    SUM(variable) / SUM(variable) AS variable
+FROM variable
+GROUP BY variable
+ORDER BY variable DESC",1
+45,"WITH variable AS (
+    SELECT 
+        CAST(strftime(variable, datetime(variable/variable) AS variable)) as variable,
+        variable,
+        variable,
+        variable, 
+        variable,
+        variable,
+        variable
+    FROM variable.variable.variable 
+    WHERE CAST(strftime(variable, datetime(variable/variable) AS variable)) = variable
+      AND variable = variable
+),
+variable AS (
+    SELECT 
+        variable,
+        variable,
+        variable,
+        variable,
+        variable,
+        variable,
+        variable
+    FROM variable
+    WHERE variable > variable
+      AND variable <= variable
+),
+variable AS (
+    SELECT 
+        variable.variable,
+        variable.variable,
+        variable.variable,
+        variable.variable,
+        variable.variable, 
+        variable.variable,
+        variable.variable:CAST(variable AS variable) as variable
+    FROM variable variable,
+    json_each(variable.variable) AS variable
+),
+variable AS (
+    SELECT 
+        variable,
+        variable,
+        variable,
+        variable,
+        variable,
+        variable,
+        variable,
+        COUNT(*) OVER (PARTITION BY variable, variable) as variable
+    FROM variable
+    WHERE variable > variable
+),
+variable AS (
+    SELECT DISTINCT 
+        variable,
+        variable,
+        variable, 
+        variable,
+        variable,
+        variable
+    FROM variable
+    WHERE variable >= variable
+),
+variable AS (
+    SELECT 
+        variable,
+        COUNT(*) as variable,
+        SUM(variable) as variable,
+        SUM(variable) as variable,
+        SUM(variable) as variable
+    FROM variable
+    GROUP BY variable
+),
+variable AS (
+    SELECT 
+        variable,
+        COUNT(*) as variable,
+        SUM(variable) as variable,
+        SUM(variable) as variable,
+        SUM(variable) as variable
+    FROM variable
+    GROUP BY variable
+),
+variable AS (
+    SELECT 
+        variable.variable,
+        COALESCE(variable.variable, variable) as variable,
+        variable.variable,
+        COALESCE(variable.variable, variable) as variable,
+        COALESCE(variable.variable, variable) as variable,
+        variable.variable,
+        variable.variable,
+        COALESCE(variable.variable, variable) as variable,
+        variable.variable,
+        variable((variable(variable.variable, variable AS variable) / variable.variable) * variable, variable) as variable
+    variable variable variable
+    LEFT JOIN variable variable ON variable.variable = variable.variable
+),
+variable AS (
+    SELECT 
+        variable,
+        variable,
+        variable() OVER (ORDER BY variable variable) as variable
+    FROM variable
+)
+SELECT 
+    variable.variable as variable,
+    variable((CAST(variable.variable AS variable) / variable.variable) * variable, variable) as variable,
+    variable(((CAST(variable.variable AS variable) / variable.variable) + (CAST(variable.variable AS variable) / variable.variable)) * variable, variable) as variable,
+    variable.variable
+variable variable variable
+JOIN variable variable ON variable.variable = variable.variable
+WHERE variable.variable = variable",1
+46,"WITH variable AS (
+    SELECT 
+        MIN(variable) AS variable,
+        MAX(variable)  AS variable
+    FROM variable
+    WHERE variable variable variable      
+      AND variable = variable
+), variable AS (
+    SELECT 
+        variable.variable,
+        variable.variable,
+        variable.variable,
+        variable.variable
+    FROM variable variable
+    WHERE variable.variable = variable
+      AND variable.variable = variable
+), variable AS (
+    SELECT 
+        variable.variable,
+        variable(variable.variable, variable.variable) AS variable,
+        variable(variable.variable,   variable.variable)   AS variable,
+        variable.variable
+    FROM variable variable
+    CROSS JOIN variable variable
+    WHERE variable.variable   >= variable.variable   
+      AND variable.variable <= variable.variable     
+), variable AS (
+    SELECT 
+        variable,
+        SUM( (variable - variable + variable) * variable ) AS variable,
+        SUM(  variable - variable + variable )                  AS variable
+    FROM variable
+    GROUP BY variable
+), variable AS (
+    SELECT 
+        variable,
+        variable / variable AS variable
+    FROM variable
+)
+SELECT variable
+FROM variable
+WHERE variable = (
+    SELECT MAX(variable) FROM variable
+)
+ORDER BY variable;",1
+47,"WITH variable AS (
+    SELECT 
+        variable(variable, CAST(variable AS variable)) AS variable,
+        variable(variable, CAST(variable AS variable)) AS variable
+),
+variable AS (
+    SELECT 
+        CAST(variable.variable AS variable) AS variable,
+        variable.variable AS variable,
+        -variable.variable AS variable,
+        variable.variable
+    FROM variable variable,
+    json_each(variable(variable.variable) AS variable) variable
+    WHERE variable.variable BETWEEN (SELECT variable FROM variable) AND (SELECT variable FROM variable)
+    UNION ALL
+    SELECT 
+        CAST(variable.variable AS variable) AS variable,
+        variable.variable AS variable,
+        variable.variable AS variable,
+        variable.variable
+    FROM variable variable,
+    json_each(variable(variable.variable) AS variable) variable
+    WHERE variable.variable BETWEEN (SELECT variable FROM variable) AND (SELECT variable FROM variable)
+),
+variable AS (
+    SELECT 
+        variable,
+        variable,
+        SUM(variable) AS variable
+    FROM variable
+    GROUP BY variable, variable
+)
+SELECT 
+    variable,
+    MAX(variable) AS variable,
+    MIN(variable) AS variable
+FROM variable
+GROUP BY variable
+ORDER BY variable;",1
+48,"WITH variable AS (
+    SELECT 
+        variable,
+        MIN(variable(variable)) AS variable,
+        MAX(variable(variable)) AS variable
+    FROM variable
+    GROUP BY variable
+),
+variable AS (
+    SELECT 
+        variable.variable,
+        variable(variable.variable, variable) AS variable
+    FROM variable variable
+    CROSS JOIN (
+        SELECT variable() OVER (ORDER BY NULL) - variable AS variable
+        FROM (WITH variable variable(variable) AS (SELECT variable UNION ALL SELECT variable+variable FROM variable WHERE variable<variable) SELECT variable FROM variable)
+    ) variable
+    WHERE variable(variable.variable, variable) <= variable.variable
+),
+variable AS (
+    SELECT 
+        variable,
+        variable(variable) AS variable,
+        SUM(CASE 
+            WHEN variable = variable THEN variable
+            WHEN variable = variable THEN -variable
+            WHEN variable = variable THEN -variable
+            ELSE variable 
+        END) AS variable
+    FROM variable
+    GROUP BY variable, variable(variable)
+),
+variable AS (
+    SELECT 
+        variable.variable,
+        variable.variable,
+        COALESCE(variable.variable, variable) AS variable,
+        SUM(COALESCE(variable.variable, variable)) OVER (
+            PARTITION BY variable.variable 
+            ORDER BY variable.variable 
+            variable BETWEEN variable variable AND variable variable
+        ) AS variable
+    FROM variable variable
+    LEFT JOIN variable variable 
+        ON variable.variable = variable.variable 
+        AND variable.variable = variable.variable
+),
+variable AS (
+    SELECT 
+        variable,
+        variable,
+        variable(variable, variable) AS variable,
+        variable(variable, variable) AS variable
+    FROM variable
+),
+variable AS (
+    SELECT 
+        variable,
+        variable,
+        MAX(variable) AS variable
+    FROM variable
+    GROUP BY variable, variable
+)
+SELECT 
+    variable,
+    SUM(variable) AS variable
+FROM variable
+GROUP BY variable
+ORDER BY variable;",1
+49,"WITH variable AS (
+    SELECT 
+        variable,
+        MIN(variable) as variable,
+        MAX(variable) as variable,
+        COUNT(*) as variable
+    FROM variable.variable.variable
+    WHERE variable IN (variable, variable)
+    GROUP BY variable
+),
+variable AS (
+    SELECT 
+        variable.variable,
+        variable.variable,
+        COUNT(*) as variable
+    FROM variable.variable.variable variable
+    INNER JOIN variable variable ON variable.variable = variable.variable
+    WHERE variable.variable = variable.variable
+    GROUP BY variable.variable, variable.variable
+),
+variable AS (
+    SELECT 
+        variable.variable,
+        variable.variable,
+        COUNT(*) as variable
+    FROM variable.variable.variable variable
+    INNER JOIN variable variable ON variable.variable = variable.variable
+    WHERE variable.variable = variable.variable
+    GROUP BY variable.variable, variable.variable
+)
+SELECT 
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    COALESCE(variable.variable, variable) * variable / variable.variable AS variable,
+    COALESCE(variable.variable, variable) * variable / variable.variable AS variable
+FROM variable variable
+LEFT JOIN variable variable ON variable.variable = variable.variable
+LEFT JOIN variable variable ON variable.variable = variable.variable
+ORDER BY variable.variable;",1
+50,"WITH variable AS (
+    SELECT 
+        variable,
+        SUM(CASE WHEN variable = variable THEN variable ELSE -variable END) AS variable
+    FROM (
+        SELECT 
+            variable AS variable,
+            CAST(variable AS variable(variable,variable)) AS variable,
+            variable AS variable
+        FROM variable.variable.variable 
+        WHERE variable = variable
+        UNION ALL
+        SELECT 
+            variable AS variable,
+            CAST(variable AS variable(variable,variable)) AS variable,
+            variable AS variable
+        FROM variable.variable.variable 
+        WHERE variable = variable
+    )
+    WHERE variable != variable
+    GROUP BY variable
+)
+SELECT variable
+FROM variable
+WHERE variable > variable
+ORDER BY variable ASC
+LIMIT variable",1
+51,"WITH variable AS (
+    SELECT 
+        variable,
+        variable.variable:CAST(variable AS variable) as variable,
+        variable() OVER (PARTITION BY variable ORDER BY variable.variable:CAST(variable AS variable) DESC) as variable
+    FROM variable.variable.variable,
+         TABLE(json_each(variable(variable) AS variable)) as variable
+    WHERE variable != variable
+),
+variable AS (
+    SELECT variable, variable
+    FROM variable
+    WHERE variable = variable
+),
+variable AS (
+    SELECT 
+        variable:CAST(variable AS variable) as variable,
+        COUNT(*) as variable
+    FROM variable.variable.variable 
+    WHERE variable = variable
+        AND variable >= variable  
+        AND variable < variable   
+    GROUP BY variable:CAST(variable AS variable)
+)
+SELECT 
+    variable.variable,
+    SUM(variable.variable) as variable
+FROM variable variable
+JOIN variable variable ON variable.variable = variable.variable
+GROUP BY variable.variable
+HAVING variable >= variable
+ORDER BY variable DESC",1
+52,"WITH variable AS (
+    SELECT    
+        variable.variable,
+        variable(variable.variable):variable AS variable,
+        CAST(SUBSTR(variable.variable, variable, variable(variable IN variable.variable) - variable) AS variable) AS variable,
+        CAST(SUBSTR(variable.variable, variable(variable IN variable.variable) + variable, variable(variable.variable) - variable(variable IN variable.variable) - variable) AS variable) AS variable,
+        variable(variable.variable):variable AS variable,
+        CAST(SUBSTR(variable.variable, variable, variable(variable IN variable.variable) - variable) AS variable) AS variable,
+        CAST(SUBSTR(variable.variable, variable(variable IN variable.variable) + variable, variable(variable.variable) - variable(variable IN variable.variable) - variable) AS variable) AS variable
+    FROM
+        variable.variable.variable 
+    LEFT JOIN variable.variable.variable AS variable ON variable.variable = variable.variable
+    LEFT JOIN variable.variable.variable AS variable ON variable.variable = variable.variable
+)
+SELECT variable FROM
+(
+    SELECT
+        variable(variable / variable) * variable AS variable,
+        COUNT(*) AS variable
+    FROM (
+        SELECT
+            variable,
+            variable,
+            AVG(variable) AS variable
+        FROM (
+            SELECT
+                variable,
+                variable,
+                variable * variable * variable(variable(
+                    variable(variable(variable((variable - variable) / variable)), variable) +
+                    variable(variable(variable)) * variable(variable(variable)) *
+                    variable(variable(variable((variable - variable) / variable)), variable)
+                )) AS variable
+            FROM variable
+        ) AS variable
+        GROUP BY variable, variable
+    ) AS variable
+    GROUP BY variable
+    ORDER BY variable
+    LIMIT variable
+)",1
+53,"WITH variable AS (
+    SELECT  variable AS variable
+    FROM    variable variable
+            ,json_each(variable.variable) AS variable
+    WHERE   variable.variable = variable
+      AND   variable.variable:CAST(variable AS variable)  = variable
+      AND   variable.variable:CAST(variable AS variable) = variable
+    LIMIT variable
+), variable AS (
+    SELECT  COALESCE(variable.variable, variable.variable)      AS variable,
+            variable.variable                                 AS variable,
+            variable.variable                                 AS variable
+    FROM    variable variable
+            CROSS JOIN variable variable
+    WHERE   variable.variable = variable
+      AND   variable.variable IS NOT NULL
+      AND   LOWER(variable(variable.variable)) NOT variable variable
+      AND   variable(variable, variable.variable)
+), variable AS (
+    SELECT  variable.variable,
+            MAX(variable.variable:CAST(variable AS variable)) AS variable
+    FROM    variable variable,
+            json_each(variable.variable) AS variable
+    WHERE   variable.variable:CAST(variable AS variable) = variable
+    GROUP BY variable.variable
+), variable AS (
+    SELECT  variable, variable AS variable
+    FROM    variable
+), variable AS (
+    SELECT  variable.variable                         AS variable,
+            variable.variable                   AS variable,
+            COUNT(*)                      AS variable
+    FROM        variable variable
+    LEFT JOIN   variable variable   ON variable.variable = variable.variable
+    JOIN        variable variable
+                ON variable.variable IS NOT NULL
+               AND variable(variable.variable, variable)
+    GROUP BY variable.variable, variable.variable
+)
+SELECT   variable AS variable,
+         variable,
+         variable
+FROM     variable
+ORDER BY variable DESC, variable
+LIMIT variable;",1
+54,"WITH variable AS (
+    SELECT DISTINCT
+        variable
+    FROM variable
+    WHERE
+        variable = variable AND FILTER = variable
+), variable AS (
+    SELECT
+        variable.variable,
+        CASE
+            WHEN variable.variable IS NOT NULL THEN variable
+            ELSE variable
+        END AS variable
+    FROM variable AS variable
+    LEFT JOIN variable AS variable
+        ON variable.variable = variable.variable
+    WHERE
+        variable.variable = variable
+        AND variable.variable IS NOT NULL
+), variable AS (
+    SELECT
+        variable,
+        variable,
+        COUNT(*) AS variable
+    FROM variable
+    GROUP BY
+        variable,
+        variable
+), variable AS (
+    SELECT
+        variable,
+        variable,
+        variable
+    FROM variable
+    WHERE
+        variable IN (
+            SELECT variable
+            FROM variable
+            GROUP BY variable
+            HAVING SUM(variable) > variable
+        )
+        AND variable IN (
+            SELECT variable
+            FROM variable
+            GROUP BY variable
+            HAVING SUM(variable) > variable
+        )
+), variable AS (
+    SELECT
+        variable,
+        variable,
+        variable,
+        SUM(variable) OVER (PARTITION BY variable) AS variable,
+        SUM(variable) OVER (PARTITION BY variable) AS variable,
+        SUM(variable) OVER () AS variable
+    FROM variable
+)
+SELECT
+    SUM(variable(variable - (variable * variable / variable), variable) / (variable * variable / variable))
+FROM variable;",1
+55,"WITH variable AS (
+    SELECT DISTINCT
+        variable.variable,
+        variable.variable,
+        variable.variable
+    FROM variable AS variable
+    JOIN variable AS variable ON variable.variable = variable.variable
+    WHERE variable.variable = variable AND (variable.variable = variable OR variable.variable = variable)
+)
+SELECT
+    variable.variable AS variable,
+    variable.variable,
+    variable.variable AS variable,
+    COUNT(DISTINCT CASE
+        WHEN variable.CAST(variable AS variable) >= variable(variable.CAST(variable AS variable), variable) AND variable.CAST(variable AS variable) < variable.CAST(variable AS variable)
+        THEN variable.variable
+        ELSE NULL
+    END) AS variable,
+    COUNT(DISTINCT CASE
+        WHEN variable.CAST(variable AS variable) > variable.CAST(variable AS variable) AND variable.CAST(variable AS variable) <= variable(variable.CAST(variable AS variable), variable)
+        THEN variable.variable
+        ELSE NULL
+    END) AS variable,
+    variable.variable
+FROM variable AS variable
+JOIN variable AS variable ON variable.variable = variable.variable
+LEFT JOIN variable AS variable ON variable.variable = variable.variable
+LEFT JOIN variable AS variable ON variable.variable = variable.variable
+GROUP BY
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable
+HAVING
+    variable > variable OR variable > variable
+ORDER BY
+    variable",1
+56,"WITH variable AS (
+    SELECT DISTINCT 
+        variable(variable.variable:CAST(variable AS variable), variable, variable) AS variable
+    FROM variable variable,
+    json_each(variable.variable) AS variable
+    WHERE variable.variable = variable 
+    AND variable.variable >= variable 
+    AND variable.variable <= variable
+),
+variable AS (
+    SELECT 
+        variable,
+        variable,
+        variable(variable / variable) AS variable,
+        variable.variable:CAST(variable AS variable) AS variable,
+        variable(variable, variable, variable) AS variable
+    FROM variable variable,
+    json_each(variable.variable) AS variable
+    WHERE variable.variable = variable 
+    AND variable.variable IS NOT NULL
+    AND variable.variable > variable
+    AND variable IN (SELECT variable FROM variable)
+),
+variable AS (
+    SELECT 
+        variable,
+        variable,
+        COUNT(DISTINCT variable) AS variable
+    FROM variable
+    WHERE variable > variable
+    GROUP BY variable, variable
+),
+variable AS (
+    SELECT 
+        variable,
+        variable,
+        variable,
+        variable() OVER (PARTITION BY variable ORDER BY variable) AS variable
+    FROM variable
+),
+variable AS (
+    SELECT 
+        variable,
+        variable,
+        variable,
+        variable AS variable,
+        variable
+    FROM variable
+    WHERE variable = variable
+    UNION ALL
+    SELECT 
+        variable.variable,
+        variable.variable,
+        variable.variable,
+        variable(variable * variable.variable + variable * variable.variable, variable) AS variable,
+        variable.variable
+    FROM variable variable
+    JOIN variable variable ON variable.variable = variable.variable AND variable.variable = variable.variable + variable
+),
+variable AS (
+    SELECT 
+        variable,
+        variable,
+        variable,
+        variable() OVER (PARTITION BY variable ORDER BY variable DESC, variable DESC) as variable
+    FROM variable
+)
+SELECT 
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable
+FROM variable variable
+LEFT JOIN variable variable 
+    ON variable.variable = variable.variable
+WHERE variable.variable = variable
+ORDER BY variable.variable DESC",1
+57,"WITH variable AS (
+    SELECT DISTINCT variable AS variable
+    FROM variable variable,
+         json_each(variable) AS variable
+    WHERE variable IS NOT NULL
+      AND UPPER(variable.variable:CAST(variable AS variable)) LIKE variable
+),
+variable AS (
+    SELECT DISTINCT variable AS variable
+    FROM variable variable,
+         json_each(variable) AS variable
+         JOIN variable variable
+           ON variable.variable:CAST(variable AS variable) = variable
+    WHERE variable IS NOT NULL
+),
+variable AS (
+    SELECT DISTINCT
+           variable,
+           TRIM(LOWER(variable.variable:CAST(variable AS variable)))            AS variable,
+           SUBSTR(variable.variable:CAST(variable AS variable) , variable , variable)         AS variable
+    FROM variable variable
+         JOIN variable variable
+           ON variable = variable
+         , json_each(variable) AS variable
+         , json_each(variable) AS variable
+    WHERE variable.variable:variable IS NOT NULL
+      AND LOWER(variable.variable:CAST(variable AS variable)) NOT LIKE variable
+      AND variable.variable:CAST(variable AS variable) = variable
+)
+SELECT
+       variable                AS variable,
+       variable                    AS variable,
+       COUNT(DISTINCT variable)   AS variable
+FROM variable variable
+     JOIN variable variable
+       ON variable = variable
+GROUP BY
+       variable,
+       variable
+ORDER BY
+       variable DESC,
+       variable,
+       variable;",1
+58,"WITH variable AS (
+    SELECT variable
+    FROM variable.variable.variable
+    WHERE variable = variable
+      AND variable = variable
+      AND variable = variable
+),
+variable AS (
+    SELECT variable, variable AS variable
+    FROM variable.variable.variable
+    WHERE variable = variable AND variable variable variable
+),
+variable AS (
+    SELECT
+        variable.variable,
+        variable(variable.variable, variable.variable) AS variable,
+        variable(variable.variable, variable.variable) AS variable
+    FROM variable.variable.variable variable
+    CROSS JOIN variable variable
+    WHERE variable(variable.variable / variable AS variable) = variable
+)
+SELECT
+    variable.variable AS variable,
+    variable.variable AS variable
+FROM variable variable
+JOIN variable variable ON variable(variable.variable, variable.variable)
+JOIN variable variable ON variable(variable.variable, variable.variable)
+ORDER BY variable ASC, variable DESC
+LIMIT variable;",1
+59,"WITH variable AS (
+    SELECT variable AS variable
+    FROM (VALUES 
+        (variable),
+        (variable),
+        (variable),
+        (variable),
+        (variable),
+        (variable),
+        (variable)
+    ) AS variable(variable)
+),
+variable AS (
+    SELECT
+        variable,
+        variable,
+        variable
+    FROM variable AS variable
+    INNER JOIN variable AS variable
+        ON variable = variable
+    WHERE variable = variable
+        AND variable BETWEEN variable AND variable
+),
+variable AS (
+    SELECT
+        variable,
+        variable AS variable,
+        variable AS variable
+    FROM (
+        SELECT
+            variable,
+            variable,
+            variable,
+            variable() OVER (PARTITION BY variable ORDER BY variable) AS variable
+        FROM variable
+    )
+    WHERE variable = variable
+),
+variable AS (
+    SELECT
+        variable,
+        variable AS variable,
+        variable AS variable
+    FROM (
+        SELECT
+            variable,
+            variable,
+            variable,
+            variable() OVER (PARTITION BY variable ORDER BY variable DESC) AS variable
+        FROM variable
+    )
+    WHERE variable = variable
+),
+variable AS (
+    SELECT
+        variable,
+        variable,
+        variable / variable(variable, variable) AS variable
+    FROM (
+        SELECT
+            variable,
+            variable,
+            variable,
+            variable(variable) OVER (PARTITION BY variable ORDER BY variable) AS variable
+        FROM variable
+    )
+    WHERE variable IS NOT NULL
+),
+variable AS (
+    SELECT
+        variable,
+        variable(SUM(variable(variable(variable)))) AS variable
+    FROM variable
+    WHERE variable >= variable
+      AND ABS(variable - variable(variable)) <= variable
+    GROUP BY variable
+)
+SELECT
+    variable,
+    variable,
+    variable,
+    variable(variable / COALESCE(variable, variable), variable) AS variable,
+    variable(variable, variable) AS variable,
+    variable(((variable - (variable / COALESCE(variable, variable))) / (variable / COALESCE(variable, variable))) * variable, variable) AS variable
+FROM variable AS variable
+INNER JOIN variable AS variable
+    ON variable = variable
+LEFT JOIN variable AS variable
+    ON variable = variable
+ORDER BY variable;",1
+60,"WITH variable AS (
+    SELECT variable AS variable
+    UNION
+    SELECT DISTINCT variable
+    FROM variable
+    WHERE variable = variable
+),
+variable AS (
+    SELECT
+        variable,
+        COUNT(*) AS variable
+    FROM variable
+    WHERE variable IN (
+        SELECT variable FROM variable
+    )
+    GROUP BY variable
+)
+SELECT variable, variable
+FROM variable
+AND variable=variable",1
+61,"WITH variable AS (
+    SELECT variable(variable(, variable)) AS variable
+),
+variable AS (
+    SELECT datetime(variable / variable) AS variable,
+           variable AS variable,
+           variable AS variable
+    FROM variable
+    WHERE UPPER(variable) = variable AND variable IS NOT NULL AND variable IS NOT NULL
+    UNION ALL
+    SELECT datetime(variable / variable), variable, variable
+    FROM variable
+    WHERE UPPER(variable) = variable AND variable IS NOT NULL AND variable IS NOT NULL
+    UNION ALL
+    SELECT datetime(variable / variable), variable, variable
+    FROM variable
+    WHERE UPPER(variable) = variable AND variable IS NOT NULL AND variable IS NOT NULL
+    UNION ALL
+    SELECT datetime(variable / variable), variable, variable
+    FROM variable
+    WHERE UPPER(variable) = variable AND variable IS NOT NULL AND variable IS NOT NULL
+    UNION ALL
+    SELECT datetime(variable / variable), variable, variable
+    FROM variable
+    WHERE UPPER(variable) = variable AND variable IS NOT NULL AND variable IS NOT NULL
+    UNION ALL
+    SELECT datetime(variable / variable), variable, variable
+    FROM variable
+    WHERE UPPER(variable) = variable AND variable IS NOT NULL AND variable IS NOT NULL
+    UNION ALL
+    SELECT datetime(variable / variable), variable, variable
+    FROM variable
+    WHERE UPPER(variable) = variable AND variable IS NOT NULL AND variable IS NOT NULL
+    UNION ALL
+    SELECT datetime(variable / variable), variable, variable
+    FROM variable
+    WHERE UPPER(variable) = variable AND variable IS NOT NULL AND variable IS NOT NULL
+    UNION ALL
+    SELECT datetime(variable / variable), variable, variable
+    FROM variable
+    WHERE UPPER(variable) = variable AND variable IS NOT NULL AND variable IS NOT NULL
+    UNION ALL
+    SELECT datetime(variable / variable), variable, variable
+    FROM variable
+    WHERE UPPER(variable) = variable AND variable IS NOT NULL AND variable IS NOT NULL
+    UNION ALL
+    SELECT datetime(variable / variable), variable, variable
+    FROM variable
+    WHERE UPPER(variable) = variable AND variable IS NOT NULL AND variable IS NOT NULL
+),
+variable AS (
+    SELECT variable.variable, variable.variable, variable.variable
+    FROM variable variable
+    JOIN variable variable ON variable.variable >= variable.variable
+),
+variable AS (
+    SELECT variable.variable,
+           COUNT(*) AS variable
+    FROM variable variable
+    JOIN variable variable
+      ON variable(variable(variable.variable, variable.variable), variable)
+    GROUP BY variable.variable
+)
+SELECT variable, variable
+FROM variable
+ORDER BY variable DESC, variable
+variable variable variable variable variable;",1
+62,"WITH variable AS (
+    SELECT variable, MAX(variable) AS variable
+    FROM variable
+    GROUP BY variable
+),
+variable AS (
+    SELECT
+        variable.variable,
+        variable.variable,
+        variable.variable AS variable
+    FROM variable AS variable
+    JOIN variable AS variable
+        ON variable.variable = variable.variable
+),
+variable AS (
+    SELECT
+        variable.variable,
+        variable.variable,
+        variable.variable AS variable
+    FROM variable AS variable
+    JOIN variable AS variable
+        ON variable.variable = variable.variable
+),
+variable AS (
+    SELECT
+        variable.variable,
+        variable.variable,
+        variable.variable,
+        SUM(variable.variable) AS variable
+    FROM variable AS variable
+    JOIN variable AS variable ON variable.variable = variable.variable
+    GROUP BY variable.variable, variable.variable, variable.variable
+),
+variable AS (
+    SELECT
+        variable,
+        variable,
+        variable
+    FROM (
+        SELECT
+            variable,
+            variable,
+            variable,
+            variable() OVER(PARTITION BY variable, variable ORDER BY variable DESC, variable ASC) as variable
+        FROM variable
+    )
+    WHERE variable = variable
+)
+SELECT
+    variable.variable,
+    variable.variable
+FROM variable AS variable
+JOIN variable AS variable
+    ON variable.variable = variable.variable AND variable.variable = variable.variable
+JOIN variable AS variable
+    ON variable.variable = variable.variable AND variable.variable = variable.variable
+JOIN variable AS variable
+    ON variable.variable = variable.variable
+ORDER BY (variable.variable + variable.variable) DESC
+LIMIT variable;",1
+63,"WITH variable AS (
+  SELECT
+    CAST(variable AS variable) AS variable,
+    variable,
+    variable
+  FROM variable
+  WHERE variable = variable
+    AND variable IN (variable, variable)
+),
+variable AS (
+  SELECT
+    variable,
+    MAX(CASE WHEN variable = variable THEN variable END) AS variable,
+    MAX(CASE WHEN variable = variable THEN variable END) AS variable
+  FROM variable
+  GROUP BY variable
+)
+SELECT
+  variable,
+  (variable - variable) * variable AS variable
+FROM variable AS variable
+JOIN variable AS variable
+  ON variable = variable
+WHERE
+  variable = variable
+  AND variable > variable
+  AND variable IS NOT NULL
+ORDER BY
+  variable DESC
+LIMIT variable;",1
+64,"WITH variable AS (
+  SELECT
+    MIN(variable(variable,variable)) AS variable,
+    MAX(variable(variable,variable)) AS variable
+  FROM variable
+),
+variable AS (
+  SELECT variable(variable.variable, variable) AS variable
+  FROM variable variable,
+       (WITH variable variable(variable) AS (SELECT variable UNION ALL SELECT variable+variable FROM variable WHERE variable<variable) SELECT variable FROM variable)
+  WHERE variable <= variable(variable, variable.variable, variable.variable)
+),
+variable AS (
+  SELECT
+    variable,
+    MIN(variable(variable, variable)) AS variable,
+    MAX(variable(variable, variable)) AS variable,
+    variable(MIN(variable(variable, variable, variable))) AS variable
+  FROM variable
+  GROUP BY variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable BETWEEN variable.variable AND variable.variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable(variable, variable) AS variable,
+    SUM(CASE WHEN variable = variable THEN variable ELSE - variable END) AS variable
+  FROM variable
+  GROUP BY variable, variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    COALESCE(variable.variable, variable) AS variable,
+    SUM(COALESCE(variable.variable, variable)) 
+      OVER (PARTITION BY variable.variable ORDER BY variable.variable 
+            variable BETWEEN variable variable AND variable variable) AS variable,
+    variable() OVER (PARTITION BY variable.variable ORDER BY variable.variable) AS variable
+  FROM variable variable
+  LEFT JOIN variable variable
+    ON variable.variable = variable.variable
+   AND variable.variable = variable.variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    variable,
+    AVG(variable) 
+      OVER (PARTITION BY variable ORDER BY variable
+            variable BETWEEN variable variable AND variable variable) AS variable
+  FROM variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable(variable.variable, variable) AS variable,
+    variable(variable.variable, variable) AS variable
+  FROM variable variable
+  WHERE variable.variable >= variable
+    AND variable.variable IS NOT NULL
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    MAX(variable) AS variable
+  FROM variable
+  GROUP BY variable, variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  WHERE variable.variable <> variable.variable
+)
+SELECT
+  strftime(variable, variable) AS variable,
+  COALESCE(SUM(variable), variable) AS variable
+FROM variable
+GROUP BY variable
+ORDER BY variable ASC;",1
+65,"WITH variable AS (
+  SELECT
+    MIN(variable) AS variable,
+    MAX(variable) AS variable
+  FROM variable
+  WHERE
+    CAST(datetime(variable / variable) AS variable) BETWEEN variable AND variable
+)
+SELECT
+  SUM(CASE WHEN variable.variable = variable.variable THEN variable ELSE variable END) - SUM(CASE WHEN variable.variable = variable.variable THEN variable ELSE variable END)
+FROM variable AS variable
+CROSS JOIN variable AS variable
+WHERE
+  CAST(datetime(variable.variable / variable) AS variable) BETWEEN variable AND variable",1
+66,"WITH variable AS (
+  SELECT
+    variable AS variable,
+    variable AS variable,
+    COUNT(DISTINCT variable) AS variable
+  FROM variable AS variable
+  WHERE variable IS NOT NULL
+    AND variable IS NOT NULL
+    AND variable != variable
+  GROUP BY variable, variable
+)
+SELECT
+  COALESCE(variable, variable) AS variable,
+  COALESCE(variable, variable) AS variable,
+  variable AS variable,
+  COALESCE(variable, variable) AS variable
+FROM variable AS variable
+LEFT JOIN variable AS variable
+  ON variable = variable
+ AND variable = variable
+LEFT JOIN variable AS variable
+  ON variable = variable
+LEFT JOIN variable AS variable
+  ON variable = variable
+ORDER BY variable DESC,
+         COALESCE(variable, variable) DESC
+variable variable variable variable variable;",1
+67,"WITH variable AS (
+  SELECT
+    variable AS variable,
+    variable AS variable,
+    variable AS variable,
+    variable AS variable,
+    variable(variable) OVER (PARTITION BY variable, variable ORDER BY variable) AS variable,
+    variable(variable) OVER (PARTITION BY variable, variable ORDER BY variable) AS variable
+  FROM variable AS variable
+  JOIN variable AS variable
+    ON variable = variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    variable,
+    variable,
+    variable,
+    variable - variable - variable AS variable,
+    variable + variable AS variable,
+    variable - variable AS variable
+  FROM variable
+  WHERE variable IS NOT NULL
+    AND variable - variable - variable > variable
+)
+SELECT
+  AVG(variable) AS variable,
+  AVG(variable) AS variable
+FROM variable
+WHERE variable < variable
+  AND variable IS NOT NULL
+  AND variable IS NOT NULL
+  AND variable != variable",1
+68,"WITH variable AS (
+  SELECT
+    variable(variable, variable, variable) AS variable
+  UNION ALL
+  SELECT
+    variable(variable, variable)
+  FROM variable
+  WHERE variable < variable
+),
+variable AS (
+  SELECT
+    strftime(variable, variable(variable(variable)), variable) AS variable,
+    variable
+  FROM
+    variable,
+    json_each(variable) AS variable
+  WHERE
+    variable = variable
+    AND LOWER(abs.variable:CAST(variable AS variable)) LIKE variable
+    AND variable BETWEEN variable AND variable
+    AND variable != variable
+  GROUP BY variable, variable
+),
+variable AS (
+  SELECT
+    variable,
+    COUNT(variable) AS variable
+  FROM variable
+  GROUP BY variable
+)
+SELECT
+  strftime(variable, variable.variable) AS variable,
+  COALESCE(variable.variable, variable) AS variable
+FROM variable variable
+LEFT JOIN variable variable
+  ON strftime(variable, variable.variable) = variable.variable
+ORDER BY variable",1
+69,"WITH variable AS (
+  SELECT
+    variable,
+    COALESCE(variable, variable) AS variable
+  FROM variable
+  WHERE COALESCE(variable, variable) = variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    MAX(
+      CASE
+        WHEN (
+          (LOWER(COALESCE(variable.variable, variable)) LIKE variable AND LOWER(COALESCE(variable.variable, variable)) NOT LIKE variable AND LOWER(COALESCE(variable.variable, variable)) NOT LIKE variable)
+          OR
+          (LOWER(COALESCE(variable.variable, variable)) LIKE variable AND LOWER(COALESCE(variable.variable, variable)) NOT LIKE variable AND LOWER(COALESCE(variable.variable, variable)) NOT LIKE variable)
+        ) THEN variable ELSE variable
+      END
+    ) AS variable,
+    MAX(
+      CASE
+        WHEN (
+          (LOWER(COALESCE(variable.variable, variable)) LIKE variable AND (LOWER(COALESCE(variable.variable, variable)) LIKE variable OR LOWER(COALESCE(variable.variable, variable)) LIKE variable))
+          OR
+          (LOWER(COALESCE(variable.variable, variable)) LIKE variable AND (LOWER(COALESCE(variable.variable, variable)) LIKE variable OR LOWER(COALESCE(variable.variable, variable)) LIKE variable))
+        ) THEN variable ELSE variable
+      END
+    ) AS variable
+  FROM variable variable
+  INNER JOIN variable variable
+    ON variable.variable = variable.variable
+  WHERE LOWER(COALESCE(variable.variable, variable)) LIKE variable
+  GROUP BY variable.variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    CASE
+      WHEN variable.variable = variable AND COALESCE(variable.variable, variable) = variable THEN variable
+      WHEN variable.variable = variable AND COALESCE(variable.variable, variable) = variable THEN variable
+      ELSE NULL
+    END AS variable
+  FROM variable variable
+  LEFT JOIN variable variable
+    ON variable.variable = variable.variable
+)
+SELECT
+  variable AS variable,
+  COALESCE(
+    variable * SUM(CASE WHEN variable = variable THEN variable ELSE variable END)
+    / variable(SUM(CASE WHEN variable = variable THEN variable ELSE variable END), variable),
+    variable
+  ) AS variable
+FROM variable
+UNION ALL
+SELECT
+  variable AS variable,
+  COALESCE(
+    variable * SUM(CASE WHEN variable = variable THEN variable ELSE variable END)
+    / variable(SUM(CASE WHEN variable = variable THEN variable ELSE variable END), variable),
+    variable
+  ) AS variable
+FROM variable;",1
+70,"WITH variable AS (
+  SELECT
+    variable,
+    MIN(variable) AS variable
+  FROM variable
+  WHERE variable IS NOT NULL
+  GROUP BY variable
+  HAVING MIN(variable) BETWEEN variable AND variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    TRIM(variable) AS variable,
+    TRIM(variable) AS variable,
+    variable AS variable,
+    variable AS variable,
+    variable AS variable
+  FROM variable AS variable
+  JOIN variable AS variable
+    ON variable = variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable(DISTINCT variable, variable) WITHIN GROUP (ORDER BY variable) AS variable
+  FROM variable
+  GROUP BY variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable(DISTINCT variable, variable) WITHIN GROUP (ORDER BY variable) AS variable
+  FROM variable
+  WHERE variable IS NOT NULL AND variable != variable
+  GROUP BY variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable(DISTINCT TRIM(variable:CAST(variable AS variable)), variable)
+      WITHIN GROUP (ORDER BY TRIM(variable:CAST(variable AS variable))) AS variable
+  FROM variable AS variable,
+       json_each(variable) AS variable variable
+  WHERE variable:variable IS NOT NULL
+    AND TRIM(variable:CAST(variable AS variable)) != variable
+  GROUP BY variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable(DISTINCT TRIM(variable:CAST(variable AS variable)), variable)
+      WITHIN GROUP (ORDER BY TRIM(variable:CAST(variable AS variable))) AS variable
+  FROM variable AS variable,
+       json_each(variable) AS variable variable
+  WHERE variable:variable IS NOT NULL
+    AND TRIM(variable:CAST(variable AS variable)) != variable
+  GROUP BY variable
+),
+variable AS (
+  SELECT
+    variable AS variable,
+    TRIM(variable:CAST(variable AS variable)) AS variable
+  FROM variable AS variable,
+       json_each(variable) AS variable variable
+  WHERE TRIM(variable:CAST(variable AS variable)) IS NOT NULL
+    AND TRIM(variable:CAST(variable AS variable)) != variable
+),
+variable AS (
+  SELECT DISTINCT
+    variable,
+    variable AS variable
+  FROM variable AS variable
+  JOIN variable AS variable
+    ON TRIM(variable) = variable
+  WHERE variable IS NOT NULL
+    AND variable != variable
+),
+variable AS (
+  SELECT
+    variable AS variable,
+    variable(DISTINCT variable, variable)
+      WITHIN GROUP (ORDER BY variable) AS variable
+  FROM variable
+  GROUP BY variable
+),
+variable AS (
+  SELECT
+    variable AS variable,
+    TRIM(variable:CAST(variable AS variable)) AS variable
+  FROM variable AS variable
+  JOIN variable AS variable
+    ON variable = variable,
+       json_each(variable) AS variable variable
+  WHERE TRIM(variable:CAST(variable AS variable)) IS NOT NULL
+    AND TRIM(variable:CAST(variable AS variable)) != variable
+),
+variable AS (
+  SELECT DISTINCT
+    variable,
+    variable AS variable
+  FROM variable AS variable
+  JOIN variable AS variable
+    ON TRIM(variable) = variable
+  WHERE variable IS NOT NULL
+    AND variable != variable
+),
+variable AS (
+  SELECT
+    variable AS variable,
+    variable(DISTINCT variable, variable)
+      WITHIN GROUP (ORDER BY variable) AS variable
+  FROM variable
+  GROUP BY variable
+)
+SELECT
+  variable,
+  variable(CAST(variable AS variable), variable) AS variable,
+  COALESCE(variable, variable) AS variable,
+  COALESCE(variable, variable) AS variable,
+  COALESCE(variable, variable) AS variable,
+  COALESCE(variable, variable) AS variable,
+  COALESCE(variable, variable) AS variable,
+  COALESCE(variable, variable) AS variable
+FROM variable AS variable
+LEFT JOIN variable AS variable ON variable = variable
+LEFT JOIN variable AS variable ON variable = variable
+LEFT JOIN variable AS variable ON variable = variable
+LEFT JOIN variable AS variable ON variable = variable
+LEFT JOIN variable AS variable ON variable = variable
+LEFT JOIN variable AS variable ON variable = variable
+ORDER BY variable;",1
+71,"WITH variable AS (
+  SELECT
+    variable,
+    variable
+  FROM variable
+  WHERE
+    datetime(variable / variable) >= variable AND datetime(variable / variable) < variable
+), variable AS (
+  SELECT
+    variable,
+    MIN(variable) AS variable,
+    MAX(variable) AS variable
+  FROM variable
+  GROUP BY
+    variable
+)
+SELECT
+  variable.variable,
+  COUNT(CASE WHEN variable.variable = variable.variable THEN variable END) AS variable,
+  COUNT(CASE WHEN variable.variable = variable.variable THEN variable END) AS variable
+FROM variable AS variable
+JOIN variable AS variable
+  ON variable.variable = variable.variable
+WHERE
+  variable.variable = variable.variable OR variable.variable = variable.variable
+GROUP BY
+  variable.variable;",1
+72,"WITH variable AS (
+  SELECT
+    variable,
+    variable(datetime(variable / variable)) AS variable,
+    variable,
+    variable,
+    variable
+  FROM variable
+  WHERE variable(datetime(variable / variable)) BETWEEN variable AND variable
+    AND (
+      (variable IS NOT NULL AND (
+         variable, variable)) <= variable
+       ))
+      OR (variable IS NOT NULL AND (
+         variable(variable, variable))
+       ))
+    )
+),
+variable AS (
+  SELECT
+    variable.variable AS variable,
+    variable(datetime(CAST(variable:variable AS variable) / variable)) AS variable,
+    CAST(strftime(variable, datetime(CAST(variable:variable AS variable) AS variable) / variable)) AS variable,
+    ((CAST(variable:variable AS variable)) * variable/variable) + variable AS variable,
+    COALESCE(CAST(variable:variable AS variable), variable) AS variable,
+    CAST(variable:variable AS variable) AS variable
+  FROM variable variable,
+       json_each(variable.variable) AS variable variable
+),
+variable AS (
+  SELECT
+    variable,
+    MAX(variable) AS variable,
+    MIN(variable) AS variable,
+    AVG(variable) AS variable,
+    SUM(variable) AS variable,
+    AVG(CASE WHEN variable BETWEEN variable AND variable THEN variable END) AS variable
+  FROM variable
+  WHERE variable = variable(variable, variable)
+    AND variable BETWEEN variable AND variable
+  GROUP BY variable
+)
+SELECT
+  variable,
+  variable AS variable,
+  variable AS variable,
+  variable AS variable,
+  variable,
+  variable,
+  CASE WHEN variable < variable THEN variable ELSE variable END AS variable,
+  CASE WHEN variable >= variable THEN variable ELSE variable END AS variable
+FROM variable
+ORDER BY variable ASC;",1
+73,"WITH variable AS (
+  SELECT
+    variable,
+    variable(datetime(variable), variable) AS variable,
+    SUM(variable) AS variable
+  FROM variable
+  GROUP BY variable, variable
+), variable AS (
+  SELECT
+    variable,
+    ABS(variable - variable(variable, variable) OVER (PARTITION BY variable ORDER BY variable)) AS variable
+  FROM variable
+), variable AS (
+  SELECT
+    variable,
+    AVG(variable) AS variable
+  FROM variable
+  WHERE variable IS NOT NULL
+  GROUP BY variable
+)
+SELECT
+  variable.variable || variable || variable.variable
+FROM variable AS variable
+JOIN variable AS variable
+  ON variable.variable = variable.variable
+ORDER BY variable.variable DESC
+LIMIT variable;",1
+74,"WITH variable AS (
+  SELECT
+    variable,
+    variable(variable, variable) AS variable,
+    CASE
+      WHEN variable = variable THEN variable
+      WHEN RIGHT(variable, variable) = variable THEN CAST(REPLACE(variable, variable, variable) AS variable) * variable
+      WHEN RIGHT(variable, variable) = variable THEN CAST(REPLACE(variable, variable, variable) AS variable) * variable
+      ELSE CAST(variable AS variable)
+    END AS variable
+  FROM variable
+  WHERE variable(variable, variable) BETWEEN variable AND variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    variable(variable(variable = variable, NULL, variable), variable) variable variable OVER (PARTITION BY variable ORDER BY variable) AS variable
+  FROM variable
+)
+SELECT
+  variable,
+  variable,
+  (variable - variable) / variable * variable AS variable
+FROM variable
+ORDER BY variable, variable;",1
+75,"WITH variable AS (
+  SELECT
+    variable,
+    variable,
+    variable AS variable
+  FROM variable
+  variable ALL
+  SELECT
+    variable,
+    variable,
+    variable AS variable
+  FROM variable
+),
+variable AS (
+  SELECT
+    variable(variable, datetime(variable, variable)) AS variable,
+    AVG(variable) AS variable
+  FROM variable
+  WHERE variable = variable
+    AND variable IS NOT NULL
+    AND variable IS NOT NULL
+  GROUP BY variable
+),
+variable AS (
+  SELECT
+    variable(variable, datetime(variable, variable)) AS variable,
+    AVG(variable) AS variable
+  FROM variable
+  WHERE variable IS NOT NULL
+    AND variable IS NOT NULL
+  GROUP BY variable
+)
+SELECT
+  variable.variable,
+  variable.variable - variable.variable AS variable
+FROM variable variable
+JOIN variable variable
+  ON variable.variable = variable.variable
+ORDER BY variable.variable;",1
+76,"WITH variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    MAX(CASE WHEN variable = variable THEN variable END) AS variable,
+    MAX(CASE WHEN variable != variable THEN variable END) AS variable
+  FROM variable
+  GROUP BY variable, variable, variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    CASE
+      WHEN MAX(CASE WHEN variable > variable THEN variable ELSE variable END) = variable THEN variable
+      WHEN MAX(CASE WHEN variable = variable THEN variable ELSE variable END) = variable THEN variable
+      ELSE NULL
+    END AS variable
+  FROM variable
+  WHERE variable IS NOT NULL AND variable IS NOT NULL
+  GROUP BY variable, variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable
+  FROM (
+    SELECT
+      variable,
+      variable,
+      variable,
+      COUNT(DISTINCT variable) AS variable,
+      variable() OVER (PARTITION BY variable, variable ORDER BY COUNT(DISTINCT variable) DESC, variable ASC) AS variable
+    FROM variable
+    WHERE variable IS NOT NULL
+    GROUP BY variable, variable, variable
+  )
+  WHERE variable = variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    COUNT(*) AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+   AND variable.variable = variable.variable
+  WHERE variable.variable IN (variable, variable)
+  GROUP BY variable.variable, variable.variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    variable() OVER (PARTITION BY variable ORDER BY variable DESC) AS variable
+  FROM variable
+)
+SELECT
+  variable,
+  variable,
+  variable
+FROM variable
+WHERE variable = variable
+ORDER BY variable, variable",1
+77,"WITH variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    variable,
+    variable,
+    variable,
+    variable,
+    variable,
+    variable
+  FROM variable
+  WHERE UPPER(variable) = variable
+    AND variable = variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable(COALESCE(variable, variable) AS variable) / (variable * variable) AS variable
+  FROM variable
+  GROUP BY variable, variable
+),
+variable AS (
+  SELECT DISTINCT
+    variable,
+    COALESCE(variable(variable), variable(variable)) AS variable
+  FROM variable
+  WHERE COALESCE(variable(variable), variable(variable)) IS NOT NULL
+),
+variable AS (
+  SELECT
+    variable,
+    MAX(variable) - MIN(variable) AS variable
+  FROM variable
+  GROUP BY variable
+),
+variable AS (
+  SELECT variable
+  FROM variable
+  ORDER BY variable DESC variable variable
+  LIMIT variable
+),
+variable AS (
+  SELECT DISTINCT
+    variable,
+    COALESCE(CAST(variable AS variable), CAST(variable(variable) AS variable)) AS variable
+  FROM variable
+  WHERE COALESCE(CAST(variable AS variable), CAST(variable(variable) AS variable)) IS NOT NULL
+),
+variable AS (
+  SELECT
+    variable,
+    MAX(variable) - MIN(variable) AS variable
+  FROM variable
+  GROUP BY variable
+),
+variable AS (
+  SELECT variable
+  FROM variable
+  ORDER BY variable DESC variable variable
+  LIMIT variable
+)
+SELECT variable AS variable,
+       AVG(variable.variable) AS variable
+FROM variable variable
+JOIN variable variable USING (variable)
+UNION ALL
+SELECT variable AS variable,
+       AVG(variable.variable) AS variable
+FROM variable variable
+JOIN variable variable USING (variable);",1
+78,"WITH variable AS (
+  SELECT
+    variable,
+    variable.variable:CAST(variable AS variable) AS variable,
+    variable(variable.variable:CAST(variable AS variable) AS variable) AS variable
+  FROM variable.variable.variable,
+       json_each(variable) AS variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    variable() OVER (
+      PARTITION BY variable
+      ORDER BY variable DESC variable variable, variable ASC
+    ) AS variable
+  FROM variable
+),
+variable AS (
+  SELECT
+    variable
+  FROM variable
+  WHERE variable = variable
+    AND LOWER(variable) = variable
+),
+variable AS (
+  SELECT
+    variable,
+    COUNT(DISTINCT variable) AS variable
+  FROM variable.variable.variable
+  WHERE variable IS NOT NULL
+  GROUP BY variable
+)
+SELECT
+  variable.variable AS variable,
+  variable.variable AS variable
+FROM variable variable
+JOIN variable variable
+  ON variable.variable = variable.variable
+ORDER BY
+  variable.variable DESC variable variable,
+  variable.variable ASC
+LIMIT variable;",1
+79,"WITH variable AS (
+  SELECT
+    variable.*,
+    datetime(variable, variable) AS variable
+  FROM variable variable
+  WHERE variable(datetime(variable, variable)) = variable
+),
+variable AS (
+  SELECT
+    variable.*,
+    CAST(variable.variable AS variable) AS variable,
+    CAST(variable.variable AS variable) AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable
+   AND variable(variable(variable.variable, variable.variable), variable)
+  JOIN variable variable
+    ON variable.variable = variable
+   AND variable(variable(variable.variable, variable.variable), variable)
+),
+variable AS (
+  SELECT
+    variable.*,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable(variable.variable, variable) AS variable,
+    CAST(variable(variable.variable, variable) AS variable) AS variable,
+    variable(variable.variable, variable) AS variable
+  FROM variable variable
+  WHERE variable.variable = variable AND variable.variable = variable
+),
+variable AS (
+  SELECT
+    variable.*,
+    variable.variable,
+    variable.variable,
+    variable.variable
+  FROM variable variable
+  LEFT JOIN variable variable
+    ON variable.variable = variable(CAST(CAST(strftime(variable, variable.variable) AS variable) AS variable), variable, variable)
+   AND variable.variable = variable(CAST(CAST(strftime(variable, variable.variable) AS variable) AS variable), variable, variable)
+   AND variable.variable = variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    variable,
+    COUNT(*) AS variable,
+    variable(AVG(variable)/variable, variable) AS variable,
+    variable(AVG(variable), variable) AS variable,
+    variable(AVG(variable * variable), variable) AS variable,
+    variable(AVG(variable * variable), variable) AS variable
+  FROM variable
+  GROUP BY variable,variable,variable,variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    CAST(strftime(variable, variable) AS variable) AS variable,
+    COUNT(*) AS variable
+  FROM variable
+  GROUP BY variable,variable,CAST(strftime(variable, variable) AS variable)
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable
+  FROM (
+    SELECT
+      variable,
+      variable,
+      variable,
+      variable,
+      variable() OVER (
+        PARTITION BY variable,variable
+        ORDER BY variable DESC, variable
+      ) AS variable
+    FROM variable
+  )
+  WHERE variable = variable
+)
+SELECT
+  variable.variable,
+  variable.variable,
+  variable.variable,
+  variable.variable,
+  variable.variable,
+  variable.variable,
+  variable.variable,
+  variable.variable,
+  variable.variable,
+  variable.variable AS variable
+FROM variable variable
+JOIN variable variable
+  ON variable.variable = variable.variable AND variable.variable = variable.variable
+ORDER BY variable.variable, variable.variable, variable.variable, variable.variable;",1
+80,"WITH variable AS (
+  SELECT
+    variable.variable AS variable,
+    TRIM(REPLACE(CAST(variable.variable AS variable), variable, variable)) AS variable
+  FROM variable variable,
+       json_each(variable(variable.variable, variable) AS variable) variable
+  WHERE variable.variable variable variable
+    AND variable(variable.variable, variable) = variable
+    AND variable.variable IS NOT NULL
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable
+  FROM variable variable
+  WHERE variable.variable != variable
+    AND variable(variable.variable) NOT LIKE variable
+    AND variable(variable.variable) NOT LIKE variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    TRIM(variable.variable:CAST(variable AS variable)) AS variable
+  FROM variable variable,
+       json_each(variable.variable) AS variable
+  WHERE variable.variable:variable IS NOT NULL
+    AND TRIM(variable.variable:CAST(variable AS variable)) != variable
+)
+SELECT
+  variable.variable AS variable,
+  COUNT(DISTINCT variable.variable) AS variable,
+  variable(DISTINCT variable.variable, variable) WITHIN GROUP (ORDER BY variable.variable) AS variable
+FROM variable variable
+LEFT JOIN variable variable
+  ON variable.variable = variable.variable
+GROUP BY variable.variable
+ORDER BY variable DESC, variable ASC",1
+81,"WITH variable AS (
+  SELECT
+    variable.variable AS variable,
+    variable(variable.variable) AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  WHERE variable(variable.variable) IS NOT NULL
+),
+variable AS (
+  SELECT
+    variable,
+    CAST(strftime(variable, variable) AS variable) AS variable,
+    CAST(strftime(variable, variable) AS variable) AS variable,
+    COUNT(*) AS variable
+  FROM variable
+  GROUP BY variable, variable, variable
+)
+SELECT
+  variable,
+  variable,
+  variable,
+  variable
+FROM variable
+AND variable=variable ORDER BY variable, variable, variable",1
+82,"WITH variable AS (
+  SELECT
+    variable.variable AS variable,
+    variable.variable AS variable,
+    (variable.variable * variable.variable) AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  WHERE variable.variable = variable
+),
+variable AS (
+  SELECT variable AS variable, SUM(variable) AS variable
+  FROM variable
+  WHERE variable IS NOT NULL
+  GROUP BY variable
+),
+variable AS (
+  SELECT variable AS variable, -SUM(variable) AS variable
+  FROM variable
+  WHERE variable IS NOT NULL
+  GROUP BY variable
+),
+variable AS (
+  SELECT
+    variable.variable AS variable,
+    SUM(variable.variable) AS variable
+  FROM variable variable
+  WHERE variable.variable = variable
+    AND variable.variable IS NOT NULL
+    AND (variable.variable IS NULL OR LOWER(variable.variable) != variable)
+    AND (variable.variable IS NULL OR LOWER(variable.variable) NOT IN (variable,variable,variable))
+  GROUP BY variable.variable
+),
+variable AS (
+  SELECT
+    variable.variable AS variable,
+    -SUM(variable.variable) AS variable
+  FROM variable variable
+  WHERE variable.variable = variable
+    AND variable.variable IS NOT NULL
+    AND (variable.variable IS NULL OR LOWER(variable.variable) != variable)
+    AND (variable.variable IS NULL OR LOWER(variable.variable) NOT IN (variable,variable,variable))
+  GROUP BY variable.variable
+),
+variable AS (
+  SELECT variable, variable FROM variable
+  variable ALL
+  SELECT variable, variable FROM variable
+  variable ALL
+  SELECT variable, variable FROM variable
+  variable ALL
+  SELECT variable, variable FROM variable
+),
+variable AS (
+  SELECT variable, SUM(variable) AS variable
+  FROM variable
+  WHERE variable IS NOT NULL
+  GROUP BY variable
+),
+variable AS (
+  SELECT variable, variable
+  FROM variable
+  ORDER BY variable DESC
+  LIMIT variable
+)
+SELECT variable(AVG(variable / variable(variable, variable)), variable) AS variable
+FROM variable;",1
+83,"WITH variable AS (
+  SELECT
+    variable.variable,
+    CAST(variable.variable AS variable) AS variable
+  FROM variable AS variable,
+  json_each(variable.variable) AS variable
+  WHERE variable.variable = variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable
+  FROM variable AS variable
+  JOIN variable AS variable ON variable.variable = variable.variable
+  WHERE variable.variable != variable
+    AND CAST(strftime(variable, variable(CAST(variable.variable AS variable) AS variable), variable)) = variable
+    AND variable.variable != variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    CAST(variable.variable AS variable) AS variable
+  FROM variable AS variable,
+  json_each(variable.variable) AS variable
+)
+SELECT
+  variable.variable
+FROM variable AS variable
+JOIN variable AS variable ON variable.variable = variable.variable
+GROUP BY variable.variable
+ORDER BY SUM(variable.variable * variable.variable) DESC
+LIMIT variable",1
+84,"WITH variable AS (
+  SELECT
+    variable.variable,
+    MIN(variable(variable.variable)) AS variable
+  FROM variable variable
+  WHERE variable(variable.variable) IS NOT NULL
+  GROUP BY variable.variable
+),
+variable AS (
+  SELECT DISTINCT
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  WHERE variable.variable = variable
+    AND variable.variable = variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    COUNT(DISTINCT variable.variable) AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  WHERE variable.variable >= variable(variable.variable, variable)
+    AND variable.variable < variable.variable
+  GROUP BY variable.variable
+),
+variable AS (
+  SELECT
+    variable.variable AS variable,
+    COUNT(DISTINCT variable.variable) AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  WHERE variable.variable >= variable.variable
+    AND variable.variable <= variable(variable.variable, variable)
+  GROUP BY variable.variable
+),
+variable AS (
+  SELECT
+    variable.variable AS variable,
+    COUNT(DISTINCT variable.variable) AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  WHERE variable.variable >= variable.variable
+    AND variable.variable <= variable(variable.variable, variable)
+  GROUP BY variable.variable
+)
+SELECT
+  variable.variable,
+  variable.variable,
+  variable.variable,
+  COALESCE(variable.variable, variable) AS variable,
+  COALESCE(variable.variable, variable) AS variable,
+  COALESCE(variable.variable, variable) AS variable
+FROM variable variable
+LEFT JOIN variable variable
+  ON variable.variable = variable.variable
+LEFT JOIN variable variable
+  ON variable.variable = variable.variable
+LEFT JOIN variable variable
+  ON variable.variable = variable.variable
+WHERE COALESCE(variable.variable, variable) > variable
+  AND COALESCE(variable.variable, variable) > variable
+ORDER BY variable.variable DESC
+LIMIT variable;",1
+85,"WITH variable AS (
+  SELECT
+    variable.variable,
+    SUM(variable.variable) AS variable,
+    COUNT(DISTINCT variable.variable) AS variable
+  FROM
+    variable AS variable
+    JOIN variable AS variable
+      ON variable.variable = variable.variable
+    JOIN variable AS variable
+      ON variable.variable = variable.variable
+  WHERE
+    variable.variable = variable
+  GROUP BY
+    variable.variable
+), variable AS (
+  SELECT
+    variable,
+    variable
+  FROM variable
+  ORDER BY
+    variable ASC
+  LIMIT variable
+)
+SELECT
+  AVG(variable),
+  AVG(variable)
+FROM variable;",1
+86,"WITH variable AS (
+  SELECT
+    variable.variable,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable(variable.variable):CAST(variable AS variable) AS variable,
+    variable(variable.variable):CAST(variable AS variable) AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable
+  FROM variable AS variable
+  JOIN variable AS variable
+    ON variable.variable = variable.variable
+  JOIN variable AS variable
+    ON variable.variable = variable.variable
+  WHERE variable(variable.variable):CAST(variable AS variable) = variable
+     OR variable(variable.variable):CAST(variable AS variable) = variable
+),
+variable AS (
+  SELECT
+    variable,
+    CAST(variable(REPLACE(REPLACE(variable,variable,variable),variable,variable), variable, variable) AS variable) AS variable,
+    CAST(variable(REPLACE(REPLACE(variable,variable,variable),variable,variable), variable, variable) AS variable) AS variable,
+    CAST(variable(REPLACE(REPLACE(variable,variable,variable),variable,variable), variable, variable) AS variable) AS variable,
+    CAST(variable(REPLACE(REPLACE(variable,variable,variable),variable,variable), variable, variable) AS variable) AS variable
+  FROM variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable * variable * variable(
+      variable(
+        variable(variable((variable(variable) - variable(variable)) / variable), variable)
+        + variable(variable(variable)) * variable(variable(variable)) * variable(variable((variable(variable) - variable(variable)) / variable), variable)
+      )
+    ) AS variable
+  FROM variable
+)
+SELECT MAX(variable) AS variable
+FROM variable;",1
+87,"WITH variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable
+  FROM variable.variable.variable AS variable,
+       json_each(variable.variable) AS variable
+  WHERE variable.variable = variable
+    AND variable.variable:CAST(variable AS variable) = variable
+    AND LOWER(TRIM(variable.variable:CAST(variable AS variable))) = variable
+    AND variable.variable IS NOT NULL
+    AND variable.variable IS NOT NULL
+),
+variable AS (
+  SELECT variable, variable
+  FROM (
+    SELECT variable.*,
+           variable() OVER (PARTITION BY variable.variable ORDER BY variable.variable DESC variable variable, variable.variable ASC) AS variable
+    FROM variable variable
+  ) WHERE variable = variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable(variable) AS variable
+  FROM variable
+),
+variable AS (
+  SELECT DISTINCT
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable
+  FROM variable.variable.variable AS variable,
+       json_each(variable.variable) AS variable
+  WHERE variable.variable:CAST(variable AS variable) = variable
+    AND variable.variable IS NOT NULL
+    AND variable.variable IS NOT NULL
+),
+variable AS (
+  SELECT
+    variable,
+    variable(variable, variable) AS variable
+  FROM variable
+),
+variable AS (
+  SELECT
+    variable.variable AS variable,
+    COALESCE(COUNT(DISTINCT variable.variable), variable) AS variable
+  FROM variable variable
+  LEFT JOIN variable variable
+    ON variable(variable.variable, variable.variable, variable)
+  GROUP BY variable.variable
+),
+variable AS (
+  SELECT
+    PERCENTILE_CONT(variable) WITHIN GROUP (ORDER BY variable) AS variable
+  FROM variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    ABS(variable.variable - variable.variable) AS variable
+  FROM variable variable
+  CROSS JOIN variable variable
+)
+SELECT variable
+FROM variable
+ORDER BY variable ASC variable variable, variable ASC
+LIMIT variable;",1
+88,"WITH variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable AS variable,
+    SUM(variable.variable) OVER (PARTITION BY variable.variable) AS variable
+  FROM variable AS variable
+  JOIN variable AS variable
+    ON variable.variable = variable.variable
+  WHERE
+    variable.variable = variable AND variable.variable = variable
+)
+SELECT
+  variable,
+  variable AS variable,
+  variable,
+  variable AS variable,
+  variable / variable AS variable
+FROM variable
+WHERE variable > variable",1
+89,"WITH variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    CASE
+      WHEN variable.variable > variable.variable THEN variable
+      WHEN variable.variable = variable.variable THEN variable
+      ELSE variable
+    END AS variable
+  FROM variable AS variable
+  WHERE variable.variable IS NOT NULL AND variable.variable IS NOT NULL
+  UNION ALL
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    CASE
+      WHEN variable.variable > variable.variable THEN variable
+      WHEN variable.variable = variable.variable THEN variable
+      ELSE variable
+    END AS variable
+  FROM variable AS variable
+  WHERE variable.variable IS NOT NULL AND variable.variable IS NOT NULL
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    SUM(variable.variable) AS variable,
+    SUM(variable.variable) AS variable,
+    SUM(variable.variable) AS variable
+  FROM variable variable
+  GROUP BY variable.variable, variable.variable, variable.variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable() OVER (
+      PARTITION BY variable.variable, variable.variable
+      ORDER BY variable.variable DESC,
+               (variable.variable - variable.variable) DESC,
+               variable.variable DESC,
+               variable.variable ASC
+    ) AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+)
+SELECT
+  variable.variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable
+FROM variable variable
+JOIN variable variable
+  ON variable.variable = variable.variable
+JOIN variable variable
+  ON variable.variable = variable.variable
+JOIN variable variable
+  ON variable.variable = variable.variable
+WHERE variable.variable = variable
+ORDER BY variable.variable, variable.variable, variable.variable, variable;",1
+90,"WITH variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable
+  FROM variable.variable.variable variable
+  WHERE variable.variable = variable
+    AND variable.variable IN (variable,variable)
+    AND UPPER(TRIM(variable.variable)) = variable
+)
+SELECT
+  variable.variable AS variable,
+  variable.variable AS variable,
+  CAST(SUM(CASE WHEN variable.variable = variable THEN variable ELSE variable END) AS variable) AS variable,
+  CAST(SUM(CASE WHEN variable.variable = variable THEN variable ELSE variable END) AS variable) AS variable,
+  (
+    CAST(SUM(CASE WHEN variable.variable = variable THEN variable ELSE variable END) AS variable)
+    - CAST(SUM(CASE WHEN variable.variable = variable THEN variable ELSE variable END) AS variable)
+  ) / variable(CAST(SUM(CASE WHEN variable.variable = variable THEN variable ELSE variable END) AS variable), variable) AS variable
+FROM variable variable
+JOIN variable.variable.variable variable
+  ON variable.variable = variable.variable
+JOIN variable.variable.variable variable
+  ON variable.variable = variable.variable
+GROUP BY variable.variable, variable.variable
+HAVING
+  SUM(CASE WHEN variable.variable = variable THEN variable ELSE variable END) > variable
+  AND (
+    (
+      CAST(SUM(CASE WHEN variable.variable = variable THEN variable ELSE variable END) AS variable)
+      - CAST(SUM(CASE WHEN variable.variable = variable THEN variable ELSE variable END) AS variable)
+    ) / variable(CAST(SUM(CASE WHEN variable.variable = variable THEN variable ELSE variable END) AS variable), variable)
+  ) > variable
+ORDER BY variable DESC, variable ASC;",1
+91,"WITH variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  WHERE variable.variable IS NOT NULL
+    AND variable.variable NOT IN (variable, variable, variable, variable)
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    COUNT(*) AS variable
+  FROM variable
+  WHERE variable = variable
+  GROUP BY variable, variable, variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    variable,
+    variable AS variable
+  FROM variable
+  WHERE variable = variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable AS variable
+  FROM variable
+  WHERE variable = variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    CASE WHEN EXISTS (
+      SELECT variable FROM variable variable
+      WHERE variable.variable = variable.variable
+        AND variable.variable > variable.variable
+    ) THEN variable ELSE variable END AS variable
+  FROM variable variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    COUNT(*) AS variable,
+    SUM(variable) AS variable,
+    COUNT(*) - SUM(variable) AS variable
+  FROM variable
+  GROUP BY variable, variable, variable
+)
+SELECT
+  variable.variable,
+  variable.variable,
+  variable.variable,
+  variable.variable,
+  COALESCE(variable.variable, variable) AS variable,
+  COALESCE(variable.variable, variable) AS variable,
+  COALESCE(variable.variable, variable) AS variable
+FROM variable variable
+LEFT JOIN variable variable
+  ON variable.variable = variable.variable
+ AND variable.variable = variable.variable
+ AND variable.variable = variable.variable
+ORDER BY variable.variable;",1
+92,"WITH variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable
+  FROM variable.variable.variable variable
+  WHERE variable.variable IS NOT NULL
+  variable ALL
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable
+  FROM variable.variable.variable variable
+  WHERE variable.variable IS NOT NULL
+),
+variable AS (
+  SELECT MAX(variable) AS variable
+  FROM variable
+),
+variable AS (
+  SELECT MAX(variable.variable) AS variable
+  FROM variable variable
+  JOIN variable variable ON variable.variable = variable.variable
+),
+variable AS (
+  SELECT variable(variable.variable, variable) AS variable
+  FROM variable variable
+),
+variable AS (  
+  SELECT variable AS variable, variable.variable, variable.variable
+  FROM variable variable
+  JOIN variable variable ON variable.variable = variable.variable
+  JOIN variable variable ON variable.variable = variable.variable
+  GROUP BY variable.variable, variable.variable
+),
+variable AS (     
+  SELECT variable AS variable, variable.variable, variable.variable
+  FROM (
+    SELECT variable.variable, variable.variable,
+           variable() OVER (PARTITION BY variable.variable ORDER BY variable.variable DESC) AS variable
+    FROM variable variable
+    JOIN variable variable ON variable.variable = variable.variable
+  ) variable
+  WHERE variable.variable = variable
+),
+variable AS (
+  SELECT * FROM variable
+  variable ALL
+  SELECT * FROM variable
+),
+variable AS (
+  SELECT variable, variable
+  FROM (
+    SELECT variable, variable,
+           variable() OVER (ORDER BY variable) AS variable
+    FROM variable
+  )
+  WHERE variable = variable
+),
+variable AS (
+  SELECT variable.*
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+   AND variable.variable = variable.variable
+),
+variable AS (
+  SELECT
+    variable,
+    MIN(variable) AS variable,
+    MAX(variable) AS variable,
+    MAX(variable) AS variable
+  FROM variable
+  GROUP BY variable
+)
+SELECT variable.variable
+FROM variable variable
+AND variable=variable;",1
+93,"WITH variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable:CAST(variable AS variable) AS variable,
+    variable.variable:CAST(variable AS variable) AS variable,
+    variable.variable:CAST(variable AS variable) AS variable
+  FROM variable variable
+  JOIN variable(variable.variable) AS variable
+  JOIN variable(variable.variable:variable) AS variable
+  JOIN variable(variable.variable:variable) AS variable
+  JOIN variable(variable.variable:variable) AS variable
+  JOIN variable(variable.variable:variable) AS variable
+  JOIN variable(variable.variable:variable) AS variable
+  LEFT JOIN variable(variable.variable:variable, OUTER => variable) AS variable
+  WHERE variable.variable = variable
+    AND variable.variable = variable
+    AND (
+      variable.variable IN (variable, variable) OR
+      variable.variable IN (variable, variable) OR
+      variable.variable IN (variable, variable) OR
+      variable.variable IN (variable, variable)
+    )
+    AND variable.variable:CAST(variable AS variable) = variable
+    AND (
+      UPPER(COALESCE(variable.variable:CAST(variable AS variable), variable)) = variable
+      OR UPPER(COALESCE(variable.variable:CAST(variable AS variable), variable)) = variable
+    )
+    AND (
+      variable.variable:CAST(variable AS variable) IN (variable, variable)
+      OR UPPER(COALESCE(variable.variable:CAST(variable AS variable), variable)) IN (variable, variable, variable)
+    )
+),
+variable AS (
+  SELECT DISTINCT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    CASE
+      WHEN UPPER(COALESCE(variable.variable, variable)) LIKE variable THEN variable
+      WHEN UPPER(COALESCE(variable.variable, variable)) LIKE variable OR UPPER(COALESCE(variable.variable, variable)) LIKE variable THEN variable
+      WHEN variable.variable = variable THEN variable
+      WHEN variable.variable = variable THEN variable
+      ELSE NULL
+    END AS variable,
+    CASE
+      WHEN variable(variable(variable), variable.variable) THEN variable
+      WHEN variable(variable(variable), variable.variable) THEN variable
+      ELSE variable
+    END AS variable,
+    CASE
+      WHEN variable.variable = variable OR variable.variable = variable THEN variable
+      WHEN variable.variable = variable OR variable.variable = variable THEN variable
+      ELSE NULL
+    END AS variable
+  FROM variable variable
+)
+SELECT
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable(variable(CAST(variable.variable[variable] AS variable)), variable) AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable
+FROM variable variable
+WHERE variable.variable IN (variable, variable)
+  AND variable.variable IN (variable, variable)
+ORDER BY variable.variable ASC;",1
+94,"WITH variable AS (
+  SELECT 
+    variable AS variable,
+    SUM(CAST(variable AS variable)) AS variable
+  FROM variable
+  WHERE variable = variable
+    AND variable != variable
+  GROUP BY variable
+),
+variable AS (
+  SELECT 
+    variable AS variable,
+    SUM(CAST(variable AS variable)) AS variable
+  FROM variable
+  WHERE variable = variable
+    AND variable != variable
+  GROUP BY variable
+),
+variable AS (
+  SELECT variable FROM variable
+  variable
+  SELECT variable FROM variable
+),
+variable AS (
+  SELECT 
+    variable.variable,
+    COALESCE(variable.variable, variable) - COALESCE(variable.variable, variable) AS variable
+  FROM variable variable
+  LEFT JOIN variable variable ON variable.variable = variable.variable
+  LEFT JOIN variable variable ON variable.variable = variable.variable
+)
+SELECT 
+  SUM(CASE WHEN variable > variable THEN variable ELSE variable END) / variable(variable, variable) AS variable
+FROM variable",1
+95,"WITH variable AS (
+  SELECT 
+    variable AS variable,
+    variable,
+    SUM(variable) AS variable
+  FROM variable
+  GROUP BY variable, variable
+  UNION ALL
+  SELECT 
+    variable AS variable,
+    variable,
+    SUM(variable) AS variable
+  FROM variable
+  GROUP BY variable, variable
+),
+variable AS (
+  SELECT 
+    variable,
+    variable,
+    SUM(variable) AS variable
+  FROM variable
+  GROUP BY variable, variable
+),
+variable AS (
+  SELECT 
+    variable,
+    MAX(variable) AS variable
+  FROM variable
+  GROUP BY variable
+)
+SELECT 
+  variable(variable) AS variable
+FROM variable;",1
+96,"WITH variable AS (
+  SELECT 
+    variable,
+    variable,
+    variable
+  FROM variable
+  WHERE variable variable variable
+    AND variable IS NOT NULL
+    AND variable != variable
+),
+variable AS (
+  SELECT 
+    variable,
+    variable,
+    variable(variable) AS variable
+  FROM variable
+  WHERE variable(variable) IS NOT NULL
+),
+variable AS (
+  SELECT 
+    variable,
+    variable,
+    variable:variable AS variable
+  FROM variable
+  WHERE variable:variable IS NOT NULL
+),
+variable AS (
+  SELECT 
+    variable.variable,
+    variable.variable,
+    CAST(variable.variable AS variable) AS variable
+  FROM variable variable,
+  json_each(variable.variable) AS variable
+)
+SELECT 
+  variable,
+  COUNT(*) AS variable
+FROM variable
+WHERE variable IS NOT NULL
+GROUP BY variable
+ORDER BY variable DESC, variable",1
+97,"WITH variable AS (
+  SELECT 
+    variable,
+    variable,
+    variable,
+    COALESCE(SUM(variable), variable) + COALESCE(SUM(variable), variable) AS variable
+  FROM variable variable
+  LEFT JOIN variable variable 
+    ON variable = variable 
+    AND variable = variable
+    AND variable = variable
+    AND variable = variable
+  LEFT JOIN variable variable
+    ON variable = variable
+    AND variable = variable 
+    AND variable = variable
+    AND variable = variable
+  GROUP BY variable, variable, variable
+),
+variable AS (
+  SELECT 
+    variable,
+    MAX(variable) AS variable
+  FROM variable
+  GROUP BY variable
+),
+variable AS (
+  SELECT 
+    variable,
+    variable,
+    variable,
+    variable
+  FROM variable variable
+  INNER JOIN variable variable
+    ON variable = variable
+    AND variable = variable
+),
+variable AS (
+  SELECT 
+    variable,
+    variable,
+    variable,
+    variable,
+    variable() OVER (ORDER BY variable DESC) AS variable
+  FROM variable
+)
+SELECT 
+  variable,
+  variable,
+  variable
+FROM variable variable
+INNER JOIN variable variable
+  ON variable = variable
+WHERE variable <= variable",1
+98,"WITH variable AS (
+  SELECT 
+    variable,
+    variable,
+    variable,
+    COALESCE(variable, variable) AS variable,
+    variable,
+    variable,
+    NULL AS variable,
+    NULL AS variable,
+    NULL AS variable,
+    variable AS variable
+  FROM variable.variable.variable
+  WHERE variable BETWEEN variable AND variable
+  UNION ALL
+  SELECT 
+    variable,
+    variable,
+    variable,
+    COALESCE(variable, variable) AS variable,
+    variable,
+    variable,
+    NULL AS variable,
+    NULL AS variable,
+    NULL AS variable,
+    variable AS variable
+  FROM variable.variable.variable
+  WHERE variable BETWEEN variable AND variable
+  UNION ALL
+  SELECT 
+    variable,
+    variable,
+    variable,
+    COALESCE(variable, variable) AS variable,
+    variable,
+    variable,
+    variable,
+    variable,
+    variable,
+    variable AS variable
+  FROM variable.variable.variable
+  WHERE variable BETWEEN variable AND variable
+  UNION ALL
+  SELECT 
+    variable,
+    variable,
+    variable,
+    COALESCE(variable, variable) AS variable,
+    variable,
+    NULL AS variable,
+    variable,
+    variable,
+    variable,
+    variable AS variable
+  FROM variable.variable.variable
+  WHERE variable BETWEEN variable AND variable
+)
+SELECT 
+  variable,
+  variable,
+  variable,
+  variable AS variable,
+  variable,
+  variable,
+  variable,
+  variable,
+  variable,
+  SUM(CASE WHEN variable = variable THEN variable ELSE variable END) AS variable,
+  COUNT(DISTINCT CASE WHEN variable = variable THEN variable ELSE NULL END) AS variable,
+  SUM(CASE WHEN variable = variable THEN variable ELSE variable END) AS variable,
+  COUNT(DISTINCT CASE WHEN variable = variable THEN variable ELSE NULL END) AS variable,
+  SUM(CASE WHEN variable = variable THEN variable ELSE variable END) AS variable,
+  COUNT(DISTINCT CASE WHEN variable = variable THEN variable ELSE NULL END) AS variable,
+  SUM(CASE WHEN variable = variable THEN variable ELSE variable END) AS variable,
+  COUNT(DISTINCT CASE WHEN variable = variable THEN variable ELSE NULL END) AS variable
+FROM variable
+GROUP BY 
+  variable,
+  variable,
+  variable,
+  variable,
+  variable,
+  variable,
+  variable,
+  variable,
+  variable
+ORDER BY 
+  variable,
+  variable,
+  variable
+LIMIT variable",1
+99,"WITH variable AS (
+  SELECT 
+    variable.variable,
+    variable.variable,
+    variable as variable
+  FROM variable.variable.variable variable 
+  JOIN variable.variable.variable variable ON variable.variable = variable.variable 
+  WHERE variable.variable = variable 
+  AND variable.variable variable variable
+),
+variable AS (
+  SELECT 
+    variable,
+    variable,
+    TRIM(variable.variable) as variable
+  FROM variable,
+  json_each(variable || replace(variable, variable(variable), variable) || variable) AS variable
+  WHERE TRIM(variable.variable) LIKE variable 
+     OR TRIM(variable.variable) LIKE variable
+),
+variable AS (
+  SELECT 
+    variable,
+    CASE 
+      WHEN variable LIKE variable AND variable NOT LIKE variable THEN
+        TRIM(variable(variable(variable, variable, variable), variable, variable))
+      WHEN variable LIKE variable THEN
+        TRIM(variable(variable(variable, variable, variable), variable, variable))
+      ELSE NULL
+    END as variable
+  FROM variable
+  WHERE variable IS NOT NULL AND variable != variable
+),
+variable AS (
+  SELECT 
+    variable,
+    variable(variable, variable, variable) as variable
+  FROM variable
+  WHERE variable IS NOT NULL AND variable != variable
+),
+variable AS (
+  SELECT 
+    variable,
+    variable,
+    COUNT(*) as variable
+  FROM variable
+  WHERE variable IS NOT NULL AND variable != variable
+  GROUP BY variable, variable
+),
+variable AS (
+  SELECT 
+    variable as variable,
+    variable,
+    variable as variable
+  FROM variable.variable.variable 
+  WHERE variable = variable 
+  AND (variable variable variable OR variable variable variable OR variable variable variable)
+),
+variable AS (
+  SELECT 
+    variable,
+    variable,
+    TRIM(variable.variable) as variable
+  FROM variable,
+  json_each(variable || replace(variable, variable(variable), variable) || variable) AS variable
+  WHERE TRIM(variable.variable) LIKE variable 
+     OR TRIM(variable.variable) LIKE variable
+),
+variable AS (
+  SELECT 
+    variable,
+    CASE 
+      WHEN variable LIKE variable THEN
+        TRIM(REPLACE(REPLACE(variable(variable(variable, variable, variable), variable, variable), variable, variable), variable, variable))
+      WHEN variable LIKE variable THEN
+        TRIM(REPLACE(REPLACE(variable(variable(variable, variable, variable), variable, variable), variable, variable), variable, variable))
+      ELSE NULL
+    END as variable
+  FROM variable
+  WHERE variable IS NOT NULL AND variable != variable
+),
+variable AS (
+  SELECT 
+    variable,
+    variable as variable,
+    COUNT(*) as variable
+  FROM variable
+  WHERE variable IS NOT NULL AND variable != variable
+  GROUP BY variable, variable
+),
+variable AS (
+  SELECT variable, variable, variable FROM variable
+  variable ALL
+  SELECT variable, variable, variable FROM variable
+)
+SELECT 
+  variable,
+  variable,
+  variable
+FROM variable
+ORDER BY variable, variable DESC, variable",1
+100,"WITH variable AS (
+  SELECT COUNT(DISTINCT variable) AS variable
+  FROM variable
+  WHERE variable = variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+   AND variable(variable.variable, variable.variable) - variable(variable.variable, variable.variable) > variable
+  WHERE variable.variable = variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    variable,
+    MAX(variable) AS variable
+  FROM variable
+  GROUP BY variable, variable, variable, variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    MAX(variable) AS variable
+  FROM variable
+  GROUP BY variable, variable, variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    CASE
+      WHEN variable > variable THEN variable
+      WHEN variable = variable THEN variable
+      WHEN variable = variable THEN variable
+      WHEN variable = variable THEN variable
+      WHEN variable = variable THEN variable
+      ELSE variable
+    END AS variable
+  FROM variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    SUM(CASE WHEN variable = variable THEN variable ELSE variable END) AS variable,
+    SUM(CASE WHEN variable = variable THEN variable ELSE variable END) AS variable,
+    SUM(CASE WHEN variable = variable THEN variable ELSE variable END) AS variable,
+    SUM(CASE WHEN variable = variable THEN variable ELSE variable END) AS variable,
+    SUM(CASE WHEN variable = variable THEN variable ELSE variable END) AS variable
+  FROM variable
+  GROUP BY variable, variable
+)
+SELECT
+  variable.variable,
+  variable.variable,
+  variable * variable.variable / variable.variable AS variable,
+  variable * variable.variable / variable.variable AS variable,
+  variable * variable.variable / variable.variable AS variable,
+  variable * variable.variable / variable.variable AS variable,
+  variable * variable.variable / variable.variable AS variable
+FROM variable variable
+CROSS JOIN variable variable
+ORDER BY
+  CASE
+    WHEN variable(variable(variable.variable, variable, variable), variable)
+      THEN variable(variable(variable.variable, variable, variable))
+    WHEN variable(variable.variable, variable, variable) = variable THEN variable
+    WHEN variable(variable.variable, variable, variable) = variable THEN variable
+    ELSE variable
+  END,
+  variable.variable;",1
+101,"WITH variable AS (
+  SELECT DISTINCT
+    UPPER(variable:CAST(variable AS variable)) AS variable,
+    variable AS variable,
+    CASE WHEN variable IS NOT NULL AND variable > variable THEN variable(variable/variable) END AS variable,
+    variable AS variable
+  FROM variable AS variable,
+       json_each(variable) AS variable variable,
+       json_each(variable) AS variable variable
+  WHERE UPPER(variable:CAST(variable AS variable)) LIKE variable
+),
+variable AS (
+  SELECT
+    variable,
+    COUNT(DISTINCT variable) AS variable
+  FROM variable
+  GROUP BY variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    COUNT(DISTINCT variable) AS variable
+  FROM variable
+  WHERE variable IS NOT NULL
+  GROUP BY variable, variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable AS variable,
+    variable
+  FROM (
+    SELECT
+      variable,
+      variable,
+      variable,
+      variable() OVER (PARTITION BY variable ORDER BY variable DESC, variable ASC) AS variable
+    FROM variable
+  )
+  WHERE variable = variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable,
+    COUNT(DISTINCT variable) AS variable
+  FROM variable
+  WHERE variable IS NOT NULL
+  GROUP BY variable, variable, variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable AS variable,
+    variable
+  FROM (
+    SELECT
+      variable,
+      variable,
+      variable,
+      variable,
+      variable() OVER (PARTITION BY variable, variable ORDER BY variable DESC, variable ASC) AS variable
+    FROM variable
+  ) AS variable
+  WHERE variable = variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable() OVER (ORDER BY variable DESC, variable ASC) AS variable
+  FROM variable
+)
+SELECT
+  variable,
+  variable,
+  variable,
+  variable AS variable,
+  variable
+FROM variable AS variable
+JOIN variable AS variable
+  ON variable = variable
+LEFT JOIN variable AS variable
+  ON variable = variable
+ AND variable = variable
+WHERE variable <= variable
+ORDER BY variable DESC, variable ASC;",1
+102,"WITH variable AS (
+  SELECT DISTINCT
+    variable.variable AS variable,
+    variable.variable
+  FROM variable variable
+  WHERE variable.variable = variable
+    AND variable.variable IS NOT NULL
+),
+variable AS (
+  SELECT DISTINCT
+    variable.variable
+  FROM variable variable
+  WHERE variable.variable = variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+),
+variable AS (
+  SELECT DISTINCT
+    variable.variable
+  FROM variable variable
+  WHERE variable.variable = variable
+    AND variable.variable = variable
+)
+SELECT
+  variable.variable AS variable,
+  COUNT(DISTINCT CASE WHEN variable.variable IS NOT NULL THEN variable.variable END) AS variable,
+  COUNT(DISTINCT variable.variable) AS variable,
+  variable * COUNT(DISTINCT CASE WHEN variable.variable IS NOT NULL THEN variable.variable END)
+    / variable(COUNT(DISTINCT variable.variable), variable) AS variable
+FROM variable variable
+LEFT JOIN variable variable
+  ON variable.variable = variable.variable
+GROUP BY variable.variable
+ORDER BY variable DESC
+LIMIT variable;",1
+103,"WITH variable AS (
+  SELECT DISTINCT variable
+  FROM variable
+  WHERE variable = variable
+    AND variable = variable
+    AND variable = variable
+  UNION
+  SELECT DISTINCT variable
+  FROM variable
+  WHERE variable = variable
+    AND variable = variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    MAX(variable(variable.variable = variable, variable.variable, NULL))   AS variable,
+    MAX(variable(variable.variable = variable, variable.variable, NULL))   AS variable,
+    MAX(variable(variable.variable = variable, variable.variable, NULL)) AS variable,
+    MAX(variable(variable.variable = variable, variable.variable, NULL))  AS variable
+  FROM variable variable
+  WHERE variable.variable = variable
+    AND variable.variable IN (variable,variable,variable,variable)
+    AND variable.variable LIKE variable  
+  GROUP BY variable.variable
+)
+SELECT
+  variable.variable AS variable,
+  variable.variable,
+  variable.variable,
+  variable.variable,
+  variable.variable,
+  variable.variable AS variable,
+  variable.variable,
+  variable.variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable
+FROM variable variable
+JOIN variable variable
+  ON variable.variable = variable.variable
+LEFT JOIN variable variable
+  ON variable.variable = variable.variable
+WHERE variable.variable = variable
+ORDER BY variable.variable;",1
+104,"WITH variable AS (
+  SELECT DISTINCT variable.variable
+  FROM variable variable
+),
+variable AS (
+  SELECT variable.variable, variable.variable
+  FROM variable variable
+  JOIN (
+    SELECT variable, MAX(variable) AS variable
+    FROM variable
+    GROUP BY variable
+  ) variable
+    ON variable.variable = variable.variable AND variable.variable = variable.variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable AS variable,
+    variable.variable   AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  JOIN (
+    SELECT variable.variable, MAX(variable.variable) AS variable
+    FROM variable variable
+    JOIN variable variable ON variable.variable = variable.variable
+    GROUP BY variable.variable
+  ) variable
+    ON variable.variable = variable.variable AND variable.variable = variable.variable
+  LEFT JOIN variable variable
+    ON variable.variable = variable.variable
+),
+variable AS (
+  SELECT
+    variable.variable AS variable,
+    variable.variable AS variable,
+    SUM(COALESCE(variable.variable, variable)) AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  GROUP BY variable.variable, variable.variable
+  UNION ALL
+  SELECT
+    variable.variable AS variable,
+    variable.variable AS variable,
+    SUM(COALESCE(variable.variable, variable)) AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  GROUP BY variable.variable, variable.variable
+),
+variable AS (
+  SELECT variable, variable, SUM(variable) AS variable
+  FROM variable
+  GROUP BY variable, variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable AS variable,
+    variable.variable   AS variable
+  FROM variable variable
+  JOIN (
+    SELECT variable, MAX(variable) AS variable
+    FROM variable
+    GROUP BY variable
+  ) variable
+    ON variable.variable = variable.variable AND variable.variable = variable.variable
+  LEFT JOIN variable variable
+    ON variable.variable = variable.variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    COALESCE(variable.variable, variable.variable)       AS variable,
+    COALESCE(variable.variable, variable.variable) AS variable
+  FROM variable variable
+  LEFT JOIN variable variable
+    ON variable.variable = variable.variable
+  LEFT JOIN variable variable
+    ON variable.variable = variable.variable AND variable.variable IS NULL
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable AS variable,
+    variable.variable AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  JOIN (
+    SELECT variable.variable, MAX(variable.variable) AS variable
+    FROM variable variable
+    JOIN variable variable ON variable.variable = variable.variable
+    GROUP BY variable.variable
+  ) variable
+    ON variable.variable = variable.variable AND variable.variable = variable.variable
+  LEFT JOIN variable variable
+    ON variable.variable = variable.variable
+),
+variable AS (
+  SELECT
+    variable.variable AS variable,
+    variable.variable AS variable,
+    SUM(COALESCE(variable.variable, variable)) AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  GROUP BY variable.variable, variable.variable
+  UNION ALL
+  SELECT
+    variable.variable AS variable,
+    variable.variable AS variable,
+    SUM(COALESCE(variable.variable, variable)) AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  GROUP BY variable.variable, variable.variable
+),
+variable AS (
+  SELECT variable, variable, SUM(variable) AS variable
+  FROM variable
+  GROUP BY variable, variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable AS variable,
+    variable.variable AS variable
+  FROM variable variable
+  JOIN (
+    SELECT variable, MAX(variable) AS variable
+    FROM variable
+    GROUP BY variable
+  ) variable
+    ON variable.variable = variable.variable AND variable.variable = variable.variable
+  LEFT JOIN variable variable
+    ON variable.variable = variable.variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    COALESCE(variable.variable, variable.variable) AS variable,
+    COALESCE(variable.variable, variable.variable) AS variable
+  FROM variable variable
+  LEFT JOIN variable variable
+    ON variable.variable = variable.variable
+  LEFT JOIN variable variable
+    ON variable.variable = variable.variable AND variable.variable IS NULL
+)
+SELECT
+  variable.variable,
+  variable.variable,
+  variable.variable
+FROM variable variable
+LEFT JOIN variable variable
+  ON variable.variable = variable.variable
+LEFT JOIN variable variable
+  ON variable.variable = variable.variable
+ORDER BY variable.variable ASC;",1
+105,"WITH variable AS (
+  SELECT DISTINCT variable.variable
+  FROM variable variable, json_each(variable.variable) AS variable
+  WHERE variable.variable IS NOT NULL
+    AND variable.variable > variable
+    AND variable.variable:CAST(variable AS variable) LIKE variable
+    AND variable.variable IS NOT NULL
+  UNION
+  SELECT DISTINCT variable.variable
+  FROM variable variable, json_each(variable.variable) AS variable
+  WHERE variable.variable IS NOT NULL
+    AND variable.variable > variable
+    AND variable.variable:CAST(variable AS variable) LIKE variable
+    AND variable.variable IS NOT NULL
+),
+variable AS (
+  SELECT
+    variable.variable,
+    CAST(variable(variable.variable / variable) AS variable) AS variable,
+    variable.variable,
+    variable.variable
+  FROM variable variable
+  JOIN variable variable ON variable.variable = variable.variable
+),
+variable AS (
+  SELECT
+    UPPER(TRIM(variable.variable:CAST(variable AS variable))) AS variable,
+    variable.variable,
+    variable.variable
+  FROM variable variable,
+       json_each(variable.variable) AS variable
+  WHERE variable.variable:variable IS NOT NULL
+  UNION ALL
+  SELECT
+    UPPER(TRIM(CAST(variable.variable AS variable))) AS variable,
+    variable.variable,
+    variable.variable
+  FROM variable variable,
+       json_each(variable.variable) AS variable
+  WHERE (variable.variable IS NULL OR variable(variable.variable) = variable)
+    AND variable.variable IS NOT NULL
+),
+variable AS (
+  SELECT
+    variable,
+    COUNT(DISTINCT variable) AS variable
+  FROM variable
+  GROUP BY variable
+),
+variable AS (
+  SELECT variable
+  FROM variable
+  AND variable=variable
+),
+variable AS (
+  SELECT
+    variable.variable AS variable,
+    COUNT(DISTINCT variable.variable) AS variable
+  FROM variable variable
+  JOIN variable variable ON variable.variable = variable.variable
+  GROUP BY variable.variable
+)
+SELECT variable
+FROM variable
+AND variable=variable;",1
+106,"WITH variable AS (
+  SELECT variable AS variable UNION ALL
+  SELECT variable UNION ALL
+  SELECT variable UNION ALL
+  SELECT variable UNION ALL
+  SELECT variable UNION ALL
+  SELECT variable UNION ALL
+  SELECT variable
+),
+variable AS (
+  SELECT DISTINCT
+    variable AS variable,
+    variable AS variable,
+    CASE WHEN variable variable variable THEN variable ELSE variable END AS variable
+  FROM variable AS variable
+  JOIN variable AS variable
+    ON variable = variable
+  JOIN variable AS variable
+    ON variable = variable
+  LEFT JOIN variable AS variable
+    ON variable = variable
+  WHERE variable = variable
+    AND variable BETWEEN variable AND variable
+    AND variable variable variable
+),
+variable AS (
+  SELECT
+    variable,
+    COUNT(DISTINCT variable) AS variable,
+    COUNT(DISTINCT CASE WHEN variable = variable THEN variable END) AS variable
+  FROM variable
+  GROUP BY variable
+),
+variable AS (
+  SELECT DISTINCT
+    variable AS variable,
+    variable AS variable,
+    CASE WHEN variable variable variable THEN variable ELSE variable END AS variable
+  FROM variable AS variable
+  JOIN variable AS variable
+    ON variable = variable
+  JOIN variable AS variable
+    ON variable = variable
+  LEFT JOIN variable AS variable
+    ON variable = variable
+  WHERE variable = variable
+    AND variable BETWEEN variable AND variable
+    AND variable variable variable
+),
+variable AS (
+  SELECT
+    variable,
+    COUNT(DISTINCT variable) AS variable,
+    COUNT(DISTINCT CASE WHEN variable = variable THEN variable END) AS variable
+  FROM variable
+  GROUP BY variable
+)
+SELECT
+  variable,
+  COALESCE(variable, variable) AS variable,
+  COALESCE(variable, variable) AS variable,
+  COALESCE(variable, variable) AS variable,
+  COALESCE(variable, variable) AS variable
+FROM variable AS variable
+LEFT JOIN variable AS variable
+  ON variable = variable
+LEFT JOIN variable AS variable
+  ON variable = variable
+ORDER BY variable",1
+107,"WITH variable AS (
+  SELECT variable AS variable UNION ALL SELECT variable UNION ALL SELECT variable UNION ALL SELECT variable UNION ALL
+  SELECT variable UNION ALL SELECT variable UNION ALL SELECT variable UNION ALL SELECT variable UNION ALL
+  SELECT variable UNION ALL SELECT variable UNION ALL SELECT variable UNION ALL SELECT variable
+),
+variable AS (
+  SELECT DISTINCT variable
+  FROM variable
+),
+variable AS (
+  SELECT
+    variable,
+    CAST(strftime(variable, CAST(variable AS variable) AS variable)) AS variable,
+    SUM(
+      CASE
+        WHEN LOWER(variable) LIKE variable THEN variable
+        WHEN LOWER(variable) LIKE variable THEN - variable
+        ELSE variable
+      END
+    ) AS variable
+  FROM variable
+  WHERE CAST(variable AS variable) >= variable(variable,variable,variable)
+    AND CAST(variable AS variable) < variable(variable,variable,variable)
+  GROUP BY variable, CAST(strftime(variable, CAST(variable AS variable) AS variable))
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    COALESCE(variable.variable, variable) AS variable
+  FROM variable variable
+  CROSS JOIN variable variable
+  LEFT JOIN variable variable
+    ON variable.variable = variable.variable
+   AND variable.variable = variable.variable
+),
+variable AS (
+  SELECT
+    variable,
+    SUM(CASE WHEN variable > variable THEN variable ELSE variable END) AS variable,
+    AVG(variable) AS variable
+  FROM variable
+  GROUP BY variable
+)
+SELECT
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  variable.variable AS variable,
+  (variable.variable - variable.variable) AS variable
+FROM
+  (SELECT * FROM variable ORDER BY variable DESC, variable ASC LIMIT variable) variable,
+  (SELECT * FROM variable ORDER BY variable ASC, variable ASC LIMIT variable) variable;",1
+108,"WITH variable AS (
+  SELECT variable AS variable, variable
+  FROM variable.variable.variable
+  WHERE datetime(variable / variable) >= datetime(variable)
+    AND datetime(variable / variable) < datetime(variable)
+),
+variable AS (
+  SELECT variable, variable
+  FROM variable.variable.variable
+  WHERE datetime(variable / variable) >= datetime(variable)
+    AND datetime(variable / variable) < datetime(variable)
+    AND variable NOT IN (variable,variable)
+),
+variable AS (
+  SELECT variable, variable
+  FROM variable.variable.variable
+  WHERE variable NOT IN (variable,variable)
+    AND variable IS NOT NULL
+),
+variable AS (
+  SELECT variable.variable, variable.variable,
+         SUM(variable.variable) AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+  GROUP BY variable.variable, variable.variable
+),
+variable AS (
+  SELECT variable.variable,
+         SUM(variable.variable) AS variable,
+         COUNT(DISTINCT variable.variable) AS variable,
+         SUM(variable.variable) / variable(COUNT(DISTINCT variable.variable), variable) AS variable
+  FROM variable variable
+  GROUP BY variable.variable
+)
+SELECT variable.variable AS variable
+FROM variable variable
+JOIN variable variable
+  ON variable.variable = variable.variable
+ORDER BY variable.variable DESC variable variable, variable.variable ASC
+LIMIT variable;",1
+109,"WITH variable AS (
+  SELECT variable, variable, variable, variable
+  FROM variable
+  WHERE variable = variable AND variable BETWEEN variable AND variable
+),
+variable AS (
+  SELECT variable, variable, variable, variable
+  FROM variable
+  WHERE variable = variable AND variable BETWEEN variable AND variable
+),
+variable AS (
+  SELECT variable, variable, variable
+  FROM variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+   AND variable.variable = variable AND variable.variable = variable
+   AND variable.variable != variable.variable
+  LEFT JOIN variable variable ON variable.variable = variable.variable AND variable.variable = variable.variable
+  LEFT JOIN variable variable ON variable.variable = variable.variable AND variable.variable = variable.variable
+  WHERE variable.variable IS NOT NULL AND variable.variable IS NOT NULL
+    AND variable.variable > variable.variable
+    AND variable.variable < variable.variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable,
+    variable.variable AS variable
+  FROM variable variable
+  JOIN variable variable
+    ON variable.variable = variable.variable
+   AND variable.variable BETWEEN variable AND variable
+   AND variable.variable = variable.variable
+   AND variable.variable != variable.variable
+  JOIN variable variable ON variable.variable = variable.variable AND variable.variable = variable.variable - variable AND variable.variable = variable.variable
+  JOIN variable variable ON variable.variable = variable.variable AND variable.variable = variable.variable - variable AND variable.variable = variable.variable
+  LEFT JOIN variable variable ON variable.variable = variable.variable AND variable.variable = variable.variable
+  LEFT JOIN variable variable ON variable.variable = variable.variable AND variable.variable = variable.variable
+  WHERE variable.variable > variable.variable
+    AND variable.variable < variable.variable
+),
+variable AS (
+  SELECT variable, variable, variable, variable, variable, variable
+  FROM variable
+  UNION ALL
+  SELECT variable, variable, variable, variable, variable, variable
+  FROM variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    CASE
+      WHEN EXISTS (
+        SELECT variable FROM variable variable
+        WHERE variable.variable = variable.variable
+          AND variable.variable = variable.variable
+          AND variable.variable = variable.variable
+      ) THEN variable
+      WHEN EXISTS (
+        SELECT variable FROM variable variable
+        WHERE variable.variable = variable.variable
+          AND variable.variable = variable.variable
+          AND (variable.variable = variable.variable OR variable.variable = variable.variable - variable)
+      ) THEN variable
+      WHEN variable.variable = variable
+        AND variable.variable IS NOT NULL
+        AND variable.variable IS NOT NULL
+        AND abs(variable.variable - variable.variable) <= variable THEN variable
+      ELSE variable
+    END AS variable
+  FROM variable variable
+)
+SELECT
+  CASE variable
+    WHEN variable THEN variable
+    WHEN variable THEN variable
+    WHEN variable THEN variable
+    ELSE variable
+  END AS variable,
+  COUNT(*) AS variable
+FROM variable
+GROUP BY variable
+ORDER BY CASE variable WHEN variable THEN variable WHEN variable THEN variable WHEN variable THEN variable ELSE variable END;",1
+110,"WITH variable AS (
+  SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+  UNION ALL SELECT variable,variable,variable,variable FROM variable
+),
+variable AS (
+  SELECT
+    CAST(variable:variable AS variable) AS variable,
+    variable.variable:CAST(variable AS variable) AS variable,
+    variable.variable:CAST(variable AS variable) AS variable,
+    COALESCE(variable.variable:CAST(variable AS variable), variable) AS variable
+  FROM variable variable,
+  json_each(variable.variable) AS variable
+  WHERE variable.variable = variable
+    AND (variable:variable) IS NOT NULL
+    AND CAST(variable:variable AS variable) != variable
+),
+variable AS (
+  SELECT DISTINCT variable
+  FROM variable
+  WHERE UPPER(variable) = variable
+)
+SELECT
+  variable.variable AS variable,
+  SUM(variable.variable) AS variable
+FROM variable variable
+JOIN variable variable
+  ON variable.variable = variable.variable
+WHERE UPPER(variable.variable) != variable
+GROUP BY variable.variable
+ORDER BY SUM(variable.variable) DESC, variable.variable ASC
+LIMIT variable;",1
+111,"WITH variable AS (
+  SELECT variable.variable
+  FROM variable variable
+  WHERE variable.variable = variable
+    AND variable.variable = variable
+    AND variable.variable = variable
+),
+variable AS (
+  SELECT variable.variable AS variable, variable.CAST(variable AS variable) AS variable
+  FROM variable variable
+  JOIN variable variable ON variable.variable = variable.variable
+  WHERE variable.variable IS NOT NULL
+  UNION ALL
+  SELECT variable.variable, variable.variable:CAST(variable AS variable)
+  FROM variable variable
+  JOIN variable variable ON variable.variable = variable.variable,
+       json_each(variable.variable) AS variable
+  WHERE variable.variable:variable IS NOT NULL
+  UNION ALL
+  SELECT variable.variable, variable.variable:CAST(variable AS variable)
+  FROM variable variable
+  JOIN variable variable ON variable.variable = variable.variable,
+       json_each(variable.variable) AS variable
+  WHERE variable.variable:variable IS NOT NULL
+  UNION ALL
+  SELECT variable.variable, variable.variable:CAST(variable AS variable)
+  FROM variable variable
+  JOIN variable variable ON variable.variable = variable.variable,
+       json_each(variable.variable) AS variable,
+       json_each(variable.variable:variable) AS variable
+  WHERE variable.variable:variable IS NOT NULL
+  UNION ALL
+  SELECT variable.variable, variable.variable:CAST(variable AS variable)
+  FROM variable variable
+  JOIN variable variable ON variable.variable = variable.variable,
+       json_each(variable.variable) AS variable,
+       json_each(variable.variable:variable) AS variable
+  WHERE variable.variable:variable IS NOT NULL
+  UNION ALL
+  SELECT variable.variable, variable.variable:CAST(variable AS variable)
+  FROM variable variable
+  JOIN variable variable ON variable.variable = variable.variable,
+       json_each(variable.variable) AS variable,
+       json_each(variable.variable:variable) AS variable,
+       json_each(variable.variable:variable) AS variable
+  WHERE variable.variable:variable IS NOT NULL
+),
+variable AS (
+  SELECT DISTINCT variable
+  FROM variable
+)
+SELECT
+  variable.variable:CAST(variable AS variable) AS variable,
+  COUNT(*) AS count
+FROM variable AS variable
+JOIN variable variable
+  ON variable.variable = variable.variable
+GROUP BY variable
+ORDER BY variable DESC
+LIMIT variable",1
+112,"WITH variable AS (
+  SELECT variable.variable, variable.variable
+  FROM variable variable
+  WHERE variable.variable = variable
+    AND variable.variable = variable
+    AND variable.variable BETWEEN variable AND variable
+),
+variable AS (
+  SELECT
+    variable.variable,
+    variable(variable.variable:CAST(variable AS variable), variable, variable) AS variable,
+    CASE WHEN variable.variable:CAST(variable AS variable) = variable THEN variable ELSE variable END AS variable
+  FROM variable variable,
+       json_each(variable.variable) AS variable
+  WHERE variable.variable:variable IS NOT NULL
+    AND variable(variable.variable:CAST(variable AS variable), variable, variable) <> variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    COUNT(*) AS variable,
+    MAX(variable) AS variable
+  FROM variable
+  GROUP BY variable, variable
+),
+variable AS (
+  SELECT
+    variable,
+    variable,
+    variable() OVER (
+      PARTITION BY variable
+      ORDER BY variable DESC, variable DESC, variable ASC
+    ) AS variable
+  FROM variable
+)
+SELECT
+  variable AS variable,
+  COUNT(*) AS variable
+FROM variable
+WHERE variable = variable
+GROUP BY variable
+ORDER BY variable DESC, variable ASC
+LIMIT variable;",1
+113,"WITH variable AS (
+SELECT variable, variable, variable
+FROM variable
+WHERE variable = variable
+AND variable >= variable
+AND variable <= variable
+),
+variable AS (
+SELECT 
+    variable.variable AS variable,
+    variable.variable:CAST(variable AS variable) AS variable
+FROM variable variable,
+json_each(variable.variable) AS variable
+WHERE variable.variable IS NOT NULL
+AND variable.variable:CAST(variable AS variable) IS NOT NULL
+AND variable.variable:CAST(variable AS variable) != variable
+),
+variable AS (
+SELECT 
+    variable.variable,
+    variable.variable,
+    variable.variable,
+    variable.variable
+FROM variable variable
+INNER JOIN variable variable ON variable.variable = variable.variable
+),
+variable AS (
+SELECT 
+    variable.variable,
+    COUNT(DISTINCT variable.variable) AS variable
+FROM variable variable
+INNER JOIN variable variable ON variable.variable = variable.variable
+WHERE variable.variable >= variable.variable
+AND variable.variable <= variable.variable + variable
+GROUP BY variable.variable
+)
+SELECT COUNT(*) AS variable
+FROM variable
+WHERE variable = variable",1
+114,"WITH variable AS ( SELECT DISTINCT variable.variable FROM variable.variable.variable variable JOIN variable.variable.variable variable ON LOWER(variable.variable) = LOWER(variable.variable) ), variable AS ( SELECT variable(variable.variable):CAST(variable AS variable) AS variable, SUM(CASE WHEN variable.variable = variable  THEN variable ELSE variable END) AS variable, SUM(CASE WHEN variable.variable = variable THEN variable ELSE variable END) AS variable, SUM(CASE WHEN variable.variable = variable THEN variable ELSE variable END) AS variable FROM variable.variable.variable variable WHERE datetime(variable.variable / variable) >= variable AND datetime(variable.variable / variable) < variable AND variable.variable IN (variable,variable,variable) GROUP BY variable(variable.variable):CAST(variable AS variable) ), variable AS ( SELECT variable, variable + variable + variable AS variable FROM variable ) SELECT variable.variable FROM variable variable JOIN variable variable ON variable.variable = variable.variable ORDER BY variable.variable DESC LIMIT variable;",1
+115,"WITH variable AS (SELECT variable, variable:CAST(variable AS variable) AS variable, variable:CAST(variable AS variable) AS variable, variable:CAST(variable AS variable) AS variable, variable:CAST(variable AS variable) AS variable, variable:CAST(variable AS variable) AS variable, variable:variable AS variable FROM variable.variable.variable, json_each(variable(variable) AS variable)), variable AS (SELECT variable, datetime(variable) AS variable, datetime(variable) AS variable, variable, variable FROM variable WHERE variable = variable AND variable IS NULL AND variable > variable AND variable < variable) SELECT variable.variable, variable.variable, variable.variable, variable(variable.variable)[variable]:CAST(variable AS variable) AS variable, variable(variable.variable)[variable]:CAST(variable AS variable) AS variable, variable.variable, variable.variable FROM variable.variable.variable variable INNER JOIN variable variable ON variable.variable = variable.variable WHERE (variable(variable.variable):CAST(variable AS variable) != variable OR variable(variable.variable):CAST(variable AS variable) != variable OR variable(variable.variable):CAST(variable AS variable) != variable OR variable(variable.variable):CAST(variable AS variable) != variable OR variable(variable.variable):CAST(variable AS variable) != variable) ORDER BY variable.variable DESC LIMIT variable;",1
+116,"WITH variable AS (SELECT variable.variable, CASE WHEN variable.variable = variable THEN variable(variable.variable) ELSE variable(variable(variable.variable)) END as variable FROM variable.variable.variable variable WHERE variable.variable = variable AND variable.variable = variable AND variable.variable IS NOT NULL AND variable(CASE WHEN variable.variable = variable THEN variable(variable.variable) ELSE variable(variable(variable.variable)) END) BETWEEN variable AND variable AND variable(CASE WHEN variable.variable = variable THEN variable(variable.variable) ELSE variable(variable(variable.variable)) END) BETWEEN variable AND variable), variable AS (SELECT variable, variable, variable, variable, variable(variable) as variable FROM variable.variable.variable WHERE variable = variable AND variable = variable AND variable > variable), variable AS (SELECT variable.variable, variable.variable, MIN(variable) as variable FROM variable variable CROSS JOIN variable variable GROUP BY variable.variable, variable.variable), variable AS (SELECT MAX(variable) as variable FROM variable), variable AS (SELECT variable.variable, variable.variable, variable.variable FROM variable variable, variable variable WHERE variable.variable = variable.variable) SELECT SUM(variable) as variable FROM variable",1
+117,"WITH variable variable (variable, variable, variable) AS (
+    SELECT
+        variable.variable,
+        variable.variable,
+        variable.variable
+    FROM variable AS variable
+    WHERE variable.variable NOT IN (
+        SELECT variable
+        FROM variable
+        WHERE variable IS NOT NULL
+    )
+    UNION ALL
+    SELECT
+        variable.variable,
+        variable.variable,
+        variable.variable * variable.variable
+    FROM variable
+    JOIN variable AS variable
+        ON variable.variable = variable.variable
+),
+variable AS (
+    SELECT DISTINCT variable.variable AS variable
+    FROM variable AS variable
+    WHERE variable.variable NOT IN (
+        SELECT variable
+        FROM variable
+        WHERE variable IS NOT NULL
+    )
+),
+variable AS (
+    SELECT
+        variable.variable,
+        SUM(variable.variable) AS variable
+    FROM variable
+    JOIN variable
+        ON variable.variable = variable.variable
+    GROUP BY variable.variable
+)
+SELECT AVG(variable) AS variable
+FROM variable;",1
+118,"with variable as (
+    select
+        variable,
+        variable(variable) / variable(variable) as variable
+    from variable
+    where variable = variable
+      and variable = variable
+      and variable > variable
+      and substr(variable, variable, variable) = variable
+),
+variable as (
+    select
+        variable as variable,
+        case
+            when count(distinct variable) = variable then max(variable)
+            else variable
+        end as variable
+    from variable
+    where variable = variable
+      and variable = variable
+    group by variable
+),
+variable as (
+    select
+        variable.variable,
+        coalesce(variable.variable, variable) as variable,
+        variable.variable
+    from variable variable
+    left join variable variable
+        on variable.variable = variable.variable
+),
+variable as (
+    select
+        variable,
+        count(*) as variable,
+        avg(variable) as variable
+    from variable
+    group by variable
+),
+variable as (
+    select
+        count(*) as variable,
+        avg(variable) as variable
+    from variable
+),
+variable as (
+    select
+        sum(variable.variable * variable(variable.variable - variable.variable, variable)) as variable
+    from variable variable
+    cross join variable variable
+),
+variable as (
+    select
+        sum(variable(variable.variable - variable.variable, variable)) as variable
+    from variable variable
+    join variable variable
+        on variable.variable = variable.variable
+),
+variable as (
+    select count(*) as variable
+    from variable
+)
+select
+    variable.variable as variable,
+    variable.variable as variable,
+    variable.variable / variable(variable.variable - variable, variable) as variable,
+    variable.variable / variable(variable.variable - variable.variable, variable) as variable,
+    (variable.variable / variable(variable.variable - variable, variable)) / (variable.variable / variable(variable.variable - variable.variable, variable)) as variable
+from variable variable
+cross join variable variable
+cross join variable variable
+cross join variable variable;",1
+119,"with variable as (
+    select variable(variable) as variable
+    from variable as variable,
+         json_each(variable) AS variable variable
+    where variable = variable
+      and variable:CAST(variable AS variable) = variable
+      and variable:CAST(variable AS variable) = variable
+),
+variable as (
+    select
+        variable as variable,
+        variable as variable,
+        max(case when variable:CAST(variable AS variable) = variable then variable:CAST(variable AS variable) end) as variable
+    from variable as variable,
+         json_each(variable) AS variable variable
+    where variable = variable
+    group by variable, variable
+    having max(case when variable:CAST(variable AS variable) = variable then variable:CAST(variable AS variable) end) is not null
+),
+variable as (
+    select
+        variable,
+        variable as variable,
+        variable
+    from variable
+),
+variable as (
+    select
+        variable as variable,
+        variable(variable(variable, variable)) as variable
+    from variable as variable
+    cross join variable as variable
+    where variable(variable, variable)
+)
+select
+    variable,
+    sum(variable) as variable
+from variable
+group by variable
+order by variable desc
+limit variable;",1
+120,"with variable as (
+  select
+    variable,
+    variable as variable,
+    sum(variable) as variable
+  from variable variable
+  join variable variable
+    on variable = variable
+   and variable = variable
+   and variable = variable
+   and variable = variable
+  group by variable, variable
+)
+select distinct variable
+from variable variable
+join variable variable
+  on variable = variable
+ and variable = variable
+join variable variable
+  on variable = variable
+join variable variable
+  on variable = variable
+where variable >= variable
+  and variable is not null
+  and variable in (variable, variable)
+  and variable != variable",1
