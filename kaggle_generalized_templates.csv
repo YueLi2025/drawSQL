@@ -1,0 +1,176 @@
+id,soft_template,counts
+1,SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT variable,70
+2,SELECT variable FROM variable ORDER BY variable DESC LIMIT variable,22
+3,SELECT variable FROM variable GROUP BY variable ORDER BY sum(variable) DESC LIMIT variable,18
+4,SELECT max(variable) FROM variable,12
+5,SELECT variable FROM variable GROUP BY variable ORDER BY count(variable) DESC LIMIT variable,12
+6,"SELECT variable, variable FROM variable",12
+7,SELECT variable FROM variable WHERE variable = variable,10
+8,SELECT DISTINCT variable FROM variable,8
+9,SELECT count(DISTINCT variable) FROM variable,8
+10,SELECT count(*) FROM variable WHERE variable > variable,6
+11,SELECT variable FROM variable GROUP BY variable ORDER BY avg(variable) DESC LIMIT variable,6
+12,SELECT variable FROM variable ORDER BY variable LIMIT variable,6
+13,SELECT variable FROM variable WHERE variable = variable GROUP BY variable ORDER BY count(*) DESC LIMIT variable,6
+14,SELECT DISTINCT variable FROM variable WHERE variable !=,4
+15,SELECT count(*) FROM variable WHERE variable = MISSING/NOT SPECIFIED,4
+16,SELECT count(*) FROM variable WHERE variable = variable,4
+17,"SELECT count(*), variable FROM variable GROUP BY variable",4
+18,"SELECT sum(variable), variable FROM variable GROUP BY variable",4
+19,SELECT variable FROM variable GROUP BY variable ORDER BY count(*) LIMIT variable,4
+20,SELECT variable FROM variable WHERE variable = AP,4
+21,SELECT variable FROM variable WHERE variable = AP GROUP BY variable ORDER BY count(*) DESC LIMIT variable,4
+22,SELECT variable FROM variable WHERE variable = Under Construction GROUP BY variable ORDER BY count(*) DESC LIMIT variable,4
+23,SELECT variable FROM variable WHERE variable = Violence and sexual offences ORDER BY variable DESC LIMIT variable,4
+24,SELECT variable FROM variable WHERE variable = variable ORDER BY variable DESC LIMIT variable,4
+25,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = Y GROUP BY variable.variable ORDER BY count(*) DESC LIMIT variable,4
+26,SELECT * FROM variable WHERE (variable + variable) = variable,2
+27,SELECT * FROM variable WHERE variable = Spain AND variable = A,2
+28,SELECT * FROM variable WHERE variable = TX AND variable LIKE Campfire,2
+29,SELECT * FROM variable WHERE variable = UT AND variable = variable ORDER BY variable DESC LIMIT variable,2
+30,SELECT * FROM variable WHERE variable = variable AND variable = D AND variable = Premier variable,2
+31,SELECT * FROM variable WHERE variable > variable,2
+32,SELECT DISTINCT variable FROM variable WHERE variable = willite01,2
+33,SELECT DISTINCT variable FROM variable WHERE variable > variable AND variable = album,2
+34,SELECT avg( variable - variable ) FROM variable,2
+35,SELECT avg( variable - variable) FROM variable WHERE variable = USA,2
+36,SELECT avg(variable - variable) FROM variable,2
+37,SELECT avg(variable) FROM variable,2
+38,SELECT avg(variable) FROM variable where variable BETWEEN variable AND variable,2
+39,SELECT avg(variable.variable - variable.variable) FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = Y,2
+40,SELECT avg(variable.variable) FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable GROUP BY variable,2
+41,SELECT avg(variable.variable) FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = N,2
+42,SELECT avg(variable.variable) FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = TSN All-Star AND variable = 3B,2
+43,SELECT avg(variable.variable) FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = Virginia,2
+44,SELECT avg(variable.variable) FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = Y,2
+45,SELECT count(*) FROM ( SELECT variable FROM variable GROUP BY variable HAVING count(*) > variable ),2
+46,SELECT count(*) FROM (SELECT variable FROM variable GROUP BY variable HAVING count(*) > variable),2
+47,SELECT count(*) FROM variable,2
+48,SELECT count(*) FROM variable WHERE variable !=  AND variable !=  AND variable !=,2
+49,SELECT count(*) FROM variable WHERE variable + variable > variable,2
+50,SELECT count(*) FROM variable WHERE variable = France and variable = Operational,2
+51,SELECT count(*) FROM variable WHERE variable = Gloucester AND variable > variable,2
+52,SELECT count(*) FROM variable WHERE variable = Japan AND variable = Under Construction,2
+53,SELECT count(*) FROM variable WHERE variable = PHWR,2
+54,SELECT count(*) FROM variable WHERE variable = Shutdown,2
+55,SELECT count(*) FROM variable WHERE variable = Under investigation,2
+56,SELECT count(*) FROM variable WHERE variable = variable AND variable = variable,2
+57,SELECT count(*) FROM variable WHERE variable = variable AND variable > variable,2
+58,SELECT count(*) FROM variable WHERE variable = variable AND variable LIKE %Arson%,2
+59,SELECT count(*) FROM variable WHERE variable LIKE %Campfire% AND variable = variable,2
+60,SELECT count(*) FROM variable WHERE variable LIKE %Drug%,2
+61,SELECT count(*) FROM variable WHERE variable LIKE %Wisconsin%,2
+62,SELECT count(*) FROM variable WHERE variable LIKE %variable% AND variable = Spain,2
+63,SELECT count(*) FROM variable WHERE variable LIke %Under investigation%,2
+64,SELECT count(*) FROM variable WHERE variable like %Eden Street%,2
+65,SELECT count(DISTINCT variable) FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = Indiana,2
+66,SELECT count(variable) FROM variable,2
+67,SELECT count(variable) FROM variable WHERE variable != Scotland and variable != England and variable !=,2
+68,SELECT count(variable) FROM variable WHERE variable = Under Construction,2
+69,SELECT extract FROM variable GROUP BY extract ORDER BY count(*) DESC LIMIT variable,2
+70,SELECT max(extract) FROM variable,2
+71,SELECT max(variable) FROM variable WHERE variable = PWR and variable = Operational,2
+72,"SELECT min(variable), variable FROM variable WHERE variable = Y AND variable >= variable GROUP BY variable",2
+73,SELECT sum(variable) FROM variable,2
+74,SELECT sum(variable) FROM variable WHERE variable = NY and variable = variable,2
+75,SELECT sum(variable) FROM variable WHERE variable = TX AND variable BETWEEN variable AND variable,2
+76,SELECT sum(variable) FROM variable WHERE variable = TX AND variable BETWEEN variable AND variable  UNION SELECT sum(variable) FROM variable WHERE variable = TX AND variable BETWEEN variable AND variable,2
+77,SELECT sum(variable) FROM variable WHERE variable = ep  UNION SELECT sum(variable) FROM variable WHERE variable = album,2
+78,SELECT sum(variable) FROM variable WHERE variable = variable,2
+79,SELECT sum(variable) FROM variable WHERE variable BETWEEN variable AND variable UNION SELECT sum(variable) FROM variable WHERE variable < variable,2
+80,"SELECT sum(variable), variable FROM variable WHERE variable = CA AND variable BETWEEN variable AND variable GROUP BY variable",2
+81,"SELECT sum(variable.variable), sum(variable.variable) FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = Colorado",2
+82,SELECT variable FROM variable GROUP BY variable HAVING count(*) = variable,2
+83,SELECT variable FROM variable GROUP BY variable HAVING count(variable) = variable,2
+84,SELECT variable FROM variable GROUP BY variable ORDER BY count(*),2
+85,SELECT variable FROM variable GROUP BY variable ORDER BY count(variable) LIMIT variable,2
+86,SELECT variable FROM variable GROUP BY variable ORDER BY max(variable) - min(variable) DESC LIMIT variable,2
+87,SELECT variable FROM variable GROUP BY variable ORDER BY sum(variable) LIMIT variable,2
+88,SELECT variable FROM variable Group BY variable HAVING count(variable) > variable,2
+89,SELECT variable FROM variable WHERE variable = 6B:E2:variable:C6:variable:D2,2
+90,SELECT variable FROM variable WHERE variable = A GROUP BY variable ORDER BY count(*) DESC LIMIT variable,2
+91,SELECT variable FROM variable WHERE variable = AL,2
+92,SELECT variable FROM variable WHERE variable = AP GROUP BY variable ORDER BY sum(variable) DESC LIMIT variable,2
+93,SELECT variable FROM variable WHERE variable = Awaiting court variable GROUP BY variable ORDER BY count(*) DESC LIMIT variable,2
+94,SELECT variable FROM variable WHERE variable = Burglary GROUP BY variable ORDER BY count(*) DESC LIMIT variable,2
+95,SELECT variable FROM variable WHERE variable = California,2
+96,SELECT variable FROM variable WHERE variable = Chinon-A3,2
+97,SELECT variable FROM variable WHERE variable = FAIRFAX CO SCHS,2
+98,SELECT variable FROM variable WHERE variable = Investigation complete; no suspect identified GROUP BY variable ORDER BY count(*) DESC LIMIT variable,2
+99,SELECT variable FROM variable WHERE variable = Kaiga-variable,2
+100,SELECT variable FROM variable WHERE variable = Kursk-variable,2
+101,SELECT variable FROM variable WHERE variable = NL,2
+102,SELECT variable FROM variable WHERE variable = North Carolina UNION SELECT variable FROM variable WHERE variable = New York,2
+103,SELECT variable FROM variable WHERE variable = North Carolina UNION SELECT variable FROM variable WHERE variable = South Carolina,2
+104,SELECT variable FROM variable WHERE variable = OR AND variable = variable ORDER BY variable DESC LIMIT variable,2
+105,SELECT variable FROM variable WHERE variable = Omiya Ardija AND variable LIKE %variable%,2
+106,SELECT variable FROM variable WHERE variable = Operational GROUP BY variable ORDER BY count(variable) DESC LIMIT variable,2
+107,SELECT variable FROM variable WHERE variable = PO,2
+108,SELECT variable FROM variable WHERE variable = PO GROUP BY variable ORDER BY count(*) DESC LIMIT variable,2
+109,SELECT variable FROM variable WHERE variable = Shutdown GROUP BY variable ORDER BY count(variable) DESC LIMIT variable,2
+110,SELECT variable FROM variable WHERE variable = Swindon and variable = Millwall and variable = variable/variable,2
+111,SELECT variable FROM variable WHERE variable = United States ORDER BY variable DESC LIMIT variable,2
+112,SELECT variable FROM variable WHERE variable = Violence and sexual offences GROUP BY variable ORDER BY count(*) DESC LIMIT variable,2
+113,SELECT variable FROM variable WHERE variable = Virginia,2
+114,SELECT variable FROM variable WHERE variable = WA AND variable = variable,2
+115,SELECT variable FROM variable WHERE variable = album ORDER BY variable DESC LIMIT variable,2
+116,SELECT variable FROM variable WHERE variable = lasean camry AND variable = (SELECT max(variable) FROM variable WHERE variable = lasean camry) UNION SELECT variable FROM variable WHERE variable = lasean camry AND variable = (SELECT min(variable) FROM variable WHERE variable = lasean camry),2
+117,SELECT variable FROM variable WHERE variable = single ORDER BY variable DESC LIMIT variable,2
+118,SELECT variable FROM variable WHERE variable = variable AND variable = Rookie of the variable,2
+119,SELECT variable FROM variable WHERE variable = variable AND variable = variable,2
+120,SELECT variable FROM variable WHERE variable = variable AND variable not in (SELECT variable FROM variable WHERE variable = variable),2
+121,SELECT variable FROM variable WHERE variable = variable GROUP BY variable ORDER BY variable DESC LIMIT variable,2
+122,SELECT variable FROM variable WHERE variable > variable,2
+123,SELECT variable FROM variable WHERE variable > variable GROUP BY variable,2
+124,SELECT variable FROM variable WHERE variable > variable ORDER BY variable DESC LIMIT variable,2
+125,SELECT variable FROM variable WHERE variable >= variable ORDER BY variable DESC LIMIT variable,2
+126,SELECT variable FROM variable WHERE variable BETWEEN variable AND variable GROUP BY variable ORDER BY count(*) DESC LIMIT variable,2
+127,SELECT variable FROM variable WHERE variable LIKE %Arsenal% AND variable = H UNION SELECT variable FROM variable WHERE variable LIKE %Arsenal% AND variable = A,2
+128,SELECT variable FROM variable WHERE variable LIKE %Investigation complete% GROUP BY variable ORDER BY count(*) DESC LIMIT variable,2
+129,SELECT variable FROM variable WHERE variable LIKE %Pecatonia Area%,2
+130,SELECT variable FROM variable WHERE variable LIKE %Salford% GROUP BY variable ORDER BY count(*) DESC LIMIT variable,2
+131,SELECT variable FROM variable WHERE variable LIKE %Street% GROUP BY variable ORDER BY count(*) DESC LIMIT variable,2
+132,SELECT variable FROM variable WHERE variable LIKE %VfB Stuttgart%,2
+133,SELECT variable FROM variable WHERE variable LIke %Drug% GROUP BY variable ORDER BY count(*) DESC LIMIT variable,2
+134,SELECT variable FROM variable WHERE variable like %Street% GROUP BY variable ORDER BY count(*) DESC LIMIT variable,2
+135,SELECT variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable GROUP BY variable.variable ORDER BY avg(variable.variable) DESC LIMIT variable,2
+136,SELECT variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable GROUP BY variable.variable ORDER BY count(*) DESC LIMIT variable,2
+137,"SELECT variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable ORDER BY variable, variable, variable DESC LIMIT variable",2
+138,SELECT variable FROM variable where variable = Operational and variable = Japan,2
+139,"SELECT variable, count(*) FROM variable GROUP BY variable",2
+140,"SELECT variable, max(variable) FROM variable GROUP BY variable",2
+141,"SELECT variable, variable FROM variable ORDER BY variable DESC LIMIT variable",2
+142,"SELECT variable, variable FROM variable WHERE variable = BWR ORDER BY variable LIMIT variable",2
+143,"SELECT variable, variable FROM variable WHERE variable = Planned",2
+144,"SELECT variable, variable, variable FROM variable WHERE variable = variable",2
+145,SELECT variable.variable FROM variable AS variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable = Y GROUP BY variable.variable ORDER BY count(variable.variable) DESC LIMIT variable,2
+146,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable AND variable.variable = variable.variable WHERE variable.variable = Y GROUP BY variable.variable ORDER BY count(*) DESC LIMIT variable,2
+147,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable GROUP BY variable.variable ORDER BY count(variable) DESC LIMIT variable,2
+148,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable GROUP BY variable.variable ORDER BY sum(variable),2
+149,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable GROUP BY variable.variable ORDER BY sum(variable) DESC LIMIT variable,2
+150,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable GROUP BY variable.variable ORDER BY sum(variable.variable) DESC LIMIT variable,2
+151,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable GROUP BY variable.variable ORDER BY sum(variable.variable) LIMIT variable,2
+152,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable GROUP BY variable.variable ORDER BY variable.variable,2
+153,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = AP GROUP BY variable.variable ORDER BY sum(variable.variable) DESC LIMIT variable,2
+154,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = NL AND variable.variable = Most Valuable variable AND variable.variable = variable AND variable.variable = NL AND variable.variable = variable,2
+155,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = Wisconsin ORDER BY variable.variable DESC LIMIT variable,2
+156,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = Y,2
+157,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = Y AND variable.variable >= variable,2
+158,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = Y GROUP BY variable ORDER BY count(*) DESC LIMIT variable,2
+159,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = album GROUP BY variable.variable ORDER BY sum(variable.variable) DESC LIMIT variable,2
+160,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = houston ORDER BY variable DESC LIMIT variable,2
+161,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = instrumental and variable.variable = album and variable >= variable ORDER BY variable.variable DESC LIMIT variable,2
+162,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = pop and variable.variable = album ORDER BY variable.variable DESC LIMIT variable,2
+163,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = variable GROUP BY variable.variable,2
+164,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable = variable GROUP BY variable.variable ORDER BY sum(variable.variable) DESC LIMIT variable,2
+165,SELECT variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable WHERE variable.variable >= variable GROUP BY variable.variable ORDER BY variable.variable DESC LIMIT variable,2
+166,"SELECT variable.variable, avg(variable.variable) FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable GROUP BY variable.variable",2
+167,"SELECT variable.variable, max(variable.variable / variable.variable) FROM variable as variable JOIN variable as variable on variable.variable = variable.variable JOIN variable as variable ON variable.variable = variable.variable",2
+168,"SELECT variable.variable, max(variable.variable), variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable JOIN variable as variable ON variable.variable = variable.variable UNION SELECT variable.variable, max(variable.variable), variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable JOIN variable as variable ON variable.variable = variable.variable",2
+169,"SELECT variable.variable, min(variable.variable / variable.variable) FROM variable as variable JOIN variable as variable on variable.variable = variable.variable JOIN variable as variable ON variable.variable = variable.variable",2
+170,"SELECT variable.variable, sum(variable),sum(variable) FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable JOIN variable as variable ON variable.variable = variable.variable GROUP BY variable.variable ORDER BY variable.variable DESC LIMIT variable",2
+171,"SELECT variable.variable, variable.variable , max(variable.variable - variable.variable) FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable GROUP BY variable.variable",2
+172,"SELECT variable.variable, variable.variable , min(variable.variable - variable.variable) FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable GROUP BY variable.variable",2
+173,"SELECT variable.variable, variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable",2
+174,"SELECT variable.variable, variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable JOIN variable as variable ON variable.variable = variable.variable GROUP BY variable.variable ORDER BY sum(variable.variable) DESC LIMIT variable",2
+175,"SELECT variable.variable, variable.variable FROM variable as variable JOIN variable as variable ON variable.variable = variable.variable JOIN variable as variable ON variable.variable = variable.variable GROUP BY variable.variable ORDER BY sum(variable.variable) LIMIT variable",2
