@@ -1,0 +1,34 @@
+soft_templates
+SELECT variable FROM Ref_Document_Status;
+SELECT variable FROM variable WHERE variable = string ;
+SELECT variable FROM Ref_Document_Types;
+SELECT variable FROM variable WHERE variable = string ;
+SELECT variable FROM Ref_Shipping_Agents;
+SELECT variable FROM variable WHERE variable = string ;
+SELECT variable FROM ROLES;
+SELECT variable FROM variable WHERE variable = string ;
+SELECT count(*) FROM Employees;
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string ;
+SELECT variable , variable FROM Documents;
+SELECT variable , variable , count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable;
+SELECT variable , count(variable) FROM variable JOIN variable ON variable = variable GROUP BY variable HAVING count(variable) > num ;
+SELECT variable FROM variable JOIN variable ON variable = variable WHERE variable = num ;
+SELECT count(*) FROM variable WHERE variable = string ;
+SELECT variable FROM variable WHERE variable = num ;
+SELECT variable FROM variable WHERE variable = string AND variable = string ;
+SELECT variable FROM variable JOIN variable ON variable = variable WHERE variable = num ;
+SELECT count(*) FROM variable JOIN variable ON variable = variable WHERE variable = string ;
+SELECT variable , count(variable) FROM variable JOIN variable ON variable = variable GROUP BY variable ORDER BY count(variable) DESC LIMIT num ;
+SELECT variable FROM variable WHERE variable = num ;
+SELECT variable FROM variable JOIN variable ON variable.col_namename WHERE variable = num ;
+SELECT variable FROM variable WHERE variable = num ;
+SELECT variable FROM variable WHERE variable = string AND variable = string EXCEPT SELECT variable FROM variable JOIN variable ON variable = variable WHERE variable = string ;
+SELECT variable FROM variable WHERE variable = string AND variable = string INTERSECT SELECT variable FROM variable JOIN variable ON variable = variable WHERE variable = string ;
+SELECT variable FROM variable WHERE variable = num ;
+SELECT count(*) FROM variable WHERE variable = num ;
+SELECT variable , count( variable ) FROM variable GROUP BY variable ORDER BY count( variable ) DESC LIMIT num ;
+SELECT variable , count(*) FROM variable GROUP BY variable HAVING count(*) > num ;
+SELECT variable FROM variable JOIN variable ON variable.col_namee.variable WHERE variable
+SELECT variable FROM variable EXCEPT SELECT variable FROM variable JOIN variable ON variable.col_namee.variable
+SELECT variable , count(*) FROM variable JOIN variable ON variable.col_namee.variable GROUP BY variable.col_namee.variable.col_nameunt(*) DESC LIMIT num ;
+SELECT variable , count(DISTINCT variable ) FROM variable GROUP BY variable ;

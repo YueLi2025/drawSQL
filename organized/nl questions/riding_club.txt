@@ -1,0 +1,18 @@
+nl_question
+How many players are there?
+List the names of players in ascending order of votes.
+What are the gender and occupation of players?
+List the name and residence for players whose occupation is not "Researcher".
+Show the names of sponsors of players whose residence is either "Brandon" or "Birtle".
+What is the name of the player with the largest number of votes?
+Show different occupations along with the number of players in each occupation.
+Please show the most common occupation of players.
+Show the residences that have at least two players.
+Show the names of players and names of their coaches.
+Show the names of players coached by the rank 1 coach.
+Show the names and genders of players with a coach starting after 2011.
+Show the names of players and names of their coaches in descending order of the votes of players.
+List the names of players that do not have coaches.
+Show the residences that have both a player of gender "M" and a player of gender "F".
+How many coaches does each club has? List the club id, name and the number of coaches.
+How many gold medals has the club with the most coaches won?

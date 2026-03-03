@@ -1,0 +1,31 @@
+nl_question
+How many customers are there?
+Count the number of customers.
+List the names of customers in ascending order of level of membership.
+Sort all the customers by the level of membership in ascending order, and return the customer names.
+What are the nationalities and card credits of customers?
+Find the nationality and card credit of each customer.
+Show the names of customers with nationality "England" or "Australia".
+Which customers have nationality "England" or "Australia"? Give me their names.
+What is the average card credit of customers with membership level higher than 1?
+Find the average card credit customers whose membership level is above 1.
+What is the card credit of the customer with the highest membership level?
+Find the customer with the highest membership level and return his or her card credit.
+Show different nationalities of customers, along with the number of customers of each nationality.
+How many customers are associated with each nationality? List the nationality and the number of customers.
+Show the most common nationality of customers.
+Which nationality does the most customers have?
+Show the nations that have both customers with card credit smaller than 50 and customers with card credit bigger than 75.
+Which nations have both customers with card credit above 50 and customers with card credit below 75.
+Show the names of customers and names of dishes they order.
+For each order, return the customer name and the dish name.
+Show the names of customers and names of dishes they order, in descending order of the quantity of dish.
+For each order, find the customer name and the dish name. Sort the result in descending order of the quantity of dish.
+Show each customer name and the total quantities of dishes ordered by that customer.
+What is the total quantities of dishes ordered by each customer ? List the customer name and the total quantity .
+Show the customers with total quantity of order bigger than 1.
+Which customers have total order quantity greater than 1? Give me the customer names.
+Show distinct managers of branches.
+Who are the distinct managers of branches?
+List the names of customers that do not have any order.
+Which customers do not have any order? Give me the customer names.

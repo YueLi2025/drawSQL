@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+participants,id,num
+participants,name,string
+participants,popularity,num
+performance_score,participant_id,num
+performance_score,songs_id,num
+performance_score,voice_sound_quality,num
+performance_score,rhythm_tempo,num
+performance_score,stage_presence,num
+songs,id,num
+songs,language,string
+songs,original_artist,string
+songs,name,string
+songs,english_translation,string

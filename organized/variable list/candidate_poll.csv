@@ -1,0 +1,15 @@
+table_name,column_name,column_type
+candidate,Candidate_ID,num
+candidate,People_ID,num
+candidate,Poll_Source,string
+candidate,Date,string
+candidate,Support_rate,num
+candidate,Consider_rate,num
+candidate,Oppose_rate,num
+candidate,Unsure_rate,num
+people,People_ID,num
+people,Sex,string
+people,Name,string
+people,Date_of_Birth,string
+people,Height,num
+people,Weight,num

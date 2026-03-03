@@ -1,0 +1,113 @@
+nl_question
+A list of the top 5 countries by number of invoices. List country name and number of invoices.
+What are the top 5 countries by number of invoices and how many do they have?
+A list of the top 8 countries by gross/total invoice size. List country name and gross invoice size.
+What are the names of the top 8 countries by total invoice size and what are those sizes?
+A list of the top 10 countries by average invoice size. List country name and average invoice size.
+What are the names of the countries and average invoice size of the top countries by size?
+Find out 5 customers who most recently purchased something. List customers' first and last name.
+What are the first and last names of the 5 customers who purchased something most recently?
+Find out the top 10 customers by total number of orders. List customers' first and last name and the number of total orders.
+What are the top 10 customers' first and last names by total number of orders and how many orders did they make?
+List the top 10 customers by total gross sales. List customers' first and last name and total gross sales.
+What are the top 10 customers' first and last names with the highest gross sales, and also what are the sales?
+List the top 5 genres by number of tracks. List genres name and total tracks.
+How many tracks does each genre have and what are the names of the top 5?
+List every album's title.
+What are the titles of all the albums?
+List every album ordered by album title in ascending order.
+What are the titles of all the albums alphabetically ascending?
+List every album whose title starts with A in alphabetical order.
+What are the titles of all albums that start with A in alphabetical order?
+List the customers first and last name of 10 least expensive invoices.
+What are the first and last names of the customers with the 10 cheapest invoices?
+List total amount of  invoice from Chicago, IL.
+What are the total amount of money in the invoices billed from Chicago, Illinois?
+List the number of invoices from Chicago, IL.
+How many invoices were billed from Chicago, IL?
+List the number of invoices from the US, grouped by state.
+How many invoices were billed from each state?
+List the state in the US with the most invoices.
+What are the states with the most invoices?
+List the number of invoices and the invoice total from California.
+What is the number of invoices and total money billed in them from CA?
+List Aerosmith's albums.
+What are the titles of all the Aerosmith albums?
+How many albums does Billy Cobham has?
+How many albums has Billy Cobam released?
+Eduardo Martins is a customer at which company?
+What is the company where Eduardo Martins is a customer?
+What is Astrid Gruber's email and phone number?
+What is the email and phone number of Astrid Gruber the customer?
+How many customers live in Prague city?
+How many customers live in the city of Prague?
+How many customers in state of CA?
+How many customers are from California?
+What country does Roberto Almeida live?
+In which country does Roberto Almeida?
+List the name of albums that are released by aritist whose name has 'Led'
+What is the title of the album that was released by the artist whose name has the phrase 'Led'?
+How many customers does Steve Johnson support?
+What is the count of customers that Steve Johnson supports?
+What is the title, phone and hire date of Nancy Edwards?
+What is the title, phone number and hire date for the employee named Nancy Edwards?
+find the full name of employees who report to Nancy Edwards?
+What is the first and last name of the employee who reports to Nancy Edwards?
+What is the address of employee Nancy Edwards?
+What is Nancy Edwards's address?
+Find the full name of employee who supported the most number of customers.
+What is the full name of the employee who has the most customers?
+How many employees are living in Canada?
+How many employees live in Canada?
+What is employee Nancy Edwards's phone number?
+What is the the phone number of Nancy Edwards?
+Who is the youngest employee in the company? List employee's first and last name.
+What si the youngest employee's first and last name?
+List top 10 employee work longest in the company. List employee's first and last name.
+What are the first and last names of the top 10 longest-serving employees?
+Find the number of employees whose title is IT Staff from each city?
+How many employees who are IT staff are from each city?
+Which employee manage most number of peoples? List employee's first and last name, and number of people report to that employee.
+What are the first and last names of all the employees and how many people report to them?
+How many orders does Lucas Mancini has?
+How many orders does Luca Mancini have in his invoices?
+What is the total amount of money spent by Lucas Mancini?
+How much money did Lucas Mancini spend?
+List all media types.
+What are the names of all the media types?
+List all different genre types.
+What are the different names of the genres?
+List the name of all playlist.
+What are the names of all the playlists?
+Who is the composer of track Fast As a Shark?
+What is the composer who created the track "Fast As a Shark"?
+How long does track Fast As a Shark has?
+How many milliseconds long is Fast As a Shark?
+What is the name of tracks whose genre is Rock?
+What is the name of all tracks in the Rock genre?
+What is title of album which track Balls to the Wall belongs to?
+What is the name of the album that has the track Ball to the Wall?
+List name of all tracks in Balls to the Wall.
+What is the name of all tracks in the album named Balls to the Wall?
+List title of albums have the number of tracks greater than 10.
+What are the names of the albums that have more than 10 tracks?
+List the name of tracks belongs to genre Rock and whose media type is MPEG audio file.
+What are the names of all Rock tracks that are stored on MPEG audio files?
+List the name of tracks belongs to genre Rock or media type is MPEG audio file.
+What are the names of all tracks that belong to the Rock genre and whose media type is MPEG?
+List the name of tracks belongs to genre Rock or genre Jazz.
+What are the names of the tracks that are Rock or Jazz songs?
+List the name of all tracks in the playlists of Movies.
+What are the names of all tracks that are on playlists titled Movies?
+List the name of playlist which has number of tracks greater than 100.
+What are the names of all playlists that have more than 100 tracks?
+List all tracks bought by customer Daan Peeters.
+What are the tracks that Dean Peeters bought?
+How much is the track Fast As a Shark?
+What is the unit price of the tune "Fast As a Shark"?
+Find the name of tracks which are in Movies playlist but not in music playlist.
+What are the names of all tracks that are on the Movies playlist but not in the music playlist?
+Find the name of tracks which are in both Movies and music playlists.
+What are the names of all the tracks that are in both the Movies and music playlists?
+Find number of tracks in each genre?
+How many tracks are in each genre?

@@ -1,0 +1,41 @@
+sql_query
+SELECT name FROM channel WHERE OWNER != 'CCTV'
+SELECT name FROM channel WHERE OWNER != 'CCTV'
+SELECT name FROM channel ORDER BY rating_in_percent DESC
+SELECT name FROM channel ORDER BY rating_in_percent DESC
+SELECT OWNER FROM channel ORDER BY rating_in_percent DESC LIMIT 1
+SELECT OWNER FROM channel ORDER BY rating_in_percent DESC LIMIT 1
+SELECT count(*) FROM program
+SELECT count(*) FROM program
+SELECT name FROM program ORDER BY launch
+SELECT name FROM program ORDER BY launch
+SELECT name ,  origin ,  OWNER FROM program
+SELECT name ,  origin ,  OWNER FROM program
+SELECT name FROM program ORDER BY launch DESC LIMIT 1
+SELECT name FROM program ORDER BY launch DESC LIMIT 1
+SELECT sum(Share_in_percent) FROM channel WHERE OWNER  =  'CCTV'
+SELECT sum(Share_in_percent) FROM channel WHERE OWNER  =  'CCTV'
+SELECT t1.name FROM channel AS t1 JOIN broadcast AS t2 ON t1.channel_id  =  t2.channel_id WHERE t2.time_of_day  =  'Morning'
+SELECT t1.name FROM channel AS t1 JOIN broadcast AS t2 ON t1.channel_id  =  t2.channel_id WHERE t2.time_of_day  =  'Morning'
+SELECT t1.name FROM channel AS t1 JOIN broadcast AS t2 ON t1.channel_id  =  t2.channel_id WHERE t2.time_of_day  =  'Morning' INTERSECT SELECT t1.name FROM channel AS t1 JOIN broadcast AS t2 ON t1.channel_id  =  t2.channel_id WHERE t2.time_of_day  =  'Night'
+SELECT t1.name FROM channel AS t1 JOIN broadcast AS t2 ON t1.channel_id  =  t2.channel_id WHERE t2.time_of_day  =  'Morning' INTERSECT SELECT t1.name FROM channel AS t1 JOIN broadcast AS t2 ON t1.channel_id  =  t2.channel_id WHERE t2.time_of_day  =  'Night'
+SELECT count(*) ,  time_of_day FROM broadcast GROUP BY time_of_day
+SELECT count(*) ,  time_of_day FROM broadcast GROUP BY time_of_day
+SELECT count(DISTINCT program_id) FROM broadcast WHERE time_of_day  =  'Night'
+SELECT count(DISTINCT program_id) FROM broadcast WHERE time_of_day  =  'Night'
+SELECT name FROM program EXCEPT SELECT t1.name FROM program AS t1 JOIN broadcast AS t2 ON t1.program_id  =  t2.program_id WHERE t2.Time_of_day  =  "Morning"
+SELECT name FROM program EXCEPT SELECT t1.name FROM program AS t1 JOIN broadcast AS t2 ON t1.program_id  =  t2.program_id WHERE t2.Time_of_day  =  "Morning"
+SELECT t1.owner FROM program AS t1 JOIN broadcast AS t2 ON t1.program_id  =  t2.program_id WHERE t2.Time_of_day  =  "Morning" INTERSECT SELECT t1.owner FROM program AS t1 JOIN broadcast AS t2 ON t1.program_id  =  t2.program_id WHERE t2.Time_of_day  =  "Night"
+SELECT t1.owner FROM program AS t1 JOIN broadcast AS t2 ON t1.program_id  =  t2.program_id WHERE t2.Time_of_day  =  "Morning" INTERSECT SELECT t1.owner FROM program AS t1 JOIN broadcast AS t2 ON t1.program_id  =  t2.program_id WHERE t2.Time_of_day  =  "Night"
+SELECT origin FROM program ORDER BY origin
+SELECT origin FROM program ORDER BY origin
+SELECT count(DISTINCT OWNER) FROM channel
+SELECT count(DISTINCT OWNER) FROM channel
+SELECT name FROM program WHERE origin != 'Beijing'
+SELECT name FROM program WHERE origin != 'Beijing'
+SELECT name FROM channel WHERE OWNER  =  'CCTV' OR OWNER  =  'HBS'
+SELECT name FROM channel WHERE OWNER  =  'CCTV' OR OWNER  =  'HBS'
+SELECT sum(Rating_in_percent) ,  OWNER FROM channel GROUP BY OWNER
+SELECT sum(Rating_in_percent) ,  OWNER FROM channel GROUP BY OWNER
+SELECT t1.name FROM program AS t1 JOIN broadcast AS t2 ON t1.program_id  =  t2.program_id GROUP BY t2.program_id ORDER BY count(*) DESC LIMIT 1
+SELECT t1.name FROM program AS t1 JOIN broadcast AS t2 ON t1.program_id  =  t2.program_id GROUP BY t2.program_id ORDER BY count(*) DESC LIMIT 1

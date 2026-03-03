@@ -1,0 +1,109 @@
+sql_query
+SELECT Region FROM `Sales Team` GROUP BY Region ORDER BY COUNT(DISTINCT `Sales Team`) DESC LIMIT 1
+SELECT T FROM ( SELECT IIF(`Customer Names` LIKE '%Group%', `Customer Names`, NULL) AS T FROM Customers ) WHERE T IS NOT NULL
+SELECT T2.`Sales Team`, T2.Region FROM `Sales Orders` AS T1 INNER JOIN `Sales Team` AS T2 ON T2.SalesTeamID = T1._SalesTeamID WHERE T1.OrderNumber = 'SO - 000137'
+SELECT DISTINCT T1.OrderNumber, T2.`City Name` FROM `Sales Orders` AS T1 INNER JOIN `Store Locations` AS T2 ON T2.StoreID = T1._StoreID WHERE T1.`Sales Channel` = 'In-Store'
+SELECT T FROM ( SELECT CASE  WHEN T2.`Sales Channel` = 'Online' THEN T1.`Customer Names` ELSE NULL END AS T FROM Customers T1 INNER JOIN `Sales Orders` T2 ON T2._CustomerID = T1.CustomerID ) WHERE T IS NOT NULL
+SELECT AVG(REPLACE(T1.`Unit Price`, ',', '') - REPLACE(T1.`Unit Cost`, ',', ''))  FROM `Sales Orders` AS T1 INNER JOIN Products AS T2 ON T2.ProductID = T1._ProductID WHERE T2.`Product Name` = 'Bakeware'
+SELECT DISTINCT CustomerID, `Customer Names` FROM Customers WHERE `Customer Names` LIKE 'W%' ORDER BY `Customer Names` DESC
+SELECT COUNT(DISTINCT T) FROM ( SELECT CASE  WHEN `Sales Channel` = 'In-Store' AND WarehouseCode = 'WARE-NMK1003' AND `Discount Applied` = '0.4' THEN OrderNumber ELSE NULL END AS T FROM `Sales Orders` ) WHERE T IS NOT NULL
+SELECT `City Name`, `Median Income` FROM `Store Locations` WHERE State = 'Florida' ORDER BY Population DESC LIMIT 1
+SELECT DISTINCT T2.`City Name` FROM Regions AS T1 INNER JOIN `Store Locations` AS T2 ON T2.StateCode = T1.StateCode WHERE T2.State = 'California' AND T2.`Water Area` = '0'
+SELECT SUM(CASE WHEN T2.`Product Name` = 'Platters' THEN 1 ELSE 0 END) AS num1 , SUM(CASE WHEN T2.`Product Name` = 'Serveware' THEN 1 ELSE 0 END) AS num2 FROM `Sales Orders` AS T1 INNER JOIN Products AS T2 ON T2.ProductID = T1._ProductID
+SELECT COUNT(T1.OrderNumber) FROM `Sales Orders` AS T1 INNER JOIN `Sales Team` AS T2 ON T2.SalesTeamID = T1._SalesTeamID WHERE T2.Region = 'South' AND T2.SalesTeamID BETWEEN 1 AND 9 GROUP BY T2.SalesTeamID HAVING COUNT(T1.OrderNumber)
+SELECT T FROM ( SELECT DISTINCT IIF(T1.`Discount Applied` = 0.1, T2.`Product Name`, NULL) AS T FROM `Sales Orders` T1 INNER JOIN Products T2 ON T2.ProductID = T1._ProductID ) WHERE T IS NOT NULL
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN T1.Region = 'South' THEN T2.`City Name` END AS T FROM Regions T1 INNER JOIN `Store Locations` T2 ON T2.StateCode = T1.StateCode ) WHERE T IS NOT NULL
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN T2.Type = 'Town' THEN T1.Region END AS T FROM Regions T1 INNER JOIN `Store Locations` T2 ON T2.StateCode = T1.StateCode ) WHERE T IS NOT NULL
+SELECT SUM(CASE WHEN T1.`Customer Names` = 'Medsep Group' THEN 1 ELSE 0 END) FROM Customers AS T1 INNER JOIN `Sales Orders` AS T2 ON T2._CustomerID = T1.CustomerID
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN T2.ShipDate = '7/8/18' THEN T1.`Customer Names` END AS T FROM Customers T1 INNER JOIN `Sales Orders` T2 ON T2._CustomerID = T1.CustomerID ) WHERE T IS NOT NULL
+SELECT SUM(CASE WHEN T1.`Order Quantity` > 4 AND T2.`Customer Names` = 'Ei ' THEN 1 ELSE 0 END) FROM `Sales Orders` AS T1 INNER JOIN Customers AS T2 ON T2.CustomerID = T1._CustomerID
+SELECT SUM(CASE WHEN T1.`Discount Applied` = 0.05 AND T2.`Customer Names` = 'Pacific Ltd' THEN 1 ELSE 0 END) FROM `Sales Orders` AS T1 INNER JOIN Customers AS T2 ON T2.CustomerID = T1._CustomerID
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN T2.`Unit Cost` > 4000 THEN T1.`Customer Names` END AS T FROM Customers T1 INNER JOIN `Sales Orders` T2 ON T2._CustomerID = T1.CustomerID ) WHERE T IS NOT NULL
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN SUM(T1.`Order Quantity`) > 5 THEN T2.`Customer Names` END AS T FROM `Sales Orders` T1 INNER JOIN Customers T2 ON T2.CustomerID = T1._CustomerID WHERE T1.OrderDate = '6/1/18' GROUP BY T1._CustomerID ) WHERE T IS NOT NULL
+SELECT CAST(SUM(CASE WHEN REPLACE(T1.`Unit Price`, ',', '') - REPLACE(T1.`Unit Cost`, ',', '') > 1000 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.OrderNumber) FROM `Sales Orders` AS T1 INNER JOIN `Sales Team` AS T2 ON T2.SalesTeamID = T1._SalesTeamID WHERE T2.`Sales Team` = 'Stephen Payne'
+SELECT SUM(CASE WHEN Region = 'Northeast' THEN 1 ELSE 0 END) FROM `Sales Team`
+SELECT T FROM ( SELECT CASE  WHEN ProductID BETWEEN 30 AND 40 THEN `Product Name` ELSE NULL END AS T FROM Products ) WHERE T IS NOT NULL
+SELECT ( SELECT REPLACE(`Unit Cost`, ',', '') FROM `Sales Orders` WHERE REPLACE(`Unit Cost`, ',', '') = ( SELECT REPLACE(`Unit Cost`, ',', '') FROM `Sales Orders` ORDER BY REPLACE(`Unit Cost`, ',', '') DESC LIMIT 1 ) ORDER BY REPLACE(`Unit Cost`, ',', '') DESC LIMIT 1 ) / ( SELECT REPLACE(`Unit Cost`, ',', '') FROM `Sales Orders` WHERE REPLACE(`Unit Cost`, ',', '') = ( SELECT REPLACE(`Unit Cost`, ',', '') FROM `Sales Orders` ORDER BY REPLACE(`Unit Cost`, ',', '') ASC LIMIT 1 ) ORDER BY REPLACE(`Unit Cost`, ',', '') ASC LIMIT 1 )
+SELECT DISTINCT T1.OrderNumber, T2.`Product Name` FROM `Sales Orders` AS T1 INNER JOIN Products AS T2 ON T2.ProductID = T1._ProductID WHERE T1.`Sales Channel` = 'In-Store'
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN T2.`Sales Team` = 'Samuel Fowler' THEN T1.OrderNumber ELSE NULL END AS T FROM `Sales Orders` T1 INNER JOIN `Sales Team` T2 ON T2.SalesTeamID = T1._SalesTeamID ) WHERE T IS NOT NULL
+SELECT SUM(IIF(WarehouseCode = 'WARE-MKL1006', 1, 0)) - SUM(IIF(WarehouseCode = 'WARE-NBV1002', 1, 0)) AS difference FROM `Sales Orders`
+SELECT DISTINCT T2.StoreID, T1.Region FROM Regions AS T1 INNER JOIN `Store Locations` AS T2 ON T2.StateCode = T1.StateCode WHERE T2.State = 'Michigan'
+SELECT SUM(CASE WHEN T2.`Customer Names` = 'Apollo Ltd' THEN 1 ELSE 0 END), SUM(CASE WHEN T2.`Customer Names` = 'Pacific Ltd' THEN 1 ELSE 0 END) FROM `Sales Orders` AS T1 INNER JOIN Customers AS T2 ON T2.CustomerID = T1._CustomerID
+SELECT DISTINCT T1.`Customer Names`, T4.`Product Name` FROM Customers AS T1 INNER JOIN `Sales Orders` AS T2 ON T2._CustomerID = T1.CustomerID INNER JOIN `Sales Team` AS T3 ON T3.SalesTeamID = T2._SalesTeamID INNER JOIN Products AS T4 ON T4.ProductID = T2._ProductID WHERE T3.`Sales Team` = 'Anthony Torres' AND T2.`Sales Channel` = 'Distributor'
+SELECT COUNT(T1.OrderNumber) FROM `Sales Orders` AS T1 INNER JOIN `Store Locations` AS T2 ON T2.StoreID = T1._StoreID WHERE T2.Population BETWEEN 3000000 AND 4000000
+SELECT DISTINCT T FROM ( SELECT IIF(_CustomerID = 11, ProcuredDate, NULL) AS T FROM `Sales Orders` ) WHERE T IS NOT NULL
+SELECT COUNT(DISTINCT T) FROM ( SELECT CASE  WHEN Region = 'Midwest' THEN State ELSE NULL END AS T FROM Regions ) WHERE T IS NOT NULL
+SELECT DISTINCT T3.`Sales Team` FROM Customers AS T1 INNER JOIN `Sales Orders` AS T2 ON T2._CustomerID = T1.CustomerID INNER JOIN `Sales Team` AS T3 ON T3.SalesTeamID = T2._SalesTeamID WHERE T1.`Customer Names` = 'Apotheca, Ltd'
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN T3.WarehouseCode = 'WARE-UHY1004' THEN T1.Region END AS T FROM Regions T1 INNER JOIN `Store Locations` T2 ON T2.StateCode = T1.StateCode INNER JOIN `Sales Orders` T3 ON T3._StoreID = T2.StoreID ) WHERE T IS NOT NULL
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN T4.`Product Name` = 'Audio' AND T3.`Sales Team` = 'Shawn Torres' THEN T1.`City Name` ELSE NULL END AS T FROM `Store Locations` T1 INNER JOIN `Sales Orders` T2 ON T2._StoreID = T1.StoreID INNER JOIN `Sales Team` T3 ON T3.SalesTeamID = T2._SalesTeamID INNER JOIN Products T4 ON T4.ProductID = T2._ProductID ) WHERE T IS NOT NULL
+SELECT `Sales Channel` FROM ( SELECT T1.`Sales Channel` FROM `Sales Orders` AS T1 INNER JOIN `Store Locations` AS T2 ON T2.StoreID = T1._StoreID ORDER BY T2.`Median Income` DESC LIMIT 3 ) GROUP BY `Sales Channel` ORDER BY COUNT(`Sales Channel`) DESC LIMIT 1
+SELECT T2.Region FROM `Sales Orders` AS T1 INNER JOIN `Sales Team` AS T2 ON T2.SalesTeamID = T1._SalesTeamID WHERE T1.WarehouseCode = 'WARE-MKL1006' GROUP BY T2.Region ORDER BY COUNT(T1.OrderNumber) DESC LIMIT 1
+SELECT SUM(CASE WHEN T1.`Sales Channel` = 'Online' AND T2.`Customer Names` = 'Ole Group' AND T1.OrderDate LIKE '5/%/19' THEN 1 ELSE 0 END) FROM `Sales Orders` AS T1 INNER JOIN Customers AS T2 ON T2.CustomerID = T1._CustomerID
+SELECT T2.Latitude, T2.Longitude FROM `Sales Orders` AS T1 INNER JOIN `Store Locations` AS T2 ON T2.StoreID = T1._StoreID WHERE T1.WarehouseCode = 'WARE-PUJ1005' GROUP BY T2.StoreID ORDER BY COUNT(T1.WarehouseCode) ASC LIMIT 1
+SELECT DISTINCT T1.OrderNumber, T1.WarehouseCode FROM `Sales Orders` AS T1 INNER JOIN Customers AS T2 ON T2.CustomerID = T1._CustomerID WHERE T2.`Customer Names` = 'Elorac, Corp'
+SELECT DISTINCT T2.`Sales Team` FROM `Sales Orders` AS T1 INNER JOIN `Sales Team` AS T2 ON T2.SalesTeamID = T1._SalesTeamID WHERE T2.Region = 'Midwest' AND T1.`Order Quantity` > 5
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN `Sales Team` = 'Joshua Bennett' THEN Region ELSE NULL END AS T FROM `Sales Team` ) WHERE T IS NOT NULL
+"SELECT `Customer Names` FROM ( SELECT T1.`Customer Names`, T2.`Unit Price` - T2.`Unit Cost` AS ""net profit"" FROM Customers T1 INNER JOIN `Sales Orders` T2 ON T2._CustomerID = T1.CustomerID ) ORDER BY `net profit` DESC LIMIT 1"
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN T2.OrderNumber = 'SO - 0005951' THEN T1.`Product Name` ELSE NULL END AS T FROM Products T1 INNER JOIN `Sales Orders` T2 ON T2._ProductID = T1.ProductID ) WHERE T IS NOT NULL
+SELECT DISTINCT T1.ProductID, T1.`Product Name` FROM Products AS T1 INNER JOIN `Sales Orders` AS T2 ON T2._ProductID = T1.ProductID INNER JOIN `Sales Team` AS T3 ON T3.SalesTeamID = T2._SalesTeamID WHERE T3.`Sales Team` = 'Douglas Tucker'
+SELECT ProductID, T FROM ( SELECT ProductID , CASE  WHEN `Product Name` LIKE '%Outdoor%' THEN `Product Name` ELSE NULL END AS T FROM Products ) WHERE T IS NOT NULL ORDER BY T DESC
+SELECT T1.`Customer Names`, T2.DeliveryDate FROM Customers AS T1 INNER JOIN `Sales Orders` AS T2 ON T2._CustomerID = T1.CustomerID INNER JOIN Products AS T3 ON T3.ProductID = T2._ProductID WHERE T2.`Sales Channel` = 'Wholesale' AND T3.`Product Name` = 'Bedroom Furniture' AND T2.OrderDate LIKE '%/%/19'
+SELECT DISTINCT `Customer Names`, `Product Name` FROM ( SELECT T1.`Customer Names`, T3.`Product Name` , REPLACE(T2.`Unit Price`, ',', '') - REPLACE(T2.`Unit Cost`, ',', '') AS T FROM Customers T1 INNER JOIN `Sales Orders` T2 ON T2._CustomerID = T1.CustomerID INNER JOIN Products T3 ON T3.ProductID = T2._ProductID ) WHERE T > 3800
+SELECT DISTINCT T FROM ( SELECT IIF(DeliveryDate = '6/13/18', OrderNumber, NULL) AS T FROM `Sales Orders` ) WHERE T IS NOT NULL
+SELECT SUM(IIF(`Order Quantity` > 5, 1, 0)) FROM `Sales Orders`
+SELECT T FROM ( SELECT IIF(StateCode = 'GA', State, NULL) AS T FROM Regions ) WHERE T IS NOT NULL
+SELECT COUNT(DISTINCT T) FROM ( SELECT CASE  WHEN Region = 'Midwest' THEN StateCode ELSE NULL END AS T FROM Regions ) WHERE T IS NOT NULL
+SELECT SUM(REPLACE(T1.`Unit Price`, ',', '') - REPLACE(T1.`Unit Cost`, ',', '')) / COUNT(T1.OrderNumber) FROM `Sales Orders` AS T1 INNER JOIN Products AS T2 ON T2.ProductID = T1._ProductID WHERE T2.`Product Name` = 'Phones' AND T1.`Sales Channel` = 'Distributor'
+SELECT SUM(REPLACE(T1.`Unit Price`, ',', '') - REPLACE(T1.`Unit Cost`, ',', '')) / COUNT(T1.OrderNumber) FROM `Sales Orders` AS T1 INNER JOIN Products AS T2 ON T2.ProductID = T1._ProductID WHERE T2.`Product Name` = 'Bar Tools' AND T1.`Order Quantity` > 5
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN T1.`Customer Names` = 'Ole Group' THEN T2.`Discount Applied` END AS T FROM Customers T1 INNER JOIN `Sales Orders` T2 ON T2._CustomerID = T1.CustomerID ) WHERE T IS NOT NULL
+SELECT StoreID, Latitude, Longitude FROM `Store Locations` WHERE `City Name` = 'Birmingham'
+SELECT `City Name` FROM `Store Locations` ORDER BY Population DESC LIMIT 1
+SELECT SUM(CASE WHEN State = 'California' AND Type = 'CDP' THEN 1 ELSE 0 END) FROM `Store Locations`
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN T1.OrderDate = '5/31/18' THEN T2.`Sales Team` ELSE NULL END AS T FROM `Sales Orders` T1 INNER JOIN `Sales Team` T2 ON T2.SalesTeamID = T1._SalesTeamID ) WHERE T IS NOT NULL
+SELECT T2.`Sales Team` FROM `Sales Orders` AS T1 INNER JOIN `Sales Team` AS T2 ON T2.SalesTeamID = T1._SalesTeamID WHERE T1.OrderDate LIKE '%/%/19' GROUP BY T2.`Sales Team` ORDER BY COUNT(T1.OrderNumber) ASC LIMIT 1
+SELECT DISTINCT T FROM ( SELECT IIF(OrderNumber = 'SO - 000103', `Unit Cost`, NULL) AS T FROM `Sales Orders` ) WHERE T IS NOT NULL
+SELECT T2.Latitude, T2.Longitude FROM `Sales Orders` AS T1 INNER JOIN `Store Locations` AS T2 ON T2.StoreID = T1._StoreID WHERE T1.OrderNumber = 'SO - 000115'
+SELECT T2.`Product Name` FROM `Sales Orders` AS T1 INNER JOIN Products AS T2 ON T2.ProductID = T1._ProductID WHERE T1.OrderDate LIKE '%/%/18' GROUP BY T1._ProductID ORDER BY COUNT(T1._ProductID) DESC LIMIT 1
+SELECT SUM(CASE WHEN T2.`Sales Team` = 'Adam Hernandez' THEN 1 ELSE 0 END) FROM `Sales Orders` AS T1 INNER JOIN `Sales Team` AS T2 ON T2.SalesTeamID = T1._SalesTeamID
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN T2.`City Name` = 'Daly City' THEN T1.OrderNumber END AS T FROM `Sales Orders` T1 INNER JOIN `Store Locations` T2 ON T2.StoreID = T1._StoreID ) WHERE T IS NOT NULL
+SELECT COUNT(T2.OrderNumber) FROM Products AS T1 INNER JOIN `Sales Orders` AS T2 ON T2._ProductID = T1.ProductID WHERE T1.`Product Name` = 'Baseball' AND T2.OrderDate LIKE '12/%/18'
+SELECT CAST(SUM(T2.`Order Quantity`) AS REAL) / 12 FROM Products AS T1 INNER JOIN `Sales Orders` AS T2 ON T2._ProductID = T1.ProductID WHERE T1.`Product Name` = 'Ornaments' AND T2.OrderDate LIKE '%/%/18'
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN T3.`Time Zone` = 'Pacific/Honolulu' AND T2.`Sales Channel` = 'Wholesale' THEN T1.`Product Name` ELSE NULL END AS T FROM Products T1 INNER JOIN `Sales Orders` T2 ON T2._ProductID = T1.ProductID INNER JOIN `Store Locations` T3 ON T3.StoreID = T2._StoreID ) WHERE T IS NOT NULL
+SELECT SUM(CASE WHEN `Order Quantity` = 1 AND `Sales Channel` = 'Distributor' THEN 1 ELSE 0 END) FROM `Sales Orders`
+SELECT DISTINCT T FROM ( SELECT CASE  WHEN `Discount Applied` = '0.1' AND `Sales Channel` = 'In-Store' THEN _SalesTeamID ELSE NULL END AS T FROM `Sales Orders` ) WHERE T IS NOT NULL
+SELECT SUM(CASE WHEN Population < 3000000 AND Type = 'Borough' AND `City Name` = 'Brooklyn' THEN 1 ELSE 0 END) FROM `Store Locations`
+SELECT DISTINCT T FROM ( SELECT CASE  WHEN OrderDate > '1/1/18' THEN OrderNumber ELSE NULL END AS T FROM `Sales Orders` ) WHERE T IS NOT NULL
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN T3.`Product Name` = 'Cocktail Glasses' AND T2.`Sales Channel` = 'Online' THEN T1.`Customer Names` END AS T FROM Customers T1 INNER JOIN `Sales Orders` T2 ON T2._CustomerID = T1.CustomerID INNER JOIN Products T3 ON T3.ProductID = T2._ProductID ) WHERE T IS NOT NULL
+SELECT CASE WHEN MAX(Population) THEN StoreID END FROM `Store Locations`
+SELECT SUM(IIF(ShipDate LIKE '6/%/18' AND `Sales Channel` = 'Online', 1, 0)) FROM `Sales Orders`
+SELECT COUNT(T1.OrderNumber), T2.`Sales Team` FROM `Sales Orders` AS T1 INNER JOIN `Sales Team` AS T2 ON T2.SalesTeamID = T1._SalesTeamID WHERE T1.OrderDate LIKE '%/%/19' AND T1.ShipDate LIKE '%/%/19' GROUP BY T2.`Sales Team` ORDER BY COUNT(T1.OrderNumber) DESC LIMIT 1
+SELECT T2.`Product Name` FROM `Sales Orders` AS T1 INNER JOIN Products AS T2 ON T2.ProductID = T1._ProductID WHERE T1.`Order Quantity` > 5 AND ShipDate LIKE '5/%/19' ORDER BY REPLACE(T1.`Unit Price`, ',', '') - REPLACE(T1.`Unit Cost`, ',', '') ASC LIMIT 1
+SELECT `Sales Channel` FROM `Sales Orders` WHERE OrderDate LIKE '1/%/20' GROUP BY `Sales Channel` ORDER BY COUNT(`Sales Channel`) DESC LIMIT 1
+SELECT T1.`Customer Names` FROM Customers AS T1 INNER JOIN `Sales Orders` AS T2 ON T2._CustomerID = T1.CustomerID INNER JOIN `Store Locations` AS T3 ON T3.StoreID = T2._StoreID WHERE T3.`City Name` = 'Gilbert' AND T2.ProcuredDate LIKE '%/%/19' ORDER BY REPLACE(T2.`Unit Price`, ',', '') - REPLACE(T2.`Unit Cost`, ',', '') DESC LIMIT 1
+SELECT AVG(`Median Income`) FROM `Store Locations` WHERE Type = 'City'
+SELECT DISTINCT T2.StoreID, T2.`City Name`, T1.State, T2.Type FROM Regions AS T1 INNER JOIN `Store Locations` AS T2 ON T2.StateCode = T1.StateCode WHERE T2.Type = 'Borough' OR T2.Type = 'CDP'
+SELECT CAST(SUM(CASE WHEN T2.`Sales Team` = 'Carlos Miller' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.OrderNumber) FROM `Sales Orders` AS T1 INNER JOIN `Sales Team` AS T2 ON T2.SalesTeamID = T1._SalesTeamID
+SELECT SUM(IIF(OrderDate = '5/31/18', 1, 0)) FROM `Sales Orders`
+SELECT T FROM ( SELECT DISTINCT IIF(T1.`Unit Cost` = 781.22, T2.`Product Name`, NULL) AS T FROM `Sales Orders` T1 INNER JOIN Products T2 ON T2.ProductID = T1._ProductID ) WHERE T IS NOT NULL
+SELECT CAST(SUM(CASE WHEN T2.County = 'Orange County' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.OrderNumber) FROM `Sales Orders` AS T1 INNER JOIN `Store Locations` AS T2 ON T2.StoreID = T1._StoreID WHERE T1.OrderDate LIKE '%/%/18'
+SELECT _SalesTeamID FROM `Sales Orders` WHERE OrderDate LIKE '%/%/18' GROUP BY _SalesTeamID ORDER BY COUNT(_SalesTeamID) DESC LIMIT 1
+SELECT DISTINCT IIF(COUNT(T2.CustomerID) > 3, T2.`Customer Names`, NULL) FROM `Sales Orders` AS T1 INNER JOIN Customers AS T2 ON T2.CustomerID = T1._CustomerID WHERE T1.OrderDate LIKE '%/%/18' GROUP BY T1._CustomerID HAVING COUNT(T2.CustomerID)
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN T2.DeliveryDate LIKE '%/%/21' AND T1.`Customer Names` = 'Sundial ' THEN T3.`Product Name` END AS T FROM Customers T1 INNER JOIN `Sales Orders` T2 ON T2._CustomerID = T1.CustomerID INNER JOIN Products T3 ON T3.ProductID = T2._ProductID ) WHERE T IS NOT NULL
+"SELECT DISTINCT OrderNumber, `Product Name` FROM ( SELECT IIF(T2.OrderDate = '6/6/18', T2.OrderNumber, NULL) AS ""OrderNumber"" , IIF(T2.OrderDate = '6/6/18', T1.`Product Name`, NULL) AS ""Product Name"" FROM Products T1 INNER JOIN `Sales Orders` T2 ON T2._ProductID = T1.ProductID ) WHERE OrderNumber IS NOT NULL AND `Product Name` IS NOT NULL"
+SELECT COUNT(T1.OrderNumber) / 3 FROM `Sales Orders` AS T1 INNER JOIN Customers AS T2 ON T2.CustomerID = T1._CustomerID WHERE (T1.OrderDate LIKE '%/%/18' AND T2.`Customer Names` = 'Weimei Corp') OR (T1.OrderDate LIKE '%/%/19' AND T2.`Customer Names` = 'Weimei Corp') OR (T1.OrderDate LIKE '%/%/20' AND T2.`Customer Names` = 'Weimei Corp')
+SELECT SUM(CASE WHEN T1.ProcuredDate = '10/27/18' AND T2.`City Name` = 'Orlando' THEN 1 ELSE 0 END) FROM `Sales Orders` AS T1 INNER JOIN `Store Locations` AS T2 ON T2.StoreID = T1._StoreID
+SELECT T2.`City Name` FROM `Sales Orders` AS T1 INNER JOIN `Store Locations` AS T2 ON T2.StoreID = T1._StoreID WHERE REPLACE(T1.`Unit Price`, ',', '') = ( SELECT REPLACE(T1.`Unit Price`, ',', '') FROM `Sales Orders` AS T1 INNER JOIN `Store Locations` AS T2 ON T2.StoreID = T1._StoreID ORDER BY REPLACE(T1.`Unit Price`, ',', '') DESC LIMIT 1 ) ORDER BY REPLACE(T1.`Unit Price`, ',', '') DESC LIMIT 1
+SELECT CAST(SUM(CASE WHEN T2.State = 'New York' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.OrderNumber) FROM `Sales Orders` AS T1 INNER JOIN `Store Locations` AS T2 ON T2.StoreID = T1._StoreID WHERE T1.OrderDate = '4/4/20'
+SELECT T FROM ( SELECT DISTINCT CASE  WHEN T2.State = 'California' AND T1.`Sales Channel` = 'In-Store' AND T1.`Discount Applied` = 0.2 THEN T2.StoreID END AS T FROM `Sales Orders` T1 INNER JOIN `Store Locations` T2 ON T2.StoreID = T1._StoreID ) WHERE T IS NOT NULL
+SELECT SUM(CASE WHEN T1.`Product Name` = 'Candles' THEN T2.`Order Quantity` ELSE 0 END), CAST(SUM(CASE WHEN T1.`Product Name` = 'Candles' THEN T2.`Order Quantity` ELSE 0 END) AS REAL) * 100 / SUM(T2.`Order Quantity`) FROM Products AS T1 INNER JOIN `Sales Orders` AS T2 ON T2._ProductID = T1.ProductID INNER JOIN `Store Locations` AS T3 ON T3.StoreID = T2._StoreID
+SELECT CASE WHEN MAX(`Water Area`) THEN Type END FROM `Store Locations`
+SELECT COUNT(T1.OrderNumber), T2.`Sales Team` FROM `Sales Orders` AS T1 INNER JOIN `Sales Team` AS T2 ON T2.SalesTeamID = T1._SalesTeamID WHERE T1.ShipDate LIKE '%/%/20' GROUP BY T2.`Sales Team` ORDER BY COUNT(T1.OrderNumber) DESC LIMIT 1
+SELECT T FROM ( SELECT DISTINCT IIF(T2.`Product Name` = 'Cookware', T1.DeliveryDate, NULL) AS T FROM `Sales Orders` T1 INNER JOIN Products T2 ON T2.ProductID = T1._ProductID ) WHERE T IS NOT NULL
+SELECT SUM(CASE WHEN T2.County = 'Maricopa County' AND OrderDate LIKE '%/%/20' THEN 1 ELSE 0 END) FROM `Sales Orders` AS T1 INNER JOIN `Store Locations` AS T2 ON T2.StoreID = T1._StoreID
+SELECT DISTINCT `City Name`, Latitude, Longitude FROM `Store Locations` WHERE County = 'Maricopa County'
+SELECT DISTINCT `Customer Names`, CustomerID FROM ( SELECT T2.`Customer Names`, T2.CustomerID , SUM(REPLACE(T1.`Unit Price`, ',', '') - REPLACE(T1.`Unit Cost`, ',', '')) AS T FROM `Sales Orders` T1 INNER JOIN Customers T2 ON T2.CustomerID = T1._CustomerID WHERE T1.`Sales Channel` = 'Online' GROUP BY T2.CustomerID ) WHERE T > 5000
+SELECT SUM(REPLACE(T1.`Unit Price`, ',', '') - REPLACE(T1.`Unit Cost`, ',', '')) FROM `Sales Orders` AS T1 INNER JOIN Products AS T2 ON T2.ProductID = T1._ProductID WHERE T1.DeliveryDate LIKE '%/%/21' AND T2.`Product Name` = 'Floral'
+SELECT T1.`Product Name` FROM Products AS T1 INNER JOIN `Sales Orders` AS T2 ON T2._ProductID = T1.ProductID INNER JOIN `Store Locations` AS T3 ON T3.StoreID = T2._StoreID WHERE T3.`City Name` = 'Santa Clarita' GROUP BY T1.`Product Name` ORDER BY COUNT(T1.`Product Name`) ASC LIMIT 1
+SELECT AVG(T2.`Household Income`) FROM Regions AS T1 INNER JOIN `Store Locations` AS T2 ON T2.StateCode = T1.StateCode WHERE T2.State = 'New Hampshire' AND T2.Type = 'City'
+SELECT SUM(CASE WHEN Region = 'Midwest' THEN 1 ELSE 0 END) FROM `Sales Team`
+SELECT AVG(`Household Income`) FROM `Store Locations` WHERE `City Name` = 'Glendale'

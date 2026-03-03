@@ -1,0 +1,107 @@
+soft_templates
+SELECT sum(enr) FROM variable
+SELECT sum(enr) FROM variable
+SELECT avg(enr) FROM variable
+SELECT avg(enr) FROM variable
+SELECT count(*) FROM variable
+SELECT count(*) FROM variable
+SELECT count(*) FROM variable WHERE HS > num
+SELECT count(*) FROM variable WHERE HS > num
+SELECT count(*) FROM variable WHERE enr > num
+SELECT count(*) FROM variable WHERE enr > num
+SELECT avg(HS) FROM variable
+SELECT avg(HS) FROM variable
+SELECT pName , HS FROM variable WHERE HS < num
+SELECT pName , HS FROM variable WHERE HS < num
+SELECT count(DISTINCT cName) FROM variable
+SELECT count(DISTINCT cName) FROM variable
+SELECT count(DISTINCT pPos) FROM variable
+SELECT count(DISTINCT pPos) FROM variable
+SELECT count(*) FROM variable WHERE variable = string
+SELECT count(*) FROM variable WHERE variable = string
+SELECT count(*) FROM variable WHERE pPos = string
+SELECT count(*) FROM variable WHERE pPos = string
+SELECT avg(HS) , max(HS) , min(HS) FROM variable
+SELECT avg(HS) , max(HS) , min(HS) FROM variable
+SELECT avg(enr) FROM variable WHERE variable = string
+SELECT avg(enr) FROM variable WHERE variable = string
+SELECT pName FROM variable WHERE HS BETWEEN num AND num
+SELECT pName FROM variable WHERE HS BETWEEN num AND num
+SELECT DISTINCT pName FROM variable WHERE pName LIKE string
+SELECT DISTINCT pName FROM variable WHERE pName LIKE string
+SELECT cName , enr FROM variable WHERE enr > num AND variable = string
+SELECT cName , enr FROM variable WHERE enr > num AND variable = string
+SELECT * FROM variable ORDER BY enr
+SELECT * FROM variable ORDER BY enr
+SELECT cName FROM variable WHERE enr > num ORDER BY cName
+SELECT cName FROM variable WHERE enr > num ORDER BY cName
+SELECT pName FROM variable WHERE yCard = string ORDER BY HS DESC
+SELECT pName FROM variable WHERE yCard = string ORDER BY HS DESC
+SELECT DISTINCT cName FROM variable ORDER BY cName
+SELECT DISTINCT cName FROM variable ORDER BY cName
+SELECT pPos FROM variable GROUP BY pPos ORDER BY count(*) DESC LIMIT num
+SELECT pPos FROM variable GROUP BY pPos ORDER BY count(*) DESC LIMIT num
+SELECT count(*) , cName FROM variable GROUP BY cName ORDER BY count(*) DESC
+SELECT count(*) , cName FROM variable GROUP BY cName ORDER BY count(*) DESC
+SELECT min(variable) , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable
+SELECT min(variable) , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable
+SELECT cName FROM variable ORDER BY enr DESC LIMIT num
+SELECT cName FROM variable ORDER BY enr DESC LIMIT num
+SELECT cName , variable , min(enr) FROM variable GROUP BY variable
+SELECT cName , variable , min(enr) FROM variable GROUP BY variable
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable ORDER BY variable
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable ORDER BY variable
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT avg(variable) , max(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT avg(variable) , max(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT avg(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT avg(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT max(variable) , pPos FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable > num GROUP BY variable
+SELECT max(variable) , pPos FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable > num GROUP BY variable
+SELECT variable FROM tryout AS variable JOIN variable AS variable ON variable = variable WHERE variable LIKE string
+SELECT variable FROM tryout AS variable JOIN variable AS variable ON variable = variable WHERE variable LIKE string
+SELECT cName FROM tryout WHERE variable = string AND pPos = string
+SELECT cName FROM tryout WHERE variable = string AND pPos = string
+SELECT variable FROM tryout AS variable JOIN variable AS variable ON variable = variable WHERE variable = (SELECT cName FROM variable ORDER BY enr DESC LIMIT num )
+SELECT variable FROM tryout AS variable JOIN variable AS variable ON variable = variable WHERE variable = (SELECT cName FROM variable ORDER BY enr DESC LIMIT num )
+SELECT DISTINCT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT DISTINCT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT cName FROM variable WHERE enr < num AND variable = string UNION SELECT cName FROM variable WHERE enr > num AND variable = string
+SELECT cName FROM variable WHERE enr < num AND variable = string UNION SELECT cName FROM variable WHERE enr > num AND variable = string
+SELECT cName FROM tryout WHERE pPos = string INTERSECT SELECT cName FROM tryout WHERE pPos = string
+SELECT cName FROM tryout WHERE pPos = string INTERSECT SELECT cName FROM tryout WHERE pPos = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string INTERSECT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string INTERSECT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT COUNT(*) FROM (SELECT cName FROM tryout WHERE pPos = string INTERSECT SELECT cName FROM tryout WHERE pPos = string )
+SELECT COUNT(*) FROM (SELECT cName FROM tryout WHERE pPos = string INTERSECT SELECT cName FROM tryout WHERE pPos = string )
+SELECT cName FROM tryout WHERE pPos = string EXCEPT SELECT cName FROM tryout WHERE pPos = string
+SELECT cName FROM tryout WHERE pPos = string EXCEPT SELECT cName FROM tryout WHERE pPos = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string EXCEPT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string EXCEPT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT COUNT(*) FROM (SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string EXCEPT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string )
+SELECT COUNT(*) FROM (SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string EXCEPT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string )
+SELECT DISTINCT variable FROM variable WHERE enr < (SELECT max(enr) FROM variable)
+SELECT DISTINCT variable FROM variable WHERE enr < (SELECT max(enr) FROM variable)
+SELECT DISTINCT cName FROM variable WHERE enr > (SELECT min(enr) FROM variable WHERE variable = string )
+SELECT DISTINCT cName FROM variable WHERE enr > (SELECT min(enr) FROM variable WHERE variable = string )
+SELECT cName FROM variable WHERE enr > (SELECT max(enr) FROM variable WHERE variable = string )
+SELECT cName FROM variable WHERE enr > (SELECT max(enr) FROM variable WHERE variable = string )
+SELECT sum(enr) FROM variable WHERE cName NOT IN (SELECT cName FROM variable WHERE pPos = string )
+SELECT sum(enr) FROM variable WHERE cName NOT IN (SELECT cName FROM variable WHERE pPos = string )
+SELECT count(DISTINCT variable ) FROM variable WHERE enr > (SELECT avg(enr) FROM variable)
+SELECT count(DISTINCT variable ) FROM variable WHERE enr > (SELECT avg(enr) FROM variable)
+SELECT count(DISTINCT variable ) FROM variable WHERE enr < (SELECT avg(enr) FROM variable)
+SELECT count(DISTINCT variable ) FROM variable WHERE enr < (SELECT avg(enr) FROM variable)

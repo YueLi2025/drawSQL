@@ -1,0 +1,61 @@
+sql_query
+SELECT count(*) FROM artist
+SELECT count(*) FROM artist
+SELECT Age FROM artist
+SELECT Age FROM artist
+SELECT avg(Age) FROM artist
+SELECT avg(Age) FROM artist
+SELECT Famous_Title FROM artist WHERE Artist  =  "Triumfall"
+SELECT Famous_Title FROM artist WHERE Artist  =  "Triumfall"
+SELECT distinct(Famous_Release_date) FROM artist
+SELECT distinct(Famous_Release_date) FROM artist
+SELECT Date_of_ceremony ,  RESULT FROM music_festival
+SELECT Date_of_ceremony ,  RESULT FROM music_festival
+SELECT Category FROM music_festival WHERE RESULT  =  "Awarded"
+SELECT Category FROM music_festival WHERE RESULT  =  "Awarded"
+SELECT max(Weeks_on_Top) ,  min(Weeks_on_Top) FROM volume
+SELECT max(Weeks_on_Top) ,  min(Weeks_on_Top) FROM volume
+SELECT Song FROM volume WHERE Weeks_on_Top  >  1
+SELECT Song FROM volume WHERE Weeks_on_Top  >  1
+SELECT Song FROM volume ORDER BY Song
+SELECT Song FROM volume ORDER BY Song
+SELECT COUNT(DISTINCT Artist_ID) FROM volume
+SELECT COUNT(DISTINCT Artist_ID) FROM volume
+SELECT T1.Date_of_ceremony FROM music_festival AS T1 JOIN volume AS T2 ON T1.Volume  =  T2.Volume_ID WHERE T2.Weeks_on_Top  >  2
+SELECT T1.Date_of_ceremony FROM music_festival AS T1 JOIN volume AS T2 ON T1.Volume  =  T2.Volume_ID WHERE T2.Weeks_on_Top  >  2
+SELECT T2.Song FROM music_festival AS T1 JOIN volume AS T2 ON T1.Volume  =  T2.Volume_ID WHERE T1.Result  =  "Nominated"
+SELECT T2.Song FROM music_festival AS T1 JOIN volume AS T2 ON T1.Volume  =  T2.Volume_ID WHERE T1.Result  =  "Nominated"
+SELECT T2.Issue_Date FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T1.Artist  =  "Gorgoroth"
+SELECT T2.Issue_Date FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T1.Artist  =  "Gorgoroth"
+SELECT T2.Song FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T1.age  >=  32
+SELECT T2.Song FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T1.age  >=  32
+SELECT avg(T2.Weeks_on_Top) FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T1.age  <=  25
+SELECT avg(T2.Weeks_on_Top) FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T1.age  <=  25
+SELECT T1.Famous_Title FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T2.Weeks_on_Top  >  2
+SELECT T1.Famous_Title FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T2.Weeks_on_Top  >  2
+SELECT Famous_Title ,  Age FROM artist ORDER BY Age DESC
+SELECT Famous_Title ,  Age FROM artist ORDER BY Age DESC
+SELECT Famous_Release_date FROM artist ORDER BY Age DESC LIMIT 1
+SELECT Famous_Release_date FROM artist ORDER BY Age DESC LIMIT 1
+SELECT Category ,  COUNT(*) FROM music_festival GROUP BY Category
+SELECT Category ,  COUNT(*) FROM music_festival GROUP BY Category
+SELECT RESULT FROM music_festival GROUP BY RESULT ORDER BY COUNT(*) DESC LIMIT 1
+SELECT RESULT FROM music_festival GROUP BY RESULT ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Category FROM music_festival GROUP BY Category HAVING COUNT(*)  >  1
+SELECT Category FROM music_festival GROUP BY Category HAVING COUNT(*)  >  1
+SELECT Song FROM volume ORDER BY Weeks_on_Top DESC LIMIT 1
+SELECT Song FROM volume ORDER BY Weeks_on_Top DESC LIMIT 1
+SELECT Famous_Title FROM artist WHERE Artist_ID NOT IN(SELECT Artist_ID FROM volume)
+SELECT Famous_Title FROM artist WHERE Artist_ID NOT IN(SELECT Artist_ID FROM volume)
+SELECT T1.Famous_Title FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T2.Weeks_on_Top  >  2 INTERSECT SELECT T1.Famous_Title FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T2.Weeks_on_Top  <  2
+SELECT T1.Famous_Title FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T2.Weeks_on_Top  >  2 INTERSECT SELECT T1.Famous_Title FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T2.Weeks_on_Top  <  2
+SELECT Date_of_ceremony FROM music_festival WHERE Category  =  "Best Song" AND RESULT  =  "Awarded"
+SELECT Date_of_ceremony FROM music_festival WHERE Category  =  "Best Song" AND RESULT  =  "Awarded"
+SELECT Issue_Date FROM volume ORDER BY Weeks_on_Top ASC LIMIT 1
+SELECT Issue_Date FROM volume ORDER BY Weeks_on_Top ASC LIMIT 1
+SELECT COUNT(DISTINCT Artist_ID) FROM volume
+SELECT COUNT(DISTINCT Artist_ID) FROM volume
+SELECT RESULT ,  COUNT(*) FROM music_festival GROUP BY RESULT ORDER BY COUNT(*) DESC
+SELECT RESULT ,  COUNT(*) FROM music_festival GROUP BY RESULT ORDER BY COUNT(*) DESC
+SELECT Issue_Date FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T1.age  <=  23
+SELECT Issue_Date FROM artist AS T1 JOIN volume AS T2 ON T1.Artist_ID  =  T2.Artist_ID WHERE T1.age  <=  23

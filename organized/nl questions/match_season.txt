@@ -1,0 +1,59 @@
+nl_question
+How many countries are there in total?
+Count the number of countries.
+Show the country name and capital of all countries.
+What are the names and capitals of each country?
+Show all official native languages that contain the word "English".
+What are the official native languages that contain the string "English".
+Show all distinct positions of matches.
+What are the different positions for match season?
+Show the players from college UCLA.
+Who are the players from UCLA?
+Show the distinct position of players from college UCLA or Duke.
+What are the different positions of players from UCLA or Duke colleges?
+Show the draft pick numbers and draft classes of players whose positions are defenders.
+What are the draft pick numbers and draft classes for players who play the Defender position?
+How many distinct teams are involved in match seasons?
+Count the number of different teams involved in match season.
+Show the players and the years played.
+Who are the different players and how many years has each played?
+Show all team names.
+What are the names of all teams?
+Show the season, the player, and the name of the country that player belongs to.
+For each player, what are their name, season, and country that they belong to?
+Which players are from Indonesia?
+Who are the players from Indonesia?
+What are the distinct positions of the players from a country whose capital is Dublin?
+Give the different positions of players who play for the country with the capital Dublin.
+What are the official languages of the countries of players from Maryland or Duke college?
+Return the official native languages of countries who have players from Maryland or Duke colleges.
+How many distinct official languages are there among countries of players whose positions are defenders.
+Count the number of different official languages corresponding to countries that players who play Defender are from.
+Show the season, the player, and the name of the team that players belong to.
+Who are the different players, what season do they play in, and what is the name of the team they are on?
+Show the positions of the players from the team with name "Ryley Goldner".
+Return the positions of players on the team Ryley Goldner.
+How many distinct colleges are associated with players from the team with name "Columbus Crew".
+Count the number of different colleges that players who play for Columbus Crew are from.
+Show the players and years played for players from team "Columbus Crew".
+What are the players who played for Columbus Crew, and how many years did each play for?
+Show the position of players and the corresponding number of players.
+How many players played each position?
+Show the country names and the corresponding number of players.
+How many players are from each country?
+Return all players sorted by college in ascending alphabetical order.
+What are all the players who played in match season, sorted by college in ascending alphabetical order?
+Show the most common position of players in match seasons.
+What is the position that is most common among players in match seasons?
+Show the top 3 most common colleges of players in match seasons.
+What are the three colleges from which the most players are from?
+Show the name of colleges that have at least two players.
+What are the names of all colleges that have two or more players?
+Show the name of colleges that have at least two players in descending alphabetical order.
+What are the names of colleges that have two or more players, listed in descending alphabetical order?
+What are the names of teams that do no have match season record?
+Return the names of teams that have no match season record.
+What are the names of countries that have both players with position forward and players with position defender?
+Return the names of countries that have players that play the Forward position, as well as players who play the Defender position.
+Which college have both players with position midfielder and players with position defender?
+Return the colleges that have players who play the Midfielder position, as well as players who play the Defender position.

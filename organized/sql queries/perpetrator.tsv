@@ -1,0 +1,22 @@
+sql_query
+SELECT count(*) FROM perpetrator
+SELECT Date FROM perpetrator ORDER BY Killed DESC
+SELECT Injured FROM perpetrator ORDER BY Injured ASC
+SELECT avg(Injured) FROM perpetrator
+SELECT LOCATION FROM perpetrator ORDER BY Killed DESC LIMIT 1
+SELECT Name FROM People ORDER BY Height ASC
+SELECT T1.Name FROM people AS T1 JOIN perpetrator AS T2 ON T1.People_ID  =  T2.People_ID
+SELECT T1.Name FROM people AS T1 JOIN perpetrator AS T2 ON T1.People_ID  =  T2.People_ID WHERE T2.Country != "China"
+SELECT T1.Name FROM people AS T1 JOIN perpetrator AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Weight DESC LIMIT 1
+SELECT sum(T2.Killed) FROM people AS T1 JOIN perpetrator AS T2 ON T1.People_ID  =  T2.People_ID WHERE T1.Height  >  1.84
+SELECT T1.Name FROM people AS T1 JOIN perpetrator AS T2 ON T1.People_ID  =  T2.People_ID WHERE T2.Country  =  "China" OR T2.Country  =  "Japan"
+SELECT T1.Height FROM people AS T1 JOIN perpetrator AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Injured DESC
+SELECT Country ,  COUNT(*) FROM perpetrator GROUP BY Country
+SELECT Country ,  COUNT(*) FROM perpetrator GROUP BY Country ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Country ,  COUNT(*) FROM perpetrator GROUP BY Country HAVING COUNT(*)  >=  2
+SELECT T1.Name FROM people AS T1 JOIN perpetrator AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Year DESC
+SELECT Name FROM people WHERE People_ID NOT IN (SELECT People_ID FROM perpetrator)
+SELECT Country FROM perpetrator WHERE Injured  >  50 INTERSECT SELECT Country FROM perpetrator WHERE Injured  <  20
+SELECT count(DISTINCT LOCATION) FROM perpetrator
+SELECT T2.Date FROM people AS T1 JOIN perpetrator AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Height DESC LIMIT 1
+SELECT max(YEAR) FROM perpetrator;

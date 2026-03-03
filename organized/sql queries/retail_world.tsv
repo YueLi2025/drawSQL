@@ -1,0 +1,39 @@
+sql_query
+SELECT T1.ProductName FROM Products AS T1 INNER JOIN Suppliers AS T2 ON T1.SupplierID = T2.SupplierID WHERE T2.Country = 'Japan'
+SELECT FirstName, LastName FROM Employees WHERE BirthDate = ( SELECT MAX(BirthDate) FROM Employees )
+SELECT COUNT(T2.OrderID) FROM Employees AS T1 INNER JOIN Orders AS T2 ON T1.EmployeeID = T2.EmployeeID WHERE T1.FirstName = 'Michael' AND T1.LastName = 'Suyama'
+SELECT COUNT(T1.ProductID) FROM Products AS T1 INNER JOIN Categories AS T2 ON T1.CategoryID = T2.CategoryID WHERE T2.CategoryName = 'Dairy Products'
+SELECT T2.CategoryName FROM Products AS T1 INNER JOIN Categories AS T2 ON T1.CategoryID = T2.CategoryID WHERE T1.ProductName = 'Tofu'
+SELECT T2.ContactName FROM Products AS T1 INNER JOIN Suppliers AS T2 ON T1.SupplierID = T2.SupplierID WHERE T1.ProductName = 'Gudbrandsdalsost'
+SELECT T2.Country FROM Products AS T1 INNER JOIN Suppliers AS T2 ON T1.SupplierID = T2.SupplierID WHERE T1.ProductName = 'Scottish Longbreads'
+SELECT COUNT(CustomerID) FROM Customers GROUP BY Country ORDER BY COUNT(CustomerID) DESC LIMIT 1
+SELECT T1.FirstName, T1.LastName FROM Employees AS T1 INNER JOIN Orders AS T2 ON T1.EmployeeID = T2.EmployeeID GROUP BY T1.FirstName, T1.LastName ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T2.ContactName FROM Products AS T1 INNER JOIN Suppliers AS T2 ON T1.SupplierID = T2.SupplierID WHERE T1.ProductName = 'Pavlova'
+SELECT T2.ProductName FROM Categories AS T1 INNER JOIN Products AS T2 ON T1.CategoryID = T2.CategoryID WHERE T1.CategoryName = 'Beverages'
+SELECT T2.ContactName FROM Products AS T1 INNER JOIN Suppliers AS T2 ON T1.SupplierID = T2.SupplierID WHERE T1.ProductName = 'Camembert Pierrot'
+SELECT T2.ContactName FROM Products AS T1 INNER JOIN Suppliers AS T2 ON T1.SupplierID = T2.SupplierID WHERE T1.ProductName = 'Teatime Chocolate Biscuits'
+SELECT COUNT(T1.CustomerID) FROM Customers AS T1 INNER JOIN Orders AS T2 ON T1.CustomerID = T2.CustomerID WHERE STRFTIME('%Y', T2.OrderDate) = '1996' AND T1.Country = 'UK'
+SELECT Country FROM Suppliers GROUP BY Country ORDER BY COUNT(SupplierID) DESC LIMIT 1
+SELECT COUNT(OrderID) FROM Orders WHERE OrderDate LIKE '1996-08%' GROUP BY CustomerID ORDER BY COUNT(OrderID) DESC LIMIT 1
+SELECT CategoryID, Description FROM Categories WHERE CategoryName = 'Condiments'
+SELECT T1.ProductName FROM Products AS T1 INNER JOIN Suppliers AS T2 ON T1.SupplierID = T2.SupplierID WHERE T2.Country = 'Spain'
+SELECT T1.FirstName, T1.LastName FROM Employees AS T1 INNER JOIN Orders AS T2 ON T1.EmployeeID = T2.EmployeeID WHERE T2.OrderID = 10274
+SELECT T1.ProductName FROM Products AS T1 INNER JOIN Categories AS T2 ON T1.CategoryID = T2.CategoryID WHERE T2.CategoryName = 'Confections'
+SELECT T1.ProductName FROM Products AS T1 INNER JOIN Suppliers AS T2 ON T1.SupplierID = T2.SupplierID WHERE T2.Country = 'Finland'
+SELECT T2.CategoryName, T2.Description FROM Products AS T1 INNER JOIN Categories AS T2 ON T1.CategoryID = T2.CategoryID WHERE T1.ProductName = 'Mozzarella di Giovanni'
+SELECT T1.FirstName, T1.LastName FROM Employees AS T1 INNER JOIN Orders AS T2 ON T1.EmployeeID = T2.EmployeeID WHERE T2.OrderID = 10250
+SELECT T1.FirstName, T1.LastName FROM Employees AS T1 INNER JOIN Orders AS T2 ON T1.EmployeeID = T2.EmployeeID WHERE T2.OrderID = 10280
+SELECT COUNT(SupplierID) FROM Suppliers WHERE Country = 'USA'
+SELECT T2.CustomerID FROM Employees AS T1 INNER JOIN Orders AS T2 ON T1.EmployeeID = T2.EmployeeID WHERE T1.FirstName = 'Michael' AND T1.LastName = 'Suyama'
+SELECT COUNT(T2.EmployeeID) FROM Employees AS T1 INNER JOIN Orders AS T2 ON T1.EmployeeID = T2.EmployeeID WHERE T1.FirstName = 'Margaret' AND T1.LastName = 'Peacock'
+SELECT COUNT(T2.OrderID) FROM Customers AS T1 INNER JOIN Orders AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.Country = 'Ireland'
+SELECT COUNT(SupplierID) FROM Suppliers WHERE Country = 'USA'
+SELECT ProductName FROM Products WHERE ProductID = 77
+SELECT COUNT(T2.OrderID) FROM Employees AS T1 INNER JOIN Orders AS T2 ON T1.EmployeeID = T2.EmployeeID WHERE T1.FirstName = 'Michael' AND T1.LastName = 'Suyama'
+SELECT COUNT(CustomerID) FROM Customers WHERE City = 'London'
+SELECT COUNT(City) FROM Customers WHERE Country = 'Germany' AND City = 'Berlin'
+SELECT COUNT(T2.CustomerID) FROM Customers AS T1 INNER JOIN Orders AS T2 ON T1.CustomerID = T2.CustomerID WHERE STRFTIME('%Y', T2.OrderDate) = '1996' GROUP BY T1.Country
+SELECT CategoryName FROM Categories WHERE Description = 'Soft drinks, coffees, teas, beers, and ales'
+SELECT COUNT(SupplierID) FROM Suppliers WHERE Country = 'UK'
+SELECT COUNT(T1.SupplierID) FROM Products AS T1 INNER JOIN Suppliers AS T2 ON T1.SupplierID = T2.SupplierID WHERE T2.Country = 'Japan'
+SELECT COUNT(ShipperID) FROM Shippers

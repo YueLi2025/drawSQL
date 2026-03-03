@@ -1,0 +1,57 @@
+nl_question
+Of the first 60,000 customers' responses to the incentive mailing sent by the marketing department, how many of them are considered a true response?
+Of the first 60,000 customers who sent a true response to the incentive mailing sent by the marketing department, how many of them are from a place with more than 30,000 inhabitants?
+Of the first 60,000 customers who sent a true response to the incentive mailing sent by the marketing department, how many of them are divorced males?
+Among the customers who come from the place with 25746 inhabitants, how many of them are male?
+What is the average age of first 60,000 customers who sent a true response to the incentive mailing sent by the marketing department?
+List down the geographic identifier with an income that ranges from 2100 to 2500.
+In geographic identifier from 20 to 50, how many of them has a number of inhabitants below 20?
+Give the level of education and occupation of customers ages from 20 to 35 with an income K of 2000 and below.
+What is the occupation of customers within number of inhabitants ranges of 30 to 40?
+In female customers ages from 50 to 60, how many of them has an number of inhabitants ranges from 19 to 24?
+In customers with marital status of never married, what is the percentage of customers with income of 2500 and above?
+Of customers who provide other services, how many are from places where inhabitants are more than 20000?
+List down the geographic identifier with an number of inhabitants less than 30.
+In geographic identifier from 10 to 30, how many of them has an income below 2000?
+What is the response and number of inhabitants of the oldest female customer?
+List the level of education and income of customers ages from 30 to 55 with a true response.
+In male customers ages from 30 to 50, how many of them has an income ranges from 2000 to 2300?
+List the educationnum and response of customers within the age of 20 to 30 that has the highest number of inhabitants among the group.
+What is the age of female customers within the number of inhabitants below 30?
+What is the occupation and response of female customers within the number of inhabitants range of 20 to 25?
+In male customers with an occupation handlers or cleaners, what is the percentage of customers with a true response?
+List the income and number of inhabitants of customers with a reference ID greater than the 50% of average of number of false response?
+Point out the greater one between the number of actual responding and not responding to mailing.
+Find out the yearly income of geographic ID when the customer is female and occupation as sales.
+Among the geographic ID which has 33.658K of inhabitants, describe the education, occupation and age of female widow.
+Find the response status to customer whose geographic ID of 134.
+Describe the average income per month and yearly income of the geographic ID in which customer of ID "209556" and "290135".
+Among the reference ID of under 10 who got response by marketing department, compare their education status.
+Among all the customers, how many of them are teenagers?
+Please list the occupations of the customers with an education level of 11.
+Of the first 60,000 customers who sent a true response to the incentive mailing sent by the marketing department, how many of them are female?
+Please list the occupations of the customers over 40 and have sent a true response to the incentive mailing sent by the marketing department.
+Among the customers from a place with more than 20,000 and less than 30,000 inhabitants, how many of them are Machine-op-inspcts?
+Which customer come from a place with more inhabitants, customer no.0 or customer no.1?
+How many of the customers are male?
+List down the customer's geographic identifier who are handlers or cleaners.
+What is the total number of customers with an age below 30?
+What is the geographic identifier and income of the oldest customer?
+List the marital status of customers within the age of 40 to 60 that has the highest income among the group.
+What is the number of inhabitants of male customers ages from 20 to 30 years old who are farming or fishing?
+Find and list the id and geographic ID of the elderly customers with an education level below 3.
+Calculate the number of customers who did not respond in February of 2007.
+What is the total number of widowed customers with an age below 50?
+List the marital status and response of female customers with an level of education of 8 and above.
+Among the divorced male customers, give the income and response of those who has an level of education of 6 and above.
+What is the ratio of male and female among the age of teenager when the education is above 10?
+How many customers have never married?
+How many female customers have an education level of over 11?
+List the occupation and income of male customers with an level of education of 4 to 6.
+Among the male customer in their twenties, how many are from places where the average income is more than 3000?
+How many of the customer's reference ID that has a TRUE response?
+Among the female customers with an level of education of 3 and below, list their income.
+Among the male customers with an level of education of 4 and below, list their income K.
+Among the customers with an average income per inhabitant above 3000, what percentage are in their eighties?
+List down the customer's reference ID with true response.
+What is the geographic ID and total income per year when the average income is above 3300 dollar.

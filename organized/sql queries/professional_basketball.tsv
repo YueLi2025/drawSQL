@@ -1,0 +1,114 @@
+sql_query
+SELECT T1.name, T1.won FROM teams AS T1 INNER JOIN ( SELECT * FROM teams WHERE year = 2004 ) AS T2 on T1.tmID = T2.tmID WHERE T1.year = 2005 and T1.won > T2.won
+SELECT T2.name, T1.year, T2.o_pts FROM coaches AS T1 INNER JOIN teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.year BETWEEN 1990 AND 1995 AND T1.coachID = 'adelmri01'
+SELECT DISTINCT T2.coachID FROM coaches AS T1 INNER JOIN awards_coaches AS T2 ON T1.coachID = T2.coachID INNER JOIN teams AS T3 ON T3.tmID = T1.tmID WHERE T2.award = 'NBA Coach of the Year' AND T2.year BETWEEN 1970 AND 1979 AND T1.year = 1981 AND T3.name = 'Chicago Bulls'
+SELECT T2.year FROM series_post AS T1 INNER JOIN teams AS T2 ON T1.tmIDWinner = T2.tmID WHERE T1.round = 'DSF' AND T1.tmIDLoser = 'HSM' ORDER BY T2.rank ASC LIMIT 1
+SELECT T1.birthDate FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T2.season_id = 1985 ORDER BY T2.assists DESC LIMIT 1
+SELECT DISTINCT T1.firstName, T1.middleName, T1.lastName FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T1.birthCity = 'Winter Haven' AND T2.season_id BETWEEN 1980 AND 1989 AND T2.minutes = 12
+SELECT COUNT(DISTINCT playerID) FROM player_allstar WHERE CAST(d_rebounds AS REAL) * 100 / rebounds > 75 AND season_id BETWEEN 1990 AND 2007
+SELECT T3.tmID FROM awards_coaches AS T1 INNER JOIN coaches AS T2 ON T1.coachID = T2.coachID INNER JOIN teams AS T3 ON T3.tmID = T2.tmID WHERE T1.year = 1994 AND T1.award = 'NBA Coach of the Year' GROUP BY T3.tmID ORDER BY SUM(T3.homeLost) DESC LIMIT 1
+SELECT DISTINCT T2.tmID FROM series_post AS T1 INNER JOIN teams AS T2 ON T1.tmIDWinner = T2.tmID WHERE T2.won > 60 AND T1.year = 1996 AND T1.round = 'CSF' AND T1.tmIDLoser = 'LAL'
+SELECT coachID FROM coaches ORDER BY post_wins DESC LIMIT 1
+SELECT COUNT(DISTINCT T1.playerID) FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T1.hsCity = 'Chicago' AND T2.conference = 'West'
+SELECT DISTINCT T1.college FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T2.conference = 'East'
+SELECT COUNT(DISTINCT T1.playerID) FROM players AS T1 INNER JOIN players_teams AS T2 ON T1.playerID = T2.playerID WHERE T1.birthCity = 'Spencer' AND T2.lgID = 'NBL'
+SELECT T1.birthDate FROM players AS T1 INNER JOIN awards_players AS T2 ON T1.playerID = T2.playerID WHERE T2.award = 'Most Valuable Player' GROUP BY T1.playerID, T1.birthDate ORDER BY COUNT(award) DESC LIMIT 1
+SELECT COUNT(DISTINCT T1.playerID) FROM players AS T1 INNER JOIN awards_players AS T2 ON T1.playerID = T2.playerID WHERE T2.award = 'Most Valuable Player' AND T1.birthCity = 'Houston'
+SELECT AVG(T1.weight) FROM players AS T1 INNER JOIN awards_players AS T2 ON T1.playerID = T2.playerID WHERE T2.award = 'Rookie of the Year'
+SELECT tmID FROM players_teams WHERE year = 2000 GROUP BY tmID ORDER BY SUM(PostPoints) DESC LIMIT 10
+SELECT name FROM teams WHERE CAST(won AS REAL) * 100 / (won + lost) < 50
+SELECT coachID FROM coaches WHERE lgID = 'NBA' GROUP BY coachID HAVING MAX(year) - MIN(year) > 10
+SELECT T1.firstName, T1.middleName, T1.lastName FROM players AS T1 INNER JOIN players_teams AS T2 ON T1.playerID = T2.playerID WHERE T2.tmID = 'AFS' ORDER BY T1.height DESC LIMIT 1
+SELECT T1.lastName FROM players AS T1 INNER JOIN players_teams AS T2 ON T1.playerID = T2.playerID WHERE T2.tmID = 'BLB'
+SELECT coachID FROM awards_coaches WHERE year BETWEEN 1970 AND 1990 GROUP BY coachID, award HAVING COUNT(award) = 2
+SELECT COUNT(DISTINCT coachID) FROM awards_coaches WHERE year BETWEEN 1962 AND 2011 AND award = 'ABA Coach of the Year' AND coachID IN ( SELECT coachID FROM awards_coaches WHERE year BETWEEN 1962 AND 2011 AND award = 'NBA Coach of the Year' )
+SELECT DISTINCT T1.lastName, T1.firstName FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T1.height > 75
+SELECT MIN(T1.weight) FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T1.college = 'UCLA'
+SELECT SUM(T2.points) FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T2.season_id BETWEEN 1960 AND 1970 AND T1.deathDate = '0000-00-00'
+SELECT COUNT(playerID) FROM awards_players WHERE year BETWEEN 1969 AND 2010 AND award = 'Rookie of the Year'
+SELECT MAX(T2.points) FROM teams AS T1 INNER JOIN players_teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.year BETWEEN 1950 AND 1970 AND T1.rank = 1
+SELECT DISTINCT T1.name FROM teams AS T1 INNER JOIN players_teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.rank = 3 AND T1.year BETWEEN 1937 AND 1940 ORDER BY T2.points DESC LIMIT 1
+SELECT COUNT(*) FROM ( SELECT T2.name, SUM(T1.points) FROM players_teams AS T1 INNER JOIN teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.year = 1937 GROUP BY T2.name HAVING SUM(points) >= 500 ) AS T3
+SELECT COUNT(DISTINCT T1.playerID) FROM players_teams AS T1 INNER JOIN teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE CAST(T2.won AS REAL) * 100 / CAST(T2.games AS REAL) > 75 AND T1.year = 1990
+SELECT MIN(CAST(weight AS REAL) / (height * height)) , MAX(CAST(weight AS REAL) / (height * height)) FROM players
+SELECT T1.firstName, T1.lastName FROM players AS T1 INNER JOIN players_teams AS T2 ON T1.playerID = T2.playerID INNER JOIN teams AS T3 ON T3.tmID = T2.tmID WHERE T3.name = 'Denver Nuggets' AND T2.year > 1980 ORDER BY T1.height DESC LIMIT 1
+SELECT T1.playerID FROM players AS T1 INNER JOIN awards_players AS T2 ON T1.playerID = T2.playerID WHERE deathDate IS NOT NULL GROUP BY T1.playerID ORDER BY COUNT(award) DESC LIMIT 1
+SELECT T3.name FROM players AS T1 INNER JOIN players_teams AS T2 ON T1.playerID = T2.playerID INNER JOIN teams AS T3 ON T3.tmID = T2.tmID WHERE T1.college = 'UCLA' GROUP BY T3.name ORDER BY COUNT(DISTINCT T1.playerID) DESC LIMIT 1
+SELECT AVG(CAST(T1.weight AS REAL) / (T1.height * T1.height)) FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID
+SELECT T1.name FROM teams AS T1 INNER JOIN ( SELECT * FROM teams WHERE lgID = 'ABA' AND year = 1972 ) AS T2 ON T1.tmID = T2.tmID WHERE T1.lgID = 'ABA' AND T1.year = 1973 ORDER BY (CAST(T1.won AS REAL) / (T1.won + T1.lost) - (CAST(T2.won AS REAL) / (T2.won + T2.lost))) DESC LIMIT 1
+SELECT T1.coachID FROM coaches AS T1 INNER JOIN awards_coaches AS T2 ON T1.coachID = T2.coachID WHERE T2.award = 'ABA Coach of the Year' GROUP BY T1.coachID, T1.won ORDER BY T1.won DESC LIMIT 1
+SELECT name FROM teams AS T1 INNER JOIN coaches AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year INNER JOIN awards_coaches AS T3 ON T2.coachID = T3.coachID AND T2.year = T3.year WHERE T3.year = 1992 AND award = 'NBA Coach of the Year'
+SELECT COUNT(DISTINCT T2.playerID) FROM awards_players AS T1 INNER JOIN players AS T2 ON T1.playerID = T2.playerID WHERE T1.award = 'Most Improved Player' AND T2.birthCountry = 'USA' AND T1.year BETWEEN 1985 AND 1990
+SELECT DISTINCT T1.firstName, T1.lastName FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T1.college = 'California'
+SELECT COUNT(DISTINCT playerID) FROM awards_players WHERE year BETWEEN 1969 AND 1975 AND award = 'Most Valuable Player'
+SELECT T1.birthState FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID GROUP BY T1.birthState ORDER BY COUNT(DISTINCT T1.playerID) DESC LIMIT 1
+SELECT coachID FROM coaches GROUP BY coachID HAVING COUNT(DISTINCT tmID) > 2
+SELECT coachID FROM coaches WHERE year = 1988 ORDER BY won - lost DESC LIMIT 1
+SELECT DISTINCT T1.tmID FROM coaches AS T1 INNER JOIN awards_coaches AS T2 ON T1.coachID = T2.coachID WHERE T2.year = 2010 AND T2.award = 'NBA Coach of the Year'
+SELECT T1.firstName, T1.middleName, T1.lastName , 2003 - strftime('%Y', T1.birthDate) FROM awards_players AS T2 JOIN players AS T1 ON T2.playerID = T1.playerID WHERE T2.award = 'Finals MVP' AND T2.year = 2003
+SELECT DISTINCT T1.name, T2.year FROM teams AS T1 JOIN series_post AS T2 ON T1.tmID = T2.tmIDWinner WHERE T2.round = 'F' AND T2.year BETWEEN 1950 AND 1960
+SELECT T1.firstName, T1.middleName, T1.lastName FROM players AS T1 INNER JOIN awards_players AS T2 ON T1.playerID = T2.playerID WHERE T2.award = 'Rookie of the Year' ORDER BY T1.birthDate DESC LIMIT 1
+SELECT T1.firstName, T1.middleName, T1.lastName FROM players AS T1 INNER JOIN draft AS T2 ON T1.playerID = T2.playerID WHERE T2.draftRound = 1 AND T1.birthCountry != 'USA' AND T2.draftYear = 1973
+SELECT DISTINCT coachID FROM coaches AS T1 INNER JOIN teams AS T2 ON T1.tmID = T2.tmID WHERE name = 'Oklahoma City Thunder'
+SELECT COUNT(playerID) FROM players_teams WHERE CAST(oRebounds AS REAL) * 100 / dRebounds <= 50 AND year = 1990
+SELECT COUNT(DISTINCT playerID) FROM player_allstar WHERE season_id BETWEEN 2000 AND 2005 AND steals <= 10
+SELECT T2.tmID FROM series_post AS T1 INNER JOIN teams AS T2 ON T1.tmIDWinner = T2.tmID WHERE T1.year = 1947 AND T1.round = 'QF' AND T2.d_pts = 3513
+SELECT CAST(SUM(lost) AS REAL) * 100 / SUM(games) FROM teams WHERE name = 'Houston Mavericks'
+SELECT COUNT(DISTINCT T2.year) FROM players AS T1 INNER JOIN players_teams AS T2 ON T1.playerID = T2.playerID WHERE T2.tmID = 'LAL' AND T2.year BETWEEN 1975 AND 1980 AND T1.playerID = 'abdulka01'
+SELECT DISTINCT T1.firstName, T1.middleName, T1.lastName FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T2.season_id = 1997 ORDER BY T2.steals DESC LIMIT 5
+SELECT T1.college FROM players AS T1 INNER JOIN awards_players AS T2 ON T1.playerID = T2.playerID WHERE T2.year = 1990 AND T2.award = 'Finals MVP'
+SELECT DISTINCT T2.coachID FROM coaches AS T1 INNER JOIN awards_coaches AS T2 ON T1.coachID = T2.coachID WHERE T1.tmID = 'STL' AND T1.lgID = 'NBA'
+SELECT COUNT(DISTINCT T2.coachID) FROM coaches AS T1 INNER JOIN awards_coaches AS T2 ON T1.coachID = T2.coachID WHERE T1.tmID = 'CHI' AND T2.award = 'NBA Coach of the Year'
+SELECT T1.firstName, T1.middleName, T1.lastName FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T1.college = 'Wake Forest' AND T2.o_rebounds > T2.d_rebounds
+SELECT T1.firstName, T1.lastName, T2.tmID FROM players AS T1 INNER JOIN players_teams AS T2 ON T1.playerID = T2.playerID WHERE T1.birthCity = 'Atlanta' ORDER BY T2.blocks DESC LIMIT 1
+SELECT DISTINCT T3.tmID FROM players_teams AS T1 INNER JOIN awards_players AS T2 ON T1.playerID = T2.playerID INNER JOIN teams AS T3 ON T1.tmID = T3.tmID AND T1.year = T3.year WHERE T2.year = 1997 AND T2.award = 'Finals MVP' LIMIT 1
+SELECT COUNT(T1.id) FROM awards_coaches AS T1 INNER JOIN teams AS T2 ON T1.year = T2.year WHERE T1.year BETWEEN 1971 AND 1975 AND T1.award = 'NBA Coach of the Year' AND T2.tmID = 'POR'
+SELECT T2.playerID FROM players_teams AS T1 INNER JOIN players AS T2 ON T1.playerID = T2.playerID WHERE T1.PostGP = 0 AND T1.year = 1988 ORDER BY T1.turnovers DESC LIMIT 1
+SELECT T2.homeWon FROM draft AS T1 INNER JOIN teams AS T2 ON T1.tmID = T2.tmID AND T1.draftYear = T2.year WHERE T1.draftRound = 1 AND T1.draftSelection = 12 AND T1.draftYear = 1998
+SELECT T1.weight, T1.height FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID ORDER BY T2.rebounds DESC LIMIT 1
+SELECT T2.highSchool FROM player_allstar AS T1 INNER JOIN players AS T2 ON T1.playerID = T2.playerID ORDER BY T1.rebounds DESC LIMIT 1
+SELECT SUM(T2.points) FROM players AS T1 INNER JOIN players_teams AS T2 ON T1.playerID = T2.playerID WHERE T1.pos = 'C-F-G' GROUP BY T2.playerID, T2.year ORDER BY T2.year DESC LIMIT 1
+SELECT T1.tmID FROM teams AS T1 INNER JOIN players_teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year INNER JOIN players AS T3 ON T2.playerID = T3.playerID WHERE T3.pos = 'F-G' AND T2.lgID = 'NBA' ORDER BY T3.birthDate DESC LIMIT 1
+SELECT T1.firstName, T1.middleName, T1.lastName FROM players AS T1 INNER JOIN players_teams AS T2 ON T1.playerID = T2.playerID WHERE T2.lgID = 'PBLA' AND T2.GP = 10 AND T1.college = 'Central Missouri State' GROUP BY T1.firstName, T1.middleName, T1.lastName ORDER BY COUNT(T2.id) DESC LIMIT 1
+SELECT T1.firstName, T1.middleName, T1.lastName FROM players AS T1 INNER JOIN players_teams AS T2 ON T1.playerID = T2.playerID WHERE T2.GP = 82 AND T2.year = 1995 ORDER BY T2.turnovers DESC LIMIT 1
+SELECT T1.name FROM teams AS T1 INNER JOIN players_teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T2.year = 1997 GROUP BY T1.name ORDER BY SUM(rebounds + dRebounds) DESC LIMIT 1
+SELECT coachID, tmID FROM coaches WHERE year BETWEEN 1970 AND 1980 ORDER BY stint DESC LIMIT 1
+SELECT T1.coachID, T2.name, T2.won FROM coaches AS T1 INNER JOIN teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.year = 2000 AND T2.won > 50
+SELECT DISTINCT T2.name, T1.year, T1.coachID FROM coaches AS T1 INNER JOIN teams AS T2 ON T1.tmID = T2.tmID WHERE CAST(T2.won AS REAL) * 100 / T2.games > 90
+SELECT T2.nameNick FROM player_allstar AS T1 INNER JOIN players AS T2 ON T1.playerID = T2.playerID WHERE T1.blocks = 2 AND T1.conference = 'West' AND T1.season_id = 2006
+SELECT year FROM coaches WHERE coachID = 'costela01' ORDER BY CAST(won AS REAL) / (won + lost) DESC LIMIT 1
+SELECT SUM(T2.minutes) FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T1.birthCity = 'Brooklyn' AND T1.nameNick LIKE '%Superman%'
+SELECT COUNT(DISTINCT T1.playerID) FROM players AS T1 INNER JOIN players_teams AS T2 ON T1.playerID = T2.playerID WHERE T2.lgID = 'ABA' AND (T1.pos = 'C' OR T1.pos = 'F-C')
+SELECT DISTINCT T1.firstName FROM players AS T1 INNER JOIN players_teams AS T2 ON T1.playerID = T2.playerID WHERE (T1.pos = 'F' OR T1.pos = 'F-C') AND T2.lgID = 'NBA'
+SELECT T1.height FROM players AS T1 INNER JOIN awards_players AS T2 ON T1.playerID = T2.playerID WHERE T2.award = 'Rookie of the Year' ORDER BY T1.height DESC LIMIT 1
+SELECT coachID FROM coaches GROUP BY tmID, coachID, won, lost HAVING CAST(won AS REAL) * 100 / (won + lost) > 80
+SELECT COUNT(DISTINCT T4.name) FROM ( SELECT T1.name, SUM(T2.points) FROM teams AS T1 INNER JOIN players_teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year INNER JOIN awards_players AS T3 ON T2.playerID = T3.playerID WHERE T3.award = 'Most Valuable Player' GROUP BY T1.name HAVING SUM(T2.points) >= 3800 ) AS T4
+SELECT firstName, lastName FROM players WHERE race = 'B' AND height > 0 ORDER BY height ASC LIMIT 3
+SELECT COUNT(DISTINCT playerID) FROM draft WHERE firstName = 'Joe' AND draftYear = 1970
+SELECT T1.firstName, T1.lastName FROM players AS T1 INNER JOIN players_teams AS T2 ON T1.playerID = T2.playerID WHERE year = 1973 ORDER BY CAST(T2.fgMade AS REAL) / T2.fgAttempted DESC LIMIT 1
+SELECT T1.name FROM teams AS T1 INNER JOIN draft AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.draftYear WHERE T2.firstName = 'Mike' AND T2.lastName = 'Lynn'
+SELECT COUNT(*) FROM ( SELECT tmID FROM players_teams AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T1.lgID = 'NBA' GROUP BY T1.tmID HAVING COUNT(DISTINCT T1.playerID) > 3 ) AS T3
+SELECT COUNT(DISTINCT T1.playerID) FROM players AS T1 INNER JOIN players_teams AS T2 ON T1.playerID = T2.playerID INNER JOIN teams AS T3 ON T3.tmID = T2.tmID WHERE T3.year = 1937 AND T3.rank = 6
+SELECT firstName, middleName, lastName FROM players WHERE birthCountry != 'USA'
+SELECT college FROM players WHERE playerID = ( SELECT playerID FROM awards_players WHERE year = 1970 GROUP BY playerID ORDER BY COUNT(award) DESC LIMIT 1 )
+SELECT COUNT(DISTINCT T1.playerID) FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T2.season_id = 1973 AND T1.race = 'B'
+SELECT playerID FROM awards_players WHERE year > 1990 AND award = 'Most Valuable Player' AND lgID = 'NBA'
+SELECT CAST(SUM(CASE WHEN award = 'NBA Coach of the Year' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM awards_coaches WHERE year = 1969
+SELECT playerID FROM player_allstar WHERE season_id = 1996 AND CAST(ft_made AS REAL) * 100 / ft_attempted > 70
+SELECT T2.W FROM teams AS T1 INNER JOIN series_post AS T2 ON T1.tmID = T2.tmIDLoser AND T1.year = T2.year WHERE T2.year = 2001 ORDER BY T1.o_fgm DESC LIMIT 1
+SELECT T2.tmID FROM draft AS T1 INNER JOIN teams AS T2 ON T1.tmID = T2.tmID AND T1.draftYear = T2.year WHERE T1.draftRound = 1 AND T1.draftSelection = 6 AND T1.draftYear = 1976
+SELECT T2.tmID FROM players_teams AS T1 INNER JOIN teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year INNER JOIN player_allstar AS T3 ON T3.playerID = T1.playerID WHERE T3.season_id = 1997 ORDER BY T1.rebounds DESC LIMIT 1
+SELECT coachID, won, lost FROM coaches WHERE year = 1950 AND tmID = 'BOS'
+SELECT COUNT(DISTINCT T1.playerID) FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T2.conference = 'East' AND T2.minutes <= 5 AND T1.college = 'Illinois'
+SELECT COUNT(DISTINCT coachID) FROM awards_coaches WHERE year BETWEEN 1962 AND 1975
+SELECT MAX(T1.weight) FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T1.birthCountry = 'USA'
+SELECT draftYear - strftime('%Y', birthDate) FROM draft AS T1 INNER JOIN players AS T2 ON T1.playerID = T2.playerID WHERE T1.firstName = 'Alexis' AND T1.lastName = 'Ajinca' AND draftRound = 1
+SELECT AVG(DISTINCT height) FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE conference = 'East'
+SELECT DISTINCT T1.firstName, T1.lastName, T1.height, T1.weight FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T2.ft_attempted > 0 AND ft_attempted = ft_made
+SELECT birthDate FROM players WHERE playerID = ( SELECT playerID FROM players_teams WHERE year = 2001 GROUP BY playerID ORDER BY SUM(rebounds + dRebounds) DESC LIMIT 1 )
+SELECT name FROM teams WHERE CAST(lost AS REAL) * 100 / games > 75
+SELECT name, o_pts FROM teams WHERE CAST((homeWon - homeLost) AS REAL) * 100 / games > 80
+SELECT AVG(T1.height) FROM players AS T1 INNER JOIN awards_players AS T2 ON T1.playerID = T2.playerID WHERE T2.award = 'Most Valuable Player' AND T1.birthCity = 'New York'
+SELECT T5.lastName, T5.firstName FROM players_teams AS T4 INNER JOIN players AS T5 ON T4.playerID = T5.playerID WHERE T4.year BETWEEN 1937 AND 1940 AND T4.tmID IN ( SELECT DISTINCT T1.tmID FROM teams AS T1 INNER JOIN teams AS T2 INNER JOIN teams AS T3 ON T1.tmID = T2.tmID AND T2.tmID = T3.tmID AND T3.year - T2.year = 1 AND T2.year - T1.year = 1 WHERE T1.rank = 1 AND T1.year BETWEEN 1937 AND 1940 )
+SELECT DISTINCT name FROM teams WHERE tmID IN ( SELECT tmID FROM players_teams AS T1 INNER JOIN players AS T2 ON T1.playerID = T2.playerID WHERE T2.birthState IS NOT NULL GROUP BY T1.tmID, T2.birthState HAVING COUNT(*) > 5 )
+SELECT tmID FROM players_teams WHERE year BETWEEN 1991 AND 2000 ORDER BY CAST(points AS REAL) / minutes DESC LIMIT 1

@@ -1,0 +1,50 @@
+sql_query
+SELECT T1.title FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id ORDER BY T2.total_fat DESC LIMIT 1
+SELECT T1.title FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id WHERE T2.sodium < 5
+SELECT T1.title FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id WHERE T2.iron > 20
+SELECT T1.title FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id WHERE T1.prep_min > 10 ORDER BY T2.calories DESC LIMIT 1
+SELECT T3.name FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id WHERE T1.title = 'Raspberry Chiffon Pie' AND T2.preparation IS NULL
+SELECT COUNT(*) FROM Ingredient AS T1 INNER JOIN Quantity AS T2 ON T1.ingredient_id = T2.ingredient_id WHERE T1.name = 'graham cracker crumbs'
+SELECT T2.min_qty FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id WHERE T1.title = 'Raspberry Chiffon Pie' AND T3.name = 'graham cracker crumbs'
+SELECT AVG(T2.calories) FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id WHERE T1.source = 'Produce for Better Health Foundation and 5 a Day'
+SELECT T1.title FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id WHERE T3.name = 'frozen raspberries in light syrup' AND T2.max_qty = T2.min_qty
+SELECT T1.name FROM Ingredient AS T1 INNER JOIN Quantity AS T2 ON T1.ingredient_id = T2.ingredient_id GROUP BY T1.name ORDER BY COUNT(T1.name) DESC LIMIT 1
+SELECT T2.preparation FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id WHERE T1.title = 'Raspberry-Pear Couscous Cake' AND T3.name = 'apple juice'
+SELECT T2.vitamin_a FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id WHERE T1.title = 'Sherried Beef'
+SELECT T1.title FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id GROUP BY T1.title ORDER BY COUNT(title) DESC LIMIT 1
+SELECT AVG(T3.calories) FROM Ingredient AS T1 INNER JOIN Quantity AS T2 ON T2.ingredient_id = T1.ingredient_id INNER JOIN Nutrition AS T3 ON T3.recipe_id = T2.recipe_id WHERE T1.name = 'coarsely ground black pepper'
+SELECT T1.title FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id WHERE T2.iron > 20
+SELECT T1.name FROM Ingredient AS T1 INNER JOIN Quantity AS T2 ON T1.ingredient_id = T2.ingredient_id GROUP BY T2.ingredient_id ORDER BY COUNT(T2.ingredient_id) ASC LIMIT 1
+SELECT T3.name FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id WHERE T1.title = 'Strawberry Sorbet'
+SELECT T3.name FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id WHERE T1.title = 'Warm Chinese Chicken Salad' AND T2.optional = 'TRUE'
+SELECT T1.title FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id WHERE T2.alcohol > 10 ORDER BY T1.prep_min DESC LIMIT 1
+SELECT T1.title FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id WHERE T1.source = 'National Potato Board' ORDER BY T2.calories DESC LIMIT 1
+SELECT T1.title, T1.prep_min + T1.cook_min + T1.stnd_min FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id ORDER BY T2.total_fat DESC LIMIT 1
+SELECT T3.name FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id WHERE T1.title = 'Tomato-Cucumber Relish'
+SELECT T1.name FROM Ingredient AS T1 INNER JOIN Quantity AS T2 ON T1.ingredient_id = T2.ingredient_id INNER JOIN Nutrition AS T3 ON T3.recipe_id = T2.recipe_id ORDER BY T3.vitamin_a DESC LIMIT 1
+SELECT CAST(SUM(CASE WHEN T2.sodium < 5 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id WHERE T1.source = 'The California Tree Fruit Agreement'
+SELECT COUNT(*) FROM Ingredient AS T1 INNER JOIN Quantity AS T2 ON T1.ingredient_id = T2.ingredient_id WHERE T1.category = 'canned dairy'
+SELECT T1.title, T1.prep_min + T1.cook_min + T1.stnd_min FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id WHERE T3.name = 'lima beans'
+SELECT CAST(SUM(CASE WHEN T1.servings >= 10 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id WHERE T3.name = 'sea bass steak'
+SELECT T1.title FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id WHERE T2.alcohol = 0
+SELECT AVG(T1.vitamin_c) FROM Nutrition AS T1 INNER JOIN Recipe AS T2 ON T2.recipe_id = T1.recipe_id WHERE T2.title LIKE '%cake%'
+SELECT T3.name FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id ORDER BY T1.cook_min DESC LIMIT 1
+SELECT CAST(SUM(CASE WHEN T1.cook_min < 20 AND T2.cholestrl = 0 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id
+SELECT COUNT(*) FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id WHERE T1.title = 'Raspberry Chiffon Pie' AND T2.max_qty = T2.min_qty
+SELECT T2.calories FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id WHERE T1.title = 'Turkey Tenderloin Bundles'
+SELECT COUNT(*) FROM Ingredient AS T1 INNER JOIN Quantity AS T2 ON T1.ingredient_id = T2.ingredient_id WHERE T1.name = '1% lowfat milk' AND T2.unit = 'cup(s)' AND T2.recipe_id = 1436
+SELECT T1.name FROM Ingredient AS T1 INNER JOIN Quantity AS T2 ON T1.ingredient_id = T2.ingredient_id WHERE T2.recipe_id = 1397 AND T2.optional = 'TRUE'
+SELECT COUNT(*) FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id WHERE T1.title = 'Chicken Pocket Sandwich' AND T3.name = 'almonds' AND T2.unit = 'cup(s)'
+SELECT CAST(SUM(CASE WHEN T1.title = 'Lasagne-Spinach Spirals' THEN T2.sodium ELSE 0 END) AS REAL) * 100 / SUM(CASE WHEN T1.title = 'Beef and Spinach Pita Pockets' THEN T2.sodium ELSE 0 END) FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id
+SELECT COUNT(*) FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id WHERE T3.category = 'baking products' AND T1.title = 'No-Bake Chocolate Cheesecake'
+SELECT T1.title FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id WHERE T3.name = 'almond extract'
+SELECT T1.name FROM Ingredient AS T1 INNER JOIN Quantity AS T2 ON T1.ingredient_id = T2.ingredient_id WHERE T2.unit = 'slice(s)'
+SELECT pcnt_cal_prot FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id WHERE T1.title = 'Raspberry Chiffon Pie'
+SELECT COUNT(*) FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id WHERE T1.title = 'Raspberry Chiffon Pie'
+SELECT T1.title FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id WHERE T2.iron > 20
+SELECT T3.name, T3.category FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id WHERE T1.title = 'Apricot Yogurt Parfaits'
+SELECT CAST(SUM(CASE WHEN T4.calories > 200 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id INNER JOIN Nutrition AS T4 ON T4.recipe_id = T1.recipe_id WHERE T3.category = 'cheese'
+SELECT T2.optional FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id INNER JOIN Ingredient AS T3 ON T3.ingredient_id = T2.ingredient_id WHERE T1.title = 'Raspberry Chiffon Pie' AND T3.name = 'graham cracker crumbs'
+SELECT T1.name FROM Ingredient AS T1 INNER JOIN Quantity AS T2 ON T1.ingredient_id = T2.ingredient_id WHERE T2.preparation = 'cooked in beef broth'
+SELECT T2.total_fat FROM Recipe AS T1 INNER JOIN Nutrition AS T2 ON T1.recipe_id = T2.recipe_id WHERE T1.title = 'Raspberry Chiffon Pie'
+SELECT T1.title FROM Recipe AS T1 INNER JOIN Quantity AS T2 ON T1.recipe_id = T2.recipe_id WHERE T2.max_qty <> T2.min_qty

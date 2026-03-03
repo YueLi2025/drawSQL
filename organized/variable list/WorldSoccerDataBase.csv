@@ -1,0 +1,38 @@
+table_name,column_name,column_type
+betfront,year,num
+betfront,datetime,date
+betfront,country,string
+betfront,competion,string
+betfront,match,string
+betfront,home opening,num
+betfront,draw opening,num
+betfront,away opening,num
+betfront,home closing,num
+betfront,draw closing,num
+betfront,away closing,num
+football data,season,string
+football data,datetime,date
+football data,div,string
+football data,country,string
+football data,league,string
+football data,referee,string
+football data,home team,string
+football data,away team,string
+football data,fthg,num
+football data,ftag,num
+football data,ftr,string
+football data,hthg,num
+football data,htag,num
+football data,htr,string
+football data,psh,num
+football data,psd,num
+football data,psa,num
+football data,b365h,num
+football data,b365d,num
+football data,b365a,num
+football data,lbh,num
+football data,lbd,num
+football data,lba,num
+football data,bwh,num
+football data,bwd,num
+football data,bwa,num

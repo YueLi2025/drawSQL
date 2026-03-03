@@ -1,0 +1,8 @@
+table_name,column_name,column_type
+Friend,student_id,num
+Friend,friend_id,num
+Highschooler,ID,num
+Highschooler,name,string
+Highschooler,grade,num
+Likes,student_id,num
+Likes,liked_id,num

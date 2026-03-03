@@ -1,0 +1,83 @@
+hard_templates
+SELECT col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name < (SELECT avg(col_name) FROM table_name) ORDER BY col_name
+SELECT col_name FROM table_name WHERE col_name < (SELECT avg(col_name) FROM table_name) ORDER BY col_name
+SELECT * FROM table_name WHERE col_name < num
+select * from table_name where col_name < num
+SELECT col_name FROM table_name WHERE col_name < num AND col_name = string
+SELECT col_name FROM table_name WHERE col_name < num AND col_name = string
+SELECT col_name FROM table_name WHERE col_name = string'
+SELECT col_name FROM table_name WHERE col_name = string'
+SELECT count(DISTINCT col_name) FROM table_name
+SELECT count(DISTINCT col_name) FROM table_name
+SELECT col_name FROM table_name WHERE col_name = string AND col_name = num
+SELECT col_name FROM table_name WHERE col_name = string AND col_name = num
+SELECT count(*) FROM table_name WHERE col_name > num
+SELECT count(*) FROM table_name WHERE col_name > num
+SELECT count(*) FROM table_name WHERE col_name < num AND col_name = string'
+SELECT count(*) FROM table_name WHERE col_name < num AND col_name = string'
+SELECT col_name FROM table_name WHERE col_name = string ORDER BY col_name LIMIT num
+SELECT col_name FROM table_name WHERE col_name = string ORDER BY col_name LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) LIMIT num
+SELECT count(DISTINCT table_alias0.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT count(DISTINCT table_alias0.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT col_name FROM table_name WHERE col_name = string AND col_name = num
+SELECT col_name FROM table_name WHERE col_name = string AND col_name = num
+SELECT count(DISTINCT col_name) FROM table_name
+SELECT count(DISTINCT col_name) FROM table_name
+SELECT count(col_name) FROM table_name WHERE col_name = string
+SELECT count(col_name) FROM table_name WHERE col_name = string
+SELECT count(col_name) FROM table_name WHERE col_name > num
+SELECT count(col_name) FROM table_name WHERE col_name > num
+SELECT col_name FROM table_name WHERE col_name BETWEEN num AND num ORDER BY col_name
+SELECT col_name FROM table_name WHERE col_name BETWEEN num AND num ORDER BY col_name
+SELECT col_name FROM table_name ORDER BY col_name DESC
+SELECT col_name FROM table_name ORDER BY col_name DESC
+SELECT col_name FROM table_name ORDER BY col_name
+SELECT col_name FROM table_name ORDER BY col_name
+SELECT DISTINCT col_name FROM table_name ORDER BY col_name
+SELECT DISTINCT col_name FROM table_name ORDER BY col_name
+SELECT count(col_name) FROM table_name ORDER BY col_name > num OR col_name < num
+SELECT count(col_name) FROM table_name ORDER BY col_name > num OR col_name < num
+SELECT col_name , col_name FROM table_name WHERE col_name = string AND col_name > num UNION SELECT col_name , col_name FROM table_name WHERE col_name = string' AND col_name < num
+SELECT col_name , col_name FROM table_name WHERE col_name = string AND col_name > num UNION SELECT col_name , col_name FROM table_name WHERE col_name = string' AND col_name < num
+SELECT col_name FROM table_name WHERE col_name = string EXCEPT SELECT col_name FROM table_name WHERE col_name = string'
+SELECT col_name FROM table_name WHERE col_name = string EXCEPT SELECT col_name FROM table_name WHERE col_name = string'
+SELECT col_name FROM table_name WHERE col_name = string INTERSECT SELECT col_name FROM table_name WHERE col_name = string'
+SELECT col_name FROM table_name WHERE col_name = string INTERSECT SELECT col_name FROM table_name WHERE col_name = string'
+SELECT avg(col_name) , min(col_name) FROM table_name
+SELECT avg(col_name) , min(col_name) FROM table_name
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string INTERSECT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string INTERSECT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT col_name FROM table_name WHERE col_name = string OR col_name = string'
+SELECT col_name FROM table_name WHERE col_name = string OR col_name = string'
+SELECT avg(col_name) , col_name FROM table_name GROUP BY col_name
+SELECT avg(col_name) , col_name FROM table_name GROUP BY col_name
+SELECT count(*) , col_name FROM table_name GROUP BY col_name
+SELECT count(*) , col_name FROM table_name GROUP BY col_name
+SELECT col_name , col_name , max(col_name) FROM table_name GROUP BY col_name ORDER BY col_name
+SELECT col_name , col_name , max(col_name) FROM table_name GROUP BY col_name ORDER BY col_name
+SELECT col_name , col_name , max(col_name) FROM table_name GROUP BY col_name
+SELECT col_name , col_name , max(col_name) FROM table_name GROUP BY col_name
+SELECT max(col_name) , col_name FROM table_name GROUP BY col_name
+SELECT max(col_name) , col_name FROM table_name GROUP BY col_name
+SELECT count(table_alias0.col_name) , avg(table_alias0.col_name) , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name
+SELECT count(table_alias0.col_name) , avg(table_alias0.col_name) , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name
+SELECT count(*) , col_name FROM table_name GROUP BY col_name HAVING avg(col_name) < num
+SELECT count(*) , col_name FROM table_name GROUP BY col_name HAVING avg(col_name) < num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = (SELECT min(col_name) FROM table_name)
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = (SELECT min(col_name) FROM table_name)
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT col_name FROM table_name WHERE col_name > (SELECT min(col_name) FROM table_name WHERE col_name = string) ORDER BY col_name
+SELECT col_name FROM table_name WHERE col_name > (SELECT min(col_name) FROM table_name WHERE col_name = string) ORDER BY col_name
+SELECT count(*) FROM table_name WHERE col_name < (SELECT min(col_name) FROM table_name WHERE col_name = string')
+SELECT count(*) FROM table_name WHERE col_name < (SELECT min(col_name) FROM table_name WHERE col_name = string')
+SELECT DISTINCT col_name FROM table_name WHERE col_name LIKE string
+SELECT DISTINCT col_name FROM table_name WHERE col_name LIKE string
+SELECT count(col_name) FROM table_name WHERE col_name > (SELECT min(col_name) FROM table_name WHERE col_name = string)
+SELECT count(col_name) FROM table_name WHERE col_name > (SELECT min(col_name) FROM table_name WHERE col_name = string)

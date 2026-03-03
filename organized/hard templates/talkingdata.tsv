@@ -1,0 +1,119 @@
+hard_templates
+SELECT col_name FROM table_name WHERE col_name = ( SELECT MAX(col_name) FROM table_name )
+SELECT col_name FROM table_name WHERE col_name = ( SELECT MIN(col_name) FROM table_name )
+SELECT table_alias0.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name ORDER BY table_alias1.col_name DESC LIMIT num
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias1.col_name = string
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias0.col_name = boolean AND table_alias1.col_name = string
+SELECT table_alias3.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name INNER JOIN table_name AS table_alias2 ON table_alias2.col_name = table_alias1.col_name INNER JOIN table_name AS table_alias3 ON table_alias2.col_name = table_alias3.col_name ORDER BY table_alias0.col_name LIMIT num
+SELECT COUNT(table_alias1.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias0.col_name = string
+SELECT table_alias0.col_name, table_alias0.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias1.col_name = num
+SELECT COUNT(table_alias1.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias0.col_name = boolean AND SUBSTR(`col_name`, num, num) = string AND table_alias0.col_name = num
+SELECT DISTINCT table_alias0.col_name, table_alias0.col_name, COUNT(table_alias1.col_name) FROM table_name AS table_alias0 INNER JOIN `col_name` AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias1.col_name = -num AND table_alias1.col_name = num GROUP BY table_alias0.col_name, table_alias0.col_name, table_alias1.col_name, table_alias1.col_name
+SELECT DISTINCT table_alias0.col_name, table_alias0.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias1.col_name = num AND table_alias1.col_name = num
+SELECT DISTINCT table_alias0.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name INNER JOIN table_name AS table_alias2 ON table_alias2.col_name = table_alias1.col_name WHERE table_alias2.col_name = num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias0.col_name = string
+SELECT col_name FROM table_name WHERE col_name IN ( SELECT col_name FROM table_name WHERE col_name = ( SELECT MAX(col_name) FROM table_name ) )
+SELECT DISTINCT table_alias0.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name INNER JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias2.col_name = num AND table_alias2.col_name = boolean
+SELECT table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias0.col_name = boolean AND table_alias1.col_name = num ORDER BY table_alias1.col_name LIMIT num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias0.col_name = string
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = boolean AND table_alias1.col_name = string AND table_alias0.col_name < num
+SELECT MIN(col_name) FROM table_name WHERE col_name = boolean
+SELECT COUNT(col_name) FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name WHERE col_name = string LIMIT num
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias0.col_name = boolean
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias0.col_name = boolean
+SELECT table_alias2.col_name FROM ( SELECT table_alias1.col_name, COUNT(table_alias1.col_name) AS column_alias0 FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = boolean GROUP BY table_alias1.col_name ) AS table_alias2 ORDER BY table_alias2.column_alias0 DESC LIMIT column_alias0
+SELECT COUNT(table_alias1.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT COUNT(table_alias1.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = boolean AND table_alias1.col_name = string
+SELECT col_name FROM table_name WHERE col_name = ( SELECT MIN(col_name) FROM table_name )
+SELECT table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT COUNT(table_alias1.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name INNER JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias2.col_name = boolean AND table_alias0.col_name = string AND table_alias2.col_name = num
+SELECT COUNT(*) FROM ( SELECT COUNT(DISTINCT table_alias0.col_name) AS column_alias0 FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name INNER JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias2.col_name = num AND table_alias2.col_name = boolean GROUP BY table_alias0.col_name ) col_name
+SELECT table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias1.col_name, table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = num
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias0.col_name < num
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = boolean AND table_alias1.col_name = string
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias0.col_name > num
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = boolean AND table_alias1.col_name = string
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name BETWEEN num AND num AND table_alias1.col_name = string
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name INNER JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias0.col_name < num AND table_alias0.col_name = boolean AND table_alias2.col_name = boolean AND table_alias2.col_name = boolean
+SELECT col_name FROM table_name WHERE col_name = boolean LIMIT num
+SELECT col_name(SUM(col_name(table_alias0.column_alias0 = boolean, num, num)) - SUM(col_name(table_alias0.column_alias0 = boolean, num, num)) > num, string, string) AS column_alias0 FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias0.col_name = boolean
+SELECT table_alias2.col_name FROM ( SELECT table_alias1.col_name, COUNT(table_alias1.col_name) AS column_alias0 FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name BETWEEN column_alias0 AND column_alias0 GROUP BY table_alias1.col_name ) AS table_alias2 ORDER BY table_alias2.column_alias0 DESC LIMIT column_alias0
+SELECT COUNT(col_name) FROM table_name WHERE col_name = num AND col_name = boolean
+SELECT col_name , col_name(col_name = boolean, string, string) AS column_alias0 FROM table_name WHERE col_name = num
+SELECT COUNT(col_name) FROM table_name WHERE SUBSTR(`col_name`, num, num) = string
+SELECT COUNT(table_alias1.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias0.col_name = string
+SELECT COUNT(col_name) FROM table_name WHERE col_name = boolean
+SELECT DISTINCT table_alias1.col_name, table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias1.col_name = num AND table_alias0.col_name = boolean
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE STRFTIME(string, table_alias0.col_name) = string AND table_alias1.col_name = string
+SELECT table_alias2.col_name FROM ( SELECT table_alias0.col_name, COUNT(table_alias1.col_name) AS column_alias0 FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ) AS table_alias2 ORDER BY table_alias2.column_alias0 DESC LIMIT column_alias0
+SELECT AVG(col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.`group` = string AND table_alias1.col_name = boolean LIMIT num
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT COUNT(col_name) FROM table_name WHERE SUBSTR(`col_name`, num, num) = string
+SELECT COUNT(col_name) FROM table_name WHERE col_name = string
+SELECT COUNT(col_name) FROM table_name WHERE col_name > num AND col_name = boolean
+SELECT col_name FROM table_name WHERE col_name = ( SELECT MAX(col_name) FROM table_name )
+SELECT MIN(col_name) FROM table_name WHERE col_name = boolean
+SELECT table_alias0.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = boolean
+SELECT table_alias2.col_name FROM ( SELECT table_alias1.col_name, COUNT(table_alias1.col_name) AS column_alias0 FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name > column_alias0 AND table_alias0.col_name = boolean GROUP BY table_alias1.col_name ) AS table_alias2 ORDER BY table_alias2.column_alias0 DESC LIMIT column_alias0
+SELECT table_alias2.col_name FROM ( SELECT table_alias1.col_name, COUNT(table_alias0.col_name) AS column_alias0 FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name ) AS table_alias2 ORDER BY table_alias2.column_alias0 DESC LIMIT column_alias0
+SELECT SUM(col_name(table_alias0.col_name = boolean, num, num)) / SUM(col_name(table_alias0.col_name = boolean, num, num)) AS column_alias0 FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT col_name FROM table_name WHERE col_name = num
+SELECT COUNT(col_name) FROM table_name WHERE col_name = string
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias0.col_name = boolean
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name BETWEEN num AND num AND table_alias1.col_name = string
+SELECT COUNT(col_name) FROM table_name WHERE col_name = num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name INNER JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias0.col_name = boolean AND table_alias2.col_name = boolean AND table_alias0.col_name < num
+SELECT COUNT(table_alias1.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = num AND table_alias0.col_name = boolean
+SELECT table_alias0.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT COUNT(col_name) FROM table_name WHERE col_name = string
+SELECT COUNT(col_name) FROM table_name WHERE col_name = num
+SELECT COUNT(col_name) FROM table_name WHERE col_name = boolean AND `group` = string
+SELECT col_name FROM table_name WHERE col_name IN (string, string)
+SELECT table_alias0.col_name, table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias1.col_name = num
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias0.col_name = string AND table_alias1.col_name = num
+SELECT MAX(col_name) FROM table_name WHERE col_name = boolean
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name ORDER BY table_alias1.col_name LIMIT num
+SELECT COUNT(col_name) FROM table_name WHERE col_name = string
+SELECT COUNT(col_name) FROM table_name WHERE col_name = num
+SELECT COUNT(col_name) FROM table_name WHERE col_name LIKE string
+SELECT table_alias0.col_name, table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT COUNT(table_alias0.col_name), table_alias1.col_name, table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = num GROUP BY table_alias1.col_name, table_alias1.col_name
+SELECT table_alias0.`group` FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT SUM(table_alias0.col_name) / COUNT(table_alias0.col_name) AS column_alias0 FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.`group` FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT COUNT(col_name) FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name WHERE col_name BETWEEN num AND num AND col_name = string
+SELECT col_name FROM table_name WHERE col_name = num AND col_name = num LIMIT num
+SELECT col_name, col_name FROM table_name WHERE col_name LIKE string LIMIT num
+SELECT COUNT(col_name) FROM table_name WHERE col_name > num AND col_name = boolean
+SELECT col_name, col_name FROM `col_name` WHERE SUBSTR(`col_name`, num, num) = string
+SELECT table_alias1.col_name, table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias0.col_name = string AND table_alias0.col_name = string
+SELECT SUM(col_name(table_alias0.col_name = string, num, num)) * num / COUNT(table_alias1.col_name) AS column_alias0 FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name
+SELECT COUNT(col_name) FROM `col_name` WHERE SUBSTR(`col_name`, num, num) = string AND col_name = num
+SELECT MAX(col_name) FROM table_name
+SELECT COUNT(col_name) FROM table_name WHERE col_name < num AND col_name = boolean
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias1.col_name = boolean AND table_alias0.col_name = string
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias1.col_name = string
+SELECT SUM(col_name(table_alias0.`group` = string, num, num)) / COUNT(table_alias0.col_name) AS column_alias0 FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT `group` FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string AND table_alias1.col_name = boolean
+SELECT table_alias0.col_name, table_alias0.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = num AND table_alias0.col_name = num
+SELECT col_name(SUM(col_name(table_alias1.col_name = string, num, num)) - SUM(col_name(table_alias1.col_name = string, num, num)) > num, string, string) AS column_alias0 FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.`group` = string
+SELECT AVG(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias0.col_name = boolean
+SELECT SUM(col_name(table_alias1.col_name = string, num, num)) / SUM(col_name(table_alias1.col_name = string, num, num)) AS column_alias0 FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT COUNT(col_name) FROM table_name WHERE col_name = num
+SELECT COUNT(col_name) FROM table_name WHERE col_name = -num
+SELECT COUNT(col_name) FROM table_name WHERE col_name = string
+SELECT table_alias0.`group` FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string

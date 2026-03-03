@@ -1,0 +1,21 @@
+nl_question
+How many churches opened before 1850 are there?
+Show the name, open date, and organizer for all churches.
+List all church names in descending order of opening date.
+Show the opening year in whcih at least two churches opened.
+Show the organizer and name for churches that opened between 1830 and 1840.
+Show all opening years and the number of churches that opened in that year.
+Show the name and opening year for three churches that opened most recently.
+How many female people are older than 30 in our record?
+Show the country where people older than 30 and younger than 25 are from.
+Show the minimum, maximum, and average age for all people.
+Show the name and country for all people whose age is smaller than the average.
+Show the pair of male and female names in all weddings after year 2014
+Show the name and age for all male people who don't have a wedding.
+Show all church names except for those that had a wedding in year 2015.
+Show all church names that have hosted least two weddings.
+Show the names for all females from Canada having a wedding in year 2016.
+How many weddings are there in year 2016?
+Show the church names for the weddings of all people older than 30.
+Show all countries and the number of people from each country.
+How many churches have a wedding in year 2016?

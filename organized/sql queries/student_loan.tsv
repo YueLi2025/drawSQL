@@ -1,0 +1,163 @@
+sql_query
+SELECT COUNT(T1.name) FROM longest_absense_from_school AS T1 INNER JOIN male AS T2 ON T1.`name` = T2.`name` WHERE T1.`month` >= 5
+SELECT COUNT(T1.name) FROM enlist AS T1 INNER JOIN no_payment_due AS T2 ON T1.`name` = T2.`name` WHERE T1.organ = 'navy' AND T2.bool = 'pos'
+SELECT COUNT(name) FROM disabled WHERE name NOT IN ( SELECT name FROM male )
+SELECT COUNT(T1.name) FROM longest_absense_from_school AS T1 INNER JOIN disabled AS T2 ON T1.`name` = T2.`name` WHERE T1.`month` = 0
+SELECT T2.organ FROM longest_absense_from_school AS T1 INNER JOIN enlist AS T2 ON T1.`name` = T2.`name` WHERE T1.`month` = 9
+SELECT T2.organ, COUNT(T1.name) FROM disabled AS T1 INNER JOIN enlist AS T2 ON T1.`name` = T2.`name` GROUP BY T2.organ ORDER BY COUNT(T1.name) DESC LIMIT 1
+SELECT name FROM filed_for_bankrupcy WHERE name NOT IN ( SELECT name FROM male )
+SELECT CAST(COUNT(T2.name) AS REAL) * 100 / COUNT(T1.name) FROM enlist AS T1 LEFT JOIN male AS T2 ON T1.`name` = T2.`name` WHERE T1.organ = 'navy'
+SELECT bool FROM no_payment_due WHERE name = 'student348'
+SELECT T2.name, T1.school FROM enrolled AS T1 INNER JOIN disabled AS T2 ON T1.`name` = T2.`name` WHERE T1.name = 'student281'
+SELECT T2.organ, T1.name FROM no_payment_due AS T1 INNER JOIN enlist AS T2 ON T1.`name` = T2.`name` WHERE T1.bool = 'pos' LIMIT 5
+SELECT T2.name FROM enrolled AS T1 INNER JOIN disabled AS T2 ON T1.`name` = T2.`name` WHERE T1.school = 'smc'
+SELECT COUNT(T1.name) FROM no_payment_due AS T1 INNER JOIN male AS T2 ON T1.name = T2.name WHERE T1.bool = 'neg'
+SELECT T1.name FROM longest_absense_from_school AS T1 INNER JOIN enlist AS T2 ON T1.`name` = T2.`name` WHERE T2.organ = 'marines' AND T1.`month` = 6
+SELECT COUNT(T1.name) FROM enlist AS T1 INNER JOIN enrolled AS T2 ON T1.`name` = T2.`name` WHERE T2.school = 'ucsd' AND T1.organ = 'peace_corps'
+SELECT CAST(SUM(IIF(T1.bool = 'pos', 1, 0)) AS REAL) * 100 / SUM(IIF(T1.bool = 'neg', 1, 0)) FROM no_payment_due AS T1 INNER JOIN enlist AS T2 ON T1.`name` = T2.`name` WHERE T2.organ = 'foreign_legion'
+SELECT name FROM longest_absense_from_school WHERE `month` = ( SELECT MAX(month) FROM longest_absense_from_school )
+SELECT name, month FROM longest_absense_from_school WHERE `month` = ( SELECT MAX(month) FROM longest_absense_from_school )
+SELECT COUNT(name) FROM longest_absense_from_school WHERE month = 4
+SELECT DISTINCT T2.organ FROM disabled AS T1 INNER JOIN enlist AS T2 ON T1.`name` = T2.`name`
+SELECT ( SELECT COUNT(name) FROM disabled WHERE name IN ('student180', 'student117') ), ( SELECT COUNT(name) FROM unemployed WHERE name IN ('student180', 'student117') ), ( SELECT COUNT(name) FROM male WHERE name IN ('student180', 'student117') ), ( SELECT COUNT(name) FROM no_payment_due WHERE name IN ('student180', 'student117'))
+SELECT COUNT(name) FROM person WHERE name NOT IN ( SELECT name FROM male ) AND name NOT IN ( SELECT name FROM enrolled )
+SELECT T1.name FROM disabled AS T1 INNER JOIN longest_absense_from_school AS T2 ON T1.name = T2.name WHERE T2.month = 0
+SELECT COUNT(T1.name) FROM unemployed AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name WHERE T2.organ = 'navy'
+SELECT COUNT(T1.name) FROM male AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name WHERE T2.organ = 'foreign_legion'
+SELECT COUNT(name) FROM enlist WHERE organ = 'air_force' AND name NOT IN ( SELECT name FROM male )
+SELECT T1.name FROM unemployed AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name WHERE T2.organ = 'marines'
+SELECT T1.name FROM longest_absense_from_school AS T1 INNER JOIN unemployed AS T2 ON T1.name = T2.name ORDER BY T1.month DESC LIMIT 1
+SELECT T1.name FROM longest_absense_from_school AS T1 INNER JOIN unemployed AS T2 ON T1.name = T2.name WHERE T1.month = 0
+SELECT COUNT(T1.name) FROM longest_absense_from_school AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name WHERE T1.month = 3
+SELECT T1.name FROM longest_absense_from_school AS T1 INNER JOIN filed_for_bankrupcy AS T2 ON T1.name = T2.name ORDER BY T1.month DESC LIMIT 1
+SELECT IIF(T.result = 0, 'female', 'male') AS re FROM ( SELECT COUNT(name) AS result FROM male WHERE name = 'studenT1000' ) T
+SELECT name FROM longest_absense_from_school WHERE month = ( SELECT MAX(month) FROM longest_absense_from_school )
+SELECT T.school FROM ( SELECT T2.school, COUNT(T2.name) AS num FROM disabled AS T1 INNER JOIN enrolled AS T2 ON T1.name = T2.name GROUP BY T2.school ) T ORDER BY T.num DESC LIMIT 1
+SELECT T2.organ FROM filed_for_bankrupcy AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name
+SELECT COUNT(T1.name) FROM enrolled AS T1 INNER JOIN longest_absense_from_school AS T2 ON T1.name = T2.name WHERE T1.school = 'smc' AND T2.month = 7
+SELECT CAST(COUNT(T2.name) AS REAL) * 100 / COUNT(T1.name) FROM enlist AS T1 LEFT JOIN male AS T2 ON T1.name = T2.name WHERE T1.organ = 'fire_department'
+SELECT COUNT(T1.name) FROM male AS T1 INNER JOIN no_payment_due AS T2 ON T1.name = T2.name WHERE T2.bool = 'neg'
+SELECT COUNT(T1.name) FROM enlist AS T1 INNER JOIN enrolled AS T2 ON T1.name = T2.name WHERE T1.organ = 'peace_corps' AND T2.school = 'ucsd'
+SELECT COUNT(T1.name) FROM unemployed AS T1 INNER JOIN no_payment_due AS T2 ON T1.name = T2.name WHERE T2.bool = 'neg'
+SELECT COUNT(name) FROM no_payment_due WHERE name NOT IN ( SELECT name FROM male )
+SELECT COUNT(name) FROM enlist WHERE organ = 'navy' AND name NOT IN ( SELECT name FROM male )
+SELECT T1.name FROM no_payment_due AS T1 INNER JOIN enlist AS T2 ON T2.name = T1.name WHERE T2.organ = 'peace_corps' AND T1.bool = 'pos' LIMIT 5
+SELECT COUNT(name) FROM disabled WHERE name NOT IN ( SELECT name FROM male )
+SELECT CAST(SUM(IIF(month = 0, 1, 0)) AS REAL) * 100 / COUNT(name) FROM longest_absense_from_school
+SELECT CAST(SUM(IIF(`bool` = 'pos', 1, 0)) AS REAL) / SUM(IIF(`bool` = 'neg', 1, 0)) FROM no_payment_due
+SELECT name, school FROM enrolled WHERE month = 15
+SELECT CAST(COUNT(T2.name) AS REAL) * 100 / COUNT(T1.name) FROM person AS T1 LEFT JOIN disabled AS T2 ON T2.name = T1.name
+SELECT COUNT(T1.name) FROM disabled AS T1 LEFT JOIN longest_absense_from_school AS T2 ON T2.name = T1.name WHERE T2.month = 9
+SELECT name FROM person WHERE name NOT IN ( SELECT name FROM filed_for_bankrupcy )
+"SELECT COUNT(CASE  WHEN T2.name IS NULL THEN T1.name END) AS ""number"" FROM person AS T1 LEFT JOIN disabled AS T2 ON T2.name = T1.name"
+SELECT IIF(T2.name IS NULL, 'female', 'male') AS gen , T1.school FROM enrolled AS T1 LEFT JOIN male AS T2 ON T2.name = T1.name WHERE T1.name = 'student995'
+SELECT T1.name FROM disabled AS T1 INNER JOIN unemployed AS T2 ON T2.name = T1.name LIMIT 5
+SELECT COUNT(T1.name) FROM no_payment_due AS T1 INNER JOIN unemployed AS T2 ON T2.name = T1.name WHERE T1.bool = 'pos'
+SELECT CAST(SUM(IIF(T2.name IS NULL, 1, 0)) AS REAL) * 100 / COUNT(T1.name) FROM person AS T1 LEFT JOIN male AS T2 ON T2.name = T1.name
+SELECT T.school, num FROM ( SELECT T1.school, COUNT(T2.name) AS num FROM enrolled AS T1 LEFT JOIN filed_for_bankrupcy AS T2 ON T2.name = T1.name GROUP BY T1.school ) T ORDER BY T.num DESC LIMIT 1
+SELECT T1.name FROM enlist AS T1 INNER JOIN enrolled AS T2 ON T2.name = T1.name WHERE T2.school = 'occ' AND T1.organ = 'fire_department'
+SELECT T1.name FROM unemployed AS T1 INNER JOIN disabled AS T2 ON T2.name = T1.name INNER JOIN longest_absense_from_school AS T3 ON T3.name = T2.name WHERE T3.month = 5
+SELECT name FROM enrolled WHERE school IN ('occ', 'ulca') AND name NOT IN ( SELECT name FROM male )
+SELECT T2.school, T1.organ FROM enlist AS T1 INNER JOIN enrolled AS T2 ON T2.name = T1.name WHERE T1.name = 'student211'
+SELECT AVG(T2.month) AS avg FROM unemployed AS T1 INNER JOIN longest_absense_from_school AS T2 ON T2.name = T1.name INNER JOIN male AS T3 ON T3.name = T2.name
+SELECT CAST(SUM(IIF(T2.month = 0, 1, 0)) AS REAL) * 100 / COUNT(T1.name) FROM unemployed AS T1 INNER JOIN longest_absense_from_school AS T2 ON T2.name = T1.name
+SELECT COUNT(T1.name) FROM no_payment_due AS T1 INNER JOIN male AS T2 ON T2.name = T1.name WHERE T1.bool = 'pos'
+SELECT COUNT(T1.name) FROM filed_for_bankrupcy AS T1 INNER JOIN no_payment_due AS T2 ON T2.name = T1.name WHERE T2.bool = 'pos'
+SELECT COUNT(T1.name) FROM no_payment_due AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name WHERE T1.bool = 'neg'
+SELECT T1.name FROM longest_absense_from_school AS T1 INNER JOIN no_payment_due AS T2 ON T1.name = T2.name WHERE T1.month = 5 AND T2.bool = 'neg'
+SELECT COUNT(T1.name) FROM no_payment_due AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name WHERE T1.bool = 'pos' AND T2.organ = 'marines'
+SELECT COUNT(*) FROM person AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name LEFT JOIN male AS T3 ON T1.name = T3.name WHERE T2.organ = 'marines' AND T3.name IS NULL
+SELECT AVG(T2.month) FROM person AS T1 INNER JOIN longest_absense_from_school AS T2 ON T1.name = T2.name LEFT JOIN male AS T3 ON T1.name = T3.name WHERE T3.name IS NULL
+SELECT COUNT(T1.name) FROM no_payment_due AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name WHERE T1.bool = 'pos'
+SELECT COUNT(T1.name) FROM filed_for_bankrupcy AS T1 INNER JOIN enrolled AS T2 ON T1.name = T2.name WHERE T2.school = 'occ'
+SELECT COUNT(T1.name) FROM male AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name
+SELECT T1.name FROM enlist AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name WHERE T1.organ = 'navy'
+SELECT CAST(COUNT(T2.name) AS REAL) * 100 / COUNT(T1.name) FROM person AS T1 LEFT JOIN male AS T2 ON T1.name = T2.name
+SELECT T2.NAME FROM unemployed AS T1 INNER JOIN male AS T2 ON T1.name = T2.name INNER JOIN disabled AS T3 ON T3.name = T2.name
+SELECT COUNT(T1.name) FROM enrolled AS T1 INNER JOIN male AS T2 ON T1.name = T2.name WHERE T1.school = 'occ'
+SELECT CAST(COUNT(T4.name) AS REAL) * 100 / COUNT(T2.name) FROM enlist AS T1 INNER JOIN person AS T2 ON T1.name = T2.name INNER JOIN enrolled AS T3 ON T3.name = T2.name LEFT JOIN male AS T4 ON T2.name = T4.name WHERE T3.school = 'ucla' AND T1.organ = 'air_force'
+SELECT CAST(SUM(IIF(T1.school = 'uci' AND T4.name IS NULL, 1, 0)) AS REAL) / COUNT(T1.name) FROM enrolled AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name INNER JOIN person AS T3 ON T1.name = T3.name LEFT JOIN male AS T4 ON T3.name = T4.name
+SELECT name FROM longest_absense_from_school WHERE month = ( SELECT MAX(month) FROM longest_absense_from_school )
+SELECT organ FROM ( SELECT organ, COUNT(organ) AS num FROM enlist GROUP BY organ ) T ORDER BY T.num DESC LIMIT 1
+SELECT COUNT(T1.name) FROM no_payment_due AS T1 INNER JOIN unemployed AS T2 ON T1.name = T2.name WHERE T1.bool = 'pos'
+"SELECT SUM(IIF(T3.name IS NULL, 1, 0)) AS ""result"" FROM enlist AS T1 INNER JOIN person AS T2 ON T1.name = T2.name LEFT JOIN male AS T3 ON T2.name = T3.name WHERE T1.organ = 'army'"
+SELECT T1.name FROM longest_absense_from_school AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name WHERE T1.month > 5
+SELECT COUNT(T1.name) FROM filed_for_bankrupcy AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name WHERE T2.organ = 'marines'
+SELECT COUNT(T1.name) FROM disabled AS T1 INNER JOIN filed_for_bankrupcy AS T2 ON T1.name = T2.name
+SELECT T1.month FROM longest_absense_from_school AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name ORDER BY T1.month DESC LIMIT 1
+SELECT COUNT(T1.name) FROM longest_absense_from_school AS T1 INNER JOIN filed_for_bankrupcy AS T2 ON T1.name = T2.name INNER JOIN enlist AS T3 ON T3.name = T2.name WHERE T3.organ = 'fire_department'
+SELECT MAX(month) FROM longest_absense_from_school
+SELECT COUNT(name) FROM enlist WHERE organ = 'navy'
+SELECT T1.month FROM longest_absense_from_school AS T1 INNER JOIN enlist AS T2 ON T1.`name` = T2.`name` WHERE T2.organ = 'navy' ORDER BY T1.`month` DESC LIMIT 1
+SELECT AVG(T1.month) FROM longest_absense_from_school AS T1 INNER JOIN disabled AS T2 ON T1.`name` = T2.`name`
+SELECT name FROM enlist WHERE organ = 'foreign_legion'
+SELECT CAST(SUM(IIF(T1.school = 'occ', 1.0, 0)) AS REAL) * 100 / COUNT(T1.name) FROM enrolled AS T1 INNER JOIN enlist AS T2 ON T1.`name` = T2.`name` WHERE T2.organ = 'navy'
+SELECT COUNT(T1.name) FROM unemployed AS T1 INNER JOIN filed_for_bankrupcy AS T2 ON T1.name = T2.name INNER JOIN no_payment_due AS T3 ON T2.name = T3.name WHERE T3.bool = 'pos'
+SELECT IIF(T2.name IS NULL, 'female', 'male') FROM male AS T1 LEFT JOIN disabled AS T2 ON T1.name = T2.name WHERE T1.name = 'student124'
+SELECT COUNT(name) FROM enlist WHERE organ IN ('marines', 'air_force') AND name NOT IN ( SELECT name FROM male )
+SELECT AVG(month) FROM longest_absense_from_school WHERE name NOT IN ( SELECT name FROM unemployed )
+SELECT AVG(T1.month) FROM longest_absense_from_school AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name
+SELECT COUNT(name) FROM enlist WHERE organ = 'fire_department'
+SELECT COUNT(name) FROM no_payment_due WHERE bool = 'neg'
+SELECT COUNT(name) FROM no_payment_due WHERE bool = 'pos'
+SELECT AVG(T1.month) FROM longest_absense_from_school AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name
+SELECT CAST(SUM(IIF(T1.month > 5, 1, 0)) AS REAL) * 100 / COUNT(T1.month) FROM longest_absense_from_school AS T1 INNER JOIN unemployed AS T2 ON T1.name = T2.name
+SELECT COUNT(T1.name) FROM longest_absense_from_school AS T1 INNER JOIN unemployed AS T2 ON T1.name = T2.name INNER JOIN disabled AS T3 ON T2.name = T3.name WHERE T1.month = 8
+SELECT COUNT(T1.name) FROM enlist AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name WHERE T1.organ = 'marines'
+SELECT COUNT(T1.name) FROM unemployed AS T1 INNER JOIN no_payment_due AS T2 ON T1.name = T2.name WHERE T2.bool = 'pos'
+SELECT T1.name FROM disabled AS T1 INNER JOIN male AS T2 ON T1.name <> T2.name
+SELECT CAST(( SELECT COUNT(name) FROM unemployed ) AS REAL ) / ( SELECT COUNT(name) FROM disabled )
+SELECT COUNT(name) FROM enlist WHERE organ = 'army'
+SELECT COUNT(name) FROM enrolled WHERE school = 'ucla'
+SELECT COUNT(name) FROM enlist WHERE organ = 'navy'
+SELECT COUNT(T2.name) FROM longest_absense_from_school AS T1 INNER JOIN unemployed AS T2 ON T2.name = T1.name WHERE T1.month = 0
+SELECT T1.name FROM no_payment_due AS T1 INNER JOIN enlist AS T2 ON T2.name = T1.name WHERE T1.bool = 'neg' AND T2.organ = 'fire_department' LIMIT 10
+SELECT COUNT(T1.name) FROM no_payment_due AS T1 INNER JOIN unemployed AS T2 ON T2.name = T1.name WHERE T1.bool = 'pos'
+SELECT CAST(SUM(IIF(T2.name IS NULL, 1, 0)) AS REAL) * 100 / COUNT(T1.name), CAST(SUM(IIF(T2.name IS NOT NULL, 1, 0)) AS REAL) * 100 / COUNT(T1.name) FROM enlist AS T1 LEFT JOIN male AS T2 ON T2.name = T1.name WHERE T1.organ = 'fire_department'
+SELECT COUNT(name) FROM enlist WHERE organ = 'navy'
+SELECT COUNT(T1.name) FROM unemployed AS T1 INNER JOIN filed_for_bankrupcy AS T2 ON T2.name = T1.name
+SELECT T1.name FROM enlist AS T1 INNER JOIN male AS T2 ON T2.name = T1.name WHERE T1.organ = 'foreign_legion' LIMIT 10
+SELECT COUNT(name) FROM enrolled WHERE school = 'smc' AND month = 1
+SELECT T.name FROM ( SELECT T1.name, COUNT(T1.organ) AS num FROM enlist AS T1 INNER JOIN enrolled AS T2 ON T1.name = T2.name GROUP BY T1.name ) T WHERE T.num = 2
+SELECT COUNT(T1.name) FROM disabled AS T1 INNER JOIN unemployed AS T2 ON T2.name = T1.name
+SELECT COUNT(T2.name) - SUM(IIF(T2.name IS NULL, 1, 0)) AS num FROM filed_for_bankrupcy AS T1 LEFT JOIN male AS T2 ON T2.name = T1.name
+SELECT COUNT(T1.name) FROM disabled AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name WHERE T2.organ = 'marines'
+SELECT COUNT(T1.NAME) FROM longest_absense_from_school AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name WHERE T2.organ = 'peace_corps' ORDER BY T1.month DESC LIMIT 1
+SELECT COUNT(name) FROM enlist WHERE organ = 'air_force'
+SELECT COUNT(name) FROM longest_absense_from_school WHERE month < 4
+SELECT T1.name FROM person AS T1 INNER JOIN filed_for_bankrupcy AS T2 ON T1.name = T2.name LEFT JOIN male AS T3 ON T1.name = T3.name WHERE T3.name IS NULL
+SELECT COUNT(name) FROM longest_absense_from_school WHERE month > 1
+SELECT T1.name FROM male AS T1 INNER JOIN no_payment_due AS T2 ON T1.name = T2.name WHERE T2.bool = 'pos'
+SELECT COUNT(T1.name) FROM longest_absense_from_school AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name WHERE T1.month = 1 AND T2.organ = 'air_force'
+SELECT name FROM enlist WHERE organ = 'marines'
+SELECT COUNT(name) FROM enlist WHERE organ = 'navy'
+SELECT T.organ FROM ( SELECT T2.organ, COUNT(T1.name) AS num FROM male AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name GROUP BY T2.organ ) T ORDER BY T.num LIMIT 1
+SELECT COUNT(T1.name) FROM filed_for_bankrupcy AS T1 INNER JOIN longest_absense_from_school AS T2 ON T1.`name` = T2.`name` WHERE T2.`month` > 5
+SELECT month FROM longest_absense_from_school WHERE name = 'student217'
+SELECT organ FROM enlist WHERE name = 'student285'
+SELECT T1.name, T1.school FROM enrolled AS T1 INNER JOIN enlist AS T2 ON T1.`name` = T2.`name` WHERE T2.organ = 'air_force'
+SELECT COUNT(name) FROM person
+SELECT COUNT(T1.name) FROM unemployed AS T1 INNER JOIN filed_for_bankrupcy AS T2 ON T1.name = T2.name
+SELECT AVG(month) FROM longest_absense_from_school
+SELECT COUNT(name) FROM longest_absense_from_school WHERE month > 2
+SELECT T1.name FROM longest_absense_from_school AS T1 INNER JOIN filed_for_bankrupcy AS T2 ON T1.name = T2.name WHERE T1.month = 0
+SELECT COUNT(name) FROM longest_absense_from_school WHERE month > 6
+SELECT COUNT(name) FROM longest_absense_from_school WHERE month = 5
+SELECT CAST(COUNT(NAME) AS REAL) * 100 / COUNT(DISTINCT organ) FROM enlist
+SELECT T1.name FROM enlist AS T1 LEFT JOIN male AS T2 ON T2.name = T1.name WHERE T2.name IS NULL AND T1.organ = 'air_force' LIMIT 5
+SELECT COUNT(name) FROM filed_for_bankrupcy
+SELECT organ FROM enlist WHERE name = 'student168'
+SELECT CAST((SUM(IIF(T2.name IS NOT NULL AND T1.month = 0, 1, 0)) - SUM(IIF(T2.name IS NULL AND T1.month = 0, 1, 0))) AS REAL) * 100 / COUNT(T1.name), IIF(SUM(IIF(T2.name IS NOT NULL AND T1.month = 0, 1, 0)) - SUM(IIF(T2.name IS NULL AND T1.month = 0, 1, 0)) > 0, 'YES', 'NO') AS isHigh FROM longest_absense_from_school AS T1 LEFT JOIN disabled AS T2 ON T2.name = T1.name
+SELECT `bool` FROM no_payment_due WHERE name = 'student124'
+SELECT bool FROM no_payment_due WHERE name = 'student299'
+SELECT COUNT(name) FROM longest_absense_from_school WHERE month = 0
+SELECT COUNT(T1.name) FROM disabled AS T1 INNER JOIN longest_absense_from_school AS T2 ON T1.name = T2.name WHERE T2.month = 0
+SELECT COUNT(T1.name) FROM longest_absense_from_school AS T1 INNER JOIN disabled AS T2 ON T1.name = T2.name INNER JOIN unemployed AS T3 ON T3.name = T2.name WHERE T1.month = 0
+SELECT COUNT(name) FROM disabled
+SELECT COUNT(name) FROM enlist WHERE organ = 'army'
+SELECT COUNT(T.a) FROM ( SELECT COUNT(DISTINCT T1.name) AS a, COUNT(T2.organ) AS num FROM male AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name GROUP BY T1.name ) T WHERE T.num > 1
+SELECT COUNT(T1.name) FROM enlist AS T1 INNER JOIN unemployed AS T2 ON T2.name = T1.name WHERE T1.organ = 'army'
+SELECT CAST(SUM(IIF(T3.name IS NULL, 1, 0)) AS REAL) / COUNT(T1.name) FROM disabled AS T1 INNER JOIN enlist AS T2 ON T1.name = T2.name LEFT JOIN male AS T3 ON T2.name = T3.name WHERE T2.organ = 'foreign_legion'
+SELECT school, month FROM enrolled WHERE name = 'student214'
+SELECT COUNT(T1.name) FROM disabled AS T1 LEFT JOIN male AS T2 ON T2.name = T1.name INNER JOIN enlist AS T3 ON T3.name = T2.name
+SELECT COUNT(T1.name) FROM enlist AS T1 INNER JOIN filed_for_bankrupcy AS T2 ON T1.name = T2.name WHERE T1.organ = 'navy'

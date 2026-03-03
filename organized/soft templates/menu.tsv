@@ -1,0 +1,71 @@
+soft_templates
+SELECT CASE WHEN SUM(CASE WHEN variable = variable THEN variable - variable ELSE variable END) - SUM(CASE WHEN variable = variable THEN variable - variable ELSE variable END) > variable THEN variable ELSE variable END FROM variable WHERE variable IN (variable, variable)
+SELECT variable FROM variable WHERE variable = variable ORDER BY variable DESC LIMIT variable
+SELECT SUM(CASE WHEN variable = variable THEN variable ELSE variable END) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable IS NULL
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable DESC LIMIT variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable IS NULL
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE SUBSTR(variable, variable, variable) = variable AND SUBSTR(variable, variable, variable) = variable AND variable IS NULL
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY COUNT(variable) DESC LIMIT variable
+SELECT variable FROM variable WHERE variable IS NULL
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT CASE WHEN SUM(CASE WHEN variable = variable THEN variable ELSE variable END) - SUM(CASE WHEN variable = variable THEN variable ELSE variable END) > variable THEN variable ELSE variable END FROM variable AS variable INNER JOIN variable AS variable ON variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable DESC LIMIT variable
+SELECT SUM(CASE WHEN variable = variable THEN variable ELSE variable END) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable > variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
+SELECT COUNT(*) FROM variable WHERE variable = variable
+SELECT COUNT(*) FROM variable WHERE variable = variable
+SELECT SUM(CASE WHEN variable = variable THEN variable ELSE variable END) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable > variable AND variable < variable
+SELECT COUNT(*) FROM variable WHERE variable = variable
+SELECT variable * variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
+SELECT COUNT(*) FROM variable WHERE variable = variable AND variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT SUM(CASE WHEN variable = variable THEN variable ELSE variable END) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT SUM(CASE WHEN variable = variable THEN variable ELSE variable END) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable
+SELECT COUNT(*) FROM variable WHERE variable = variable
+SELECT COUNT(*) FROM variable WHERE variable > variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable < variable AND variable < variable
+SELECT COUNT(*) FROM variable WHERE variable > variable
+SELECT variable FROM variable ORDER BY variable - variable DESC LIMIT variable
+SELECT variable FROM variable WHERE variable = variable AND variable = variable
+SELECT COUNT(*) FROM variable WHERE variable > variable AND variable > variable
+SELECT COUNT(*) FROM variable WHERE variable IS NULL AND strftime(variable, variable) < variable
+SELECT COUNT(*) FROM variable WHERE variable < variable OR variable > variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable DESC LIMIT variable
+SELECT AVG(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT SUM(variable) / COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable ORDER BY variable DESC LIMIT variable
+SELECT variable, variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT CAST(SUM(CASE WHEN variable BETWEEN variable AND variable AND variable BETWEEN variable AND variable THEN variable ELSE variable END) AS variable) * variable / COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable LIKE variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT CASE WHEN variable = variable THEN variable ELSE variable END AS variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable < variable AND variable < variable
+SELECT SUM(CASE WHEN variable = variable THEN variable ELSE variable END) - SUM(CASE WHEN variable = variable THEN variable ELSE variable END) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable
+SELECT SUM(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT COUNT(*) FROM variable WHERE variable = variable
+SELECT variable - variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable - variable > variable
+SELECT variable, variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable, variable, variable - variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable * variable, variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT SUM(CASE WHEN variable = variable THEN variable ELSE variable END) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable DESC LIMIT variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable > variable AND variable > variable AND variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable ORDER BY variable DESC LIMIT variable
+SELECT variable FROM variable ORDER BY variable DESC LIMIT variable
+SELECT COUNT(*) FROM variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT SUM(CASE WHEN variable = variable THEN variable ELSE variable END) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable DESC LIMIT variable

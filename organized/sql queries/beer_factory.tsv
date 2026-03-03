@@ -1,0 +1,105 @@
+sql_query
+SELECT BrandName FROM rootbeerbrand WHERE FirstBrewedYear = ( SELECT MIN(FirstBrewedYear) FROM rootbeerbrand )
+SELECT BrandName FROM rootbeerbrand ORDER BY CurrentRetailPrice - WholesaleCost LIMIT 1
+SELECT COUNT(T1.CustomerID) FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.First = 'Frank-Paul' AND T1.Last = 'Santangelo' AND STRFTIME('%Y-%m', T2.TransactionDate) = '2014-07'
+SELECT COUNT(T1.CustomerID) FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.Gender = 'M' AND STRFTIME('%Y-%m', T2.TransactionDate) = '2014-07'
+SELECT COUNT(T1.CustomerID) FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.SubscribedToEmailList = 'TRUE' AND T2.CreditCardType = 'Visa' AND STRFTIME('%Y-%m', T2.TransactionDate) = '2014-07'
+SELECT DISTINCT T4.BrandName FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID INNER JOIN rootbeer AS T3 ON T2.RootBeerID = T3.RootBeerID INNER JOIN rootbeerbrand AS T4 ON T3.BrandID = T4.BrandID WHERE T1.First = 'Frank-Paul' AND T1.Last = 'Santangelo' AND T2.TransactionDate = '2014-07-07'
+SELECT COUNT(T1.CustomerID) FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID INNER JOIN rootbeer AS T3 ON T2.RootBeerID = T3.RootBeerID WHERE T1.First = 'Frank-Paul' AND T1.Last = 'Santangelo' AND T2.TransactionDate = '2014-07-07' AND T3.ContainerType = 'Can'
+SELECT COUNT(T1.BrandID) FROM rootbeer AS T1 INNER JOIN `transaction` AS T2 ON T1.RootBeerID = T2.RootBeerID INNER JOIN rootbeerbrand AS T3 ON T1.BrandID = T3.BrandID WHERE T2.TransactionDate LIKE '2014-08%' AND T3.BrandName = 'Bulldog'
+SELECT DISTINCT T2.CreditCardNumber FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.First = 'Frank-Paul' AND T1.Last = 'Santangelo' AND T2.TransactionDate = '2014-07-07'
+SELECT COUNT(T1.CustomerID) FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID INNER JOIN rootbeer AS T3 ON T2.RootBeerID = T3.RootBeerID INNER JOIN rootbeerbrand AS T4 ON T3.BrandID = T4.BrandID WHERE T1.First = 'Frank-Paul' AND T1.Last = 'Santangelo' AND T4.ArtificialSweetener = 'FALSE' AND T4.Honey = 'FALSE'
+SELECT COUNT(T2.CustomerID) FROM customers AS T1 INNER JOIN rootbeerreview AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.First = 'James' AND T1.Last = 'House'
+SELECT DISTINCT T2.CreditCardNumber FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.First = 'Lisa' AND T1.Last = 'Ling'
+SELECT T2.Latitude, T2.Longitude FROM location AS T1 INNER JOIN geolocation AS T2 ON T1.LocationID = T2.LocationID WHERE T1.LocationName = 'Sac State American River Courtyard'
+SELECT T2.LocationName FROM `transaction` AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID WHERE T1.TransactionID = 100885
+SELECT T1.City FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE T2.TransactionID = 103545
+SELECT T1.FirstPurchaseDate FROM customers AS T1 INNER JOIN rootbeerreview AS T2 ON T1.CustomerID = T2.CustomerID WHERE T2.Review = 'Tastes like Australia.'
+SELECT T2.TransactionDate FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.First = 'Natalie' AND T1.Last = 'Dorris' ORDER BY T2.TransactionDate LIMIT 1
+SELECT T1.BreweryName FROM rootbeerbrand AS T1 INNER JOIN rootbeerreview AS T2 ON T1.BrandID = T2.BrandID WHERE T2.StarRating = 5 GROUP BY T1.BrandID ORDER BY COUNT(T2.StarRating) DESC LIMIT 1
+SELECT CASE WHEN T1.SubscribedToEmailList LIKE 'TRUE' THEN 'YES' ELSE 'NO' END AS result FROM customers AS T1 INNER JOIN rootbeerreview AS T2 ON T1.CustomerID = T2.CustomerID INNER JOIN rootbeerbrand AS T3 ON T2.BrandID = T3.BrandID WHERE T2.StarRating = 3 AND T3.BrandName = 'Frostie' AND T2.ReviewDate = '2014-04-24'
+SELECT T1.CurrentRetailPrice - T1.WholesaleCost AS price FROM rootbeerbrand AS T1 INNER JOIN rootbeerreview AS T2 ON T1.BrandID = T2.BrandID WHERE T2.Review = 'The quintessential dessert root beer. No ice cream required.'
+SELECT CAST(COUNT(CASE WHEN T2.StarRating = 5 THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T2.StarRating) FROM rootbeerbrand AS T1 INNER JOIN rootbeerreview AS T2 ON T1.BrandID = T2.BrandID WHERE T1.BrandName = 'River City'
+SELECT T3.BrandName FROM customers AS T1 INNER JOIN rootbeerreview AS T2 ON T1.CustomerID = T2.CustomerID INNER JOIN rootbeerbrand AS T3 ON T2.BrandID = T3.BrandID WHERE T1.First = 'Jayne' AND T1.Last = 'Collins' AND T2.StarRating = 1
+SELECT T2.BreweryName FROM rootbeer AS T1 INNER JOIN rootbeerbrand AS T2 ON T1.BrandID = T2.BrandID WHERE T1.PurchaseDate BETWEEN '2016-01-01' AND '2016-12-31' GROUP BY T2.BrandID ORDER BY COUNT(T1.BrandID) DESC LIMIT 1
+SELECT T1.First, T1.Last FROM customers AS T1 INNER JOIN rootbeerreview AS T2 ON T1.CustomerID = T2.CustomerID INNER JOIN rootbeerbrand AS T3 ON T2.BrandID = T3.BrandID WHERE T3.BrandName = 'River City' AND T2.StarRating = 5
+SELECT COUNT(T2.RootBeerID) FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.First = 'Tom' AND T1.Last = 'Hanks' AND T2.TransactionDate BETWEEN '2015-01-01' AND '2016-12-31'
+SELECT T1.BrandName FROM rootbeerbrand AS T1 INNER JOIN rootbeerreview AS T2 ON T1.BrandID = T2.BrandID WHERE T2.StarRating = 5
+SELECT COUNT(T1.CustomerID) FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID INNER JOIN rootbeer AS T3 ON T2.RootBeerID = T3.RootBeerID INNER JOIN rootbeerbrand AS T4 ON T3.BrandID = T4.BrandID WHERE T1.First = 'Nicholas' AND T1.Last = 'Sparks' AND T4.BrandName LIKE 'Henry Weinhard%s'
+SELECT T3.LocationName FROM rootbeer AS T1 INNER JOIN rootbeerbrand AS T2 ON T1.BrandID = T2.BrandID INNER JOIN location AS T3 ON T1.LocationID = T3.LocationID WHERE T2.BrandName = 'Dog n Suds' AND T3.LocationName IN ('Sac State American River Courtyard', 'Sac State Union') GROUP BY T1.LocationID ORDER BY COUNT(T1.BrandID) DESC LIMIT 1
+SELECT T2.Latitude, T2.Longitude FROM location AS T1 INNER JOIN geolocation AS T2 ON T1.LocationID = T2.LocationID WHERE T1.LocationName = 'Sac State Union'
+SELECT T1.BrandName FROM rootbeerbrand AS T1 INNER JOIN rootbeerreview AS T2 ON T1.BrandID = T2.BrandID WHERE T2.StarRating = 5 GROUP BY T2.BrandID HAVING COUNT(T2.StarRating) >= 5
+SELECT CAST(COUNT(CASE WHEN ContainerType = 'Can' THEN RootBeerID ELSE NULL END) AS REAL) * 100 / COUNT(RootBeerID) FROM rootbeer WHERE PurchaseDate LIKE '2014%'
+SELECT BrandID FROM rootbeerreview WHERE StarRating = 1 GROUP BY BrandID ORDER BY COUNT(BrandID) DESC LIMIT 1
+SELECT CAST(COUNT(CASE WHEN CreditCardType = 'Visa' THEN TransactionID ELSE NULL END) AS REAL) * 100 / COUNT(TransactionID) FROM `transaction`
+SELECT CAST(COUNT(CASE WHEN T2.LocationName = 'Sac State American River Courtyard' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T1.TransactionID) FROM `transaction` AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID
+SELECT AVG(T2.PurchasePrice) FROM rootbeer AS T1 INNER JOIN `transaction` AS T2 ON T1.RootBeerID = T2.RootBeerID INNER JOIN rootbeerbrand AS T3 ON T1.BrandID = T3.BrandID WHERE T1.ContainerType = 'Bottle' AND T2.PurchasePrice > 2
+SELECT T3.BrandName FROM rootbeer AS T1 INNER JOIN rootbeerreview AS T2 ON T1.BrandID = T2.BrandID INNER JOIN rootbeerbrand AS T3 ON T1.BrandID = T3.BrandID WHERE T2.StarRating = 5 AND strftime('%Y', T2.ReviewDate) = '2012' GROUP BY T1.BrandID ORDER BY COUNT(T2.BrandID) DESC LIMIT 1
+SELECT COUNT(CASE WHEN T3.CaneSugar = 'TRUE' THEN T1.BrandID ELSE NULL END) - COUNT(CASE WHEN T3.CornSyrup = 'TRUE' THEN T1.BrandID ELSE NULL END) AS DIFFERENCE FROM rootbeer AS T1 INNER JOIN `transaction` AS T2 ON T1.RootBeerID = T2.RootBeerID INNER JOIN rootbeerbrand AS T3 ON T1.BrandID = T3.BrandID
+SELECT DISTINCT T1.First, T1.Last, T1.Email FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID INNER JOIN location AS T3 ON T2.LocationID = T3.LocationID WHERE T3.LocationName = 'Sac State Union' AND T2.CreditCardType = 'American Express'
+SELECT DISTINCT T1.BrandName FROM rootbeerbrand AS T1 INNER JOIN rootbeerreview AS T2 ON T1.BrandID = T2.BrandID WHERE T2.StarRating = 5 AND T2.ReviewDate BETWEEN '2014-09-01' AND '2014-09-30'
+SELECT T3.BrandName FROM customers AS T1 INNER JOIN rootbeerreview AS T2 ON T1.CustomerID = T2.CustomerID INNER JOIN rootbeerbrand AS T3 ON T2.BrandID = T3.BrandID WHERE T1.First = 'Peg' AND T1.Last = 'Winchester'
+SELECT T1.BrandName FROM rootbeerbrand AS T1 INNER JOIN rootbeerreview AS T2 ON T2.BrandID = T1.BrandID WHERE T2.StarRating = 1 GROUP BY T1.BrandName ORDER BY COUNT(T1.BrandName) DESC LIMIT 1
+SELECT T2.CreditCardType FROM rootbeer AS T1 INNER JOIN `transaction` AS T2 ON T1.RootBeerID = T2.RootBeerID INNER JOIN rootbeerbrand AS T3 ON T1.BrandID = T3.BrandID WHERE T3.Alcoholic = 'FALSE' GROUP BY T2.CreditCardType ORDER BY COUNT(T2.CreditCardType) DESC LIMIT 1
+SELECT T1.First, T1.Last FROM customers AS T1 INNER JOIN rootbeerreview AS T2 ON T1.CustomerID = T2.CustomerID WHERE T2.StarRating = 5
+SELECT T3.Latitude FROM rootbeer AS T1 INNER JOIN rootbeerbrand AS T2 ON T1.BrandID = T2.BrandID INNER JOIN geolocation AS T3 ON T1.LocationID = T3.LocationID WHERE T2.BrandName = 'Thomas Kemper' GROUP BY T3.Latitude ORDER BY COUNT(T1.BrandID) DESC LIMIT 1
+SELECT T2.StarRating FROM rootbeerbrand AS T1 INNER JOIN rootbeerreview AS T2 ON T1.BrandID = T2.BrandID WHERE T1.CornSyrup = 'TRUE' GROUP BY T2.StarRating ORDER BY COUNT(T2.StarRating) DESC LIMIT 1
+SELECT T2.Latitude, T2.Longitude FROM location AS T1 INNER JOIN geolocation AS T2 ON T1.LocationID = T2.LocationID WHERE T1.ZipCode = 95819
+SELECT DISTINCT T2.BrandName FROM rootbeer AS T1 INNER JOIN rootbeerbrand AS T2 ON T1.BrandID = T2.BrandID INNER JOIN geolocation AS T3 ON T1.LocationID = T3.LocationID WHERE T3.Latitude = '38.566129' AND T3.Longitude = '-121.426432'
+SELECT DISTINCT T1.Email, T1.PhoneNumber FROM customers AS T1 INNER JOIN rootbeerreview AS T2 ON T1.CustomerID = T2.CustomerID WHERE T2.StarRating > 3 AND T1.City = 'Sacramento' AND T2.ReviewDate BETWEEN '2014-01-01' AND '2014-12-31'
+SELECT SUM(T1.PurchasePrice) FROM `transaction` AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID WHERE T2.LocationName = 'Sac State American River Courtyard' AND T1.CreditCardType = 'Visa' AND T1.TransactionDate BETWEEN '2014-06-03' AND '2015-11-27'
+SELECT COUNT(T1.TransactionID) FROM `transaction` AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID WHERE T2.LocationName = 'Sac State Union' AND T1.CreditCardType = 'American Express' AND T1.TransactionDate BETWEEN '2014-01-01' AND '2014-12-31'
+SELECT T2.Latitude, T2.Longitude FROM location AS T1 INNER JOIN geolocation AS T2 ON T1.LocationID = T2.LocationID WHERE T1.LocationName = 'Sac State Union'
+SELECT T2.Review FROM rootbeerbrand AS T1 INNER JOIN rootbeerreview AS T2 ON T1.BrandID = T2.BrandID WHERE T1.BrandName = 'Bulldog' AND T2.ReviewDate = '2013-07-26'
+SELECT T1.BrandName, T1.CurrentRetailPrice - T1.WholesaleCost AS result FROM rootbeerbrand AS T1 INNER JOIN rootbeerreview AS T2 ON T1.BrandID = T2.BrandID WHERE T2.StarRating = 5 AND T2.ReviewDate BETWEEN '2013-01-01' AND '2013-12-31'
+SELECT DISTINCT T2.CreditCardType FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.First = 'Kenneth' AND T1.Last = 'Walton'
+SELECT COUNT(T3.RootBeerID) FROM rootbeerbrand AS T1 INNER JOIN rootbeer AS T2 ON T1.BrandID = T2.BrandID INNER JOIN `transaction` AS T3 ON T2.RootBeerID = T3.RootBeerID WHERE T1.State = 'CA'
+SELECT ( SELECT COUNT(T1.BrandID) FROM rootbeer AS T1 INNER JOIN rootbeerbrand AS T2 ON T1.BrandID = T2.BrandID WHERE T2.State = 'LA' AND T1.ContainerType = 'Bottle' ) - ( SELECT COUNT(T3.BrandID) FROM rootbeer AS T3 INNER JOIN rootbeerbrand AS T4 ON T3.BrandID = T4.BrandID WHERE T4.State = 'MO' AND T3.ContainerType = 'Bottle' ) AS DIFFERENCE
+SELECT T1.BrandName, SUM(T3.PurchasePrice) FROM rootbeerbrand AS T1 INNER JOIN rootbeer AS T2 ON T1.BrandID = T2.BrandID INNER JOIN `transaction` AS T3 ON T2.RootBeerID = T3.RootBeerID WHERE T1.CaneSugar = 'FALSE' AND T1.Caffeinated = 'FALSE' GROUP BY T1.BrandName
+SELECT T2.BrandName FROM rootbeer AS T1 INNER JOIN rootbeerbrand AS T2 ON T1.BrandID = T2.BrandID GROUP BY T2.BrandID ORDER BY COUNT(T1.BrandID) LIMIT 1
+SELECT CAST((SUM(CASE WHEN T3.BrandName = 'River City' THEN T2.PurchasePrice ELSE 0 END) - SUM(CASE WHEN T3.BrandName = 'Frostie' THEN T2.PurchasePrice ELSE 0 END)) AS REAL) * 100 / SUM(CASE WHEN T3.BrandName = 'Frostie' THEN T2.PurchasePrice ELSE 0 END) FROM rootbeer AS T1 INNER JOIN `transaction` AS T2 ON T1.RootBeerID = T2.RootBeerID INNER JOIN rootbeerbrand AS T3 ON T1.BrandID = T3.BrandID
+SELECT CAST(COUNT(CASE WHEN Gender = 'F' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(SubscribedToEmailList) FROM customers WHERE SubscribedToEmailList = 'TRUE'
+SELECT DISTINCT T2.CreditCardType FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.First = 'Dick' AND T1.Last = 'Ruthven'
+SELECT T2.StarRating FROM customers AS T1 INNER JOIN rootbeerreview AS T2 ON T1.CustomerID = T2.CustomerID INNER JOIN rootbeerbrand AS T3 ON T2.BrandID = T3.BrandID WHERE T1.First = 'Urijah' AND T1.Last = 'Faber' AND T3.BrandName = 'Frostie'
+SELECT COUNT(T1.TransactionID) FROM `transaction` AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID WHERE T2.LocationName = 'Sac State American River Courtyard' AND T1.CreditCardType = 'MasterCard'
+SELECT DISTINCT T1.BrandName FROM rootbeerbrand AS T1 INNER JOIN rootbeerreview AS T2 ON T1.BrandID = T2.BrandID WHERE T1.CaneSugar = 'TRUE' AND T1.Honey = 'TRUE' AND T2.StarRating = 1 AND T2.ReviewDate LIKE '2012%'
+SELECT DISTINCT T1.Latitude, T1.Longitude FROM geolocation AS T1 INNER JOIN `transaction` AS T2 ON T2.LocationID = T1.LocationID INNER JOIN customers AS T3 ON T3.CustomerID = T2.CustomerID WHERE T3.First = 'Tommy' AND T3.Last = 'Kono' AND T2.TransactionDate LIKE '2014%'
+SELECT DISTINCT T1.BrandName FROM rootbeerbrand AS T1 INNER JOIN rootbeerreview AS T2 ON T1.BrandID = T2.BrandID WHERE T2.StarRating = 5 LIMIT 3
+SELECT T2.Latitude, T2.Longitude FROM location AS T1 INNER JOIN geolocation AS T2 ON T1.LocationID = T2.LocationID WHERE T1.LocationName = 'Sac State American River Courtyard'
+SELECT COUNT(BrandID) FROM rootbeerbrand WHERE Country = 'United States'
+SELECT City FROM rootbeerbrand WHERE BreweryName = 'AJ Stephans Beverages'
+SELECT T1.First, T1.Last FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE STRFTIME('%Y-%m', T2.TransactionDate) = '2014-08' GROUP BY T1.CustomerID ORDER BY COUNT(T2.CustomerID) DESC LIMIT 1
+SELECT T1.First, T1.Last FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID INNER JOIN rootbeer AS T3 ON T2.RootBeerID = T3.RootBeerID INNER JOIN rootbeerbrand AS T4 ON T3.BrandID = T4.BrandID WHERE T4.BreweryName = 'AJ Stephans Beverages'
+SELECT T2.TransactionDate FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.Gender = 'M' GROUP BY T2.TransactionDate HAVING COUNT(T2.CustomerID) > 3
+SELECT CAST(COUNT(T1.BrandID) AS REAL) / 31 FROM rootbeer AS T1 INNER JOIN `transaction` AS T2 ON T1.RootBeerID = T2.RootBeerID INNER JOIN rootbeerbrand AS T3 ON T1.BrandID = T3.BrandID WHERE T2.TransactionDate LIKE '2014-08%' AND T3.BrandName = 'A&W'
+SELECT CAST(COUNT(CASE WHEN T3.BreweryName = 'AJ Stephans Beverages' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T1.BrandID) FROM rootbeer AS T1 INNER JOIN `transaction` AS T2 ON T1.RootBeerID = T2.RootBeerID INNER JOIN rootbeerbrand AS T3 ON T1.BrandID = T3.BrandID WHERE T2.TransactionDate LIKE '2014%'
+SELECT CAST(COUNT(*) AS REAL) / COUNT(DISTINCT T1.BrandID) AS avgreview FROM rootbeerbrand AS T1 INNER JOIN rootbeerreview AS T2 ON T1.BrandID = T2.BrandID WHERE T1.State = 'CA'
+SELECT COUNT(BreweryName) FROM rootbeerbrand WHERE Country = 'Australia'
+SELECT COUNT(CustomerID) FROM customers WHERE First = 'Charles' AND City = 'Sacramento'
+SELECT COUNT(TransactionID) FROM `transaction` WHERE CreditCardType = 'MasterCard' AND TransactionDate LIKE '2014%'
+SELECT COUNT(T1.BrandID) FROM rootbeer AS T1 INNER JOIN rootbeerbrand AS T2 ON T1.BrandID = T2.BrandID WHERE T1.ContainerType = 'Can' AND T2.BrandName = 'A&W' AND T1.PurchaseDate LIKE '2016%'
+SELECT COUNT(BrandID) FROM rootbeerbrand WHERE CornSyrup = 'TRUE' AND ArtificialSweetener = 'TRUE' AND AvailableInCans = 'TRUE'
+SELECT DISTINCT T1.City FROM customers AS T1 INNER JOIN rootbeerreview AS T2 ON T1.CustomerID = T2.CustomerID WHERE T2.StarRating = 5 AND T2.ReviewDate BETWEEN '2012-11-01' AND '2012-11-30'
+SELECT CAST(COUNT(CASE WHEN T1.StarRating = 3 THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T1.CustomerID) FROM rootbeerreview AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE T2.CreditCardType = 'Discover'
+SELECT BrandID FROM rootbeerreview WHERE StarRating > 3
+SELECT T1.First, T1.Last FROM customers AS T1 INNER JOIN rootbeerreview AS T2 ON T1.CustomerID = T2.CustomerID WHERE T2.StarRating = 5 AND T2.Review = 'The quintessential dessert root beer. No ice cream required.'
+SELECT DISTINCT T2.BreweryName, T2.BrandName FROM rootbeer AS T1 INNER JOIN rootbeerbrand AS T2 ON T1.BrandID = T2.BrandID WHERE T1.PurchaseDate < '2015-06-06' AND T1.ContainerType = 'Can'
+SELECT T1.RootBeerID FROM rootbeer AS T1 INNER JOIN rootbeerbrand AS T2 ON T2.BrandID = T1.BrandID WHERE T2.BrandName IN ('Bulldog', 'Bundaberg', 'Dad''s', 'Dog n Suds', 'Virgil''s')
+SELECT COUNT(T3.ContainerType) FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T2.CustomerID = T1.CustomerID INNER JOIN rootbeer AS T3 ON T3.RootBeerID = T2.RootBeerID WHERE T3.ContainerType = 'Bottle' AND T1.First = 'Jim' AND T1.Last = 'Breech'
+SELECT AVG(T2.StarRating) FROM customers AS T1 INNER JOIN rootbeerreview AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.SubscribedToEmailList = 'TRUE'
+SELECT T1.BrandID, AVG(T1.StarRating) FROM rootbeerreview AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID INNER JOIN rootbeerbrand AS T3 ON T1.BrandID = T3.BrandID GROUP BY T3.BrandID ORDER BY COUNT(T1.BrandID) DESC LIMIT 1
+SELECT DISTINCT City FROM customers WHERE State = 'CA'
+SELECT T1.Email FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE T2.TransactionID = '100016'
+SELECT T2.LocationName FROM rootbeer AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID WHERE T1.ContainerType = 'Bottle' GROUP BY T2.LocationID ORDER BY COUNT(T1.LocationID) DESC LIMIT 1
+SELECT First, Last FROM customers ORDER BY FirstPurchaseDate LIMIT 10
+SELECT First, Last, PhoneNumber FROM customers WHERE Gender = 'M' AND City = 'Fair Oaks' AND SubscribedToEmailList = 'TRUE'
+SELECT * FROM ( SELECT T1.BrandName, T2.ContainerType FROM rootbeerbrand AS T1 INNER JOIN rootbeer AS T2 ON T1.BrandID = T2.BrandID ORDER BY T1.CurrentRetailPrice - T1.WholesaleCost DESC LIMIT 1 ) UNION ALL SELECT * FROM ( SELECT T3.BrandName, T4.ContainerType FROM rootbeerbrand AS T3 INNER JOIN rootbeer AS T4 ON T3.BrandID = T4.BrandID ORDER BY T3.CurrentRetailPrice - T3.WholesaleCost ASC LIMIT 1 )
+SELECT COUNT(T1.CustomerID) FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.City = 'Folsom' AND T2.CreditCardType = 'Visa'
+SELECT AVG(T2.CurrentRetailPrice - T2.WholesaleCost) FROM rootbeer AS T1 INNER JOIN rootbeerbrand AS T2 ON T1.BrandID = T2.BrandID WHERE T1.ContainerType = 'Can'
+SELECT COUNT(T2.CustomerID) FROM customers AS T1 INNER JOIN `transaction` AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.First = 'Anna' AND T1.Last = 'Himes' AND T2.CreditCardType = 'MasterCard' AND T2.TransactionDate BETWEEN '2014-12-25' AND '2016-05-20'
+SELECT CAST(COUNT(CASE WHEN T2.LocationName = 'Sac State American River Courtyard' THEN T1.TransactionID ELSE NULL END) AS REAL) * 100 / COUNT(CASE WHEN T2.LocationName = 'Sac State Union' THEN T1.TransactionID ELSE NULL END) FROM `transaction` AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID
+SELECT T1.BrandName FROM rootbeerbrand AS T1 INNER JOIN rootbeerreview AS T2 ON T2.BrandID = T1.BrandID WHERE T2.StarRating = 1 AND T2.Review = 'Too Spicy!'
+SELECT BrandName FROM rootbeerbrand WHERE FacebookPage IS NOT NULL
+SELECT T1.First, T1.Last FROM customers AS T1 INNER JOIN rootbeerreview AS T2 ON T1.CustomerID = T2.CustomerID GROUP BY T1.CustomerID ORDER BY COUNT(T2.CustomerID) DESC LIMIT 1
+SELECT COUNT(CustomerID) FROM customers WHERE Gender = 'F' AND SubscribedToEmailList = 'TRUE'
+SELECT COUNT(T1.BrandID) FROM rootbeer AS T1 INNER JOIN rootbeerbrand AS T2 ON T1.BrandID = T2.BrandID INNER JOIN location AS T3 ON T1.LocationID = T3.LocationID WHERE T3.LocationName = 'Sac State American River Courtyard' AND T1.PurchaseDate LIKE '2015%' AND T2.Honey = 'TRUE' AND T2.CaneSugar = 'FALSE' AND T1.ContainerType = 'Bottle'

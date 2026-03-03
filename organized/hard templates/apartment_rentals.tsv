@@ -1,0 +1,81 @@
+hard_templates
+SELECT count(*) FROM table_name
+SELECT count(*) FROM table_name
+SELECT col_name , col_name FROM table_name
+SELECT col_name , col_name FROM table_name
+SELECT DISTINCT col_name FROM table_name
+SELECT DISTINCT col_name FROM table_name
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT col_name , col_name FROM table_name WHERE col_name = string
+SELECT col_name , col_name FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name WHERE col_name LIKE string
+SELECT col_name FROM table_name WHERE col_name LIKE string
+SELECT min( col_name ) , max( col_name ) FROM table_name
+SELECT min( col_name ) , max( col_name ) FROM table_name
+SELECT avg( col_name ) FROM table_name
+SELECT avg( col_name ) FROM table_name
+SELECT apt_number , col_name FROM table_name
+SELECT apt_number , col_name FROM table_name
+SELECT avg( col_name ) FROM table_name WHERE apt_type_code = string
+SELECT avg( col_name ) FROM table_name WHERE apt_type_code = string
+SELECT apt_number FROM table_name WHERE apt_type_code = string
+SELECT apt_number FROM table_name WHERE apt_type_code = string
+SELECT col_name , col_name FROM table_name
+SELECT col_name , col_name FROM table_name
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT table_alias1.col_name , table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT table_alias1.col_name , table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name > num
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name > num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT DISTINCT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT DISTINCT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT avg( col_name ) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT avg( col_name ) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias1.col_name , table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT table_alias1.col_name , table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name > num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name > num
+SELECT sum(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT sum(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT sum(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT sum(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name > num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name > num
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT col_name , COUNT(*) FROM table_name GROUP BY col_name
+SELECT col_name , COUNT(*) FROM table_name GROUP BY col_name
+SELECT apt_number FROM table_name ORDER BY col_name ASC
+SELECT apt_number FROM table_name ORDER BY col_name ASC
+SELECT apt_number FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT apt_number FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT apt_type_code , COUNT(*) FROM table_name GROUP BY apt_type_code ORDER BY COUNT(*) ASC
+SELECT apt_type_code , COUNT(*) FROM table_name GROUP BY apt_type_code ORDER BY COUNT(*) ASC
+SELECT apt_type_code FROM table_name GROUP BY apt_type_code ORDER BY avg( col_name ) DESC LIMIT num
+SELECT apt_type_code FROM table_name GROUP BY apt_type_code ORDER BY avg( col_name ) DESC LIMIT num
+SELECT apt_type_code , col_name , col_name FROM table_name GROUP BY apt_type_code ORDER BY sum( col_name ) DESC LIMIT num
+SELECT apt_type_code , col_name , col_name FROM table_name GROUP BY apt_type_code ORDER BY sum( col_name ) DESC LIMIT num
+SELECT apt_type_code FROM table_name GROUP BY apt_type_code ORDER BY count(*) DESC LIMIT num
+SELECT apt_type_code FROM table_name GROUP BY apt_type_code ORDER BY count(*) DESC LIMIT num
+SELECT apt_type_code FROM table_name WHERE col_name > num GROUP BY apt_type_code ORDER BY count(*) DESC LIMIT num
+SELECT apt_type_code FROM table_name WHERE col_name > num GROUP BY apt_type_code ORDER BY count(*) DESC LIMIT num
+SELECT apt_type_code , max( col_name ) , min( col_name ) FROM table_name GROUP BY apt_type_code
+SELECT apt_type_code , max( col_name ) , min( col_name ) FROM table_name GROUP BY apt_type_code
+SELECT col_name , COUNT(*) FROM table_name GROUP BY col_name ORDER BY COUNT(*) DESC
+SELECT col_name , COUNT(*) FROM table_name GROUP BY col_name ORDER BY COUNT(*) DESC
+SELECT count(*) FROM table_name WHERE apt_id NOT IN (SELECT apt_id FROM table_name)
+SELECT count(*) FROM table_name WHERE apt_id NOT IN (SELECT apt_id FROM table_name)
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string INTERSECT SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string INTERSECT SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = num INTERSECT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = num INTERSECT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = num

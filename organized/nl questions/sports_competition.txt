@@ -1,0 +1,53 @@
+nl_question
+How many clubs are there?
+What is the total number of clubs?
+List the distinct region of clubs in ascending alphabetical order.
+What are the different regions of clubs in ascending alphabetical order?
+What is the average number of gold medals for clubs?
+What is the average number of gold medals for a club?
+What are the types and countries of competitions?
+What are the types of every competition and in which countries are they located?
+What are the distinct years in which the competitions type is not "Tournament"?
+What are the different years for all competitions that are not of type equal to tournament?
+What are the maximum and minimum number of silver medals for clubs.
+What are the maximum and minimum number of silver medals for all the clubs?
+How many clubs have total medals less than 10?
+What is the total number of clubs that have less than 10 medals in total?
+List all club names in ascending order of start year.
+What are the names of all the clubs starting with the oldest?
+List all club names in descending alphabetical order.
+What are the names of all the clubs ordered in descending alphabetical order?
+Please show the names and the players of clubs.
+What are the names and players of all the clubs?
+Show the names of clubs that have players with position "Right Wing".
+What are the names of the clubs that have players in the position of "Right Wing"?
+What is the average points of players from club with name "AIB".
+What is the average number of points for players from the "AIB" club?
+List the position of players and the average number of points of players of each position.
+For each position, what is the average number of points for players in that position?
+List the position of players with average number of points scored by players of that position bigger than 20.
+What are the positions of players whose average number of points scored by that position is larger than 20?
+List the types of competition and the number of competitions of each type.
+What are the types of competition and number of competitions for that type?
+List the most common type of competition.
+What is the most common competition type?
+List the types of competition that have at most five competitions of that type.
+What are the types of competition that have most 5 competitions for that type?
+List the names of clubs that do not have any players.
+What are the names of all clubs that do not have any players?
+What are the positions with both players having more than 20 points and less than 10 points.
+What are the positions of both players that have more than 20 20 points and less than 10 points?
+Show total points of all players.
+What is the total number of points for all players?
+how many different positions are there?
+How many different position for players are listed?
+what are the name of players who get more than the average points.
+What are the names of all players that got more than the average number of points?
+find the number of players whose points are lower than 30 in each position.
+What is the number of players who have points less than 30 for each position?
+which country did participated in the most number of Tournament competitions?
+what is the name of the country that participated in the most tournament competitions?
+which countries did participated in both Friendly and Tournament type competitions.
+What are the countries that participated in both friendly and tournament type competitions?
+Find the countries that have never participated in any competition with Friendly type.
+What are the countries that have never participated in any friendly-type competitions?

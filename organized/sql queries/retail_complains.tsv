@@ -1,0 +1,121 @@
+sql_query
+SELECT `Date received` FROM callcenterlogs WHERE ser_time = ( SELECT MAX(ser_time) FROM callcenterlogs )
+SELECT CASE WHEN SUM(CASE WHEN `Complaint ID` = 'CR2400594' THEN priority END) > SUM(CASE WHEN `Complaint ID` = 'CR2405641' THEN priority END) THEN 'CR2400594' ELSE 'CR2405641' END FROM callcenterlogs
+SELECT T2.`Sub-product` FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.first = 'Diesel' AND T1.last = 'Galloway' AND T2.`Date received` = '2014-07-03'
+SELECT 365 * (strftime('%Y', T2.`Date sent to company`) - strftime('%Y', T2.`Date received`)) + 30 * (strftime('%M', T2.`Date sent to company`) - strftime('%M', T2.`Date received`)) + (strftime('%d', T2.`Date sent to company`) - strftime('%d', T2.`Date received`)) FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.first = 'Matthew' AND T1.last = 'Pierce' AND T2.`Date received` = '2016-10-28'
+SELECT T1.first, T1.middle, T1.last FROM client AS T1 INNER JOIN callcenterlogs AS T2 ON T1.client_id = T2.`rand client` WHERE T2.`Date received` = '2017-03-27' AND T2.server = 'MICHAL'
+SELECT T2.ser_time FROM client AS T1 INNER JOIN callcenterlogs AS T2 ON T1.client_id = T2.`rand client` WHERE T1.first = 'Rachel' AND T1.last = 'Hicks' AND T2.`Date received` = '2017-03-27'
+SELECT T1.first, T1.middle, T1.last FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.`Company response to consumer` = 'In progress'
+SELECT COUNT(T1.sex) FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE strftime('%Y', T2.`Date received`) = '2016' AND T1.sex = 'Male' AND T2.Product = 'Credit card'
+SELECT T2.division FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T1.first = 'Diesel' AND T1.last = 'Galloway'
+SELECT 100.0 * (SUM(CASE WHEN strftime('%Y', T2.`Date received`) = '2017' THEN 1 ELSE 0 END) - SUM(CASE WHEN strftime('%Y', T2.`Date received`) = '2016' THEN 1 ELSE 0 END)) / SUM(CASE WHEN strftime('%Y', T2.`Date received`) = '2016' THEN 1 ELSE 0 END) FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.city = 'New York City'
+SELECT T1.ser_time FROM callcenterlogs AS T1 INNER JOIN events AS T2 ON T1.`Complaint ID` = T2.`Complaint ID` WHERE T2.Client_ID = 'C00007127' AND T1.`Date received` = '2017-02-22'
+SELECT DISTINCT T2.`Sub-product` FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.first = 'Lennox' AND T1.middle = 'Oliver' AND T1.last = 'Drake' AND T1.sex = 'Male'
+SELECT CASE WHEN T2.`Consumer consent provided?` IN (NULL, 'N/A', '') THEN 'No' ELSE 'Yes' END FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.first = 'Lyric' AND T1.middle = 'Emely' AND T1.last = 'Taylor' AND T1.sex = 'Female' AND T2.`Date received` = '2016-05-20'
+SELECT 365 * (strftime('%Y', T2.`Date sent to company`) - strftime('%Y', T2.`Date received`)) + 30 * (strftime('%M', T2.`Date sent to company`) - strftime('%M', T2.`Date received`)) + (strftime('%d', T2.`Date sent to company`) - strftime('%d', T2.`Date received`)) AS days FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.`Date received` = '2012-05-18' AND T1.sex = 'Male' AND T1.first = 'Brantley' AND T1.middle = 'Julian' AND T1.last = 'Stanley'
+SELECT T1.Reviews FROM reviews AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T2.city = 'Jacksonville' AND T1.Date = '2017-07-22'
+SELECT T1.Product FROM reviews AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T2.city = 'Indianapolis' AND T1.Date = '2016-10-07'
+SELECT COUNT(T1.Stars) FROM reviews AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T1.Product = 'Eagle Capital' AND T2.city = 'Little Rock' AND T1.Date = '2013-04-04'
+SELECT T1.month, T1.day FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.`Complaint ID` = 'CR0217298'
+SELECT CAST(SUM(CASE WHEN T1.sex = 'Female' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.sex) FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.`Date received` = '2017-03-27'
+SELECT T.Product, MAX(T.num) FROM ( SELECT Product, COUNT(Stars) AS num FROM reviews WHERE Stars = 5 GROUP BY Product ) T
+SELECT CAST(SUM(T1.age) AS REAL) / COUNT(T3.Region) AS average FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN state AS T3 ON T2.state_abbrev = T3.StateCode WHERE T3.Region = 'Midwest'
+SELECT COUNT(T1.age) FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T1.age BETWEEN 12 AND 20 AND T2.division = 'Mountain'
+SELECT T1.first, T1.middle, T1.last FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.year BETWEEN 1980 AND 2000 AND T1.sex = 'Male' AND T2.`Submitted via` = 'Referral'
+SELECT T3.`Submitted via` FROM callcenterlogs AS T1 INNER JOIN client AS T2 ON T1.`rand client` = T2.client_id INNER JOIN events AS T3 ON T1.`Complaint ID` = T3.`Complaint ID` WHERE T2.state = 'FL' GROUP BY T1.`Complaint ID` ORDER BY COUNT(T1.`Complaint ID`) DESC LIMIT 1
+SELECT STRFTIME('%Y', T3.`Date received`) , CAST(SUM(CASE WHEN T3.`Company response to consumer` = 'Closed with explanation' THEN 1 ELSE 0 END) AS REAL) / COUNT(T3.`Complaint ID`) AS average FROM callcenterlogs AS T1 INNER JOIN client AS T2 ON T1.`rand client` = T2.client_id INNER JOIN events AS T3 ON T1.`Complaint ID` = T3.`Complaint ID` WHERE T2.city = 'New Bedford' GROUP BY strftime('%Y', T3.`Date received`)
+SELECT CAST(SUM(CASE WHEN T1.priority = 1 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.priority) FROM callcenterlogs AS T1 INNER JOIN client AS T2 ON T1.`rand client` = T2.client_id INNER JOIN district AS T3 ON T2.district_id = T3.district_id INNER JOIN state AS T4 ON T3.state_abbrev = T4.StateCode WHERE T4.State = 'California'
+SELECT (CAST(SUM(CASE WHEN T1.age BETWEEN 35 AND 55 THEN T1.age ELSE 0 END) AS REAL) / SUM(CASE WHEN T1.age BETWEEN 35 AND 55 THEN 1 ELSE 0 END)) - (CAST(SUM(CASE WHEN T1.age > 65 THEN T1.age ELSE 0 END) AS REAL) / SUM(CASE WHEN T1.age > 65 THEN 1 ELSE 0 END)) AS difference FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN state AS T3 ON T2.state_abbrev = T3.StateCode WHERE T3.Region = 'Northeast'
+SELECT `Complaint ID` FROM events WHERE strftime('%J', `Date sent to company`) - strftime('%J', `Date received`) = ( SELECT MAX(strftime('%J', `Date sent to company`) - strftime('%J', `Date received`)) FROM events WHERE `Date sent to company` = '2014-09-25' ) AND `Date sent to company` = '2014-09-25'
+SELECT T3.Region FROM reviews AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN state AS T3 ON T2.state_abbrev = T3.StateCode WHERE T1.Stars = 1 GROUP BY T3.Region ORDER BY COUNT(T3.Region) DESC LIMIT 1
+SELECT COUNT(T3.sex) FROM state AS T1 INNER JOIN district AS T2 ON T1.StateCode = T2.state_abbrev INNER JOIN client AS T3 ON T2.district_id = T3.district_id WHERE T1.state = 'Massachusetts' AND T3.sex = 'Male'
+SELECT T1.first, T1.middle, T1.last FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.Tags = 'Older American' AND T2.`Consumer consent provided?` != 'N/A' AND T2.`Consumer consent provided?` IS NOT NULL AND T2.`Consumer consent provided?` != ''
+SELECT COUNT(T1.`Complaint ID`) FROM callcenterlogs AS T1 INNER JOIN client AS T2 ON T1.`rand client` = T2.client_id INNER JOIN events AS T3 ON T1.`Complaint ID` = T3.`Complaint ID` WHERE T2.sex = 'Female' AND T1.ser_start BETWEEN '15:00:01' AND '23:59:59' AND T3.`Timely response?` = 'Yes'
+SELECT COUNT(T1.`Complaint ID`) FROM callcenterlogs AS T1 INNER JOIN events AS T2 ON T1.`Complaint ID` = T2.`Complaint ID` WHERE T1.ser_time < '00:05:00' AND T1.server = 'DORIT' AND T2.`Submitted via` = 'Phone' AND T2.`Company response to consumer` = 'Closed with explanation'
+SELECT COUNT(T1.Reviews) FROM reviews AS T1 INNER JOIN client AS T2 ON T1.district_id = T2.district_id WHERE T2.age BETWEEN 30 AND 50 AND T1.Reviews LIKE '%great%'
+SELECT T1.address_1, T1.address_2 FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.`Timely response?` = 'Yes' AND T2.`Consumer disputed?` = 'Yes'
+SELECT CAST(SUM(T1.age) AS REAL) / COUNT(T1.age) AS average FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T2.city = 'Norwalk'
+SELECT COUNT(T1.Stars) FROM reviews AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T2.city = 'Kansas City' AND T1.Stars = 1
+SELECT T2.state_abbrev FROM reviews AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T1.Stars = 5 GROUP BY T2.state_abbrev ORDER BY COUNT(T2.state_abbrev) DESC LIMIT 1
+SELECT T2.division FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T1.first = 'Noah' AND T1.last = 'Thompson'
+SELECT DISTINCT T2.Product FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.year > 2005
+SELECT T3.ser_time FROM events AS T1 INNER JOIN client AS T2 ON T1.Client_ID = T2.client_id INNER JOIN callcenterlogs AS T3 ON T1.`Complaint ID` = T3.`Complaint ID` WHERE T2.first = 'Kendall' AND T2.last = 'Allen' AND T2.sex = 'Female' AND T1.Product = 'Credit card'
+SELECT T2.Issue FROM callcenterlogs AS T1 INNER JOIN events AS T2 ON T1.`Complaint ID` = T2.`Complaint ID` WHERE T1.ser_time = ( SELECT MAX(ser_time) FROM callcenterlogs )
+SELECT CAST(SUM(CASE WHEN T1.sex = 'Male' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.sex) FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.Product = 'Credit card'
+SELECT T1.first, T1.middle, T1.last FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.Tags = 'Older American' AND T2.`Consumer consent provided?` IN (NULL, 'N/A', '') LIMIT 2
+SELECT T2.first, T2.middle, T2.last FROM district AS T1 INNER JOIN client AS T2 ON T1.district_id = T2.district_id WHERE T1.division = 'Pacific'
+SELECT DISTINCT T2.Issue FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.first = 'Kaitlyn' AND T1.middle = 'Eliza' AND T1.last = 'Elliott'
+SELECT T2.division FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id GROUP BY T2.division ORDER BY COUNT(T2.division) DESC LIMIT 1, 1
+SELECT T1.first, T1.middle, T1.last FROM client AS T1 INNER JOIN callcenterlogs AS T2 ON T1.client_id = T2.`rand client` WHERE T2.server = 'MORIAH' AND T2.`Date received` = '2013-09-11'
+SELECT CASE WHEN SUM(CASE WHEN email LIKE '%@gmail.com' THEN 1 ELSE 0 END) > SUM(CASE WHEN email LIKE '%@outlook.com' THEN 1 ELSE 0 END) THEN 'Google account' ELSE 'Microsoft account' END FROM client WHERE age BETWEEN 13 AND 19
+SELECT T1.first FROM client AS T1 INNER JOIN callcenterlogs AS T2 ON T1.client_id = T2.`rand client` WHERE T2.priority = ( SELECT MAX(priority) FROM callcenterlogs )
+SELECT T1.last FROM client AS T1 INNER JOIN callcenterlogs AS T2 ON T1.client_id = T2.`rand client` WHERE T1.age > 65 AND T2.server = 'YIFAT'
+SELECT COUNT(T2.`rand client`) FROM client AS T1 INNER JOIN callcenterlogs AS T2 ON T1.client_id = T2.`rand client` WHERE T1.city = 'New York City' AND T2.outcome = 'AGENT'
+SELECT T2.Product FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.age > 65 ORDER BY T1.client_id DESC LIMIT 1
+SELECT SUM(CASE WHEN T1.age > 13 AND T1.age <= 19 THEN 1 ELSE 0 END), SUM(CASE WHEN T1.age > 19 AND T1.age <= 65 THEN 1 ELSE 0 END) AS adult , SUM(CASE WHEN T1.age > 65 THEN 1 ELSE 0 END) AS elder FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.Product = 'Credit card'
+SELECT T1.first, T1.middle, T1.last FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.Issue = 'Balance transfer'
+SELECT T1.email FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.`Submitted via` = 'Postal mail'
+SELECT AVG(T1.age) FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.`Company response to consumer` = 'Closed with relief'
+SELECT strftime('%Y', `Date received`), COUNT(`Date received`) FROM events WHERE product = 'Credit card' AND issue = 'Overlimit fee' GROUP BY strftime('%Y', `Date received`) HAVING COUNT(`Date received`)
+SELECT T1.year, T1.month, T1.day, T1.email, T1.phone FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T2.city = 'Indianapolis' ORDER BY T1.year DESC, T1.month DESC, T1.day DESC LIMIT 1
+SELECT T1.first, T1.middle, T1.last, T1.phone FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T2.division = 'Pacific'
+SELECT T2.division, COUNT(T2.division) FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id GROUP BY T2.division
+SELECT AVG(T1.age) FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T2.division = 'South Atlantic'
+SELECT T2.city FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN state AS T3 ON T2.state_abbrev = T3.StateCode WHERE T3.Region = 'Midwest' GROUP BY T2.city ORDER BY COUNT(T2.city) LIMIT 1
+SELECT T2.city FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T2.division = 'West North Central' AND T1.age > 60 GROUP BY T2.city ORDER BY COUNT(T2.city) DESC LIMIT 1
+SELECT state_abbrev FROM district GROUP BY state_abbrev ORDER BY COUNT(city) DESC LIMIT 1
+SELECT COUNT(T1.client_id) FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.city = 'Portland' AND T2.`Date received` LIKE '2015%' AND T2.Issue = 'Billing disputes'
+SELECT COUNT(T1.`Complaint ID`) FROM callcenterlogs AS T1 INNER JOIN events AS T2 ON T1.`Complaint ID` = T2.`Complaint ID` WHERE strftime('%Y', T1.`Date received`) = '2015' AND T2.`Timely response?` = 'Yes' AND T2.`Company response to consumer` = 'Closed with explanation'
+SELECT DISTINCT T3.`Date received` FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID INNER JOIN callcenterlogs AS T3 ON T2.`Complaint ID` = T3.`Complaint ID` WHERE T1.age BETWEEN 20 AND 40 AND T1.sex = 'Female'
+SELECT T2.Product FROM district AS T1 INNER JOIN reviews AS T2 ON T1.district_id = T2.district_id WHERE T1.city = 'Newton' AND T1.state_abbrev = 'MA' AND T2.Date = '2016-03-14' AND T2.Stars = 1
+SELECT COUNT(T2.Stars) FROM district AS T1 INNER JOIN reviews AS T2 ON T1.district_id = T2.district_id WHERE T1.city = 'Nashville' AND T1.state_abbrev = 'TN' AND T2.Product = 'Eagle National Mortgage' AND T2.Stars = 5
+SELECT DISTINCT T2.Issue FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.sex = 'Male' AND T1.age < 25
+SELECT DISTINCT T3.Product FROM state AS T1 INNER JOIN district AS T2 ON T1.StateCode = T2.state_abbrev INNER JOIN reviews AS T3 ON T2.district_id = T3.district_id WHERE T1.Region = 'Midwest' AND T3.Stars = 1
+SELECT T1.phone FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.Product = 'Credit card' ORDER BY T1.age DESC LIMIT 1
+SELECT COUNT(T2.`Complaint ID`) FROM callcenterlogs AS T1 INNER JOIN events AS T2 ON T1.`Complaint ID` = T2.`Complaint ID` WHERE T2.`Submitted via` = 'Phone' AND strftime('%Y', T1.`Date received`) = '2014'
+SELECT DISTINCT T2.Product, T2.Issue FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.age * 100 > ( SELECT AVG(age) * 60 FROM client )
+SELECT CAST(SUM(CASE WHEN T1.division = 'East North Central' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.division) FROM district AS T1 INNER JOIN reviews AS T2 ON T1.district_id = T2.district_id WHERE T2.Stars = 5
+SELECT MIN(ser_time) FROM callcenterlogs WHERE `Date received` = '2017-03-22'
+SELECT CASE WHEN T2.`Consumer consent provided?` IN (NULL, 'N/A', 'Empty') THEN 'No' ELSE 'Yes' END FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.first = 'Matthew' AND T1.last = 'Pierce' AND T2.`Date received` = '2016-10-28'
+SELECT T1.first, T1.middle, T1.last FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T2.division = 'Pacific' AND T1.sex = 'Male'
+SELECT T2.district_id, T2.city FROM reviews AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T1.Date = '2018-09-11'
+SELECT state FROM state WHERE Region = 'South'
+SELECT COUNT(T1.sex) FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.sex = 'Female' AND T2.Product = 'Credit card'
+SELECT `Complaint ID` FROM callcenterlogs ORDER BY ser_time DESC LIMIT 3
+SELECT COUNT(email) FROM client WHERE email NOT LIKE '%@gmail.com'
+SELECT COUNT(T1.`Complaint ID`) FROM callcenterlogs AS T1 INNER JOIN events AS T2 ON T1.`Complaint ID` = T2.`Complaint ID` WHERE T2.Product = 'Credit card' AND T1.server = 'SHARON'
+SELECT COUNT(T1.Issue) FROM events AS T1 INNER JOIN client AS T2 ON T1.Client_ID = T2.client_id INNER JOIN district AS T3 ON T2.district_id = T3.district_id WHERE T1.Issue = 'Billing disputes' AND T3.division = 'Mountain'
+SELECT t1.last FROM client AS T1 INNER JOIN callcenterlogs AS T2 ON T1.client_id = T2.`rand client` WHERE T2.type = 'PS' AND T2.server = 'TOVA'
+SELECT COUNT(T2.client_id) FROM district AS T1 INNER JOIN client AS T2 ON T1.district_id = T2.district_id INNER JOIN state AS T3 ON T1.state_abbrev = T3.StateCode WHERE T2.last = 'Alvarado' AND T2.state = 'MD'
+SELECT COUNT(T2.`Submitted via`) FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.sex = 'Female' AND T1.year = 2000 AND T2.`Submitted via` != 'Web'
+SELECT CAST(SUM(CASE WHEN T1.age > 50 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T2.`Submitted via`) FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.`Submitted via` = 'Postal mail'
+SELECT DISTINCT T2.`Submitted via` FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.first = 'Kyran' AND T1.last = 'Muller'
+SELECT COUNT(`Timely response?`) FROM events WHERE `Timely response?` = 'No' AND `Consumer disputed?` = 'No'
+SELECT COUNT(ser_time) FROM callcenterlogs WHERE strftime('%M', ser_time) > '15'
+SELECT T1.address_1, T1.address_2 FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.`Date received` = '2012-03-14' AND T2.`Submitted via` = 'Postal mail'
+SELECT DISTINCT T2.server FROM events AS T1 INNER JOIN callcenterlogs AS T2 ON T1.`Complaint ID` = T2.`Complaint ID` WHERE T1.`Submitted via` = 'Phone' AND T1.`Timely response?` = 'No'
+SELECT CAST(SUM(CASE WHEN T1.age > 13 AND T1.age <= 19 THEN 60 * strftime('%H', ser_time) + strftime('%M', ser_time) + strftime('%S', ser_time) / 60 ELSE 0 END) AS REAL) / SUM(CASE WHEN T1.age > 13 AND T1.age <= 19 THEN 1 ELSE 0 END) AS teenagerAverageMins, CAST(SUM(CASE WHEN T1.age > 19 AND T1.age <= 65 THEN 60 * strftime('%H', ser_time) + strftime('%M', ser_time) + strftime('%S', ser_time) / 60 ELSE 0 END) AS REAL) / SUM(CASE WHEN T1.age > 19 AND T1.age <= 65 THEN 1 ELSE 0 END) AS adultAverageMins , CAST(SUM(CASE WHEN T1.age > 65 THEN 60 * strftime('%H', ser_time) + strftime('%M', ser_time) + strftime('%S', ser_time) / 60 ELSE 0 END) AS REAL) / SUM(CASE WHEN T1.age > 65 THEN 1 ELSE 0 END) AS elderAverageMins FROM client AS T1 INNER JOIN callcenterlogs AS T2 ON T1.client_id = T2.`rand client`
+SELECT CAST(SUM(CASE WHEN T1.age > 65 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.age) FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID
+SELECT first, middle, last FROM client WHERE email = 'emily.garcia43@outlook.com'
+SELECT CAST(SUM(CASE WHEN T1.email LIKE '%@gmail.com' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.email) FROM client AS T1 INNER JOIN callcenterlogs AS T2 ON T1.client_id = T2.`rand client` WHERE T2.server = 'ZOHARI'
+SELECT T1.last FROM client AS T1 INNER JOIN callcenterlogs AS T2 ON T1.client_id = T2.`rand client` WHERE T2.priority = 0 LIMIT 5
+SELECT T2.call_id FROM client AS T1 INNER JOIN callcenterlogs AS T2 ON T1.client_id = T2.`rand client` WHERE T1.first LIKE 'B%'
+SELECT T1.first FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.`Timely response?` = 'No' AND T1.sex = 'Male'
+SELECT T2.Issue FROM callcenterlogs AS T1 INNER JOIN events AS T2 ON T1.`Complaint ID` = T2.`Complaint ID` WHERE strftime('%M', T1.ser_time) < '10'
+SELECT `Complaint ID`, call_id, phonefinal FROM callcenterlogs WHERE strftime('%Y', `Date received`) = '2014' AND server = 'AVIDAN'
+SELECT MAX(T1.ser_time) FROM callcenterlogs AS T1 INNER JOIN events AS T2 ON T1.`Complaint ID` = T2.`Complaint ID` WHERE T2.issue = 'Arbitration'
+SELECT T1.phone, T2.`Complaint ID` FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.`Company response to consumer` = 'In progress'
+SELECT DISTINCT T2.Product FROM callcenterlogs AS T1 INNER JOIN events AS T2 ON T1.`Complaint ID` = T2.`Complaint ID` WHERE T1.server = 'TOVA' AND T2.`Date received` LIKE '2017-03%'
+SELECT COUNT(T2.Issue) FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.Issue = 'Deposits and withdrawals' AND T1.city = 'New York City'
+SELECT first, middle, last, year, month , day, email FROM client WHERE age > 65 ORDER BY age DESC
+SELECT T1.first, T1.middle, T1.last, T1.phone FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.`Submitted via` = 'Fax'
+SELECT COUNT(outcome) FROM callcenterlogs WHERE outcome != 'AGENT'
+SELECT COUNT(T2.age) FROM reviews AS T1 INNER JOIN client AS T2 ON T1.district_id = T2.district_id WHERE T1.Product = 'Eagle National Mortgage' AND T1.Stars = 1 AND T2.age < 35
+SELECT first, last FROM client WHERE city = 'New York City'
+SELECT T1.first, T1.phone FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.`Complaint ID` = 'CR0922485'
+SELECT T1.email FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.`Date received` = '2014-07-03'
+SELECT CAST(COUNT(T2.`Complaint ID`) AS REAL) / 3 AS average FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE strftime('%Y', T2.`Date received`) BETWEEN '2015' AND '2017' AND T1.city = 'New York City' AND T2.Product = 'Credit card'
+SELECT T1.year FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.`Sub-product` = '(CD) Certificate of deposit' GROUP BY T1.year ORDER BY COUNT(T1.year) DESC LIMIT 1
+SELECT day, month, year FROM client ORDER BY year DESC, month DESC, day DESC LIMIT 1
+SELECT MAX(age) FROM client WHERE sex = 'Male'
+SELECT COUNT(T1.client_id) FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T1.city = 'Omaha' AND strftime('%Y', T2.`Date received`) = '2012' AND T2.Product = 'Credit card'

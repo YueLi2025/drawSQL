@@ -1,0 +1,11 @@
+table_name,column_name,column_type
+beers,brewery_id,num
+beers,ibu,num
+beers,id,num
+beers,name,string
+beers,ounces,num
+beers,style,string
+breweries,city,string
+breweries,id,num
+breweries,name,string
+breweries,state,string

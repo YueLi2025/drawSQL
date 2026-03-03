@@ -1,0 +1,25 @@
+nl_question
+How many body builders are there?
+List the total scores of body builders in ascending order.
+List the snatch score and clean jerk score of body builders in ascending order of snatch score.
+What is the average snatch score of body builders?
+What are the clean and jerk score of the body builder with the highest total score?
+What are the birthdays of people in ascending order of height?
+What are the names of body builders?
+What are the names of body builders whose total score is higher than 300?
+What is the name of the body builder with the greatest body weight?
+What are the birth date and birth place of the body builder with the highest total points?
+What are the heights of body builders with total score smaller than 315?
+What is the average total score of body builders with height bigger than 200?
+What are the names of body builders in descending order of total scores?
+List each birth place along with the number of people from there.
+What is the most common birth place of people?
+What are the birth places that are shared by at least two people?
+List the height and weight of people in descending order of height.
+Show all information about each body builder.
+List the names and origins of people who are not body builders.
+How many distinct birth places are there?
+How many persons are not body builders?
+List the weight of the body builders who have snatch score higher than 140 or have the height greater than 200.
+What are the total scores of the body builders whose birthday contains the string "January" ?
+What is the minimum snatch score?

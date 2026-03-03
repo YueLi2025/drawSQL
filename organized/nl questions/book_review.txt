@@ -1,0 +1,22 @@
+nl_question
+How many books are there?
+List the titles of books in ascending alphabetical order.
+List the titles of books in descending order of pages.
+What are the types and release dates of books?
+What are the maximum and minimum number of chapters for each book?
+What are the titles of books that are not "Poet"?
+What is the average rating in reviews?
+What are the titles and ratings of books?
+What is the rating of the book with the largest number of chapters?
+What is the rank of the book with the smallest number of pages?
+What is the title of the book with the highest rank in the review?
+What is the average number of readers for books of type "Novel"?
+For each book type return the type and the number of books of that type.
+What is the most common type of books?
+What are the types of books that have at least three books belonging to?
+List the titles of books in ascending order of the ratings in review?
+List the title and audio length for all the books in descending order of the number of readers.
+How many books do not have reviews?
+Show the types of books that have both books with more than 75 chapters and books with less than 50 chapters.
+How many distinct types of book are there?
+What are the type and title of the books that are not rated?

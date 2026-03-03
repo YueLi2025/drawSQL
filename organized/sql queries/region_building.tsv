@@ -1,0 +1,41 @@
+sql_query
+SELECT count(*) FROM building
+SELECT count(*) FROM building
+SELECT Name FROM building ORDER BY Number_of_Stories ASC
+SELECT Name FROM building ORDER BY Number_of_Stories ASC
+SELECT Address FROM building ORDER BY Completed_Year DESC
+SELECT Address FROM building ORDER BY Completed_Year DESC
+SELECT max(Number_of_Stories) FROM building WHERE Completed_Year != "1980"
+SELECT max(Number_of_Stories) FROM building WHERE Completed_Year != "1980"
+SELECT avg(Population) FROM region
+SELECT avg(Population) FROM region
+SELECT Name FROM region ORDER BY Name ASC
+SELECT Name FROM region ORDER BY Name ASC
+SELECT Capital FROM region WHERE Area  >  10000
+SELECT Capital FROM region WHERE Area  >  10000
+SELECT Capital FROM region ORDER BY Population DESC LIMIT 1
+SELECT Capital FROM region ORDER BY Population DESC LIMIT 1
+SELECT Name FROM region ORDER BY Area DESC LIMIT 5
+SELECT Name FROM region ORDER BY Area DESC LIMIT 5
+SELECT T1.Name ,  T2.Name FROM building AS T1 JOIN region AS T2 ON T1.Region_ID  =  T2.Region_ID
+SELECT T1.Name ,  T2.Name FROM building AS T1 JOIN region AS T2 ON T1.Region_ID  =  T2.Region_ID
+SELECT T2.Name FROM building AS T1 JOIN region AS T2 ON T1.Region_ID  =  T2.Region_ID GROUP BY T1.Region_ID HAVING COUNT(*)  >  1
+SELECT T2.Name FROM building AS T1 JOIN region AS T2 ON T1.Region_ID  =  T2.Region_ID GROUP BY T1.Region_ID HAVING COUNT(*)  >  1
+SELECT T2.capital FROM building AS T1 JOIN region AS T2 ON T1.Region_ID  =  T2.Region_ID GROUP BY T1.Region_ID ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T2.capital FROM building AS T1 JOIN region AS T2 ON T1.Region_ID  =  T2.Region_ID GROUP BY T1.Region_ID ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T1.Address ,  T2.Capital FROM building AS T1 JOIN region AS T2 ON T1.Region_ID  =  T2.Region_ID
+SELECT T1.Address ,  T2.Capital FROM building AS T1 JOIN region AS T2 ON T1.Region_ID  =  T2.Region_ID
+SELECT T1.Number_of_Stories FROM building AS T1 JOIN region AS T2 ON T1.Region_ID  =  T2.Region_ID WHERE T2.Name  =  "Abruzzo"
+SELECT T1.Number_of_Stories FROM building AS T1 JOIN region AS T2 ON T1.Region_ID  =  T2.Region_ID WHERE T2.Name  =  "Abruzzo"
+SELECT Completed_Year ,  COUNT(*) FROM building GROUP BY Completed_Year
+SELECT Completed_Year ,  COUNT(*) FROM building GROUP BY Completed_Year
+SELECT Completed_Year FROM building GROUP BY Completed_Year ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Completed_Year FROM building GROUP BY Completed_Year ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Name FROM region WHERE Region_ID NOT IN (SELECT Region_ID FROM building)
+SELECT Name FROM region WHERE Region_ID NOT IN (SELECT Region_ID FROM building)
+SELECT Completed_Year FROM building WHERE Number_of_Stories  >  20 INTERSECT SELECT Completed_Year FROM building WHERE Number_of_Stories  <  15
+SELECT Completed_Year FROM building WHERE Number_of_Stories  >  20 INTERSECT SELECT Completed_Year FROM building WHERE Number_of_Stories  <  15
+SELECT DISTINCT Address FROM building
+SELECT DISTINCT Address FROM building
+SELECT Completed_Year FROM building ORDER BY Number_of_Stories DESC
+SELECT Completed_Year FROM building ORDER BY Number_of_Stories DESC

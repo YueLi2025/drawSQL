@@ -1,0 +1,191 @@
+nl_question
+What is the bowling skill of SC Ganguly?
+Please list the names of the players who use the right hand as their batting hand and are from Australia.
+Among the players whose bowling skill is "Legbreak", when was the oldest one of them born?
+What is the bowling skill used by most players?
+What is the name of the player who won the "man of the match" award in the match on 2008/4/18?
+What is the role of SC Ganguly in the match on 2008/4/18?
+Among all the matches SC Ganguly has played in, what is the highest winning margin?
+Give the name of the youngest player.
+How many times has Sunrisers Hyderabad been the toss winner of a game?
+Give the name of the striker in the match no. 419169, over no.3, ball no.2, inning no.2.
+Give the name of venue for the game with a win margin of 138 points.
+Who was the man of the series in 2013? Give the full name.
+Which country does Ranchi city belong to?
+How many Indian cities are there in the database?
+In the database, how many times is the number of Indian cities to the South African cities?
+How many times does M Chinnaswamy Stadium host games than Maharashtra Cricket Association Stadium?
+Who is the oldest player?
+How many matches did Team 10 play in 2012?
+List the id of the player who won the Orange Cap for 2 consecutive seasons.
+What is the name of the player with the highest number of outstanding player awards in a particular match?
+How many Orange Cap awards were won by CH Gayle?
+Which season played the highest number of matches at M Chinnaswamy Stadium?
+Which venue did Kolkata Knight Riders play most of their matches as a Team 1?
+Who is the player who won the first ever "man of the match" award?
+When did Chennai Super Kings play its first match?
+What is the percentage of all right-handed batting players among all the other players?
+Name the player who is born on July 7, 1981.
+How many matches were played by the player with player ID 2?
+List the first team's name in the match with the highest winning margin.
+Give the country where St. George's Park is located.
+Provide the winning team's name in the match with the point of winning margin of 7 on May 7, 2009.
+List the cities located in U.A.E.
+What is the total number of won matches of the team named "Pune Warriors"?
+What is the role of K Goel in the match ID 335992?
+How many cities are located in South Africa?
+How many matches were held at the venue named "Newlands"?
+Provide the point of the winning margin in a match between Mumbai Indians and Royal Challengers Bangalore on May 28, 2008.
+Among the players born in 1977, what is the percentage of the players with a role as a captain?
+List the over IDs, ball IDs, and innings numbers of the match ID "336004" while the batsman got the maximum scores.
+List the match IDs which had players out by hit wickets.
+How many times did Yuvraj Singh receive the Man of the Match award?
+Among the players who were born in 1977, provide names and birthdates of the players from England.
+Calculate the win rate of the team "Chennai Super Kings".
+Provide the names and birthdates of players who have left-arm fast skills.
+Where did BR Doctrove come from?
+Who was the captain of the winning team in the match held on 1st June 2008?
+Among the matches held in Mumbai, how many percent of them were held in Wankhede Stadium?
+Among the players out in match ID 392187, calculate the percentage of players out by bowl.
+List down the ID of toss winners who decided to bat after winning the "toss of the coin".
+List down the match ID of matches that the "man of the match" award was given to BB McCullum.
+List down the DOB of players who received the "man of the match" award.
+List down the name of teams that won the toss of the coin from matches with ID from 336010 to 336020.
+How many matches have Mumbai Indians won?
+List down names of teams that have played as second team against Pune Warriors.
+What is the name of the team that won match ID 336000?
+List down the name of venues in season 2.
+What is the city of M Chinnaswamy Stadium?
+List down all of the winning teams' IDs that played in St George's Park.
+List the name of the players born between 1970 and 1990 in descending order of age.
+In the players, how many were out by hit wicket?
+In the matches where the winning margin is less than fifty, how many teams won by wicket?
+Give the name of the venue where the most number of matches are held.
+Which city hosted the least number of no-result matches?
+Identify by their ID all the overs in which the player with ID 7 was on strike.
+How many players are older than Gurkeerat Singh player?
+How many times has SR Watson been named 'Man of the Match'?
+What is the name of the player who has been chosen the most times for 'Man of the Series'?
+In what year did SP Narine win the Orange Cap?
+Which teams have had a player awarded the Purple Cap and another with the Orange Cap in the same season?
+List the name of all New Zealand umpires.
+What is the average number of extra runs made as noballs?
+List the player's ID of the top five players, by descending order, in terms of bowling skill.
+What is the name of the youngest player?
+What is the total number of runs scored by the batsmen during the 2nd inning of the match ID 335988?
+How many times did the matches were held in MA Chidambaram Stadium from 5/9/2009 to 8/8/2011?
+Where was the ID 336005 match held? Please give me the venue and the city.
+Which team wins the toss during the match ID 336011, and can you tell me whether they decided to bat or field?
+Write down the name of players whose bowling skill is Legbreak.
+When and for what role did the youngest player appear in his first match?
+Tally the match IDs in which V Kohli is the "Man of the Match".
+Write down the player names and IDs of the English umpires.
+Which year do the majority of the players were born?
+What is the date of the match that has the highest wager on the final result of a game?
+Which season has the fewest number of matches?
+What is the name of the team that won the first ever match?
+How many cities are in U.A.E?
+List the names of all the umpires from England.
+Which country is umpire TH Wijewardene from?
+What are the names of the venues in Abu Dhabi?
+How many overs were there in each innings of match ID "336011"?
+List the ball IDs, scores, and innings numbers in the over ID 20 of match ID "335988".
+How old is Ishan Kishan in 2022?
+Provide the players' names in both teams of the match that was held in June 2014.
+How many matches did Mohammad Hafeez play?
+Which bowling skills did the players from Zimbabwea have?
+List the IDs and names of the umpires from New Zealand.
+Provide match ID which had the extra type of penalty.
+Which is the country of the city named "Rajkot"?
+Give the name of the team of T Kohli in the match ID 335989.
+How many venues are located at Centurion, South Africa?
+Among the matches played by Royal Challengers Bangalore, what is the match ID of the match with the highest winning margin?
+How many times did K Goel played as a player only?
+What is the average winning margin of the matches held in Newlands?
+Provide the losing team's name in the match ID 336039.
+What is the second team's name in the match with the lowest winning margin?
+Among the matches in 2013, what is the percentage of winning of the team "Mumbai Indians"?
+What is the difference between the number of matches where SC Ganguly played as a Captain and those matches where he played other roles?
+What is the city name of country ID 3?
+Provide the country ID of East London.
+How old is SC Ganguly in 2008?
+List the names of players who play by the left hand.
+List the name of England players.
+What is the venue name of Bandladore?
+List the names of players who played as a keeper.
+What type did match ID 336000 win?
+Where did SB Joshi come from?
+How many matches did team Kings XI Punjab win in season year 2008?
+How many matches did team Mumbai Indians win in 2008?
+What is the average of Indian players that were born between 1975 and 1985 among all players?
+Calculate the percentage of left hand batting style players among all players.
+What is the percentage of matches that are won by runs?
+Who is the winning team in a match held on April 26, 2009 with a winning margin of 6 points?
+In the match ID 419135, who won by runs?
+Among the matches held in St. George's Park, give the match ID of the match with the highest winning margin points.
+How many matches were there in May, 2008?
+For how many times has player no.41 won the "man of the match" award?
+For how many times has SC Ganguly played as team captain in a match?
+What is the average winning margin of all the matches SC Ganguly has played in?
+For the game on 2008/5/12, who was the man of the match?
+State the name of the city with the most venues.
+How many matches were played on May 2008?
+How many matches were played in Season 7?
+How many umpires are from South Africa?
+In which country do the majority of the players are from?
+How many players with left-hand batting style are from India?
+List the players' names who were born in 1971.
+Provide the match IDs which were held on 18th April 2015.
+How many players got out by being stumped in the second innings of all matches?
+Who got the Man of the Series Award in 2010?
+List the names and countries of the players from Gujarat Lions who played in the match held on 11th April 2016.
+Which team did CK Kapugedera belong to? How many matches did he play?
+How many percent of the toss-winners decided to bowl first on the pitch from 2010 to 2016?
+What are the match IDs that were played at Brabourne Stadium?
+List down all of the venues in Mumbai.
+Of the wickets taken in the third overs, how many are without the involvement of fielders?
+Which player became the man of the series in the year 2012? Give the name and country of this player.
+How many first teams chose to bat after winning the toss?
+How many games were played in March 2010?
+Give me the match ID and date of the matches that were held in Kingsmead for three consecutive days.
+Who is the player who received the man of the match award during the last match of Season 9?
+How many matches did Rajasthan Royals play in Season 8?
+How many matches were held in 2011?
+Among the players from South Africa, provide the players' names who were born in 1984.
+How many matches did the Sunrisers Hyderabad team win in 2013?
+Name the teams played in a match which resulted in a tie in 2015.
+How many matches are there in 2008?
+How many players have the bowling skill greater than 2?
+How many players were born in 1970?
+How many victory matches were there in 2008?
+What is the role of SC Ganguly?
+What are the names of players in team 1?
+How many players have left arm fast in bowling skill?
+What is the outcome type of match ID 392195?
+Who is the youngest player and which city did he/she come from?
+How many seasons did Pune Warriors participate in?
+What year was R Dravid born and the role he played?
+Count the matches that were won by wickets in all season.
+How many matches have 7 points of winning margin?
+What is the total number of players born between 1970 to 1975?
+Give the match's venue and winning team for the match ID 392194.
+Please list the IDs of all the matches in the year 2008.
+How many players are from Australia?
+Which country is the oldest player from?
+What is the batting hand of MK Pandey?
+How many players were born in the 90s?
+How many players got out in the first inning of match ID "548335"?
+Is SuperSport Park located at Centurion?
+Write the name of the player who was the man of the series more than one time.
+Indicate the name of the most versatile players of the Delhi Daredevils.
+How many players were born before 10/16/1975, and have a bowling skill of less than 3?
+Which country is the youngest player from?
+Who is the youngest player to have won the Purple Cap?
+Who was the captain-keeper of Rising Pune Supergiants?
+Count the matches with a total of two innings.
+How many players were born in the 80s and have bowling skill of 2?
+How many matches are there in April, 2008?
+What are the names of players that have run scored less than 3?
+How many overs were there in the first innings of match ID "335996"?
+What is the venue for the match ID 829768?
+Which team won by wickets in match ID 335993?

@@ -1,0 +1,31 @@
+nl_question
+How many submissions are there?
+Count the number of submissions.
+List the authors of submissions in ascending order of scores.
+Find the author for each submission and list them in ascending order of submission score.
+What are the authors of submissions and their colleges?
+For each submission, show the author and their affiliated college.
+Show the names of authors from college "Florida" or "Temple"
+Which authors with submissions are from college "Florida" or "Temple"?
+What is the average score of submissions?
+Compute the average score of submissions.
+What is the author of the submission with the highest score?
+Find the author who achieved the highest score in a submission.
+Show different colleges along with the number of authors of submission from each college.
+For each college, return the college name and the count of authors with submissions from that college.
+Show the most common college of authors of submissions.
+Which college has the most authors with submissions?
+Show the colleges that have both authors with submission score larger than 90 and authors with submission score smaller than 80.
+Which colleges have both authors with submission score above 90 and authors with submission score below 80?
+Show the authors of submissions and the acceptance results of their submissions.
+For each submission, find its author and acceptance result.
+Show the result of the submission with the highest score.
+Which submission received the highest score in acceptance result. Show me the result.
+Show each author and the number of workshops they submitted to.
+How many workshops did each author submit to? Return the author name and the number of workshops.
+Show the authors who have submissions to more than one workshop.
+Which authors have submitted to more than one workshop?
+Show the date and venue of each workshop in ascending alphabetical order of the venue.
+Sort the each workshop in alphabetical order of the venue. Return the date and venue of each workshop.
+List the authors who do not have submission to any workshop.
+Which authors did not submit to any workshop?

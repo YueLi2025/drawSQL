@@ -1,0 +1,31 @@
+nl_question
+How many teachers are there?
+What is the total count of teachers?
+List the names of teachers in ascending order of age.
+What are the names of the teachers ordered by ascending age?
+What are the age and hometown of teachers?
+What is the age and hometown of every teacher?
+List the name of teachers whose hometown is not `` Little Lever Urban District '' .
+What are the names of the teachers whose hometown is not `` Little Lever Urban District '' ?
+Show the name of teachers aged either 32 or 33?
+What are the names of the teachers who are aged either 32 or 33?
+What is the hometown of the youngest teacher?
+Where is the youngest teacher from?
+Show different hometown of teachers and the number of teachers from each hometown.
+For each hometown, how many teachers are there?
+List the most common hometown of teachers.
+What is the most commmon hometowns for teachers?
+Show the hometowns shared by at least two teachers.
+What are the towns from which at least two teachers come from?
+Show names of teachers and the courses they are arranged to teach.
+What is the name of each teacher and what course they teach?
+Show names of teachers and the courses they are arranged to teach in ascending alphabetical order of the teacher's name.
+What are the names of the teachers and the courses they teach in ascending alphabetical order by the name of the teacher?
+Show the name of the teacher for the math course.
+What are the names of the people who teach math courses?
+Show names of teachers and the number of courses they teach.
+What are the names of the teachers and how many courses do they teach?
+Show names of teachers that teach at least two courses.
+What are the names of the teachers who teach at least two courses?
+List the names of teachers who have not been arranged to teach courses.
+What are the names of the teachers whose courses have not been arranged?

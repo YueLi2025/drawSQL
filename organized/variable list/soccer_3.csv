@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+club,Club_ID,num
+club,Name,string
+club,Manager,string
+club,Captain,string
+club,Manufacturer,string
+club,Sponsor,string
+player,Player_ID,num
+player,Name,string
+player,Country,string
+player,Earnings,num
+player,Events_number,num
+player,Wins_count,num
+player,Club_ID,num

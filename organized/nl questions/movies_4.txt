@@ -1,0 +1,144 @@
+nl_question
+Please list the names of the production company of the movie "Four Rooms".
+Please list the titles of all the movie produced by production company "Universal Pictures".
+What is the title of the latest released movie produced by production company "Universal Pictures"?
+What is the name of the director of photography of the movie "Pirates of the Caribbean: At World's End"?
+What was the job of Dariusz Wolski in the movie "Pirates of the Caribbean: At World's End"?
+Please list the names of all the crew members of the movie "Pirates of the Caribbean: At World's End".
+How many crew members worked as producer in the movie "Pirates of the Caribbean: At World's End"?
+In how many movie does Dariusz Wolski work as the director of photography?
+Among the movie in which Dariusz Wolski works as the director of photography, what is the title of the one with the highest average vote?
+When was the release date of the latest movie in which Dariusz Wolski worked as a crew member?
+Among the movie in which Dariusz Wolski works as the director of photography, what is the percentage of those movie whose vote average is over 5.0?
+What is the average revenue of the movie in which Dariusz Wolski works as the director of photography?
+What was David Rubin's job in the movie "Days of Thunder"?
+How many movies were directed by Michael Bay?
+Show the total number of keywords of the movie "I Hope They Serve Beer in Hell".
+Tell the number of movies made by Paramount Animation.
+How many female characters are there in the movie "Spider-Man 3"?
+Provide the most used keyword in the movies.
+What is the production company of the movie "Crazy Heart"?
+Give the number of movies with "saving the world" as the keyword.
+For all the movies which were produced by Cruel and Unusual Films, which one has the most popularity?
+For the movie "Reign of Fire", which department was Marcia Ross in?
+Calculate the average budget of the movies directed by Jaume Collet-Serra.
+What is the percentage of male characters in the movie "Bride Wars"?
+What is the name of the production company that made the most movies?
+Who played Captain Jack Sparrow in all of the Pirates of the Caribbean movies?
+What is Walt Disney Pictures' most popular movie?
+How many movies did Universal Studios release?
+Which production company produced the movie that made the most money at the box office?
+How many female crews are in the movie "Mr. Smith Goes to Washington"?
+List the names of the production companies that made at least 200 movies.
+How many movies did Harrison Ford appear in total?
+What is the title of Jamie Foxx's most recent movie?
+How many movies released in 1995 did Quentin Tarantino appear in?
+What is the title of the first crime movie ever released?
+List the person IDs of the second film editors in Movie No. 12.
+In Movie No. 19, how many people are there in Department No. 7? Please give me their job.
+How many times did Bob Peterson appear in the movie credits?
+Tally the movie ID and character name in the movie starring Jim Carrey.
+Give the names of the female cast in Movie No. 1865.
+Write me the titles of the movies starring Jim Carrey.
+How many films released between 1/2/1990 and 12/30/2000 starred Uma Thurman?
+Write the titles of horror films with a vote average of more than 7.
+Give the genre and popularity of movies whose revenue is at least 120,000,000 between 2012 and 2015.
+What is the title of the highest-budget film to date? Please include the revenue and name the country.
+List the title of movies in Latin released between 1/01/1990 and 12/31/1995.
+What is the average revenue of American movies in 2006?
+Which actor plays Optimus Prime?
+List all companies who worked in the movie 'Ultramarines: A Warhammer 40,000 Movie.'
+Which movie did the company 'Radiant Film GmbH' work on?
+What are the genres of Sky Captain and the World of Tomorrow?
+Write all the keywords belonging to the movie 'Sky Captain and the World of Tomorrow.'
+The movie 'Gojira ni-sen mireniamu' is from which country?
+Which movie has the keyword 'extremis?'
+Who is the director for the movie 'Transformers?'
+What is the ratio between male and female cast members of the movie 'Iron Man?' Count how many have unspecified genders.
+List down five movie titles that were released before 2000.
+What is the keyword ID of the movie with the title of "Sin City"?
+Look for the movie title with the keyword of "angel".
+Which keywords belong to the movie titles with the highest popularity?
+Provide the genre ID of the movie with the title of "The Dark Knight".
+List down the movie titles within the genre of thriller.
+What is the genre of the movie title with the lowest revenue generated?
+State the genre of the movie title with a runtime of only 14 minutes.
+What is the genre of the movie title which was well-received by the audiences but made the lowest revenue?
+Provide the genre of a movie title with a tagline of "A long time ago in a galaxy far, far away…".
+List down the movie titles that were produced in Canada.
+Accumulate the budget of the movie titles with the keyword of "video game".
+For movies with the keyword of "civil war", calculate the average revenue generated by these movies.
+Among the zero-budget movie titles, which one has made the highest revenue?
+List down the IDs of the production companies that released the movies in 1916.
+List down the movies produced by Lucasfilm.
+Among Warner Bros. Pictures' movies, which title made the highest revenue?
+Write down the release date of the movies produced by Twentieth Century Fox Film Corporation.
+What is the language ID of the movie "Walk the Line"?
+Find out the language ID of the movie with the highest popularity.
+Are there any post-production movies in Nederlands?
+List down the tagline of the Polski movies.
+Calculate the revenues made by Fantasy Films and Live Entertainment.
+What is the most common first name?
+What is the average number of crews for a movie?
+What is the iso code of "Kyrgyz Republic"?
+List all the actors who have played characters with "captain" in their names.
+What is the most common keyword among all the movies released in 2006?
+What is the third least common genre?
+Provide the average revenue of all the French movies.
+List all the unspecified gender characters.
+Which department has the most people?
+What percentage of films are made in the US?
+What is the average ratio between female and male actors in a movie?
+Provide the ID and ISO code of Belgium.
+List the character names played by Catherine Deneuve.
+List the movies in the Somali language.
+Provide the release date and language of the most popular movie.
+List the character names in the "Open Water" movie.
+List the names of camera supervisors in the crew.
+List the job titles of Sally Menke in the crew.
+Provide the names and departments of the person who worked as a music editor in the "Pirates of the Caribbean: At World's End" movie.
+Provide the titles and revenues of the movies produced by the DreamWorks company.
+List the genres of Forrest Gump movie.
+Find the difference in percentage of the movies under keywords of "woman director" and "independent film".
+Which genre does the movie Dancer in the Dark belong to?
+How many adventure movies are there that were released in 2000?
+Which movies did the company Paramount Pictures produce in 2000?
+What keyword can the user use to search for the movie Finding Nemo?
+Name the horror movies with positive ratings greater than 7.
+How many production companies made more than 150 movies?
+What is the role of Mark Hammel?
+Which movies have the participation of actor Harrison Ford?
+Which character did Orlando Bloom play in the movie Pirates of the Caribbean: The Curse of the Black Pearl?
+What is the average number of horror movies among all movies genre?
+Calculate the average income made by movies using the keyword "paris". List the title of the movies.
+How many production companies does the movie "Four Rooms" have?
+Please list the names of all the producers in the movie "Pirates of the Caribbean: At World's End".
+For the movie "Land of the Dead", who is its director?
+How many producers does the movie "The Amityville Horror" have?
+When was the first movie released?
+How many crew are named John Young?
+Who is the person associated with the crew id 1325273?
+How many horror movies are there?
+List 10 movie titles that were produced in France.
+Write down five rumoured movie titles within the genre of Drama.
+What is the country ID of the movie with the title of "Pirates of the Caribbean: Dead Man's Chest"?
+What is the ID of the production company which produced the movie "Gladiator"?
+Tell the language of the movie "C'era una volta il West".
+Provide the homepage of the Bahasa Indonesia movies.
+Work out the difference in revenues made between the English and Latin movies.
+What is the average revenue made by Latin movies?
+What is the longest runtime of all movies?
+How many movies were produced by "Eddie Murphy Productions"?
+What is the original language of the movie with the tagline "An offer you can't refuse."?
+What is the title of the movie with the most keywords?
+List the movies released in 1945.
+Who is the main actor in the "Pirates of the Caribbean: At World's End" movie?
+Give the name of the movie with a revenue of 559852396.
+What is the title of the movie that was made with the most money and resources?
+How many movies have made at least 1 Billion at the box office?
+Provide the title of the movie that is most-liked by a large number of people.
+Write the person ID and character name of casts between order numbers 1 and 10 in Movie No. 285.
+List the film with the highest budget in each genre.
+List all the keywords with "christmas" in them.
+Provide the overview for the movie "The Pacifier".
+How many movies have "vi" as their language code?

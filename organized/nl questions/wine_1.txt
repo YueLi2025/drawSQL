@@ -1,0 +1,83 @@
+nl_question
+What is the name of the highest rated wine?
+Give the name of the wine with the highest score.
+Which winery is the wine that has the highest score from?
+What is the winery at which the wine with the highest score was made?
+Find the names of all wines produced in 2008.
+What are the names of all wines produced in 2008?
+List the grapes and appelations of all wines.
+What are the grapes and appelations of each wine?
+List the names and scores of all wines.
+What are the names and scores of all wines?
+List the area and county of all appelations.
+What are the areas and counties for all appelations?
+What are the prices of wines produced before the year of 2010?
+Return the prices of wines produced before 2010.
+List the names of all distinct wines that have scores higher than 90.
+What are the names of wines with scores higher than 90?
+List the names of all distinct wines that are made of red color grape.
+What are the names of wines made from red grapes?
+Find the names of all distinct wines that have appellations in North Coast area.
+What are the distinct names of wines that have appellations in the North Coast area?
+How many wines are produced at Robert Biale winery?
+Count the number of wines produced at Robert Biale winery.
+How many appelations are in Napa Country?
+Count the number of appelations in Napa County.
+Give me the average prices of wines that are produced by appelations in Sonoma County.
+What is the average price of wines produced in appelations in Sonoma County?
+What are the names and scores of wines that are made of white color grapes?
+Give the names and scores of wines made from white grapes.
+Find the maximum price of wins from the appelations in Central Coast area and produced before the year of 2005.
+What is the maximum price of wines from the appelation in the Central Coast area, which was produced before 2005?
+Find the the grape whose white color grapes are used to produce wines with scores higher than 90.
+Find the white grape used to produce wines with scores above 90.
+What are the wines that have prices higher than 50 and made of Red color grapes?
+What are the names of wines made from red grapes and with prices above 50?
+What are the wines that have prices lower than 50 and have appelations in Monterey county?
+Give the neames of wines with prices below 50 and with appelations in Monterey county.
+What are the numbers of wines for different grapes?
+How many wines are there for each grape?
+What are the average prices of wines for different years?
+What is the average prices of wines for each each?
+Find the distinct names of all wines that have prices higher than some wines from John Anthony winery.
+What are the distinct names of wines with prices higher than any wine from John Anthony winery.
+List the names of all distinct wines in alphabetical order.
+What are the names of wines, sorted in alphabetical order?
+List the names of all distinct wines ordered by price.
+What are the names of wines, sorted by price ascending?
+What is the area of the appelation that produces the highest number of wines before the year of 2010?
+What is the area for the appelation which produced the most wines prior to 2010?
+What is the color of the grape whose wine products has the highest average price?
+Give the color of the grape whose wine products have the highest average price?
+Find the distinct names of wines produced before the year of 2000 or after the year of 2010.
+Give the distinct names of wines made before 2000 or after 2010.
+Find the distinct winery of wines having price between 50 and 100.
+What are the distinct wineries which produce wines costing between 50 and 100?
+What are the average prices and cases of wines produced in the year of 2009 and made of Zinfandel grape?
+Give the average price and case of wines made from Zinfandel grapes in the year 2009.
+What are the maximum price and score of wines produced by St. Helena appelation?
+Give the maximum price and score for wines produced in the appelation St. Helena.
+What are the maximum price and score of wines in each year?
+What are the maximum price and score of wines for each year?
+What are the average price and score of wines grouped by appelation?
+What are the average price and score of wines for each appelation?
+Find the wineries that have at least four wines.
+Which wineries produce at least four wines?
+Find the country of all appelations who have at most three wines.
+What are the countries for appelations with at most 3 wines?
+What are the names of wines whose production year are before the year of all wines by Brander winery?
+What are the names of wines produced before any wine from the Brander winery?
+What are the names of wines that are more expensive then all wines made in the year 2006?
+Give the names of wines with prices above any wine produced in 2006.
+Find the top 3 wineries with the greatest number of wines made of white color grapes.
+Which 3 wineries produce the most wines made from white grapes?
+List the grape, winery and year of the wines whose price is bigger than 100 ordered by year.
+What are the grapes, wineries and years for wines with price higher than 100, sorted by year?
+List the grape, appelation and name of wines whose score is higher than 93 ordered by Name.
+What are the grapes, appelations, and wines with scores above 93, sorted by Name?
+Find the appelations that produce wines after the year of 2008 but not in Central Coast area.
+What are the appelations for wines produced after 2008 but not in the Central Coast area?
+Find the average price of wines that are not produced from Sonoma county.
+What is the average price for wines not produced in Sonoma county?
+Find the county where produces the most number of wines with score higher than 90.
+What is the county that produces the most wines scoring higher than 90?

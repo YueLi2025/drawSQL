@@ -1,0 +1,71 @@
+soft_templates
+SELECT count(*) FROM variable
+SELECT count(*) FROM variable
+SELECT clubname FROM variable
+SELECT clubname FROM variable
+SELECT count(*) FROM variable
+SELECT count(*) FROM variable
+SELECT DISTINCT fname FROM variable
+SELECT DISTINCT fname FROM variable
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT clubdesc FROM variable WHERE clubname = string
+SELECT clubdesc FROM variable WHERE clubname = string
+SELECT clubdesc FROM variable WHERE clubname = string
+SELECT clubdesc FROM variable WHERE clubname = string
+SELECT clublocation FROM variable WHERE clubname = string
+SELECT clublocation FROM variable WHERE clubname = string
+SELECT clublocation FROM variable WHERE clubname = string
+SELECT clublocation FROM variable WHERE clubname = string
+SELECT clublocation FROM variable WHERE clubname = string
+SELECT clublocation FROM variable WHERE clubname = string
+SELECT clubname FROM variable WHERE clublocation = string
+SELECT clubname FROM variable WHERE clublocation = string
+SELECT count(*) FROM variable WHERE clublocation = string
+SELECT count(*) FROM variable WHERE clublocation = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT count(DISTINCT variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT count(DISTINCT variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable > num
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable > num
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable < num
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable < num
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT count(DISTINCT variable) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT count(DISTINCT variable) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = num
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = num
+SELECT avg(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT avg(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT avg(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT avg(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT avg(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT avg(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string

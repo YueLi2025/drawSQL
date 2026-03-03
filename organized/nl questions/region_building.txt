@@ -1,0 +1,41 @@
+nl_question
+How many buildings are there?
+Count the number of buildings.
+List the names of buildings in ascending order of number of stories.
+What is the list of building names, sorted by the number of stories of each building in ascending order?
+List the addresses of buildings in descending order of building completion year.
+Sort the buildings in descending order of building completion year, and return the building addresses.
+What is the maximum number of stories of buildings not completed in 1980?
+Among the buildings not completed in 1980, what is the maximum number of stories?
+What is the average population for all regions?
+Compute the average population of a region.
+What are the names of regions in ascending alphabetical order?
+List the names of regions in alphabetical order.
+What are the capitals of the regions with area bigger than 10000?
+Give me the capitals of the regions whose area is larger than 10000.
+List the capital of the region with the largest population.
+Which region has the largest population? Give me the capital of the region.
+List the names of the regions with the top 5 largest areas.
+What are the names of the 5 largest regions in terms of area?
+Show the names of buildings and the names of regions they are in.
+For each building, return the name of the building and the name of the region it belongs to.
+Show the names of regions that have more than one building.
+Which regions have more than one building? Give me the names of the regions.
+Show the capital of the region that has the most buildings.
+Which region has the largest number of buildings? Show me the capital of the region.
+Show addresses of buildings and the capitals of regions they are in.
+For each building, return the address of the building and the name of the region it belongs to.
+Show the number of stories of buildings in the region with name "Abruzzo".
+Return the number of stories for each building in the region named "Abruzzo".
+Please show each completion year and the number of buildings completed in that year.
+For completion year, return the year and the number of buildings completed.
+List the year in which the most buildings are completed.
+In which year did the most building constructions complete?
+List the names of regions that do not have any buildings.
+What are the names of regions in which there are no buildings?
+Show the completed years shared by buildings with more than 20 stories and buildings with less than 15 stories.
+In which years did both buildings with more than 20 stories and buildings with less than 15 stories were completed?
+Show the distinct addresses of buildings.
+Give me a list of distinct building addresses.
+Show the completed years of buildings in descending order of the number of stories.
+Sort buildings in descending order of the number of stories, and return their completion years.

@@ -1,0 +1,52 @@
+nl_question
+Which year experienced the most rain?
+What was the mean humidity of a trip with id 4275?
+What is the mean temperature in Fahrenheit on 8/29/2013 for the area where the zip code is 94107?
+In which city's station is a bike borrowed on trip ID4069?
+Name all the trips where the bike was borrowed and returned on a different day. State the city where the bike was returned.
+How many bike stations were installed in San Jose in 2014? Indicate the names of the stations.
+When was the hottest temperature recorded? If there are multiple dates with the hottest temperature, indicate all of the dates.
+What were the max gust speed and cloud clover when the customer using bike no. 10 recorded the 386 seconds duration of the trip from MLK Library to San Salvador at 1st?
+What is the difference between the hottest temperature and the coldest temperature in in Fahrenheit on 8/29/2013 for the area where the zip code is 94107?
+What is the total number of bikes that can be hold in Redwood City before 2014.
+How long did it take for bike id 426 to reach 2nd at South Park from Market at 4th on 8/29/2013? Indicate the duration in minutes.
+List the names of the stations within Mountain View that were installed on 12/31/2013.
+Which city is Townsend at 7th Station located and how many bikes could it hold?
+Which trip had the longest duration? State the start and end station.
+What is the percentage of the trip were done by a subscriber?
+Name the station and city with the most borrowed bike.
+List all trips where bikes were returned at location 37.331415, -121.8932. State the date the bike was borrowed.
+What is the longest trip duration that started and ended August 29, 2013?
+On 8/29/2013, who took the longest to arrive in California Ave Caltrain Station from University and Emerson? Indicate the bike id.
+On 10/20/2014, what is the duration of the fastest trip which started from the station with latitude and longitudes of 37.789625 and -122.400811, respectively? Indicate the bike id.
+What is the maximum humidity in Powell Street BART when bike 496 was borrowed from the station on 8/29/2013?
+What is the route that has the longest duration? Indicate the city of where the stations are located.
+List down the trip IDs when bike no. 10 was used by subscribers and the weather's mean temperature is no less than 62 degress Fahrenheit.
+For the rides that started at Market at 10th station and ended at South Van Ness at Market station in August of 2013, which day had the coldest temperature?
+Find the average ride duration during the rain of more than 0.8 inches.
+List the name and city of starting stations which has an above-average duration trips.
+In 2006, how many trips ended at stations in Mountain View?
+How many trips which subscription types were Subscriber and ended in San Jose city?
+Which year had the most number of trips that started at stations in San Francisco?
+What is the percentage of trips that started in San Jose and durations were longer than 800 seconds?
+Please calculate the average duration of trips started at South Van Ness at Market in 2015.
+How many trips which start station and end station are the same?
+Please list trips id started on the hottest day.
+What was duration of the longest trip started on the day that has a maximum wind speed of 30 mph?
+Please calculate the average temperature of those trips that started at Market at 4th in 2013.
+How many trips made by a subscriber started in August, 2013 from a station that can hold more than 20 bikes?
+What is the location coordinates of the bike station from which the bike for the trip that last the longest was borrowed?
+When was the bike station from which the bike was borrowed on trip ID4069 installed?
+How many trips with a bike borrowed from the stations in San Francisco were made by a subscriber?
+List out all end stations for a bicycle that were making a trip starting from 2nd at South Park station? Only retain the unique value.
+How many rainy days were recorded in Mountain View?
+What is the longest trip duration according? Convert the it to number of days.
+Convert all temperature recorded at San Francisco city during August 2013 into degree Celsius.
+What is the ratio for subscriber to customer given that the starting and the ending stations is 2nd at South Park?
+Are all stations with zip code 94107 located in San Francisco city?
+What is the total trip duration made within Palo Alto city? Convert the duration to hour.
+Count the number of subscribers who started their trips in Market at 4th.
+What is the average duration of trips for the starting station of Santa Clara at Almaden and what is the latitude and longitude of this station?
+Which station did the user who started at Market at 4th station ended their trip at the time of 12:45:00 PM and the date of 8/29/2013 and what is the location coordinates of the ending station?
+How many subscribers have ended their trip at MLK Library and how many docks does that station have?
+Calculate the average duration travelled by subscribers that both started and ended their trip in Mountain View City Hall and indicate the date when the station was first installed.

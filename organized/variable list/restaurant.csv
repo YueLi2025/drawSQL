@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+generalinfo,city,string
+generalinfo,food_type,string
+generalinfo,id_restaurant,num
+generalinfo,label,string
+generalinfo,review,num
+geographic,city,string
+geographic,county,string
+geographic,region,string
+location,city,string
+location,id_restaurant,num
+location,street_name,string
+location,street_num,num

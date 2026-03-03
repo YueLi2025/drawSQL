@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+Elimination,Elimination_ID,string
+Elimination,Wrestler_ID,string
+Elimination,Team,string
+Elimination,Eliminated_By,string
+Elimination,Elimination_Move,string
+Elimination,Time,string
+wrestler,Wrestler_ID,num
+wrestler,Name,string
+wrestler,Reign,string
+wrestler,Days_held,string
+wrestler,Location,string
+wrestler,Event,string

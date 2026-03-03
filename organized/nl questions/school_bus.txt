@@ -1,0 +1,19 @@
+nl_question
+How many drivers are there?
+Show the name, home city, and age for all drivers.
+Show the party and the number of drivers in each party.
+Show the name of drivers in descending order of age.
+Show all different home cities.
+Show the home city with the most number of drivers.
+Show the party with drivers from Hartford and drivers older than 40.
+Show home city where at least two drivers older than 40 are from.
+Show all home cities except for those having a driver older than 40.
+Show the names of the drivers without a school bus.
+Show the types of schools that have two schools.
+Show the school name and driver name for all school buses.
+What is the maximum, minimum and average years spent working on a school bus?
+Show the school name and type for schools without a school bus.
+Show the type of school and the number of buses for each type.
+How many drivers are from Hartford city or younger than 40?
+List names for drivers from Hartford city and younger than 40.
+find the name of driver who is driving the school bus with the longest working history.

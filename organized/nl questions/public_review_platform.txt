@@ -1,0 +1,257 @@
+nl_question
+How many "bars" are there in the Yelp business?
+How many more "buffets" than "gyms" in Yelp business?
+What business category is the Yelp business which got the most 5 star reviews in?
+For the Yelp business which had the most number of "long" reviews, which category does it belong to?
+For the Yelp business which had the most number of "short" tips, which category does it belong to?
+There was only one tip that user No. 69722 gave to the Yelp business, what was the ratings of that business?
+Which closed/not running Yelp business in "Sun City" has got the most reviews? Give the business id.
+For the only Yelp business in "Yuma" city, how many "medium" reviews did it get?
+Does Yelp business No."4960" have TV?
+Tell the number of "hair removal" Yelp businesses.
+How many more "Chinese" than "Filipino" Yelp businesses?
+User No."63469" has got "1" like for a tip to the Yelp business, which city is that business located in?
+How many "cute" type of compliments does user No. 57400 get?
+Indicate the opening hours of businesses are with category in fashion.
+Please indicate the review count of the "active life" businesses in Phoenix.
+How many compliments received from medium users that Phoenix city achieved?
+Provide the businesses name in Tempe city whose opening hours are earlier than 8AM.
+How many businesses in Scottsdale are rated as "wonderful experience"?
+What is the average rating of inactive businesses?
+Please list all business IDs in Mesa city that review stars of over 3.
+What are the attribute numbers that are related to payment?
+Please state any three business numbers in AZ state that have received the "Great experience" review stars.
+How many "cool" compliments did user number 33 receive?
+What are the opening hours of business number 53 on Friday?
+How many businesses are there in Scottsdale city under the category of "Beauty & Spas"?
+Please list any two user numbers that have an "Uber" number of cute compliments.
+How long does business number 12 in Scottsdale stay open on day number 3?
+How many Yelp_Businesses in Scottsdale have received positive comments in the Elitestar rating?
+Please list the cities of the Yelp_Businesses that have gotten a 5 in the Elitestar rating.
+How many Yelp_Businesses do not provide alcohol?
+How many Yelp_Business falls under the category of "Shopping"?
+Under which categories is Yelp_Business no. 1?
+How many Yelp_Business in Anthem are under the category of "Food"?
+Please list the business ID of the Yelp_Business with the highest Elitestar rating under the category "Food".
+How many Yelp_Business in Arizona has user no. 3 reviewed?
+How many Yelp_Business close after 8PM on Mondays?
+Please list the opening time on Mondays of all the Yelp_Businesses in Anthem that are still running.
+Among the Yelp_Business in Arizona, how many of them closes at 12PM on Sundays?
+How many users became an elite user the same year they joined Yelp?
+How many stars on average does user no.3 give to Yelp_Business in Arizona?
+What is the review length of user 35026 to business with business ID 2?
+In businesses with a category of mexican, how many of them has a star rating below 4?
+List the active business ID and its stars of the businesses fall under the category of Fashion.
+Among the active businesses located at Chandler, AZ, list the category and atrributes of business with a medium review count.
+List the categories of active businesses in Surprise, AZ.
+What is the opening time of the active businesses in Chandler that has a medium review count.
+Among the businesses with a category of Accessories, what is the percentage of the business with less than 4 stars?
+List the closing time and day of week of active businesses in Tempe with stars greater than the 70% of average age of star rating.
+How many users received high compliment type in photo?
+Which business in fashion category has the most review?
+Calculate the increment percentage of elite user for each year since year 2005.
+What is the average number of review received by each business given that the user is an elite?
+What is the review length of user 60776 to business with business ID 1?
+Among the businesses in Scottsdale, list the attribute of the business with a high review count.
+List the active business ID and its stars of the businesses fall under the category of Pets.
+What is the attribute of the business with highest star rating?
+List the categories of inactive businesses in AZ.
+Find the location of businesses that has business hours from 9 am to 9 pm every Saturday.
+What is the attribute value of an inactive business with a medium review count and 3.5 stars which is located at Phoenix, AZ?
+What is the opening time of the active businesses in Surprise that has a low review count.
+Among the businesses with a category of Local Services, what is the percentage of the business with less than 3 stars?
+List the closing time and day of week of active businesses in Scottsdale with stars greater than the 60% of average age of star rating.
+What city does the business have a business hour from 10 am to 12 pm on Sunday?
+Among the active businesses in Ahwatukee, which of them are still open in Sunday?
+List the categories of all active businesses that were not in Arizona.
+List the category of the business with high review count but received 2 stars.
+How many businesses have a romantic ambiance?
+List the city of the business where they open from 1 pm to 6 pm on Saturday.
+How many businesses have shopping centers and received high review count?
+Compare and get the difference of the number of businesses that are open in Monday and Tuesday from 10 am to 9 pm.
+State the ID number for the attribute named "Accepts Insurance"?
+Which actively running Yelp business in "Gilbert" has got the most reviews? Give the business id.
+For the Yelp business in "Tempe" city which got "3.5" stars and review count as "Uber", how many "long" reviews did it get?
+How is the "noise level" for the only Yelp business in “Mesa” which got a "Uber" review count?
+Is the Yelp business No. 14033 good for supper?
+How long is the Yelp business No. 15098 opened on Monday?
+For the Yelp businesses which received a "5" star review with "uber" number of votes for funny, which one is located in "Phoenix"? Give the business ID.
+Which city is the business that got a "medium" length tip with "3" likes located in?
+For the user who joined Yelp in "2010", with an average of "4.5" stars review and has got uber number of fans, how many "funny" compliments has he/she received from other users?
+How many "cool" type compliments does user No. 41717 get?
+Does Yelp business No."11825" have a "parking lot"?
+What is the percentage for the Yelp businesses in "Pets" category of all businesses?
+Calculate the percentage of running business among all business.
+Between 2006 and 2007, which year ID had the greater number in elite user?
+Based on all user compliments, find the percentage of low number of compliments on all compliments ID.
+List down the business ID and user ID who got uber for cool votes.
+Write the user ID, business ID and tips length of who started using Yelp since 2004 and had high followers.
+Among the review votes of funny and cool hit uber with long review length, describe the business ID, active status, user ID and user year of joining Yelp.
+Calculate the percentage of business with attribute name of "Accepts Credit Cards".
+Under the category name of "Coffee & Tea", mention any 5 business ID , their state and city.
+For the business with great experience existed in Sun Lakes city, provide the user ID who gave review on it and user followers.
+Compare the number of business between the category of "Men's Clothing" and "Women's Clothing".
+Find the percentage of 5 stars rated business.
+List all the tires businesses that are opened everyday.
+Which users become an elite in 2012?
+List the business ID of shopping business that have 4 stars ratings.
+State the locations of all Pet Services business.
+How many closed businesses that have more than 10 attributes?
+List the business located in Mesa that have alcohol attribute.
+What is the ratio between business in shopping category and business in pets category?
+How many businesses are registered in the database under 'Banks & Credit Unions' category?
+How many businesses that are registered in the database can be attributed to 'Good for Kids'?
+Find the 5-star business in Ahwatukee, AZ and identify it's business category.
+Among all closed businesses in Avondale, AZ what percent have obtained a 'wonderful experience' rating of the business.
+Identify the user who has been yelping since 2004. Is he or she an Yelp Elite member?
+Identify the percent of long reviews among all 5-star reviews given to businesses by the Yelp users.
+List out city name of businesses which have medium length of review.
+Among the businesses which have short length of review, which one located in Phoenix?
+Among the users who received low compliments from other users, which users joined Yelp in 2012?
+Among the businesses with average rating, how many business has attribute of full_bar.
+List out the state of businesses which have opening time at 1AM.
+List out the category name of business id 5.
+List out the user id that has compliment type of photos.
+State the state of businesses which have closing time at 12AM.
+Among the users who received high compliments from other users, which users joined Yelp earliest?
+Which business ID has the most reviews?
+Which year has the most elite users?
+Find out which business ID are opened all the time.
+Does the length of the tip influence the number of likes for hotel and travel business category?
+How many businesses in Arizona having an average review less than 3 stars?
+What is the percentage of user not becoming an elite user?
+What is the average year needed by a user with uber fans to become an elite user?
+How many active businesses are opened during late afternoon in the Phoenix city? List out the top 3 categories name for these businesses.
+Provide business ids with opening hours 10AM on Saturday.
+What are the categories of businesses that have opening time on Sunday?
+Please indicate the opening day of businesses whose category is pets.
+Please indicate the closing hours and business days of the businesses with the category named Doctors.
+Among the working days from Monday to Saturday, which businesses with the category names work the most days?
+In businesses with a category of "DJs", how many businesses are rated less than 5?
+List active business ids with opening times of 7AM and closing times of 8PM.
+How many businesses with the category named Stadiums & Arenas are rated highest?
+Write down the any five of ID and name of category that starts with alphabet "P".
+List down the business ID and attribute value of the attribute name of "payment_types_visa".
+Describe ID and active status of the business under category of "Diagnostic Imaging".
+Mention the user ID and their year of joining Yelp who had great experience on business ID 143.
+Among the user ID with number in compliment of uber on profile, list any 5 user ID and the year when they join Yelp.
+Among the elite users of 10 consecutive year from 2005 to 2014, list down the user ID and their number of compliment on photos.
+Write down the ID and opening day of a week for the business which are running in Black Canyon City.
+Calculate the difference between running business in Glendale City and Mesa City.
+For businesses with long length reviews, which state are they located?
+List down the category of businesses whose stars ratings are 5.
+How many user's compliment in photo has medium in number?
+Sum up the number of business with "ambience_romantic" attribute.
+What is the most common type of compliments that a user has received from other users?
+How many stars does each of the 3 top users with the most likes in their reviews have?
+In which categories does the only business located in the city of Arcadia appear?
+List by their id all businesses that are open on Sunday.
+How many businesses with music_karaoke attribute are closed?
+How many open businesses in the City of Phoenix have users left a long review?
+How many users who have received a low cool vote have also received at least 1 low cool vote for some of their reviews?
+How many users with a long tip and 2 likes for their tip have a high number of fans?
+In how many businesses with the ambience_trendy attribute?
+What is the average number of stars for businesses in the Obstetricians & Gynecologists category?
+Calculate the percentage of users with a high number of fans who were elite in 2011.
+Among the businesses in Tempe, list the attribute of the business with a medium review count.
+In businesses with a category of food, how many of them have a star rating below 3?
+List the active business ID and its stars of the businesses fall under the category of Food.
+What is the category and attributes of businesses with highest star rating?
+What is the category of the business with short review length and highest review stars within business ID from 7 to 14?
+Count the active businesses that has an attribute of BYOB with high review count.
+List the categories of active businesses in Glendale, AZ.
+Find the location of businesses that has business hours from 7 am to 7 pm every Wednesday.
+What is the attribute value of an active business with a low review count and 3 stars which is located at Goodyear, AZ?
+What is the opening time of the active businesses in Glendale that have a medium review count.
+Among the businesses with a category of Food, what is the percentage of the business with greater than 3 stars?
+List the closing time and day of week of active businesses in Goodyear with stars greater than the 80% of average age of star rating.
+How many users have "uber" number of fans?
+What kind of "wi-fi" does Yelp business No."10172" have?
+In which year did the user who has given the most number of "short" tips join the Yelp?
+User No. 70271 only has given one tip to the Yelp business, which category was that business belonged to?
+What is the number of reviews from user No. "21679"?
+List the names of business in AZ with a rating of 5.
+How many active businesses of city are underrated?
+Please provide the attribute values ​​of the bussinesses with fashion in Scottsdale.
+How many active businesses are there in Phoenix?
+How many businesses in the fashion industry are rated 5 stars?
+How many businesses are actively running in Gilbert City?
+What are the categories that business number 15 belongs to?
+How many businesses of Yelp are in Scottsdale?
+Among the Yelp_Businesses in Arizona, how many of them are still running?
+Which city has more Yelp_Business that's more appealing to users, Scottsdale or Anthem?
+How many Yelp_Businesses in Arizona have a Elitestar rating of over 4?
+How many Yelp_Businesses are there in Arizona in total?
+How many reviews have the user whose ID is 3 posted?
+Among the long reviews made by user ID 3, how many of them have received a medium number of useful votes?
+Please list the IDs of the users who have a high number of followers.
+Please list all the categories of the Yelp_Business in Arizona.
+What is the average Elitestar rating for a Yelp_Business that closes at 12PM on Sundays?
+How many of the busineses are in Casa Grande?
+How many active businesses are located at Phoenix, Arizona?
+How many businesses in Phoenix, Arizona is attributed to waiter service?
+What is the ratio of having the best to worse elite user in 2013?
+How many business have been reviewed by user ID 3 and how long have this user been with Yelp?
+What is the yearly average review done by user ID 3?
+How many of the businesses are active?
+List down the business ID with a low review count in Phoenix.
+List at least 10 users ID that has 4 as an average ratings of all reviews sent.
+Is the payment in mastercard possible for the Yelp business No."12476"?
+How many times is the number of "Women's Clothing" Yelp businesses to "Men's Clothing"?
+Among all attribute names, list down the ID and attribute name which start with "music".
+Mention the user average star, elite year and the compliment type of user ID 6027 whereby number of compliments reach uber.
+Describe category name which had above 10% in comparing with all business and categories.
+Among highest quality user of under ID 100, mention compliment type which got highest compliment number and user's followers.
+List all the businesses that closed at 8PM.
+Calculate difference between business that have the highest number of reviews and business that have the lowest number of reviews.
+How many business have low check-in on Sunday at 10AM?
+Among the businesses without attribute, how many businesses located in Gilbert?
+How many users have uber review votes for funny from the fans?
+What are the most common compliments types received by user with uber number of fans?
+Which user has done the most review on a business attributed to delivery?
+Indicate the business id and days which are opened from 8AM to 6PM.
+How many businesses id are rated more than 4?
+Please indicate the business id have the closing time with the category of Arts & Entertainment on Sunday.
+How many category id have low review count and rating more than 2?
+Write down the number of running business with each review count in Cave Creek city.
+What is the active and inactive ratio of the business with the review count of low.
+List by ID the businesses with the reviews with the lowest veracity of Paradise Valley.
+How many reviews of businesses that are still open received an uber rating on the funny vote?
+What is the quantity of the closed or not running Yelp Businesses in 'AZ'?
+How many Yelp businesses are opened 24 hours?
+Give the number of users who joined Yelp since "2004".
+How many users who have joined Yelp since "2005" but have no fans?
+How many "5" star reviews does the Yelp business No. "10682" get?
+Who has got the most number of "funny" type of compliments? Give the user ID.
+How many businesses are there in Phoenix city? Find the percentage of businesses in Phoenix city in the total city.
+What percentage of businesses are in the Real Estate sector and have the rating of 5 out of all businesses in Chandler?
+What is the number of useful votes that the user 52592 received when reviewed for business number 2?
+How long was the review for business number 2 that user number 612 wrote?
+How many users have joined Yelp since the year 2012?
+Please list the business IDs of all the Yelp_Businesses that are good for kids.
+What is the category of businesses with highest star rating?
+What is the closing and opening time of businesses located at Tempe with highest star rating?
+How many businesses ID sell beer and wine?
+Find out which business is opened for 24/7 and list out what is the business attribute.
+In businesses with a category of automotive, how many of them has an star rating below 3?
+Among the stopped businesses in San Tan Valley city, list down the user ID and review length of who had great experience.
+How many businesses in Tempe are rated as 'Wonderful experience?
+What time does the business with ID no.12 open on Monday?
+Mention the number of businesses that have no any attribute.
+Calculate the percentage of medium tip length in the list. List out the time when users of medium tip length join Yelp.
+How many business ids have opening hours from 8AM to 6PM?
+List any five of user ID who became elite user in 2006.
+Provide the list of user ID along with review star of which has the review length of medium with business ID of 35.
+List the user ID, business ID with review length of the business which received the most likes in tips.
+How many businesses in the city of Scottsdale open on Sunday at 12PM?
+How many of the businesses are in Surprise?
+What is the review length of user 11021 to business with business ID 3?
+How many reviews made by user whose ID is 3 are long?
+Among the Yelp_Businesses in Arizona, how many of them do not provide alcohol?
+Which Yelp_Business in Arizona gets the most number of reviews?
+How many stars on average does a Yelp_Business in Anthem get from a user review?
+What is the total number of active businesses in AZ with a low review count?
+Write down the ID, active status and city of the business which are in CA state.
+How many businesses in Glendale are reviewed by user with the ID of 20241?
+What is the average year for a user to be upgraded to elite user?
+In how many businesses have customers had a bad or terrible experience?

@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+market,Market_ID,num
+market,District,string
+market,Num_of_employees,num
+market,Num_of_shops,num
+market,Ranking,num
+phone,Name,string
+phone,Phone_ID,num
+phone,Memory_in_G,num
+phone,Carrier,string
+phone,Price,num
+phone_market,Market_ID,num
+phone_market,Phone_ID,string
+phone_market,Num_of_stock,num

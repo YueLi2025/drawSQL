@@ -1,0 +1,35 @@
+table_name,column_name,column_type
+sampledata15,sample pk,num
+sampledata15,state,string
+sampledata15,year,string
+sampledata15,month,string
+sampledata15,day,string
+sampledata15,site,string
+sampledata15,commod,string
+sampledata15,source id,string
+sampledata15,variety,string
+sampledata15,origin,string
+sampledata15,country,string
+sampledata15,disttype,string
+sampledata15,commtype,string
+sampledata15,claim,string
+sampledata15,quantity,num
+sampledata15,growst,string
+sampledata15,packst,string
+sampledata15,distst,string
+resultsdata15,sample pk,num
+resultsdata15,commod,string
+resultsdata15,commtype,string
+resultsdata15,lab,string
+resultsdata15,pestcode,string
+resultsdata15,testclass,string
+resultsdata15,concen,num
+resultsdata15,lod,num
+resultsdata15,conunit,string
+resultsdata15,confmethod,string
+resultsdata15,confmethod2,string
+resultsdata15,annotate,string
+resultsdata15,quantitate,string
+resultsdata15,mean,string
+resultsdata15,extract,string
+resultsdata15,determin,string

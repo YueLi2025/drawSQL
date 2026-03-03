@@ -1,0 +1,121 @@
+sql_query
+SELECT ranking_system_id FROM ranking_criteria WHERE criteria_name = 'Award'
+SELECT T2.country_name FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id GROUP BY T2.country_name ORDER BY COUNT(T1.university_name) DESC LIMIT 1
+SELECT T3.university_name FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id INNER JOIN university AS T3 ON T3.id = T2.university_id WHERE T1.criteria_name = 'Publications Rank' AND T2.year = 2014 AND T1.id = 17 ORDER BY T2.score DESC LIMIT 1
+SELECT T2.university_name FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id ORDER BY T1.num_students LIMIT 1
+SELECT COUNT(*) FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id WHERE T2.country_name = 'United States of America'
+SELECT COUNT(*) FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id WHERE T1.criteria_name = 'Award' AND T2.year BETWEEN 2005 AND 2015 AND T2.score = 0
+SELECT T2.country_name FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id WHERE university_name = 'University of Oxford'
+SELECT COUNT(*) FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id INNER JOIN university AS T3 ON T3.id = T2.university_id WHERE T3.university_name = 'Yale University' AND T2.score >= 10 AND T1.criteria_name = 'Quality of Education Rank'
+SELECT T2.criteria_name FROM ranking_system AS T1 INNER JOIN ranking_criteria AS T2 ON T1.id = T2.ranking_system_id WHERE T1.system_name = 'Center for World University Rankings'
+SELECT T2.university_name FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.num_students > 50000 AND T1.year = 2012
+SELECT DISTINCT T3.country_name FROM university AS T1 INNER JOIN university_year AS T2 ON T1.id = T2.university_id INNER JOIN country AS T3 ON T3.id = T1.country_id WHERE T2.pct_international_students > 50 AND T2.year BETWEEN 2011 AND 2016
+SELECT T1.system_name FROM ranking_system AS T1 INNER JOIN ranking_criteria AS T2 ON T1.id = T2.ranking_system_id WHERE T2.criteria_name = 'Quality of Education Rank'
+SELECT T1.student_staff_ratio FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T2.university_name = 'Harvard University' AND T1.year = 2012
+SELECT SUM(T2.num_students) FROM university AS T1 INNER JOIN university_year AS T2 ON T1.id = T2.university_id INNER JOIN country AS T3 ON T3.id = T1.country_id WHERE T3.country_name = 'Sweden'
+SELECT T1.ranking_criteria_id FROM university_ranking_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T2.university_name = 'Brown University' AND T1.year = 2014
+SELECT T1.criteria_name FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id WHERE T2.university_id = 32 AND T2.year = 2015
+SELECT AVG(T2.score) FROM university AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.university_id INNER JOIN country AS T3 ON T3.id = T1.country_id WHERE T3.country_name = 'Brazil'
+SELECT T2.criteria_name FROM ranking_system AS T1 INNER JOIN ranking_criteria AS T2 ON T1.id = T2.ranking_system_id WHERE T1.system_name = 'Center for World University Rankings'
+SELECT T1.university_name FROM university AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.university_id INNER JOIN ranking_criteria AS T3 ON T3.id = T2.ranking_criteria_id WHERE T3.criteria_name = 'Teaching' ORDER BY T2.score DESC LIMIT 1
+SELECT T1.pct_international_students FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2011 AND T2.university_name = 'Harvard University'
+SELECT CAST(T1.num_students * T1.pct_female_students AS REAL) / 100 FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2011 AND T2.university_name = 'Stanford University'
+SELECT T2.country_name FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id WHERE T1.university_name = 'Harvard University'
+SELECT T1.system_name FROM ranking_system AS T1 INNER JOIN ranking_criteria AS T2 ON T1.id = T2.ranking_system_id WHERE T2.criteria_name = 'Teaching'
+SELECT COUNT(*) FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id WHERE T2.country_name = 'Argentina'
+SELECT T2.university_name FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2011 AND T1.num_students > 100000
+SELECT COUNT(T2.criteria_name) FROM ranking_system AS T1 INNER JOIN ranking_criteria AS T2 ON T1.id = T2.ranking_system_id WHERE T1.system_name = 'Center for World University Rankings'
+SELECT SUM(T1.num_students) - SUM(CAST(T1.num_students * T1.pct_international_students AS REAL) / 100) FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T2.university_name = 'Harvard University' AND T1.year BETWEEN 2011 AND 2012
+SELECT country_id FROM university WHERE university_name = 'University of Tokyo'
+SELECT id FROM ranking_system WHERE system_name = 'Center for World University Rankings'
+SELECT id FROM ranking_criteria WHERE criteria_name = 'Publications Rank'
+SELECT T1.num_students FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T2.university_name = 'Yale University' AND T1.year = 2016
+SELECT CAST(SUM(T1.num_students) AS REAL) / SUM(T1.student_staff_ratio) FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T2.university_name = 'University of Auckland' AND T1.year = 2015
+SELECT CAST(T2.num_students * T2.pct_international_students AS REAL) / 100 FROM university AS T1 INNER JOIN university_year AS T2 ON T1.id = T2.university_id WHERE T1.university_name = 'Harvard University' AND T2.year = 2012
+SELECT CAST(T2.num_students * T2.pct_female_students AS REAL) / 100 FROM university AS T1 INNER JOIN university_year AS T2 ON T1.id = T2.university_id WHERE T1.university_name = 'Arizona State University' AND T2.year = 2014
+SELECT T1.university_name FROM university AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.university_id GROUP BY T1.university_name ORDER BY SUM(T2.score) DESC LIMIT 1
+SELECT T2.criteria_name FROM ranking_system AS T1 INNER JOIN ranking_criteria AS T2 ON T1.id = T2.ranking_system_id WHERE T1.system_name = 'Shanghai Ranking'
+SELECT T3.university_name FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id INNER JOIN university AS T3 ON T3.id = T2.university_id WHERE T1.criteria_name = 'Teaching' AND T2.year = 2011 ORDER BY T2.score ASC LIMIT 1
+SELECT T1.system_name FROM ranking_system AS T1 INNER JOIN ranking_criteria AS T2 ON T1.id = T2.ranking_system_id WHERE T2.criteria_name = 'Quality of Education Rank'
+SELECT T1.criteria_name, T2.score FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id INNER JOIN university AS T3 ON T3.id = T2.university_id WHERE T3.university_name = 'Harvard University' AND T2.year = 2005
+SELECT AVG(T2.score) FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id WHERE T1.criteria_name = 'Alumni' AND T2.year = 2008
+SELECT university_id FROM university_year WHERE year = 2011 ORDER BY pct_female_students DESC LIMIT 3
+SELECT year FROM university_year WHERE university_id = 1 ORDER BY num_students DESC LIMIT 1
+SELECT T2.university_name FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2011 ORDER BY T1.pct_international_students DESC LIMIT 1
+SELECT T1.university_name FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id WHERE T2.country_name = 'Australia'
+SELECT T3.university_name FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id INNER JOIN university AS T3 ON T3.id = T2.university_id WHERE T1.criteria_name = 'Teaching' AND T2.year = 2011 ORDER BY T2.score DESC LIMIT 1
+SELECT T3.university_name FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id INNER JOIN university AS T3 ON T3.id = T2.university_id WHERE T1.criteria_name = 'Teaching' AND T2.year = 2011 AND T2.score > 90
+SELECT T1.criteria_name FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id INNER JOIN university AS T3 ON T3.id = T2.university_id WHERE T3.university_name = 'Harvard University' AND T2.year = 2011
+SELECT T3.university_name FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id INNER JOIN university AS T3 ON T3.id = T2.university_id WHERE T1.criteria_name = 'Teaching' AND T2.year = 2011 AND T2.score = 98
+SELECT COUNT(*) FROM university AS T1 INNER JOIN university_year AS T2 ON T1.id = T2.university_id INNER JOIN country AS T3 ON T3.id = T1.country_id WHERE T3.country_name = 'Australia' AND T2.student_staff_ratio > 15 AND T2.year = 2011
+SELECT CAST(T1.num_students * T1.pct_female_students AS REAL) / 100 FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2011 AND T2.university_name = 'Stanford University'
+SELECT country_id FROM university WHERE university_name = 'University of Veterinary Medicine Vienna'
+SELECT id FROM ranking_criteria WHERE criteria_name = 'Citations Rank'
+SELECT T2.university_name FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2011 ORDER BY T1.num_students DESC LIMIT 1
+SELECT T2.score FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id INNER JOIN university AS T3 ON T3.id = T2.university_id WHERE T3.university_name = 'Chosun University' AND T1.criteria_name = 'Influence Rank' AND T2.year = 2015
+SELECT T2.pct_international_students FROM university AS T1 INNER JOIN university_year AS T2 ON T1.id = T2.university_id WHERE T1.university_name = 'University of Oslo' AND T2.year = 2015
+SELECT T1.criteria_name FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id INNER JOIN university AS T3 ON T3.id = T2.university_id WHERE T3.university_name = 'University of Southampton' AND T2.year = 2015 ORDER BY T2.score DESC LIMIT 1
+SELECT T1.system_name FROM ranking_system AS T1 INNER JOIN ranking_criteria AS T2 ON T1.id = T2.ranking_system_id WHERE T2.criteria_name = 'Total Shanghai'
+SELECT CAST(T1.num_students * T1.pct_female_students AS REAL) / 100 FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2015 AND T2.university_name = 'Pierre and Marie Curie University'
+SELECT T2.score FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id INNER JOIN university AS T3 ON T3.id = T2.university_id WHERE T3.university_name = 'University of Florida' AND T2.year = 2014 AND T1.criteria_name = 'N and S'
+SELECT CAST(T1.num_students * T1.pct_international_students AS REAL) / 100 FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2013 AND T2.university_name = 'University of Wisconsin-Madison'
+SELECT T2.university_name FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2015 ORDER BY T1.num_students ASC LIMIT 1
+SELECT CAST(SUM(CASE WHEN T2.university_name = 'University of Ottawa' THEN T1.num_students ELSE 0 END) AS REAL) / SUM(CASE WHEN T2.university_name = 'Joseph Fourier University' THEN T1.num_students ELSE 0 END) FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2013
+SELECT (SUM(CASE WHEN T1.system_name = 'Center for World University Rankings' THEN 1 ELSE 0 END) + SUM(CASE WHEN T1.system_name = 'Shanghai Ranking' THEN 1 ELSE 0 END) + SUM(CASE WHEN T1.system_name = 'Times Higher Education World University Ranking' THEN 1 ELSE 0 END)) / 3 FROM ranking_system AS T1 INNER JOIN ranking_criteria AS T2 ON T1.id = T2.ranking_system_id
+SELECT id FROM country WHERE country_name = 'Cyprus'
+SELECT criteria_name FROM ranking_criteria WHERE id = 13
+SELECT DISTINCT T3.criteria_name FROM university AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.university_id INNER JOIN ranking_criteria AS T3 ON T3.id = T2.ranking_criteria_id WHERE T1.university_name = 'Harvard University' AND T2.score = 100
+SELECT T1.university_name, T1.id FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id WHERE T2.country_name = 'Turkey'
+SELECT CAST(T1.num_students * T1.pct_female_students AS REAL) / 100 FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2011 AND T2.university_name = 'University of Pennsylvania'
+SELECT T2.country_name FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id WHERE T1.university_name = 'Johns Hopkins University'
+SELECT DISTINCT T2.university_name FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.num_students BETWEEN 400 AND 1000
+SELECT T1.year FROM university_ranking_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T2.university_name = 'Brown University' ORDER BY T1.score DESC LIMIT 1
+SELECT AVG(T1.score) FROM university_ranking_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T2.university_name = 'Emory University' AND T1.year BETWEEN 2011 AND 2016
+SELECT T2.university_name FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2015 ORDER BY T1.num_students DESC LIMIT 1
+SELECT COUNT(*) FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id WHERE T2.score = 40 AND T1.criteria_name = 'Teaching' AND T2.score = 40
+SELECT T2.university_name FROM university_ranking_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2015 AND T1.score * 100 < ( SELECT AVG(score) * 28 FROM university_ranking_year WHERE year = 2015 )
+SELECT COUNT(id) FROM ranking_criteria WHERE ranking_system_id = 3
+SELECT T3.university_name FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id INNER JOIN university AS T3 ON T3.id = T2.university_id INNER JOIN country AS T4 ON T4.id = T3.country_id WHERE T1.criteria_name = 'Citations' AND T2.year = 2016 AND T1.id = 4 AND T4.country_name = 'Australia' ORDER BY T2.score DESC LIMIT 1
+SELECT DISTINCT T2.university_name FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id ORDER BY (CAST(T1.num_students * T1.pct_international_students AS REAL) / 100) DESC LIMIT 5
+SELECT university_id FROM university_year ORDER BY student_staff_ratio DESC LIMIT 1
+SELECT AVG(pct_female_students) FROM university_year
+SELECT pct_international_students * num_students, num_students FROM university_year WHERE year = 2013 AND university_id = 20
+SELECT id FROM university WHERE university_name = 'Harvard University'
+SELECT university_id FROM university_ranking_year WHERE score = 100 AND year = 2011
+SELECT T2.country_name FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id WHERE T1.id = 112
+SELECT T1.university_name FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id WHERE T2.country_name = 'Spain'
+SELECT DISTINCT T3.country_name FROM university AS T1 INNER JOIN university_year AS T2 ON T1.id = T2.university_id INNER JOIN country AS T3 ON T3.id = T1.country_id WHERE T2.year = 2013 AND T2.num_students * 100 > ( SELECT AVG(num_students) FROM university_year ) * 98
+SELECT SUM(CAST(num_students * pct_female_students AS REAL) / 100) FROM university_year WHERE year = 2011
+SELECT COUNT(*) FROM university_year WHERE year = 2011 AND num_students > 50000 AND pct_international_students > 10
+SELECT university_id FROM university_year WHERE year = 2012 ORDER BY pct_female_students DESC LIMIT 1
+SELECT DISTINCT T2.university_name FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id GROUP BY T2.university_name ORDER BY SUM(T1.num_students * T1.pct_international_students / 100) DESC LIMIT 3
+SELECT COUNT(*) FROM university_year WHERE year = 2011 AND num_students > 30000
+SELECT T1.university_name FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id WHERE T2.country_name = 'Denmark'
+SELECT T2.country_name FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id WHERE T1.university_name = 'University of São Paulo'
+SELECT university_id FROM university_year WHERE year = 2011 ORDER BY num_students DESC LIMIT 1
+SELECT COUNT(*) FROM university_year WHERE year = 2011 AND pct_international_students > 25 AND num_students > 20000
+SELECT T1.num_students FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T2.university_name = 'Harvard University' AND T1.year = 2011
+SELECT T2.country_name FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id WHERE T1.university_name = 'Harvard University'
+SELECT COUNT(*) FROM ranking_criteria AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.ranking_criteria_id INNER JOIN university AS T3 ON T3.id = T2.university_id WHERE T1.criteria_name = 'Teaching' AND T2.year = 2011 AND T2.score > 90
+SELECT T2.country_name FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id WHERE T1.university_name = 'McMaster University'
+SELECT COUNT(*) FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id WHERE T2.country_name = 'Turkey'
+SELECT score FROM university_ranking_year WHERE year = 2015 AND university_id = 68
+SELECT SUM(CAST(num_students * pct_female_students AS REAL) / 100) FROM university_year WHERE year BETWEEN 2011 AND 2013 AND university_id = 40
+SELECT T2.score FROM university_year AS T1 INNER JOIN university_ranking_year AS T2 ON T1.university_id = T2.university_id WHERE T1.year = 2011 ORDER BY T1.num_students DESC LIMIT 1
+SELECT COUNT(*) FROM ranking_system AS T1 INNER JOIN ranking_criteria AS T2 ON T1.id = T2.ranking_system_id WHERE T1.system_name = 'Shanghai Ranking'
+SELECT COUNT(*) FROM university AS T1 INNER JOIN country AS T2 ON T1.country_id = T2.id WHERE T2.country_name = 'Japan'
+SELECT SUM(T1.num_students) - SUM(CAST(T1.num_students * T1.pct_international_students AS REAL) / 100) FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year BETWEEN 2011 AND 2014 AND T2.university_name = 'University of Tokyo'
+SELECT COUNT(*) FROM university_year WHERE num_students > 80000 AND year = 2011
+SELECT COUNT(*) FROM university WHERE university_name LIKE '%State%'
+SELECT T2.university_name FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id ORDER BY T1.pct_international_students DESC LIMIT 1
+SELECT T2.country_id FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2014 ORDER BY T1.num_students DESC LIMIT 1
+SELECT MAX(student_staff_ratio) FROM university_year ORDER BY student_staff_ratio DESC LIMIT 1
+SELECT university_id FROM university_year WHERE year = 2011 ORDER BY num_students DESC LIMIT 1
+SELECT T2.university_name FROM university_ranking_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2012 ORDER BY T1.score DESC LIMIT 1
+SELECT T2.university_name FROM university_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T1.year = 2011 ORDER BY T1.num_students DESC LIMIT 1
+SELECT COUNT(*) FROM university_ranking_year WHERE ranking_criteria_id = 6 AND year = 2011 AND score < 50
+SELECT id FROM ranking_system WHERE system_name = 'Center for World University Rankings'
+SELECT student_staff_ratio FROM university_year WHERE university_id = 35
+SELECT T2.university_name, T1.score FROM university_ranking_year AS T1 INNER JOIN university AS T2 ON T1.university_id = T2.id WHERE T2.id = 124
+SELECT DISTINCT T3.country_name FROM university AS T1 INNER JOIN university_ranking_year AS T2 ON T1.id = T2.university_id INNER JOIN country AS T3 ON T3.id = T1.country_id WHERE T2.score < 70 AND T2.year = 2016
+SELECT AVG(score) FROM university_ranking_year WHERE year BETWEEN 2013 AND 2015 AND university_id = 79

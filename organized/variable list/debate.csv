@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+debate,Debate_ID,num
+debate,Date,string
+debate,Venue,string
+debate,Num_of_Audience,num
+debate_people,Debate_ID,num
+debate_people,Affirmative,num
+debate_people,Negative,num
+debate_people,If_Affirmative_Win,boolean
+people,People_ID,num
+people,District,string
+people,Name,string
+people,Party,string
+people,Age,num

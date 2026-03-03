@@ -1,0 +1,81 @@
+sql_query
+SELECT count(*) FROM bank
+SELECT count(*) FROM bank
+SELECT sum(no_of_customers) FROM bank
+SELECT sum(no_of_customers) FROM bank
+SELECT sum(no_of_customers) FROM bank WHERE city  =  'New York City'
+SELECT sum(no_of_customers) FROM bank WHERE city  =  'New York City'
+SELECT avg(no_of_customers) FROM bank WHERE state  =  'Utah'
+SELECT avg(no_of_customers) FROM bank WHERE state  =  'Utah'
+SELECT avg(no_of_customers) FROM bank
+SELECT avg(no_of_customers) FROM bank
+SELECT city ,  state FROM bank WHERE bname  =  'morningside'
+SELECT city ,  state FROM bank WHERE bname  =  'morningside'
+SELECT bname FROM bank WHERE state  =  'New York'
+SELECT bname FROM bank WHERE state  =  'New York'
+SELECT cust_name FROM customer ORDER BY acc_bal
+SELECT cust_name FROM customer ORDER BY acc_bal
+SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id GROUP BY T1.cust_name ORDER BY sum(T2.amount)
+SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id GROUP BY T1.cust_name ORDER BY sum(T2.amount)
+SELECT state ,  acc_type ,  credit_score FROM customer WHERE no_of_loans  =  0
+SELECT state ,  acc_type ,  credit_score FROM customer WHERE no_of_loans  =  0
+SELECT count(DISTINCT city) FROM bank
+SELECT count(DISTINCT city) FROM bank
+SELECT count(DISTINCT state) FROM bank
+SELECT count(DISTINCT state) FROM bank
+SELECT count(DISTINCT acc_type) FROM customer
+SELECT count(DISTINCT acc_type) FROM customer
+SELECT cust_name ,  acc_bal FROM customer WHERE cust_name LIKE '%a%'
+SELECT cust_name ,  acc_bal FROM customer WHERE cust_name LIKE '%a%'
+SELECT sum(acc_bal) FROM customer WHERE state  =  'Utah' OR state  =  'Texas'
+SELECT sum(acc_bal) FROM customer WHERE state  =  'Utah' OR state  =  'Texas'
+SELECT cust_name FROM customer WHERE acc_type  =  'saving' INTERSECT SELECT cust_name FROM customer WHERE acc_type  =  'checking'
+SELECT cust_name FROM customer WHERE acc_type  =  'saving' INTERSECT SELECT cust_name FROM customer WHERE acc_type  =  'checking'
+SELECT cust_name FROM customer EXCEPT SELECT cust_name FROM customer WHERE acc_type  =  'saving'
+SELECT cust_name FROM customer EXCEPT SELECT cust_name FROM customer WHERE acc_type  =  'saving'
+SELECT cust_name FROM customer EXCEPT SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id WHERE T2.loan_type  =  'Mortgages'
+SELECT cust_name FROM customer EXCEPT SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id WHERE T2.loan_type  =  'Mortgages'
+SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id WHERE loan_type  =  'Mortgages' INTERSECT SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id WHERE loan_type  =  'Auto'
+SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id WHERE loan_type  =  'Mortgages' INTERSECT SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id WHERE loan_type  =  'Auto'
+SELECT cust_name FROM customer WHERE credit_score  <  (SELECT avg(credit_score) FROM customer)
+SELECT cust_name FROM customer WHERE credit_score  <  (SELECT avg(credit_score) FROM customer)
+SELECT bname FROM bank ORDER BY no_of_customers DESC LIMIT 1
+SELECT bname FROM bank ORDER BY no_of_customers DESC LIMIT 1
+SELECT cust_name FROM customer ORDER BY credit_score LIMIT 1
+SELECT cust_name FROM customer ORDER BY credit_score LIMIT 1
+SELECT cust_name ,  acc_type ,  acc_bal FROM customer ORDER BY credit_score DESC LIMIT 1
+SELECT cust_name ,  acc_type ,  acc_bal FROM customer ORDER BY credit_score DESC LIMIT 1
+SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id GROUP BY T1.cust_name ORDER BY sum(T2.amount) DESC LIMIT 1
+SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id GROUP BY T1.cust_name ORDER BY sum(T2.amount) DESC LIMIT 1
+SELECT state FROM bank GROUP BY state ORDER BY sum(no_of_customers) DESC LIMIT 1
+SELECT state FROM bank GROUP BY state ORDER BY sum(no_of_customers) DESC LIMIT 1
+SELECT avg(acc_bal) ,  acc_type FROM customer WHERE credit_score  <  50 GROUP BY acc_type
+SELECT avg(acc_bal) ,  acc_type FROM customer WHERE credit_score  <  50 GROUP BY acc_type
+SELECT sum(acc_bal) ,  state FROM customer WHERE credit_score  >  100 GROUP BY state
+SELECT sum(acc_bal) ,  state FROM customer WHERE credit_score  >  100 GROUP BY state
+SELECT sum(amount) ,  T1.bname FROM bank AS T1 JOIN loan AS T2 ON T1.branch_id  =  T2.branch_id GROUP BY T1.bname
+SELECT sum(amount) ,  T1.bname FROM bank AS T1 JOIN loan AS T2 ON T1.branch_id  =  T2.branch_id GROUP BY T1.bname
+SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id GROUP BY T1.cust_name HAVING count(*)  >  1
+SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id GROUP BY T1.cust_name HAVING count(*)  >  1
+SELECT T1.cust_name ,  T1.acc_type FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id GROUP BY T1.cust_name HAVING sum(T2.amount)  >  5000
+SELECT T1.cust_name ,  T1.acc_type FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id GROUP BY T1.cust_name HAVING sum(T2.amount)  >  5000
+SELECT T1.bname FROM bank AS T1 JOIN loan AS T2 ON T1.branch_id  =  T2.branch_id GROUP BY T1.bname ORDER BY sum(T2.amount) DESC LIMIT 1
+SELECT T1.bname FROM bank AS T1 JOIN loan AS T2 ON T1.branch_id  =  T2.branch_id GROUP BY T1.bname ORDER BY sum(T2.amount) DESC LIMIT 1
+SELECT T2.bname FROM loan AS T1 JOIN bank AS T2 ON T1.branch_id  =  T2.branch_id JOIN customer AS T3 ON T1.cust_id  =  T3.cust_id WHERE T3.credit_score  <  100 GROUP BY T2.bname ORDER BY sum(T1.amount) DESC LIMIT 1
+SELECT T2.bname FROM loan AS T1 JOIN bank AS T2 ON T1.branch_id  =  T2.branch_id JOIN customer AS T3 ON T1.cust_id  =  T3.cust_id WHERE T3.credit_score  <  100 GROUP BY T2.bname ORDER BY sum(T1.amount) DESC LIMIT 1
+SELECT DISTINCT T1.bname FROM bank AS T1 JOIN loan AS T2 ON T1.branch_id  =  T2.branch_id
+SELECT DISTINCT T1.bname FROM bank AS T1 JOIN loan AS T2 ON T1.branch_id  =  T2.branch_id
+SELECT DISTINCT T1.cust_name ,  T1.credit_score FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id
+SELECT DISTINCT T1.cust_name ,  T1.credit_score FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id
+SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id WHERE amount  >  3000
+SELECT T1.cust_name FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id WHERE amount  >  3000
+SELECT T1.bname ,  T1.city FROM bank AS T1 JOIN loan AS T2 ON T1.branch_id  =  T2.branch_id WHERE T2.loan_type  =  'Business'
+SELECT T1.bname ,  T1.city FROM bank AS T1 JOIN loan AS T2 ON T1.branch_id  =  T2.branch_id WHERE T2.loan_type  =  'Business'
+SELECT T2.bname FROM loan AS T1 JOIN bank AS T2 ON T1.branch_id  =  T2.branch_id JOIN customer AS T3 ON T1.cust_id  =  T3.cust_id WHERE T3.credit_score  <  100
+SELECT T2.bname FROM loan AS T1 JOIN bank AS T2 ON T1.branch_id  =  T2.branch_id JOIN customer AS T3 ON T1.cust_id  =  T3.cust_id WHERE T3.credit_score  <  100
+SELECT sum(T2.amount) FROM bank AS T1 JOIN loan AS T2 ON T1.branch_id  =  T2.branch_id WHERE T1.state  =  'New York'
+SELECT sum(T2.amount) FROM bank AS T1 JOIN loan AS T2 ON T1.branch_id  =  T2.branch_id WHERE T1.state  =  'New York'
+SELECT avg(credit_score) FROM customer WHERE cust_id IN (SELECT cust_id FROM loan)
+SELECT avg(credit_score) FROM customer WHERE cust_id IN (SELECT cust_id FROM loan)
+SELECT avg(credit_score) FROM customer WHERE cust_id NOT IN (SELECT cust_id FROM loan)
+SELECT avg(credit_score) FROM customer WHERE cust_id NOT IN (SELECT cust_id FROM loan)

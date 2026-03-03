@@ -1,0 +1,18 @@
+sql_query
+SELECT count(*) FROM member
+SELECT Name FROM member ORDER BY Age ASC
+SELECT Name ,  Nationality FROM member
+select name from member where nationality != "england"
+SELECT Name FROM member WHERE Age  =  19 OR Age  =  20
+SELECT Name FROM member ORDER BY Age DESC LIMIT 1
+SELECT Nationality ,  COUNT(*) FROM member GROUP BY Nationality
+SELECT Nationality ,  COUNT(*) FROM member GROUP BY Nationality ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Nationality FROM member GROUP BY Nationality HAVING COUNT(*)  >=  2
+SELECT T3.Name ,  T2.Club_Name FROM club_leader AS T1 JOIN club AS T2 ON T1.Club_ID  =  T2.Club_ID JOIN member AS T3 ON T1.Member_ID  =  T3.Member_ID
+SELECT T3.Name ,  T2.Club_Name FROM club_leader AS T1 JOIN club AS T2 ON T1.Club_ID  =  T2.Club_ID JOIN member AS T3 ON T1.Member_ID  =  T3.Member_ID WHERE T2.Overall_Ranking  <  100
+SELECT T3.Name ,  T2.Club_Name FROM club_leader AS T1 JOIN club AS T2 ON T1.Club_ID  =  T2.Club_ID JOIN member AS T3 ON T1.Member_ID  =  T3.Member_ID WHERE T1.Year_Join  <  2018
+SELECT T3.Name FROM club_leader AS T1 JOIN club AS T2 ON T1.Club_ID  =  T2.Club_ID JOIN member AS T3 ON T1.Member_ID  =  T3.Member_ID WHERE T2.Club_Name  =  "Houston"
+SELECT Name FROM member WHERE Member_ID NOT IN (SELECT Member_ID FROM club_leader)
+SELECT Nationality FROM member WHERE Age  >  22 INTERSECT SELECT Nationality FROM member WHERE Age  <  19
+SELECT avg(T2.age) FROM club_leader AS T1 JOIN member AS T2 ON T1.member_id  =  T2.member_id
+SELECT club_name FROM club WHERE club_name LIKE '%state%'

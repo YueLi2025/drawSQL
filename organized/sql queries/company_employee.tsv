@@ -1,0 +1,17 @@
+sql_query
+SELECT count(*) FROM company WHERE Headquarters  =  'USA'
+SELECT Name FROM company ORDER BY Sales_in_Billion ASC
+SELECT Headquarters ,  Industry FROM company
+SELECT Name FROM company WHERE Industry  =  "Banking" OR Industry  =  "Retailing"
+SELECT max(Market_Value_in_Billion) ,  min(Market_Value_in_Billion) FROM company
+SELECT Headquarters FROM company ORDER BY Sales_in_Billion DESC LIMIT 1
+SELECT Headquarters ,  COUNT(*) FROM company GROUP BY Headquarters
+SELECT Headquarters FROM company GROUP BY Headquarters ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Headquarters FROM company GROUP BY Headquarters HAVING COUNT(*)  >=  2
+SELECT Headquarters FROM company WHERE Industry  =  "Banking" INTERSECT SELECT Headquarters FROM company WHERE Industry  =  "Oil and gas"
+SELECT T3.Name ,  T2.Name FROM employment AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID JOIN company AS T3 ON T1.Company_ID  =  T3.Company_ID
+SELECT T3.Name ,  T2.Name FROM employment AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID JOIN company AS T3 ON T1.Company_ID  =  T3.Company_ID ORDER BY T1.Year_working
+SELECT T2.Name FROM employment AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID JOIN company AS T3 ON T1.Company_ID  =  T3.Company_ID WHERE T3.Sales_in_Billion  >  200
+SELECT T3.Name ,  COUNT(*) FROM employment AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID JOIN company AS T3 ON T1.Company_ID  =  T3.Company_ID GROUP BY T3.Name
+SELECT Name FROM people WHERE People_ID NOT IN (SELECT People_ID FROM employment)
+SELECT name FROM company WHERE Sales_in_Billion  >  200 ORDER BY Sales_in_Billion ,  Profits_in_Billion DESC

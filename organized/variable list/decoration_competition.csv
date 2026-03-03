@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+college,College_ID,num
+college,Name,string
+college,Leader_Name,string
+college,College_Location,string
+member,Member_ID,num
+member,Name,string
+member,Country,string
+member,College_ID,num
+round,Round_ID,num
+round,Member_ID,num
+round,Decoration_Theme,string
+round,Rank_in_Round,num

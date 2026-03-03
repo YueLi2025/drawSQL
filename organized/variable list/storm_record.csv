@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+affected_region,Region_id,num
+affected_region,Storm_ID,num
+affected_region,Number_city_affected,num
+region,Region_id,num
+region,Region_code,string
+region,Region_name,string
+storm,Storm_ID,num
+storm,Name,string
+storm,Dates_active,string
+storm,Max_speed,num
+storm,Damage_millions_USD,num
+storm,Number_Deaths,num

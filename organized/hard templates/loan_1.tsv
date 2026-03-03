@@ -1,0 +1,81 @@
+hard_templates
+SELECT count(*) FROM table_name
+SELECT count(*) FROM table_name
+SELECT sum( col_name ) FROM table_name
+SELECT sum( col_name ) FROM table_name
+SELECT sum( col_name ) FROM table_name WHERE col_name = string
+SELECT sum( col_name ) FROM table_name WHERE col_name = string
+SELECT avg( col_name ) FROM table_name WHERE col_name = string
+SELECT avg( col_name ) FROM table_name WHERE col_name = string
+SELECT avg( col_name ) FROM table_name
+SELECT avg( col_name ) FROM table_name
+SELECT col_name , col_name FROM table_name WHERE col_name = string
+SELECT col_name , col_name FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT cust_name FROM table_name ORDER BY acc_bal
+SELECT cust_name FROM table_name ORDER BY acc_bal
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY sum(table_alias1.col_name)
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY sum(table_alias1.col_name)
+SELECT col_name , acc_type , col_name FROM table_name WHERE no_of_loans = num
+SELECT col_name , acc_type , col_name FROM table_name WHERE no_of_loans = num
+SELECT count(DISTINCT col_name ) FROM table_name
+SELECT count(DISTINCT col_name ) FROM table_name
+SELECT count(DISTINCT col_name ) FROM table_name
+SELECT count(DISTINCT col_name ) FROM table_name
+SELECT count(DISTINCT acc_type) FROM table_name
+SELECT count(DISTINCT acc_type) FROM table_name
+SELECT cust_name , acc_bal FROM table_name WHERE cust_name LIKE string
+SELECT cust_name , acc_bal FROM table_name WHERE cust_name LIKE string
+SELECT sum(acc_bal) FROM table_name WHERE col_name = string OR col_name = string
+SELECT sum(acc_bal) FROM table_name WHERE col_name = string OR col_name = string
+SELECT cust_name FROM table_name WHERE acc_type = string INTERSECT SELECT cust_name FROM table_name WHERE acc_type = string
+SELECT cust_name FROM table_name WHERE acc_type = string INTERSECT SELECT cust_name FROM table_name WHERE acc_type = string
+SELECT cust_name FROM table_name EXCEPT SELECT cust_name FROM table_name WHERE acc_type = string
+SELECT cust_name FROM table_name EXCEPT SELECT cust_name FROM table_name WHERE acc_type = string
+SELECT cust_name FROM table_name EXCEPT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT cust_name FROM table_name EXCEPT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE col_name = string INTERSECT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE col_name = string INTERSECT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE col_name = string
+SELECT cust_name FROM table_name WHERE col_name < (SELECT avg( col_name ) FROM table_name)
+SELECT cust_name FROM table_name WHERE col_name < (SELECT avg( col_name ) FROM table_name)
+SELECT col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT cust_name FROM table_name ORDER BY col_name LIMIT num
+SELECT cust_name FROM table_name ORDER BY col_name LIMIT num
+SELECT cust_name , acc_type , acc_bal FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT cust_name , acc_type , acc_bal FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY sum(table_alias1.col_name) DESC LIMIT num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY sum(table_alias1.col_name) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY sum( col_name ) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY sum( col_name ) DESC LIMIT num
+SELECT avg(acc_bal) , acc_type FROM table_name WHERE col_name < num GROUP BY acc_type
+SELECT avg(acc_bal) , acc_type FROM table_name WHERE col_name < num GROUP BY acc_type
+SELECT sum(acc_bal) , col_name FROM table_name WHERE col_name > num GROUP BY col_name
+SELECT sum(acc_bal) , col_name FROM table_name WHERE col_name > num GROUP BY col_name
+SELECT sum( col_name ) , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name
+SELECT sum( col_name ) , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name HAVING count(*) > num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name HAVING count(*) > num
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name HAVING sum(table_alias1.col_name) > num
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name HAVING sum(table_alias1.col_name) > num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY sum(table_alias1.col_name) DESC LIMIT num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY sum(table_alias1.col_name) DESC LIMIT num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias0.col_name = table_alias2.col_name WHERE table_alias2.col_name < num GROUP BY table_alias1.col_name ORDER BY sum(table_alias0.col_name) DESC LIMIT num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias0.col_name = table_alias2.col_name WHERE table_alias2.col_name < num GROUP BY table_alias1.col_name ORDER BY sum(table_alias0.col_name) DESC LIMIT num
+SELECT DISTINCT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT DISTINCT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT DISTINCT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT DISTINCT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE col_name > num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE col_name > num
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias0.col_name = table_alias2.col_name WHERE table_alias2.col_name < num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias0.col_name = table_alias2.col_name WHERE table_alias2.col_name < num
+SELECT sum(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT sum(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT avg( col_name ) FROM table_name WHERE cust_id IN (SELECT cust_id FROM table_name)
+SELECT avg( col_name ) FROM table_name WHERE cust_id IN (SELECT cust_id FROM table_name)
+SELECT avg( col_name ) FROM table_name WHERE cust_id NOT IN (SELECT cust_id FROM table_name)
+SELECT avg( col_name ) FROM table_name WHERE cust_id NOT IN (SELECT cust_id FROM table_name)

@@ -1,0 +1,48 @@
+soft_templates
+SELECT variable FROM variable WHERE variable = variable AND CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable) > variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT COUNT(*) FROM variable AS variable INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable) - CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable) AS variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable, variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable
+SELECT variable, variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE (variable = variable AND variable = variable) OR (variable = variable AND variable = variable) ORDER BY variable DESC LIMIT variable
+SELECT variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT COUNT(*) FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable) > variable AND variable = variable
+SELECT AVG(CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable)) AS variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable
+SELECT variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable AND variable = variable
+SELECT variable, variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable ORDER BY variable DESC LIMIT variable
+SELECT variable, variable, variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable ORDER BY variable DESC LIMIT variable
+SELECT variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable, variable FROM variable WHERE CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable) = ( SELECT MAX(CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable)) FROM variable )
+SELECT COUNT(*) FROM variable WHERE CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable) < variable
+SELECT variable FROM variable ORDER BY variable DESC LIMIT variable
+SELECT variable, variable, variable, variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable GROUP BY variable, variable, variable, variable ORDER BY COUNT(*) DESC LIMIT variable
+SELECT variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable GROUP BY variable ORDER BY COUNT(variable) DESC LIMIT variable
+SELECT variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable GROUP BY variable ORDER BY COUNT(variable) DESC LIMIT variable
+SELECT COUNT(*) FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable AND variable = variable
+SELECT variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable GROUP BY variable ORDER BY COUNT(variable) DESC LIMIT variable
+SELECT variable, variable, variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable, variable, variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable, variable, variable, variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable
+SELECT variable, variable, variable, variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable, variable, variable, variable, variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable
+SELECT SUM(CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable)) / variable AS variable, variable, variable , variable, variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable INNER JOIN variable AS variable  ON variable = variable WHERE CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable) = ( SELECT MAX(CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable)) FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable INNER JOIN variable AS variable  ON variable = variable )
+SELECT COUNT(*) FROM variable WHERE variable = variable
+SELECT variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT COUNT(*) FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable
+SELECT COUNT(*) FROM variable WHERE variable = variable
+SELECT COUNT(*) FROM variable WHERE variable = variable AND CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable) > variable
+SELECT variable FROM variable ORDER BY variable ASC LIMIT variable
+SELECT COUNT(*) FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT AVG(CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable)) FROM variable AS variable INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable, variable FROM variable WHERE variable > variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT variable, variable, variable, variable, variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT COUNT(*) FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable, variable, variable FROM variable ORDER BY variable ASC LIMIT variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT variable FROM variable WHERE variable = variable OR variable = variable ORDER BY variable ASC LIMIT variable
+SELECT variable FROM variable AS variable  INNER JOIN variable AS variable  ON variable = variable WHERE variable = variable AND variable = variable

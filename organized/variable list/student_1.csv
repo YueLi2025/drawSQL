@@ -1,0 +1,8 @@
+table_name,column_name,column_type
+list,LastName,string
+list,FirstName,string
+list,Grade,num
+list,Classroom,num
+teachers,LastName,string
+teachers,FirstName,string
+teachers,Classroom,num

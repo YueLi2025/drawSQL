@@ -1,0 +1,41 @@
+sql_query
+SELECT count(*) FROM institution
+SELECT count(*) FROM institution
+SELECT Name FROM institution ORDER BY Name ASC
+SELECT Name FROM institution ORDER BY Name ASC
+SELECT Name FROM institution ORDER BY Founded ASC
+SELECT Name FROM institution ORDER BY Founded ASC
+SELECT City ,  Province FROM institution
+SELECT City ,  Province FROM institution
+SELECT max(Enrollment) ,  min(Enrollment) FROM institution
+SELECT max(Enrollment) ,  min(Enrollment) FROM institution
+SELECT Affiliation FROM institution WHERE City != "Vancouver"
+SELECT Affiliation FROM institution WHERE City != "Vancouver"
+SELECT Stadium FROM institution ORDER BY Capacity DESC
+SELECT Stadium FROM institution ORDER BY Capacity DESC
+SELECT Stadium FROM institution ORDER BY Enrollment DESC LIMIT 1
+SELECT Stadium FROM institution ORDER BY Enrollment DESC LIMIT 1
+SELECT T2.Name ,  T1.Nickname FROM championship AS T1 JOIN institution AS T2 ON T1.Institution_ID  =  T2.Institution_ID
+SELECT T2.Name ,  T1.Nickname FROM championship AS T1 JOIN institution AS T2 ON T1.Institution_ID  =  T2.Institution_ID
+SELECT T1.Nickname FROM championship AS T1 JOIN institution AS T2 ON T1.Institution_ID  =  T2.Institution_ID ORDER BY T2.Enrollment ASC LIMIT 1
+SELECT T1.Nickname FROM championship AS T1 JOIN institution AS T2 ON T1.Institution_ID  =  T2.Institution_ID ORDER BY T2.Enrollment ASC LIMIT 1
+SELECT T2.Name FROM championship AS T1 JOIN institution AS T2 ON T1.Institution_ID  =  T2.Institution_ID ORDER BY T1.Number_of_Championships DESC
+SELECT T2.Name FROM championship AS T1 JOIN institution AS T2 ON T1.Institution_ID  =  T2.Institution_ID ORDER BY T1.Number_of_Championships DESC
+SELECT T2.Name FROM championship AS T1 JOIN institution AS T2 ON T1.Institution_ID  =  T2.Institution_ID WHERE T1.Number_of_Championships  >=  1
+SELECT T2.Name FROM championship AS T1 JOIN institution AS T2 ON T1.Institution_ID  =  T2.Institution_ID WHERE T1.Number_of_Championships  >=  1
+SELECT sum(T1.Number_of_Championships) FROM championship AS T1 JOIN institution AS T2 ON T1.Institution_ID  =  T2.Institution_ID WHERE T2.Affiliation  =  "Public"
+SELECT sum(T1.Number_of_Championships) FROM championship AS T1 JOIN institution AS T2 ON T1.Institution_ID  =  T2.Institution_ID WHERE T2.Affiliation  =  "Public"
+SELECT Affiliation ,  COUNT(*) FROM institution GROUP BY Affiliation
+SELECT Affiliation ,  COUNT(*) FROM institution GROUP BY Affiliation
+SELECT Affiliation FROM institution GROUP BY Affiliation ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Affiliation FROM institution GROUP BY Affiliation ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Founded ,  COUNT(*) FROM institution GROUP BY Founded HAVING COUNT(*)  >  1
+SELECT Founded ,  COUNT(*) FROM institution GROUP BY Founded HAVING COUNT(*)  >  1
+SELECT T1.Nickname FROM championship AS T1 JOIN institution AS T2 ON T1.Institution_ID  =  T2.Institution_ID ORDER BY T2.Capacity DESC
+SELECT T1.Nickname FROM championship AS T1 JOIN institution AS T2 ON T1.Institution_ID  =  T2.Institution_ID ORDER BY T2.Capacity DESC
+select sum(enrollment) from institution where city  =  "vancouver" or city  =  "calgary"
+select sum(enrollment) from institution where city  =  "vancouver" or city  =  "calgary"
+SELECT Province FROM institution WHERE Founded  <  1920 INTERSECT SELECT Province FROM institution WHERE Founded  >  1950
+SELECT Province FROM institution WHERE Founded  <  1920 INTERSECT SELECT Province FROM institution WHERE Founded  >  1950
+SELECT count(DISTINCT Province) FROM institution
+SELECT count(DISTINCT Province) FROM institution

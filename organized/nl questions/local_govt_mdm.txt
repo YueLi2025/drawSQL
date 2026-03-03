@@ -1,0 +1,15 @@
+nl_question
+what are the details of the cmi masters that have the cross reference code 'Tax'?
+What is the cmi cross reference id that is related to at least one council tax entry? List the cross reference id and source system code.
+How many business rates are related to each cmi cross reference? List cross reference id, master customer id and the n
+What is the tax source system code related to the benefits and overpayments? List the code and the benifit id, order by benifit id.
+Wat is the tax source system code and master customer id of the taxes related to each parking fine id?
+What are the renting arrears tax ids related to the customer master index whose detail is not 'Schmidt, Kertzmann and Lubowitz'?
+What are the register ids of electoral registries that have the cross reference source system code 'Electoral' or 'Tax'?
+How many different source system code for the cmi cross references are there?
+List all information about customer master index, and sort them by details in descending order.
+List the council tax ids and their related cmi cross references of all the parking fines.
+How many council taxes are collected for renting arrears ?
+What are the distinct cross reference source system codes which are related to the master customer details 'Gottlieb, Becker and Wyman'?
+Which cmi cross reference id is not related to any parking taxes?
+Which distinct source system code includes the substring 'en'?

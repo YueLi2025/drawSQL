@@ -1,0 +1,16 @@
+table_name,column_name,column_type
+Club,ClubID,num
+Club,ClubName,string
+Club,ClubDesc,string
+Club,ClubLocation,string
+Member_of_club,StuID,num
+Member_of_club,ClubID,num
+Member_of_club,Position,string
+Student,StuID,num
+Student,LName,string
+Student,Fname,string
+Student,Age,num
+Student,Sex,string
+Student,Major,num
+Student,Advisor,num
+Student,city_code,string

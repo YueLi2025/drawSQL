@@ -1,0 +1,71 @@
+soft_templates
+SELECT variable FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable = num
+SELECT variable FROM variable WHERE variable = num
+SELECT variable FROM variable WHERE variable < num
+SELECT variable FROM variable WHERE variable < num
+SELECT variable FROM variable WHERE variable >= num AND variable <= num
+SELECT variable FROM variable WHERE variable >= num AND variable <= num
+SELECT variable FROM variable WHERE variable = string AND variable = string UNION SELECT variable FROM variable WHERE variable = string AND variable = string
+SELECT variable FROM variable WHERE variable = string AND variable = string UNION SELECT variable FROM variable WHERE variable = string AND variable = string
+SELECT campusfee FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = num
+SELECT campusfee FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = num
+SELECT campusfee FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = num
+SELECT campusfee FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = num
+SELECT count(*) FROM variable WHERE campusfee > (SELECT avg(campusfee) FROM variable)
+SELECT count(*) FROM variable WHERE campusfee > (SELECT avg(campusfee) FROM variable)
+SELECT count(*) FROM variable WHERE campusfee > (SELECT avg(campusfee) FROM variable)
+SELECT count(*) FROM variable WHERE campusfee > (SELECT avg(campusfee) FROM variable)
+SELECT variable FROM variable WHERE variable = string AND variable > num
+SELECT variable FROM variable WHERE variable = string AND variable > num
+SELECT variable FROM variable GROUP BY variable ORDER BY sum( variable ) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY sum( variable ) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY sum( variable ) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY sum( variable ) DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num ORDER BY variable DESC LIMIT num
+SELECT avg(campusfee) FROM variable WHERE variable = num
+SELECT avg(campusfee) FROM variable WHERE variable = num
+SELECT avg(campusfee) FROM variable WHERE variable = num
+SELECT avg(campusfee) FROM variable WHERE variable = num
+SELECT variable , sum(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable >= num AND variable <= num GROUP BY variable
+SELECT variable , sum(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable >= num AND variable <= num GROUP BY variable
+SELECT variable , sum(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable >= num GROUP BY variable
+SELECT variable , sum(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable >= num GROUP BY variable
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable > (SELECT max( variable ) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable = string )
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable > (SELECT max( variable ) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable = string )
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable > num AND variable > num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable > num AND variable > num
+SELECT count(*) FROM variable WHERE variable = string
+SELECT count(*) FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = num
+SELECT sum( variable ) FROM variable WHERE variable = num
+SELECT sum( variable ) FROM variable WHERE variable = num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable >= num AND variable <= num AND variable = num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable >= num AND variable <= num AND variable = num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable AND variable = variable WHERE variable = num ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable AND variable = variable WHERE variable = num ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable AND variable = variable WHERE variable = num ORDER BY variable LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable AND variable = variable WHERE variable = num ORDER BY variable LIMIT num
+SELECT sum(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable = string
+SELECT sum(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable = string
+SELECT sum(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable = string
+SELECT sum(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = num
+SELECT count(*) FROM variable
+SELECT count(*) FROM variable

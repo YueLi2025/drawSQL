@@ -1,0 +1,46 @@
+nl_question
+How many singers do we have?
+What is the total number of singers?
+Show name, country, age for all singers ordered by age from the oldest to the youngest.
+What are the names, countries, and ages for every singer in descending order of age?
+What is the average, minimum, and maximum age of all singers from France?
+What is the average, minimum, and maximum age for all French singers?
+Show the name and the release year of the song by the youngest singer.
+What are the names and release years for all the songs of the youngest singer?
+What are all distinct countries where singers above age 20 are from?
+What are  the different countries with singers above age 20?
+Show all countries and the number of singers in each country.
+How many singers are from each country?
+List all song names by singers above the average age.
+What are all the song names by singers who are older than average?
+Show location and name for all stadiums with a capacity between 5000 and 10000.
+What are the locations and names of all stations with capacity between 5000 and 10000?
+What is the maximum capacity and the average of all stadiums ?
+What is the average and maximum capacities for all stadiums ?
+What is the name and capacity for the stadium with highest average attendance?
+What is the name and capacity for the stadium with the highest average attendance?
+How many concerts are there in year 2014 or 2015?
+How many concerts occurred in 2014 or 2015?
+Show the stadium name and the number of concerts in each stadium.
+For each stadium, how many concerts play there?
+Show the stadium name and capacity with most number of concerts in year 2014 or after.
+What is the name and capacity of the stadium with the most concerts after 2013 ?
+Which year has most number of concerts?
+What is the year that had the most concerts?
+Show the stadium names without any concert.
+What are the names of the stadiums without any concerts?
+Show countries where a singer above age 40 and a singer below 30 are from.
+Show names for all stadiums except for stadiums having a concert in year 2014.
+What are the names of all stadiums that did not have a concert in 2014?
+Show the name and theme for all concerts and the number of singers in each concert.
+What are the names , themes , and number of singers for every concert ?
+List singer names and number of concerts for each singer.
+What are the names of the singers and number of concerts for each person?
+List all singer names in concerts in year 2014.
+What are the names of the singers who performed in a concert in 2014?
+what is the name and nation of the singer who have a song having 'Hey' in its name?
+What is the name and country of origin of every singer who has a song with the word 'Hey' in its title?
+Find the name and location of the stadiums which some concerts happened in the years of both 2014 and 2015.
+What are the names and locations of the stadiums that had concerts that occurred in both 2014 and 2015?
+Find the number of concerts happened in the stadium with the highest capacity .
+What are the number of concerts that occurred in the stadium with the largest capacity ?

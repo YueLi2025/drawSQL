@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+artist,Artist_ID,num
+artist,Name,string
+artist,Country,string
+artist,Year_Join,num
+artist,Age,num
+exhibition,Exhibition_ID,num
+exhibition,Year,num
+exhibition,Theme,string
+exhibition,Artist_ID,num
+exhibition,Ticket_Price,num
+exhibition_record,Exhibition_ID,num
+exhibition_record,Date,string
+exhibition_record,Attendance,num

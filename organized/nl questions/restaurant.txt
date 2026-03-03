@@ -1,0 +1,70 @@
+nl_question
+What types of food are served at the 4 top-reviewed restaurants?
+List all the cities in Sonoma County.
+What type of food is there in the restaurants on Adeline Street in Berkeley city?
+In which counties are there A&W Root Beer Restaurants?
+Identify all restaurants in Contra Costa County by id.
+Identify all the restaurants in Yolo County by their label.
+On what street in Tuolumne County is Good Heavens restaurant located?
+Identify all the restaurants in Marin County by their id.
+Calculate the average rating of reviews for restaurants in Santa Cruz County.
+What percentage of restaurants in Monterey County have Mexican food?
+What percentage of streets named 11th Street are in Alameda County?
+How many American food restaurants are unpopular in Carmel?
+Please name any three restaurants that have an unidentified region.
+What is the name of the restaurant that is located in El Dorado County, Lake Tahoe region?
+What is the percentage of restaurants in the Bay Area region that scored over 4 for the review rating?
+Which county is El Cerrito from?
+Provide a list of restaurants from Marin county.
+What is the address of the Peking Duck restaurant?
+List all the streets with more than 10 restaurants in Alameda county.
+List all of the restaurant addresses from an unknown region.
+How many labels of the restaurant have an unknown country?
+Find the percentage of restaurant in Napa Valley.
+Give the review of the restaurant located in Ocean St., Santa Cruz.
+Give the street number of a bar in Oakland with a 2.7 review.
+List the review and label of the restaurants in Mission Blvd., Hayward.
+Among all indian restaurants in Castro St., Mountainview, how many of them is about cookhouse in their label?
+In restaurants with a review of 2, how many restaurants have a street number below 500?
+What is the name of the most popular restaurant serving Asian foods in San Francisco?
+In the Bay Area, what is the most common type of food served by restaurants?
+In which region can you find the highest number of Baskin Robbins restaurants?
+In which counties can you find the restaurant with the highest number of branches?
+Which region has the highest number of restaurants?
+How many restaurants have not obtained a minimum of 3 in their reviews?
+What counties are not in the Bay Area Region?
+List all cities in the Northern California Region.
+Indicate street and number of the Adelitas Taqueria Restaurants.
+List all counties where there is no Bakers Square Restaurant & Pie Shop.
+What is the rating of each restaurant reviews on Atlantic Ave?
+What restaurant on Drive Street in San Rafael doesn't serve American food?
+On which streets in the city of San Francisco are there restaurants with a review of 1.7?
+Indicate the street numbers where Aux Delices Vietnamese Restaurant are located.
+Please list all of the restaurants that serve European food.
+What does the one and only 24-hour diner's name?
+Please list any five cities that have an unidentified county and region.
+List every city in San Mateo County.
+How many restaurants have more than 4 star reviews?
+How many restaurants are on Irving Street?
+What are the regions with Greek restaurants?
+What percentage of restaurants are from the Bay Area?
+How many cities are located in the Bay Area?
+How many of the cities are in a Bay Area?
+List down the cities with unknown country.
+What is the city located in Bay Area of Santa Clara?
+Among the restaurants on street number below 1000, how many of them are in Railroad St.?
+What is the full address of the restaurant named "Sanuki Restaurant"?
+How many cities are there in Monterey?
+How many restaurants can you find in Concord?
+In which region can you find the top 4 most popular restaurants?
+How many Chinese restaurants are there on 1st st, Livermore?
+What is the full address of the most popular restaurant among the diners?
+What cities are located in Northern California?
+Which chicken restaurant has the highest review?
+List down the restaurant ID of restaurants located in Sunnyvale.
+How many Indian restaurants are there in the Los Angeles area?
+How many restaurants can we find at number 871 on its street?
+In which streets of the city of San Francisco are there restaurants that serve seafood?
+What is the county and region of Plearn-Thai Cuisine restaurant?
+What is the county of the Sankee restaurant?
+How many types of restaurants are there in the Yosemite and Mono Lake area?

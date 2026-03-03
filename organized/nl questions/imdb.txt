@@ -1,0 +1,110 @@
+nl_question
+What year is the movie " The Imitation Game " from ?
+What year was the movie " The Imitation Game " produced
+What year was " Benedict Cumberbatch " born ?
+In what year was " Benedict Cumberbatch " born
+What is the nationality of the actress " Christoph Waltz " ?
+What is the nationality of the actor " Christoph Waltz " ?
+Find all movies produced in 2015
+Find all actors born in " Tehran "
+Find all actors born in Tehran
+Which actors were born in Tehran
+Find all actors who are from Afghanistan
+Find all actors from Afghanistan
+Give me the name of all the actors from Afghanistan
+Find all actors who were born in 1984
+When was " Kevin Spacey " born ?
+In what year was " Kevin Spacey " born ?
+Where is the birth place of " Kevin Spacey "
+In what city was " Kevin Spacey " born ?
+What is the nationality of " Kevin Spacey " ?
+How much was the budget of " Finding Nemo "
+Find all movies directed by " Steven Spielberg " after 2006
+Who is the director of the movie " James Bond " ?
+Who directed the movie " James Bond " ?
+List " James Bond " directors
+Find the actor who played " Alan Turing " in the movie " The Imitation Game "
+Who acted " Alan Turing " in the movie " The Imitation Game " ?
+Who was the actor that played " Alan Turing " in the movie " The Imitation Game " ?
+Who acts as " Alan Turing " in the movie " The Imitation Game " ?
+Who is the actor playing " Alan Turing " in " The Imitation Game " ?
+What is the genre of the movie " Jurassic Park " ?
+Who was the director of the movie Joy from 2015 ?
+Find all movies written by " Matt Damon "
+Find all movies written and produced by " Woody Allen "
+Find all movies featuring " Robin Wright "
+What are all the movies featuring " Robin Wright " ?
+Find all movies in which " Robin Wright " appears
+What was the budget of the movie Juno from 2007 ?
+Find all Sci-Fi produced in year 2010
+List all the Sci-Fi movies which released in 2010
+Find all actors born in " Austin " after 1980
+Who are the actors born in " Austin " after 1980 ?
+Find all actors from Austin born after 1980
+Find all movies by directors born in " Los Angeles "
+Find all actors who were born in " New York City " in 1984
+Find all movies about nuclear weapons
+What are the movies related to nuclear weapons
+Which movies did " Alfred Hitchcock " direct ?
+Find all movies directed by " Asghar Farhadi " and featuring " Taraneh Alidoosti "
+What are all the movies directed by " Asghar Farhadi " featuring " Taraneh Alidoosti " ?
+How many movies are there that are directed by " Asghar Farhadi " and featuring " Taraneh Alidoosti " ?
+List all the movies directed by " Asghar Farhadi " in which " Taraneh Alidoosti " played
+What are all the tv series created by " Shonda Rhimes " ?
+Who acts " Olivia Pope " in the series Scandal ?
+Who is the writer of the movie " The Truman Show "
+Who is the writer of " The Truman Show "
+What are the series featuring " Scott Foley " ?
+What are the series in which " Scott Foley " is an actor ?
+Find the directors of all movies featuring " Kate Winslet "
+Find the producers of all movies in which " Kate Winslet " is an actor
+Who is the director of the tv series " House of Cards " from 2013 ?
+Find all the female actors from Austin
+Find all actors from Italy born after 1980
+Find all the female actors born in " New York City " after 1980
+Find all the female actors in the movie " Saving Private Ryan "
+Find all the directors who are from Afghanistan
+Find the actors who played in the movie " Camp X-Ray "
+Find all actors from Canada who acted in " James Bond " movies
+find all films in which " Rowan Atkinson " acted as " Mr. Bean "
+where is the director of " The Past " from
+who acted the role of " Mr. Bean "
+what are the genres of movies directed by " Asghar Farhadi "
+Which movie had the character " Daffy Duck "
+What are the major roles in the movie " Daddy Long Legs "
+List all the directors of movies about nuclear weapons
+What is the number of movies in which " Jennifer Aniston " acted after 2010 ?
+What is the number of actors in the movie " Saving Private Ryan " ?
+How many actors are in the movie " Saving Private Ryan " ?
+How many movies did " Steven Spielberg " direct ?
+How many movies were produced in the year 2013 ?
+What is the number of movies produced in 2013 ?
+What is the number of movies directed by " Woody Allen " per year ?
+How many movies did " Shahab Hosseini " act in ?
+What is the number of movies in which " Shahab Hosseini " acted ?
+What is the number of movies featuring " Shahab Hosseini " ?
+How many movies did " Shahab Hosseini " act in
+How many actors were born in " Los Angeles " after 2000 ?
+How many movies did " Humphrey Bogart " act in before 1942 ?
+What is the number of movies that " Brad Pitt " acts in per year ?
+How many movies about Iraq war were produced in 2015 ?
+How many movies about Persians were released after 1990 ?
+How many movies did " Quentin Tarantino " direct after 2010 ?
+How many movies did " Quentin Tarantino " direct before 2010 ?
+How many movies did " Quentin Tarantino " direct before 2002 and after 2010 ?
+How many female actors were born in " New York City " after 1980 ?
+find the number of actors from Iran who played in " Jim Jarmusch " movies
+How many actors from China have acted in " Rush Hour 3 "
+Find all movies that star both " Woody Strode " and " Jason Robards "
+Find all movies featuring " Woody Strode " and " Jason Robards "
+Find all movies featuring both " Woody Strode " and " Jason Robards "
+Find all movies featuring " Jason Robards " and " Woody Strode "
+Find all actors who acted in the same movie as " Tom Hanks "
+What movies have the same director as the movie " Revolutionary Road " ?
+Find the movie which is classified in the most number of genres
+which movie has the most number of actors from China ?
+Find the actors who played in the latest movie by " Quentin Tarantino "
+Find the name and budget of the latest movie by " Quentin Tarantino "
+What is the latest movie by " Jim Jarmusch "
+Which producer has worked with the most number of directors ?
+Find the latest movie which " Gabriele Ferzetti " acted in

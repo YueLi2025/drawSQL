@@ -1,0 +1,12 @@
+hard_templates
+SELECT table_alias0.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias0.col_name = string
+SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias0.col_name = string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name INNER JOIN table_name AS table_alias2 ON table_alias2.col_name = table_alias1.col_name WHERE table_alias0.col_name = string AND table_alias2.col_name = string ORDER BY table_alias1.col_name DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name = string UNION ALL SELECT CAST(SUM(col_name < num) AS column_alias0) * num / COUNT(*) FROM table_name WHERE col_name = string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string AND table_alias0.col_name = string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name ORDER BY table_alias0.col_name DESC LIMIT num
+SELECT DISTINCT col_name FROM table_name WHERE col_name = string AND col_name = string
+SELECT COUNT(col_name) FROM table_name WHERE col_name IN (string, string)
+SELECT table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string AND table_alias0.col_name = string AND table_alias0.col_name = string AND table_alias1.col_name != num
+SELECT CAST(COUNT(table_alias0.col_name) AS column_alias0) * num / ( SELECT COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name < num ) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name < num AND table_alias0.col_name = string

@@ -1,0 +1,31 @@
+sql_query
+SELECT count(*) FROM ship
+SELECT count(*) FROM ship
+SELECT Name FROM ship ORDER BY Tonnage ASC
+SELECT Name FROM ship ORDER BY Tonnage ASC
+SELECT TYPE ,  Nationality FROM ship
+SELECT TYPE ,  Nationality FROM ship
+SELECT Name FROM ship WHERE Nationality != "United States"
+SELECT Name FROM ship WHERE Nationality != "United States"
+SELECT Name FROM ship WHERE Nationality  =  "United States" OR Nationality  =  "United Kingdom"
+SELECT Name FROM ship WHERE Nationality  =  "United States" OR Nationality  =  "United Kingdom"
+SELECT Name FROM ship ORDER BY Tonnage DESC LIMIT 1
+SELECT Name FROM ship ORDER BY Tonnage DESC LIMIT 1
+SELECT TYPE ,  COUNT(*) FROM ship GROUP BY TYPE
+SELECT TYPE ,  COUNT(*) FROM ship GROUP BY TYPE
+SELECT TYPE FROM ship GROUP BY TYPE ORDER BY COUNT(*) DESC LIMIT 1
+SELECT TYPE FROM ship GROUP BY TYPE ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Nationality FROM ship GROUP BY Nationality HAVING COUNT(*)  >  2
+SELECT Nationality FROM ship GROUP BY Nationality HAVING COUNT(*)  >  2
+SELECT TYPE ,  avg(Tonnage) FROM ship GROUP BY TYPE
+SELECT TYPE ,  avg(Tonnage) FROM ship GROUP BY TYPE
+SELECT T1.Code ,  T1.Fate ,  T2.Name FROM mission AS T1 JOIN ship AS T2 ON T1.Ship_ID  =  T2.Ship_ID
+SELECT T1.Code ,  T1.Fate ,  T2.Name FROM mission AS T1 JOIN ship AS T2 ON T1.Ship_ID  =  T2.Ship_ID
+SELECT T2.Name FROM mission AS T1 JOIN ship AS T2 ON T1.Ship_ID  =  T2.Ship_ID WHERE T1.Launched_Year  >  1928
+SELECT T2.Name FROM mission AS T1 JOIN ship AS T2 ON T1.Ship_ID  =  T2.Ship_ID WHERE T1.Launched_Year  >  1928
+SELECT DISTINCT T1.Fate FROM mission AS T1 JOIN ship AS T2 ON T1.Ship_ID  =  T2.Ship_ID WHERE T2.Nationality  =  "United States"
+SELECT DISTINCT T1.Fate FROM mission AS T1 JOIN ship AS T2 ON T1.Ship_ID  =  T2.Ship_ID WHERE T2.Nationality  =  "United States"
+SELECT Name FROM ship WHERE Ship_ID NOT IN (SELECT Ship_ID FROM mission)
+SELECT Name FROM ship WHERE Ship_ID NOT IN (SELECT Ship_ID FROM mission)
+SELECT TYPE FROM ship WHERE Tonnage  >  6000 INTERSECT SELECT TYPE FROM ship WHERE Tonnage  <  4000
+SELECT TYPE FROM ship WHERE Tonnage  >  6000 INTERSECT SELECT TYPE FROM ship WHERE Tonnage  <  4000

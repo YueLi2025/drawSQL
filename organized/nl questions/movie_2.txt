@@ -1,0 +1,53 @@
+nl_question
+Find the titles of movies that don’t have any rating.
+What are the names of movies that do not have any ratings?
+Find the names of movies whose rating is ‘G’.
+What are names of movies that have a 'G' ratings?
+Find the title of the movie that is played in the Odeon theater.
+What are the movie titles for ones that are played in the Odeon theater?
+Find the names of movies that are played in any theater and the name of the corresponding theater.
+What are the names of the movies that are played in any theater and the name of the corresponding theater?
+Find the number of movies whose rating is ‘G’.
+How many movies had a 'G' rating?
+How many movies are playing across all theaters?
+How many movies are playing in theaters?
+How many distinct movies are on in theaters?
+How many different movies are playing?
+How many distinct movie theaters are there?
+How many different movie theaters exist?
+Find the rating of the movie whose name includes the word ‘Citizen’.
+What is the rating of the movie what has a name including a word like 'Citizen'?
+Find the name of the cinemas that are playing movies with either rating ‘G’ or rating ‘PG’.
+What are the names of the movie theaters that are playing 'G' or 'PG' rated movies?
+Find the name of the movies that are played in either cinema Odeon or Imperial.
+What are the titles of all the movies that played at the Odeon or Imperial theater?
+Find the name of the movie that is on in both Odeon and Imperial theaters.
+What movie is playing at both the Odeon and Imperial theater?
+Find the name of all movies that are not played in Odeon theater.
+What are the names of every movie that is not playing at the Odeon theater?
+List in alphabetical order the titles of all movies.
+What are the movie names in alphabetical order?
+Find the titles of all movies sorted by their ratings.
+What are the movie names sorted by rating?
+Find the name of the theater that is playing the most number of movies.
+What is the name of the theater playing the most movies?
+Find the name of the movie that is played in the most number of theaters.
+What is the name of the film playing at the most number of theaters?
+Find the number of movies in each rating.
+How many movies exist for each rating?
+Find the number of movies whose rating is not null.
+How many movies have a rating that is not null?
+Find the name of theaters that has at least one movie playing.
+What are the names of every theater with at least one movie playing?
+Select the name of all movie theaters that are not currently showing a movie.
+What are the names of all cinemas not showing any movies?
+Find the name of the movie theaters that are playing the movies whose rating is ‘G’.
+What are the names of theaters playing 'G' rated movies?
+Select the title of all movies.
+What are all of the movie names?
+Show all the distinct ratings in the database.
+What are the different movie ratings?
+Show all information of all unrated movies.
+What is all the information about the unrated movies?
+Show the titles of movies not currently being shown in any theaters.
+What are the names of the movies not being shown in any theaters?

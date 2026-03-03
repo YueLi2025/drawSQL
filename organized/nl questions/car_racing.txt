@@ -1,0 +1,51 @@
+nl_question
+How many drivers are there?
+Find the total number of drivers.
+Find the number of drivers whose points are greater than 150 for each make.
+How many drivers receive points greater than 150 for each make? Show the make and the count.
+Find the average age of drivers for each make.
+What is the average age of drivers for each make? Return the average age and make.
+What are the average laps of all the drivers who are younger than 20?
+Compute the average laps of drivers under the age of 20.
+What are the managers and sponsors of teams? Sort the results by Car Owners.
+Find the manager and sponsor for each team and order them by the car owner.
+Find the make that has more than one team.
+Which make has more than one team?
+What are the makes of the teams with car owner "Buddy Arrington"?
+Find the make of the team whose car owner is "Buddy Arrington".
+What are the maximum and minimum points of drivers.
+Find the highest and lowest points of drivers.
+How many drivers have points smaller than 150?
+Count the number of drivers whose points are below 150.
+List all the driver names in ascending order of age.
+Sort the driver names by age in ascending order.
+List all the driver names in descending order of points.
+What is the list of drivers ordered by points in descending order?
+Please show the names of drivers, and countries they are from.
+For each driver, return his or her name and country.
+Show the maximum points of the drivers from countries with capital "Dublin"
+What is the maximum points of the drivers from a country whose capital is "Dublin"?
+What is the average age of drivers from countries with official native language "English"
+Find the average age of the drivers from the countries that use "English" as official native language.
+What are the countries that have drivers with points larger than 150?
+Find all the countries where some drivers have points above 150.
+What is the capital of the country where the driver with the most points is from?
+Which country is the driver with the highest points from? Give me the capital of the country.
+List each make with the number of drivers with that make.
+For each make, return the make and the count of drivers with that make.
+List the make that are associated with most drivers.
+Which make does the most drivers have?
+List the driver makes that are associated with at least three drivers.
+Which make is associated with 3 or more drivers?
+List the names of teams that do not have any drivers.
+Which team does not have drivers?
+Which country has both drivers with make "Dodge" and drivers with make "Chevrolet"?
+Find the countries in which there are both drivers with make "Dodge" and drivers with make "Chevrolet".
+Show total and average points of all drivers.
+What are the total and average points of drivers?
+Find the countries where no driver come from.
+Which countries do not have any drivers?
+What are the manager and sponsor of the team that has the most drivers?
+Find the manager and sponsor of the team that has the most drivers.
+What are the manager and car owner of the team that has at least 2 drivers?
+Find the team with two or more drivers and return the the manager and car owner of the team.

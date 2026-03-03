@@ -1,0 +1,24 @@
+hard_templates
+SELECT col_name FROM table_name WHERE col_name like string GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name = string ORDER BY col_name DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name = string ORDER BY col_name DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT count(*) FROM table_name WHERE col_name like string
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name = string GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name LIKE string GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name LIKE string GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT count(*) FROM table_name WHERE col_name = string
+SELECT count(*) FROM table_name
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name LIKE string GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT count(*) FROM table_name WHERE col_name LIKE string
+SELECT count(*) FROM table_name WHERE col_name LIke string
+SELECT col_name FROM table_name WHERE col_name LIke string GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) LIMIT num
+SELECT col_name FROM table_name WHERE col_name = string GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name = string GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name = string GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name = string

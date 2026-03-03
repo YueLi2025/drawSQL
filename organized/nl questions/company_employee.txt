@@ -1,0 +1,17 @@
+nl_question
+How many companies are headquartered in the US?
+List the names of companies by ascending number of sales.
+What are the headquarters and industries of all companies?
+Show the names of companies in the banking or retailing industry?
+What is the maximum and minimum market value of companies?
+What is the headquarter of the company with the largest sales?
+Show the different headquarters and number of companies at each headquarter.
+Show the most common headquarter for companies.
+Show the headquarters that have at least two companies.
+Show the headquarters that have both companies in banking industry and companies in oil and gas industry.
+Show the names of companies and of employees.
+Show names of companies and that of employees in descending order of number of years working for that employee.
+Show the names of employees that work for companies with sales bigger than 200.
+Show the names of companies and the number of employees they have
+List the names of people that are not employed by any company
+list the names of the companies with more than 200 sales in the descending order of sales and profits.

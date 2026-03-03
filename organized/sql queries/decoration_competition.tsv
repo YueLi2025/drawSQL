@@ -1,0 +1,16 @@
+sql_query
+SELECT count(*) FROM member
+SELECT Name FROM member ORDER BY Name ASC
+SELECT Name ,  Country FROM member
+SELECT Name FROM member WHERE Country  =  "United States" OR Country  =  "Canada"
+SELECT Country ,  COUNT(*) FROM member GROUP BY Country
+SELECT Country FROM member GROUP BY Country ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Country FROM member GROUP BY Country HAVING COUNT(*)  >  2
+SELECT Leader_Name ,  College_Location FROM college
+SELECT T2.Name ,  T1.Name FROM college AS T1 JOIN member AS T2 ON T1.College_ID  =  T2.College_ID
+SELECT T2.Name ,  T1.College_Location FROM college AS T1 JOIN member AS T2 ON T1.College_ID  =  T2.College_ID ORDER BY T2.Name ASC
+SELECT DISTINCT T1.Leader_Name FROM college AS T1 JOIN member AS T2 ON T1.College_ID  =  T2.College_ID WHERE T2.Country  =  "Canada"
+SELECT T1.Name ,  T2.Decoration_Theme FROM member AS T1 JOIN round AS T2 ON T1.Member_ID  =  T2.Member_ID
+SELECT T1.Name FROM member AS T1 JOIN round AS T2 ON T1.Member_ID  =  T2.Member_ID WHERE T2.Rank_in_Round  >  3
+SELECT T1.Name FROM member AS T1 JOIN round AS T2 ON T1.Member_ID  =  T2.Member_ID ORDER BY Rank_in_Round ASC
+SELECT Name FROM member WHERE Member_ID NOT IN (SELECT Member_ID FROM round)

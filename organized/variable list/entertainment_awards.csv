@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+artwork,Artwork_ID,num
+artwork,Type,string
+artwork,Name,string
+festival_detail,Festival_ID,num
+festival_detail,Festival_Name,string
+festival_detail,Chair_Name,string
+festival_detail,Location,string
+festival_detail,Year,num
+festival_detail,Num_of_Audience,num
+nomination,Artwork_ID,num
+nomination,Festival_ID,num
+nomination,Result,string

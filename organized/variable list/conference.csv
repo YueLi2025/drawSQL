@@ -1,0 +1,17 @@
+table_name,column_name,column_type
+conference,Conference_ID,num
+conference,Conference_Name,string
+conference,Year,num
+conference,Location,string
+conference_participation,Conference_ID,num
+conference_participation,staff_ID,num
+conference_participation,role,string
+institution,Institution_ID,num
+institution,Institution_Name,string
+institution,Location,string
+institution,Founded,num
+staff,staff_ID,num
+staff,name,string
+staff,Age,num
+staff,Nationality,string
+staff,Institution_ID,num

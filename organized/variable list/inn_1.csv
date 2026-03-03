@@ -1,0 +1,17 @@
+table_name,column_name,column_type
+Reservations,Code,num
+Reservations,Room,string
+Reservations,CheckIn,string
+Reservations,CheckOut,string
+Reservations,Rate,num
+Reservations,LastName,string
+Reservations,FirstName,string
+Reservations,Adults,num
+Reservations,Kids,num
+Rooms,RoomId,string
+Rooms,roomName,string
+Rooms,beds,num
+Rooms,bedType,string
+Rooms,maxOccupancy,num
+Rooms,basePrice,num
+Rooms,decor,string

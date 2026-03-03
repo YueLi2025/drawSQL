@@ -1,0 +1,45 @@
+table_name,column_name,column_type
+hall of fame,player id,string
+hall of fame,yearid,num
+hall of fame,votedby,string
+hall of fame,ballots,string
+hall of fame,needed,string
+hall of fame,votes,string
+hall of fame,inducted,string
+hall of fame,category,string
+hall of fame,needed note,string
+player award,player id,string
+player award,award id,string
+player award,year,num
+player award,league id,string
+player award,tie,string
+player award,notes,string
+player award vote,award id,string
+player award vote,year,num
+player award vote,league id,string
+player award vote,player id,string
+player award vote,points won,num
+player award vote,points max,num
+player award vote,votes first,string
+salary,year,num
+salary,team id,string
+salary,league id,string
+salary,player id,string
+salary,salary,num
+player,player id,string
+player,birth year,string
+player,birth month,string
+player,birth day,string
+player,birth country,string
+player,birth state,string
+player,birth city,string
+player,death year,string
+player,death month,string
+player,death day,string
+player,death country,string
+player,death state,string
+player,death city,string
+player,name first,string
+player,name last,string
+player,name given,string
+player,weight,string

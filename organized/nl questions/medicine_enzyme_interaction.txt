@@ -1,0 +1,45 @@
+nl_question
+How many kinds of enzymes are there?
+What is the total count of enzymes?
+List the name of enzymes in descending lexicographical order.
+What are the names of enzymes in descending order?
+List the names and the locations that the enzymes can make an effect.
+What are the names and locations of all enzymes listed?
+What is the maximum Online Mendelian Inheritance in Man (OMIM) value of the enzymes?
+What is the maximum OMIM value in the database?
+What is the product, chromosome and porphyria related to the enzymes which take effect at the location 'Cytosol'?
+What is the product, chromosome, and porphyria of the enzymes located at 'Cytosol'?
+What are the names of enzymes who does not produce 'Heme'?
+What are the names of enzymes whose product is not 'Heme'?
+What are the names and trade names of the medicines which has 'Yes' value in the FDA record?
+What are the names and trade names of the medcines that are FDA approved?
+What are the names of enzymes in the medicine named 'Amisulpride' that can serve as an 'inhibitor'?
+What are the names of the enzymes used in the medicine  Amisulpride that acts as inhibitors?
+What are the ids and names of the medicine that can interact with two or more enzymes?
+For every medicine id, what are the names of the medicines that can interact with more than one enzyme?
+What are the ids, names and FDA approval status of medicines in descending order of the number of enzymes that it can interact with.
+What are the ids, names, and FDA approval status for medicines ordered by descending number of possible enzyme interactions?
+What is the id and name of the enzyme with most number of medicines that can interact as 'activator'?
+What is the id and name of the enzyme that can interact with the most medicines as an activator?
+What is the interaction type of the enzyme named 'ALA synthase' and the medicine named 'Aripiprazole'?
+What is the type of interaction for the enzyme named 'ALA synthase' and the medicine named 'Aripiprazole'?
+What is the most common interaction type between enzymes and medicine? And how many are there?
+What are the most common types of interactions between enzymes and medicine, and how many types are there?
+How many medicines have the FDA approval status 'No' ?
+How many medicines were not approved by the FDA?
+How many enzymes do not have any interactions?
+What is the count of enzymes without any interactions?
+What is the id and trade name of the medicines can interact with at least 3 enzymes?
+What are the ids and trade names of the medicine that can interact with at least 3 enzymes?
+What are the distinct name, location and products of the enzymes which has any 'inhibitor' interaction?
+What are the different names, locations, and products of the enzymes that are capable inhibitor interactions?
+List the medicine name and trade name which can both interact as 'inhibitor' and 'activitor' with enzymes.
+What are the medicine and trade names that can interact as an inhibitor and activitor with enzymes?
+Show the medicine names and trade names that cannot interact with the enzyme with product 'Heme'.
+What are the medicine and trade names that cannot interact with the enzyme with the product 'Heme'?
+How many distinct FDA approval statuses are there for the medicines?
+How many different FDA approval statuses exist for medicines?
+Which enzyme names have the substring "ALA"?
+What are the names of enzymes that include the string 'ALA'?
+find the number of medicines offered by each trade.
+How many medicines are offered by each trade name?

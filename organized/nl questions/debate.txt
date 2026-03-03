@@ -1,0 +1,16 @@
+nl_question
+How many debates are there?
+List the venues of debates in ascending order of the number of audience.
+What are the date and venue of each debate?
+List the dates of debates with number of audience bigger than 150
+Show the names of people aged either 35 or 36.
+What is the party of the youngest people?
+Show different parties of people along with the number of people in each party.
+Show the party that has the most people.
+Show the distinct venues of debates
+Show the names of people, and dates and venues of debates they are on the affirmative side.
+Show the names of people, and dates and venues of debates they are on the negative side, ordered in ascending alphabetical order of name.
+Show the names of people that are on affirmative side of debates with number of audience bigger than 200.
+Show the names of people and the number of times they have been on the affirmative side of debates.
+Show the names of people who have been on the negative side of debates at least twice.
+List the names of people that have not been on the affirmative side of debates.

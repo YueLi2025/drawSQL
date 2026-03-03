@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+member,Member_ID,string
+member,Name,string
+member,Nationality,string
+member,Role,string
+member_attendance,Member_ID,num
+member_attendance,Performance_ID,num
+member_attendance,Num_of_Pieces,num
+performance,Performance_ID,num
+performance,Date,string
+performance,Host,string
+performance,Location,string
+performance,Attendance,num

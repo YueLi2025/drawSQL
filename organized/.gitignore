@@ -1,0 +1,3 @@
+# Excluded: exceed GitHub 100MB limit (use Git LFS to add later)
+schema/soccer_1.sql
+schema/baseball_1.sql

@@ -1,0 +1,79 @@
+nl_question
+Select all details of all warehouses.
+What is all the information about the warehouses?
+Find all different contents stored in New York.
+What are all the different contents stored in boxes in New York?
+Select contents of all boxes with a value larger than $150.
+What are the contents of boxes with value greater than 150?
+Select the warehouse code and the average value of the boxes in each warehouse.
+What is the average value of boxes for each warehouse?
+Find the average and total values of all boxes.
+What are the average and total values across all boxes?
+Find the average and total capacity of all warehouses.
+What are the average and total capacities across all warehouses?
+Find the average and maximum value for each different content.
+What are the average and maximum values for each type of content in boxes?
+Find the content that has the highest total values in all boxes.
+What is the content with the greatest value across all boxes?
+Select the average value of all the boxes.
+What is the average value of boxes?
+Select all distinct contents in all the boxes.
+What are the different contents in boxes?
+Find the number of all distinct contents in all the boxes.
+How many different contents are stored in boxes?
+Find all distinct locations of warehouses.
+What are the different locations of warehouses?
+Find the code of boxes that are stored at the warehouses located at Chicago or New York.
+What are the codes of boxes stored in warehouses in either Chicago or New York?
+Find the total value of boxes in the warehouses located at Chicago or New York.
+What is the total value of boxes located in Chicago or New York?
+Find all contents present in warehouses located in Chicago and those located in New York.
+Find the contents that are stored in both Chicago and New York.
+Find the type of contents that are not in the warehouses located at New York.
+What types of contents cannot be found in warehouses in New York?
+Find the location of the warehouses which have contents Rocks but not Scissors.
+What are the locations of warehouses that have boxes containing Rocks but not Scissors?
+Find the warehouses which store contents Rocks or Scissors.
+What are the distinct warehouses that have boxes with Rocks or Scissors as contents?
+Find the location of the warehouses which store contents Rocks and Scissors.
+What are the locations of warehouses in which boxes that contain Rocks and Scissors are kept?
+List the code and contents of all boxes sorted by their values.
+What are the codes and corresponding contents of all the boxes, ordered by their values?
+Find the code and contents of the box with the lowest value.
+What is the code and contents for the box that has the smallest value?
+Find the unique contents of all boxes whose value is higher than the average value of all boxes.
+What are the different contents of boxes for which the value is higher than the average value across all boxes?
+List all different types of contents ordered by contents.
+What are the different contents of boxes, ordered alphabetically?
+Find the code of all boxes whose value is higher than the value of any boxes with Rocks as content.
+What are the codes of boxes for which the value is greater than the value of any box that contains Rocks?
+Find the code and content of all boxes whose value is higher than the value of all boxes with Scissors as content.
+What are the codes and corresponding contents of boxes for which their value is higher than the values of all boxes containing Scissors?
+Find the total value of boxes stored in the warehouse with the largest capacity.
+What is the total value of boxes kept in the warehouse with the greatest capacity?
+Select the warehouse code and the average value of the boxes only for those warehouses where the average value of the boxes is greater than 150.
+What are the average values of boxes for each warehouse than has an average value greater than 150?
+Find the total value and number of boxes for each content type.
+For each content, what is the total value and number of boxes?
+Find the total, average, and maximum capacity for different locations.
+For each location, what are the total, average, and maximum capacities of warehouses?
+Find the total capacity of all warehouse locations.
+What is the total capacity of all warehouses?
+Find the value of the most expensive boxes saved in each warehouse location.
+For each warehouse location, what is the value of the most expensive box?
+Select the warehouse codes along with the number of boxes in each warehouse.
+How many boxes are there with each warehouse ?
+Find the number of different locations where Rocks are stored.
+In how many different warehouses are Rocks stored within boxes?
+Select the code of each box, along with the name of the city the box is located in.
+What are the codes of all boxes, as well as the locations of the warehouses they are in?
+Select the codes of all the boxes located in Chicago.
+What are the codes of boxes stored in warehouses in Chicago?
+Find the number of boxes saved in each warehouse.
+How many boxes are stored in each warehouse?
+Find the number of distinct types of contents in each warehouse.
+How many different types of contents are stored in each warehouse?
+Select the codes of all warehouses that are above capacity.
+What are the codes of warehouses that have more boxes than their capacity?
+Find the total values of boxes that are not in the warehouses located at Chicago.
+What is the total value of boxes contained in any location but Chicago?

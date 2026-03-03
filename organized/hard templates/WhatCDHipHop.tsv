@@ -1,0 +1,38 @@
+hard_templates
+SELECT col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY sum(col_name) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY sum(col_name) DESC LIMIT num
+SELECT table_alias0.col_name FROM table_name as table_alias0 JOIN table_name as table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias1.col_name = string and table_alias0.col_name = string ORDER BY table_alias0.col_name DESC LIMIT num
+SELECT table_alias0.col_name FROM table_name as table_alias0 JOIN table_name as table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias1.col_name = string and table_alias0.col_name = string and col_name >= num ORDER BY table_alias0.col_name DESC LIMIT num
+SELECT table_alias1.col_name FROM table_name as table_alias0 JOIN table_name as table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias0.col_name = string GROUP BY table_alias1.col_name ORDER BY sum(table_alias0.col_name) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name = string ORDER BY col_name DESC LIMIT num
+SELECT sum(col_name), col_name FROM table_name GROUP BY col_name
+SELECT count(*), col_name FROM table_name GROUP BY col_name
+SELECT count(*), col_name FROM table_name GROUP BY col_name
+SELECT col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name FROM table_name ORDER BY col_name LIMIT num
+SELECT DISTINCT col_name FROM table_name
+SELECT col_name, col_name FROM table_name
+SELECT col_name, col_name FROM table_name
+SELECT DISTINCT col_name FROM table_name
+SELECT DISTINCT col_name FROM table_name
+SELECT col_name FROM table_name WHERE col_name > num ORDER BY col_name DESC LIMIT num
+SELECT DISTINCT col_name FROM table_name WHERE col_name > num AND col_name = string
+SELECT table_alias0.col_name FROM table_name as table_alias0 JOIN table_name as table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias1.col_name = string ORDER BY col_name DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name = string AND col_name = (SELECT max(col_name) FROM table_name WHERE col_name = string) UNION SELECT col_name FROM table_name WHERE col_name = string AND col_name = (SELECT min(col_name) FROM table_name WHERE col_name = string)
+SELECT col_name FROM table_name WHERE col_name = string ORDER BY col_name DESC LIMIT num
+SELECT table_alias1.col_name FROM table_name as table_alias0 JOIN table_name as table_alias1 ON table_alias1.col_name = table_alias0.col_name WHERE table_alias0.col_name >= num GROUP BY table_alias1.col_name ORDER BY table_alias0.col_name DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(col_name) LIMIT num
+SELECT col_name FROM table_name WHERE col_name = num GROUP BY col_name ORDER BY col_name DESC LIMIT num
+SELECT table_alias1.col_name, table_alias0.col_name FROM table_name as table_alias0 JOIN table_name as table_alias1 ON table_alias1.col_name = table_alias0.col_name
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(col_name) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(col_name) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY avg(col_name) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY sum(col_name) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY sum(col_name) DESC LIMIT num
+SELECT sum(col_name), col_name FROM table_name GROUP BY col_name
+SELECT sum(col_name) FROM table_name WHERE col_name BETWEEN num AND num UNION SELECT sum(col_name) FROM table_name WHERE col_name < num
+SELECT count(*) FROM ( SELECT col_name FROM table_name GROUP BY col_name HAVING count(*) > num )
+SELECT sum(col_name) FROM table_name WHERE col_name = string  UNION SELECT sum(col_name) FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name GROUP BY col_name HAVING count(*) = num
+SELECT col_name FROM table_name WHERE col_name > num GROUP BY col_name

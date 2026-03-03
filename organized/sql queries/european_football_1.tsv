@@ -1,0 +1,43 @@
+sql_query
+SELECT COUNT(*) FROM matchs WHERE season = 2008 AND AwayTeam = 'Ebbsfleet' AND FTR = 'D'
+SELECT CAST(COUNT(CASE WHEN country = 'England' THEN division ELSE NULL END) AS REAL) * 100 / COUNT(division) FROM divisions
+SELECT AwayTeam FROM matchs WHERE HomeTeam = 'Caen' AND season = 2010 AND FTR = 'A' GROUP BY AwayTeam ORDER BY COUNT(AwayTeam) DESC LIMIT 1
+SELECT CAST(SUM(CASE WHEN HomeTeam = 'Sassuolo' OR AwayTeam = 'Sassuolo' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(FTR) FROM matchs WHERE FTR = 'D'
+SELECT T1.HomeTeam,T1.AwayTeam FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div=T2.division WHERE T2.name = 'EFL League One' and T1.Div = 'E2'
+SELECT COUNT(T1.Div) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T1.season = 2019 AND T2.name = 'Scottish Championship' AND T1.FTAG = 2 AND T1.FTHG = 2
+SELECT Div FROM matchs WHERE season = 2008 AND FTR = 'D' GROUP BY Div ORDER BY COUNT(FTR) DESC LIMIT 1
+SELECT HomeTeam FROM matchs WHERE Div = 'EC' AND Date = '2008-01-20' AND FTR = 'H'
+SELECT T2.name FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T1.Date = '2009-09-13' and T1.HomeTeam = 'Club Brugge' AND T1.AwayTeam = 'Genk'
+SELECT COUNT(T1.Div) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T2.name = 'Scottish Premiership' AND (T1.season BETWEEN 2006 AND 2008)
+SELECT DISTINCT T2.division,T2.country FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T1.HomeTeam = 'Hearts' AND T1.AwayTeam = 'Hibernian'
+SELECT T1.AwayTeam FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div=T2.division WHERE T2.name = 'Bundesliga' ORDER BY T1.FTAG DESC LIMIT 1
+SELECT COUNT(T1.HomeTeam) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T2.name = 'LaLiga' AND T1.HomeTeam = 'Valencia' AND T1.FTR = 'H'
+SELECT MIN(Date) FROM matchs WHERE FTHG + FTAG > 10
+SELECT COUNT(T1.FTR) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T2.name = 'National League' AND T1.Date = '2018-08-07' AND T1.FTR = 'D'
+SELECT T2.country FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division GROUP BY T2.country ORDER BY SUM(T1.FTAG) DESC LIMIT 1
+SELECT T2.name FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T1.FTAG = 0 AND T1.FTHG = 0 GROUP BY T2.division ORDER BY COUNT(T1.FTAG) DESC LIMIT 1
+SELECT COUNT(T1.Date) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T2.name = 'Scottish League One' AND T1.Date = ( SELECT Date FROM matchs WHERE FTHG = 5 AND FTAG = 2 AND HomeTeam = 'Pro Vercelli' AND AwayTeam = 'Pescara' )
+SELECT DISTINCT T2.country FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T1.HomeTeam = 'Bradford' OR T1.AwayTeam = 'Bradford'
+SELECT COUNT(DISTINCT T1.HomeTeam) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T2.name = 'Eredivisie' AND T1.season = 2008
+SELECT CAST(COUNT(CASE WHEN T2.name = 'Liga NOS' THEN T1.Div ELSE NULL END) AS REAL) * 100 / COUNT(T1.Div) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T1.FTHG = 1 AND FTAG = 1
+SELECT COUNT(T1.Div) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T1.season = 2021 AND T2.name = 'Premier League'
+SELECT T1.HomeTeam FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T1.Date = '2020-10-02' AND T2.name = 'Bundesliga'
+SELECT CASE WHEN T1.FTR = 'H' THEN T1.HomeTeam WHEN T1.FTR = 'A' THEN T1.AwayTeam END WINNER FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T1.Date = '2020-10-02' AND T2.name = 'Bundesliga'
+SELECT COUNT(T1.Div) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T2.name = 'Bundesliga' AND T1.AwayTeam = 'Werder Bremen' AND T1.FTR = 'A'
+SELECT COUNT(T1.Div) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T2.name = 'Bundesliga' AND T1.FTR = 'A' AND T1.season = 2021
+SELECT DISTINCT T1.HomeTeam FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T1.season = 2021 AND T1.FTR = 'H' AND T2.name = 'Bundesliga'
+SELECT CASE WHEN COUNT(CASE WHEN T1.HomeTeam = 'Augsburg' THEN 1 ELSE NULL END) - COUNT(CASE WHEN T1.HomeTeam = ' Mainz' THEN 1 ELSE NULL END) > 0 THEN 'Augsburg' ELSE 'Mainz' END FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T1.season = 2021 AND T1.FTR = 'H'
+SELECT SUM(T1.FTHG) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T2.name = 'Bundesliga' AND T1.season = 2021
+SELECT ( SELECT COUNT(T1.Div) AS total FROM matchs T1 INNER JOIN divisions T2 ON T2.division = T1.Div WHERE T2.country = 'England' AND T1.season = 2012 ) AS num , CASE WHEN 1 THEN T.result END AS percentage FROM ( SELECT 100.0 * COUNT(T1.Div) / ( SELECT COUNT(T1.Div) FROM matchs T1 INNER JOIN divisions T2 ON T2.division = T1.Div WHERE T2.country = 'England' AND T1.season = 2012 ) AS result FROM matchs T1 INNER JOIN divisions T2 ON T2.division = T1.Div WHERE T2.country = 'England' AND T1.season = 2012 GROUP BY T2.division ) AS T
+SELECT HomeTeam FROM matchs WHERE Div = 'P1' AND season = 2021 ORDER BY FTHG DESC LIMIT 1
+SELECT T1.AwayTeam FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div=T2.division WHERE T2.country = 'Italy' LIMIT 3
+SELECT COUNT(T1.FTR) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T2.name = 'Seria A' AND T1.FTR = 'D'
+SELECT CASE WHEN T1.FTR = 'H' THEN T1.HomeTeam ELSE T1.AwayTeam END WINNER FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T2.name = 'Ligue 2' ORDER BY T1.FTAG + T1.FTHG DESC LIMIT 1
+SELECT COUNT(T1.FTR) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T2.name = 'LaLiga 2' AND T1.Date = '2016-03-27' AND T1.FTR = 'A'
+SELECT COUNT(T1.Div) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T2.name = 'Bundesliga' AND T1.FTR = 'D'
+SELECT COUNT(CASE WHEN T2.name = 'Bundesliga' THEN 1 ELSE NULL END) - COUNT(CASE WHEN T2.name = 'Premier League' THEN 1 ELSE NULL END) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T1.season = 2021 AND T1.FTR = 'H'
+SELECT T1.HomeTeam FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T2.name = 'Bundesliga' AND T1.season = 2021 ORDER BY T1.FTHG DESC LIMIT 1
+SELECT ( SELECT MAX(MAX(FTAG), MAX(FTHG)) FROM matchs WHERE season = 2021 ) AS T1, AwayTeam FROM matchs WHERE season = 2021 AND FTHG = T1 OR FTAG = T1
+SELECT T2.name FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T1.season = 2019 AND T1.FTR = 'D' GROUP BY T2.division ORDER BY COUNT(FTR) LIMIT 1
+SELECT T2.division, T2.name FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T1.season = 2011 AND T1.FTHG = 1 AND T1.FTAG = 8
+SELECT CAST(COUNT(CASE WHEN T1.FTR = 'H' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T1.FTR) FROM matchs AS T1 INNER JOIN divisions AS T2 ON T1.Div = T2.division WHERE T1.season = 2021 AND T2.name = 'Bundesliga'

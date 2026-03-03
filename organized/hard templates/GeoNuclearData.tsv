@@ -1,0 +1,30 @@
+hard_templates
+SELECT col_name FROM table_name WHERE col_name = string GROUP BY col_name ORDER BY count(col_name) DESC LIMIT num
+SELECT col_name, col_name FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT count(*) FROM table_name WHERE col_name = string
+SELECT count(DISTINCT col_name) FROM table_name
+SELECT count(*) FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name Group BY col_name HAVING count(col_name) > num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(col_name) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name HAVING count(col_name) = num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY sum(col_name) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY sum(col_name) LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY sum(col_name) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(col_name) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name = string GROUP BY col_name ORDER BY count(col_name) DESC LIMIT num
+SELECT col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT count(*) FROM table_name WHERE col_name = string and col_name = string
+SELECT count(col_name) FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name where col_name = string and col_name = string
+SELECT col_name FROM table_name ORDER BY col_name LIMIT num
+SELECT count(*) FROM table_name WHERE col_name = string AND col_name = string
+SELECT col_name FROM table_name WHERE col_name = string ORDER BY col_name DESC LIMIT num
+SELECT max(col_name) FROM table_name WHERE col_name = string and col_name = string
+SELECT col_name FROM table_name WHERE col_name = string GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name, col_name FROM table_name WHERE col_name = string ORDER BY col_name LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY avg(col_name) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name = string

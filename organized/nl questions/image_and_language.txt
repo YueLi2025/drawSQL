@@ -1,0 +1,96 @@
+nl_question
+What is the ID of the image with the most number of object samples?
+How many self-relations are there between the object samples in image no.5?
+Please list the classes of all the object samples in image no.1.
+Please list the IDs of all the images with more than 2 pairs of object samples with the relation "parked on".
+To which predicted relation class does the self-relation of the object sample in image no.5 belong?
+What is the percentage of the object samples in the class of "man" in image no.1?
+Give the bounding box of the kite in image no.2324765.
+How many white objects are there in image no.2347915?
+Give the object number of the sample which has the relationship of "lying on" with object sample no.1 from image no.2345524.
+How many samples of food object are there in image no.6?
+List all the ids of the images that have a self-relation relationship.
+How many objects are there in the attribute class id with the highest number of objects?
+What are the corresponding classes for the "very large bike" attribute?
+What is the unique id number identifying the onion object class?
+List all the corresponding classes for attributes of image id 8.
+Which image has the highest number of "white" class attributes?
+What are the x and y coordinates of all the images with a prediction relationship class id of 98?
+How many prediction classes with "has" captions are there for image id 3050?
+List all the explanations about object classes of all the images with an x and y coordinate of 0.
+Give all the bounding boxes for image 2222 whose object classes are feathers.
+Provide the dimensions of the bounding box that contains the keyboard that was spotted in image no. 3.
+Define the onion's bounding box on image no. 285930.
+On image no. 5, name the attributes that are composed of multiple objects.
+How many images contain 'bridge' as an object element?
+What is the relationship between object sample no. 25 and object sample no. 2 on image no. 1?
+On image no. 20, identify the attribute ID that is composed of the highest number of objects.
+State the explanation about object class 10.
+Name the object class of the image with a bounding (422, 63, 77, 363).
+What is the caption for the prediction class id 12?
+Indicate the bounding box of the image 8.
+How many object samples in image no.908 are in the class of tip?
+List out the number of object samples in image no.41 which are in the class of "kitchen"?
+Count the image numbers that contain the "paint" object.
+How many samples of clouds are there in the image no.2315533?
+What is the bounding box of "spoon" in image id 1344?
+What is the percentage of "surface" object samples in image No.2654?
+How many images include the "wood" objects?
+How many samples of animal objects are there in image no.660?
+Name number of samples of "bed" object are there in the image No.1098?
+Which images have more than 20 object samples?
+Which object in image 8 is the widest? State its object sample ID.
+Which object has the highest attribute classes?
+Calculate the average of object samples for the image.
+List all the IDs of images that have objects with the attributes of 'wired'.
+State the width and height of the object with the class of 'van' in image 1.
+How many images have "vegetable" and "fruits" as their object classes?
+How many images have "keyboard" as their object class?
+List all the ID of the images that have an attribute class of "horse".
+List all the attribute classes of the image ID "15".
+For those objects that have multiple relations, how many images have a prediction class of "reading"?
+List all the attribute classes of the images that have a (5,5) coordinate.
+Calculate the average number of images with an attribute class of "keyboard".
+List all the attribute classes of image ID 22.
+Write 10 coordinates with the object class "pizza."
+What is the most common object class of image ID 56?
+Write the object classes of image ID 22 alongside the object's width and height.
+How many 'has' predicate classes does image ID 107 have?
+Name the most common predicate class of image ID 4434.
+Count the number of 'dress' object classes and include their X and Y coordinates in image ID 1764.
+How many 'blue' attribute classes are there on image ID 2355735?
+What is the average width and height of the objects in image ID 47? List their object classes as well.
+How many images have over 20 object samples?
+Please list the IDs of the object samples in class no. 297 in image no.1.
+How many images have at least one object sample in the class of "man"?
+State the total number of the attribute classes.
+How many object classes are there in the database?
+Provide the number of predicted classes.
+How many times is the number of images containing "broccoli" than "tomato"?
+What are the id of all the objects belonging to the transportation class?
+What is the object class of the image with a bounding box of 0, 0, 135, 212?
+How many object elements are there on average in each image?
+Which object classes belong to the onion category?
+Calculate the percentage of "airplane" object class in the table.
+List all the object classes in image 10.
+State the name of the object class that has in most images.
+What are the width and height of the bounding box of the object with "keyboard" as their object class and (5, 647) as their coordinate?
+List all bounding box widths and heights of object sample ID 2.
+In the Y coordinate of image ID 12, how many are 0?
+What object class is in the X and Y coordinates of 126 and 363?
+Give the number of samples in image no.2377985 whose attribute is electrical.
+Give the number of images containing the object sample of "suit".
+How many object elements can be detected on image no. 31?
+State the object class of the image with tallest bounding box.
+How many images have an x-coordinate of 5 and y-coordinate of 5?
+How many images have a total of 10 attribute classes?
+List all the object classes of the images that have a (5,5) coordinate.
+What is the relation between object sample no.8 and object sample no.4 in image no.1?
+What is the relationship between "feathers" and "onion" in image no.2345528?
+What are the captions of all the self-relation relationship prediction classes?
+Among the objects that have multiple relations, how many images whose captions for the prediction class ids are "on"?
+Find the object in image 5 where the object with the coordinate of (634, 468).
+What is the ratio between the number of object samples in image 1 and the number of object samples in image 6?
+Calculate the percentage of object samples that are related to street lights.
+How many images have less than 15 object samples?
+Provide the x-coordinate and y-coordinate of the image with an attribute class of ''horse" and an object class of "fur".

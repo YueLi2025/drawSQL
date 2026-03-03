@@ -1,0 +1,41 @@
+sql_query
+SELECT count(*) FROM languages
+SELECT count(*) FROM languages
+SELECT name FROM languages ORDER BY name ASC
+SELECT name FROM languages ORDER BY name ASC
+SELECT name FROM languages WHERE name LIKE "%ish%"
+SELECT name FROM languages WHERE name LIKE "%ish%"
+SELECT name FROM countries ORDER BY overall_score DESC
+SELECT name FROM countries ORDER BY overall_score DESC
+SELECT avg(justice_score) FROM countries
+SELECT avg(justice_score) FROM countries
+SELECT max(health_score) ,  min(health_score) FROM countries WHERE name != "Norway"
+SELECT max(health_score) ,  min(health_score) FROM countries WHERE name != "Norway"
+SELECT count(DISTINCT language_id) FROM official_languages
+SELECT count(DISTINCT language_id) FROM official_languages
+SELECT name FROM countries ORDER BY education_score DESC
+SELECT name FROM countries ORDER BY education_score DESC
+SELECT name FROM countries ORDER BY politics_score DESC LIMIT 1
+SELECT name FROM countries ORDER BY politics_score DESC LIMIT 1
+SELECT T1.name ,  T3.name FROM countries AS T1 JOIN official_languages AS T2 ON T1.id  =  T2.country_id JOIN languages AS T3 ON T2.language_id  =  T3.id
+SELECT T1.name ,  T3.name FROM countries AS T1 JOIN official_languages AS T2 ON T1.id  =  T2.country_id JOIN languages AS T3 ON T2.language_id  =  T3.id
+SELECT T2.name ,  COUNT(*) FROM official_languages AS T1 JOIN languages AS T2 ON T1.language_id  =  T2.id GROUP BY T2.name
+SELECT T2.name ,  COUNT(*) FROM official_languages AS T1 JOIN languages AS T2 ON T1.language_id  =  T2.id GROUP BY T2.name
+SELECT T2.name FROM official_languages AS T1 JOIN languages AS T2 ON T1.language_id  =  T2.id GROUP BY T2.id ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T2.name FROM official_languages AS T1 JOIN languages AS T2 ON T1.language_id  =  T2.id GROUP BY T2.id ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T2.name FROM official_languages AS T1 JOIN languages AS T2 ON T1.language_id  =  T2.id GROUP BY T2.id HAVING COUNT(*)  >=  2
+SELECT T2.name FROM official_languages AS T1 JOIN languages AS T2 ON T1.language_id  =  T2.id GROUP BY T2.id HAVING COUNT(*)  >=  2
+SELECT avg(T1.overall_score) FROM countries AS T1 JOIN official_languages AS T2 ON T1.id  =  T2.country_id JOIN languages AS T3 ON T2.language_id  =  T3.id WHERE T3.name  =  "English"
+SELECT avg(T1.overall_score) FROM countries AS T1 JOIN official_languages AS T2 ON T1.id  =  T2.country_id JOIN languages AS T3 ON T2.language_id  =  T3.id WHERE T3.name  =  "English"
+SELECT T2.name FROM official_languages AS T1 JOIN languages AS T2 ON T1.language_id  =  T2.id GROUP BY T2.id ORDER BY COUNT(*) DESC LIMIT 3
+SELECT T2.name FROM official_languages AS T1 JOIN languages AS T2 ON T1.language_id  =  T2.id GROUP BY T2.id ORDER BY COUNT(*) DESC LIMIT 3
+SELECT T3.name FROM countries AS T1 JOIN official_languages AS T2 ON T1.id  =  T2.country_id JOIN languages AS T3 ON T2.language_id  =  T3.id GROUP BY T3.id ORDER BY avg(T1.overall_score) DESC
+SELECT T3.name FROM countries AS T1 JOIN official_languages AS T2 ON T1.id  =  T2.country_id JOIN languages AS T3 ON T2.language_id  =  T3.id GROUP BY T3.id ORDER BY avg(T1.overall_score) DESC
+SELECT T1.Name FROM countries AS T1 JOIN official_languages AS T2 ON T1.id  =  T2.country_id GROUP BY T1.id ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T1.Name FROM countries AS T1 JOIN official_languages AS T2 ON T1.id  =  T2.country_id GROUP BY T1.id ORDER BY COUNT(*) DESC LIMIT 1
+SELECT name FROM languages WHERE id NOT IN (SELECT language_id FROM official_languages)
+SELECT name FROM languages WHERE id NOT IN (SELECT language_id FROM official_languages)
+SELECT name FROM countries WHERE id NOT IN (SELECT country_id FROM official_languages)
+SELECT name FROM countries WHERE id NOT IN (SELECT country_id FROM official_languages)
+SELECT T3.name FROM countries AS T1 JOIN official_languages AS T2 ON T1.id  =  T2.country_id JOIN languages AS T3 ON T2.language_id  =  T3.id WHERE T1.overall_score  >  95 INTERSECT SELECT T3.name FROM countries AS T1 JOIN official_languages AS T2 ON T1.id  =  T2.country_id JOIN languages AS T3 ON T2.language_id  =  T3.id WHERE T1.overall_score  <  90
+SELECT T3.name FROM countries AS T1 JOIN official_languages AS T2 ON T1.id  =  T2.country_id JOIN languages AS T3 ON T2.language_id  =  T3.id WHERE T1.overall_score  >  95 INTERSECT SELECT T3.name FROM countries AS T1 JOIN official_languages AS T2 ON T1.id  =  T2.country_id JOIN languages AS T3 ON T2.language_id  =  T3.id WHERE T1.overall_score  <  90

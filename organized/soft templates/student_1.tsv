@@ -1,0 +1,69 @@
+soft_templates
+SELECT count(*) FROM variable
+SELECT count(*) FROM variable
+SELECT lastname FROM variable WHERE classroom = num
+SELECT lastname FROM variable WHERE classroom = num
+SELECT firstname FROM variable WHERE classroom = num
+SELECT firstname FROM variable WHERE classroom = num
+SELECT DISTINCT firstname FROM variable WHERE classroom = num
+SELECT DISTINCT firstname FROM variable WHERE classroom = num
+SELECT DISTINCT classroom , variable FROM variable
+SELECT DISTINCT classroom , variable FROM variable
+SELECT DISTINCT variable FROM variable WHERE classroom = num
+SELECT DISTINCT variable FROM variable WHERE classroom = num
+SELECT DISTINCT variable FROM variable WHERE classroom = num
+SELECT DISTINCT variable FROM variable WHERE classroom = num
+SELECT DISTINCT classroom FROM variable WHERE variable = num
+SELECT DISTINCT classroom FROM variable WHERE variable = num
+SELECT DISTINCT classroom FROM variable WHERE variable = num
+SELECT DISTINCT classroom FROM variable WHERE variable = num
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num
+SELECT firstname FROM variable WHERE classroom = num
+SELECT firstname FROM variable WHERE classroom = num
+SELECT lastname FROM variable WHERE classroom = num
+SELECT lastname FROM variable WHERE classroom = num
+SELECT DISTINCT firstname , lastname FROM variable
+SELECT DISTINCT firstname , lastname FROM variable
+SELECT DISTINCT firstname , lastname FROM variable
+SELECT DISTINCT firstname , lastname FROM variable
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT DISTINCT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num EXCEPT SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT DISTINCT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num EXCEPT SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable != string AND variable != string
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num AND variable != string AND variable != string
+SELECT variable , count(DISTINCT classroom) , count(*) FROM variable GROUP BY variable
+SELECT variable , count(DISTINCT classroom) , count(*) FROM variable GROUP BY variable
+SELECT classroom , count(DISTINCT variable ) FROM variable GROUP BY classroom
+SELECT classroom , count(DISTINCT variable ) FROM variable GROUP BY classroom
+SELECT classroom FROM variable GROUP BY classroom ORDER BY count(*) DESC LIMIT num
+SELECT classroom FROM variable GROUP BY classroom ORDER BY count(*) DESC LIMIT num
+SELECT classroom , count(*) FROM variable GROUP BY classroom
+SELECT classroom , count(*) FROM variable GROUP BY classroom
+SELECT classroom , count(*) FROM variable WHERE variable = string GROUP BY classroom
+SELECT classroom , count(*) FROM variable WHERE variable = string GROUP BY classroom
+SELECT classroom , count(*) FROM variable WHERE variable = string GROUP BY classroom
+SELECT classroom , count(*) FROM variable WHERE variable = string GROUP BY classroom
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable , variable ORDER BY count(*) DESC LIMIT num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable , variable ORDER BY count(*) DESC LIMIT num
+SELECT count(*) , classroom FROM variable GROUP BY classroom
+SELECT count(*) , classroom FROM variable GROUP BY classroom

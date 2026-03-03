@@ -1,0 +1,41 @@
+nl_question
+How many actors are there?
+Count the number of actors.
+List the name of actors in ascending alphabetical order.
+What are the names of actors, ordered alphabetically?
+What are the characters and duration of actors?
+Return the characters and durations for each actor.
+List the name of actors whose age is not 20.
+What are the names of actors who are not 20 years old?
+What are the characters of actors in descending order of age?
+Return the characters for actors, ordered by age descending.
+What is the duration of the oldest actor?
+Return the duration of the actor with the greatest age.
+What are the names of musicals with nominee "Bob Fosse"?
+Return the names of musicals who have the nominee Bob Fosse.
+What are the distinct nominees of the musicals with the award that is not "Tony Award"?
+Return the different nominees of musicals that have an award that is not the Tony Award.
+Show names of actors and names of musicals they are in.
+What are the names of actors and the musicals that they are in?
+Show names of actors that have appeared in musical with name "The Phantom of the Opera".
+What are the names of actors who have been in the musical titled The Phantom of the Opera?
+Show names of actors in descending order of the year their musical is awarded.
+What are the names of actors ordered descending by the year in which their musical was awarded?
+Show names of musicals and the number of actors who have appeared in the musicals.
+How many actors have appeared in each musical?
+Show names of musicals which have at least three actors.
+What are the names of musicals who have at 3 or more actors?
+Show different nominees and the number of musicals they have been nominated.
+How many musicals has each nominee been nominated for?
+Please show the nominee who has been nominated the greatest number of times.
+Who is the nominee who has been nominated for the most musicals?
+List the most common result of the musicals.
+Return the most frequent result across all musicals.
+List the nominees that have been nominated more than two musicals.
+Who are the nominees who have been nominated more than two times?
+List the name of musicals that do not have actors.
+What are the names of musicals who have no actors?
+Show the nominees that have nominated musicals for both "Tony Award" and "Drama Desk Award".
+Who are the nominees who have been nominated for both a Tony Award and a Drama Desk Award?
+Show the musical nominee with award "Bob Fosse" or "Cleavant Derricks".
+Who are the nominees who were nominated for either of the Bob Fosse or Cleavant Derricks awards?

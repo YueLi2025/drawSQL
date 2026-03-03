@@ -1,0 +1,62 @@
+nl_question
+How many units of item no.9 were sold in store no.1 in total in January, 2012?
+What is the ID of the item that sold the best on 2012/1/1 in store no.1?
+Please list the dates on which the temperature of station no.2 was above the 30-year normal.
+What is the ID of the item that sold the best on the day with the highest max temperature in store no.3 in 2012?
+How many units of item no.5 were sold in store no.3 on average on the days when the max temperature exceeded 90?
+Tell the temperature range of the home weather station of store no.7 on 2014/4/28.
+For the home weather station of store no.15, what was the dew point on 2012/2/18?
+Give the number of stores which opened on the weather station that recorded the fastest average wind speed.
+State the max temperature of the weather station which has the no.21 store on 2012/11/9.
+Provide the sunrise time recorded by the home weather station of store no.30 on 2014/2/21.
+State the number of stores that belongs to the weather station which recorded the deepest snowfall.
+Provide the code summarization for the weather recorded by the weather station which contained the no.2 store on 2013/2/12.
+Show the sea level status recorded by the weather station of store no.19 on 2013/2/24.
+How many inches of total precipitation was recorded by the weather station of store no.2 on 2012/12/25?
+Give the station pressure status recorded by the weather station which contained no.12 store on 2012/5/15.
+What percentage was the total unit sales of store no.10 to the total sales of its weather station on 2014/10/31?
+How many stores are in weather station 12?
+Which weather station has the highest number of stores?
+In March 2014, which weather stations recorded the highest number of days whose temperature is below the 30-year normal?
+Among the stores in weather station 14 in February 2014, which store had sold no less than 300 quantities for item number 44 in a single day?
+What is the most purchased products during the rainy days in June 2013 in weather station 9?
+Which station sold the highest quantity of item number 5 overall?
+What is the earliest sunrise recorded in the stations with no more than 1 store in February 2012?
+In weather station 17, which store sold the highest quantity of item 45 in October 2012?
+What are the items sold by the store during the day whose station recorded the thickest snowfall?
+On February 8, 2014, what is the minimum temperature in the station where store 29 belongs?
+Among the stations with 3 stores, how many stations have a station pressure of no more than 30 on February 18, 2014?
+Which station has the highest number of stores? Calculate the said station's average maximum temperature in February 2012.
+What is the maximum and minimum temperature for station number 1 on 15 January 2012?
+How many stations were able to sell item 5 on January 2014?
+What is the lowest minimum temperature recorded in store 16 on January 2012?
+How many units of item 7 have been sold by store 7 when the snow is less than 5 inches?
+How many items were sold by store 9 during a snowy day?
+List out stations number and items sold by store 17.
+What is the sea level and average speed for store number 3 and store number 4?
+What was the difference of number of units sold in station number 1 and number 2 on year 2012?
+What was the average temperature difference between store number 18 and 19 on 16 September 2022?
+What was the average temperature differences during May 2012 for store number 6 and 7?
+How many units of item no.9 were sold in store no.1 on 2012/1/1?
+On which day was the weather more windy in station no.1, 2012/1/1 or 2012/1/2?
+How many units of item no.5 were sold in store no.3 in total on days with a total precipitation of over 0.05?
+How many no.9 items from store no.11 were sold on 2012/12/7?
+Give the id of the weather station with most stores.
+For the weather station which recorded the highest temperature above the 30-year normal, how many stores does it have?
+How many items weren't sold in store 2 on 1/1/2012?
+Between 1/1/2012 to 12/31/2014, which date recorded the hottest temperature in weather station 1?
+How many stores belong to the most windy station?
+How many stores belong to the station with the highest recorded heat of all time?
+What is the maximum average speed?
+How many days did the show fell more than 5 inches?
+How many days did the sun rise before 5 AM?
+What is the minimum dew point?
+What is the ratio of the highest and lowest temperature in store 11?
+What was the temperature range of station no.1 on 2012/1/1?
+On how many days with the max temperature over 90 did the sale of item no.5 in store no.3 exceed 100?
+Which weather station does store no.20 belong to?
+For the weather station has store no.9, what was the increased percentage of the average temperature from 2012/2/2 to 2012/2/3?
+What is the item number of the product with the highest number of units sold in store number 1 on 1/1/2012?
+Which items from store 1 have the highest units sold during rainy day?
+How many units of item no.5 were sold in store no.3 on the day the temperature range was the biggest?
+Which weather station does the store that sold the highest quantity of item 9 belongs to?

@@ -1,0 +1,144 @@
+sql_query
+SELECT T1.company_name FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id INNER JOIN movie AS T3 ON T2.movie_id = T3.movie_id WHERE T3.title = 'Four Rooms'
+SELECT T3.title FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id INNER JOIN movie AS T3 ON T2.movie_id = T3.movie_id WHERE T1.company_name = 'Universal Pictures'
+SELECT T3.title FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id INNER JOIN movie AS T3 ON T2.movie_id = T3.movie_id WHERE T1.company_name = 'Universal Pictures' ORDER BY T3.release_date DESC LIMIT 1
+SELECT T3.person_name FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T1.title LIKE 'Pirates of the Caribbean: At World%s End' AND T2.job = 'Director of Photography'
+SELECT T2.job FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T1.title LIKE 'Pirates of the Caribbean: At World%s End' AND T3.person_name = 'Dariusz Wolski'
+SELECT T3.person_name FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T1.title LIKE 'Pirates of the Caribbean: At World%s End'
+SELECT COUNT(T3.person_id) FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T1.title LIKE 'Pirates of the Caribbean: At World%s End' AND T2.job = 'Producer'
+SELECT COUNT(T2.movie_id) FROM person AS T1 INNER JOIN movie_crew AS T2 ON T1.person_id = T2.person_id WHERE T1.person_name = 'Dariusz Wolski' AND T2.job = 'Director of Photography'
+SELECT T1.title FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T3.person_name = 'Dariusz Wolski' AND T2.job = 'Director of Photography' ORDER BY T1.vote_average DESC LIMIT 1
+SELECT T1.release_date FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T3.person_name = 'Dariusz Wolski' ORDER BY T1.release_date DESC LIMIT 1
+SELECT CAST(COUNT(CASE WHEN T1.vote_average > 5 THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T1.vote_average) FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T3.person_name = 'Dariusz Wolski' AND T2.job = 'Director of Photography'
+SELECT CAST(SUM(T1.revenue) AS REAL) / COUNT(T1.movie_id) FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T3.person_name = 'Dariusz Wolski' AND T2.job = 'Director of Photography'
+SELECT T2.job FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T3.person_name = 'David Rubin' AND T1.title = 'Days of Thunder'
+SELECT COUNT(T2.movie_id) FROM person AS T1 INNER JOIN movie_crew AS T2 ON T1.person_id = T2.person_id WHERE T1.person_name = 'Michael Bay' AND T2.job = 'Director'
+SELECT COUNT(T2.keyword_id) FROM movie AS T1 INNER JOIN movie_keywords AS T2 ON T1.movie_id = T2.movie_id WHERE T1.title = 'I Hope They Serve Beer in Hell'
+SELECT COUNT(T2.movie_id) FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id WHERE T1.company_name = 'Paramount Animation'
+SELECT COUNT(*) FROM movie AS T1 INNER JOIN movie_cast AS T2 ON T1.movie_id = T2.movie_id INNER JOIN gender AS T3 ON T2.gender_id = T3.gender_id WHERE T1.title = 'Spider-Man 3' AND T3.gender = 'Female'
+SELECT T1.keyword_name FROM keyword AS T1 INNER JOIN movie_keywords AS T2 ON T1.keyword_id = T2.keyword_id GROUP BY T1.keyword_name ORDER BY COUNT(T1.keyword_name) DESC LIMIT 1
+SELECT T1.company_name FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id INNER JOIN movie AS T3 ON T2.movie_id = T3.movie_id WHERE T3.title = 'Crazy Heart'
+SELECT COUNT(T2.movie_id) FROM keyword AS T1 INNER JOIN movie_keywords AS T2 ON T1.keyword_id = T2.keyword_id WHERE keyword_name = 'saving the world'
+SELECT T3.title FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id INNER JOIN movie AS T3 ON T2.movie_id = T3.movie_id WHERE T1.company_name = 'Cruel and Unusual Films' ORDER BY T3.popularity DESC LIMIT 1
+SELECT T4.department_name FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id INNER JOIN department AS T4 ON T2.department_id = T4.department_id WHERE T3.person_name = 'Marcia Ross' AND T1.title = 'Reign of Fire'
+SELECT CAST(SUM(T1.budget) AS REAL) / COUNT(T1.movie_id) FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T3.person_name = 'Jaume Collet-Serra' AND T2.job = 'Director'
+SELECT CAST(COUNT(CASE WHEN T3.gender = 'Male' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T3.gender) FROM movie AS T1 INNER JOIN movie_cast AS T2 ON T1.movie_id = T2.movie_id INNER JOIN gender AS T3 ON T2.gender_id = T3.gender_id WHERE T1.title = 'Bride Wars'
+SELECT T1.company_name FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id GROUP BY T1.company_id ORDER BY COUNT(T2.movie_id) DESC LIMIT 1
+SELECT DISTINCT T3.person_name FROM movie AS T1 INNER JOIN movie_cast AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T2.character_name = 'Captain Jack Sparrow' AND T1.title LIKE 'Pirates of the Caribbean%'
+SELECT T3.title FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id INNER JOIN movie AS T3 ON T2.movie_id = T3.movie_id WHERE T1.company_name = 'Walt Disney Pictures' ORDER BY T3.popularity DESC LIMIT 1
+SELECT COUNT(T2.movie_id) FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id WHERE T1.company_name = 'Universal Studios'
+SELECT T1.company_name FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id INNER JOIN movie AS T3 ON T2.movie_id = T3.movie_id GROUP BY T1.company_id ORDER BY SUM(T3.revenue) DESC LIMIT 1
+SELECT COUNT(T3.gender) FROM movie AS T1 INNER JOIN movie_cast AS T2 ON T1.movie_id = T2.movie_id INNER JOIN gender AS T3 ON T2.gender_id = T3.gender_id WHERE T1.title = 'Mr. Smith Goes to Washington' AND T3.gender = 'Female'
+SELECT T1.company_name FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id GROUP BY T1.company_id HAVING COUNT(T2.movie_id) > 200
+SELECT COUNT(T2.movie_id) FROM person AS T1 INNER JOIN movie_cast AS T2 ON T1.person_id = T2.person_id WHERE T1.person_name = 'Harrison Ford'
+SELECT T1.title FROM movie AS T1 INNER JOIN movie_cast AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T3.person_name = 'Jamie Foxx' ORDER BY T1.release_date DESC LIMIT 1
+SELECT COUNT(T1.movie_id) FROM movie AS T1 INNER JOIN movie_cast AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T3.person_name = 'Quentin Tarantino' AND CAST(STRFTIME('%Y', T1.release_date) AS INT) = 1995
+SELECT T1.title FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T2.genre_id = T3.genre_id WHERE T3.genre_name = 'Crime' ORDER BY T1.release_date LIMIT 1
+SELECT person_id FROM movie_crew WHERE movie_id = 12 AND job = 'Second Film Editor'
+SELECT COUNT(DISTINCT job) FROM movie_crew WHERE movie_id = 19 AND department_id = 7
+SELECT COUNT(T2.movie_id) FROM person AS T1 INNER JOIN movie_cast AS T2 ON T1.person_id = T2.person_id WHERE T1.person_name = 'Bob Peterson'
+SELECT T2.movie_id, T2.character_name FROM person AS T1 INNER JOIN movie_cast AS T2 ON T1.person_id = T2.person_id WHERE T1.person_name = 'Jim Carrey'
+SELECT T2.person_name FROM movie_cast AS T1 INNER JOIN person AS T2 ON T1.person_id = T2.person_id INNER JOIN gender AS T3 ON T1.gender_id = T3.gender_id WHERE T1.movie_id = 1865 AND T3.gender = 'Female'
+SELECT T1.title FROM movie AS T1 INNER JOIN movie_cast AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T3.person_name = 'Jim Carrey'
+SELECT COUNT(T1.movie_id) FROM movie AS T1 INNER JOIN movie_cast AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T3.person_name = 'Uma Thurman' AND T1.release_date BETWEEN '1990-01-01' AND '2000-12-31'
+SELECT T1.title FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T2.genre_id = T3.genre_id WHERE T3.genre_name = 'Horror' AND vote_average > 7
+SELECT T3.genre_name, T1.popularity FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T2.genre_id = T3.genre_id WHERE T1.revenue > 120000000 AND T1.release_date BETWEEN '2012-01-01' AND '2015-12-31'
+SELECT T1.title, T1.revenue, T3.COUNTry_name FROM movie AS T1 INNER JOIN production_COUNTry AS T2 ON T1.movie_id = T2.movie_id INNER JOIN COUNTry AS T3 ON T2.COUNTry_id = T3.COUNTry_id ORDER BY T1.budget DESC LIMIT 1
+SELECT T1.title FROM movie AS T1 INNER JOIN movie_languages AS T2 ON T1.movie_id = T2.movie_id INNER JOIN language AS T3 ON T2.language_id = T3.language_id WHERE T3.language_name = 'Latin' AND T1.release_date BETWEEN '1990-01-01' AND '1995-12-31'
+SELECT AVG(T1.revenue) FROM movie AS T1 INNER JOIN production_COUNTry AS T2 ON T1.movie_id = T2.movie_id INNER JOIN COUNTry AS T3 ON T2.COUNTry_id = T3.COUNTry_id WHERE T3.COUNTry_name = 'United States of America' AND CAST(STRFTIME('%Y', T1.release_date) AS INT) = 2006
+SELECT DISTINCT T1.person_name FROM person AS T1 INNER JOIN movie_cast AS T2 ON T1.person_id = T2.person_id WHERE T2.character_name = 'Optimus Prime (voice)'
+SELECT T1.company_name FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id INNER JOIN movie AS T3 ON T2.movie_id = T3.movie_id WHERE T3.title = 'Ultramarines: A Warhammer 40,000 Movie'
+SELECT T3.title FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id INNER JOIN movie AS T3 ON T2.movie_id = T3.movie_id WHERE T1.company_name = 'Radiant Film GmbH'
+SELECT T3.genre_name FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T2.genre_id = T3.genre_id WHERE T1.title = 'Sky Captain and the World of Tomorrow'
+SELECT T3.keyword_name FROM movie AS T1 INNER JOIN movie_keywords AS T2 ON T1.movie_id = T2.movie_id INNER JOIN keyword AS T3 ON T2.keyword_id = T3.keyword_id WHERE T1.title = 'Sky Captain and the World of Tomorrow'
+SELECT T3.COUNTry_name FROM movie AS T1 INNER JOIN production_COUNTry AS T2 ON T1.movie_id = T2.movie_id INNER JOIN COUNTry AS T3 ON T2.COUNTry_id = T3.COUNTry_id WHERE T1.title = 'Gojira ni-sen mireniamu'
+SELECT T1.title FROM movie AS T1 INNER JOIN movie_keywords AS T2 ON T1.movie_id = T2.movie_id INNER JOIN keyword AS T3 ON T2.keyword_id = T3.keyword_id WHERE T3.keyword_name = 'extremis'
+SELECT T3.person_name FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T1.title = 'Transformers' AND T2.job = 'Director'
+SELECT CAST(COUNT(CASE WHEN T3.gender = 'Male' THEN 1 ELSE NULL END) AS REAL) / COUNT(CASE WHEN T3.gender = 'Female' THEN 1 ELSE NULL END) AS RATIO , COUNT(CASE WHEN T3.gender = 'Unspecified' THEN 1 ELSE NULL END) AS UNGENDERS FROM movie AS T1 INNER JOIN movie_cast AS T2 ON T1.movie_id = T2.movie_id INNER JOIN gender AS T3 ON T2.gender_id = T3.gender_id WHERE T1.title = 'Iron Man'
+SELECT title FROM movie WHERE CAST(STRFTIME('%Y', release_date) AS INT) < 2000 LIMIT 5
+SELECT T2.keyword_id FROM movie AS T1 INNER JOIN movie_keywords AS T2 ON T1.movie_id = T2.movie_id WHERE T1.title = 'Sin City'
+SELECT T1.title FROM movie AS T1 INNER JOIN movie_keywords AS T2 ON T1.movie_id = T2.movie_id INNER JOIN keyword AS T3 ON T2.keyword_id = T3.keyword_id WHERE T3.keyword_name = 'angel'
+SELECT T3.keyword_name FROM movie AS T1 INNER JOIN movie_keywords AS T2 ON T1.movie_id = T2.movie_id INNER JOIN keyword AS T3 ON T2.keyword_id = T3.keyword_id ORDER BY T1.popularity DESC LIMIT 1
+SELECT T2.genre_id FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id WHERE T1.title = 'The Dark Knight'
+SELECT T1.title FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T2.genre_id = T3.genre_id WHERE T3.genre_name = 'Thriller'
+SELECT T3.genre_name FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T2.genre_id = T3.genre_id ORDER BY T1.revenue LIMIT 1
+SELECT T3.genre_name FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T2.genre_id = T3.genre_id WHERE T1.runtime = 14
+SELECT T3.genre_name FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T2.genre_id = T3.genre_id ORDER BY T1.vote_average DESC, T1.revenue LIMIT 1
+SELECT T3.genre_name FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T3.genre_id = T2.genre_id WHERE T1.tagline = 'A long time ago in a galaxy far, far away...'
+SELECT T1.title FROM movie AS T1 INNER JOIN production_COUNTry AS T2 ON T1.movie_id = T2.movie_id INNER JOIN COUNTry AS T3 ON T2.COUNTry_id = T3.COUNTry_id WHERE T3.COUNTry_name = 'Canada'
+SELECT SUM(T1.budget) FROM movie AS T1 INNER JOIN movie_keywords AS T2 ON T1.movie_id = T2.movie_id INNER JOIN keyword AS T3 ON T2.keyword_id = T3.keyword_id WHERE T3.keyword_name = 'video game'
+SELECT AVG(T1.revenue) FROM movie AS T1 INNER JOIN movie_keywords AS T2 ON T1.movie_id = T2.movie_id INNER JOIN keyword AS T3 ON T2.keyword_id = T3.keyword_id WHERE T3.keyword_name = 'civil war'
+SELECT title FROM movie WHERE budget = 0 ORDER BY revenue DESC LIMIT 1
+SELECT T2.company_id FROM movie AS T1 INNER JOIN movie_company AS T2 ON T1.movie_id = T2.movie_id WHERE CAST(STRFTIME('%Y', T1.release_date) AS INT) = 1916
+SELECT T3.title FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id INNER JOIN movie AS T3 ON T2.movie_id = T3.movie_id WHERE T1.company_name = 'Lucasfilm'
+SELECT T3.title FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id INNER JOIN movie AS T3 ON T2.movie_id = T3.movie_id WHERE T1.company_name = 'Warner Bros. Pictures' ORDER BY T3.revenue DESC LIMIT 1
+SELECT T3.release_date FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id INNER JOIN movie AS T3 ON T2.movie_id = T3.movie_id WHERE T1.company_name = 'Twentieth Century Fox Film Corporation'
+SELECT T2.language_id FROM movie AS T1 INNER JOIN movie_languages AS T2 ON T1.movie_id = T2.movie_id WHERE T1.title = 'Walk the Line'
+SELECT T2.language_id FROM movie AS T1 INNER JOIN movie_languages AS T2 ON T1.movie_id = T2.movie_id ORDER BY T1.popularity DESC LIMIT 1
+SELECT DISTINCT CASE WHEN T1.movie_status = 'Post Production' THEN 'YES' ELSE 'NO' END AS YORN FROM movie AS T1 INNER JOIN movie_languages AS T2 ON T1.movie_id = T2.movie_id INNER JOIN language AS T3 ON T2.language_id = T3.language_id WHERE T3.language_name = 'Nederlands'
+SELECT DISTINCT T1.tagline FROM movie AS T1 INNER JOIN movie_languages AS T2 ON T1.movie_id = T2.movie_id INNER JOIN language AS T3 ON T2.language_id = T3.language_id WHERE T3.language_name = 'Polski'
+SELECT SUM(T3.revenue) FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id INNER JOIN movie AS T3 ON T2.movie_id = T3.movie_id WHERE T1.company_name IN ('Fantasy Films', 'Live Entertainment')
+SELECT person_name FROM person GROUP BY person_name ORDER BY COUNT(person_name) DESC LIMIT 1
+SELECT CAST(SUM(CD) AS REAL) / COUNT(movie_id) FROM ( SELECT movie_id, COUNT(person_id) AS CD FROM movie_crew GROUP BY movie_id )
+SELECT COUNTry_iso_code FROM COUNTry WHERE COUNTry_name = 'Kyrgyz Republic'
+SELECT DISTINCT T1.person_name FROM person AS T1 INNER JOIN movie_cast AS T2 ON T1.person_id = T2.person_id WHERE T2.character_name LIKE '%captain%'
+SELECT T3.keyword_name FROM movie AS T1 INNER JOIN movie_keywords AS T2 ON T1.movie_id = T2.movie_id INNER JOIN keyword AS T3 ON T2.keyword_id = T3.keyword_id WHERE T1.release_date LIKE '2006%' GROUP BY T3.keyword_name ORDER BY COUNT(T3.keyword_name) DESC LIMIT 1
+SELECT T2.genre_name FROM movie_genres AS T1 INNER JOIN genre AS T2 ON T1.genre_id = T2.genre_id GROUP BY T2.genre_id ORDER BY COUNT(T1.movie_id) LIMIT 2, 1
+SELECT AVG(T1.revenue) FROM movie AS T1 INNER JOIN production_COUNTry AS T2 ON T1.movie_id = T2.movie_id INNER JOIN COUNTry AS T3 ON T2.COUNTry_id = T3.COUNTry_id WHERE T3.COUNTry_name = 'France'
+SELECT T1.character_name FROM movie_cast AS T1 INNER JOIN gender AS T2 ON T1.gender_id = T2.gender_id WHERE T2.gender = 'Unspecified'
+SELECT T1.department_name FROM department AS T1 INNER JOIN movie_crew AS T2 ON T1.department_id = T2.department_id GROUP BY T1.department_id ORDER BY COUNT(T2.department_id) DESC LIMIT 1
+SELECT CAST(COUNT(CASE WHEN T3.COUNTry_iso_code = 'US' THEN T1.movie_id ELSE NULL END) AS REAL) * 100 / COUNT(T1.movie_id) FROM movie AS T1 INNER JOIN production_COUNTry AS T2 ON T1.movie_id = T2.movie_id INNER JOIN COUNTry AS T3 ON T2.COUNTry_id = T3.COUNTry_id
+SELECT CAST(COUNT(CASE WHEN T2.gender = 'Female' THEN T1.person_id ELSE NULL END) AS REAL) / COUNT(CASE WHEN T2.gender = 'Male' THEN T1.person_id ELSE NULL END) FROM movie_cast AS T1 INNER JOIN gender AS T2 ON T1.gender_id = T2.gender_id
+SELECT COUNTry_id, COUNTry_iso_code FROM COUNTry WHERE COUNTry_name = 'Belgium'
+SELECT T2.character_name FROM person AS T1 INNER JOIN movie_cast AS T2 ON T1.person_id = T2.person_id WHERE T1.person_name = 'Catherine Deneuve'
+SELECT T1.title FROM movie AS T1 INNER JOIN movie_languages AS T2 ON T1.movie_id = T2.movie_id INNER JOIN language AS T3 ON T2.language_id = T3.language_id WHERE T3.language_name = 'Somali'
+SELECT T1.release_date, T3.language_name FROM movie AS T1 INNER JOIN movie_languages AS T2 ON T1.movie_id = T2.movie_id INNER JOIN language AS T3 ON T2.language_id = T3.language_id ORDER BY T1.popularity DESC LIMIT 1
+SELECT T2.character_name FROM movie AS T1 INNER JOIN movie_cast AS T2 ON T1.movie_id = T2.movie_id WHERE T1.title = 'Open Water'
+SELECT T1.person_name FROM person AS T1 INNER JOIN movie_crew AS T2 ON T1.person_id = T2.person_id WHERE T2.job = 'Camera Supervisor'
+SELECT DISTINCT T2.job FROM person AS T1 INNER JOIN movie_crew AS T2 ON T1.person_id = T2.person_id WHERE T1.person_name = 'Sally Menke'
+SELECT T3.person_name, T4.department_name FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id INNER JOIN department AS T4 ON T2.department_id = T4.department_id WHERE T1.title LIKE 'Pirates of the Caribbean: At World%s End' AND T2.job = 'Music Editor'
+SELECT T1.title, T1.revenue FROM movie AS T1 INNER JOIN movie_company AS T2 ON T1.movie_id = T2.movie_id INNER JOIN production_company AS T3 ON T2.company_id = T3.company_id WHERE T3.company_name = 'DreamWorks'
+SELECT T3.genre_name FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T2.genre_id = T3.genre_id WHERE T1.title = 'Forrest Gump'
+SELECT CAST((SUM(CASE WHEN T1.keyword_name = 'woman director' THEN 1 ELSE 0 END) - SUM(CASE WHEN T1.keyword_name = 'independent film' THEN 1 ELSE 0 END)) AS REAL) * 100 / SUM(CASE WHEN T1.keyword_name = 'independent film' THEN 1 ELSE 0 END) FROM keyword AS T1 INNER JOIN movie_keywords AS T2 ON T1.keyword_id = T2.keyword_id
+SELECT T3.genre_name FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T2.genre_id = T3.genre_id WHERE T1.title = 'Dancer in the Dark'
+SELECT COUNT(T1.movie_id) FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T2.genre_id = T3.genre_id WHERE T3.genre_name = 'Adventure' AND CAST(STRFTIME('%Y', T1.release_date) AS INT) = 2000
+SELECT T3.title FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id INNER JOIN movie AS T3 ON T2.movie_id = T3.movie_id WHERE T1.company_name = 'Paramount Pictures' AND CAST(STRFTIME('%Y', T3.release_date) AS INT) = 2000
+SELECT T3.keyword_name FROM movie AS T1 INNER JOIN movie_keywords AS T2 ON T1.movie_id = T2.movie_id INNER JOIN keyword AS T3 ON T2.keyword_id = T3.keyword_id WHERE T1.title = 'Finding Nemo'
+SELECT T1.title FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T2.genre_id = T3.genre_id WHERE T3.genre_name = 'Horror' AND T1.vote_average > 7
+SELECT COUNT(*) FROM ( SELECT T1.company_name AS CNAME FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id GROUP BY T1.company_id HAVING COUNT(T1.company_name) > 150 )
+SELECT T2.job FROM person AS T1 INNER JOIN movie_crew AS T2 ON T1.person_id = T2.person_id WHERE T1.person_name = 'Mark Hammel'
+SELECT T1.title FROM movie AS T1 INNER JOIN movie_cast AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T3.person_name = 'Harrison Ford'
+SELECT T2.character_name FROM movie AS T1 INNER JOIN movie_cast AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T1.title = 'Pirates of the Caribbean: The Curse of the Black Pearl' AND T3.person_name = 'Orlando Bloom'
+SELECT CAST(COUNT(CASE WHEN T3.genre_name = 'Horror' THEN T1.movie_id ELSE NULL END) AS REAL) / COUNT(T1.movie_id) FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T2.genre_id = T3.genre_id
+SELECT AVG(T1.revenue), T1.title FROM movie AS T1 INNER JOIN movie_keywords AS T2 ON T1.movie_id = T2.movie_id INNER JOIN keyword AS T3 ON T2.keyword_id = T3.keyword_id WHERE T3.keyword_name = 'paris'
+SELECT COUNT(CNAME) FROM ( SELECT T1.company_name AS CNAME FROM production_company AS T1 INNER JOIN movie_company AS T2 ON T1.company_id = T2.company_id INNER JOIN movie AS T3 ON T2.movie_id = T3.movie_id WHERE T3.title = 'Four Rooms' )
+SELECT T3.person_name FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T1.title LIKE 'Pirates of the Caribbean: At World%s End' AND T2.job = 'Producer'
+SELECT T3.person_name FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T1.title = 'Land of the Dead' AND T2.job = 'Director'
+SELECT COUNT(T2.person_id) FROM movie AS T1 INNER JOIN movie_crew AS T2 ON T1.movie_id = T2.movie_id WHERE T1.title = 'The Amityville Horror' AND T2.job = 'Producer'
+SELECT MIN(release_date) FROM movie WHERE movie_status = 'Released'
+SELECT COUNT(person_id) FROM person WHERE person_name = 'John Young'
+SELECT person_name FROM person WHERE person_id = 1325273
+SELECT COUNT(T1.movie_id) FROM movie_genres AS T1 INNER JOIN genre AS T2 ON T1.genre_id = T2.genre_id WHERE T2.genre_name = 'Horror'
+SELECT T1.title FROM movie AS T1 INNER JOIN production_COUNTry AS T2 ON T1.movie_id = T2.movie_id INNER JOIN COUNTry AS T3 ON T2.COUNTry_id = T3.COUNTry_id WHERE T3.COUNTry_name = 'France' LIMIT 10
+SELECT T1.title FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T2.genre_id = T3.genre_id WHERE T1.movie_status = 'Rumored' AND T3.genre_name = 'Drama' LIMIT 5
+SELECT T2.COUNTry_id FROM movie AS T1 INNER JOIN production_COUNTry AS T2 ON T1.movie_id = T2.movie_id WHERE T1.title LIKE 'Pirates of the Caribbean: Dead Man%s Chest'
+SELECT T2.company_id FROM movie AS T1 INNER JOIN movie_company AS T2 ON T1.movie_id = T2.movie_id WHERE T1.title = 'Gladiator'
+SELECT T3.language_name FROM movie AS T1 INNER JOIN movie_languages AS T2 ON T1.movie_id = T2.movie_id INNER JOIN language AS T3 ON T2.language_id = T3.language_id WHERE T1.title LIKE 'C%era una volta il West'
+SELECT DISTINCT T1.homepage FROM movie AS T1 INNER JOIN movie_languages AS T2 ON T1.movie_id = T2.movie_id INNER JOIN language AS T3 ON T2.language_id = T3.language_id WHERE T3.language_name = 'Bahasa indonesia'
+SELECT SUM(CASE WHEN T3.language_name = 'English' THEN T1.revenue ELSE 0 END) - SUM(CASE WHEN T3.language_name = 'Latin' THEN T1.revenue ELSE 0 END) AS DIFFERENCE FROM movie AS T1 INNER JOIN movie_languages AS T2 ON T1.movie_id = T2.movie_id INNER JOIN language AS T3 ON T2.language_id = T3.language_id
+SELECT AVG(T1.revenue) FROM movie AS T1 INNER JOIN movie_languages AS T2 ON T1.movie_id = T2.movie_id INNER JOIN language AS T3 ON T2.language_id = T3.language_id WHERE T3.language_name = 'Latin'
+SELECT MAX(runtime) FROM movie
+SELECT COUNT(T1.movie_id) FROM movie_company AS T1 INNER JOIN production_company AS T2 ON T1.company_id = T2.company_id WHERE T2.company_name = 'Eddie Murphy Productions'
+SELECT T3.language_name FROM movie AS T1 INNER JOIN movie_languages AS T2 ON T1.movie_id = T2.movie_id INNER JOIN language AS T3 ON T2.language_id = T3.language_id INNER JOIN language_role AS T4 ON T2.language_role_id = T4.role_id WHERE T4.language_role = 'Original' AND T1.tagline LIKE 'An offer you can%t refuse.'
+SELECT T1.title FROM movie AS T1 INNER JOIN movie_keywords AS T2 ON T1.movie_id = T2.movie_id GROUP BY T1.title ORDER BY COUNT(T2.keyword_id) DESC LIMIT 1
+SELECT title FROM movie WHERE CAST(STRFTIME('%Y', release_date) AS INT) = 1945
+SELECT T3.person_name FROM movie AS T1 INNER JOIN movie_cast AS T2 ON T1.movie_id = T2.movie_id INNER JOIN person AS T3 ON T2.person_id = T3.person_id WHERE T1.title LIKE 'Pirates of the Caribbean: At World%s End' ORDER BY T2.cast_order LIMIT 1
+SELECT title FROM movie WHERE revenue = 559852396
+SELECT title FROM movie ORDER BY budget DESC LIMIT 1
+SELECT COUNT(movie_id) FROM movie WHERE revenue > 1000000000
+SELECT title FROM movie ORDER BY popularity DESC LIMIT 1
+SELECT person_id, character_name FROM movie_cast WHERE movie_id = 285 AND cast_order BETWEEN 1 AND 10
+SELECT T3.genre_name, MAX(T1.budget) FROM movie AS T1 INNER JOIN movie_genres AS T2 ON T1.movie_id = T2.movie_id INNER JOIN genre AS T3 ON T2.genre_id = T3.genre_id GROUP BY T3.genre_name
+SELECT keyword_name FROM keyword WHERE keyword_name LIKE '%christmas%'
+SELECT overview FROM movie WHERE title = 'The Pacifier'
+SELECT COUNT(T1.movie_id) FROM movie_languages AS T1 INNER JOIN language AS T2 ON T1.language_id = T2.language_id WHERE T2.language_code = 'vi'

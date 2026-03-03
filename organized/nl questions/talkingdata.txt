@@ -1,0 +1,119 @@
+nl_question
+What is the device id of the oldest user?
+What is the gender of the youngest user?
+What is the model of the oldest user's device?
+How many users are there in the Home Decoration category?
+How many female users use ZenFone 5 devices?
+What are the categories of the top 2 oldest events?
+How many users belong to the MOBA category?
+Describe the device user gender and age of the event ID of 15251.
+How many events did the 88-years-old male users participate on 4th May,2016?
+Describe the ages, genders and numbers of events participated by the users at coordinates of (-102,38).
+Provide the phone brands and models of the users who were at the coordinates of (80,44).
+List the included categories in the event ID of 155.
+Please list the ages of all the users who use a Galaxy Note 2.
+What is the device model of the device used by the oldest user?
+Please list the categories of the app users who are not active when event no.2 happened.
+Among all the times event no.2 happened when the app user was not active, when was the earliest time this situation happened?
+Please list the IDs of the events happened on all the vivo devices.
+Among the users who uses a vivo device, how many of them are female and under 30?
+What is the age of the youngest female user of the app?
+How many models does the VIVO phone brand released?
+List at least 15 phone models released under the OPPO brand.
+Provide the total number of the male users that use OPPO as their phone brand.
+How many male users use the Galaxy Ace Plus model?
+List at least 5 device models that are commonly used by female users.
+Give the number of "game-Fishing" apps.
+Give the number of female users of "E派" brand devices.
+What is the ID of the device used by the youngest user?
+Please list the app IDs of all the users in the Securities category.
+Among the app users who were not active when event no.2 happened, how many of them belong to the category Property Industry 1.0?
+How many categories in total do the app users who were not active when event no.2 happened belong to?
+List down the app IDs under the category of game-Rowing .
+Which phone brand and model was used for event ID "6701"?
+How many users who are under 30 years old use device model of Galaxy Note 2?
+How many female users use device model of MI 3?
+Among the users who are above 20, how many users use device model of ELIFE E7 Mini?
+Give the number of male users who use phone branded HTC.
+How many users who are between 20 and 60 use phone brand of TCL?
+How many women have apps from the game-Finding fault category installed on their device?
+Please list any three devices that are owned by female users.
+Which gender owned more of the Galaxy Note 2 device model?
+How many of the apps belong in the "Equity Fund" category?
+How many male users have a Galaxy Note 3?
+Which brand is most common among people in their twenties?
+How many active users were there in the event id 2?
+List the app users IDs and installed status for the event ID of 844.
+How many events were there on 30th April, 2016?
+How many app IDs were included under science fiction category?
+How many device users are male?
+Please list the location coordinates of all the devices with an inactive app user when event no.2 happened.
+How many events in total have happened on all the vivo devices in the year 2016?
+What is the category that the most app users belong to?
+What is the average age of all the vivo device users?
+List at least 10 device models that male users over the age of 39 usually use.
+How many users belong to "game-Art Style" category?
+Provide the number of events that happened on 2016/5/6.
+How many devices are of the brand vivo?
+Among the female users of the devices, how many of them are over 30?
+Is the oldest device user male or female?
+What is the age of the youngest female device user?
+Please list all the models of the devices used by a female user.
+What is the device model used by the most female users over 30?
+What are the top 3 categories with the most app users?
+What is the ratio of male and female users of vivo X5pro model?
+List out the time of the event id 12.
+How many labels belong to the game-card category?
+Among the male users, how many users use device model of Desire 820?
+State the number of users who are under 50 and above 20 use device model of Galaxy Premier.
+How many apps are labeled 7?
+Identify by their id all the apps that belong to the game-stress reliever category.
+How many men under the age of 23 have apps installed but are not active on their devices?
+How many users belong to the same behavior category as comics?
+How many male users have the log of events at the same longitude of 114?
+Please provide the gender of at least one user who owns an HTC Desire 826 device.
+How many OPPO devices are there?
+How many events does the device "4069764298338760000" have?
+How many male users are in the age group of M32-38?
+What are the labels' IDs of online shopping and online malls categories?
+Provide the app users IDs and time for the event ID of 82.
+Among the devices with event no.2 happening, how many of them are vivo devices?
+What is the age of the oldest male user of the app?
+How many users belong to "Financial Information" category?
+List at least 3 categories with the lowest number of users.
+Give the number of device models for "中兴" phone brand.
+How many app users belong to label ID of "48"?
+How many category names start with the word "game"?
+What are the label IDs and app IDs of the Chinese Classical Mythology category?
+Describe the number of app IDs and location of the event ID "79641".
+What is the age group of users who use phone brand of vivo?
+What is the average age of the users who use model device of R7?
+Mention the group of age of users who use phone brand of LG.
+How many different models does the HTC brand have?
+Identify by their id all the devices that are used by women who are in the age range of 29 to 31 years.
+Please list any three events that have the longitude and latitude of 0.
+Please list any five app categories that are related to games, along with their label ID.
+How many female users over the age of 50 are there?
+What were the locations of the events on 8th May, 2016?
+What are the ages and genders of the LG L70 users?
+Calculate the percentage of the app user IDs under Industry tag category.
+How many events have happened on device no.29182687948017100 in 2016?
+What is the age of the oldest device user?
+Among the female users of the devices, how many of them are under 30?
+Among the users who use a Galaxy Note 2, how many of them are female?
+How many app users belong to the category of Securities?
+Among all the users who use a vivo device, what is the percentage of the users in the M23-26 user group?
+Which group does age 24 belong to?
+Give the time stamp for event No.887711.
+How many male users of the "Galaxy S5" device model?
+Please list the location coordinates of all the Galaxy Note 2 devices when an event happened.
+Please list the models of all the devices with an event under the location coordinates (121, 31).
+Which category has more app users, Securities or Finance?
+Please list the device models of all the devices used by a user in the M23-26 user group.
+What is the average age of the female users who uses a vivo device?
+What is the ratio of the number of app users that belong to the Securities category to the number of app users that belong to the Finance category?
+What is the label ID of "Third-party card management" category?
+How many events did the device ID "3915082290673130000" join?
+How many events were participated by the users at longitude of "-156"?
+How many devices belong to model "A51"?
+Please provide the age group of any LG Nexus 4 device users.

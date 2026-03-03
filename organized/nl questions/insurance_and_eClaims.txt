@@ -1,0 +1,41 @@
+nl_question
+List the names of all the customers in alphabetical order.
+Sort the customer names in alphabetical order.
+Find all the policy type codes associated with the customer "Dayana Robel"
+What are the type codes of the policies used by the customer "Dayana Robel"?
+Which type of policy is most frequently used? Give me the policy type code.
+Find the type code of the most frequently used policy.
+Find all the policy types that are used by more than 2 customers.
+Which types of policy are chosen by more than 2 customers? Give me the policy type codes.
+Find the total and average amount paid in claim headers.
+What are the total amount and average amount paid in claim headers?
+Find the total amount claimed in the most recently created document.
+How much amount in total were claimed in the most recently created document?
+What is the name of the customer who has made the largest amount of claim in a single claim?
+Which customer made the largest amount of claim in a single claim? Return the customer details.
+What is the name of the customer who has made the minimum amount of payment in one claim?
+Which customer made the smallest amount of claim in one claim? Return the customer details.
+Find the names of customers who have no policies associated.
+What are the names of customers who do not have any policies?
+How many claim processing stages are there in total?
+Find the number of distinct stages in claim processing.
+What is the name of the claim processing stage that most of the claims are on?
+Which claim processing stage has the most claims? Show the claim status name.
+Find the names of customers whose name contains "Diana".
+Which customers have the substring "Diana" in their names? Return the customer details.
+Find the names of the customers who have an deputy policy.
+Which customers have an insurance policy with the type code "Deputy"? Give me the customer details.
+Find the names of customers who either have an deputy policy or uniformed policy.
+Which customers have an insurance policy with the type code "Deputy" or "Uniform"? Return the customer details.
+Find the names of all the customers and staff members.
+What are the names of the customers and staff members?
+Find the number of records of each policy type and its type code.
+For each policy type, return its type code and its count in the record.
+Find the name of the customer that has been involved in the most policies.
+Which customer have the most policies? Give me the customer details.
+What is the description of the claim status "Open"?
+Find the description of the claim status "Open".
+How many distinct claim outcome codes are there?
+Count the number of distinct claim outcome codes.
+Which customer is associated with the latest policy?
+Find the customer who started a policy most recently.

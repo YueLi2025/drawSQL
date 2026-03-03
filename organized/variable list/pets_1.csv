@@ -1,0 +1,15 @@
+table_name,column_name,column_type
+Has_Pet,StuID,num
+Has_Pet,PetID,num
+Pets,PetID,num
+Pets,PetType,string
+Pets,pet_age,num
+Pets,weight,num
+Student,StuID,num
+Student,LName,string
+Student,Fname,string
+Student,Age,num
+Student,Sex,string
+Student,Major,num
+Student,Advisor,num
+Student,city_code,string

@@ -1,0 +1,17 @@
+hard_templates
+SELECT col_name FROM table_name WHERE col_name > (SELECT avg(col_name) FROM table_name)
+SELECT col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT count(*) FROM table_name WHERE col_name LIKE string
+SELECT count(DISTINCT col_name) FROM table_name
+SELECT col_name FROM table_name ORDER BY col_name DESC
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY count(*) DESC LIMIT num
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name HAVING count(*) > num
+SELECT table_alias0.col_name , count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name
+SELECT count(*) FROM table_name WHERE col_name NOT IN (SELECT col_name FROM table_name)
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name BETWEEN num AND num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias2.col_name < num INTERSECT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias2.col_name > num
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias2.col_name != string

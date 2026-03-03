@@ -1,0 +1,83 @@
+nl_question
+What is the name of the oldest pilot?
+Return the name of the oldest pilot.
+What are the names of pilots whose age is below the average age, ordered by age?
+Return the names of pilots who are younger than average, ordered by age ascending.
+Find all information of on pilots whose age is less than 30.
+What is all the information about pilots who are younger than 30 ?
+Find the names of all pilots who have a plane named Piper Cub and is under 35.
+What are the names of pilots who are younger than 35 and have a plane named Piper Cub?
+Where is the plane F-14 Fighter located?
+Return the location of the hangar in which F-14 Fighter is located.
+How many different places have some plane?
+Count the number of different locations of hangars.
+Which plane does the pilot Jones with age 32 has?
+What are the names of planes that the pilot Jones who is 32 has?
+How many pilots who are older than 40?
+Count the number of pilots with age greater than 40.
+How many plane B-52 Bomber owned by the pilot who is under 35?
+Count the number of B-52 Bombers owned by pilots under 35.
+Who is the youngest pilot to fly the plane Piper Cub?
+Return the name of the youngest pilot to fly Piper Cub.
+What is the name of the most popular plane?
+What is the name of the plane that is flown the most often?
+What is the name of the least popular plane?
+What is the name of the plane that is flown the least often?
+How many pilots whose planes are in Chicago?
+Count the number of pilots who have planes in Chicago.
+What are the planes owned by pilot Smith with age 41?
+Return the names of planes owned by the pilot whose name is Smith and is 41 years old.
+How many distinct planes are owned across all pilots?
+Count the number of different plane names across all pilots.
+How many planes are owned by the pilot whose name is Smith?
+Count the number of planes Smith owns.
+How many planes are controlled by the pilots whose age is older than 40?
+Count the number of planes flown by pilots older than 40.
+Find the names of all pilots with age between 30 and 40 sorted by their ages in ascending order.
+What are the names of pilots between the ages of 30 and 40, ordered by age ascending?
+List all pilot names sorted by their ages in the descending order.
+What are the names of pilots, ordered by age descending?
+Find all locations of planes sorted by the plane name.
+What are the locations of the different planes, ordered by plane name?
+List all distinct types of planes owned by all pilots in alphabetic order?
+What are the different plane names, ordered alphabetically?
+How many pilots who are older than 40 or younger than 30?
+Count the number of pilots with age greater than 40 or less than 30.
+What are the names and ages of pilots who own plane Piper Cub and are older than 35, or have F-14 Fighter and are younger than 30?
+Return the names and ages of pilors who have flown Piper Cub and are older than 35, or have flown the F-14 Fighter and are younger than 30.
+Find pilots who own plane Piper Cub but not B-52 Bomber.
+What are the names of pilots who have flown Piper Cub but not the B-52 Bomber?
+Find pilots who own planes Piper Cub and B-52 Bomber.
+What are the names of pilots who own both Piper Cub and the B-52 Bomber?
+What are the average and smallest ages of all pilots?
+Return the average and minimum ages across all pilots.
+What are the names of pilots who have planes in both Austin and Boston?
+Give the names of pilots who have planes in Austin and Boston.
+Find the pilots who have either plane Piper Cub or plane F-14 Fighter.
+What are the names of pilots who have either the Piper Cub or the F-14 Fighter?
+What is the average age of pilots for different types of planes?
+Return the average age of pilots for each plane name.
+Find the number of planes for each type.
+Count the number of entries for each plane name.
+Find the name of the oldest pilot for each type of plane, and order the results by plane name.
+What are the different plane names, and what are the names of the oldest pilot who has each, ordered by plane name?
+What are the names of oldest pilots for each type of plane?
+Return the names of the different planes, as well as the names of the oldest pilots who flew each.
+Find the max age for each group of pilots with the same name.
+What are the different pilot names, and what are the maximum ages of pilots for each?
+For each city, find the number and average age of pilots who have a plane.
+What are the different hangar locations and how many pilots correspond to each. Also, what are their average ages?
+Find the number of pilots for the plane types with average pilot age below 35.
+What are the different plane names of planes with an average pilot age of below 35, and how many pilots have flown each of them?
+Find the location of the plane that is owned by the youngest pilot.
+What is the location of the plane that was flown by the pilot with the lowest age?
+Find the name and age of pilots who have a plane in Austin.
+What are the names and ages of pilots who have planes located in Austin?
+List in alphabetic order the names of pilots whose age is greater than some pilots having plane Piper Cub.
+Return the names of pilots who are older than any pilot who has flown Piper Cub, ordered alphabetically.
+Find the number of pilots whose age is younger than all pilots whose plane is F-14 Fighter.
+How many pilots are younger than all pilots who own the F-14 Fighter?
+Find all different planes whose names contain substring 'Bomber'.
+What are the different plane names that contain the word Bomber?
+Find the number of all pilots whose age is older than some pilot who has plane Piper Cub.
+How many pilots are older than the youngest pilot who has Piper Cub?

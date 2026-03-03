@@ -1,0 +1,17 @@
+nl_question
+How many ships ended up being 'Captured'?
+List the name and tonnage ordered by in descending alphaetical order for the names.
+List the name, date and result of each battle.
+What is maximum and minimum death toll caused each time?
+What is the average number of injuries caused each time?
+What are the death and injury situations caused by the ship with tonnage 't'?
+What are the name and results of the battles when the bulgarian commander is not 'Boril'
+What are the different ids and names of the battles that lost any 'Brig' type shipes?
+What are the ids and names of the battles that led to more than 10 people killed in total.
+What is the ship id and name that caused most total injuries?
+What are the distinct battle names which are between bulgarian commander 'Kaloyan' and latin commander 'Baldwin I'?
+How many different results are there for the battles?
+How many battles did not lose any ship with tonnage '225'?
+List the name and date the battle that has lost the ship named 'Lettice' and the ship named 'HMS Atalanta'
+Show names, results and bulgarian commanders of the battles with no ships lost in the 'English Channel'.
+What are the notes of the death events which has substring 'East'?

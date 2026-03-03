@@ -1,0 +1,10 @@
+table_name,column_name,column_type
+book,Book_ID,num
+book,Title,string
+book,Issues,num
+book,Writer,string
+publication,Publication_ID,num
+publication,Book_ID,num
+publication,Publisher,string
+publication,Publication_Date,string
+publication,Price,num

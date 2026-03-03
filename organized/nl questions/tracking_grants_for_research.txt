@@ -1,0 +1,79 @@
+nl_question
+What are the distinct grant amount for the grants where the documents were sent before '1986-08-26 20:49:27' and grant were ended after '1989-03-16 18:27:16'?
+What are the different grant amounts for documents sent before '1986-08-26 20:49:27' and after the grant ended on '1989-03-16 18:27:16'?
+List the project details of the project both producing patent and paper as outcomes.
+What are the details of the project that is producing both patents and papers as outcomes?
+What is the total grant amount of the organisations described as research?
+What is the total amount of grant money for research?
+List from which date and to which date these staff work: project staff of the project which hires the most staffs
+From what date and to what date do the staff work on a project that has the most staff and has staff in a leader role?
+Find the organisation ids and details of the organisations which are involved in
+What are the ids and details for all organizations that have grants of more than 6000 dollars?
+What is the organisation type and id of the organisation which has the most number of research staff?
+What is the type and id of the organization that has the most research staff?
+Which organisation type hires most research staff?
+What is the type of the organization with the most research staff?
+Find out the send dates of the documents with the grant amount of more than 5000 were granted by organisation type described
+What are the send dates for all documents that have a grant amount of more than 5000 and are involved in research?
+What are the response received dates for the documents described as 'Regular' or granted with more than 100?
+What is the response received date for the document described as Regular that was granted more than 100 dollars?
+List the project details of the projects which did not hire any staff for a researcher role.
+What are the details for all projects that did not hire any staff in a research role?
+What are the task details, task id and project id for the projects which are detailed as 'omnis' or  have more than 2 outcomes?
+What are the task details, task ids, and project ids for the progrects that are detailed as 'omnis' or have at least 3 outcomes?
+When do all the researcher role staff start to work, and when do they stop working?
+When did researchers start and stop working?
+How many kinds of roles are there for the staff?
+How many different roles are there on the project staff?
+What is the total amount of grants given by each organisations? Also list the organisation id.
+What is the total amount of grant money given to each organization and what is its id?
+List the project details of the projects with the research outcome described with the substring 'Published'.
+What are the details for the project whose research has been published?
+How many staff does each project has? List the project id and the number in an ascending order.
+For each project id, how many staff does it have? List them in increasing order.
+What is the complete description of the researcher role.
+What is the complete description of the job of a researcher?
+When did the first staff for the projects started working?
+When did the first staff member start working?
+Which project made the most number of outcomes? List the project details and the project id.
+What are the details and id of the project with the most outcomes?
+Which projects have no outcome? List the project details.
+What are the details of the project with no outcomes?
+Which organisation hired the most number of research staff? List the organisation id, type and detail.
+What are the ids, types, and details of the organization with the most research staff?
+Show the role description and the id of the project staff involved in most number of project outcomes?
+For each staff id, what is the description of the role that is involved with the most number of projects?
+Which document type is described with the prefix 'Initial'?
+What is the type of the document whose description starts with the word 'Initial'?
+For grants with both documents described as 'Regular' and documents described as 'Initial Application', list its start date.
+For grants that have descriptions of Regular and Initial Applications, what are their start dates?
+How many documents can one grant have at most? List the grant id and number.
+For each grant id, how many documents does it have, and which one has the most?
+Find the organisation type description of the organisation detailed as 'quo'.
+What is the type description of the organization whose detail is listed as 'quo'?
+What are all the details of the organisations described as 'Sponsor'? Sort the result in an ascending order.
+What are the details of all organizations that are described as Sponsors and sort the results in ascending order?
+How many Patent outcomes are generated from all the projects?
+How many patents outcomes were listed for all the projects?
+How many project staff worked as leaders or started working before '1989-04-24 23:51:54'?
+How many project members were leaders or started working before '1989-04-24 23:51:54'?
+What is the last date of the staff leaving the projects?
+What is the last date that a staff member left a project?
+What are the result description of the project whose detail is 'sint'?
+What is the description for the results whose project detail is 'sint'?
+List the organisation id with the maximum outcome count, and the count.
+What is the id of the organization with the maximum number of outcomes and how many outcomes are there?
+List the project details of the projects launched by the organisation
+What are the details for the projects which were launched by the organization with the most projects?
+List the research staff details, and order in ascending order.
+What details are there on the research staff? List the result in ascending alphabetical order.
+How many tasks are there in total?
+How many tasks are there?
+How many tasks does each project have? List the task count and the project detail.
+For each project id, how many tasks are there?
+What are the staff roles of the staff who
+What roles did staff members play between '2003-04-19 15:06:20' and '2016-03-15 00:33:18'?
+What are the descriptions of all the project outcomes?
+List the description of the outcomes for all projects.
+Which role is most common for the staff?
+What is the most common role for the staff?

@@ -1,0 +1,185 @@
+sql_query
+SELECT T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T1.title = 'The Illuminati'
+SELECT COUNT(*) FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T2.publisher_name = 'Thomas Nelson'
+SELECT T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id GROUP BY T2.publisher_name ORDER BY COUNT(T1.book_id) DESC LIMIT 1
+SELECT T1.title FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T2.publisher_name = 'Thomas Nelson' ORDER BY T1.publication_date ASC LIMIT 1
+SELECT COUNT(*) FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T2.publisher_name = 'Thomas Nelson' AND T1.num_pages > 300
+SELECT T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id ORDER BY T1.num_pages DESC LIMIT 1
+SELECT COUNT(*) FROM book AS T1 INNER JOIN book_language AS T2 ON T1.language_id = T2.language_id WHERE T2.language_name = 'English'
+SELECT T1.title FROM book AS T1 INNER JOIN book_language AS T2 ON T1.language_id = T2.language_id WHERE T2.language_name = 'British English'
+SELECT MIN(T2.price) FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id WHERE T1.title = 'The Little House'
+SELECT T1.title FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id INNER JOIN cust_order AS T3 ON T3.order_id = T2.order_id INNER JOIN customer AS T4 ON T4.customer_id = T3.customer_id WHERE T4.first_name = 'Lucas' AND T4.last_name = 'Wyldbore'
+SELECT COUNT(*) FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id INNER JOIN cust_order AS T3 ON T3.order_id = T2.order_id INNER JOIN customer AS T4 ON T4.customer_id = T3.customer_id WHERE T4.first_name = 'Lucas' AND T4.last_name = 'Wyldbore' AND T1.num_pages > 300
+SELECT SUM(T1.price) FROM order_line AS T1 INNER JOIN cust_order AS T2 ON T2.order_id = T1.order_id INNER JOIN customer AS T3 ON T3.customer_id = T2.customer_id WHERE T3.first_name = 'Lucas' AND T3.last_name = 'Wyldbore'
+SELECT SUM(T1.price) / COUNT(*) FROM order_line AS T1 INNER JOIN cust_order AS T2 ON T2.order_id = T1.order_id INNER JOIN customer AS T3 ON T3.customer_id = T2.customer_id WHERE T3.first_name = 'Lucas' AND T3.last_name = 'Wyldbore'
+SELECT CAST(SUM(CASE WHEN T1.price > 13 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM order_line AS T1 INNER JOIN cust_order AS T2 ON T2.order_id = T1.order_id INNER JOIN customer AS T3 ON T3.customer_id = T2.customer_id WHERE T3.first_name = 'Lucas' AND T3.last_name = 'Wyldbore'
+SELECT COUNT(*) FROM customer AS T1 INNER JOIN cust_order AS T2 ON T1.customer_id = T2.customer_id WHERE T1.first_name = 'Cordy' AND T1.last_name = 'Dumbarton'
+SELECT T1.title FROM book AS T1 INNER JOIN book_language AS T2 ON T1.language_id = T2.language_id WHERE T2.language_name = 'Japanese' ORDER BY T1.publication_date ASC LIMIT 1
+SELECT T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id GROUP BY T2.publisher_name ORDER BY COUNT(T2.publisher_id) DESC LIMIT 1
+SELECT COUNT(T1.book_id) FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T2.publisher_name = 'Kensington'
+SELECT T2.language_name FROM book AS T1 INNER JOIN book_language AS T2 ON T1.language_id = T2.language_id WHERE T1.book_id = 1405
+SELECT T1.first_name, T1.last_name FROM customer AS T1 INNER JOIN cust_order AS T2 ON T1.customer_id = T2.customer_id GROUP BY T1.first_name, T1.last_name ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T1.title FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id GROUP BY T1.title ORDER BY COUNT(T1.title) DESC LIMIT 1
+SELECT COUNT(T1.title) FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T3.author_name = 'David Foster Wallace'
+SELECT COUNT(*) FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id WHERE T1.title = 'O Xará'
+SELECT COUNT(*) FROM country AS T1 INNER JOIN address AS T2 ON T1.country_id = T2.country_id WHERE T1.country_name = 'Ukraine'
+SELECT T1.country_name FROM country AS T1 INNER JOIN address AS T2 ON T1.country_id = T2.country_id WHERE T2.city = 'Žirovnica'
+SELECT CAST(SUM(CASE WHEN T1.method_name = 'International' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM shipping_method AS T1 INNER JOIN cust_order AS T2 ON T1.method_id = T2.shipping_method_id WHERE T2.order_date LIKE '2022-11-10%'
+SELECT AVG(T1.num_pages) FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T3.author_name = 'David Coward'
+SELECT method_name FROM shipping_method ORDER BY cost ASC LIMIT 1
+SELECT title FROM book WHERE STRFTIME('%Y', publication_date) = '1900' ORDER BY publication_date LIMIT 1
+SELECT T1.first_name, T1.last_name FROM customer AS T1 INNER JOIN cust_order AS T2 ON T1.customer_id = T2.customer_id GROUP BY T1.first_name, T1.last_name ORDER BY COUNT(*) DESC LIMIT 1
+SELECT COUNT(*) FROM order_status AS T1 INNER JOIN order_history AS T2 ON T1.status_id = T2.status_id INNER JOIN cust_order AS T3 ON T3.order_id = T2.order_id INNER JOIN customer AS T4 ON T4.customer_id = T3.customer_id WHERE T1.status_value = 'Returned' AND T4.first_name = 'Antonia' AND T4.last_name = 'Poltun'
+SELECT T2.method_name FROM cust_order AS T1 INNER JOIN shipping_method AS T2 ON T1.shipping_method_id = T2.method_id GROUP BY T2.method_name ORDER BY COUNT(T2.method_id) DESC LIMIT 1
+SELECT COUNT(*) FROM order_status AS T1 INNER JOIN order_history AS T2 ON T1.status_id = T2.status_id WHERE T1.status_value = 'Delivered' AND STRFTIME('%Y', T2.status_date) = '2021'
+SELECT COUNT(*) FROM author AS T1 INNER JOIN book_author AS T2 ON T1.author_id = T2.author_id WHERE T1.author_name = 'A.R. Braunmuller'
+SELECT T4.publisher_name FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id INNER JOIN publisher AS T4 ON T4.publisher_id = T1.publisher_id WHERE T3.author_name = 'Agatha Christie' ORDER BY T1.publication_date ASC LIMIT 1
+SELECT T1.title FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T3.author_name = 'Danielle Steel'
+SELECT COUNT(*) FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id INNER JOIN publisher AS T4 ON T4.publisher_id = T1.publisher_id WHERE T3.author_name = 'William Shakespeare' AND T4.publisher_name = 'Penguin Classics'
+SELECT T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id GROUP BY T2.publisher_name ORDER BY COUNT(T2.publisher_id) DESC LIMIT 1
+SELECT SUM(T3.cost) FROM customer AS T1 INNER JOIN cust_order AS T2 ON T1.customer_id = T2.customer_id INNER JOIN shipping_method AS T3 ON T3.method_id = T2.shipping_method_id WHERE T1.first_name = 'Page' AND T1.last_name = 'Holsey' AND STRFTIME('%Y', T2.order_date) = '2022'
+SELECT COUNT(*) FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T3.author_name = 'Al Gore' AND T1.num_pages < 400
+SELECT T1.title FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id ORDER BY T2.price DESC LIMIT 1
+SELECT SUM(T1.price) FROM order_line AS T1 INNER JOIN cust_order AS T2 ON T2.order_id = T1.order_id INNER JOIN customer AS T3 ON T3.customer_id = T2.customer_id WHERE T3.first_name = 'Lucas' AND T3.last_name = 'Wyldbore'
+SELECT T1.isbn13 FROM book AS T1 INNER JOIN book_language AS T2 ON T1.language_id = T2.language_id WHERE T2.language_name = 'Spanish'
+SELECT COUNT(*) FROM publisher AS T1 INNER JOIN book AS T2 ON T1.publisher_id = T2.publisher_id INNER JOIN order_line AS T3 ON T3.book_id = T2.book_id WHERE T1.publisher_name = 'Berkley' AND T3.price < 1
+SELECT T1.title FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id INNER JOIN cust_order AS T3 ON T3.order_id = T2.order_id INNER JOIN customer AS T4 ON T4.customer_id = T3.customer_id WHERE T4.first_name = 'Zia' AND T4.last_name = 'Roizin'
+SELECT T3.author_name FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id ORDER BY T1.num_pages DESC LIMIT 1
+SELECT T4.email FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id INNER JOIN cust_order AS T3 ON T3.order_id = T2.order_id INNER JOIN customer AS T4 ON T4.customer_id = T3.customer_id WHERE T1.title = 'Switch on the Night'
+SELECT T3.author_name FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id INNER JOIN publisher AS T4 ON T4.publisher_id = T1.publisher_id WHERE T4.publisher_name = 'Abrams'
+SELECT T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T1.title = 'The Illuminati'
+SELECT CAST(SUM(CASE WHEN STRFTIME('%Y', T1.publication_date) = '1992' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T3.author_name = 'Abraham Lincoln'
+SELECT T1.title, T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE STRFTIME('%Y', T1.publication_date) = '2004' AND T1.num_pages * 100 > ( SELECT AVG(num_pages) FROM book ) * 70
+SELECT T1.title FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T3.author_name = 'Orson Scott Card' AND STRFTIME('%Y', T1.publication_date) = '2001'
+SELECT T3.author_name, T1.title FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T1.num_pages > 3000
+SELECT T3.author_name FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T1.title = 'The Prophet'
+SELECT COUNT(*) FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T2.publisher_name = 'Ace Hardcover'
+SELECT T4.publisher_name FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id INNER JOIN publisher AS T4 ON T4.publisher_id = T1.publisher_id WHERE T3.author_name = 'Barry Eisler'
+SELECT COUNT(T2.book_id) FROM book_language AS T1 INNER JOIN book AS T2 ON T1.language_id = T2.language_id WHERE T1.language_name = 'Japanese'
+SELECT SUM(T1.price) FROM order_line AS T1 INNER JOIN book AS T2 ON T1.book_id = T2.book_id WHERE T2.title = 'The Prophet'
+SELECT COUNT(*) FROM cust_order AS T1 INNER JOIN customer AS T2 ON T1.customer_id = T2.customer_id WHERE T2.first_name = 'Daisey' AND T2.last_name = 'Lamball' AND STRFTIME('%Y', T1.order_date) = '2021'
+SELECT COUNT(*) FROM customer_address AS T1 INNER JOIN address AS T2 ON T2.address_id = T1.address_id INNER JOIN country AS T3 ON T3.country_id = T2.country_id WHERE T3.country_name = 'Australia'
+SELECT COUNT(*) FROM order_status AS T1 INNER JOIN order_history AS T2 ON T1.status_id = T2.status_id WHERE T1.status_value = 'Delivered' AND STRFTIME('%Y', T2.status_date) = '2019'
+SELECT T4.first_name, T4.last_name FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id INNER JOIN cust_order AS T3 ON T3.order_id = T2.order_id INNER JOIN customer AS T4 ON T4.customer_id = T3.customer_id WHERE T1.title = 'Fantasmas'
+SELECT author_name FROM author WHERE author_name LIKE 'George%'
+SELECT strftime('%Y', order_date) FROM cust_order GROUP BY strftime('%Y', order_date) ORDER BY COUNT(strftime('%Y', order_date)) DESC LIMIT 1
+SELECT SUBSTR(email, INSTR(email, '@') + 1, LENGTH(email) - INSTR(email, '@')) AS ym FROM customer GROUP BY SUBSTR(email, INSTR(email, '@') + 1, LENGTH(email) - INSTR(email, '@')) ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T2.language_name FROM book AS T1 INNER JOIN book_language AS T2 ON T1.language_id = T2.language_id GROUP BY T2.language_name ORDER BY COUNT(T2.language_name) ASC LIMIT 1
+SELECT T3.order_date FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id INNER JOIN cust_order AS T3 ON T3.order_id = T2.order_id INNER JOIN customer AS T4 ON T4.customer_id = T3.customer_id WHERE T4.first_name = 'Adrian' AND T4.last_name = 'Kunzelmann'
+SELECT COUNT(T2.country_id) FROM address AS T1 INNER JOIN country AS T2 ON T2.country_id = T1.country_id WHERE T2.country_name = 'Philippines'
+SELECT T1.author_name FROM author AS T1 INNER JOIN book_author AS T2 ON T1.author_id = T2.author_id GROUP BY T1.author_name ORDER BY COUNT(T2.author_id) DESC LIMIT 1
+SELECT T1.title FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T2.publisher_name = 'Harper Collins'
+SELECT COUNT(*) FROM order_status AS T1 INNER JOIN order_history AS T2 ON T1.status_id = T2.status_id WHERE T1.status_value = 'Returned' AND STRFTIME('%Y', T2.status_date) = '2020'
+SELECT T2.method_name FROM cust_order AS T1 INNER JOIN shipping_method AS T2 ON T1.shipping_method_id = T2.method_id GROUP BY T2.method_name ORDER BY COUNT(T2.method_id) ASC LIMIT 1, 1
+SELECT T2.title FROM order_line AS T1 INNER JOIN book AS T2 ON T1.book_id = T2.book_id GROUP BY T2.title ORDER BY COUNT(T1.book_id) DESC LIMIT 1
+SELECT T2.street_name, T2.city FROM cust_order AS T1 INNER JOIN address AS T2 ON T1.dest_address_id = T2.address_id GROUP BY T2.street_number, T2.street_name, T2.city ORDER BY COUNT(T1.dest_address_id) DESC LIMIT 1
+SELECT strftime('%J', T2.status_date) - strftime('%J', T1.order_date) FROM cust_order AS T1 INNER JOIN order_history AS T2 ON T1.order_id = T2.order_id WHERE T1.order_id = 2398
+SELECT T1.first_name, T1.last_name FROM customer AS T1 INNER JOIN customer_address AS T2 ON T1.customer_id = T2.customer_id GROUP BY T1.first_name, T1.last_name ORDER BY COUNT(T2.customer_id) DESC LIMIT 1
+SELECT T3.author_name FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T1.num_pages < ( SELECT AVG(num_pages) FROM book )
+SELECT DISTINCT T2.city FROM country AS T1 INNER JOIN address AS T2 ON T1.country_id = T2.country_id WHERE T1.country_name = 'United States of America'
+SELECT COUNT(*) FROM customer AS T1 INNER JOIN cust_order AS T2 ON T1.customer_id = T2.customer_id INNER JOIN shipping_method AS T3 ON T3.method_id = T2.shipping_method_id WHERE T1.first_name = 'Marcelia' AND T1.last_name = 'Goering' AND STRFTIME('%Y', T2.order_date) = '2021' AND T3.method_name = 'Priority'
+SELECT T2.title FROM order_line AS T1 INNER JOIN book AS T2 ON T1.book_id = T2.book_id ORDER BY T1.price DESC LIMIT 1
+SELECT MAX(T2.price) FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id WHERE T1.title = 'Bite Me If You Can (Argeneau #6)'
+SELECT T2.title FROM book_language AS T1 INNER JOIN book AS T2 ON T2.language_id = T1.language_id INNER JOIN publisher AS T3 ON T3.publisher_id = T2.publisher_id WHERE T1.language_name = 'Spanish' AND T3.publisher_name = 'Alfaguara' GROUP BY T2.title
+SELECT T2.language_name FROM book AS T1 INNER JOIN book_language AS T2 ON T1.language_id = T2.language_id ORDER BY T1.publication_date ASC LIMIT 2
+SELECT COUNT(*) FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id INNER JOIN book_author AS T3 ON T3.book_id = T1.book_id INNER JOIN author AS T4 ON T4.author_id = T3.author_id WHERE T2.publisher_name = 'Scholastic' AND T4.author_name = 'J.K. Rowling'
+SELECT T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id GROUP BY T2.publisher_name HAVING COUNT(T2.publisher_name) >= 30
+SELECT street_number FROM address
+SELECT title FROM book ORDER BY publication_date ASC LIMIT 6
+SELECT T1.city FROM address AS T1 INNER JOIN country AS T2 ON T2.country_id = T1.country_id WHERE T2.country_name = 'Costa Rica'
+SELECT DISTINCT T1.street_name FROM address AS T1 INNER JOIN customer_address AS T2 ON T1.address_id = T2.address_id INNER JOIN address_status AS T3 ON T3.status_id = T2.status_id WHERE T3.address_status = 'Inactive'
+SELECT T3.first_name, T3.last_name FROM address AS T1 INNER JOIN customer_address AS T2 ON T1.address_id = T2.address_id INNER JOIN customer AS T3 ON T3.customer_id = T2.customer_id WHERE T1.city = 'Baiyin'
+SELECT T1.email FROM customer AS T1 INNER JOIN cust_order AS T2 ON T1.customer_id = T2.customer_id INNER JOIN shipping_method AS T3 ON T3.method_id = T2.shipping_method_id WHERE T3.method_name = 'Priority'
+SELECT T2.order_id FROM order_status AS T1 INNER JOIN order_history AS T2 ON T1.status_id = T2.status_id WHERE T1.status_value = 'Cancelled'
+SELECT DISTINCT T1.status_value FROM order_status AS T1 INNER JOIN order_history AS T2 ON T1.status_id = T2.status_id INNER JOIN cust_order AS T3 ON T3.order_id = T2.order_id WHERE T3.order_date LIKE '2022-04-10%'
+SELECT MAX(T2.price) FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id WHERE T1.title = 'The Prophet'
+SELECT T1.title FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T3.author_name = 'Peter H. Smith'
+SELECT COUNT(*) FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T2.publisher_name = 'HarperCollins Publishers' AND T1.num_pages < 300
+SELECT COUNT(*) FROM book_language AS T1 INNER JOIN book AS T2 ON T1.language_id = T2.language_id WHERE T1.language_name = 'Japanese'
+SELECT AVG(T1.num_pages) FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T3.author_name = 'Jennifer Crusie'
+SELECT T3.author_name FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id ORDER BY T1.num_pages DESC LIMIT 1
+SELECT COUNT(*) FROM author AS T1 INNER JOIN book_author AS T2 ON T1.author_id = T2.author_id WHERE T1.author_name = 'Akira Watanabe'
+SELECT T3.author_name FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T1.title = 'The Mystery in the Rocky Mountains'
+SELECT T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id ORDER BY T1.publication_date ASC LIMIT 1
+SELECT SUM(CASE WHEN method_name = 'Priority' THEN cost ELSE 0 END) - SUM(CASE WHEN method_name = 'Express' THEN cost ELSE 0 END) FROM shipping_method
+SELECT COUNT(*) FROM order_status AS T1 INNER JOIN order_history AS T2 ON T1.status_id = T2.status_id WHERE T1.status_value = 'Cancelled' AND STRFTIME('%Y', T2.status_date) = '2022'
+SELECT T1.title FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T2.publisher_name = 'BBC Audiobooks'
+SELECT CAST(SUM(CASE WHEN T1.status_value = 'Returned' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM order_status AS T1 INNER JOIN order_history AS T2 ON T1.status_id = T2.status_id WHERE STRFTIME('%Y', T2.status_date) = '2022'
+SELECT CAST(SUM(CASE WHEN T2.address_status = 'Inactive' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM customer_address AS T1 INNER JOIN address_status AS T2 ON T2.status_id = T1.status_id
+SELECT T1.title FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T3.author_name = 'Tom Clancy'
+SELECT T1.title FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T3.author_name = 'Hirohiko Araki' AND T1.publication_date = '2006-06-06'
+SELECT T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T1.title = 'Hitchhiker''s Guide To The Galaxy: The Filming of the Douglas Adams classic'
+SELECT T1.title FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T2.publisher_name = 'ADV Manga'
+SELECT DISTINCT T1.first_name, T1.last_name FROM customer AS T1 INNER JOIN customer_address AS T2 ON T1.customer_id = T2.customer_id INNER JOIN address AS T3 ON T3.address_id = T2.address_id WHERE T3.street_number = 55 AND T3.street_name = 'Dorton Pass' AND T3.city = 'Huangqiao'
+SELECT T1.street_number, T1.street_name, T1.city FROM address AS T1 INNER JOIN country AS T2 ON T2.country_id = T1.country_id WHERE T2.country_name = 'Poland' LIMIT 10
+SELECT T3.method_name FROM cust_order AS T1 INNER JOIN customer AS T2 ON T1.customer_id = T2.customer_id INNER JOIN shipping_method AS T3 ON T3.method_id = T1.shipping_method_id WHERE T2.first_name = 'Nicolette' AND T2.last_name = 'Sadler' AND T1.order_date = '2020-06-29 19:40:07'
+SELECT T1.title FROM book AS T1 INNER JOIN book_language AS T2 ON T1.language_id = T2.language_id WHERE T2.language_name = 'Arabic'
+SELECT T2.language_name FROM book AS T1 INNER JOIN book_language AS T2 ON T1.language_id = T2.language_id WHERE T1.title = 'El plan infinito'
+SELECT AVG(T3.num_pages) FROM book_author AS T1 INNER JOIN author AS T2 ON T1.author_id = T2.author_id INNER JOIN book AS T3 ON T3.book_id = T1.book_id WHERE T2.author_name = 'Zilpha Keatley Snyder'
+SELECT first_name, last_name FROM customer WHERE email = 'ckupis4@tamu.edu'
+SELECT COUNT(*) FROM book_author AS T1 INNER JOIN author AS T2 ON T1.author_id = T2.author_id WHERE T2.author_name = 'A.J. Ayer'
+SELECT T3.title FROM book_author AS T1 INNER JOIN author AS T2 ON T1.author_id = T2.author_id INNER JOIN book AS T3 ON T3.book_id = T1.book_id WHERE T2.author_name = 'A.J. Ayer'
+SELECT T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T1.title = 'The Season: A Candid Look at Broadway'
+SELECT CAST(SUM(CASE WHEN T1.language_name = 'English' THEN 1 ELSE 0 END) AS REAL) / COUNT(*) FROM book_language AS T1 INNER JOIN book AS T2 ON T1.language_id = T2.language_id INNER JOIN publisher AS T3 ON T3.publisher_id = T2.publisher_id WHERE T3.publisher_name = 'Carole Marsh Mysteries'
+SELECT T1.title FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T2.publisher_name = 'Free Press' AND STRFTIME('%Y', T1.publication_date) BETWEEN '1990' AND '2000' ORDER BY T1.num_pages DESC LIMIT 1
+SELECT T3.street_number, T3.street_name, T3.city FROM customer AS T1 INNER JOIN customer_address AS T2 ON T1.customer_id = T2.customer_id INNER JOIN address AS T3 ON T3.address_id = T2.address_id INNER JOIN address_status AS T4 ON T4.status_id = T2.status_id WHERE T1.first_name = 'Kandy'
+SELECT COUNT(*) FROM order_line AS T1 INNER JOIN cust_order AS T2 ON T2.order_id = T1.order_id INNER JOIN customer AS T3 ON T3.customer_id = T2.customer_id WHERE T3.first_name = 'Kandy' AND T3.last_name = 'Adamec'
+SELECT COUNT(*) FROM order_status AS T1 INNER JOIN order_history AS T2 ON T1.status_id = T2.status_id WHERE T1.status_value = 'Returned' AND STRFTIME('%Y', T2.status_date) = '2022'
+SELECT T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id GROUP BY T2.publisher_name ORDER BY COUNT(T2.publisher_id) DESC LIMIT 1
+SELECT CAST(SUM(CASE WHEN T1.price > 10 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM order_line AS T1 INNER JOIN cust_order AS T2 ON T2.order_id = T1.order_id INNER JOIN customer AS T3 ON T3.customer_id = T2.customer_id WHERE T3.first_name = 'Ruthanne' AND T3.last_name = 'Vatini'
+SELECT T1.title FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T2.publisher_name = 'AK Press'
+SELECT T3.first_name, T3.last_name FROM order_line AS T1 INNER JOIN cust_order AS T2 ON T2.order_id = T1.order_id INNER JOIN customer AS T3 ON T3.customer_id = T2.customer_id ORDER BY T1.price ASC LIMIT 1
+SELECT T1.isbn13 FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id INNER JOIN cust_order AS T3 ON T3.order_id = T2.order_id INNER JOIN customer AS T4 ON T4.customer_id = T3.customer_id WHERE T4.email = 'fsier3e@ihg.com'
+SELECT DISTINCT T3.author_name FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id INNER JOIN order_line AS T4 ON T4.book_id = T1.book_id WHERE T4.price > 19
+SELECT T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T1.isbn13 = 76092025986
+SELECT T2.price FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id WHERE T1.isbn13 = 9780763628321
+SELECT T1.num_pages FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id WHERE T2.order_id = 1167
+SELECT DISTINCT T1.title FROM book AS T1 INNER JOIN book_language AS T2 ON T1.language_id = T2.language_id WHERE T2.language_name = 'British English'
+SELECT COUNT(*) FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T2.publisher_name = 'Brava' AND STRFTIME('%Y', T1.publication_date) = '2006'
+SELECT T1.title FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id WHERE T2.order_id = 931
+SELECT T2.language_name FROM book AS T1 INNER JOIN book_language AS T2 ON T1.language_id = T2.language_id WHERE T1.title = 'Zorro'
+SELECT DISTINCT T3.email FROM order_line AS T1 INNER JOIN cust_order AS T2 ON T2.order_id = T1.order_id INNER JOIN customer AS T3 ON T3.customer_id = T2.customer_id WHERE T1.price BETWEEN 3 AND 5
+SELECT T1.isbn13 FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id WHERE T2.price = 7.5
+SELECT T4.publisher_name FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id INNER JOIN publisher AS T4 ON T4.publisher_id = T1.publisher_id WHERE T3.author_name = 'Alan Lee' GROUP BY T4.publisher_name
+SELECT SUM(T1.num_pages) FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id INNER JOIN cust_order AS T3 ON T3.order_id = T2.order_id INNER JOIN customer AS T4 ON T4.customer_id = T3.customer_id WHERE T4.first_name = 'Mick' AND T4.last_name = 'Sever'
+SELECT T3.author_name FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id ORDER BY T1.publication_date DESC LIMIT 1
+SELECT SUM(CASE WHEN T1.num_pages < 500 THEN 1 ELSE 0 END) - SUM(CASE WHEN T1.num_pages > 500 THEN 1 ELSE 0 END) AS dif FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id WHERE T2.price < 1
+SELECT DISTINCT T3.language_name, T2.title FROM order_line AS T1 INNER JOIN book AS T2 ON T1.book_id = T2.book_id INNER JOIN book_language AS T3 ON T3.language_id = T2.language_id WHERE T1.price * 100 < ( SELECT AVG(price) FROM order_line ) * 20
+SELECT city FROM address WHERE address_id = 547
+SELECT first_name, last_name FROM customer WHERE email = 'aalleburtonkc@yellowbook.com'
+SELECT COUNT(*) FROM country AS T1 INNER JOIN address AS T2 ON T1.country_id = T2.country_id INNER JOIN cust_order AS T3 ON T3.dest_address_id = T2.address_id WHERE T1.country_name = 'Iran' AND STRFTIME('%Y', T3.order_date) = '2022'
+SELECT COUNT(*) FROM customer AS T1 INNER JOIN cust_order AS T2 ON T1.customer_id = T2.customer_id INNER JOIN shipping_method AS T3 ON T3.method_id = T2.shipping_method_id WHERE T1.first_name = 'Daisey' AND T1.last_name = 'Lamball' AND T3.method_name = 'International'
+SELECT publisher_name FROM publisher WHERE publisher_id = 22
+SELECT T3.author_name, T4.publisher_name FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id INNER JOIN publisher AS T4 ON T4.publisher_id = T1.publisher_id WHERE T1.publication_date = '1997-07-10'
+SELECT T2.language_name FROM book AS T1 INNER JOIN book_language AS T2 ON T1.language_id = T2.language_id WHERE T1.isbn13 = 23755004321
+SELECT street_name FROM address WHERE city = 'Dallas'
+SELECT COUNT(*) FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T3.author_name = 'Orson Scott Card'
+SELECT CAST(SUM(CASE WHEN T2.method_name = 'International' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM cust_order AS T1 INNER JOIN shipping_method AS T2 ON T1.shipping_method_id = T2.method_id WHERE STRFTIME('%Y', T1.order_date) = '2020'
+SELECT AVG(price) FROM order_line
+SELECT COUNT(*) FROM publisher WHERE publisher_name LIKE '%book%'
+SELECT COUNT(*) FROM customer_address AS T1 INNER JOIN address_status AS T2 ON T1.status_id = T2.status_id WHERE T2.address_status = 'Inactive'
+SELECT COUNT(*) FROM author WHERE author_name LIKE 'Adam%'
+SELECT COUNT(*) FROM customer WHERE email LIKE '%@yahoo.com'
+SELECT isbn13 FROM book WHERE num_pages < 140 AND num_pages > 135
+SELECT COUNT(*) FROM cust_order WHERE order_date LIKE '2020-12%'
+SELECT T1.order_date FROM cust_order AS T1 INNER JOIN address AS T2 ON T1.dest_address_id = T2.address_id WHERE T2.street_number = 460
+SELECT T1.order_date FROM cust_order AS T1 INNER JOIN order_line AS T2 ON T1.order_id = T2.order_id WHERE T2.price = 16.54
+SELECT CAST(SUM(CASE WHEN T3.method_name = 'International' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM customer AS T1 INNER JOIN cust_order AS T2 ON T1.customer_id = T2.customer_id INNER JOIN shipping_method AS T3 ON T3.method_id = T2.shipping_method_id WHERE T1.first_name = 'Kaleena'
+SELECT T3.street_number, T3.street_name, T3.city FROM customer AS T1 INNER JOIN customer_address AS T2 ON T1.customer_id = T2.customer_id INNER JOIN address AS T3 ON T3.address_id = T2.address_id INNER JOIN country AS T4 ON T4.country_id = T3.country_id WHERE T1.first_name = 'Ursola' AND T1.last_name = 'Purdy'
+SELECT num_pages FROM book WHERE title = 'Seaward'
+SELECT T3.author_name FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T1.title = 'First Things First'
+SELECT title FROM book ORDER BY num_pages DESC LIMIT 1
+SELECT T1.title FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T3.author_name = 'A.J. Ayer' ORDER BY T1.publication_date ASC LIMIT 1
+SELECT COUNT(*) FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T2.publisher_name = 'Birlinn' AND STRFTIME('%Y', T1.publication_date) = '2008' AND T1.num_pages BETWEEN 600 AND 700
+SELECT COUNT(*) FROM book WHERE publisher_id = 1929 AND num_pages > 500
+SELECT publication_date FROM book ORDER BY num_pages DESC LIMIT 1
+SELECT T1.title FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T3.author_name = 'J.K. Rowling' ORDER BY T1.publication_date ASC LIMIT 1
+SELECT title FROM book WHERE STRFTIME('%Y', publication_date) = '1995'
+SELECT COUNT(*) FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id WHERE T1.title = 'Anleitung zum Zickigsein'
+SELECT first_name, last_name FROM customer WHERE last_name LIKE 'K%'
+SELECT T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T1.title = 'Girls'' Night In'
+SELECT T2.country_name FROM address AS T1 INNER JOIN country AS T2 ON T2.country_id = T1.country_id WHERE T1.street_number = 9 AND T1.street_name = 'Green Ridge Point' AND T1.city = 'Arendal'
+SELECT T2.price FROM book AS T1 INNER JOIN order_line AS T2 ON T1.book_id = T2.book_id WHERE T1.title = 'The Servant Leader' AND STRFTIME('%Y', T1.publication_date) = '2003'
+SELECT CAST(SUM(CASE WHEN T1.language_name = 'English' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM book_language AS T1 INNER JOIN book AS T2 ON T1.language_id = T2.language_id INNER JOIN publisher AS T3 ON T3.publisher_id = T2.publisher_id WHERE T3.publisher_name = 'Ace Book'
+SELECT MIN(price) FROM order_line WHERE price <> 0
+SELECT DISTINCT T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE T1.title = 'The Secret Garden'

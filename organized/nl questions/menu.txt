@@ -1,0 +1,71 @@
+nl_question
+Which dish lasted longer, Anchovies or Fresh lobsters in every style?
+Among all the dishes that were once free, what is the name of the dish that had appeared on most menus?
+Among the menus in which the dish "Clear green turtle" had appeared, how many of them did not support taking out or booking in advance?
+Please list the names of all the dishes that appeared on the menu "Zentral Theater Terrace".
+Which dish has the highest price on the menu "Zentral Theater Terrace"? Please give its name.
+Please list the IDs of the menus that are DIYs of the restaurant and have the dish "Clear green turtle".
+Name the dishes that were on the menu page ID 174.
+What are the names of the dishes with a stable price that were created in April of 2011?
+What is the name of the menu with the highest number of pages?
+Please list the IDs of all the menus that are DIYs of the restaurant.
+To which menu does the menu page image ID5189412 belong? Please give its name.
+Which menu page has a bigger width, page 1 of "Zentral Theater Terrace" or page 1 of "Young's Hotel"?
+Which menu page of "Ritz Carlton" has the biggest height?
+Among the menu pages of "Ritz Carlton", how many of them have a width of over 1000?
+Please list the names of all the dishes on page 1 of menu ID12882.
+How many menus were used in Dutcher House?
+How many menus were created for steamship?
+How many pages were there on the menu created on 17th November 1898?
+Who is the sponsor of menu with ID 12463?
+What is the event sponsored by the Republican House?
+Where is the place that menu with ID 12472 was created for?
+What is the occasion for menu with ID 12463?
+List down the image IDs for menu located at Manhattan Hotel.
+What is the page count for menu with page ID of 130?
+List down the page numbers for menu with dishes on the right upper corner.
+How many menus were created for lunch?
+How much space does page 1 of the menu "Zentral Theater Terrace" cover?
+How many menus with the name "Waldorf Astoria" have 4 pages?
+Please list the prices of the dish "Clear green turtle" on every menu page it appeared on.
+Please list the IDs of all the menus in which the dish "Clear green turtle" had appeared.
+Among the menus in which the dish "Clear green turtle" had appeared, how many of them used the dollar as their currency?
+How many dishes are there in total in the menus with the name "Waldorf Astoria"?
+How many dishes are included in the menu page ID 144?
+How many dishes appeared on a menu more than once?
+List the dishes that appeared at the left upper corner of the CHAS.BRADLEY'S OYSTER & DINING ROOM"s sponsored menu.
+How many dishes appeared more than once on a menu?
+Which dish has the longest history?
+On 1887-07-21, what was the event that lead to the creation of menu id 21380?
+Among the menus with over 10 pages, how many of them have over 20 dishes?
+Among the menus that did not support taking out or booking in advance, how many of them were created before 1950?
+How many dishes do not have correct data for the year in which it appeared first?
+What is the highest price of the dish "Clear green turtle" on a menu page?
+What is the average page number of the menus that have the dish "Clear green turtle"?
+What is the average price of the dishes on the menu "Zentral Theater Terrace"?
+Provide the page IDs and name of the menu which had the highest page count.
+Provide the numbers of the menu item which includes Fresh lobsters in every style and location where that dish was used on a menu.
+How many percent of Bluefish dishes are located at the center of the menu page?
+List down the locations of menu sponsored by Norddeutscher Lloyd Bremen.
+State the full height and width for menu called "El Fuerte Del Palmar".
+Is "c02c9a3b-6881-7080-e040-e00a180631aa" the uuid for menu called "The Biltmore"?
+List down the name of dishes that were positioned on the left upper corner.
+Calculate the total dish count for menu with uuid of "510d47e4-2958-a3d9-e040-e00a18064a99" & "510d47e4-295a-a3d9-e040-e00a18064a99".
+Calculate the total price of items for menu with ID 12882.
+Among the dishes, how many of them are for free?
+How long has the "Clear Green Turtle" dish appeared on the menu, and tell me when its latest update was?
+Tally the dishes that have appeared on the menu for more than 100 years.
+Write down the image ID, full height, and full width of the menu that were used in the "100TH ANNIVERSARY OF BIRTH OF DANIEL WEBSTER" event.
+Name the dishes that cost 180,000.
+What is the position coordinate on the page menu of the "Small Hominy" dish and how long did it appear?
+Calculate the image area of the page menu for the dish named "Baked Stuffed Mullet & Sauce Pomard". Please include the page number and image ID.
+How many menus include puree of split peas aux croutons?
+Provide the menu page ids of all the menu that includes mashed potatoes.
+Among the menus that include milk, what is the menu page id of the menu that has the highest price?
+What are the names of the dishes shown in the lower right corner of menu page 48706?
+Among the menus that include baked apples with cream, who is the sponsor of the menu with the highest price?
+What is the ID of the menu with the most number of dishes?
+How many dishes are there on the menu "Zentral Theater Terrace"?
+Please list the page numbers of all the menu pages on which the dish "Chicken gumbo" had appeared.
+For how many times had the dish "Chicken gumbo" appeared on a menu page?
+What is the highest price of the dish "Chicken gumbo" on a menu page?

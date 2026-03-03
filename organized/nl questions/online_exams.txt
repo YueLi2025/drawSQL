@@ -1,0 +1,41 @@
+nl_question
+How many exams are there?
+Count the number of exams.
+List the distinct subject code of exams in ascending alphabetical order .
+Give me an alphabetically ordered list of the distinct subject code for exams.
+What are the names and dates of the exams with subject code that is not "Database"?
+Find the exams whose subject code is not "Database". What are the exam dates and exam names?
+List the dates of the exams with subject code containing the word "data", in descending order of dates.
+What are the dates of the exams whose subject code contains the substring "data"? Return them in descending order of dates.
+What are the type of questions and their counts?
+For each question type, return its type code and its count of occurrence.
+What are the distinct student answer texts that received comments "Normal"?
+List all the distinct student answer texts to which comments "Normal" were given?
+How many different comments are there for student answers?
+Count the number of different comments for student answers.
+List all the student answer texts in descending order of count.
+Sort the student answer texts in descending order of their frequency of occurrence.
+Please show the first names of students and the dates of their answers.
+For each student answer, find the first name of the student and the date of the answer.
+Please show the email addresses of students and the dates of their answers in descending order of dates.
+For each student answer, find the email address of the student and the date of the answer. Sort them in descending order of dates.
+Please show the least common assessment for students.
+Which assessment has the smallest frequency count?
+Please show the first names of the students that have at least two answer records.
+Which students have 2 or more answer records? Give me their first names.
+What is the most common valid answer text?
+Find the valid answer text that appeared most frequently.
+List the last names of the students whose gender is not "M".
+What are the last names of the students with gender other than "M"?
+List each gender and the corresponding number of students.
+For each gender, return the gender code and the number of students who identify as that gender.
+List the last names of the students whose gender is "F" or "M".
+Which students identify their gender as "F" or "M"? Give me their last names.
+List the first names of the students who do not have any answers.
+Which students do not have any answers? Find their first names.
+Show the student answer texts that received both "Normal" and "Absent" as comments.
+Which student answer texts were given both "Normal" and "Absent" as comments?
+Show the types of questions that have at least three questions.
+Which types of questions have 3 or more questions? Return the questions type code.
+Show all information on students.
+What is al the available information of each student?

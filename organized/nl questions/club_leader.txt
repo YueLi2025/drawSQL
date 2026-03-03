@@ -1,0 +1,18 @@
+nl_question
+How many members are there?
+List the names of members in ascending order of age.
+What are the names and nationalities of the members?
+List the names of members whose nationality is not `` England '' .
+Show the names of members whose age is either 19 or 20.
+What is the name of the oldest member?
+Show different nationalities along with the number of members of each nationality.
+Please show the most common nationality of members.
+Show the nations that have at least two members.
+Show the names of club leaders and the names of clubs they joined.
+Show the names of club leaders of clubs with overall ranking higher than 100.
+Show the names of club leaders that joined their club before 2018.
+Show the name of the leader of the club named "Houston".
+List the names of members that are not club leaders.
+Show the nations that have both members older than 22 and members younger than 19.
+What is the average age of all the club leaders?
+Which club name contains the string 'state'?

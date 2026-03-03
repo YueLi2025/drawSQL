@@ -1,0 +1,38 @@
+sql_query
+SELECT name FROM coins WHERE status = 'extinct'
+SELECT description FROM coins WHERE name = 'BitBar'
+SELECT name FROM coins WHERE date_added LIKE '2014%' AND status = 'untracked'
+SELECT name FROM coins WHERE LENGTH(tag_names) - LENGTH(replace(tag_names, ',', '')) = 2
+SELECT T1.name FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.date LIKE '2018%' AND T2.market_cap = ( SELECT MAX(market_cap) FROM historical WHERE STRFTIME('%Y', date) = '2018' )
+SELECT T2.volume_24h FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T1.name = 'Argentum' AND T2.date = '2016-10-11'
+SELECT T2.price FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T1.name = 'Zetacoin' AND T2.date BETWEEN '2013-11-01' AND '2013-11-07' UNION ALL SELECT AVG(T2.PRICE) FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T1.name = 'Zetacoin' AND T2.date BETWEEN '2013-11-01' AND '2013-11-07'
+SELECT T2.time_high, T2.time_low, T2.date FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T1.name = 'WARP' AND STRFTIME('%Y-%m', T2.date) = '2016-08'
+SELECT T2.date FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T1.name = 'DigixDAO' ORDER BY T2.price DESC LIMIT 1
+SELECT T1.name, T2.DATE, T2.price FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.percent_change_24h = ( SELECT MAX(percent_change_24h) FROM historical )
+SELECT CAST(SUM(T2.circulating_supply) AS REAL) / 12 FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T1.name = 'Frozen' AND STRFTIME('%Y', T2.date) = '2014'
+SELECT T1.NAME, MAX(T2.DATE) FROM coins AS T1 INNER JOIN historical AS T2 ON T1.ID = T2.coin_id WHERE T1.status = 'inactive' ORDER BY T2.DATE DESC LIMIT 1
+SELECT AVG(T2.price) FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T1.name = 'Bitcoin' AND STRFTIME('%Y', T2.date) = '2016'
+SELECT T2.date, T2.price FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T1.name = 'Bitcoin' ORDER BY T2.price LIMIT 1
+SELECT T1.name, T2.date FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.percent_change_1h = ( SELECT MIN(percent_change_1h) FROM historical )
+SELECT T1.name FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.date = '2013-04-28' AND T2.cmc_rank = 1
+SELECT T2.market_cap FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.date = '2013-04-28' AND T1.name = 'Bitcoin'
+SELECT T1.name FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.date = '2013-05-03' AND T2.open IS NULL
+SELECT T2.close FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.date = '2013-04-29' AND T1.name = 'Bitcoin'
+SELECT T2.time_high FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.date = '2013-04-29' AND T1.name = 'Bitcoin'
+SELECT T2.max_supply - T2.total_supply FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.date = '2013-04-28' AND T1.name = 'Bitcoin'
+SELECT T1.name FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.date = '2016-01-08' AND T2.volume_24h = ( SELECT MAX(volume_24h) FROM historical WHERE date = '2016-01-08' )
+SELECT T1.name FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.date = '2013-04-28' AND T2.total_supply > 10000000
+SELECT T1.name FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.date = '2013-04-28' AND T1.name IN ('Bitcoin', 'Litecoin') ORDER BY T2.circulating_supply DESC LIMIT 1
+SELECT AVG(T2.price) FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE STRFTIME('%Y', T2.date) = '2013' AND T1.name = 'Bitcoin'
+SELECT COUNT(id) num FROM coins WHERE STRFTIME('%Y-%m', date_added) = '2013-05' UNION ALL SELECT name FROM coins WHERE STRFTIME('%Y-%m', date_added) = '2013-05'
+SELECT T1.name FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.price = ( SELECT MAX(price) FROM historical )
+SELECT T1.name FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.date = '2013-04-29' AND T2.cmc_rank = 1
+SELECT T1.name FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.volume_24h = ( SELECT MAX(volume_24h) FROM historical )
+SELECT T1.name FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE STRFTIME('%Y-%m', T2.date) = '2013-05' AND T2.open IS NULL
+SELECT T2.date FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T1.name = 'CHNCoin' ORDER BY T2.close DESC LIMIT 1
+SELECT T2.date FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T1.name = 'Devcoin' ORDER BY T2.market_cap DESC LIMIT 1
+SELECT T1.name FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T2.date = '2014-01-01' AND T2.cmc_rank <= 5
+SELECT DISTINCT T2.date FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T1.name = 'Lebowskis' AND (T2.open IS NULL OR T2.open = 0)
+SELECT T2.date FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T1.name = 'Terracoin' ORDER BY T2.price DESC LIMIT 1
+SELECT COUNT(T2.coin_id) FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T1.name = 'Bytecoin' AND STRFTIME('%Y-%m', T2.date) = '2013-06'
+SELECT T1.NAME FROM coins AS T1 INNER JOIN historical AS T2 ON T1.ID = T2.coin_id WHERE T2.DATE = '2013-05-29' AND T2.percent_change_1h > 0

@@ -1,0 +1,69 @@
+sql_query
+SELECT count(*) FROM list
+SELECT count(*) FROM list
+SELECT lastname FROM list WHERE classroom  =  111
+SELECT lastname FROM list WHERE classroom  =  111
+SELECT firstname FROM list WHERE classroom  =  108
+SELECT firstname FROM list WHERE classroom  =  108
+SELECT DISTINCT firstname FROM list WHERE classroom  =  107
+SELECT DISTINCT firstname FROM list WHERE classroom  =  107
+SELECT DISTINCT classroom ,  grade FROM list
+SELECT DISTINCT classroom ,  grade FROM list
+SELECT DISTINCT grade FROM list WHERE classroom  =  103
+SELECT DISTINCT grade FROM list WHERE classroom  =  103
+SELECT DISTINCT grade FROM list WHERE classroom  =  105
+SELECT DISTINCT grade FROM list WHERE classroom  =  105
+SELECT DISTINCT classroom FROM list WHERE grade  =  4
+SELECT DISTINCT classroom FROM list WHERE grade  =  4
+SELECT DISTINCT classroom FROM list WHERE grade  =  5
+SELECT DISTINCT classroom FROM list WHERE grade  =  5
+SELECT DISTINCT T2.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE grade  =  5
+SELECT DISTINCT T2.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE grade  =  5
+SELECT DISTINCT T2.firstname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE grade  =  1
+SELECT DISTINCT T2.firstname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE grade  =  1
+SELECT firstname FROM teachers WHERE classroom  =  110
+SELECT firstname FROM teachers WHERE classroom  =  110
+SELECT lastname FROM teachers WHERE classroom  =  109
+SELECT lastname FROM teachers WHERE classroom  =  109
+SELECT DISTINCT firstname ,  lastname FROM teachers
+SELECT DISTINCT firstname ,  lastname FROM teachers
+SELECT DISTINCT firstname ,  lastname FROM list
+SELECT DISTINCT firstname ,  lastname FROM list
+SELECT T1.firstname ,  T1.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T2.firstname  =  "OTHA" AND T2.lastname  =  "MOYER"
+SELECT T1.firstname ,  T1.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T2.firstname  =  "OTHA" AND T2.lastname  =  "MOYER"
+SELECT T1.firstname ,  T1.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T2.firstname  =  "MARROTTE" AND T2.lastname  =  "KIRK"
+SELECT T1.firstname ,  T1.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T2.firstname  =  "MARROTTE" AND T2.lastname  =  "KIRK"
+SELECT T2.firstname ,  T2.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T1.firstname  =  "EVELINA" AND T1.lastname  =  "BROMLEY"
+SELECT T2.firstname ,  T2.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T1.firstname  =  "EVELINA" AND T1.lastname  =  "BROMLEY"
+SELECT T2.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T1.firstname  =  "GELL" AND T1.lastname  =  "TAMI"
+SELECT T2.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T1.firstname  =  "GELL" AND T1.lastname  =  "TAMI"
+SELECT count(*) FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T2.firstname  =  "LORIA" AND T2.lastname  =  "ONDERSMA"
+SELECT count(*) FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T2.firstname  =  "LORIA" AND T2.lastname  =  "ONDERSMA"
+SELECT count(*) FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T2.firstname  =  "KAWA" AND T2.lastname  =  "GORDON"
+SELECT count(*) FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T2.firstname  =  "KAWA" AND T2.lastname  =  "GORDON"
+SELECT count(*) FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T2.firstname  =  "TARRING" AND T2.lastname  =  "LEIA"
+SELECT count(*) FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T2.firstname  =  "TARRING" AND T2.lastname  =  "LEIA"
+SELECT count(*) FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T1.firstname  =  "CHRISSY" AND T1.lastname  =  "NABOZNY"
+SELECT count(*) FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T1.firstname  =  "CHRISSY" AND T1.lastname  =  "NABOZNY"
+SELECT count(*) FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T1.firstname  =  "MADLOCK" AND T1.lastname  =  "RAY"
+SELECT count(*) FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T1.firstname  =  "MADLOCK" AND T1.lastname  =  "RAY"
+SELECT DISTINCT T1.firstname ,  T1.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T1.grade  =  1 EXCEPT SELECT T1.firstname ,  T1.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T2.firstname  =  "OTHA" AND T2.lastname  =  "MOYER"
+SELECT DISTINCT T1.firstname ,  T1.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T1.grade  =  1 EXCEPT SELECT T1.firstname ,  T1.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T2.firstname  =  "OTHA" AND T2.lastname  =  "MOYER"
+SELECT DISTINCT T1.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T1.grade  =  3 AND T2.firstname != "COVIN" AND T2.lastname != "JEROME"
+SELECT DISTINCT T1.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T1.grade  =  3 AND T2.firstname != "COVIN" AND T2.lastname != "JEROME"
+SELECT grade ,  count(DISTINCT classroom) ,  count(*) FROM list GROUP BY grade
+SELECT grade ,  count(DISTINCT classroom) ,  count(*) FROM list GROUP BY grade
+SELECT classroom ,  count(DISTINCT grade) FROM list GROUP BY classroom
+SELECT classroom ,  count(DISTINCT grade) FROM list GROUP BY classroom
+SELECT classroom FROM list GROUP BY classroom ORDER BY count(*) DESC LIMIT 1
+SELECT classroom FROM list GROUP BY classroom ORDER BY count(*) DESC LIMIT 1
+SELECT classroom ,  count(*) FROM list GROUP BY classroom
+SELECT classroom ,  count(*) FROM list GROUP BY classroom
+SELECT classroom ,  count(*) FROM list WHERE grade  =  "0" GROUP BY classroom
+SELECT classroom ,  count(*) FROM list WHERE grade  =  "0" GROUP BY classroom
+SELECT classroom ,  count(*) FROM list WHERE grade  =  "4" GROUP BY classroom
+SELECT classroom ,  count(*) FROM list WHERE grade  =  "4" GROUP BY classroom
+SELECT T2.firstname ,  T2.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom GROUP BY T2.firstname ,  T2.lastname ORDER BY count(*) DESC LIMIT 1
+SELECT T2.firstname ,  T2.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom GROUP BY T2.firstname ,  T2.lastname ORDER BY count(*) DESC LIMIT 1
+SELECT count(*) ,  classroom FROM list GROUP BY classroom
+SELECT count(*) ,  classroom FROM list GROUP BY classroom

@@ -1,0 +1,99 @@
+sql_query
+SELECT COUNT(employeeNumber) FROM employees WHERE officeCode = ( SELECT officeCode FROM offices WHERE city = 'Sydney' )
+SELECT T1.employeeNumber FROM employees AS T1 INNER JOIN offices AS T2 ON T1.officeCode = T2.officeCode WHERE T1.reportsTo = 1143 AND T2.city = 'NYC'
+SELECT COUNT(T1.checkNumber) FROM payments AS T1 INNER JOIN customers AS T2 ON T1.customerNumber = T2.customerNumber WHERE customerName = 'Euro+ Shopping Channel' AND STRFTIME('%Y', T1.paymentDate) = '2004'
+SELECT T1.productName FROM products AS T1 INNER JOIN orderdetails AS T2 ON T1.productCode = T2.productCode WHERE T1.productScale = '1:18' AND T1.productLine = 'Classic Cars' GROUP BY T1.productName ORDER BY SUM(T2.quantityOrdered) DESC LIMIT 1
+SELECT COUNT(DISTINCT T1.orderNumber) FROM orderdetails AS T1 INNER JOIN orders AS T2 ON T1.orderNumber = T2.orderNumber WHERE T1.quantityOrdered * T1.priceEach > 4000 AND T2.status = 'Cancelled'
+SELECT COUNT(DISTINCT T1.orderNumber) FROM orderdetails AS T1 INNER JOIN orders AS T2 ON T1.orderNumber = T2.orderNumber WHERE T1.quantityOrdered < 30 AND STRFTIME('%Y', T2.orderDate) = '2003'
+SELECT SUM(T1.quantityOrdered * T1.priceEach) FROM orderdetails AS T1 INNER JOIN orders AS T2 ON T1.orderNumber = T2.orderNumber WHERE T2.status = 'Cancelled'
+SELECT SUM(T2.quantityOrdered * T2.priceEach) / COUNT(T3.orderNumber) FROM products AS T1 INNER JOIN orderdetails AS T2 ON T1.productCode = T2.productCode INNER JOIN orders AS T3 ON T2.orderNumber = T3.orderNumber WHERE T1.productVendor = 'Exoto Designs' AND STRFTIME('%Y', T3.orderDate) = '2005'
+SELECT DISTINCT T2.customerName FROM payments AS T1 INNER JOIN customers AS T2 ON T1.customerNumber = T2.customerNumber WHERE T1.amount > 50000
+SELECT T2.customerName, T2.phone FROM orders AS T1 INNER JOIN customers AS T2 ON T1.customerNumber = T2.customerNumber WHERE T1.status = 'Cancelled'
+SELECT T1.firstName, T1.lastName FROM employees AS T1 INNER JOIN offices AS T2 ON T1.officeCode = T2.officeCode WHERE T2.city = 'Tokyo'
+SELECT T1.email, T1.employeeNumber FROM employees AS T1 INNER JOIN offices AS T2 ON T1.officeCode = T2.officeCode WHERE T2.state = 'MA' AND T2.country = 'USA'
+SELECT T2.email, T3.country FROM customers AS T1 INNER JOIN employees AS T2 ON T1.salesRepEmployeeNumber = T2.employeeNumber INNER JOIN offices AS T3 ON T2.officeCode = T3.officeCode WHERE T3.country = 'Australia' AND T1.creditLimit < 200000 AND T2.jobTitle = 'Sales Rep'
+SELECT DISTINCT T2.email FROM customers AS T1 INNER JOIN employees AS T2 ON T1.salesRepEmployeeNumber = T2.employeeNumber WHERE T2.jobTitle = 'Sales Rep' AND T1.country = 'UK' ORDER BY T1.creditLimit LIMIT 10
+SELECT T1.email, T1.employeeNumber FROM employees AS T1 INNER JOIN offices AS T2 ON T1.officeCode = T2.officeCode WHERE T2.country = 'USA' AND T2.state = 'CA' GROUP BY T1.email, T1.officeCode
+SELECT T1.firstName, T1.lastName FROM employees AS T1 INNER JOIN offices AS T2 ON T1.officeCode = T2.officeCode WHERE T2.city = 'Boston'
+SELECT T2.email FROM customers AS T1 INNER JOIN employees AS T2 ON T1.salesRepEmployeeNumber = T2.employeeNumber WHERE T2.jobTitle = 'Sales Rep' AND T1.country = 'UK' GROUP BY T1.customerName, T2.email ORDER BY SUM(T1.creditLimit) DESC LIMIT 3
+SELECT T1.firstName, T1.lastName, T1.email FROM employees AS T1 INNER JOIN offices AS T2 ON T1.officeCode = T2.officeCode WHERE T2.city = 'Paris'
+SELECT productCode, quantityInStock FROM products WHERE productLine = 'Motorcycles' ORDER BY quantityInStock DESC LIMIT 5
+SELECT COUNT(customernumber) FROM ( SELECT customernumber FROM payments WHERE STRFTIME('%Y', paymentDate) >= '2003' AND STRFTIME('%Y', paymentDate) <= '2004' GROUP BY customernumber HAVING COUNT(customernumber) > 3 ) T
+SELECT SUM(T1.priceEach - T2.buyPrice) / COUNT(*) FROM orderdetails AS T1 INNER JOIN products AS T2 ON T1.productCode = T2.productCode WHERE T2.productName = '1937 Lincoln Berline'
+SELECT T1.checkNumber FROM payments AS T1 INNER JOIN customers AS T2 ON T1.customerNumber = T2.customerNumber WHERE T1.paymentDate >= '2003-08-01' AND T1.paymentDate <= '2004-08-30' AND T2.customerName = 'Mini Gifts Distributors Ltd.'
+SELECT SUM(T2.priceEach * T2.quantityOrdered) FROM products AS T1 INNER JOIN orderdetails AS T2 ON T1.productCode = T2.productCode INNER JOIN orders AS T3 ON T2.orderNumber = T3.orderNumber WHERE T3.status = 'Shipped' AND T3.orderDate BETWEEN '2003-01-01' AND '2004-12-31'
+SELECT T1.firstName, T1.lastName, T1.reportsTo FROM employees AS T1 INNER JOIN customers AS T2 ON T1.employeeNumber = T2.salesRepEmployeeNumber INNER JOIN payments AS T3 ON T2.customerNumber = T3.customerNumber ORDER BY T3.amount DESC LIMIT 1
+SELECT COUNT(T1.customerNumber) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.customerNumber = T2.customerNumber WHERE T2.status = 'Cancelled' AND T1.creditLimit > 115000
+SELECT T1.reportsTo FROM employees AS T1 INNER JOIN customers AS T2 ON T1.employeeNumber = T2.salesRepEmployeeNumber WHERE T2.country = 'France'
+SELECT T1.addressLine1, T1.addressLine2 FROM customers AS T1 INNER JOIN orders AS T2 ON T1.customerNumber = T2.customerNumber WHERE T2.shippedDate = '2005-04-04' AND T2.status = 'Shipped'
+SELECT T1.customerNumber FROM customers AS T1 INNER JOIN payments AS T2 ON T1.customerNumber = T2.customerNumber WHERE T1.city = 'Boston' GROUP BY T1.customerNumber ORDER BY SUM(T2.amount) / COUNT(T2.paymentDate) DESC LIMIT 1
+SELECT SUM(T2.quantityOrdered) , SUM(T2.quantityOrdered * T2.priceEach) / SUM(T2.quantityOrdered) FROM products AS T1 INNER JOIN orderdetails AS T2 ON T1.productCode = T2.productCode WHERE T1.productName = '18th Century Vintage Horse Carriage'
+SELECT T2.firstName, T2.lastName FROM customers AS T1 INNER JOIN employees AS T2 ON T1.salesRepEmployeeNumber = T2.employeeNumber WHERE T1.addressLine1 = '25 Maiden Lane' AND T1.addressLine2 = 'Floor No. 4'
+SELECT T1.addressLine1, T1.addressLine2 FROM offices AS T1 INNER JOIN employees AS T2 ON T1.officeCode = T2.officeCode WHERE T2.firstName = 'Foon Yue' AND T2.lastName = 'Tseng'
+SELECT T2.orderDate FROM orderdetails AS T1 INNER JOIN orders AS T2 ON T1.orderNumber = T2.orderNumber WHERE STRFTIME('%Y-%m-%d', T2.orderDate) = '2005-04-08' OR STRFTIME('%Y-%m-%d', T2.orderDate) = '2005-04-10' ORDER BY T1.quantityOrdered * T1.priceEach DESC LIMIT 1
+SELECT SUM(t2.quantityOrdered) FROM orderdetails AS t2 INNER JOIN ( SELECT t1.productCode FROM products AS t1 ORDER BY t1.MSRP - t1.buyPrice DESC LIMIT 1 ) AS t3 ON t2.productCode = t3.productCode
+SELECT t1.amount FROM payments AS t1 INNER JOIN customers AS t2 ON t1.customerNumber = t2.customerNumber WHERE t2.customerName = 'Petit Auto' AND t1.paymentDate = '2004-08-09'
+SELECT t2.contactFirstName, t2.contactLastName FROM payments AS t1 INNER JOIN customers AS t2 ON t1.customerNumber = t2.customerNumber WHERE t1.checkNumber = 'NR157385'
+SELECT t2.contactFirstName, t2.contactLastName FROM orders AS t1 INNER JOIN customers AS t2 ON t1.customerNumber = t2.customerNumber WHERE t1.orderNumber = '10160'
+SELECT t2.addressLine1, t2.addressLine2 FROM orders AS t1 INNER JOIN customers AS t2 ON t1.customerNumber = t2.customerNumber WHERE t1.orderNumber = '10383'
+SELECT t2.email FROM customers AS t1 INNER JOIN employees AS t2 ON t1.salesRepEmployeeNumber = t2.employeeNumber WHERE t1.customerName = 'Dragon Souveniers, Ltd.'
+SELECT COUNT(t1.customerNumber) FROM customers AS t1 INNER JOIN employees AS t2 ON t1.salesRepEmployeeNumber = t2.employeeNumber WHERE t1.country = 'France' AND t2.firstName = 'Gerard' AND t2.lastName = 'Hernandez'
+SELECT (t1.MSRP - t2.priceEach) / t1.MSRP FROM products AS t1 INNER JOIN orderdetails AS t2 ON t1.productCode = t2.productCode WHERE t1.productCode = 'S18_3482' AND t2.orderNumber = '10108'
+SELECT t2.firstName, t2.lastName FROM employees AS t1 INNER JOIN employees AS t2 ON t2.employeeNumber = t1.reportsTo WHERE t1.firstName = 'Steve' AND t1.lastName = 'Patterson'
+SELECT t2.firstName, t2.lastName FROM customers AS t1 INNER JOIN employees AS t2 ON t1.salesRepEmployeeNumber = t2.employeeNumber WHERE t1.customerName = 'Muscle Machine Inc'
+SELECT t1.customerName FROM customers AS t1 INNER JOIN employees AS t2 ON t1.salesRepEmployeeNumber = t2.employeeNumber WHERE t2.firstName = 'Steve' AND t2.lastName = 'Patterson'
+SELECT t1.phone FROM customers AS t1 INNER JOIN employees AS t2 ON t1.salesRepEmployeeNumber = t2.employeeNumber WHERE t2.firstName = 'Leslie' AND t2.lastName = 'Jennings' ORDER BY t1.creditLimit DESC LIMIT 3
+SELECT COUNT(t1.employeeNumber) FROM employees AS t1 INNER JOIN offices AS t2 ON t1.officeCode = t2.officeCode WHERE t2.country = 'USA' AND t1.jobTitle = 'Sales Rep'
+SELECT t2.addressLine1, t2.addressLine2 FROM employees AS t1 INNER JOIN offices AS t2 ON t1.officeCode = t2.officeCode WHERE t1.jobTitle = 'President'
+SELECT t2.postalCode FROM employees AS t1 INNER JOIN offices AS t2 ON t1.officeCode = t2.officeCode WHERE t1.jobTitle = 'VP Sales'
+SELECT SUM(t1.priceEach * t1.quantityOrdered) FROM orderdetails AS t1 INNER JOIN orders AS t2 ON t1.orderNumber = t2.orderNumber INNER JOIN customers AS t3 ON t2.customerNumber = t3.customerNumber WHERE t3.customerName = 'Cruz & Sons Co.' AND t2.orderDate = '2003-03-03'
+SELECT t4.productName FROM orderdetails AS t1 INNER JOIN orders AS t2 ON t1.orderNumber = t2.orderNumber INNER JOIN customers AS t3 ON t2.customerNumber = t3.customerNumber INNER JOIN products AS t4 ON t1.productCode = t4.productCode WHERE t3.customerName = 'Cruz & Sons Co.' AND t2.orderDate = '2003-03-03'
+SELECT t4.productName FROM orderdetails AS t1 INNER JOIN orders AS t2 ON t1.orderNumber = t2.orderNumber INNER JOIN customers AS t3 ON t2.customerNumber = t3.customerNumber INNER JOIN products AS t4 ON t1.productCode = t4.productCode WHERE t3.customerName = 'Cruz & Sons Co.' ORDER BY t1.priceEach * t1.quantityOrdered DESC LIMIT 1
+SELECT t.productName, t.MSRP - t.buyPrice FROM products AS t WHERE t.productLine = 'Classic Cars' ORDER BY t.MSRP - t.buyPrice DESC LIMIT 1
+SELECT t2.customerName FROM orders AS t1 INNER JOIN customers AS t2 ON t1.customerNumber = t2.customerNumber WHERE t1.status = 'In Process'
+SELECT CAST(COUNT(CASE WHEN t1.city = 'Paris' THEN t2.employeeNumber ELSE NULL END) AS REAL) * 100 / COUNT(t2.employeeNumber) FROM offices AS t1 INNER JOIN employees AS t2 ON t1.officeCode = t2.officeCode
+SELECT t2.firstName, t2.lastName, t2.reportsTo FROM offices AS t1 INNER JOIN employees AS t2 ON t1.officeCode = t2.officeCode WHERE t1.country = 'Japan'
+SELECT t4.customerName FROM products AS t1 INNER JOIN orderdetails AS t2 ON t1.productCode = t2.productCode INNER JOIN orders AS t3 ON t2.orderNumber = t3.orderNumber INNER JOIN customers AS t4 ON t3.customerNumber = t4.customerNumber WHERE t1.productName = '1939 Chevrolet Deluxe Coupe' ORDER BY t2.priceEach DESC LIMIT 1
+SELECT SUM((t1.priceEach - t2.buyPrice) * t1.quantityOrdered) FROM orderdetails AS t1 INNER JOIN products AS t2 ON t1.productCode = t2.productCode WHERE t1.orderNumber = '10100'
+SELECT t1.productName FROM products AS t1 INNER JOIN orderdetails AS t2 ON t1.productCode = t2.productCode ORDER BY t2.priceEach DESC LIMIT 3
+SELECT SUM(t2.quantityOrdered) FROM products AS t1 INNER JOIN orderdetails AS t2 ON t1.productCode = t2.productCode WHERE t1.productName = '2003 Harley-Davidson Eagle Drag Bike'
+SELECT t1.shippedDate FROM orders AS t1 INNER JOIN orderdetails AS t2 ON t1.orderNumber = t2.orderNumber ORDER BY t2.priceEach DESC LIMIT 1
+SELECT t1.orderNumber FROM orders AS t1 INNER JOIN customers AS t2 ON t1.customerNumber = t2.customerNumber WHERE t2.creditLimit = 45300
+SELECT t3.customerName, (t1.priceEach - t4.buyPrice) * t1.quantityOrdered FROM orderdetails AS t1 INNER JOIN orders AS t2 ON t1.orderNumber = t2.orderNumber INNER JOIN customers AS t3 ON t2.customerNumber = t3.customerNumber INNER JOIN products AS t4 ON t1.productCode = t4.productCode GROUP BY t3.customerName, t1.priceEach, t4.buyPrice, t1.quantityOrdered ORDER BY (t1.priceEach - t4.buyPrice) * t1.quantityOrdered DESC LIMIT 1
+SELECT STRFTIME('%Y', t1.paymentDate), COUNT(t1.customerNumber) FROM payments AS t1 WHERE t1.amount < 10000 GROUP BY STRFTIME('%Y', t1.paymentDate)
+SELECT t3.productName, SUM(t2.quantityOrdered) FROM orders AS t1 INNER JOIN orderdetails AS t2 ON t1.orderNumber = t2.orderNumber INNER JOIN products AS t3 ON t2.productCode = t3.productCode WHERE STRFTIME('%Y', t1.orderDate) = '2003' GROUP BY t3.productName ORDER BY SUM(t2.quantityOrdered) DESC LIMIT 3
+SELECT t2.customerName, t2.country FROM payments AS t1 INNER JOIN customers AS t2 ON t1.customerNumber = t2.customerNumber WHERE t1.checkNumber = 'GG31455'
+SELECT t2.productName FROM orderdetails AS t1 INNER JOIN products AS t2 ON t1.productCode = t2.productCode GROUP BY t2.productName ORDER BY SUM(t1.quantityOrdered) ASC LIMIT 5
+SELECT t1.customerName FROM customers AS t1 INNER JOIN orders AS t2 ON t1.customerNumber = t2.customerNumber WHERE t2.status = 'Disputed'
+SELECT SUM(t3.priceEach * t3.quantityOrdered) FROM customers AS t1 INNER JOIN orders AS t2 ON t1.customerNumber = t2.customerNumber INNER JOIN orderdetails AS t3 ON t2.orderNumber = t3.orderNumber INNER JOIN products AS t4 ON t3.productCode = t4.productCode WHERE t4.productLine = 'Classic Cars' AND t1.customerName = 'Land of Toys Inc.' AND t2.status = 'Shipped'
+SELECT country, COUNT(customerNumber) FROM customers GROUP BY country
+SELECT COUNT(T1.productCode) FROM orderdetails AS T1 INNER JOIN products AS T2 ON T1.productCode = T2.productCode WHERE T2.MSRP - T2.buyPrice > 100
+SELECT SUM(T1.amount) FROM payments AS T1 INNER JOIN customers AS T2 ON T1.customerNumber = T2.customerNumber WHERE T2.country = 'USA'
+SELECT T1.firstName, T1.lastName, T1.email FROM employees AS T1 INNER JOIN offices AS T2 ON T1.officeCode = T2.officeCode WHERE T2.city = 'Tokyo' AND T1.jobTitle = 'Sales Rep'
+SELECT T1.email FROM employees AS T1 INNER JOIN offices AS T2 ON T1.officeCode = T2.officeCode WHERE T1.reportsTo = 1002 AND T2.city = 'San Francisco'
+SELECT T1.email FROM employees AS T1 INNER JOIN offices AS T2 ON T1.officeCode = T2.officeCode WHERE T1.jobTitle LIKE '%Sales Manager%' AND T2.city = 'Sydney'
+SELECT phone FROM customers WHERE contactLastName LIKE 'M%' AND country != 'Germany'
+SELECT CAST(SUM(CASE WHEN customerNumber = 186 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(orderNumber) FROM orders WHERE status = 'Shipped' AND shippedDate BETWEEN '2005-01-01' AND '2005-12-31'
+SELECT SUM(T2.MSRP - T2.buyPrice) FROM productlines AS T1 INNER JOIN products AS T2 ON T1.productLine = T2.productLine WHERE T2.productVendor = 'Carousel DieCast Legends' AND T1.textDescription LIKE '%perfect holiday or anniversary gift for executives%'
+SELECT t1.textDescription FROM productlines AS t1 INNER JOIN products AS t2 ON t1.productLine = t2.productLine WHERE t2.productCode = 'S18_2949'
+SELECT t.email FROM employees t WHERE t.jobTitle = 'President'
+SELECT t1.shippedDate FROM orders AS t1 INNER JOIN customers AS t2 ON t1.customerNumber = t2.customerNumber WHERE t2.customerName = 'Cruz & Sons Co.' AND t1.orderDate = '2003-03-03'
+SELECT SUM(t.amount) FROM payments t WHERE t.customerNumber = '103'
+SELECT SUM(t.priceEach * t.quantityOrdered) FROM orderdetails t WHERE t.orderNumber = '10100'
+SELECT t5.firstName, t5.lastName, SUM(t2.quantityOrdered) FROM products AS t1 INNER JOIN orderdetails AS t2 ON t1.productCode = t2.productCode INNER JOIN orders AS t3 ON t2.orderNumber = t3.orderNumber INNER JOIN customers AS t4 ON t3.customerNumber = t4.customerNumber INNER JOIN employees AS t5 ON t4.salesRepEmployeeNumber = t5.employeeNumber WHERE t1.productName = '1969 Harley Davidson Ultimate Chopper' GROUP BY t5.lastName, t5.firstName
+SELECT t1.lastName, t1.firstName FROM employees AS t1 INNER JOIN offices AS t2 ON t1.officeCode = t2.officeCode WHERE t2.city = 'NYC' AND t1.jobTitle = 'Sales Rep'
+SELECT COUNT(t2.orderNumber) FROM customers AS t1 INNER JOIN orders AS t2 ON t1.customerNumber = t2.customerNumber WHERE t2.status = 'On Hold' AND t1.country = 'USA'
+SELECT ( SELECT COUNT(customerNumber) FROM customers WHERE creditLimit <= 100000 AND customerNumber IN ( SELECT customerNumber FROM payments WHERE STRFTIME('%Y', paymentDate) = '2004' ) ), T1.customerName FROM customers AS T1 INNER JOIN payments AS T2 ON T1.customerNumber = T2.customerNumber WHERE T1.creditLimit <= 100000 AND STRFTIME('%Y', T2.paymentDate) = '2004' GROUP BY T1.customerNumber, T1.customerName ORDER BY SUM(T2.amount) DESC LIMIT 1
+SELECT T2.productName, SUM(T1.quantityOrdered * T1.priceEach) FROM orderdetails AS T1 INNER JOIN ( SELECT productCode, productName FROM products ORDER BY MSRP - buyPrice DESC LIMIT 1 ) AS T2 ON T1.productCode = T2.productCode UNION SELECT T2.productName, SUM(quantityOrdered * priceEach) FROM orderdetails AS T1 INNER JOIN ( SELECT productCode, productName FROM products ORDER BY MSRP - buyPrice ASC LIMIT 1 ) AS T2 ON T1.productCode = T2.productCode
+SELECT SUM(T1.quantityOrdered * T1.priceEach) FROM orderdetails AS T1 INNER JOIN products AS T2 ON T1.productCode = T2.productCode WHERE T2.productLine = 'Motorcycles'
+SELECT COUNT(T2.country) FROM orders AS T1 INNER JOIN customers AS T2 ON T1.customerNumber = T2.customerNumber WHERE T1.status = 'Shipped' AND T2.country = 'France' GROUP BY T2.customerNumber HAVING COUNT(T1.status) = 2
+SELECT COUNT(creditLimit) FROM customers WHERE creditLimit < 220000 AND country = 'Norway'
+SELECT COUNT(customerNumber) FROM customers WHERE creditLimit = 0 AND country = 'Germany'
+SELECT MAX(quantityOrdered * priceEach) - AVG(priceEach) FROM orderdetails WHERE productCode IN ( SELECT productCode FROM products WHERE productLine = 'Planes' )
+SELECT COUNT(t.productCode) FROM orderdetails t WHERE t.orderNumber = '10252'
+SELECT t2.contactFirstName, t2.contactLastName FROM employees AS t1 INNER JOIN customers AS t2 ON t1.employeeNumber = t2.salesRepEmployeeNumber WHERE t1.employeeNumber = '1370' ORDER BY t2.creditLimit DESC LIMIT 1
+SELECT DISTINCT T3.lastName, T3.firstName FROM payments AS T1 INNER JOIN customers AS T2 ON T1.customerNumber = T2.customerNumber INNER JOIN employees AS T3 ON T2.salesRepEmployeeNumber = T3.employeeNumber WHERE STRFTIME('%Y', T1.paymentDate) = '2004' ORDER BY T1.amount DESC LIMIT 1
+SELECT COUNT(officeCode) FROM employees WHERE jobTitle = 'Sales Rep' AND officeCode = 1
+SELECT customerNumber FROM payments ORDER BY amount DESC LIMIT 3
+SELECT AVG(amount) FROM payments WHERE paymentDate BETWEEN '2004-01-01' AND '2004-06-30'
+SELECT t2.email FROM customers AS t1 INNER JOIN employees AS t2 ON t1.salesRepEmployeeNumber = t2.employeeNumber WHERE t1.customerName = 'Muscle Machine Inc'

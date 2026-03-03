@@ -1,0 +1,83 @@
+nl_question
+How many courses are there in total?
+Find the total number of courses offered.
+What are the descriptions of the courses with name "database"?
+Return the description for the courses named "database".
+What are the addresses of the course authors or tutors with personal name "Cathrine"
+Return the addresses of the course authors or tutors whose personal name is "Cathrine".
+List the addresses of all the course authors or tutors.
+What is the address of each course author or tutor?
+List all the login names and family names of course author and tutors.
+What are the login names and family names of course author and tutors?
+List all the dates of enrollment and completion of students.
+What are all the dates of enrollment and completion in record?
+How many distinct students are enrolled in courses?
+Find the number of distinct students enrolled in courses.
+How many distinct courses are enrolled in by students?
+Find the number of distinct courses that have enrolled students.
+Find the dates of the tests taken with result "Pass".
+Which tests have "Pass" results? Return the dates when the tests were taken.
+How many tests have result "Fail"?
+Count the number of tests with "Fail" result.
+What are the login names of the students with family name "Ward"?
+Return the login names of the students whose family name is "Ward".
+What are the dates of the latest logon of the students with family name "Jaskolski" or "Langosh"?
+Find the latest logon date of the students whose family name is "Jaskolski" or "Langosh".
+How many students have personal names that contain the word "son"?
+Find the number of students who have the word "son" in their personal names.
+List all the subject names.
+What are the names of all the subjects.
+List all the information about course authors and tutors in alphabetical order of the personal name.
+Sort the information about course authors and tutors in alphabetical order of the personal name.
+List the personal names and family names of all the students in alphabetical order of family name.
+What are the personal names and family names of the students? Sort the result in alphabetical order of the family name.
+List each test result and its count in descending order of count.
+For each distinct test result, find the number of students who got the result.
+Find the login name of the course author that teaches the course with name "advanced database".
+Which course author teaches the "advanced database" course? Give me his or her login name.
+Find the addresses of the course authors who teach the course with name "operating system" or "data structure".
+What are the addresses of the course authors who teach either "operating system" or "data structure" course.
+Find the personal name, family name, and author ID of the course author that teaches the most courses.
+What are the personal name, family name, and author ID of the course author who teaches the most courses?
+Find the addresses and author IDs of the course authors that teach at least two courses.
+Which course authors teach two or more courses? Give me their addresses and author IDs.
+Find the names of courses taught by the tutor who has personal name "Julio".
+What are the names of the courses taught by the tutor whose personal name is "Julio"?
+Find the names and descriptions of courses that belong to the subject named "Computer Science".
+What are the names and descriptions of the all courses under the "Computer Science" subject?
+Find the subject ID, subject name, and the corresponding number of available courses for each subject.
+What are the subject ID, subject name, and the number of available courses for each subject?
+Find the subject ID, name of subject and the corresponding number of courses for each subject, and sort by the course count in ascending order.
+List the subject ID, name of subject and the number of courses available for each subject in ascending order of the course counts.
+What is the date of enrollment of the course named "Spanish"?
+Find the the date of enrollment of the "Spanish" course.
+What is the name of the course that has the most student enrollment?
+Which course is enrolled in by the most students? Give me the course name.
+What are the names of the courses that have exactly 1 student enrollment?
+Find the names of the courses that have just one student enrollment.
+What are the descriptions and names of the courses that have student enrollment bigger than 2?
+Return the descriptions and names of the courses that have more than two students enrolled in.
+What is the name of each course and the corresponding number of student enrollment?
+List the name and the number of enrolled student for each course.
+What are the enrollment dates of all the tests that have result "Pass"?
+Find the enrollment date for all the tests that have "Pass" result.
+What are the completion dates of all the tests that have result "Fail"?
+Return the completion date for all the tests that have "Fail" result.
+List the dates of enrollment and completion of the student with personal name "Karson".
+On what dates did the student whose personal name is "Karson" enroll in and complete the courses?
+List the dates of enrollment and completion of the student with family name "Zieme" and personal name "Bernie".
+On what dates did the student with family name "Zieme" and personal name "Bernie" enroll in and complete the courses?
+Find the student ID and login name of the student with the most course enrollments
+What are the student ID and login name of the student who are enrolled in the most courses?
+Find the student ID and personal name of the student with at least two enrollments.
+Which student are enrolled in at least two courses? Give me the student ID and personal name.
+Find the student ID and middle name for all the students with at most two enrollments.
+What are the student IDs and middle names of the students enrolled in at most two courses?
+Find the personal names of students not enrolled in any course.
+Which students not enrolled in any course? Find their personal names.
+How many students did not have any course enrollment?
+Count the number of students who did not enroll in any course.
+Find the common login name of course authors and students.
+What are the login names used both by some course authors and some students?
+Find the common personal name of course authors and students.
+What are the personal names used both by some course authors and some students?

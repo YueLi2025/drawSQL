@@ -1,0 +1,6 @@
+sql_query
+SELECT DISTINCT T2.state, T1.ibu FROM beers AS T1 INNER JOIN breweries AS T2 ON T1.brewery_id = T2.id WHERE T1.ibu IS NOT NULL AND T1.ibu = ( SELECT MIN(ibu) FROM beers )
+SELECT T2.name, T2.city FROM beers AS T1 INNER JOIN breweries AS T2 ON T1.brewery_id = T2.id WHERE T2.state = 'NY' ORDER BY T1.ibu DESC LIMIT 1
+SELECT AVG(T1.abv) FROM beers AS T1 INNER JOIN breweries AS T2 ON T1.brewery_id = T2.id WHERE T2.name = 'Boston Beer Company' AND T1.ounces = 12
+SELECT CAST(SUM(IIF(T1.style = 'American Adjunct Lager', 1, 0)) AS REAL) * 100 / COUNT(T1.brewery_id) FROM beers AS T1 INNER JOIN breweries AS T2 ON T1.brewery_id = T2.id WHERE T2.name = 'Stevens Point Brewery'
+SELECT CAST(SUM(IIF(T2.state = 'WI', 1, 0)) AS REAL) * 100 / COUNT(T1.id) FROM beers AS T1 INNER JOIN breweries AS T2 ON T1.brewery_id = T2.id WHERE T1.style = 'American Blonde Ale'

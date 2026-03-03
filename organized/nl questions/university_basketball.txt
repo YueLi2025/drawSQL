@@ -1,0 +1,47 @@
+nl_question
+List all schools and their nicknames in the order of founded year.
+What are the different schools and their nicknames, ordered by their founding years?
+List all public schools and their locations.
+What are the public schools and what are their locations?
+When was the school with the largest enrollment founded?
+Return the founded year for the school with the largest enrollment.
+Find the founded year of the newest non public school.
+What is the founded year of the non public school that was founded most recently?
+How many schools are in the basketball match?
+Count the number of schools that have had basketball matches.
+What is the highest acc percent score in the competition?
+Return the highest acc percent across all basketball matches.
+What is the primary conference of the school that has the lowest acc percent score in the competition?
+Return the primary conference of the school with the lowest acc percentage score.
+What is the team name and acc regular season score of the school that was founded for the longest time?
+Return the name of the team and the acc during the regular season for the school that was founded the earliest.
+Find the location and all games score of the school that has Clemson as its team name.
+What are the all games score and location of the school called Clemson?
+What are the average enrollment size of the universities that are founded before 1850?
+Return the average enrollment of universities founded before 1850.
+Show the enrollment and primary_conference of the oldest college.
+What are the enrollment and primary conference for the university which was founded the earliest?
+What is the total and minimum enrollment of all schools?
+Return the total and minimum enrollments across all schools.
+Find the total student enrollment for different affiliation type schools.
+What are the total enrollments of universities of each affiliation type?
+How many schools do not participate in the basketball match?
+Count the number of universities that do not participate in the baketball match.
+Find the schools that were either founded after 1850 or public.
+What are the schools that were either founded before 1850 or are public?
+Find how many different affiliation types there are.
+Count the number of different affiliation types.
+Find how many school locations have the word 'NY'.
+How many universities have a location that contains NY?
+Find the team names of the universities whose enrollments are smaller than the average enrollment size.
+What are the names of teams from universities that have a below average enrollment?
+Find the number of universities that have over a 20000 enrollment size for each affiliation type.
+What are the different affiliations, and how many schools with each have an enrollment size of above 20000?
+Find the total number of students enrolled in the colleges that were founded after the year of 1850 for each affiliation type.
+What are the different affiliations, and what is the total enrollment of schools founded after 1850 for each enrollment type?
+What is the maximum enrollment across all schools?
+Return the maximum enrollment across all schools.
+List all information regarding the basketball match.
+What is all the information about the basketball match?
+List names of all teams in the basketball competition, ordered by all home scores in descending order.
+What are the names of all the teams in the basketball competition, sorted by all home scores in descending order?

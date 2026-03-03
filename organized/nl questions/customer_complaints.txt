@@ -1,0 +1,47 @@
+nl_question
+How many customers are there?
+Count the number of customers.
+Find the emails and phone numbers of all the customers, ordered by email address and phone number.
+What are the emails and phone numbers of all customers, sorted by email address and phone number?
+Which city has the least number of customers whose type code is "Good Credit Rating"?
+Return the city with the customer type code "Good Credit Rating" that had the fewest customers.
+List the name of all products along with the number of complaints that they have received.
+What are all the different product names, and how many complains has each received?
+Find the emails of customers who has filed a complaints of the product with the most complaints.
+What are the emails of customers who have filed complaints on the product which has had the greatest number of complaints?
+Which products has been complained by the customer who has filed least amount of complaints?
+Return the names of products that have had complaints filed by the customer who has filed the fewest complaints.
+What is the phone number of the customer who has filed the most recent complaint?
+Return the phone number of the customer who filed the complaint that was raised most recently.
+Find the email and phone number of the customers who have never filed a complaint before.
+What are the emails and phone numbers of custoemrs who have never filed a complaint?
+Find the phone number of all the customers and staff.
+What are the phone numbers of all customers and all staff members?
+What is the description of the product named "Chocolate"?
+Return the description of the product called "Chocolate".
+Find the name and category of the most expensive product.
+What is the name and category code of the product with the highest price?
+Find the prices of products which has never received a single complaint.
+What are the prices of products that have never gotten a complaint?
+What is the average price of the products for each category?
+Return the average price of products that have each category code.
+Find the last name of the staff member who processed the complaint of the cheapest product.
+What is the last name of the staff member in charge of the complaint on the product with the lowest price?
+Which complaint status has more than 3 records on file?
+Return complaint status codes have more than 3 corresponding complaints?
+Find the last name of the staff whose email address contains "wrau".
+What are the last names of staff with email addressed containing the substring "wrau"?
+How many customers are there in the customer type with the most customers?
+Count the number of customers that have the customer type that is most common.
+What is the last name of the staff who has handled the first ever complaint?
+Return the last name of the staff member who handled the complaint with the earliest date raised.
+How many distinct complaint type codes are there in the database?
+Count the number of different complaint type codes.
+Find the address line 1 and 2 of the customer with email "vbogisich@example.org".
+What are lines 1 and 2 of the addressed of the customer with the email "vbogisich@example.org"?
+Find the number of complaints with Product Failure type for each complaint status.
+Of complaints with the type code "Product Failure", how many had each different status code?
+What is first names of the top 5 staff who have handled the greatest number of complaints?
+Return the first names of the 5 staff members who have handled the most complaints.
+Which state has the most customers?
+Give the state that has the most customers.

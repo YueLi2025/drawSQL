@@ -1,0 +1,16 @@
+sql_query
+SELECT count(*) FROM debate
+SELECT Venue FROM debate ORDER BY Num_of_Audience ASC
+SELECT Date ,  Venue FROM debate
+SELECT Date FROM debate WHERE Num_of_Audience  >  150
+SELECT Name FROM  people WHERE Age  =  35 OR Age  =  36
+SELECT Party FROM people ORDER BY Age ASC LIMIT 1
+SELECT Party ,  COUNT(*) FROM people GROUP BY Party
+SELECT Party FROM people GROUP BY Party ORDER BY COUNT(*) DESC LIMIT 1
+SELECT DISTINCT Venue FROM debate
+SELECT T3.Name ,  T2.Date ,  T2.Venue FROM debate_people AS T1 JOIN debate AS T2 ON T1.Debate_ID  =  T2.Debate_ID JOIN people AS T3 ON T1.Affirmative  =  T3.People_ID
+SELECT T3.Name ,  T2.Date ,  T2.Venue FROM debate_people AS T1 JOIN debate AS T2 ON T1.Debate_ID  =  T2.Debate_ID JOIN people AS T3 ON T1.Negative  =  T3.People_ID ORDER BY T3.Name ASC
+SELECT T3.Name FROM debate_people AS T1 JOIN debate AS T2 ON T1.Debate_ID  =  T2.Debate_ID JOIN people AS T3 ON T1.Affirmative  =  T3.People_ID WHERE T2.Num_of_Audience  >  200
+SELECT T2.Name ,  COUNT(*) FROM debate_people AS T1 JOIN people AS T2 ON T1.Affirmative  =  T2.People_ID GROUP BY T2.Name
+SELECT T2.Name FROM debate_people AS T1 JOIN people AS T2 ON T1.Negative  =  T2.People_ID GROUP BY T2.Name HAVING COUNT(*)  >=  2
+SELECT Name FROM people WHERE People_id NOT IN (SELECT Affirmative FROM debate_people)

@@ -1,0 +1,91 @@
+sql_query
+SELECT title FROM pages WHERE revision = 16203226
+SELECT title FROM pages WHERE revision BETWEEN 106600 AND 106700
+SELECT AVG(T2.occurrences) FROM words AS T1 INNER JOIN biwords AS T2 ON T1.wid = T2.w1st WHERE T2.w1st = ( SELECT wid FROM words WHERE word = 'sistema' )
+SELECT title FROM pages WHERE words = ( SELECT MAX(words) FROM pages )
+SELECT occurrences FROM pages_words WHERE pid = ( SELECT pid FROM pages WHERE title = 'Llista de conflictes armats' )
+SELECT words FROM pages WHERE revision = 27457362
+SELECT page FROM pages WHERE words = ( SELECT MAX(words) FROM pages )
+SELECT T1.occurrences FROM langs_words AS T1 INNER JOIN words AS T2 ON T1.wid = T2.wid WHERE T2.word = 'nombre'
+SELECT title FROM pages WHERE revision = 106601
+SELECT T1.word FROM words AS T1 INNER JOIN langs_words AS T2 ON T1.wid = T2.wid WHERE T2.occurrences = 71303
+SELECT T1.locale FROM langs AS T1 INNER JOIN pages AS T2 ON T1.lid = T2.lid WHERE T2.title = 'Abril'
+SELECT COUNT(T2.wid) FROM pages AS T1 INNER JOIN pages_words AS T2 ON T1.pid = T2.pid WHERE T1.words = 3
+SELECT words FROM pages WHERE title = 'Asclepi'
+SELECT T2.locale FROM pages AS T1 INNER JOIN langs AS T2 ON T1.lid = T2.lid WHERE T1.title = 'Asclepi'
+SELECT T2.occurrences FROM words AS T1 INNER JOIN pages_words AS T2 ON T1.wid = T2.wid INNER JOIN pages AS T3 ON T2.pid = T3.pid WHERE T3.title = 'Àbac' AND T1.word = 'grec'
+SELECT wid FROM langs_words WHERE occurrences = ( SELECT MAX(occurrences) FROM langs_words )
+SELECT occurrences FROM words WHERE word = 'panajot'
+SELECT T2.occurrences FROM words AS T1 INNER JOIN langs_words AS T2 ON T1.wid = T2.wid WHERE T1.word = 'exemple' AND T2.lid = 1
+SELECT COUNT(lid) FROM pages WHERE lid = 1 AND words > 300 AND revision > 28330000
+SELECT COUNT(pid) FROM pages WHERE words BETWEEN 1000 AND 2000
+SELECT T1.word FROM words AS T1 INNER JOIN biwords AS T2 ON T1.wid = T2.w1st WHERE T2.w2nd = ( SELECT wid FROM words WHERE word = 'antic' )
+SELECT pages FROM langs WHERE lang = 'ca'
+SELECT page FROM pages WHERE title = 'Arqueozoologia'
+SELECT revision FROM pages WHERE words < 10 LIMIT 5
+SELECT w2nd FROM biwords WHERE w1st = ( SELECT wid FROM words WHERE word = 'john' ) LIMIT 10
+SELECT pages FROM langs WHERE lang = 'ca'
+SELECT title, revision FROM pages WHERE lid = 1 LIMIT 3
+SELECT T2.word FROM langs_words AS T1 INNER JOIN words AS T2 ON T1.wid = T2.wid WHERE T1.occurrences = ( SELECT MAX(occurrences) FROM langs_words )
+SELECT CAST(COUNT(CASE WHEN T2.words > 10000 THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T2.page) FROM langs AS T1 INNER JOIN pages AS T2 ON T1.lid = T2.lid WHERE T1.lang = 'ca'
+SELECT occurrences FROM words WHERE word = 'desena'
+SELECT COUNT(wid) FROM langs_words WHERE occurrences BETWEEN '2000' AND '5000'
+SELECT T1.locale FROM langs AS T1 INNER JOIN pages AS T2 ON T1.lid = T2.lid WHERE T2.title = 'Anys 90'
+SELECT T1.pages FROM langs AS T1 INNER JOIN langs_words AS T2 ON T1.lid = T2.lid WHERE T2.occurrences > 3000 GROUP BY T1.pages
+SELECT occurrences FROM words WHERE word = 'nombre'
+SELECT CASE WHEN ( SELECT occurrences FROM biwords WHERE w1st = ( SELECT wid FROM words WHERE word = 'àbac' ) AND w2nd = ( SELECT wid FROM words WHERE word = 'xinès' ) ) > ( SELECT occurrences FROM biwords WHERE w1st = ( SELECT wid FROM words WHERE word = 'àbac' ) AND w2nd = ( SELECT wid FROM words WHERE word = 'grec' ) ) THEN 'àbac-xinès' ELSE 'àbac-grec' END AS CALUS FROM words LIMIT 1
+SELECT occurrences - ( SELECT occurrences FROM biwords WHERE w1st = ( SELECT wid FROM words WHERE word = 'àbac' ) AND w2nd = ( SELECT wid FROM words WHERE word = 'xinès' ) ) AS CALUS FROM words WHERE word = 'àbac'
+SELECT T1.word FROM words AS T1 INNER JOIN langs_words AS T2 ON T1.wid = T2.wid WHERE T2.occurrences = 274499 AND T2.lid = 1
+SELECT title FROM pages WHERE words < 10
+SELECT page FROM pages WHERE title LIKE 'Art%' OR title LIKE '%Art%' OR title LIKE '%Art'
+SELECT T2.wid, T2.occurrences FROM pages AS T1 INNER JOIN pages_words AS T2 ON T1.pid = T2.pid WHERE T1.title = 'Abadia' ORDER BY T2.occurrences DESC LIMIT 1
+SELECT SUM(words) FROM pages WHERE title IN ('Adam', 'Acampada')
+SELECT CAST(COUNT(CASE WHEN occurrences > 16000 THEN lid ELSE NULL END) AS REAL) * 100 / COUNT(lid) FROM langs_words
+SELECT pages FROM langs
+SELECT title FROM pages WHERE revision = 28040864
+SELECT CASE WHEN ( SELECT words FROM pages WHERE title = 'Asclepi' ) > ( SELECT words FROM pages WHERE title = 'Afluent' ) THEN 'Asclepi' ELSE 'Afluent' END
+SELECT wid FROM words WHERE word = 'periodograma'
+SELECT COUNT(lid) FROM pages WHERE lid = 1 AND words > 4000
+SELECT T2.pid FROM words AS T1 INNER JOIN pages_words AS T2 ON T1.wid = T2.wid WHERE T1.word = 'decimal'
+SELECT T1.title, T2.occurrences FROM pages AS T1 INNER JOIN pages_words AS T2 ON T1.pid = T2.pid INNER JOIN words AS T3 ON T2.wid = T3.wid WHERE T3.word = 'quipu'
+SELECT wid FROM langs_words WHERE occurrences <= 10
+SELECT SUM(occurrences) FROM biwords WHERE w1st = 86 AND w2nd = 109
+SELECT title FROM pages WHERE words = ( SELECT MAX(words) FROM pages )
+SELECT pid FROM pages WHERE title LIKE 'b%'
+SELECT T1.title FROM pages AS T1 INNER JOIN pages_words AS T2 ON T1.pid = T2.pid INNER JOIN words AS T3 ON T2.wid = T3.wid WHERE T3.word = 'desena'
+SELECT T2.wid FROM pages AS T1 INNER JOIN pages_words AS T2 ON T1.pid = T2.pid WHERE T1.title = 'Sometent'
+SELECT T3.revision FROM words AS T1 INNER JOIN pages_words AS T2 ON T1.wid = T2.wid INNER JOIN pages AS T3 ON T2.pid = T3.pid WHERE T1.word = 'fresc'
+SELECT word FROM words WHERE occurrences = ( SELECT MAX(occurrences) FROM words )
+SELECT AVG(words) FROM pages WHERE title LIKE 'A%'
+SELECT CAST(COUNT(CASE WHEN w1st = w2nd THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(w1st) FROM biwords
+SELECT T3.page FROM words AS T1 INNER JOIN pages_words AS T2 ON T1.wid = T2.wid INNER JOIN pages AS T3 ON T2.pid = T3.pid WHERE T1.word = 'ripoll'
+SELECT page FROM pages WHERE title = 'Acampada'
+SELECT page FROM pages WHERE words > 300 LIMIT 3
+SELECT occurrences FROM words WHERE wid = 8
+SELECT word, wid FROM words ORDER BY occurrences DESC LIMIT 3
+SELECT T2.lang FROM biwords AS T1 INNER JOIN langs AS T2 ON T1.lid = T2.lid WHERE T1.w1st = 1 AND T1.w2nd = 616
+SELECT word FROM words WHERE wid = 8968
+SELECT SUM(T1.occurrences) FROM pages_words AS T1 INNER JOIN biwords AS T2 ON T2.w2nd = T1.wid WHERE T2.w2nd = 109 AND T2.w1st = 1 AND T1.pid = 16
+SELECT CAST(COUNT(CASE WHEN T2.occurrences < 180 THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T1.lid) FROM langs AS T1 INNER JOIN langs_words AS T2 ON T1.lid = T2.lid WHERE T1.lang = 'ca'
+SELECT COUNT(w1st) AS countwords FROM biwords WHERE occurrences > 10
+SELECT pages FROM langs WHERE lang = 'ca'
+SELECT word FROM words WHERE occurrences > 200000
+SELECT T3.title FROM words AS T1 INNER JOIN pages_words AS T2 ON T1.wid = T2.wid INNER JOIN pages AS T3 ON T2.pid = T3.pid WHERE T1.word = 'grec' AND T2.occurrences > 20
+SELECT SUM(T3.words) FROM words AS T1 INNER JOIN pages_words AS T2 ON T1.wid = T2.wid INNER JOIN pages AS T3 ON T2.pid = T3.pid WHERE T1.word = 'grec' AND T2.occurrences = 52
+SELECT occurrences FROM biwords WHERE w1st = ( SELECT wid FROM words WHERE word = 'àbac' ) AND w2nd = ( SELECT wid FROM words WHERE word = 'xinès' )
+SELECT T1.word AS W1, T3.word AS W2 FROM words AS T1 INNER JOIN biwords AS T2 ON T1.wid = T2.w1st INNER JOIN words AS T3 ON T3.wid = T2.w2nd WHERE T1.word = 'àbac'
+SELECT COUNT(T1.pages) FROM langs AS T1 INNER JOIN biwords AS T2 ON T1.lid = T2.lid WHERE T2.w1st = ( SELECT wid FROM words WHERE word = 'àbac' ) AND T2.w2nd = ( SELECT wid FROM words WHERE word = 'xinès' )
+SELECT CAST((SUM(CASE WHEN T3.title = 'Àbac' THEN T2.occurrences END) - SUM(CASE WHEN T3.title = 'Astronomia' THEN T2.occurrences END)) AS REAL) * 100 / SUM(CASE WHEN T3.title = 'Astronomia' THEN T2.occurrences END) FROM words AS T1 INNER JOIN pages_words AS T2 ON T1.wid = T2.wid INNER JOIN pages AS T3 ON T2.pid = T3.pid WHERE T1.word = 'grec'
+SELECT pages FROM langs WHERE lang = 'ca'
+SELECT w2nd FROM biwords WHERE occurrences = ( SELECT MAX(occurrences) FROM biwords )
+SELECT word FROM words WHERE occurrences = 340691
+SELECT T1.word FROM words AS T1 INNER JOIN biwords AS T2 ON T1.wid = T2.w2nd WHERE T2.occurrences = 116430
+SELECT T2.wid FROM pages AS T1 INNER JOIN pages_words AS T2 ON T1.pid = T2.pid WHERE T1.title = 'Agricultura' ORDER BY T2.occurrences DESC LIMIT 1
+SELECT SUM(T2.occurrences) FROM pages AS T1 INNER JOIN pages_words AS T2 ON T1.pid = T2.pid WHERE T1.title = 'Astre' AND T2.wid = 2823
+SELECT occurrences FROM biwords WHERE w1st = ( SELECT wid FROM words WHERE word = 'que' ) AND w2nd = ( SELECT wid FROM words WHERE word = 'gregorio' )
+SELECT COUNT(w1st) FROM biwords WHERE w2nd = ( SELECT wid FROM words WHERE word = 'base' )
+SELECT CAST(occurrences AS REAL) / ( SELECT occurrences FROM biwords WHERE w1st = ( SELECT wid FROM words WHERE word = 'a' ) AND w2nd = ( SELECT wid FROM words WHERE word = 'decimal' ) ) FROM biwords WHERE w1st = ( SELECT wid FROM words WHERE word = 'a' ) AND w2nd = ( SELECT wid FROM words WHERE word = 'base' )
+SELECT word FROM words WHERE occurrences = ( SELECT MAX(occurrences) FROM words )
+SELECT title FROM pages WHERE lid = 1 ORDER BY words DESC LIMIT 3
+SELECT COUNT(T2.w1st) FROM words AS T1 INNER JOIN biwords AS T2 ON T1.wid = T2.w2nd WHERE T1.word = 'grec'
+SELECT COUNT(T2.w2nd) FROM words AS T1 INNER JOIN biwords AS T2 ON T1.wid = T2.w1st WHERE T1.word = 'àbac' AND T2.occurrences > 10

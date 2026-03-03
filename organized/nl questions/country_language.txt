@@ -1,0 +1,41 @@
+nl_question
+How many languages are there?
+Count the number of languages.
+List the name of languages in ascending alphabetical order.
+What are the names of languages, in alphabetical order?
+What are the names of languages that contain the word "ish"?
+Return the names of langauges that contain the substring "ish".
+Show the names of countries in descending order of overall scores.
+What are the names of the countries, ordered descending by overall score?
+What is the average justice scores among countries?
+Give the average justice scores across all countries.
+What are the maximum and minimum health scores among countries that are not "Norway".
+Return the maximum and minimum health scores across all countries other than Norway.
+How many different official languages are there?
+Count the number of different official languages.
+List names of countries in descending order of education_score.
+What are the names of the countries, ordered descending by education score?
+List the name of the country with the biggest score in politics.
+What is the name of the country with the highest politics score?
+Show the names of countries and their official languages.
+What are the names of the countries, as well as the names of their official langauges?
+Show the official languages and the number of countries speaking each language.
+What are the names of the different official languages, as well as the number of countries that speak each?
+Show the official language spoken by the most number of countries.
+What is the official language that is most common?
+Show the official languages spoken by at least two countries.
+Which official languages are spoken in two or more countries?
+Show the average overall scores of countries whose official language is "English".
+What is the average overall score across countries with English as their official language?
+Show the three official languages that are most commonly spoken.
+What are the names of the three official languages spoken in the most countries?
+Show the official languages sorted in descending order by the average overall scores among countries speaking them.
+What are the names of the official languages, sorted descending by the average overall scores across the countries that correspond to each?
+Show the name of the country that has the greatest number of official languages.
+Which country has the greatest number of official languages?
+List the names of languages that are not the official language of any countries.
+What are the names of languages that are not the official language of any country?
+List the names of countries that do not have any official language.
+What are the names of countries that do not have an official language?
+Show the names of languages that are the official language for both countries with overall score greater than 95 and countries with overall score less than than 90.
+What are the names of languages that are the official language not only for countries that have an overall score of above 95, but also for countries that have an overall score below 90?

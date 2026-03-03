@@ -1,0 +1,99 @@
+nl_question
+How many allergies are there?
+How many allergy entries are there?
+How many different allergy types exist?
+How many distinct allergies are there?
+Show all allergy types.
+What are the different allergy types?
+Show all allergies and their types.
+What are the allergies and their types?
+Show all allergies with type food.
+What are all the different food allergies?
+What is the type of allergy Cat?
+What is allergy type of a cat allergy?
+How many allergies have type animal?
+How many animal type allergies exist?
+Show all allergy types and the number of allergies in each type.
+What are the allergy types and how many allergies correspond to each one?
+Which allergy type has most number of allergies?
+Which allergy type is most common?
+Which allergy type has least number of allergies?
+Which allergy type is the least common?
+How many students are there?
+What is the total number of students?
+Show first name and last name for all students.
+What are the full names of all students
+How many different advisors are listed?
+How many advisors are there?
+Show all majors.
+What are the different majors?
+Show all cities where students live.
+What cities do students live in?
+Show first name, last name, age for all female students. Their sex is F.
+What are the full names and ages for all female students whose sex is F?
+Show student ids for all male students.
+What are the student ids for all male students?
+How many students are age 18?
+How many students are 18 years old?
+Show all student ids who are older than 20.
+What are the student ids for students over 20 years old?
+Which city does the student whose last name is "Kim" live in?
+Give the city that the student whose family name is Kim lives in.
+Who is the advisor of student with ID 1004?
+Who advises student 1004?
+How many students live in HKG or CHI?
+Give the number of students living in either HKG or CHI.
+Show the minimum, average, and maximum age of all students.
+What is the minimum, mean, and maximum age across all students?
+What is the last name of the youngest student?
+Provide the last name of the youngest student.
+Show the student id of the oldest student.
+What student id corresponds to the oldest student?
+Show all majors and corresponding number of students.
+How many students are there for each major?
+Which major has most number of students?
+What is the largest major?
+Show all ages and corresponding number of students.
+How old is each student and how many students are each age?
+Show the average age for male and female students.
+What are the average ages for male and female students?
+Show all cities and corresponding number of students.
+How many students live in each city?
+Show all advisors and corresponding number of students.
+How many students does each advisor have?
+Which advisor has most number of students?
+Give the advisor with the most students.
+How many students have cat allergies?
+How many students are affected by cat allergies?
+Show all student IDs who have at least two allergies.
+What are the students ids of students who have more than one allergy?
+What are the student ids of students who don't have any allergies?
+Which students are unaffected by allergies?
+How many female students have milk or egg allergies?
+How many students who are female are allergic to milk or eggs?
+How many students have a food allergy?
+How many students are affected by food related allergies?
+Which allergy has most number of students affected?
+Which allergy is the most common?
+Show all allergies with number of students affected.
+How many students have each different allergy?
+Show all allergy type with number of students affected.
+How many students are affected by each allergy type?
+Find the last name and age of the student who has allergy to both milk and cat.
+What are the last names and ages of the students who are allergic to milk and cat?
+What are the allergies and their types that the student with first name Lisa has? And order the result by name of allergies.
+What are the allergies the girl named Lisa has? And what are the types of them? Order the result by allergy names.
+Find the first name and gender of the student who has allergy to milk but not cat.
+What are the first name and gender of the students who have allergy to milk but can put up with cats?
+Find the average age of the students who have allergies with food and animal types.
+How old are the students with allergies to food and animal types on average?
+List the first and last name of the students who do not have any food type allergy.
+What is the full name of each student who is not allergic to any type of food.
+Find the number of male (sex is 'M') students who have some food type allery.
+How many male students (sex is 'M') are allergic to any type of food?
+Find the different first names and cities of the students who have allergy to milk or cat.
+What are the distinct first names and cities of the students who have allergy either to milk or to cat?
+Find the number of students who are older than 18 and do not have allergy to either food or animal.
+How many students are over 18 and do not have allergy to food type or animal type?
+Find the first name and major of the students who are not allegry to soy.
+What are the first name and major of the students who are able to consume soy?

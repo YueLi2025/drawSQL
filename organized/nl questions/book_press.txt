@@ -1,0 +1,45 @@
+nl_question
+list all the names of press in descending order of the profit of the year.
+Sorted all the press by year profits in descending order, and return press names.
+What are the names of the publishers that made more than 15 billion profits each year or 1 billion each month?
+Find the press whose yearly profit is more than 15 billion or whose monthly profit is more than 1 billion. Return the press names.
+what are the average and maximum profit of a year for all presses?
+Find the average and maximum yearly profit for each press.
+Find the name of the publisher whose monthly profit is the highest.
+Which press has the largest monthly profit? Give me the press name.
+Find the name of the publisher whose monthly profit is the highest or the lowest.
+What are the names of the press that makes the highest monthly profit or the lowest monthly profit?
+how many authors are under age 30?
+Count the number of authors of age below 30.
+find the average age of authors for each gender.
+For each gender, return gender and the average age of authors.
+find the number of authors who are older than 30 for each gender.
+How many authors are of age above 30 for each gender?
+List all book titles in the order of their release date from the most recent to the past.
+Sort all the books in descending order of release date, and return the book titles.
+Find the number of books for each series.
+How many books does each book series have? Return the counts and book series.
+Find the titles and publish dates of the top 5 best sale books.
+What are the 5 best books in terms of sale amount? Give me their titles and release dates.
+Find the book series that have some book selling more than 1000 and some book less 500.
+Which book series contain both books with sale amount above 1000 and books with sale amount below 500?
+Find the name of authors who publish their books in both "MM" and "LT" series.
+Which authors publish books in both "MM" and "LT" series? Give me the author names.
+Find the name and age of the authors who do not have any book in the record.
+Which authors in the record have not published any books ? Give me their names .
+Find the names of authors who have more than one book in the database.
+Which authors have published more than 1 book according to the database? Give me their names.
+Find the title, author name, and publisher name for the top 3 best sales books.
+What are the 3 best selling books? Show their titles, author names, and press names.
+Find the name and total book sale amount of each press.
+What are the name and total book sale amount of each press?
+Find the number of books that are sold more than 1000 for each publisher. List the press name as well.
+For each press, return its name and the number of books that have sale amount above 1000.
+What is the name of the author of best selling book?
+Who wrote the best selling book? Give me the author name.
+find the name and gender of the author who published the most books.
+Who wrote the largest number of books? Give me the author name and gender.
+Find the names of the authors who did not have any book with the "Accor" press.
+Which authors have never published under the "Accor" press? Give me their names.
+Find the name and the yearly profit in billion for press that published more than two books.
+Find the press that published more than two books, and return its name and yearly profit in billion.

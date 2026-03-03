@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+department,Department_ID,num
+department,Name,string
+department,Creation,string
+department,Ranking,num
+department,Budget_in_Billions,num
+department,Num_Employees,num
+head,head_ID,num
+head,name,string
+head,born_state,string
+head,age,num
+management,department_ID,num
+management,head_ID,num
+management,temporary_acting,string

@@ -1,0 +1,70 @@
+nl_question
+Please list the names of all the players with a height of over 6'2" inches.
+Among the players with a height of over 6'2" inches, how many of them were born in Sweden?
+What is the name of the tallest player?
+How much does David Bornhammar weigh in kilograms?
+How many players weigh more than 90 kg?
+Among the players that weigh more than 90 kg, how many of them have a position of defense?
+What is the weight of the player with the longest time on ice in the player’s first 7 years of NHL career in kilograms?
+How much taller is David Bornhammar than Pauli Levokari in centimeters?
+Among all the players that are right-shooted, how many of them weigh over 90 kg?
+Please list the names of all the players that are over 90 kg and are right-shooted.
+What is the average height in centimeters of all the players in the position of defense?
+What is the weight in pounds of the heaviest player?
+How many right-shooted players have a height of 5'7''?
+Among the players whose total NHL games played in their first 7 years of NHL career is no less than 500, what is the name of the player who committed the most rule violations?
+How many players, who were drafted by Anaheim Ducks in 2008, have played for U.S. National U18 Team?
+What is the weight in kilograms of the player with the highest number of goal differential of all time?
+What are the names of the players who played for Acadie-Bathurst Titan during the regular season in 1998-1999?
+Who is the youngest player to have played during the 1997-1998 season for OHL League?
+What is the average weight in pounds of all the players with the highest prospects for the draft?
+Name the player who scored the most goals in a single game in the 2007-2008 season of WHL?
+Name the Chilliwack Chiefs players who have scored 100 points or more in the NHL.
+Identify the players who weigh 120 kg.
+Identify the players with the same height as Brian Gionta. How tall are they?
+Identify the name and position of the player who has committed the most rule violations.
+Name the player who has the most NHL points in draft year.
+Among all players drafted by the Toronto Maple Leafs in 2008, identify the player with the highest prospects for the draft.
+Name the player and his team who made the playoffs in the 2006-2007 season of SuperElit league with the highest points.
+Among all goals scored by Calgary Hitmen in the 2007-2008 season, identify the percentage scored by Ian Schultz.
+What is the weight in kg of Tony Martensson?
+List out the name of players who weight 190 lbs.
+Who has the heaviest weight?
+Which team does Andreas Jamtin belong to?
+List out the nation of players who played for the 1997-1998 season .
+Among the Italian players, who has the shortest height?
+List out the name of players who have a height of 5'8".
+Who among the players drafted by Arizona Coyotes in 2000 has committed the highest rule violations?
+List the names of all players from Avangard Omsk that have played for playoffs in season 2000-2001.
+Who has played the most game plays in the 2000-2001 season of the International league?
+Who is the oldest player who played for Avangard Omsk during the regular season in 2000-2001?
+Among the players who played in OHL league during the regular season in 2007-2008, who is the player that attained the most number of assist?
+Calculate the average weight in pounds of all players drafted by Arizona Coyotes.
+Calculate the average height in centimeter of all players who played in Acadie-Bathurst Titan during regular season.
+Which team has the most Swedish?
+How many playoffs did Per Mars participate in?
+Which country do most players of team Plymouth Whalers come from?
+Who had the most assists of team Plymouth Whalers in the 1999-2000 season?
+Who is the most valuable player in QMJHL league during the 2004-2005 season?
+Among all players drafted by the Toronto Maple Leafs, identify the percentage who are from Eastern Europe.
+What is the birthplace of Aaron Gagnon?
+Mention the type of game that Matthias Trattnig played.
+How many players were born in 1982 and have a height above 182cm?
+List the names of all players in team Avangard Omsk in season 2000-2001.
+How many players who were born in 1980 weigh 185 in pounds?
+List the names of all players from Avangard Omsk who played in the 2000-2001 season of the International league that have no goals in draft year.
+List the name of players who have a height over 5'9.
+Who is the tallest player in team USA U20?
+What is the height of David Bornhammar in inches?
+Among the players that weigh more than 90 kg, what is the name of the player that has the most attendance in the player's first 7 years of NHL career?
+What is the BMI of David Bornhammar?
+How many games did the tallest player have ever played?
+What is the difference in the number of goals scored by Pavel Brendl during the regular season versus the playoffs in the 1998-1999 season?
+What is the percentage of players who were born in Denmark and weight above 154 lbs?
+List out the seasons that Niklas Eckerblom played.
+How many players were drafted by Arizona Coyotes whose height reaches 195 centimeters?
+Who is the most valuable player who played in the 2000-2001 season of the International league?
+Who is the oldest player that participated in OHL league in the 1997 - 2000 season?
+How many players who were drafted by the Toronto Maple Leafs have played over 300 games in their first 7 years of the NHL career?
+What is the highest point highest point of Per Mars in the draft year?
+What team did Niklas Eckerblom play in the 1997-1998 season?

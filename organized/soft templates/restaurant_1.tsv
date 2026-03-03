@@ -1,0 +1,23 @@
+soft_templates
+SELECT ResName FROM Restaurant;
+SELECT variable FROM variable WHERE ResName = string ;
+SELECT variable FROM variable WHERE ResName = string ;
+SELECT ResTypeName FROM Restaurant_Type;
+SELECT ResTypeDescription FROM variable WHERE ResTypeName = string ;
+SELECT ResName , variable FROM variable ORDER BY variable DESC LIMIT num ;
+SELECT variable FROM variable WHERE Fname = string AND Lname = string ;
+SELECT variable FROM variable WHERE Fname = string AND Lname = string ;
+SELECT Fname , Lname FROM variable WHERE variable = num ;
+SELECT variable FROM variable WHERE Fname = string AND Lname = string ;
+SELECT count(*) FROM variable WHERE variable = num ;
+SELECT variable , count(*) FROM variable GROUP BY variable ORDER BY count( variable ) DESC LIMIT num ;
+SELECT variable , count(*) FROM variable GROUP BY variable ORDER BY count( variable ) ASC LIMIT num ;
+SELECT variable , count(*) FROM variable GROUP BY variable HAVING count( variable ) BETWEEN num AND num ;
+SELECT Fname , Lname FROM variable WHERE variable > num AND variable = num ;
+SELECT Fname , Lname FROM variable WHERE variable > num AND variable != num AND variable = string ;
+SELECT count(*) FROM variable JOIN variable ON variable = variable Restaurant_Type ON variable.col_namename.variable BY variable.col_nameable_name.col_nameng
+SELECT sum( variable ) FROM variable JOIN variable ON variable = variable.col_nameRE variable = string AND variable = string ;
+SELECT count(*) FROM variable JOIN variable ON variable = variable.col_nameN Restaurant ON variable.col_nameable_name.variable WHERE variable = string AND variable = string AND variable = string ;
+SELECT variable FROM variable JOIN variable ON variable = variable.col_nameN Restaurant ON variable.col_nameable_name.variable WHERE variable = string AND variable = string AND variable = string ;
+SELECT variable , sum(variable.col_nameOM Visits_Restaurant JOIN variable ON variable.col_nameable_name.variable GROUP BY variable ORDER BY sum(variable.col_nameC LIMIT num ;
+SELECT variable , variable FROM variable JOIN variable ON variable = variable.col_nameUP BY variable ORDER BY count(*) DESC LIMIT num ;

@@ -1,0 +1,18 @@
+nl_question
+How many roller coasters are there?
+List the names of roller coasters by ascending order of length.
+What are the lengths and heights of roller coasters?
+List the names of countries whose language is not "German".
+Show the statuses of roller coasters longer than 3300 or higher than 100.
+What are the speeds of the longest roller coaster?
+What is the average speed of roller coasters?
+Show the different statuses and the numbers of roller coasters for each status.
+Please show the most common status of roller coasters.
+List the status shared by more than two roller coaster.
+Show the park of the roller coaster with the highest speed.
+Show the names of roller coasters and names of country they are in.
+Show the names of countries that have more than one roller coaster.
+Show the name and population of the country that has the highest roller coaster.
+Show the names of countries and the average speed of roller coasters from each country.
+How many countries do not have an roller coaster longer than 3000?
+What are the country names, area and population which has both roller coasters with speed higher

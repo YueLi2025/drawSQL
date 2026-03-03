@@ -1,0 +1,49 @@
+nl_question
+Find the total number of scientists.
+How many scientists are there?
+Find the total hours of all projects.
+What is the total number of hours for all projects?
+How many different scientists are assigned to any project?
+Count the number of different scientists assigned to any project.
+Find the number of distinct projects.
+How many different projects are there?
+Find the average hours of all projects.
+What is the average hours across all projects?
+Find the name of project that continues for the longest time.
+What is the name of the project with the most hours?
+List the name of all projects that are operated longer than the average working hours of all projects.
+What are the names of projects that have taken longer than the average number of hours for all projects?
+Find the name and hours of project that has the most number of scientists.
+What is the name and hours for the project which has the most scientists assigned to it?
+Find the name of the project for which a scientist whose name contains ‘Smith’ is assigned to.
+What is the name of the project that has a scientist assigned to it whose name contains 'Smith'?
+Find the total hours of the projects that scientists named Michael Rogers or Carol Smith are assigned to.
+What is the sum of hours for projects that scientists with the name Michael Rogers or Carol Smith are assigned to?
+Find the name of projects that require between 100 and 300 hours of work.
+What are the names of projects that require between 100 and 300 hours?
+Find the name of the scientist who worked on both a project named 'Matter of Time' and a project named 'A Puzzling Parallax'.
+What are the names of any scientists who worked on projects named 'Matter of Time' and 'A Puzzling Pattern'?
+List the names of all scientists sorted in alphabetical order.
+What are the names of all the scientists in alphabetical order?
+Find the number of scientists involved for each project name.
+What are the naems of all the projects, and how many scientists were assigned to each of them?
+Find the number of scientists involved for the projects that require more than 300 hours.
+What are the names of projects that require more than 300 hours, and how many scientists are assigned to each?
+Find the number of projects which each scientist is working on and scientist's name.
+What are the names of the scientists, and how many projects are each of them working on?
+Find the SSN and name of scientists who are assigned to the project with the longest hours.
+What are the SSN and names of scientists working on the project with the most hours?
+Find the name of scientists who are assigned to some project.
+What are the names of scientists who are assigned to any project?
+Select the project names which are not assigned yet.
+What are the names of projects that have not been assigned?
+Find the name of scientists who are not assigned to any project.
+What are the names of scientists who have not been assigned a project?
+Find the number of scientists who are not assigned to any project.
+How many scientists do not have any projects assigned to them?
+Find the names of scientists who are not working on the project with the highest hours.
+What are the names of scientists who are not working on the project with the most hours?
+List all the scientists' names, their projects' names, and the hours worked by that scientist on each project, in alphabetical order of project name, and then scientist name.
+What are the names of each scientist, the names of the projects that they work on, and the hours for each of those projects, listed in alphabetical order by project name, then scientist name.
+Find name of the project that needs the least amount of time to finish and the name of scientists who worked on it.
+What is the name of the project that requires the fewest number of hours, and the names of the scientists assigned to it?

@@ -1,0 +1,61 @@
+nl_question
+What is the id of the most recent order?
+Find the id of the order made most recently.
+what are the order id and customer id of the oldest order?
+Find the order id and customer id associated with the oldest order.
+Find the id of the order whose shipment tracking number is "3452".
+Which order's shipment tracking number is "3452"? Give me the id of the order.
+Find the ids of all the order items whose product id is 11.
+Find all the order items whose product id is 11. What are the order item ids?
+List the name of all the distinct customers who have orders with status "Packing".
+Which customers have orders with status "Packing"? Give me the customer names.
+Find the details of all the distinct customers who have orders with status "On Road".
+What are the distinct customers who have orders with status "On Road"? Give me the customer details?
+What is the name of the customer who has the most orders?
+Which customer made the most orders? Find the customer name.
+What is the customer id of the customer who has the most orders?
+Find the id of the customer who made the most orders.
+Give me a list of id and status of orders which belong to the customer named "Jeramie".
+Which orders are made by the customer named "Jeramie"? Give me the order ids and status.
+Find the dates of orders which belong to the customer named "Jeramie".
+What are the dates of the orders made by the customer named "Jeramie"?
+Give me the names of customers who have placed orders between 2009-01-01 and 2010-01-01.
+Which customers made orders between 2009-01-01 and 2010-01-01? Find their names.
+Give me a list of distinct product ids from orders placed between 1975-01-01 and 1976-01-01?
+What are the distinct ids of products ordered between 1975-01-01 and 1976-01-01??
+Find the names of the customers who have order status both "On Road" and "Shipped".
+Which customers have both "On Road" and "Shipped" as order status? List the customer names.
+Find the id of the customers who have order status both "On Road" and "Shipped".
+Which customers have both "On Road" and "Shipped" as order status? List the customer ids.
+When was the order placed whose shipment tracking number is 3452? Give me the date.
+On which day was the order placed whose shipment tracking number is 3452?
+What is the placement date of the order whose invoice number is 10?
+On what day was the order with invoice number 10 placed?
+List the count and id of each product in all the orders.
+For each product, return its id and the number of times it was ordered.
+List the name and count of each product in all orders.
+For each product, show its name and the number of times it was ordered.
+Find the ids of orders which are shipped after 2000-01-01.
+Which orders have shipment after 2000-01-01? Give me the order ids.
+Find the id of the order which is shipped most recently.
+Which order has the most recent shipment? Give me the order id.
+List the names of all distinct products in alphabetical order.
+Sort all the distinct products in alphabetical order.
+List the ids of all distinct orders ordered by placed date.
+What are ids of the all distinct orders, sorted by placement date?
+What is the id of the order which has the most items?
+Which order deals with the most items? Return the order id.
+What is the name of the customer who has the largest number of orders?
+Find the name of the customer who made the most orders.
+Find the invoice numbers which are created before 1989-09-03 or after 2007-12-25.
+What are the invoice numbers created before 1989-09-03 or after 2007-12-25?
+Find the distinct details of invoices which are created before 1989-09-03 or after 2007-12-25.
+What are the distinct details of invoices created before 1989-09-03 or after 2007-12-25?
+For each customer who has at least two orders, find the customer name and number of orders made.
+Which customers have made at least two orders? Give me each customer name and number of orders made.
+Find the name of the customers who have at most two orders.
+What are the names of the customers who have made two or less orders?
+List the names of the customers who have once bought product "food".
+What are the names of the customers who bought product "food" at least once?
+List the names of customers who have once canceled the purchase of the product "food" (the item status is "Cancel").
+Which customers have ever canceled the purchase of the product "food" (the item status is "Cancel")?

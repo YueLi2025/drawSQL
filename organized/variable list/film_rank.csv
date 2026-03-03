@@ -1,0 +1,16 @@
+table_name,column_name,column_type
+film,Film_ID,num
+film,Title,string
+film,Studio,string
+film,Director,string
+film,Gross_in_dollar,num
+film_market_estimation,Estimation_ID,num
+film_market_estimation,Low_Estimate,num
+film_market_estimation,High_Estimate,num
+film_market_estimation,Film_ID,num
+film_market_estimation,Type,string
+film_market_estimation,Market_ID,num
+film_market_estimation,Year,num
+market,Market_ID,num
+market,Country,string
+market,Number_cities,num

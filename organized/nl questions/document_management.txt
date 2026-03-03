@@ -1,0 +1,45 @@
+nl_question
+Find the name and access counts of all documents, in alphabetic order of the document name.
+What are the names of all the documents, as well as the access counts of each, ordered alphabetically?
+Find the name of the document that has been accessed the greatest number of times, as well as the count of how many times it has been accessed?
+What is the name of the document which has been accessed the most times, as well as the number of times it has been accessed?
+Find the types of documents with more than 4 documents.
+What are the codes of types of documents of which there are for or more?
+Find the total access count of all documents in the most popular document type.
+What is the total access count of documents that are of the most common document type?
+What is the average access count of documents?
+Find the average access count across all documents?
+What is the structure of the document with the least number of accesses?
+Return the structure description of the document that has been accessed the fewest number of times.
+What is the type of the document named "David CV"?
+Return the type code of the document named "David CV".
+Find the list of documents that are both in the most three popular type and have the most three popular structure.
+What are the names of documents that have both one of the three most common types and one of three most common structures?
+What document types do have more than 10000 total access number.
+Return the codes of the document types that do not have a total access count of over 10000.
+What are all the section titles of the document named "David CV"?
+Give the section titles of the document with the name "David CV".
+Find all the name of documents without any sections.
+What are the names of documents that do not have any sections?
+List all the username and passwords of users with the most popular role.
+What are the usernames and passwords of users that have the most common role?
+Find the average access counts of documents with functional area "Acknowledgement".
+What are the average access counts of documents that have the functional area description "Acknowledgement"?
+Find names of the document without any images.
+What are the names of documents that do not have any images?
+What is the name of the document with the most number of sections?
+Return the name of the document that has the most sections.
+List all the document names which contains "CV".
+What are the names of documents that contain the substring "CV"?
+How many users are logged in?
+Count the number of users that are logged in.
+Find the description of the most popular role among the users that have logged in.
+What is the description of the most popular role among users that have logged in?
+Find the average access count of documents with the least popular structure.
+What is the average access count of documents that have the least common structure?
+List all the image name and URLs in the order of their names.
+What are the names and urls of images, sorted alphabetically?
+Find the number of users in each role.
+What are the different role codes for users, and how many users have each?
+What document types have more than 2 corresponding documents?
+Give the codes of document types that have more than 2 corresponding documents.

@@ -1,0 +1,81 @@
+nl_question
+How many apartment bookings are there in total?
+Count the total number of apartment bookings.
+Show the start dates and end dates of all the apartment bookings.
+What are the start date and end date of each apartment booking?
+Show all distinct building descriptions.
+Give me a list of all the distinct building descriptions.
+Show the short names of the buildings managed by "Emma".
+Which buildings does "Emma" manage? Give me the short names of the buildings.
+Show the addresses and phones of all the buildings managed by "Brenden".
+What are the address and phone number of the buildings managed by "Brenden"?
+What are the building full names that contain the word "court"?
+Find all the building full names containing the word "court".
+What is the minimum and maximum number of bathrooms of all the apartments?
+Give me the minimum and maximum bathroom count among all the apartments.
+What is the average number of bedrooms of all apartments?
+Find the average number of bedrooms of all the apartments.
+Return the apartment number and the number of rooms for each apartment.
+What are the apartment number and the room count of each apartment?
+What is the average number of rooms of apartments with type code "Studio"?
+Find the average room count of the apartments that have the "Studio" type code.
+Return the apartment numbers of the apartments with type code "Flat".
+Which apartments have type code "Flat"? Give me their apartment numbers.
+Return the first names and last names of all guests
+What are the first names and last names of all the guests?
+Return the date of birth for all the guests with gender code "Male".
+What are dates of birth of all the guests whose gender is "Male"?
+Show the apartment numbers, start dates, and end dates of all the apartment bookings.
+What are the apartment number, start date, and end date of each apartment booking?
+What are the booking start and end dates of the apartments with type code "Duplex"?
+Return the booking start date and end date for the apartments that have type code "Duplex".
+What are the booking start and end dates of the apartments with more than 2 bedrooms?
+Find the booking start date and end date for the apartments that have more than two bedrooms.
+What is the booking status code of the apartment with apartment number "Suite 634"?
+Tell me the booking status code for the apartment with number "Suite 634".
+Show the distinct apartment numbers of the apartments that have bookings with status code "Confirmed".
+Which apartments have bookings with status code "Confirmed"? Return their apartment numbers.
+Show the average room count of the apartments that have booking status code "Provisional".
+What is the average room count of the apartments whose booking status code is "Provisional"?
+Show the guest first names, start dates, and end dates of all the apartment bookings.
+What are the guest first name, start date, and end date of each apartment booking?
+Show the start dates and end dates of all the apartment bookings made by guests with gender code "Female".
+What are the start date and end date of the apartment bookings made by female guests (gender code "Female")?
+Show the first names and last names of all the guests that have apartment bookings with status code "Confirmed".
+Which guests have apartment bookings with status code "Confirmed"? Return their first names and last names.
+Show the facility codes of apartments with more than 4 bedrooms.
+What are the facility codes of the apartments with more than four bedrooms?
+Show the total number of rooms of all apartments with facility code "Gym".
+Find the total number of rooms in the apartments that have facility code "Gym".
+Show the total number of rooms of the apartments in the building with short name "Columbus Square".
+How many rooms in total are there in the apartments in the building with short name "Columbus Square"?
+Show the addresses of the buildings that have apartments with more than 2 bathrooms.
+Which buildings have apartments that have more than two bathrooms? Give me the addresses of the buildings.
+Show the apartment type codes and apartment numbers in the buildings managed by "Kyle".
+What apartment type codes and apartment numbers do the buildings managed by "Kyle" have?
+Show the booking status code and the corresponding number of bookings.
+How many bookings does each booking status have? List the booking status code and the number of corresponding bookings.
+Return all the apartment numbers sorted by the room count in ascending order.
+Sort the apartment numbers in ascending order of room count.
+Return the apartment number with the largest number of bedrooms.
+What is the apartment number of the apartment with the most beds?
+Show the apartment type codes and the corresponding number of apartments sorted by the number of apartments in ascending order.
+Return each apartment type code with the number of apartments having that apartment type, in ascending order of the number of apartments.
+Show the top 3 apartment type codes sorted by the average number of rooms in descending order.
+What are the top three apartment types in terms of the average room count? Give me the
+Show the apartment type code that has the largest number of total rooms, together with the number of bathrooms and number of bedrooms.
+Which apartment type has the largest number of total rooms? Return the apartment type code, its number of bathrooms and number of bedrooms.
+Show the most common apartment type code.
+Which apartment type code appears the most often?
+Show the most common apartment type code among apartments with more than 1 bathroom.
+Which apartment type code is the most common among apartments with more than one bathroom?
+Show each apartment type code, and the maximum and minimum number of rooms for each type.
+Return each apartment type code along with the maximum and minimum number of rooms among each type.
+Show each gender code and the corresponding count of guests sorted by the count in descending order.
+Sort the gender codes in descending order of their corresponding number of guests. Return both the gender codes and counts.
+How many apartments do not have any facility?
+Find the number of apartments that have no facility.
+Show the apartment numbers of apartments with bookings that have status code both "Provisional" and "Confirmed"
+Which apartments have bookings with both status codes "Provisional" and "Confirmed"? Give me the apartment numbers.
+Show the apartment numbers of apartments with unit status availability of both 0 and 1.
+Which apartments have unit status availability of both 0 and 1? Return their apartment numbers.

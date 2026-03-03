@@ -1,0 +1,31 @@
+sql_query
+SELECT count(*) FROM event
+SELECT name FROM event ORDER BY YEAR DESC
+SELECT name FROM event ORDER BY YEAR DESC LIMIT 1
+SELECT count(*) FROM stadium
+SELECT name FROM stadium ORDER BY capacity DESC LIMIT 1
+SELECT name FROM stadium WHERE capacity  <  (SELECT avg(capacity) FROM stadium)
+SELECT country FROM stadium GROUP BY country ORDER BY count(*) DESC LIMIT 1
+SELECT country FROM stadium GROUP BY country HAVING count(*)  <=  3
+SELECT country FROM stadium WHERE capacity  >  60000 INTERSECT SELECT country FROM stadium WHERE capacity  <  50000
+SELECT count(DISTINCT city) FROM stadium WHERE opening_year  <  2006
+SELECT country ,  count(*) FROM stadium GROUP BY country
+SELECT country FROM stadium EXCEPT SELECT country FROM stadium WHERE opening_year  >  2006
+SELECT count(*) FROM stadium WHERE country != 'Russia'
+SELECT name FROM swimmer ORDER BY meter_100
+SELECT count(DISTINCT nationality) FROM swimmer
+SELECT nationality ,  count(*) FROM swimmer GROUP BY nationality HAVING count(*)  >  1
+SELECT meter_200 ,  meter_300 FROM swimmer WHERE nationality  =  'Australia'
+SELECT t1.name FROM swimmer AS t1 JOIN record AS t2 ON t1.id  =  t2.swimmer_id WHERE RESULT  =  'Win'
+SELECT t1.name FROM stadium AS t1 JOIN event AS t2 ON t1.id  =  t2.stadium_id GROUP BY t2.stadium_id ORDER BY count(*) DESC LIMIT 1
+SELECT t1.name ,  t1.capacity FROM stadium AS t1 JOIN event AS t2 ON t1.id  =  t2.stadium_id WHERE t2.name  =  'World Junior'
+SELECT name FROM stadium WHERE id NOT IN (SELECT stadium_id FROM event)
+SELECT t1.name FROM swimmer AS t1 JOIN record AS t2 ON t1.id  =  t2.swimmer_id GROUP BY t2.swimmer_id ORDER BY count(*) DESC LIMIT 1
+SELECT t1.name FROM swimmer AS t1 JOIN record AS t2 ON t1.id  =  t2.swimmer_id GROUP BY t2.swimmer_id HAVING count(*)  >=  2
+SELECT t1.name ,  t1.nationality FROM swimmer AS t1 JOIN record AS t2 ON t1.id  =  t2.swimmer_id WHERE RESULT  =  'Win' GROUP BY t2.swimmer_id HAVING count(*)  >  1
+SELECT name FROM swimmer WHERE id NOT IN (SELECT swimmer_id FROM record)
+SELECT t1.name FROM swimmer AS t1 JOIN record AS t2 ON t1.id  =  t2.swimmer_id WHERE RESULT  =  'Win' INTERSECT SELECT t1.name FROM swimmer AS t1 JOIN record AS t2 ON t1.id  =  t2.swimmer_id WHERE RESULT  =  'Loss'
+SELECT t4.name FROM swimmer AS t1 JOIN record AS t2 ON t1.id  =  t2.swimmer_id JOIN event AS t3 ON t2.event_id  =  t3.id JOIN stadium AS t4 ON t4.id  =  t3.stadium_id WHERE t1.nationality  =  'Australia'
+SELECT t3.name FROM record AS t1 JOIN event AS t2 ON t1.event_id  =  t2.id JOIN stadium AS t3 ON t3.id  =  t2.stadium_id GROUP BY t2.stadium_id ORDER BY count(*) DESC LIMIT 1
+SELECT * FROM swimmer
+SELECT avg(capacity) FROM stadium WHERE opening_year  =  2005

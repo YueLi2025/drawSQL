@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+museum,Museum_ID,num
+museum,Name,string
+museum,Num_of_Staff,num
+museum,Open_Year,string
+visit,Museum_ID,num
+visit,visitor_ID,string
+visit,Num_of_Ticket,num
+visit,Total_spent,num
+visitor,ID,num
+visitor,Name,string
+visitor,Level_of_membership,num
+visitor,Age,num

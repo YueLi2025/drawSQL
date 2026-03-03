@@ -1,0 +1,12 @@
+table_name,column_name,column_type
+divisions,country,string
+divisions,division,string
+divisions,name,string
+matchs,AwayTeam,string
+matchs,Date,date
+matchs,Div,string
+matchs,FTAG,num
+matchs,FTHG,num
+matchs,FTR,string
+matchs,HomeTeam,string
+matchs,season,num

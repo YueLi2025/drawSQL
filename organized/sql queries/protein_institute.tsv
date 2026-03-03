@@ -1,0 +1,21 @@
+sql_query
+SELECT count(*) FROM building
+SELECT name ,  street_address ,  floors FROM building ORDER BY floors
+SELECT name FROM building ORDER BY height_feet DESC LIMIT 1
+SELECT avg(floors) ,  max(floors) ,  min(floors) FROM building
+SELECT count(*) FROM building WHERE height_feet  >  (SELECT avg(height_feet) FROM building) OR floors  >  (SELECT avg(floors) FROM building)
+SELECT name FROM building WHERE height_feet  >=  200 AND floors  >=  20
+SELECT institution ,  LOCATION FROM institution WHERE founded  >  1990 AND TYPE  =  'Private'
+SELECT TYPE ,  count(*) ,  sum(enrollment) FROM institution GROUP BY TYPE
+SELECT TYPE FROM institution GROUP BY TYPE ORDER BY count(*) DESC LIMIT 1
+SELECT TYPE FROM institution WHERE founded  >  1990 AND enrollment  >=  1000
+SELECT name FROM building WHERE building_id NOT IN (SELECT building_id FROM institution)
+SELECT name FROM building EXCEPT SELECT T1.name FROM building AS T1 JOIN institution AS T2 ON T1.building_id  =  T2.building_id WHERE T2.founded  =  2003
+SELECT T1.name ,  count(*) FROM building AS T1 JOIN institution AS T2 ON T1.building_id  =  T2.building_id GROUP BY T1.building_id
+SELECT T1.name ,  T1.height_feet FROM building AS T1 JOIN institution AS T2 ON T1.building_id  =  T2.building_id WHERE T2.founded  >  1880 GROUP BY T1.building_id HAVING count(*)  >=  2
+SELECT DISTINCT TYPE FROM institution
+SELECT T1.institution ,  count(*) FROM institution AS T1 JOIN protein AS T2 ON T1.institution_id  =  T2.institution_id GROUP BY T1.institution_id
+SELECT count(*) FROM institution AS T1 JOIN protein AS T2 ON T1.institution_id  =  T2.institution_id WHERE T1.founded  >  1880 OR T1.type  =  'Private'
+SELECT T2.protein_name ,  T1.institution FROM institution AS T1 JOIN protein AS T2 ON T1.institution_id  =  T2.institution_id
+SELECT count(*) FROM institution AS T1 JOIN protein AS T2 ON T1.institution_id  =  T2.institution_id JOIN building AS T3 ON T3.building_id  =  T1.building_id WHERE T3.floors  >=  20
+SELECT count(*) FROM institution WHERE institution_id NOT IN (SELECT institution_id FROM protein)

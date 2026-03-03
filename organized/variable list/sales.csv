@@ -1,0 +1,17 @@
+table_name,column_name,column_type
+Customers,CustomerID,num
+Customers,FirstName,string
+Customers,LastName,string
+Customers,MiddleInitial,string
+Employees,EmployeeID,num
+Employees,FirstName,string
+Employees,LastName,string
+Employees,MiddleInitial,string
+Products,Name,string
+Products,Price,num
+Products,ProductID,num
+Sales,CustomerID,num
+Sales,ProductID,num
+Sales,Quantity,num
+Sales,SalesID,num
+Sales,SalesPersonID,num

@@ -1,0 +1,11 @@
+table_name,column_name,column_type
+singer,Singer_ID,num
+singer,Name,string
+singer,Birth_Year,num
+singer,Net_Worth_Millions,num
+singer,Citizenship,string
+song,Song_ID,num
+song,Title,string
+song,Singer_ID,num
+song,Sales,num
+song,Highest_Position,num

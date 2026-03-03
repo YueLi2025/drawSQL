@@ -1,0 +1,105 @@
+nl_question
+What is the most expensive cake and its flavor?
+Give the id and flavor of the most expensive cake.
+What is the cheapest cookie and its flavor?
+What is the id and flavor of the cheapest cookie?
+Find the ids of goods that have apple flavor.
+What are the ids with apple flavor?
+What are the ids of goods that cost less than 3 dollars?
+Give the ids of goods that cost less than 3 dollars.
+List the distinct ids of all customers who bought a cake with lemon flavor?
+What are the distinct ids of customers who bought lemon flavored cake?
+For each type of food, tell me how many customers have ever bought it.
+How many customers have bought each food?
+Find the id of customers who shopped at the bakery at least 15 times.
+What are the customer ids of customers who have at least 15 receipts?
+What is the last name of the customers who shopped at the bakery more than 10 times?
+Give the last names of customers who have been to the bakery more than 10 times?
+How many types of Cake does this bakery sell?
+Count the number of types of cake this bakery sells.
+List all the flavors of Croissant available in this bakery.
+What are all the flavors of croissant?
+Give me a list of all the distinct items bought by the customer number 15.
+What are all the distinct items bought by customer 15?
+For each type of food, what are the average, maximum and minimum price?
+What are the average, minimum and maximum prices for each food?
+Find the receipt numbers where both Cake and Cookie were bought.
+What are the receipt numbers for instances where both cakes and cookies were purchased?
+Find all the receipt numbers in which customer with last name LOGAN purchased Croissant.
+What are the receipt numbers for a customer with the last name Logan who purchased a croissant?
+What is the receipt number and date of the receipt in which the most expensive item was bought?
+What is the receipt number and date corresponding to the receipt for which the most expensive item was purchased?
+What is the item that was bought the least number of times?
+Which item was bought the fewest times?
+How many goods are available for each food type?
+Count the number of goods for each food type.
+What is the average price for each food type?
+Give the average price for each food type.
+What are ids of the goods that have Apricot flavor and are cheaper than 5 dollars?
+Give the ids for goods that have Apricot flavor and have a price lower than 5 dollars.
+Find flavor of cakes that cost more than 10 dollars.
+What are the flavors of cakes that cost more than 10 dollars?
+Give me the distinct id and price for all goods whose price is below the average of all goods?
+What are the distinct ids and prices for goods that cost less than the average good?
+What are the distinct ids of all goods that are cheaper than some goods of type Tart?
+Give the distinct ids for goods that cost less than any Tart.
+List distinct receipt numbers for which someone bought a good that costs more than 13 dollars.
+What distinct receipt numbers correspond to someone who bought a good that costs more than 13 dollars?
+On which date did some customer buy a good that costs more than 15 dollars?
+Which date corresponds to when a customer purchased a good costing over 15 dollars?
+Give me the list of ids of all goods whose id has "APP".
+What are all the ids of goods with an id which contains "APP"?
+Which good has "70" in its id? And what is its price?
+What are the id and price for the good with "70" in its id?
+List the last names of all customers in an alphabetical order.
+What are the last names of the customers in alphabetical order?
+Return the ordered list of all good ids.
+Order the distinct good ids.
+Find all receipts in which either apple flavor pie was bought or customer id 12 shopped.
+What are the receipt numbers for which either an apple flavor pie was purchased or the customer with id 12 shopped?
+Find all receipts which has the latest date. Also tell me that date.
+What is the receipt number with the latest date, and what is that date?
+Find all receipts which either has the earliest date or has a good with price above 10.
+What are all the receipt numbers that have a good with a price above 10 or have the earliest date?
+What are the ids of Cookie and Cake that cost between 3 and 7 dollars.
+Give the ids of Cookies or Cakes that cost between 3 and 7 dollars.
+Find the first name and last name of a customer who visited on the earliest date.
+What is the full name of the customer who visited on the earliest date?
+What is average price of goods whose flavor is blackberry or blueberry?
+What are the average prices of goods with blackberry or blueberry flavor?
+Return the cheapest price for goods with cheese flavor.
+What is the cheapest good with cheese flavor?
+What are highest, lowest, and average prices of goods, grouped and ordered by flavor?
+What are the maximum, minimum, and average prices of goods of each flavor, ordered by flavor?
+Return the lowest and highest prices of goods grouped and ordered by food type.
+What are the minimum and maximum prices of food goods, ordered by food?
+Find the top three dates with the most receipts.
+What are the three dates for which the most receipts were given?
+Which customer shopped most often? How many times?
+Give the customer id of the customer that made the most purchases, as well as the number of purchases made.
+For each date, return how many distinct customers visited on that day.
+How many cusomters visited on each date?
+Give me the first name and last name of customers who have bought apple flavor Tart.
+What are the full names of customers who bought apple flavored Tarts?
+What are the ids of Cookies whose price is lower than any Croissant?
+Give the ids of cookes that are cheaper than any croissant.
+Give me the ids of Cakes whose price is at least as much as the average price of Tart?
+What are the ids of cakes that are at least as expensive as the average Tart?
+What are the ids of goods whose price is above twice the average price of all goods?
+Give the ids of goods that are more than twice as expensive as the average good.
+List the id, flavor and type of food of goods ordered by price.
+What are the ids, flavors, and food types of goods, ordered by price?
+Return a list of the id and flavor for Cakes ordered by flavor.
+What are the ids and flavors of cakes, ordered by flavor?
+Find all the items that have chocolate flavor but were not bought more than 10 times.
+What are the items with chocolate flavor that were purchased at most 10 times.
+What are the flavors available for Cake but not for Tart?
+Give the flavors of Cakes that are not available for Tart.
+What is the three most popular goods in this bakery?
+Give the three most purchased items at this bakery.
+Find the ids of customers who have spent more than 150 dollars in total.
+What are the ids of customers who have spent over 150 dollars in total?
+Find the ids of customers whose average spending for each good is above 5.
+What are the ids of customers who spend more than 5 on average for each good?
+On which day did the bakery sell more than 100 dollars in total.
+On what dates did the bakery sell more than 100 dollars worth of goods in total?

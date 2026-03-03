@@ -1,0 +1,38 @@
+nl_question
+Please list the names of the characters in the movie Look Who's Talking.
+Which character has the longest screen time in the movie Batman?
+Please list the names of the actors who played a role in the movie Batman.
+How many movies starring Morgan Freeman are suggested by parental guidance?
+Among the movies starring Tom Cruise, which one of them has the best quality?
+What is the name of the character played by Tom Cruise in the movie Born on the Fourth of July?
+Please list the names of all the characters played by Tom Cruise.
+Among the actors who starred in the movie Batman, which one of them is the tallest?
+Which movie had the biggest budget? Give the name of the movie.
+Who was the actor that played in the movie "Batman" with the longest screentime?
+How many movies has the highest networth actor acted in?
+Who played the character named "Chanice Kobolowski"?
+When is the birthday of the actor who played "Sully"?
+Show the birth city of the actor who played "Gabriel Martin".
+How tall is the actor who played "Lurch"?
+Show the No.3 character name in the credit list of the movie "G.I. Joe: The Rise of Cobra".
+Who played the No.2 character in the credit list of the movie "American Hustle"?
+What is the percentage of the USA actors that showed up in the credit list of movie "Mrs. Doubtfire"?
+What is the percentage of the actors that showed up in the credit list of movie "Dawn of the Planet of the Apes" that were born after "1970/1/1"?
+Among the actors born in New York City, list the genre of their movie with a rating greater than 5.
+In romantic movies, how many of them starred by John Travolta?
+What is the genre of PG rated movie starred by the actor with highest net worth?
+What is the MPAA rating and title of the movie starred by Leonardo DiCaprio with highest budget?
+Among the actors starred in Die Hard 2, list their net worth and birth date of actors with a height between 60 to 65.
+List the runtime of movies starred by an African-American actor born on December 28, 1954.
+What is the gross of a comedy movie with a rating lower than 7 and starred by an actor with a net worth greater than $375,000,000.00?
+Which movie is the character Dr. Archibald 'Moonlight' Graham from?
+Please list the names of the movies starring Tom Cruise.
+What is the average rating of all the movies starring Tom Cruise?
+How much longer in percentage is the screen time of the most important character in Batman than the least important one?
+What is the MPAA rating for the movie with the character named "Peter Quill" in it?
+Give the biography of the actor who played "Michael Moscovitz".
+Find the actor's name that played as Don Altobello in a drama movie that has a gross of 136766062.
+What is the runtime of the movie starred by Jackie Chan with a rating greater than 7?
+Which actor played the role of Joker in the movie Batman?
+Give the name of the No.1 character in the credit list from the highest rating thriller movie.
+What is the net worth of the actor starred in Misery who has a height ranging from 60 to 70 inches tall?

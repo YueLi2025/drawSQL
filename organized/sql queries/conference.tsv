@@ -1,0 +1,45 @@
+sql_query
+SELECT count(*) FROM conference
+SELECT count(*) FROM conference
+SELECT DISTINCT conference_name FROM conference
+SELECT DISTINCT conference_name FROM conference
+SELECT conference_name ,  YEAR ,  LOCATION FROM conference
+SELECT conference_name ,  YEAR ,  LOCATION FROM conference
+SELECT conference_name ,  count(*) FROM conference GROUP BY conference_name
+SELECT conference_name ,  count(*) FROM conference GROUP BY conference_name
+SELECT YEAR ,  count(*) FROM conference GROUP BY YEAR
+SELECT YEAR ,  count(*) FROM conference GROUP BY YEAR
+SELECT YEAR FROM conference GROUP BY YEAR ORDER BY count(*) LIMIT 1
+SELECT YEAR FROM conference GROUP BY YEAR ORDER BY count(*) LIMIT 1
+SELECT LOCATION FROM conference GROUP BY LOCATION HAVING count(*)  >=  2
+SELECT LOCATION FROM conference GROUP BY LOCATION HAVING count(*)  >=  2
+SELECT institution_name ,  LOCATION ,  founded FROM institution
+SELECT institution_name ,  LOCATION ,  founded FROM institution
+SELECT count(*) FROM institution WHERE founded BETWEEN 1850 AND 1900
+SELECT count(*) FROM institution WHERE founded BETWEEN 1850 AND 1900
+SELECT institution_name ,  LOCATION FROM institution ORDER BY founded DESC LIMIT 1
+SELECT institution_name ,  LOCATION FROM institution ORDER BY founded DESC LIMIT 1
+SELECT T1.institution_name ,  count(*) FROM institution AS T1 JOIN staff AS T2 ON T1.institution_id  =  T2.institution_id WHERE T1.founded  >  1800 GROUP BY T2.institution_id
+select t1.institution_name ,  count(*) from institution as t1 join staff as t2 on t1.institution_id  =  t2.institution_id where t1.founded  >  1800 group by t2.institution_id
+SELECT institution_name FROM institution WHERE institution_id NOT IN (SELECT institution_id FROM staff)
+SELECT institution_name FROM institution WHERE institution_id NOT IN (SELECT institution_id FROM staff)
+SELECT name FROM staff WHERE age  >  (SELECT avg(age) FROM staff)
+SELECT name FROM staff WHERE age  >  (SELECT avg(age) FROM staff)
+SELECT max(age) ,  min(age) FROM staff
+SELECT max(age) ,  min(age) FROM staff
+SELECT T1.conference_name FROM conference AS T1 JOIN conference_participation AS T2 ON T1.conference_id = T2.conference_id JOIN staff AS T3 ON T2.staff_id  =  T3.staff_id WHERE T3.nationality  =  "Canada"
+SELECT T1.conference_name FROM conference AS T1 JOIN conference_participation AS T2 ON T1.conference_id = T2.conference_id JOIN staff AS T3 ON T2.staff_id  =  T3.staff_id WHERE T3.nationality  =  "Canada"
+SELECT T1.name FROM staff AS T1 JOIN conference_participation AS T2 ON T1.staff_id  =  T2.staff_id WHERE T2.role  =  'Speaker' INTERSECT SELECT T1.name FROM staff AS T1 JOIN conference_participation AS T2 ON T1.staff_id  =  T2.staff_id WHERE T2.role  =  'Sponsor'
+SELECT T1.name FROM staff AS T1 JOIN conference_participation AS T2 ON T1.staff_id  =  T2.staff_id WHERE T2.role  =  'Speaker' INTERSECT SELECT T1.name FROM staff AS T1 JOIN conference_participation AS T2 ON T1.staff_id  =  T2.staff_id WHERE T2.role  =  'Sponsor'
+SELECT T1.name FROM staff AS T1 JOIN conference_participation AS T2 JOIN Conference AS T3 ON T1.staff_id  =  T2.staff_id AND T2.conference_id  =  T3.conference_id WHERE T3.Conference_name  =  'ACL' INTERSECT SELECT T1.name FROM staff AS T1 JOIN conference_participation AS T2 JOIN conference AS T3 ON T1.staff_id  =  T2.staff_id AND T2.conference_id  =  T3.conference_id WHERE T3.Conference_name  =  'Naccl'
+SELECT T1.name FROM staff AS T1 JOIN conference_participation AS T2 JOIN Conference AS T3 ON T1.staff_id  =  T2.staff_id AND T2.conference_id  =  T3.conference_id WHERE T3.Conference_name  =  'ACL' INTERSECT SELECT T1.name FROM staff AS T1 JOIN conference_participation AS T2 JOIN conference AS T3 ON T1.staff_id  =  T2.staff_id AND T2.conference_id  =  T3.conference_id WHERE T3.Conference_name  =  'Naccl'
+SELECT DISTINCT T1.name FROM staff AS T1 JOIN conference_participation AS T2 JOIN Conference AS T3 ON T1.staff_id  =  T2.staff_id AND T2.conference_id  =  T3.conference_id WHERE T3.year  =  2003 OR T3.year  =  2004
+SELECT DISTINCT T1.name FROM staff AS T1 JOIN conference_participation AS T2 JOIN Conference AS T3 ON T1.staff_id  =  T2.staff_id AND T2.conference_id  =  T3.conference_id WHERE T3.year  =  2003 OR T3.year  =  2004
+SELECT T1.conference_name ,  T1.year ,  count(*) FROM Conference AS T1 JOIN Conference_participation AS T2 ON T1.conference_id  =  T2.conference_id GROUP BY T2.conference_id
+SELECT T1.conference_name ,  T1.year ,  count(*) FROM Conference AS T1 JOIN Conference_participation AS T2 ON T1.conference_id  =  T2.conference_id GROUP BY T2.conference_id
+SELECT T1.conference_name FROM Conference AS T1 JOIN Conference_participation AS T2 ON T1.conference_id  =  T2.conference_id GROUP BY T2.conference_id ORDER BY count(*) DESC LIMIT 2
+SELECT T1.conference_name FROM Conference AS T1 JOIN Conference_participation AS T2 ON T1.conference_id  =  T2.conference_id GROUP BY T2.conference_id ORDER BY count(*) DESC LIMIT 2
+SELECT name ,  nationality FROM staff WHERE staff_id NOT IN (SELECT T2.staff_id FROM Conference AS T1 JOIN Conference_participation AS T2 ON T1.conference_id  =  T2.conference_id WHERE T1.Conference_Name  =  "ACL")
+SELECT name ,  nationality FROM staff WHERE staff_id NOT IN (SELECT T2.staff_id FROM Conference AS T1 JOIN Conference_participation AS T2 ON T1.conference_id  =  T2.conference_id WHERE T1.Conference_Name  =  "ACL")
+SELECT T1.Institution_Name ,  T1.location FROM institution AS T1 JOIN staff AS T2 ON T1.institution_id  =  T2.institution_id WHERE T2.staff_id NOT IN (SELECT T4.staff_id FROM Conference AS T3 JOIN Conference_participation AS T4 ON T3.conference_id  =  T4.conference_id WHERE T3.year  =  2004)
+SELECT T1.Institution_Name ,  T1.location FROM institution AS T1 JOIN staff AS T2 ON T1.institution_id  =  T2.institution_id WHERE T2.staff_id NOT IN (SELECT T4.staff_id FROM Conference AS T3 JOIN Conference_participation AS T4 ON T3.conference_id  =  T4.conference_id WHERE T3.year  =  2004)

@@ -1,0 +1,83 @@
+nl_question
+Among all the orders made by Aimee Bixby, what was the longest shipment time?
+How many orders has Aimee Bixby made?
+Among the orders made by Aimee Bixby, how many of them included at least one kind of product under the category "Furniture"?
+Please list the names of all the products ordered by Aimee Bixby in 2016.
+Please list the names of all the customers who had ordered the product "Telescoping Adjustable Floor Lamp".
+Who is the customer who purchased the largest total cost of products in a single order?
+What is the name of the product that has the highest original price?
+What are the names of the products that were ordered by Alejandro Grove?
+How many customers in Chicago ordered at least 10 Cardinal EasyOpen D-Ring Binders in a single order?
+List the products ordered by Becky Martin around the Central region.
+List 5 customers in the West region who had their item shipped 'Second Class.'
+What is the total sales of 'Avery Hi-Liter EverBold Pen Style Fluorescent Highlighters, 4/Pack' in the Central region?
+Name the item ordered by Jonathan Doherty with the highest quantity in the East region.
+Which customer ordered 'Global High-Back Leather Tilter, Burgundy' on 10/13/2013 in the East region?
+What category does the item ordered by Katherine Murray on 11/4/2018 in the South region belong to?
+Give the customer segment from the West region that orders the order ID CA-2011-108189.
+Provide the order ID of Frank Olsen of the South region.
+What product was ordered in the Central region on April 26, 2018, and shipped by April 27, 2018?
+Who is the customer from the East region that purchased the order with the highest profit?
+Among the customers from Chicago, Illinois, what is the highest quantity of products bought in a single order?
+List down the customers that purchased the product named Xerox 23 in the South region.
+Among the products under the office supplies category, what is the product that made the highest sales in the Central region?
+Provide the names of the products with a profit greater than 98% of the average profit of all products in the East region.
+Name the customers from the Eastern region whose orders cost above 80000.
+How many orders were made by Maxwell Schwartz in 2015?
+Who ordered the Bush Mission Pointe Library in the Central Region?
+List the products that were ordered by Anne McFarland from the Western store.
+List the products ordered by customers in Coachella.
+List the products ordered by Matt Abelman from the Western store in 2013.
+Provide the names, cities, and countries of the customers who ordered the Plantronics single ear headset.
+Provide the shipping dates and products of the orders by Gene Hale.
+How many orders in the south superstore with the fastest delivery are items of furniture?
+List the name of all products in the west superstore that customers chose for same-day shipment in the year 2013.
+What is the total quantity that Cindy Stewart order "Lexmark X 9575 Professional All-in-One Color Printer" in the south superstore?
+List the name of all the products with order quantities greater than or equal to 10 in the central superstore that has been shipped by the slowest delivery method.
+What is the total sales of furniture products in the east superstore in the year 2016.
+What is the ratio between customers who live in Texas and customers who live in Indiana?
+Among the customers in South superstore, which customers ordered more than 3 times in 2015? State the name of the customers.
+State the highest profit made by Anna Chung's orders in the Central Superstore.
+What are the names of the ordered products that have profit deficiency in central superstore?
+How many orders of O'Sullivan Plantations 2-Door Library in Landvery Oak in central superstore were shipped through the shipping mode with the fastest delivery speed?
+In which segment does the customer who purchased the product from the east superstore with the highest original price belong?
+How many orders with a quantity greater than 5 have been shipped by the fastest delivery method?
+Please list any three orders that caused a loss to the company.
+Which product did Phillina Ober buy?
+Who was the customer in the South Region superstore who bought the most “Hon Multipurpose Stacking Arm Chairs"?
+What is the name of the product that Aimee Bixby bought?
+What is the highest profit order in the East superstore of customers from Houston, Texas?
+How many orders were made by customers who live in Texas at the Central superstore?
+List the product's name bought by the customer named Bill Shonely from the Central region.
+Please give the name of customers from the West region that bought exactly 8 items in their purchase.
+Who ordered the order ID CA-2011-118976 from the East region?
+Provide the product's name of the product with the highest sales in the South region.
+What is the product's name in the highest quantity in a single purchase?
+List the customer's name from the South region with a standard class ship mode and sales greater than the 88% of the average sales of all orders.
+Please list the names of all the products ordered in order CA-2011-112326 in superstores in the center.
+Add the total profit of Patrick Gardner in the Central region.
+What are the order date and product name of the order ID CA-2011-137274 from the Central region?
+Calculate the total cost of the orders by Brad Thomas in 2016.
+What is the name of the corporate customer from Rhode Island who had the highest number of orders in 2016 from the east superstore?
+What is the shipment duration for order number CA-2011-134103?
+What are the names of the products that had been shipped in March 2013 at central superstore?
+Who order from the west region on August 12, 2013, and received a discount of 0.2?
+What is the order ID of the security-Tint Envelopes product ordered on June 3, 2013, in the Central region?
+List down the sales, profit, and subcategories of the product ordered in the order ID US-2011-126571 in the East region.
+Among the customers from Indiana, what is the percentage of their purchased orders in the Central region with no discount?
+For how many times has Aimee Bixby ordered the product Xerox 1952?
+What was the original price of Xerox 1952 ordered by Aimee Bixby on 2014/9/10?
+How many art products were ordered in 2013 in the east superstore?
+Which item was shipped on 3/4/2013 and scheduled for same day delivery in the South region?
+What is the ship date of the order by the customer named Ann Chong in the central region?
+What product category got the least sales in the west superstore?
+What is the profit from selling the "O'Sullivan Living Dimensions 2-Shelf Bookcases"?
+How many orders were made by Alan Barnes in 2015 at the Central superstore?
+Who is the customer with an order shipped on March 5, 2013, in the eastern region?
+Among the orders from 2016 in the Central region, what is the product with the lowest profit?
+What was the total cost of Xerox 1952 ordered by Aimee Bixby on 2014/9/10?
+How many quantities of Advantus plastic paper clips were ordered overall?
+What are the total sales of the accumulated orders of Hon Valutask Swivel Chairs in the West region?
+What product category that Sam Craven ordered from the central and east superstore?
+Indicate the profit of product Sauder Camden County Barrister Bookcase, Planked Cherry Finish.
+What is the percentage of orders with 0.2 discount in the Central superstore were purchased by customers who live in Texas?

@@ -1,0 +1,21 @@
+sql_query
+SELECT count(*) FROM Church WHERE Open_Date  <  1850
+SELECT name ,  open_date ,  organized_by FROM Church
+SELECT name FROM church ORDER BY open_date DESC
+SELECT open_date FROM church GROUP BY open_date HAVING count(*)  >=  2
+SELECT organized_by ,  name FROM church WHERE open_date BETWEEN 1830 AND 1840
+SELECT open_date ,  count(*) FROM church GROUP BY open_date
+SELECT name ,  open_date FROM church ORDER BY open_date DESC LIMIT 3
+SELECT count(*) FROM people WHERE is_male  =  'F' AND age  >  30
+SELECT country FROM people WHERE age  <  25 INTERSECT SELECT country FROM people WHERE age  >  30
+SELECT min(age) ,  max(age) ,  avg(age) FROM people
+SELECT name ,  country FROM people WHERE age  <  (SELECT avg(age) FROM people)
+SELECT T2.name ,  T3.name FROM wedding AS T1 JOIN people AS T2 ON T1.male_id  =  T2.people_id JOIN people AS T3 ON T1.female_id  =  T3.people_id WHERE T1.year  >  2014
+SELECT name ,  age FROM people WHERE is_male  =  'T' AND people_id NOT IN (SELECT male_id FROM wedding)
+SELECT name FROM church EXCEPT SELECT T1.name FROM church AS T1 JOIN wedding AS T2 ON T1.church_id  =  T2.church_id WHERE T2.year  =  2015
+SELECT T1.name FROM church AS T1 JOIN wedding AS T2 ON T1.church_id  =  T2.church_id GROUP BY T1.church_id HAVING count(*)  >=  2
+SELECT T2.name FROM wedding AS T1 JOIN people AS T2 ON T1.female_id  =  T2.people_id WHERE T1.year  =  2016 AND T2.is_male  =  'F' AND T2.country  =  'Canada'
+SELECT count(*) FROM wedding WHERE YEAR  =  2016
+SELECT T4.name FROM wedding AS T1 JOIN people AS T2 ON T1.male_id  =  T2.people_id JOIN people AS T3 ON T1.female_id  =  T3.people_id JOIN church AS T4 ON T4.church_id  =  T1.church_id WHERE T2.age  >  30 OR T3.age  >  30
+SELECT country ,  count(*) FROM people GROUP BY country
+SELECT COUNT (DISTINCT church_id) FROM wedding WHERE YEAR  =  2016

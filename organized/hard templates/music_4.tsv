@@ -1,0 +1,61 @@
+hard_templates
+SELECT count(*) FROM table_name
+SELECT count(*) FROM table_name
+SELECT col_name FROM table_name
+SELECT col_name FROM table_name
+SELECT avg( col_name ) FROM table_name
+SELECT avg( col_name ) FROM table_name
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT distinct( col_name ) FROM table_name
+SELECT distinct( col_name ) FROM table_name
+SELECT col_name , col_name FROM table_name
+SELECT col_name , col_name FROM table_name
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT max( col_name ) , min( col_name ) FROM table_name
+SELECT max( col_name ) , min( col_name ) FROM table_name
+SELECT col_name FROM table_name WHERE col_name > num
+SELECT col_name FROM table_name WHERE col_name > num
+SELECT col_name FROM table_name ORDER BY col_name
+SELECT col_name FROM table_name ORDER BY col_name
+SELECT COUNT(DISTINCT col_name ) FROM table_name
+SELECT COUNT(DISTINCT col_name ) FROM table_name
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name > num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name > num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name >= num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name >= num
+SELECT avg(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name <= num
+SELECT avg(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name <= num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name > num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name > num
+SELECT col_name , col_name FROM table_name ORDER BY col_name DESC
+SELECT col_name , col_name FROM table_name ORDER BY col_name DESC
+SELECT col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name , COUNT(*) FROM table_name GROUP BY col_name
+SELECT col_name , COUNT(*) FROM table_name GROUP BY col_name
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY COUNT(*) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY COUNT(*) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name HAVING COUNT(*) > num
+SELECT col_name FROM table_name GROUP BY col_name HAVING COUNT(*) > num
+SELECT col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name NOT IN(SELECT col_name FROM table_name)
+SELECT col_name FROM table_name WHERE col_name NOT IN(SELECT col_name FROM table_name)
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name > num INTERSECT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name < num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name > num INTERSECT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name < num
+SELECT col_name FROM table_name WHERE col_name = string AND col_name = string
+SELECT col_name FROM table_name WHERE col_name = string AND col_name = string
+SELECT col_name FROM table_name ORDER BY col_name ASC LIMIT num
+SELECT col_name FROM table_name ORDER BY col_name ASC LIMIT num
+SELECT COUNT(DISTINCT col_name ) FROM table_name
+SELECT COUNT(DISTINCT col_name ) FROM table_name
+SELECT col_name , COUNT(*) FROM table_name GROUP BY col_name ORDER BY COUNT(*) DESC
+SELECT col_name , COUNT(*) FROM table_name GROUP BY col_name ORDER BY COUNT(*) DESC
+SELECT col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name <= num
+SELECT col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name <= num

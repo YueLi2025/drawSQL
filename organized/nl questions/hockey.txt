@@ -1,0 +1,157 @@
+nl_question
+Name the goalies who played for more than two teams from Year 2000 to 2005.
+Name the goalies who have played more than total of 5000 minutes in the all the season played. State given name of the player and from which country was he born.
+Name all goalies with 10 or more empty net goals. Name the players and season where he played.
+Name the goalies with the most seasons played. State the average time he played for each season.
+Name the goalie and the season he played where he had 5% shutouts among the number of goals recorded while the goalie was on the ice.
+Name the deceased players whose death country is different from his birth country order by birth year.
+What is the average height of player who were born in 1990 and after? Compare the average height with players who were born before 1990.
+How many players and coaches are awarded after death?
+Among the players who won an award in the year 1983, how many of them play the position of goalie?
+How many teams scored against their opponent who had pulled their goalie in the year 2005?
+Please list the years in which the NHL League had shots recorded while the goalie was on the ice.
+Please list the name of the person who was in the Hall of Fame in the year 1978.
+How many people were in the Hall of Fame's Builder category?
+Please list the awards the coaches who are born in Canada have won.
+How many players born in Toronto have won the All-Rookie award?
+Among the players who have won the All-Rookie award, how many of them have died?
+Among the players who died in Massachussets, how many of them have won an award?
+Please list the nicknames of the players who have won the All-Rookie award and are born in March.
+Among the players who were born in July and August, how many of them got in the Hall of Fame?
+In which month was the player who has won the most awards born?
+Players born in which year have received the most awards in total?
+Which country is the most award-winning player from?
+Which country has the most players in the Hall of Fame?
+Please list the positions of the players who were born in Canada and have won the All-Rookie award.
+Which team did player Id "roypa01" play in 1992? Give the team id.
+What was the total number of the games that player Id "rutlewa01" played in 1967?
+Show me how many minutes player Id "valiqst01" played in the game in 2007 season.
+How many games did player Id "vanbijo01" win in the 1990 season?
+In how many games did player Id "vernomi01" end up with a tie or an overtime loss in the 1998 season?
+Which player who showed as the third goalie in a game has the biggest weight? Give the full name of the player.
+For the goalie who had the most shutouts in 2010, what's his catching hand?
+In the history of team id NJD, which goalie saved the most goal attempts? Give his full name.
+Which teams had the most postseason empty net goals in 2010 season? List their team names.
+In the Stanley Cup finals history, how many games did player id "broadpu01" play in 1922?
+What was the number of goals did player Id "dyeba01" make in the 1921 Stanley Cup finals?
+Who made the most assists in a single game in the Stanley Cup finals ?
+Which league did player id"adamsja01" play in 1920?
+What position did player id "hartgi01" play in his Stanley Cup finals performance?
+Which year was the goalie who had the most postseaon shots Against in 2008 born?
+How many years were there after Don Waddell retired and became a coach in NHL?
+Which is the catching hand for the goaltender who had the most shutouts in 1996?
+When was the birthday for the goalie who had most goal againsts in 1965 season?
+For he who had the highest plus / minus on the court in the 1981 season, what's his full name?
+For the player who scored 7 shorthanded goals in 1989, what's his dominant hand?
+Who was the most clutch player in 1986? Give his full name.
+How many shots on goal did Cam Neely had in the year of 1990?
+For the goalies whose weight are above 190, who had most goal againsts in 1978 season?
+How many former athletes go on to become coaches after retiring?
+Among the teams with the most number of ties, how many penalty was committed by a player or coach that is not on the ice? Indicate the name of the team.
+Which NHL award was most frequently won by the coach with the most wins?
+How many players were included in the Hall of Fame on average between 1950 and 1980?
+How many wins does the team have whose goaltender have the most number of successfully stopping the other team from scoring during the entire game?
+Which team recorded the most number of road victories in 2005? Indicate the team ID.
+How many goals were scored while the goalkeeper was on the ice in the 1924 WCHL by the goalie with the most goals scored?
+In 2006, what is the overall number of october defeats for the team with the most October defeats? Indicate the team ID.
+Which year recorded the most number of goals by a player and how old was the player at the time the most number of goals was achieved by him?
+What is the total amount of assists of the NHL player with the most assists in history? Please indicate his/her full name.
+What is the name of the losing team during an exhibition game in 1912?
+Between 2003 to 2005, what are the given names of the players with the most number of games played whose Penalty minutes is between 200 to 250?
+How old was the goaltender who scored the fewest goals while on the ice when he retired from the NHL?
+Which position has won the most awards and who is the most recent player that was awarded with an award in that position? Indicate the name of the award and the full name of the player.
+How many games did the coach who received the first-ever Second Team All-Star award play before receiving such award?
+In 1997, how many loss did the coach have who temporary coached Tampa Bay Lightning? Indicate his/her coach ID.
+What is the name of the coach whose team placed 4th in the 1969 game? Indicate their coachID.
+Between 1917 to 1920, what are the names of the team who ranked first in the first half of the season each year?
+How many bench minor penalties did the team St. Louis Blues got in total in all the games?
+Among the teams that had more wins than loses in the year 2006, how many of them have over 100 points?
+Which team got the most bench minor penalties in 2006?
+Please list the first 3 teams that got the most penalty minutes in 2006.
+Which team had the highest penalty kill chances in 1995, Florida Panthers, Edmonton Oilers or Los Angeles Kings?
+What is the name of the team that got more wins than loses in the Stanley Cup finals in 1917?
+Among the teams that played in 1922's Stanley Cup finals, how many of them had over 20 points in that year?
+What were the penalty minutes in 1923's Stanley Cup finals of the team that ranked second in that year?
+Which team got the most wins in the Stanley Cup finals?
+How many wins did the Philadelphia Flyers have over the Boston Bruins in 1985?
+Please list the first names of the coaches who have taught the Montreal Canadiens.
+How many coaches of the Montreal Canadiens have gotten in the Hall of Fame?
+Please give the height of the tallest coach of the Montreal Canadiens.
+Please list the first names of the coaches whose team played in 1922's Stanley Cup finals.
+Among the coaches who have taught the Philadelphia Flyers, how many of them are born in March?
+Among the coaches who are born in the USA, how many of them used to train the Philadelphia Flyers?
+How many coaches who have taught the Buffalo Sabres have died?
+Please list the names of all the teams that have played against the Buffalo Sabres.
+How many penalty minutes did the Montreal Canadiens have in the 1918's Stanley Cup Finals?
+In which year did the Montreal Canadiens have 49 penalty minutes in the Stanley Cup finals? Was it 1924, 1923 or 1918?
+How many penalty minutes did the Montreal Canadiens have on average in the Stanley Cup Finals?
+What is the average winning rate of the Montreal Canadiens in the Stanley Cup finals?
+For all the referees, who became a hall of famer in the 1970s? What's his hofID?
+How many hall of famers both played and coached in the league?
+For the team that Scotty Bowman coached in 1982, how many bench minor penalties did they have that year?
+Which was the dominant hand for the goaltender who played 32 games for QUN in 1973? Give the full name.
+For the goalie whose last name is "Young", how many teams did he play in?
+For the goalie whose legendsID is "P196402" , how many games did he play in the league?
+How many goalies played for Calgary Flames?
+Which Minnesota North Stars' goalkeeper had the most Goal Againsts in his play time?
+How many Haileybury Hockey Club goalies became a hall of famer?
+State the player ID and coach ID of person who have become coach after retirement.
+State the player ID of player with average height of 75.
+Who is the heaviest player? State player ID of 5 heaviest players.
+What is the full name of players origin from Finland?
+List down player ID of players who have passed away.
+List down the first name of coaches who still coach after year 2000.
+What is the height and weight for coaches who have won awards in 1930?
+How much is the total goals for player with player ID aaltoan01 and how old is this person?
+Is there any coach who has not been a player before but has won award? State the ID.
+What are the total weights of players for team 'ANA' as per year 1997?
+Which team has the highest winning rate in year 2000? State the team ID and list down the birth country of it's players.
+In 1998, How many wins were made by team 'CAR' per game played? Who contributed the most goals? State the player ID.
+List the first Name and last name of all players not from USA and who are born in 1990 .
+List all players' given name who are good at both left and right hand and playing the forward position.
+Who are the players who were not in the Hall of Fame list.
+For all the deceased players who are good at both left and right hand, list the player's name and the age when he died.
+What is the average weight of players who have height greater than 72 inches.
+Name the goaltenders who had played in both PCHA and NHL league.
+List all deceased goalies by last name. List the season where he had the most time played.
+List all goalies from year 2000 to 2010 for team COL. State their given name, height, weight and age of today.
+State the goalie who has the lowest percentage of goals against among all the shots against recorded. Name the players and season where he played.
+Who are the players played both in NHL and WHA. List the given name and first year they were in NHL and first year in WHA.
+List the living players who have two positions. State their given name the position they play.
+State the nick name of the tallest player? If the player had left NHL, mention the last season he was with NHL.
+Name the goalies and season they played when Boston Bruins won number 1 in rank.
+How many coaches worked a temporary term in the year 2007?
+Among the people who got into the Hall of Fame after the year 1980, how many of them belong to the category of "Player"?
+Please list the Nicknames of the players who got in the Hall of Fame in 2007.
+Did the tallest player got in the Hall of Fame? If yes, please list the year when he got in the Hall of Fame.
+Please list the awards won by coaches who were born in 1952.
+How many years did player Id "healygl01" play?
+For the coach who co-coached with Dave Lewis in 1998, where was his birth place?
+Which coach had the highest winning rates in the 2009 season? What's coach's nickname.
+How many years did player Id "cleghsp01" make to the Stanley Cup finals?
+Who was the coach for the team which had the most bench minors penalty in 2003？
+Which country produced the most number of hockey players? Identify which year was most of the hockey players are born.
+What is the power play chances of New York Rangers in 2009?
+Please list the teams that have played in 1922's Stanley Cup finals.
+Among the coaches who taught the teams in 1922's Stanley Cup finals, how many of them are from the USA?
+In the year that the Montreal Canadiens had 24 penalty minutes in the Stanley Cup finals, how many wins did the team had in total?
+Among the players who had 10 empty net goals in their career, who is the tallest? Show his full name.
+What's the decrease rate of the game plays did David Aebischer after he got traded in 2005?
+Who is the shortest player and state the team ID of that player from 1925 to 1936.
+What is given name for player 'aebisda01'. Calculate the average time in minutes for the all his games played as goaltender.
+Please list the awards the players who died in Arlington have won.
+Did legendsID "P194502" personally attend his Hall of Fame dedication?
+Which position did Mike Antonovich play?
+For the goalie who had the highest defensive success rate in the postseason of 2011, what's his legends ID ?
+Among the teams whose shorthanded goals are between 1 to 5, which player is the most trustworthy in the critical moment?
+Among the players whose short handed assists are greater or equal to 7, what is the final standing of the team with the most number of assists? Indicate the year to which the most number of assists was achieved and the name of the team.
+What is the highest total points a team got in a year?
+What is the number of players whose last name is Green that played in the league but not coached?
+Which player ID are left winger and weight more than 200?
+Who is the youngest player who is still living. State the given name and date of birth.
+Name the goalies who are good at left hand and also has become a coach after retirement. Name all teams he had played before.
+List all the deceased goalies and the teams he had played whose birth country was in Canada.
+How many players, whose shooting/catching hand is both left and right, debuted their first NHL in 2011?
+Please list the names of the teams that had a tie in 1909.
+In the year 1958, what is the total number of players that became hall of famers?
+In 1976, how many goals achieved by team 'BIR' in Division 'EW'?

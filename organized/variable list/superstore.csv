@@ -1,0 +1,62 @@
+table_name,column_name,column_type
+central_superstore,Customer ID,string
+central_superstore,Discount,num
+central_superstore,Order Date,date
+central_superstore,Order ID,string
+central_superstore,Product ID,string
+central_superstore,Profit,num
+central_superstore,Quantity,num
+central_superstore,Region,string
+central_superstore,Row ID,num
+central_superstore,Sales,num
+central_superstore,Ship Date,date
+central_superstore,Ship Mode,string
+east_superstore,Customer ID,string
+east_superstore,Discount,num
+east_superstore,Order Date,date
+east_superstore,Order ID,num
+east_superstore,Product ID,string
+east_superstore,Profit,num
+east_superstore,Quantity,num
+east_superstore,Region,string
+east_superstore,Row ID,num
+east_superstore,Sales,num
+east_superstore,Ship Date,date
+east_superstore,Ship Mode,string
+people,City,string
+people,Country,string
+people,Customer ID,string
+people,Customer Name,string
+people,Postal Code,num
+people,Region,string
+people,Segment,string
+people,State,string
+product,Category,string
+product,Product ID,string
+product,Product Name,string
+product,Region,string
+product,Sub-Category,string
+south_superstore,Customer ID,string
+south_superstore,Discount,num
+south_superstore,Order Date,date
+south_superstore,Order ID,num
+south_superstore,Product ID,string
+south_superstore,Profit,num
+south_superstore,Quantity,num
+south_superstore,Region,string
+south_superstore,Row ID,num
+south_superstore,Sales,num
+south_superstore,Ship Date,date
+south_superstore,Ship Mode,string
+west_superstore,Customer ID,num
+west_superstore,Discount,num
+west_superstore,Order Date,date
+west_superstore,Order ID,num
+west_superstore,Product ID,string
+west_superstore,Profit,num
+west_superstore,Quantity,num
+west_superstore,Region,string
+west_superstore,Row ID,num
+west_superstore,Sales,num
+west_superstore,Ship Date,date
+west_superstore,Ship Mode,string

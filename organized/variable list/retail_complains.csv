@@ -1,0 +1,59 @@
+table_name,column_name,column_type
+callcenterlogs,Complaint ID,string
+callcenterlogs,Date received,date
+callcenterlogs,call_id,num
+callcenterlogs,outcome,string
+callcenterlogs,phonefinal,string
+callcenterlogs,priority,num
+callcenterlogs,rand client,string
+callcenterlogs,ser_exit,string
+callcenterlogs,ser_start,string
+callcenterlogs,ser_time,string
+callcenterlogs,server,string
+callcenterlogs,type,string
+callcenterlogs,vru+line,string
+client,address_1,string
+client,address_2,string
+client,age,num
+client,city,string
+client,client_id,num
+client,day,num
+client,district_id,num
+client,email,string
+client,first,string
+client,last,string
+client,middle,string
+client,month,num
+client,phone,string
+client,sex,boolean
+client,social,num
+client,state,string
+client,year,string
+client,zipcode,num
+district,city,string
+district,district_id,num
+district,division,string
+district,state_abbrev,string
+events,Client_ID,num
+events,Company response to consumer,string
+events,Complaint ID,string
+events,Consumer complaint narrative,string
+events,Consumer consent provided?,string
+events,Consumer disputed?,string
+events,Date received,date
+events,Date sent to company,string
+events,Issue,string
+events,Product,string
+events,Sub-issue,string
+events,Sub-product,string
+events,Submitted via,string
+events,Tags,string
+events,Timely response?,string
+reviews,Date,date
+reviews,Product,string
+reviews,Reviews,string
+reviews,Stars,num
+reviews,district_id,string
+state,Region,string
+state,State,string
+state,StateCode,string

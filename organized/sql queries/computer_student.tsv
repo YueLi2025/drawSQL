@@ -1,0 +1,54 @@
+sql_query
+SELECT course_id FROM course WHERE courseLevel = 'Level_500'
+SELECT T2.p_id FROM course AS T1 INNER JOIN taughtBy AS T2 ON T1.course_id = T2.course_id WHERE T1.courseLevel = 'Level_400'
+SELECT T1.courseLevel FROM course AS T1 INNER JOIN taughtBy AS T2 ON T1.course_id = T2.course_id WHERE T2.p_id = 297
+SELECT DISTINCT T2.p_id FROM course AS T1 INNER JOIN taughtBy AS T2 ON T1.course_id = T2.course_id WHERE T1.courseLevel = 'Level_400' OR T1.courseLevel = 'Level_500'
+SELECT T1.course_id, T1.courseLevel FROM course AS T1 INNER JOIN taughtBy AS T2 ON T1.course_id = T2.course_id GROUP BY T1.course_id, T1.courseLevel ORDER BY COUNT(T1.course_id) DESC LIMIT 1
+SELECT COUNT(*) FROM course WHERE courseLevel = 'Level_300'
+SELECT course_id FROM taughtBy WHERE course_id = 11 OR course_id = 18 GROUP BY course_id ORDER BY COUNT(course_id) DESC LIMIT 1
+SELECT T2.hasPosition FROM taughtBy AS T1 INNER JOIN person AS T2 ON T1.p_id = T2.p_id WHERE T1.course_id = 9
+SELECT T1.courseLevel FROM course AS T1 INNER JOIN taughtBy AS T2 ON T1.course_id = T2.course_id WHERE T2.p_id = 79
+SELECT T1.courseLevel FROM course AS T1 INNER JOIN taughtBy AS T2 ON T1.course_id = T2.course_id GROUP BY T2.course_id ORDER BY COUNT(T2.p_id) DESC LIMIT 1
+SELECT T1.p_id FROM taughtBy AS T1 INNER JOIN person AS T2 ON T1.p_id = T2.p_id WHERE T2.professor = 1 GROUP BY T1.p_id HAVING COUNT(DISTINCT T1.course_id) > 3
+SELECT CAST(COUNT(T1.course_id) AS REAL) / COUNT(DISTINCT T2.p_id) AS num FROM taughtBy AS T1 INNER JOIN person AS T2 ON T1.p_id = T2.p_id WHERE T2.professor = 1
+SELECT CAST(SUM(CASE  WHEN courseLevel = 'Level_400' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) AS per FROM course
+SELECT T1.p_id, T2.p_id FROM advisedBy AS T1 INNER JOIN person AS T2 ON T1.p_id_dummy = T2.p_id WHERE hasPosition = 'Faculty_eme'
+SELECT T1.p_id, T3.courseLevel FROM person AS T1 INNER JOIN taughtBy AS T2 ON T1.p_id = T2.p_id INNER JOIN course AS T3 ON T3.course_id = T2.course_id WHERE T3.course_id = 104 AND T1.hasPosition <> 0
+SELECT T1.p_id, T1.hasPosition FROM person AS T1 INNER JOIN taughtBy AS T2 ON T1.p_id = T2.p_id INNER JOIN course AS T3 ON T3.course_id = T2.course_id WHERE T3.courseLevel = 'Level_400' AND T2.course_id < 10
+SELECT T2.p_id FROM course AS T1 INNER JOIN taughtBy AS T2 ON T1.course_id = T2.course_id WHERE T1.courseLevel = 'Level_300' AND T1.course_id > 121 AND T1.course_id < 130
+SELECT T1.course_id, T2.p_id FROM course AS T1 INNER JOIN taughtBy AS T2 ON T1.course_id = T2.course_id WHERE T1.courseLevel = 'Level_500' LIMIT 5
+SELECT p_id FROM taughtBy GROUP BY p_id ORDER BY COUNT(course_id) ASC LIMIT 1
+SELECT COUNT(T1.p_id_dummy) FROM advisedBy AS T1 INNER JOIN person AS T2 ON T1.p_id = T2.p_id WHERE T2.yearsInProgram = 'Year_1' AND T2.student = 1
+SELECT T1.hasPosition FROM person AS T1 INNER JOIN taughtBy AS T2 ON T1.p_id = T2.p_id WHERE T1.professor = 1 GROUP BY T1.p_id ORDER BY COUNT(T2.course_id) DESC LIMIT 1
+SELECT T2.yearsInProgram FROM advisedBy AS T1 INNER JOIN person AS T2 ON T1.p_id = T2.p_id WHERE T2.student = 1 GROUP BY T2.p_id HAVING COUNT(T2.p_id) > 2
+SELECT T2.yearsInProgram FROM advisedBy AS T1 INNER JOIN person AS T2 ON T1.p_id = T2.p_id WHERE T2.student = 1 GROUP BY T2.yearsInProgram ORDER BY COUNT(T1.p_id_dummy) DESC LIMIT 1
+SELECT CAST(COUNT(T1.course_id) AS REAL) / COUNT(DISTINCT T2.p_id) FROM course AS T1 INNER JOIN taughtBy AS T2 ON T1.course_id = T2.course_id WHERE T1.courseLevel = 'Level_500'
+SELECT COUNT(*) FROM ( SELECT COUNT(course_id) FROM taughtBy GROUP BY course_id HAVING COUNT(course_id) > 4 )
+SELECT T1.p_id, T1.hasPosition FROM person AS T1 INNER JOIN taughtBy AS T2 ON T1.p_id = T2.p_id GROUP BY T1.p_id ORDER BY COUNT(T2.course_id) DESC LIMIT 1
+SELECT COUNT(DISTINCT p_id) FROM taughtBy WHERE course_id = 18
+SELECT T1.p_id, T2.yearsInProgram FROM advisedBy AS T1 INNER JOIN person AS T2 ON T1.p_id = T2.p_id WHERE T1.p_id_dummy = 5
+SELECT T1.p_id_dummy, T2.courseLevel FROM advisedBy AS T1 INNER JOIN course AS T2 ON T1.p_id = T2.course_id INNER JOIN taughtBy AS T3 ON T2.course_id = T3.course_id WHERE T1.p_id = 80
+SELECT COUNT(*) FROM taughtBy WHERE course_id = 11
+SELECT COUNT(*) FROM person WHERE hasPosition = 'Faculty_eme'
+SELECT p_id_dummy FROM advisedBy GROUP BY p_id_dummy HAVING COUNT(p_id_dummy) > 4
+SELECT T1.p_id_dummy FROM advisedBy AS T1 INNER JOIN person AS T2 ON T1.p_id = T2.p_id WHERE T2.yearsInProgram = 'Year_5'
+SELECT CAST(SUM(CASE  WHEN professor = 1 THEN 1 ELSE 0 END) AS REAL) * 100 / SUM(CASE  WHEN student = 1 THEN 1 ELSE 0 END) AS per FROM person
+SELECT T2.hasPosition, T1.p_id_dummy FROM advisedBy AS T1 INNER JOIN person AS T2 ON T1.p_id_dummy = T2.p_id WHERE T1.p_id = 303
+SELECT T1.p_id, T3.courseLevel FROM person AS T1 INNER JOIN taughtBy AS T2 ON T1.p_id = T2.p_id INNER JOIN course AS T3 ON T3.course_id = T2.course_id WHERE T1.hasPosition = 'Faculty_aff'
+SELECT T1.course_id, T1.courseLevel FROM course AS T1 INNER JOIN taughtBy AS T2 ON T1.course_id = T2.course_id WHERE T2.p_id BETWEEN 40 AND 50
+SELECT COUNT(*) FROM person WHERE hasPosition = 0 AND inPhase = 0
+SELECT COUNT(*) FROM advisedBy AS T1 INNER JOIN person AS T2 ON T1.p_id = T2.p_id WHERE T1.p_id_dummy = 5 AND T2.student = 1 AND T2.yearsInProgram = 'Year_5'
+SELECT COUNT(*) FROM ( SELECT COUNT(T2.p_id) FROM course AS T1 INNER JOIN taughtBy AS T2 ON T1.course_id = T2.course_id WHERE T1.courseLevel = 'Level_400' GROUP BY T2.p_id HAVING COUNT(DISTINCT T1.course_id) <= 2 )
+SELECT COUNT(*) FROM course AS T1 INNER JOIN taughtBy AS T2 ON T1.course_id = T2.course_id WHERE T1.courseLevel = 'Level_300'
+SELECT COUNT(course_id) FROM course WHERE courseLevel = 'Level_500'
+SELECT COUNT(*) FROM person WHERE yearsInProgram = 'Year_1' OR yearsInProgram = 'Year_2'
+SELECT T1.p_id FROM advisedBy AS T1 INNER JOIN person AS T2 ON T1.p_id = T2.p_id WHERE T2.yearsInProgram = 'Year_3'
+SELECT T1.courseLevel, T2.p_id FROM course AS T1 INNER JOIN taughtBy AS T2 ON T1.course_id = T2.course_id WHERE T2.course_id = 165
+SELECT T1.p_id_dummy FROM advisedBy AS T1 INNER JOIN person AS T2 ON T1.p_id = T2.p_id WHERE T2.yearsInProgram = 'Year_12'
+SELECT COUNT(*) FROM person AS T1 INNER JOIN taughtBy AS T2 ON T1.p_id = T2.p_id INNER JOIN course AS T3 ON T3.course_id = T2.course_id WHERE T1.hasPosition = 'Faculty_aff' AND T1.professor = 1 AND T3.courseLevel = 'Level_500'
+SELECT DISTINCT T2.course_id FROM person AS T1 INNER JOIN taughtBy AS T2 ON T1.p_id = T2.p_id WHERE T1.professor = 1 AND T1.hasPosition = 0
+SELECT COUNT(DISTINCT T1.p_id_dummy) FROM advisedBy AS T1 INNER JOIN person AS T2 ON T1.p_id = T2.p_id WHERE T2.yearsInProgram = 'Year_3'
+SELECT T2.yearsInProgram, T2.inPhase FROM advisedBy AS T1 INNER JOIN person AS T2 ON T1.p_id = T2.p_id GROUP BY T1.p_id ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T1.p_id_dummy, T2.hasPosition FROM advisedBy AS T1 INNER JOIN person AS T2 ON T1.p_id = T2.p_id WHERE T2.yearsInProgram = 'Year_8'
+SELECT COUNT(*) FROM advisedBy WHERE p_id_dummy = 415
+SELECT COUNT(*) FROM course WHERE courseLevel = 'Level_500'

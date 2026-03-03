@@ -1,0 +1,18 @@
+nl_question
+How many residents does each property have? List property id and resident count.
+What is the distinct service types that are provided by the organization which has detail 'Denesik and Sons Party'?
+How many services has each resident requested? List the resident id, details, and the count in descending order of the count.
+What is the maximum number that a certain service is provided? List the service id, details and number.
+List the id and type of each thing, and the details of the organization that owns it.
+What are the id and details of the customers who have at least 3 events?
+What is each customer's move in date, and the corresponding customer id and details?
+Which events have the number of notes between one and three? List the event id and the property id.
+What are the distinct id and type of the thing that has the status 'Close' or has a status record before the date '2017-06-19 02:59:21'
+How many distinct locations have the things with service detail 'Unsatisfied' been located in?
+How many different status codes of things are there?
+Which organizations are not a parent organization of others? List the organization id.
+When is the last day any resident moved in?
+What are the resident details containing the substring 'Miss'?
+List the customer event id and the corresponding move in date and property id.
+How many customers did not have any event?
+What are the distinct move in dates of the residents?

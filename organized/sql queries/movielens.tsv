@@ -1,0 +1,71 @@
+sql_query
+SELECT COUNT(T1.userid) FROM u2base AS T1 INNER JOIN users AS T2 ON T1.userid = T2.userid WHERE T1.rating = 5 AND T2.u_gender = 'M'
+SELECT T1.movieid FROM u2base AS T1 INNER JOIN movies AS T2 ON T1.movieid = T2.movieid WHERE T2.country = 'USA' GROUP BY T1.movieid ORDER BY AVG(T1.rating) DESC LIMIT 10
+SELECT AVG(T2.cast_num) FROM movies AS T1 INNER JOIN movies2actors AS T2 ON T1.movieid = T2.movieid WHERE T1.country = 'USA'
+SELECT T2.actorid, T4.genre FROM movies AS T1 INNER JOIN movies2actors AS T2 ON T1.movieid = T2.movieid INNER JOIN actors AS T3 ON T2.actorid = T3.actorid INNER JOIN movies2directors AS T4 ON T1.movieid = T4.movieid WHERE T4.directorid = 22397
+SELECT T2.actorid, T1.directorid FROM movies2directors AS T1 INNER JOIN movies2actors AS T2 ON T1.movieid = T2.movieid WHERE T1.genre = 'Action'
+SELECT T2.actorid FROM movies AS T1 INNER JOIN movies2actors AS T2 ON T1.movieid = T2.movieid INNER JOIN actors AS T3 ON T2.actorid = T3.actorid WHERE T3.a_quality = 3 AND T1.country = 'USA' AND T1.isEnglish = 'T'
+SELECT T1.movieid FROM movies AS T1 INNER JOIN movies2directors AS T2 ON T1.movieid = T2.movieid INNER JOIN directors AS T3 ON T2.directorid = T3.directorid WHERE T1.runningtime = 3 AND T3.avg_revenue = 1
+SELECT T2.genre FROM movies AS T1 INNER JOIN movies2directors AS T2 ON T1.movieid = T2.movieid WHERE T1.country = 'UK'
+SELECT T3.country FROM movies2directors AS T1 INNER JOIN directors AS T2 ON T1.directorid = T2.directorid INNER JOIN movies AS T3 ON T1.movieid = T3.movieid WHERE T1.genre = 'Action' GROUP BY T3.country ORDER BY COUNT(T3.country) DESC LIMIT 1
+SELECT CAST(SUM(IIF(T2.u_gender = 'F', 1, 0)) AS REAL) * 100 / COUNT(T2.userid) FROM u2base AS T1 INNER JOIN users AS T2 ON T1.userid = T2.userid WHERE T1.rating = 2
+SELECT COUNT(DISTINCT T1.movieid) FROM u2base AS T1 INNER JOIN movies AS T2 ON T1.movieid = T2.movieid WHERE T2.country = 'UK' AND T1.rating = 5
+SELECT COUNT(DISTINCT T1.movieid) FROM movies AS T1 INNER JOIN u2base AS T2 ON T1.movieid = T2.movieid WHERE T1.year = 1 AND T2.rating = 1 AND T1.isEnglish = 'T'
+SELECT T3.country FROM actors AS T1 INNER JOIN movies2actors AS T2 ON T1.actorid = T2.actorid INNER JOIN movies AS T3 ON T2.movieid = T3.movieid WHERE T1.a_gender = 'F' AND T1.a_quality = 0
+SELECT AVG(T2.rating) FROM movies AS T1 INNER JOIN u2base AS T2 ON T1.movieid = T2.movieid INNER JOIN movies2directors AS T3 ON T1.movieid = T3.movieid WHERE T1.country = 'USA' AND T3.genre = 'Action' GROUP BY T1.movieid ORDER BY AVG(T2.rating) DESC LIMIT 1
+SELECT COUNT(*) FROM ( SELECT DISTINCT T2.movieid FROM directors AS T1 INNER JOIN movies2directors AS T2 ON T1.directorid = T2.directorid INNER JOIN u2base AS T3 ON T2.movieid = T3.movieid WHERE T1.d_quality = 5 GROUP BY T2.movieid HAVING AVG(T3.rating) > 3.5 ) AS T1
+SELECT T1.movieid FROM movies2directors AS T1 INNER JOIN u2base AS T2 ON T1.movieid = T2.movieid WHERE T1.genre = 'Adventure' GROUP BY T1.movieid ORDER BY AVG(T2.rating) DESC LIMIT 1
+SELECT DISTINCT T1.movieid FROM movies AS T1 INNER JOIN u2base AS T2 ON T1.movieid = T2.movieid WHERE T1.runningtime = 0 AND T2.rating = ( SELECT MAX(rating) FROM u2base )
+SELECT T1.directorid FROM directors AS T1 INNER JOIN movies2directors AS T2 ON T1.directorid = T2.directorid WHERE T1.d_quality = 5 GROUP BY T1.directorid ORDER BY COUNT(T2.movieid) DESC LIMIT 1
+SELECT T1.movieid FROM u2base AS T1 INNER JOIN movies2directors AS T2 ON T1.movieid = T2.movieid WHERE T1.rating = 1 AND T2.genre = 'Horror'
+SELECT T2.directorid FROM movies AS T1 INNER JOIN movies2directors AS T2 ON T1.movieid = T2.movieid WHERE T1.country = 'France'
+SELECT T2.userid, T2.age FROM u2base AS T1 INNER JOIN users AS T2 ON T1.userid = T2.userid WHERE T1.movieid = 1695219
+SELECT T2.genre FROM movies AS T1 INNER JOIN movies2directors AS T2 ON T1.movieid = T2.movieid WHERE T1.isEnglish = 'F' GROUP BY T2.genre ORDER BY COUNT(T1.movieid) DESC LIMIT 1
+SELECT T1.actorid, T2.directorid FROM movies2actors AS T1 INNER JOIN movies2directors AS T2 ON T1.movieid = T2.movieid WHERE T1.movieid = 1949144
+SELECT T1.actorid FROM movies2actors AS T1 INNER JOIN movies AS T2 ON T1.movieid = T2.movieid WHERE T2.year = 4
+SELECT T2.actorid FROM movies AS T1 INNER JOIN movies2actors AS T2 ON T1.movieid = T2.movieid WHERE T1.runningtime = 2 AND T1.isEnglish = 'T'
+SELECT COUNT(T2.actorid) FROM movies AS T1 INNER JOIN movies2actors AS T2 ON T1.movieid = T2.movieid WHERE T1.country = 'USA' AND T2.cast_num > 1
+SELECT DISTINCT T1.movieid FROM movies AS T1 INNER JOIN movies2actors AS T2 ON T1.movieid = T2.movieid WHERE T1.year = 1 AND T2.cast_num = 0
+SELECT COUNT(T1.movieid) FROM movies AS T1 INNER JOIN movies2directors AS T2 ON T1.movieid = T2.movieid WHERE T1.country = 'USA' AND T2.genre = 'comedy'
+SELECT COUNT(T1.movieid) FROM movies2directors AS T1 INNER JOIN movies AS T2 ON T1.movieid = T2.movieid WHERE T2.year = 4 AND T1.genre IN ('Action', 'drama')
+SELECT T1.movieid FROM movies2directors AS T1 INNER JOIN movies AS T2 ON T1.movieid = T2.movieid WHERE T2.runningtime >= 2 AND T1.genre = 'Horror'
+SELECT DISTINCT T1.avg_revenue FROM directors AS T1 INNER JOIN movies2directors AS T2 ON T1.directorid = T2.directorid WHERE T1.d_quality = 5
+SELECT T2.movieid FROM users AS T1 INNER JOIN u2base AS T2 ON T1.userid = T2.userid WHERE T1.age = 25 GROUP BY T2.movieid ORDER BY COUNT(T1.userid) DESC LIMIT 1
+SELECT COUNT(DISTINCT T2.userid) FROM movies AS T1 INNER JOIN u2base AS T2 ON T1.movieid = T2.movieid INNER JOIN users AS T3 ON T2.userid = T3.userid WHERE T1.country = 'UK' AND T3.age = 35
+SELECT T1.userid, T1.age FROM users AS T1 INNER JOIN u2base AS T2 ON T1.userid = T2.userid WHERE T2.movieid = '2409051' AND T2.rating = 2
+SELECT DISTINCT T1.movieid FROM u2base AS T1 INNER JOIN movies AS T2 ON T1.movieid = T2.movieid WHERE T1.rating = 5 AND T2.year = 1
+SELECT DISTINCT T1.movieid FROM u2base AS T1 INNER JOIN movies AS T2 ON T1.movieid = T2.movieid WHERE T2.country = 'France' AND T1.rating = 1
+SELECT COUNT(DISTINCT T2.actorid) FROM u2base AS T1 INNER JOIN movies2actors AS T2 ON T1.movieid = T2.movieid WHERE T1.rating = 5
+SELECT T2.movieid FROM u2base AS T2 INNER JOIN movies2directors AS T3 ON T2.movieid = T3.movieid WHERE T3.genre = 'Crime' GROUP BY T2.movieid ORDER BY AVG(T2.rating) LIMIT 1
+SELECT CAST(SUM(IIF(T3.a_gender = 'M', 1, 0)) AS REAL) / SUM(IIF(T3.a_gender = 'F', 1, 0)) FROM movies AS T1 INNER JOIN movies2actors AS T2 ON T1.movieid = T2.movieid INNER JOIN actors AS T3 ON T2.actorid = T3.actorid WHERE T1.country = 'UK'
+SELECT COUNT(T1.userid) FROM users AS T1 INNER JOIN u2base AS T2 ON T1.userid = T2.userid WHERE T2.rating = 3 AND T2.movieid = '1711133' AND T1.age = 35 AND T1.u_gender = 'F'
+SELECT DISTINCT T1.directorid FROM directors AS T1 INNER JOIN movies2directors AS T2 ON T1.directorid = T2.directorid WHERE T1.d_quality = 3 AND T1.avg_revenue = 2 AND T2.genre != 'Comedy'
+SELECT CAST(SUM(IIF(a_gender = 'M', 1, 0)) AS REAL) / SUM(IIF(a_gender = 'F', 1, 0)) FROM actors WHERE a_quality = 0
+SELECT actorid FROM movies2actors GROUP BY actorid ORDER BY COUNT(movieid) DESC LIMIT 1
+SELECT genre FROM movies2directors GROUP BY genre ORDER BY COUNT(movieid) DESC LIMIT 1
+SELECT T2.genre FROM directors AS T1 INNER JOIN movies2directors AS T2 ON T1.directorid = T2.directorid WHERE T1.d_quality = 0 GROUP BY T2.genre ORDER BY COUNT(T2.movieid) DESC LIMIT 1
+SELECT T2.movieid FROM movies AS T1 INNER JOIN u2base AS T2 ON T1.movieid = T2.movieid WHERE T1.isEnglish = 'F' AND T1.country = 'USA' ORDER BY T2.rating LIMIT 1
+SELECT T2.genre FROM movies AS T1 INNER JOIN movies2directors AS T2 ON T1.movieid = T2.movieid WHERE T1.runningtime <= 2 AND T1.isEnglish = 'T' AND T1.country = 'other'
+SELECT SUM(IIF(a_gender = 'M', 1, 0)) , SUM(IIF(a_gender = 'F', 1, 0)) , CAST(SUM(IIF(a_quality = 5, 1, 0)) AS REAL) * 100 / COUNT(*) , CAST(SUM(IIF(a_quality = 0, 1, 0)) AS REAL) * 100 / COUNT(*), ( SELECT directorid FROM movies2directors WHERE movieid = 1684910 ) , ( SELECT genre FROM movies2directors WHERE movieid = 1684910 ) FROM actors WHERE actorid IN ( SELECT actorid FROM movies2actors WHERE movieid = 1684910 )
+SELECT DISTINCT T2.directorid FROM u2base AS T1 INNER JOIN movies2directors AS T2 ON T1.movieid = T2.movieid WHERE T1.rating > 4
+SELECT T2.genre FROM movies2actors AS T1 INNER JOIN movies2directors AS T2 ON T1.movieid = T2.movieid INNER JOIN actors AS T3 ON T1.actorid = T3.actorid WHERE T3.actorid = 851
+SELECT COUNT(T1.movieid) FROM u2base AS T1 INNER JOIN movies AS T2 ON T1.movieid = T2.movieid WHERE T2.country = 'USA' AND T1.rating < 3
+SELECT DISTINCT T1.movieid FROM u2base AS T1 INNER JOIN movies AS T2 ON T1.movieid = T2.movieid WHERE T2.country = 'other' AND T2.isEnglish = 'F' LIMIT 5
+SELECT userid FROM u2base WHERE rating = 5 GROUP BY userid ORDER BY COUNT(movieid) DESC LIMIT 1
+SELECT T1.movieid FROM movies2directors AS T1 INNER JOIN movies AS T2 ON T1.movieid = T2.movieid WHERE T2.country = 'UK' AND T1.genre = 'Adventure' AND T2.isEnglish = 'F' LIMIT 5
+SELECT T2.genre FROM movies AS T1 INNER JOIN movies2directors AS T2 ON T1.movieid = T2.movieid WHERE T1.year = 4 AND T1.isEnglish = 'T'
+SELECT COUNT(T1.movieid) FROM movies AS T1 INNER JOIN movies2directors AS T2 ON T1.movieid = T2.movieid WHERE T1.country = 'USA' AND T1.isEnglish = 'F' AND T2.genre = 'Action'
+SELECT DISTINCT T1.movieid FROM u2base AS T1 INNER JOIN movies AS T2 ON T1.movieid = T2.movieid WHERE T2.year = 4 AND T1.rating = 1
+SELECT T2.genre FROM directors AS T1 INNER JOIN movies2directors AS T2 ON T1.directorid = T2.directorid WHERE T1.avg_revenue = 4
+SELECT T1.actorid, T1.a_quality FROM actors AS T1 INNER JOIN movies2actors AS T2 ON T1.actorid = T2.actorid WHERE T2.movieid = 1722327
+SELECT CAST(SUM(IIF(T2.avg_revenue > T2.d_quality, 1, 0)) AS REAL) * 100 / COUNT(T1.movieid) FROM movies2directors AS T1 INNER JOIN directors AS T2 ON T1.directorid = T2.directorid WHERE T1.genre = 'Action'
+SELECT CAST(SUM(CASE WHEN T1.d_quality = 4 AND T1.avg_revenue = 4 THEN 1 ELSE 0 END) AS REAL) / COUNT(T2.movieid) FROM directors AS T1 INNER JOIN movies2directors AS T2 ON T1.directorid = T2.directorid
+SELECT SUM(IIF(T1.a_gender = 'F', 1, 0)) , T3.country, T3.runningtime FROM actors AS T1 INNER JOIN movies2actors AS T2 ON T1.actorid = T2.actorid INNER JOIN movies AS T3 ON T2.movieid = T3.movieid WHERE T2.movieid = 2312852 GROUP BY T3.country, T3.runningtime
+SELECT COUNT(T2.actorid) FROM movies AS T1 INNER JOIN movies2actors AS T2 ON T1.movieid = T2.movieid INNER JOIN actors AS T3 ON T2.actorid = T3.actorid WHERE T3.a_gender = 'F' AND T1.year = 4
+SELECT CAST(SUM(IIF(T3.a_quality >= 3, 1, 0)) AS REAL) * 100 / COUNT(T1.movieid) FROM movies AS T1 INNER JOIN movies2actors AS T2 ON T1.movieid = T2.movieid INNER JOIN actors AS T3 ON T2.actorid = T3.actorid WHERE T1.country = 'UK'
+SELECT CAST(SUM(IIF(T1.rating = 1, 1, 0)) AS REAL) * 100 / COUNT(T1.movieid) FROM u2base AS T1 INNER JOIN movies AS T2 ON T1.movieid = T2.movieid WHERE T2.country = 'USA'
+SELECT DISTINCT T1.movieid FROM movies AS T1 INNER JOIN movies2directors AS T2 ON T1.movieid = T2.movieid INNER JOIN u2base AS T3 ON T1.movieid = T3.movieid INNER JOIN users AS T4 ON T3.userid = T4.userid WHERE T1.country = 'UK' AND T2.genre = 'Comedy' AND T1.runningtime = 3 AND T3.rating = 5 AND T4.age BETWEEN 45 AND 50 AND T1.isEnglish = 'T'
+SELECT T1.movieid FROM u2base AS T1 INNER JOIN users AS T2 ON T1.userid = T2.userid WHERE T2.u_gender = 'F' GROUP BY T1.movieid ORDER BY COUNT(T2.userid) DESC LIMIT 1
+SELECT COUNT(DISTINCT T2.userid) FROM users AS T1 INNER JOIN u2base AS T2 ON T1.userid = T2.userid INNER JOIN movies AS T3 ON T2.movieid = T3.movieid WHERE T1.u_gender = 'F' AND T3.country = 'France'
+SELECT COUNT(DISTINCT T2.directorid) FROM movies2directors AS T2 INNER JOIN directors AS T3 ON T2.directorid = T3.directorid WHERE T2.genre = 'Action' AND T3.d_quality = 4
+SELECT T2.actorid FROM movies AS T1 INNER JOIN movies2actors AS T2 ON T1.movieid = T2.movieid WHERE T1.country = 'France' GROUP BY T2.actorid HAVING COUNT(T1.movieid) > 2

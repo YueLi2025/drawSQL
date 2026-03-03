@@ -1,0 +1,17 @@
+nl_question
+Return the names of directors who are older than the average age.
+Find the the name of the oldest director.
+How many channels have the word 'bbc' in their internet link?
+How many different digital terrestrial channels are there?
+List all program titles in the order of starting year. List the most recent one first.
+Which director is in charge of the most programs?
+Find the name and age of the director who is in charge of the most programs?
+Return the title of the program that began most recently.
+Find the name and website link of the channels that have more than one program.
+Find the number of programs for each channel. Return the name of each channel as well.
+Find the number of channels that do not run any program.
+What is the name of the director who is in the "Dracula" program?
+Find the name and internet web of the channel that is directed by the most directors.
+Find the name of the directors whose age is between 30 and 60.
+give me the name of channels that have both a director younger than 40 and a director older than 60.
+Find the id and name of the channel that is not directed by Hank Baskett.

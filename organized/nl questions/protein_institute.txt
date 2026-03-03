@@ -1,0 +1,21 @@
+nl_question
+How many buildings are there?
+Show the name, street address, and number of floors for all buildings ordered by the number of floors.
+What is the name of the tallest building?
+What are the average, maximum, and minimum number of floors for all buildings?
+Show the number of buildings with a height above the average or a number of floors above the average.
+List the names of buildings with at least 200 feet of height and with at least 20 floors.
+Show the names and locations of institutions that are founded after 1990 and have the type "Private".
+Show institution types, along with the number of institutions and total enrollment for each type.
+Show the institution type with the largest number of institutions.
+Show the institution type with an institution founded after 1990 and an institution with at least 1000 enrollment.
+Show the name of buildings that do not have any institution.
+Show the names of buildings except for those having an institution founded in 2003.
+For each building, show the name of the building and the number of institutions in it.
+Show the names and heights of buildings with at least two institutions founded after 1880.
+Show all the distinct institution types.
+Show institution names along with the number of proteins for each institution.
+How many proteins are associated with an institution founded after 1880 or an institution with type "Private"?
+Show the protein name and the institution name.
+How many proteins are associated with an institution in a building with at least 20 floors?
+How many institutions do not have an associated protein in our record?

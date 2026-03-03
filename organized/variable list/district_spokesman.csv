@@ -1,0 +1,16 @@
+table_name,column_name,column_type
+district,District_ID,num
+district,Name,string
+district,Area_km,num
+district,Population,num
+district,Density_km,num
+district,Government_website,string
+spokesman,Spokesman_ID,num
+spokesman,Name,string
+spokesman,Age,num
+spokesman,Speach_title,string
+spokesman,Rank_position,num
+spokesman,Points,num
+spokesman_district,Spokesman_ID,num
+spokesman_district,District_ID,num
+spokesman_district,Start_year,string

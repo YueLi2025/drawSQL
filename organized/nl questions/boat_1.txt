@@ -1,0 +1,79 @@
+nl_question
+Return all details of sailors who are older than 30.
+What can you tell me about sailors who are older than age 30?
+Return name and age for sailors who are younger than 30.
+What is the name and age of every sailor who is younger than age 30?
+Find boats reserved by Sailor with id 1.
+What are the different boat ids reserved by the sailor whose id is 1?
+Who reserved boat 102?
+What is the name of the sailor who reserved boat 102?
+Return the unique boat ids (bid) of all reserved boats.
+What are the ids of all boats that are reserved by someone?
+What is the name of sailors whose names contain letter e?
+What is the name of every sailor whose name contains the letter e?
+return the unique ids of sailors who are older than any sailors.
+What is the different id of every sailor who is not the youngest?
+Return the unique names of sailors who are older than any sailors whose rating is larger than 7.
+What are the different names of sailors who are older than some other sailor with a rating larger than 7?
+Find the name and id of the sailors who reserved at least one boat?
+What is the name and id of every sailor who reserved one or more boats?
+Find the id and name of the sailors who reserved more than one boat.
+What are the different names of sailors who reserved two or more boats ?
+Find the id of Sailors (sid) that reserved red or blue boat.
+What are the sids for sailors who reserved red or blue boats?
+Find the name and id of Sailors (sid) that reserved red or blue boat.
+What are the names and ids of sailors who reserved red or blue boats?
+Find the id of Sailors (sid) that reserved red and blue boat.
+What are the ids of sailors who reserved red and blue boats?
+Find the name and id of Sailors (sid) that reserved red and blue boat.
+What are the names and ids of sailors who reserved red and blue boats?
+What is the ids of sailors that haven’t reserved a boat?
+What are the ids of sailors who have not reserved a boat?
+what is the name and id of sailors who do not have a reservation of a boat?
+What are the names and ids of all sailors who do not have boat reservations?
+Find id for the sailors who do not have a reservation of a boat?
+What is id about sailors who do not have boat reservations?
+What is the name of the sailors who reserved boat with id 103?
+Find the name of the sailors who reserved boat with id 103.
+What is the name of all sailors whose rating is higher than any sailor named Luis?
+What are the sailors' names, the ones whose rating is higher than any sailor named Luis?
+What is the name of all sailors whose rating is higher than all sailors named Luis?
+What are the names of all sailors with a higher rating than every sailor named Luis?
+what is the name and id of every sailor who has a rating greater than 2 and reserved a boat.
+What are the names and ids of all sailors who have a rating of at least 3 and reserved a boat?
+Find the name and age of the oldest sailor.
+What is the name and age of the sailor with maximum age?
+how many sailors in total?
+How many sailors exist?
+What is the average age of sailors whose rating is 7?
+What is average age of all sailors who have a rating of 7?
+How many sailors whose name starts with letter D exist ?
+What is the count of the sailors whose name starts with letter D ?
+What are the average rating and max age of all sailors?
+Find the average rating and largest age for the sailors
+Find the number of reservations for each boat.
+How many reservations exist for each boat?
+Find the number of reservations for each boat with id greater than 50.
+How many reservations exist for each boat with an id greater than 50?
+Find the number of reservations for each boat with more than 1 reservation.
+How many reservations exist for each boat that has more than 1 reservation already?
+Find the number of reservations by sailors with id greater than 1 for each boat.
+How many reservations for each boat did the sailors with an id greater than 1 make?
+What is the rating and average age for sailors who have reserved red boat grouped by rating?
+What are the rating and average age for sailors who reserved red boats for each rating?
+Find the name, rating and age of all sailors ordered by rating and age.
+What is the name, rating, and age for every sailor? And order them by rating and age.
+Find the total number of boats.
+How many boats are there?
+How many boats are red?
+How many red boats exist?
+Find the names of boats booked by sailors whose age is between 20 and 30.
+What are the names of the boats booked by people between age 20 and 30?
+Find the names of sailors whose rating is larger than the rating of all sailors who booked a red boat.
+What are the names of the sailors whose rating is larger than the rating of all sailors who booked a red boat?
+What is highest rating between sailors?
+What is the maximum rating for sailors?
+Find the names of sailors who reserved boat with the name Melon.
+What are the names of sailors who reserved a boat with the name Melon?
+List the names and ages of all sailors sorted by rating in descending order.
+What are the names and ages of all sailors sorted by decreasing rating?

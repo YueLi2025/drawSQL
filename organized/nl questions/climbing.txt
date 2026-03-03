@@ -1,0 +1,41 @@
+nl_question
+How many climbers are there?
+Count the number of climbers.
+List the names of climbers in descending order of points.
+What are the names of the climbers, ordered by points descending?
+List the names of climbers whose country is not Switzerland.
+What are the names of climbers who are not from the country of Switzerland?
+What is the maximum point for climbers whose country is United Kingdom?
+Return the maximum number of points for climbers from the United Kingdom.
+How many distinct countries are the climbers from?
+Count the number of different countries that climbers are from.
+What are the names of mountains in ascending alphabetical order?
+Give the names of mountains in alphabetical order.
+What are the countries of mountains with height bigger than 5000?
+Return the countries of the mountains that have a height larger than 5000.
+What is the name of the highest mountain?
+Return the name of the mountain with the greatest height.
+List the distinct ranges of the mountains with the top 3 prominence.
+What are the different ranges of the 3 mountains with the highest prominence?
+Show names of climbers and the names of mountains they climb.
+What are the names of climbers and the corresponding names of mountains that they climb?
+Show the names of climbers and the heights of mountains they climb.
+What are the names of climbers and the corresponding heights of the mountains that they climb?
+Show the height of the mountain climbed by the climber with the maximum points.
+What is the height of the mountain climbined by the climbing who had the most points?
+Show the distinct names of mountains climbed by climbers from country "West Germany".
+What are the different names of mountains ascended by climbers from the country of West Germany?
+Show the times used by climbers to climb mountains in Country Uganda.
+What are the times used by climbers who climbed mountains in the country of Uganda?
+Please show the countries and the number of climbers from each country.
+How many climbers are from each country?
+List the countries that have more than one mountain.
+Which countries have more than one mountain?
+List the names of mountains that do not have any climber.
+What are the names of countains that no climber has climbed?
+Show the countries that have mountains with height more than 5600 stories and mountains with height less than 5200.
+What are the countries that have both mountains that are higher than 5600 and lower than 5200?
+Show the range that has the most number of mountains.
+Which range contains the most mountains?
+Show the names of mountains with height more than 5000 or prominence more than 1000.
+What are the names of mountains that have a height of over 5000 or a prominence of over 1000?

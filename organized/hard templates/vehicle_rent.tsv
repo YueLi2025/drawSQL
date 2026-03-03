@@ -1,0 +1,45 @@
+hard_templates
+SELECT count(*) FROM table_name
+SELECT count(*) FROM table_name
+SELECT col_name FROM table_name ORDER BY col_name DESC
+SELECT col_name FROM table_name ORDER BY col_name DESC
+SELECT DISTINCT col_name FROM table_name
+SELECT DISTINCT col_name FROM table_name
+SELECT col_name , col_name , col_name FROM table_name WHERE col_name = num OR col_name = num
+SELECT col_name , col_name , col_name FROM table_name WHERE col_name = num OR col_name = num
+SELECT col_name FROM table_name WHERE col_name = num INTERSECT SELECT col_name FROM table_name WHERE col_name = num
+SELECT col_name FROM table_name WHERE col_name = num INTERSECT SELECT col_name FROM table_name WHERE col_name = num
+SELECT col_name , count(*) FROM table_name GROUP BY col_name
+SELECT col_name , count(*) FROM table_name GROUP BY col_name
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT min(col_name) , max(col_name) , avg(col_name) FROM table_name
+SELECT min(col_name) , max(col_name) , avg(col_name) FROM table_name
+SELECT col_name , col_name FROM table_name WHERE col_name <= col_name
+SELECT col_name , col_name FROM table_name WHERE col_name <= col_name
+SELECT col_name , avg(col_name) FROM table_name GROUP BY col_name HAVING count(*) >= num
+SELECT col_name , avg(col_name) FROM table_name GROUP BY col_name HAVING count(*) >= num
+SELECT col_name , col_name , col_name FROM table_name
+SELECT col_name , col_name , col_name FROM table_name
+SELECT col_name , col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name , col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT avg(col_name) FROM table_name WHERE col_name > (SELECT avg(col_name) FROM table_name)
+SELECT avg(col_name) FROM table_name WHERE col_name > (SELECT avg(col_name) FROM table_name)
+SELECT * FROM table_name
+SELECT * FROM table_name
+SELECT table_alias1.col_name , sum(table_alias0.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name
+SELECT table_alias1.col_name , sum(table_alias0.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name
+SELECT col_name FROM table_name WHERE col_name NOT IN (SELECT col_name FROM table_name)
+SELECT col_name FROM table_name WHERE col_name NOT IN (SELECT col_name FROM table_name)
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name HAVING count(*) >= num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name HAVING count(*) >= num
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name ORDER BY count(*) DESC LIMIT num
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name ORDER BY count(*) DESC LIMIT num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name ORDER BY sum(table_alias0.col_name) DESC
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name ORDER BY sum(table_alias0.col_name) DESC
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name ORDER BY count(*) DESC LIMIT num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name ORDER BY count(*) DESC LIMIT num
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name HAVING sum(table_alias0.col_name) > num
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name HAVING sum(table_alias0.col_name) > num
+SELECT avg(col_name) , avg(col_name) , col_name FROM table_name GROUP BY col_name
+SELECT avg(col_name) , avg(col_name) , col_name FROM table_name GROUP BY col_name

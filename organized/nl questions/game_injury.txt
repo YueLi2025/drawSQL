@@ -1,0 +1,20 @@
+nl_question
+How many games are held after season 2007?
+List the dates of games by the home team name in descending order.
+List the season, home team, away team of all the games.
+What are the maximum, minimum and average home games each stadium held?
+What is the average attendance of stadiums with capacity percentage higher than 100%?
+What are the player name, number of matches, and information source for players who do not suffer from injury of 'Knee problem'?
+What is the season of the game which causes the player 'Walter Samuel' to get injured?
+What are the ids, scores, and dates of the games which caused at least two injury accidents?
+What are the id and name of the stadium where the most injury accidents happened?
+Find the id and name of the stadium where the largest number of injury accidents occurred.
+In which season and which stadium did any player have an injury of 'Foot injury' or 'Knee problem'?
+How many different kinds of information sources are there for injury accidents?
+How many games are free of injury accidents?
+How many distinct kinds of injuries happened after season 2010?
+List the name of the stadium where both the player 'Walter Samuel' and the player 'Thiago Motta' got injured.
+Show the name, average attendance, total attendance for stadiums where no accidents happened.
+Which stadium name contains the substring "Bank"?
+How many games has each stadium held?
+For each injury accident, find the date of the game and the name of the injured player in the game, and sort the results in descending order of game season.

@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+climber,Climber_ID,num
+climber,Name,string
+climber,Country,string
+climber,Time,string
+climber,Points,num
+climber,Mountain_ID,num
+mountain,Mountain_ID,num
+mountain,Name,string
+mountain,Height,num
+mountain,Prominence,num
+mountain,Range,string
+mountain,Country,string

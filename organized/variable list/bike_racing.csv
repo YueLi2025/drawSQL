@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+bike,id,num
+bike,product_name,string
+bike,weight,num
+bike,price,num
+bike,material,string
+cyclist,id,num
+cyclist,heat,num
+cyclist,name,string
+cyclist,nation,string
+cyclist,result,num
+cyclists_own_bikes,cyclist_id,num
+cyclists_own_bikes,bike_id,num
+cyclists_own_bikes,purchase_year,num

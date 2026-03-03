@@ -1,0 +1,21 @@
+nl_question
+How many elections are there?
+List the votes of elections in descending order.
+List the dates and vote percents of elections.
+What are the minimum and maximum vote percents of elections?
+What are the names and parties of representatives?
+What are the names of representatives whose party is not "Republican"?
+What are the life spans of representatives from New York state or Indiana state?
+What are the names of representatives and the dates of elections they participated in.
+What are the names of representatives with more than 10000 votes in election?
+What are the names of representatives in descending order of votes?
+What is the party of the representative that has the smallest number of votes.
+What are the lifespans of representatives in descending order of vote percent?
+What is the average number of votes of representatives from party "Republican"?
+What are the different parties of representative? Show the party name and the number of representatives in each party.
+What is the party that has the largest number of representatives?
+What parties have at least three representatives?
+What states have at least two representatives?
+List the names of representatives that have not participated in elections listed here.
+Show the parties that have both representatives in New York state and representatives in Pennsylvania state.
+How many distinct parties are there for representatives?

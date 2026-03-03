@@ -1,0 +1,99 @@
+soft_templates
+SELECT count(DISTINCT variable ) FROM variable
+SELECT count(DISTINCT variable ) FROM variable
+SELECT count(DISTINCT allergytype) FROM variable
+SELECT count(DISTINCT allergytype) FROM variable
+SELECT DISTINCT allergytype FROM variable
+SELECT DISTINCT allergytype FROM variable
+SELECT variable , allergytype FROM variable
+SELECT variable , allergytype FROM variable
+SELECT DISTINCT variable FROM variable WHERE allergytype = string
+SELECT DISTINCT variable FROM variable WHERE allergytype = string
+SELECT allergytype FROM variable WHERE variable = string
+SELECT allergytype FROM variable WHERE variable = string
+SELECT count(*) FROM variable WHERE allergytype = string
+SELECT count(*) FROM variable WHERE allergytype = string
+SELECT allergytype , count(*) FROM variable GROUP BY allergytype
+SELECT allergytype , count(*) FROM variable GROUP BY allergytype
+SELECT allergytype FROM variable GROUP BY allergytype ORDER BY count(*) DESC LIMIT num
+SELECT allergytype FROM variable GROUP BY allergytype ORDER BY count(*) DESC LIMIT num
+SELECT allergytype FROM variable GROUP BY allergytype ORDER BY count(*) ASC LIMIT num
+SELECT allergytype FROM variable GROUP BY allergytype ORDER BY count(*) ASC LIMIT num
+SELECT count(*) FROM variable
+SELECT count(*) FROM variable
+SELECT Fname , Lname FROM variable
+SELECT Fname , Lname FROM variable
+SELECT count(DISTINCT variable ) FROM variable
+SELECT count(DISTINCT variable ) FROM variable
+SELECT DISTINCT variable FROM variable
+SELECT DISTINCT variable FROM variable
+SELECT DISTINCT variable FROM variable
+SELECT DISTINCT variable FROM variable
+SELECT Fname , Lname , variable FROM variable WHERE variable = string
+SELECT Fname , Lname , variable FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable = string
+SELECT count(*) FROM variable WHERE variable = num
+SELECT count(*) FROM variable WHERE variable = num
+SELECT variable FROM variable WHERE variable > num
+SELECT variable FROM variable WHERE variable > num
+SELECT variable FROM variable WHERE LName = string
+SELECT variable FROM variable WHERE LName = string
+SELECT variable FROM variable WHERE variable = num
+SELECT variable FROM variable WHERE variable = num
+SELECT count(*) FROM variable WHERE variable = string OR variable = string
+SELECT count(*) FROM variable WHERE variable = string OR variable = string
+SELECT min( variable ) , avg( variable ) , max( variable ) FROM variable
+SELECT min( variable ) , avg( variable ) , max( variable ) FROM variable
+SELECT LName FROM variable WHERE variable = (SELECT min( variable ) FROM variable)
+SELECT LName FROM variable WHERE variable = (SELECT min( variable ) FROM variable)
+SELECT variable FROM variable WHERE variable = (SELECT max( variable ) FROM variable)
+SELECT variable FROM variable WHERE variable = (SELECT max( variable ) FROM variable)
+SELECT variable , count(*) FROM variable GROUP BY variable
+SELECT variable , count(*) FROM variable GROUP BY variable
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable , count(*) FROM variable GROUP BY variable
+SELECT variable , count(*) FROM variable GROUP BY variable
+SELECT avg( variable ) , variable FROM variable GROUP BY variable
+SELECT avg( variable ) , variable FROM variable GROUP BY variable
+SELECT variable , count(*) FROM variable GROUP BY variable
+SELECT variable , count(*) FROM variable GROUP BY variable
+SELECT variable , count(*) FROM variable GROUP BY variable
+SELECT variable , count(*) FROM variable GROUP BY variable
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT count(*) FROM variable WHERE variable = string
+SELECT count(*) FROM variable WHERE variable = string
+SELECT variable FROM variable GROUP BY variable HAVING count(*) >= num
+SELECT variable FROM variable GROUP BY variable HAVING count(*) >= num
+SELECT variable FROM variable EXCEPT SELECT variable FROM variable
+SELECT variable FROM variable EXCEPT SELECT variable FROM variable
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string OR variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string OR variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable , count(*) FROM variable GROUP BY variable
+SELECT variable , count(*) FROM variable GROUP BY variable
+SELECT variable , count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable
+SELECT variable , count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable
+SELECT lname , variable FROM variable WHERE variable IN (SELECT variable FROM variable WHERE variable = string INTERSECT SELECT variable FROM variable WHERE variable = string )
+SELECT lname , variable FROM variable WHERE variable IN (SELECT variable FROM variable WHERE variable = string INTERSECT SELECT variable FROM variable WHERE variable = string )
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string ORDER BY variable
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string ORDER BY variable
+SELECT fname , variable FROM variable WHERE variable IN (SELECT variable FROM variable WHERE variable = string EXCEPT SELECT variable FROM variable WHERE variable = string )
+SELECT fname , variable FROM variable WHERE variable IN (SELECT variable FROM variable WHERE variable = string EXCEPT SELECT variable FROM variable WHERE variable = string )
+SELECT avg( variable ) FROM variable WHERE variable IN ( SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string INTERSECT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string )
+SELECT avg( variable ) FROM variable WHERE variable IN ( SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string INTERSECT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string )
+SELECT fname , lname FROM variable WHERE variable NOT IN (SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string )
+SELECT fname , lname FROM variable WHERE variable NOT IN (SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string )
+SELECT count(*) FROM variable WHERE variable = string AND variable IN (SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string )
+SELECT count(*) FROM variable WHERE variable = string AND variable IN (SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string )
+SELECT DISTINCT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string OR variable = string
+SELECT DISTINCT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string OR variable = string
+SELECT count(*) FROM variable WHERE variable > num AND variable NOT IN ( SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string OR variable = string )
+SELECT count(*) FROM variable WHERE variable > num AND variable NOT IN ( SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string OR variable = string )
+SELECT fname , variable FROM variable WHERE variable NOT IN (SELECT variable FROM variable WHERE variable = string )
+SELECT fname , variable FROM variable WHERE variable NOT IN (SELECT variable FROM variable WHERE variable = string )

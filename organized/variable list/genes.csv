@@ -1,0 +1,15 @@
+table_name,column_name,column_type
+Classification,GeneID,string
+Classification,Localization,string
+Genes,Class,string
+Genes,Complex,string
+Genes,Essential,string
+Genes,Function,string
+Genes,GeneID,num
+Genes,Localization,string
+Genes,Motif,string
+Genes,Phenotype,string
+Interactions,Expression_Corr,num
+Interactions,GeneID1,string
+Interactions,GeneID2,string
+Interactions,Type,string

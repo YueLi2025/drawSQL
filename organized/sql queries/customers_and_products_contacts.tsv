@@ -1,0 +1,16 @@
+sql_query
+SELECT count(*) FROM addresses WHERE country  =  'USA'
+SELECT DISTINCT city FROM addresses
+SELECT state_province_county ,  count(*) FROM addresses GROUP BY state_province_county
+SELECT customer_name ,  customer_phone FROM customers WHERE customer_id NOT IN (SELECT customer_id FROM customer_address_history)
+SELECT T1.customer_name FROM customers AS T1 JOIN customer_orders AS T2 ON T1.customer_id  =  T2.customer_id GROUP BY T1.customer_id ORDER BY count(*) DESC LIMIT 1
+SELECT product_type_code FROM products GROUP BY product_type_code HAVING count(*)  >=  2
+SELECT T1.customer_name FROM customers AS T1 JOIN customer_orders AS T2 ON T1.customer_id  =  T2.customer_id WHERE T2.order_status_code  =  'Completed' INTERSECT SELECT T1.customer_name FROM customers AS T1 JOIN customer_orders AS T2 ON T1.customer_id  =  T2.customer_id WHERE T2.order_status_code  =  'Part'
+SELECT customer_name ,  customer_phone ,  payment_method_code FROM customers ORDER BY customer_number DESC
+SELECT T1.product_name ,  sum(T2.order_quantity) FROM products AS T1 JOIN order_items AS T2 ON T1.product_id  =  T2.product_id GROUP BY T1.product_id
+SELECT min(product_price) ,  max(product_price) ,  avg(product_price) FROM products
+SELECT count(*) FROM products WHERE product_price  >  (SELECT avg(product_price) FROM products)
+SELECT T2.customer_name ,  T3.city ,  T1.date_from ,  T1.date_to FROM customer_address_history AS T1 JOIN customers AS T2 ON T1.customer_id  =  T2.customer_id JOIN addresses AS T3 ON T1.address_id  =  T3.address_id
+SELECT T1.customer_name FROM customers AS T1 JOIN customer_orders AS T2 ON T1.customer_id  =  T2.customer_id WHERE T1.payment_method_code  =  'Credit Card' GROUP BY T1.customer_id HAVING count(*)  >  2
+SELECT  T1.customer_name ,  T1.customer_phone FROM customers AS T1 JOIN customer_orders AS T2 ON T1.customer_id  =  T2.customer_id JOIN order_items AS T3 ON T3.order_id  =  T2.order_id GROUP BY T1.customer_id ORDER BY sum(T3.order_quantity) DESC LIMIT 1
+SELECT product_type_code ,  product_name FROM products WHERE product_price  >  1000 OR product_price  <  500

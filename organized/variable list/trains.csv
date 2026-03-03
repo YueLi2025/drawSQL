@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+cars,id,num
+cars,len,string
+cars,load_num,num
+cars,load_shape,string
+cars,position,num
+cars,roof,string
+cars,shape,string
+cars,sides,string
+cars,train_id,num
+cars,wheels,num
+trains,direction,string
+trains,id,num

@@ -1,0 +1,224 @@
+nl_question
+In which year was the film with the highest replacement cost released?
+Please list the titles of the top 3 films with the highest replacement cost.
+Please list the titles of all the films starring the actor PENELOPE GUINESS.
+How many actors have starred in the film ACADEMY DINOSAUR?
+Please list the full names of all the actors that have starred in the film ACADEMY DINOSAUR.
+Among the films starring PENELOPE GUINESS, how many of them are released in 2006?
+Please give the title of the film starring PENELOPE GUINESS and has the highest replacement cost.
+Among the films starring PENELOPE GUINESS, how many of them are in English?
+What is the title of the film with the longest duration time and stars PENELOPE GUINESS?
+Please list the titles of all the films in the category of "Horror".
+Please list the titles of all the films under the category of "Horror" and has a rental rate of $2.99.
+For how many times has the customer RUTH MARTINEZ rented a film?
+Please list the titles of all the films that the customer RUTH MARTINEZ has rented.
+Among the films that the customer RUTH MARTINEZ has rented, what is the title of the one with the highest replacement cost?
+Please give the full name of the customer that have rented the most films.
+Among the customers who have rented the film ACADEMY DINOSAUR, how many of them are active?
+Which film is rented for the most times by the customers? Please give its title.
+Which customer has rented more movies, RUTH MARTINEZ or LINDA WILLIAMS?
+Among all the films starring PENELOPE GUINESS, what is the title of the one with the highest rental price per day?
+What is the average duration time of the films starring PENELOPE GUINESS?
+Who is the owner of email address "JEREMY.HURTADO@sakilacustomer.org"? Give the full name.
+Which continent is the mother country of Clarksville city in?
+How many films did actor Daryl Wahlberg appear in?
+How many addresses are there in Woodridge city?
+How many films are in English?
+Give the address location of Heather Morris.
+Give the email address of the person who lives in "1411 Lillydale Drive".
+Give the number of documentary films.
+State the name of the category which has the most number of films.
+Give the name of the film for inventory No.3479.
+How many times is the number of films Gina DeGeneres acted in than Penelope Guinness?
+What are the special features for the film "Smoochy Control"?
+What is the name of the most rented movie?
+Among the films with a rental duration of 7 days, how many are comedies?
+Who is the staff manager of the store with the most non-active customers?
+What is the rental price per day of the most expensive children's film?
+What is the complete address of store id 1?
+How many customers are from the city of Lethbridge?
+How many cities are there in the United States?
+List the names of the customers from India.
+Among the classic movies, how many movies have a rental rate of less than 1?
+What is the full name of the customer who rented the highest number of movies of all time?
+How many times was "Blanket Beverly" rented?
+Who are the top 5 actors with the highest number of films? List their full names and calculate the average number of films for each of the actors.
+Among the films with the longest duration, list any five title with their descriptions and special features.
+How many percent of customers were inactive?
+List down the actors' full names who performed in "CHOCOLATE DUCK" film.
+How many films in the horror category were included in PG-13-rated?
+Write down any five film names under the documentary category.
+List the films' titles which were rented on 24th May,2005.
+How many rental IDs belong to Eleanor Hunt?
+Describe the full names and cities of the customers who rented "DREAM PICKUP".
+Calculate how many percent of customers were located in India.
+Provide the full names and emails of customers whose payments were greater than 70% of the average.
+List the actor's last name that starred the film with the description of "A Thoughtful Drama of a Composer And a Feminist who must Meet a Secret Agent in The Canadian Rockies".
+Among films with store ID of 2, list the title of films with the highest rental rate.
+In films with a length duration of 113 minutes, how many of the films are starred by Kirk Jovovich?
+In the film with an inventory ID between 20 to 60, how many of the films have a G rating?
+Among films with a rental rate of 4.99, what is the total number of films starred by Bob Fawcett?
+What is the store and inventory ID of the film with the longest duration?
+List the store ID of the films with a rental rate greater than the 60% of average rental rate of all listed films.
+What percentage of the movies are PG-13?
+Please list the top ten movies with the most price per day in descending order of price per day.
+Give the full name of the actor who acted the most in drama movies?
+What is the difference in the average number of films rented each day in Australia and Canada?
+Find and list the full name of customers who rented more than five types of movies.
+In children's movies, which was rented the most?
+Indicate the title of all the films that are in the Classics category.
+How many rentals did Ella Oliver hire in June 2016?
+What is the first name of the customers whose address is in the postal code that begins with 76?
+On what date was the rented material for the movie BLOOD ARGONAUTS returned?
+What is the full name of the actor who has acted the most times in comedy films?
+How many customers did not rent material at Mike's store?
+How many customers live in the city of Miyakonojo?
+What is the average amount of rent that Christy Vargas paid?
+What are the address numbers that are located in Gansu district?
+Please list three types of film along with their IDs and the latest update.
+Please list the full names of any three inactive customers.
+Where is store number 2 located?
+Which city does the address 1623 Kingstown Drive belong to?
+Please name three cities that belong to Algeria.
+What is the category of the film Agent Truman?
+Please list the titles of any three action films.
+What is the difference between the number of children's films and action films?
+Who is the customer that is active and lives at 1795 Santiago de Compostela Way, Texas?
+Who are the actors that act in the ACADEMY DINOSAUR film?
+What is the percentage of documentary films?
+Which film has the longest duration?
+What is the largest number of films rented per customer?
+How many films did a customer named Francis Sikes rent?
+Who is the manager of the store with the largest collection of films?
+What are the addresses of the inactive customers?
+Which category is the most common?
+Provide the cast for the film "Jason trap".
+Who is the customer with the largest payment for rental films?
+List the top 5 most-rented films.
+Which country does Sasebo belong to?
+List all the animation titles.
+Which actor acted in the most films?
+Which category does BABY HALL film belong to?
+Please provide the address of the customer whose first name is SUSAN with the postal code 77948.
+Please provide the full name of the customer at 692 Joliet Street.
+Which actor acted in ANONYMOUS HUMAN?
+Which movie title has the lowest movie rental in the horror category?
+List the descriptions of movies under the category Travel.
+Calculate the total payment amount of customers in Nagasaki district.
+Calculate the percentage of total payment of MARGARET MOORE customers.
+List down all of the film IDs with highest rental duration.
+Which film titles have the most expensive rental rate?
+What are the last updated date for English film titles that were released in 2006?
+How many Italian film titles were special featured with deleted scenes?
+What is the category of film titled "BLADE POLISH"?
+What is Mary Smith's rental ID?
+List down the actor IDs of film titled "BOUND CHEAPER".
+What is the inventory ID of Karen Jackson?
+Who are the actors of film titled "BIRD INDEPENDENCE"?
+Calculate the total rental rate for animation film titles.
+What is the average rental rate of sci-fi film titles?
+What is the percentage of horror film titles in English film titles?
+Compute the total payment made by Sarah Lewis for film rentals so far.
+Tally the full names of actors in the film "Alabama Devil."
+Tell me the title of the film in which Sandra Kilmer is one of the actors.
+Name the cast members of the movie 'African Egg'.
+Identify the number of movies rented by Maria Miller.
+Determine the number of action movies available for rent.
+Where can you rent the movie 'Wyoming Storm'? Identify the address of the rental store and the rental rate.
+Identify the number of movies that starred Nick Stallone.
+Calculate the total amount paid by Stephanie Mitchell for film rentals in June 2005.
+Indicate the percentage of inactive customers at store no.1.
+Provide the list of the longest movies. Arrange these titles in alphabetical order.
+List at least 10 films that the customers can rent for more than 5 days.
+List all the cities that belong to United Arab Emirates.
+What films did Burt Dukakis got star in?
+Provide the full name of all the actors of the film "Ending Crowds".
+Who are the actors starred in the film "Bound Cheaper"?
+List all the films that Karl Berr starred in and rated as PG.
+List at least 3 cities under the country of Philippines.
+Which category is the film "Beach Heartbreakers" falls into?
+Who among the actors starred in a NC-17 rated film? Provide only the last name of the actors.
+Calculate the average rate of renting the film that Lucille Tracy got starred.
+In store ID 2, how many of the films are R rating?
+In films with a rental rate of 2.99, how many of the films are starred by Nina Soto?
+What is the address of Mary Smith?
+Among all the active customers, how many of them live in Arlington?
+Please list the full names of all the customers who live in Italy.
+What is the biggest amount of payment for a rental made by Mary Smith?
+How many times has Mary Smith rented a film?
+What is the total amount of money Mary Smith has spent on film rentals?
+Please give the full name of the customer who had made the biggest amount of payment in one single film rental.
+How much in total had the customers in Italy spent on film rentals?
+Among the payments made by Mary Smith, how many of them are over 4.99?
+What is the average amount of money spent by a customer in Italy on a single film rental?
+How many films have a rental duration of over 6 days?
+Which film has a higher replacement cost, ACE GOLDFINGER or ACADEMY DINOSAUR?
+Among the films that are released in 2006, how many of them are rated Adults Only in the Motion Picture Association Film Rating?
+What is the language of the film ACADEMY DINOSAUR?
+What is the average replacement cost of the films under the category of "Horror"?
+Give the number of inactive customers.
+Give the name of the manager staff for store No.1.
+Where does the staff Jon Stephens live?
+What is the percentage more for the rental payment for store No.2 than store No.1?
+How many times is the number of Indian cities than Italian cities?
+Who is the staff manager in store id 2?
+What is the full name of the customer who rented movies for 7 consecutive days?
+What is the full name of the actor who starred in most movies?
+List the actors' IDs who have "KILMER" as last name.
+Mention the language of Untouchables Sunrise film and calculate its rental cost per day.
+Among the customers with customer ID of 100 and below, how many of them have Thomas as their last name?
+List the address in Texas in the ascending order of city id.
+Find the full name and email address of inactive customers whose record was created in 2006.
+How many customers rented for an above-average period?
+Among the movies, what percentage are horror?
+Give the full name of the actor who acted in the most number of movies?
+Indicate the title of all the films rated as 'Adults Only'.
+How many actors with the surname Kilmer are there?
+How many payments were made throughout the month of August 2005?
+To which country does the address '1386 Nakhon Sawan Boulevard' belong?
+What is the rental price per day for Airplane Sierra?
+How many English films have a duration of over 50 minutes and the cost of replacement are under 10.99?
+How many films in English are for adults only?
+How many of the actors are named "Dan"?
+What are the ratings of the film featuring behind the scenes?
+What is the city with the most customers?
+What percentage of films are horror films?
+How many id movies have category id 11?
+Give the full name of the actor with the highest rental rate.
+List the full names of customers who have paid more than 10$.
+What is the language for film titled "CHILL LUCK"?
+List down all film titles starred by Jane Jackman.
+Give me the title and category name of films whose price per day is more than $30. Please include their special features.
+Name the most recent movie rented by Dorothy Taylor.
+Name the movie with the highest rental revenue among the shortest films.
+What is the average rental rate for PG-13 rated movies?
+For how long can you rent the movie 'Dirty Ace'?
+How many customers are still active?
+How many films have a duration between 100 to 110 minutes?
+How many customers are active?
+Which country does Mary Smith live in?
+Please give the full names of all the active staff.
+What is the description of the film Artist Coldblooded?
+Give the detailed address for store No.2.
+What are the full names of all the active employees?
+List the name of the films that can only be found in store id 2.
+How many films are categorized as horror?
+What is the full name of the actor who has the highest number of restricted films?
+What is the name and email of the staff in store ID 2?
+Write down the inventories' IDs and actors' names of "STREETCAR INTENTIONS".
+Calculate the average rent amount paid by the customer with customer id 15.
+How many movies have a length longer than 100?
+List all the films with the word "Lacklusture" in their description.
+What are the addresses for the stores?
+How many film titles were released in 2006?
+How many documentary films are rated PG-13?
+How many film categories are there?
+Please list the titles of the films that are released in 2006 and have a rental rate of $2.99.
+What is the email address of the staff Jon Stephens?
+What is Diane Collins' email address?
+State the number of films that are 178 minutes long.
+Calculate customers' total payment amount in August, 2005.
+Please indicate the full name of actor id 5.
+What is the average replacement cost for the movies with a rental rate of 4.99?
+List all the films that are rated as PG-13.
+Among the active customers, how many of them have Nina as their first name?

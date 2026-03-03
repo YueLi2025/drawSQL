@@ -1,0 +1,16 @@
+nl_question
+How many radios are there?
+List the transmitters of radios in ascending order of erp kw .
+What are the names and original air dates of tv shows?
+List the station names of city channels whose affiliation is not "ABC".
+Show the transmitters of radios whose ERP is bigger than 150 or smaller than 30.
+What is the transmitter of the radio with the largest ERP_kW?
+What is the average ERP across all radios?
+Show the different affiliations of city channels and the number of city channels with each affiliation.
+Please show the most common affiliation for city channels.
+List the affiliations shared by more than three city channels.
+Show the cities and station names of city channels in ascending alphabetical order of station name.
+Show the transmitters of radios and the cities of the channels they are associated with.
+Show the transmitters of radios and the station names of the channels they are associated with in descending order of the ERP of the radios.
+Show the transmitters of the radios and the number of city channels they are associated with.
+Show the distinct transmitters of radios that are not associated with any city channel.

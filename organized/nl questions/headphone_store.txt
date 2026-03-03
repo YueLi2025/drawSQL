@@ -1,0 +1,45 @@
+nl_question
+Find the model of the most expensive headphone.
+Which headphone model has the highest price?
+List all different headphone models in the alphabetical order.
+Return the list of distinct headphone models ordered alphabetically.
+Which headphone class is the most common one?
+Which headphone class contains the most headphones?
+Which headphone class does have more than two headphones?
+Find the headphone class that does not contain more than two headphones.
+Find the number of headphones with a price higher than 200 for each class.
+How many headphones cost more than 200 for each headphone class?
+how many different earpads are there?
+Count the number of different earpads.
+Find the top 2 earpads that are mostly used.
+What are the top 2 earpads in terms of the number of headphones using them?
+What are the model, class, and construction of the cheapest headphone?
+Find the model, class, and construction of the headphone with the lowest price.
+Find the average price for each headphone construction.
+How much does headphones cost on average for each headphone construction?
+Which headphone classes have both headphones with "Bowls" and headphones with "Comfort Pads" earpads?
+Find the headphone classes that contain both headphones using "Bowls" earpads and headphones using "Comfort Pads" earpads.
+Which earpads never use plastic construction?
+Find all earpads that do not use plastic construction.
+Find the headphone models whose price is below the average price.
+What are the headphone models that cost less than the average price?
+Sort all store names by store open date.
+Give me a list of store names, sorted by store open date.
+List name and parking info for the stores in the Tarzana neighborhood.
+Which stores are located in the "Tarzana" neighborhood? Return their names and parking information.
+How many different neighborhoods are there for all stores?
+Count the number of distinct neighborhoods stores are located.
+find the number of stores in each neighborhood.
+How many stores are there in each neighborhood?
+Find the name of the store which has the most headphones in stock. List the number of headphones as well.
+Which store has the headphones in stock? Give me the store name and the total quantity.
+Find the name of stores which have no headphone in stock.
+Which stores do not have any headphones in stock? Give me the store names.
+Which headphone models do not have any stock in any store?
+Find the headphone models that are not in stock in any store.
+Which headphone model has the largest quantity of stock across all the stores?
+Find the headphone model whose total quantity in stock is the largest.
+How many headphones are stored in the Woodman store?
+Find the total quantity of headphones stored in the Woodman store.
+Which neighborhood does not have any headphone in stock?
+Find the neighborhood where no headphones are in stock.

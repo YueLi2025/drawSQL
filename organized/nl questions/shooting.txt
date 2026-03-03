@@ -1,0 +1,17 @@
+nl_question
+Did the number of cases with Vehicle as subject weapon increase or decrease from year 2007 to 2008. State the difference.
+Among the 'Handgun' weapon used by subject, how many percent were 'Shoot and Miss'?
+Which are the cases where the subject are female. List the case number, subject status and weapon.
+From the cases where the subject are male, list the case number and the location and subject status.
+For case number '134472-2015', list the last name of the officers involved and state the subject statuses.
+From the cases where the subject were deceased, list the subject's last name, gender, race and case number.
+What is the percentage of subject who are female used the Vehicle as weapon?
+How many incidents in which the subject's weapon was a vehicle were investigated by a female officer?
+In how many cases where the subject was a female was the subject's status listed as Deceased?
+What is the most common type of weapon that causes death?
+What percentage of deaths were caused by rifles?
+Which near-death incident did a policeman by the name of Ruben Fredirick look into? What is the victim in this incident's race and gender?
+Of all male officers, what percentage are black officers?
+What is the proportion of white males and females in the police force?
+Which type of weapon was used to attack the victim in the record number 031347-2015? What is the victim's race and gender?
+What proportion of male police officers looked into events where people were injured?

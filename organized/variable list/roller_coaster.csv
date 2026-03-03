@@ -1,0 +1,15 @@
+table_name,column_name,column_type
+country,Country_ID,num
+country,Name,string
+country,Population,num
+country,Area,num
+country,Languages,string
+roller_coaster,Roller_Coaster_ID,num
+roller_coaster,Name,string
+roller_coaster,Park,string
+roller_coaster,Country_ID,num
+roller_coaster,Length,num
+roller_coaster,Height,num
+roller_coaster,Speed,string
+roller_coaster,Opened,string
+roller_coaster,Status,string

@@ -1,0 +1,43 @@
+nl_question
+How many tracks do we have?
+Count the number of tracks.
+Show the name and location for all tracks.
+What are the names and locations of all tracks?
+Show names and seatings, ordered by seating for all tracks opened after 2000.
+What are the names and seatings for all tracks opened after 2000, ordered by seating?
+What is the name, location and seating for the most recently opened track?
+Return the name, location, and seating of the track that was opened in the most recent year.
+What is the minimum, maximum, and average seating for all tracks.
+Return the minimum, maximum, and average seating across all tracks.
+Show the name, location, open year for all tracks with a seating higher than the average.
+What are the names, locations, and years of opening for tracks with seating higher than average?
+What are distinct locations where tracks are located?
+Give the different locations of tracks.
+How many races are there?
+Count the number of races.
+What are the distinct classes that races can have?
+Return the different classes of races.
+Show name, class, and date for all races.
+What are the names, classes, and dates for all races?
+Show the race class and number of races in each class.
+What are the different classes of races, and how many races correspond to each?
+What is the race class with most number of races.
+Give the class of races that is most common.
+List the race class with at least two races.
+What are the classes of races that have two or more corresponding races?
+What are the names for tracks without a race in class 'GT'.
+Give the names of tracks that do not have a race in the class 'GT'.
+Show all track names that have had no races.
+Return the names of tracks that have no had any races.
+Show year where a track with a seating at least 5000 opened and a track with seating no more than 4000 opened.
+What are the years of opening for tracks with seating between 4000 and 5000?
+Show the name of track and the number of races in each track.
+What are the names of different tracks, and how many races has each had?
+Show the name of track with most number of races.
+What is the name of the track that has had the greatest number of races?
+Show the name and date for each race and its track name.
+What are the names and dates of races, and the names of the tracks where they are held?
+Show the name and location of track with 1 race.
+What are the names and locations of tracks that have had exactly 1 race?
+Find the locations where have both tracks with more than 90000 seats and tracks with less than 70000 seats.
+What are the locations that have both tracks with more than 90000 seats, and tracks with fewer than 70000 seats?

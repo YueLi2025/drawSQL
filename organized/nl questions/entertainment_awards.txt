@@ -1,0 +1,23 @@
+nl_question
+How many artworks are there?
+List the name of artworks in ascending alphabetical order.
+List the name of artworks whose type is not "Program Talent Show".
+What are the names and locations of festivals?
+What are the names of the chairs of festivals, sorted in ascending order of the year held?
+What is the location of the festival with the largest number of audience?
+What are the names of festivals held in year 2007?
+What is the average number of audience for festivals?
+Show the names of the three most recent festivals.
+For each nomination, show the name of the artwork and name of the festival where it is nominated.
+Show distinct types of artworks that are nominated in festivals in 2007.
+Show the names of artworks in ascending order of the year they are nominated in.
+Show the names of festivals that have nominated artworks of type "Program Talent Show".
+Show the ids and names of festivals that have at least two nominations for artworks.
+Show the id, name of each festival and the number of artworks it has nominated.
+Please show different types of artworks with the corresponding number of artworks of each type.
+List the most common type of artworks.
+List the year in which there are more than one festivals.
+List the name of artworks that are not nominated.
+Show the number of audience in year 2008 or 2010.
+What are the total number of the audiences who visited any of the festivals?
+In which year are there festivals both inside the 'United States' and outside the 'United States'?

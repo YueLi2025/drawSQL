@@ -1,0 +1,15 @@
+table_name,column_name,column_type
+nuclear power plants,id,string
+nuclear power plants,name,string
+nuclear power plants,latitude,string
+nuclear power plants,longitude,string
+nuclear power plants,country,string
+nuclear power plants,status,string
+nuclear power plants,reactor type,string
+nuclear power plants,reactor model,string
+nuclear power plants,construction start at,string
+nuclear power plants,operational from,string
+nuclear power plants,operational to,string
+nuclear power plants,capacity,string
+nuclear power plants,last updated at,string
+nuclear power plants,source,string

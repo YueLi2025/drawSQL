@@ -1,0 +1,384 @@
+nl_question
+What is the average standard cost of product number CA-1098?
+List the products whereby the standard cost is $80 more than previous standard cost in history.
+Name all products and total quantity for each item for shopping cart ID 14951.
+List the product name with more than 5 quantity in the shopping cart.
+For all the purchase order transactions, name all the products with low quality.
+Provide all the transactions whereby the quantiy is more than 10,000 pieces. State the product name and the selling price.
+How much would be the total sales profit for shopping cart ID 20621 ?
+Which product line has the most products that are salable?
+Provide details of review from reviewer whose name begin with letter 'J'. State the product ID, rating and comments.
+State the product name, product line, rating and the selling price of product with the lowest rating.
+List down the product name, reviewer name, rating and comments for product under the road line.
+How many people reviewed for product named HL Mountain Pedal? What is the average rating?
+List the purchase order whereby all received quantity were rejected? Name those product.
+List all product names and its product line for all purchase order with order quantity of 5000 or more.
+What is the total ordered quantity for products under the 'Touring' line?
+Among the low quality product, which product has the highest line total? List the product name and its line total?
+Which product has the highest profit on net? State the product name.
+List the name and calculate its profit for product with the highest rating in review.
+What is the total profit all transactions with product ID 827?
+How many products with the highest unit price were ordered?
+Between Northwest and Southeast of the United States, which territory one recorded the highest amount of sales last year?
+Which customer has the highest subtotal amount of sales orders whose assigned to the salesperson with the highest bonus?
+What is the total price of Sales Order ID 46625 with Volume Discount 11 to 14 and Product ID 716?
+Of the products that has a reorder inventory point of no more than 600, how many manufactured in-house products that takes 1 day to manufacture with BOM Level 4 are there?
+What are the names of the product that has the lowest rating?
+How many of the workers who started working in 2009 are from the Production Department?
+How many active employees whose payrate is equal or below 30 per hour.
+Which department has a worker who just recently started working?
+How frequently do the employee with the least number of sick leave hours get paid?
+Which job title has the lowest pay?
+What is the total number of employees that worked in the Finance department?
+What is the profit of the product with the highest list price and of the product with the lowest list price other than 0? Indicates the depth the component is from its parent.
+What is the postal code of the street address of the account that is latest updated?
+Please list the unit measure code of the component that is of the greatest need in quantity to create the assembly.
+How many product maintenance documents are private?
+Please list the job titles of the employees who has a document that has been approved.
+What is the pay frequency of the oldest employee?
+Among the employees whose pay frequencies are the highest, how many of them are married?
+For the employee who has been hired the latest, what is his or her pay rate?
+Among the employees who have a pay rate of above 40, how many of them are male?
+What is the highest pay rate of the employees who are exempt from collective bargaining?
+For the employees who have the highest pay frequency, please list their vacation hours.
+What is the pay rate of the employee who has the longest vacation hours?
+How many employees with a pay rate of over 35 have more than 10 sick leave hours?
+Among the active male employees, how many of them are paid with the highest frequency?
+What is the job position of the oldest employee?
+What is the name style of the employee with the lowest pay rate?
+Among the employees who are married, how many of them have a western name style?
+Among the employees who have more than 10 hours of sick leave, how many of them wish to receive e-mail promotions?
+What is the first name of the male employee who has a western name style?
+Among the active employees, how many of them have a courtesy title of "Mr"?
+Please give the personal information of the married employee who has the highest pay rate.
+Among the married employees with the highest pay frequency, how many of them have an eastern name style?
+How many active employees do not wish to receive e-mail promotions?
+Average cost of purchase orders made during the first six months of 2012.
+What percentage of male employees hired throughout the years 2009 are married?
+List, by ProductID, all products whose profit, relative to the standard price, is negative.
+What is the percentage, by number of sales order units, for orders with quantities not greater than 3 and a discount of 0.2?
+Lists all companies by BusinessEntityID that increased their current year sales by more than 60% over last year's sales and have a bonus greater than 3,000.
+Add the number of businesses that indicate their home address as their address and those whose address corresponds to the shipping address.
+What company has a Colonial Voice card that expired in March 2005?
+Sum the total number of products rejected for having a trim length that is too long.
+If we discount the products that do not have any type of offer, how many different products have been sold in an amount greater than 2 units per order?
+What is the name of the subcategory to which the gray product with the lowest safety stock level belongs?
+What is the product cost end date with the highest weight in grams?
+What is the employee of company number 1's full name?
+What is the name of the supplier number 1492?
+Please list any 3 product numbers with the lowest standard cost.
+How many black-colored products are there that cannot be sold?
+What is the full address of address number 11906?
+How many customers gave a product the best possible rating? Please list their names.
+What are the company that Adventure Works deal with that have poor credit rating? Please provide their business number.
+What is the currency of Brazil?
+How many people work in the finance department?
+How long does it take for the business to receive the item it has purchased? Who is the vendor for business number 1496?
+Which role has the most common contact among businesses?
+What are the salespeople's email addresses?
+Which position does Suchitra hold?
+How many employees work for AdvertureWorks that is single?
+How much do the works data saved in English and Arabic differ from one another?
+What is the location of business number 1?
+Please list the businesses along with their numbers that have their accounts located in Duvall.
+Where is the address 15873 located, in what city and state? Does that city belong to a province where the code exists?
+Which year is credit card No.9648's Expiration Year?
+What is the location id for Debur and Polish?
+What are the Department ids under the Sales and Marketing Group?
+Which sales person made the sale of 1635823.3967 last year? Give the Business Entity ID.
+What is the Shift start time for Shift ID No.2?
+What is contact Type ID No.16 represent for?
+What is the minimum shipping charge for "OVERSEAS - DELUXE"?
+Give the Mauritius Rupee's currency code.
+Name cellphone number's Type ID?
+Where is Business Entity ID No.4 located at? Give the address down to street.
+For the document Control Assistant who was born on 1975/12/25, how many private documents did he/she have?
+How many letters are there in Catherine Ward's e-mail account passwords?
+What rating did Jill give for HL Mountain Pedal?
+Did Rachel Valdez complete her sales task?
+How many types of tax did the sales happen in Quebec have?
+What's Kevin A Wright's email address?
+How is the Credit Rating for company whose rowguid is "33671A4E-DF2B-4879-807B-E3F930DD5C0C"?
+What is the PreferredVendorStatus for the company which has the rowguid of "684F328D-C185-43B9-AF9A-37ACC680D2AF"?
+For person id No.2054, is his/her vendor still active?
+What's Lynn N Tsoflias's job title?
+What is the number of the sub categories for bikes?
+What are the product assembly ID that come with unit measure code EA and BOM level of 2, at the same time have per assembly quantity of more than 10?
+What are the total per assembly quantity for unit measure code EA, IN and OZ respectively? What are the name of these 3 code?
+Which product ID do not have any work order ID?
+State the full name of accountants in the company.
+What is the job position currently occupied by Ken J SÃ¡nchez?
+How many male employees do not wish to receive e-mail promotion?
+How many of the non-sales employees are married?
+Among the Production Technicians who are single, how many of them are vendor contact?
+What is the total sick leave hours of employees who do not wish to receive any e-mail promotion?
+Among the sales people, who are hired prior to 2010?
+How many people with the name Alex are single and occupying organization level of 1?
+State the last name and job title of owner for document "Crank Arm and Tire Maintenance".
+Among the sales people who achieved projected sales quota 2013, is there any person from territory ID 1? If yes, state the business entity ID.
+List down the email address of female single employees.
+What are the color of products that were reviewed?
+Provide the business entity ID who did not achieved projected yearly sales quota in 2013.
+Among the employees who wish to receive e-mail promotion from AdventureWorks, how many percent of them are female?
+How many types of credit cards are there and how many are vista?
+What is the name of the product with the id "475"?
+What is the name of the territory assigned to the sales person with business id "277"?
+What is the full name of the Vice President of Production?
+What is the email address of the Facilities Manager?
+How many customers are there in Canada?
+List the first names of the people with more than 65 sick leave hours.
+Among all the production technicians, how many have a below average pay rate for a production technician?
+What is the total cost for all the orders placed on 5/29/2013?
+What is the most common first name among the vendor contact?
+List the full name of all the 'Production Technician - WC50'
+How many Minipumps have been sold?
+What is the person's business ID with a vista credit card number "11113366963373"?
+List all the names of products with the special offer "15".
+What is the credit card number for Michelle E Cox?
+What is the reason for sales order "51883"?
+What is the credit card number for the sales order "45793"?
+List all the sales people in the Northwest US.
+Which Production Technician has the highest pay rate?
+Who is the sales person in charge of the territory with the id "9"? Provide their full name.
+What is the description of the discount for the product with the id "762"?
+When did the company hired its first Accountant?
+What is the profit on net of the vendor with the highest standard price? If there are two vendors of the same amount, calculate only for one vendor.
+How many departments did Sheela Ward work in between 1/1/2011 to 12/31/2012
+What is the age of the oldest Marketing Specialist by 12/31/2015 and what is his/her hourly rate?
+What is the position of the employee with the 10th highest salary? Indicate his/her salary amount and his/her full name.
+What is the profit of a single product that received the highest rating from John Smith? List the product/s' names.
+What is the salary rate per hour that the company paid to the first 5 employees that they hired?
+Among the vendors with maximum orders betweeen 500 to 750, which vendor has the 10th highest profit on net?
+Jill ranked which medium-quality class product as the highest, and how long will it take the company to manufacture such a product?
+What was the first job position that the company needed, and who was hired? Indicate his/her full name.
+How many work orders with quantities ranging from 100 to 250 have a reorder point of no more than 375?
+How frequently does the first-ever Scheduling Assistant get paid?
+What product has the fewest online orders from one customer? List the product's class, line of business, and list price.
+What is the full name of the sales person who has the the highest commission percent received per sale?
+What is the full name of the second oldest person in the company at the time he was hired?
+What is the total profit gained by the company from the product that has the highest amount of quantity ordered from online customers? Indicate the name of the product.
+Among the sales with a tax applied to retail transaction, how many of them are charged by multiple types of taxes?
+Please give the highest product cost of a purchase order.
+What is the highest profit on net for a product?
+Which reviewer gives the biggest number of the highest rating?
+Which product gets the most reviews?
+Please list the reviewers who have given the highest rating for a medium class, women's product.
+What is the class of the product with the most reviews?
+Please list the e-mails of the reviewers who have reviewed high class.
+What is the highest vendor's selling price for Hex Nut 5?
+Among the vendors that sell the product Hex Nut 5, how many of them have a good credit rating?
+Which vendor's selling price for Hex Nut 5 is the lowest, please give the vendor's name.
+Please give all the list prices of the product LL Fork.
+Among the products from the mountain product line, how many of them are sold by over 2 vendors?
+Please list the email adresses of the reviewers who have given the lowest rating to the product HL Mountain Pedal.
+Please list the products that are out of stock and purchased in house.
+What is the average selling price of different vendors of the product Hex Nut 5?
+What is the product that has the highest average rating from the mountain product line?
+Please list the top 3 house-manufactured products with the highest average rating.
+List all the non-sales employees in ascending order of its business entitty ID.
+Name all person in the individual retail whose last name is 'Anderson'.
+List the name of employees who had left the company? When were they hired?
+Name all salaried employee who are hired in 2007 and later.
+List the name of married employees with less than 20 vacation hours.
+List all staff in the Shipping and Receiving department who are hired in 2009.
+What is the job title of the oldest employee in the company? In which department is he in?
+Name the vendor who has the shortest average lead time for Product ID 319.
+Which vendor gives the best profit on net for product ID 342?
+Among the employees in Adventure Works, calculate the percentage of them working as sales representatives.
+List the person who owns a distinguish credt card.
+Name all products that started selling in 2013. State its respective vendor's name.
+Names the Sales Representative with the highest year to date sales.
+Who is the oldest married male? State his job title.
+State the vendor for product number WB-H098.
+Find the vendor with the least average lead time for Product ID 348.
+State the employee who are born in or after 1970 and with the least sick leave hour.
+Please provide the IDs of any three AdventureWorks product subcategories.
+Please list three businesses with the lowest total sales from last year.
+Which three sales regions have generated the most revenue thus far?
+What is the highest possible discount rate for 'Excess Inventory'?
+How many of the approved documents are confidential?
+What are the sales tax records charged by multiple types of tax?
+Which work order transaction number has the highest product quantity?
+Please list any 3 vendors that are not recommended by Adventure Works.
+What are the sales reasons for order 43718?
+What bike subcategories are there?
+What goods were sold to customers in accordance with sales order number 43660?
+Please list the top 5 products with the most orders.
+Where are the shelves where the down tube product was stored?
+Which address type does "Fun Toys and Bikes" fall under?
+Who is the "Next-Door Bike Store" point of contact?
+What is the order reference number for the "Mountain End Caps" product?
+What is the 12th business's first line address?
+Please list any three businesses with their IDs that are located in Dallas City.
+What is the name of the state that Racine belongs to?
+How many Vista cards expired before the year 2007?
+What are the names of the top 6 products that has the biggest size in centimeter and what are its reorder point?
+How much is the amount to be paid by the company for the purchase order with the third highest freight amount?
+Among the employees who were born before 1969, what is the work shift of the 6th oldest employee?
+What are the full names of the sales person whose bonuses are less than 1,000?
+Among the vendors with an average credit rating, what is the overall total due amount of purchases made by the company to the vendor that isn't preferrerd if another vendor is available?
+How much profit can the company gained from selling two high class black Road Bikes with a size of 58?
+What are the full names of the 10 youngest married male production technicians?
+What is the full name of the non-sales employee who made the most number of rejected purchase orders?
+What are the names of the vendor with the second lowest minimum order quantity?
+How much are the minimum orders of the vendors that are no longer used by the company?
+What is the primary type of all single female employees hired between 1/1/2008 to 12/31/2008?
+What is the discount percentage of "LL Road Frame Sale"?
+How many discount are of the type "Excess Inventory"?
+Which seasonal discount had the highest discount percentage?
+Please list the top 3 discounts with the highest discount percentage and fall under the reseller category.
+What is the minimum inventory quantity of Chainring Bolts?
+Which product has the highest standard cost?
+What type of employee is David Bradley?
+Where can I find the Valley Bicycle Specialists store?
+Please list the e-mail addresses of all the employees who wish to receive e-mail promotions from Adventureworks and selected partners.
+Please show the credit card number of David Bradley.
+How many departments have David Bradley been in?
+Please list the departments that David Bradley used to belong to.
+How many employees working in the Engineering Department in 2007 would have their credit cards expired in the same year?
+Please list the product names of all the products on the LL Road Frame Sale.
+How many products were on the LL Road Frame Sale?
+How many products from the Clothing category were on the LL Road Frame Sale?
+Please list the products that are under the Clothing category that are manufactured in-house and salable.
+How much more expensive in percentage is the product with the highest selling price from the product with the lowest selling price in the Clothing category?
+What is the average profit of all the products from the Clothing category?
+Which product cost the least in 2013?
+List all products with the color yellow.
+What is the bussiness id for Mr. Hung-Fu Ting?
+What is the thumbnail photo file for the product with the id "979"?
+List all the names of the products with the price of more than 1000$.
+What is the name of the product stored in location 1 compartment L container 6?
+What are locations of the work order "35493"?
+What are the products with a large photo?
+List all the socks products.
+With 100$, how many Cable Lock can you buy?
+What is the scrap reason for work order "57788"?
+What is the cost for the sports?
+How many products with the id "476" are stored in Metal Storage?
+How many days did it take to end the work order "425"?
+What is the cost for the product "847"?
+What is the organization level for Human Resources Manager?
+How many products using "roadster_black_small.gif" as the thumbnail photo?
+List the locations ids, compartments and containers for the Lock Ring
+What category do Road Frames fall into?
+List all the scraped work orders for handling damage reason.
+What is the profit for the product "792"?
+Who owns the email address "regina7@adventure-works.com"?
+What is the price for the AWC Logo Cap?
+What is the the average percentage of profit for the all the product?
+What proportion of work order is in Subassembly?
+For all the products, list the product name and its corresponding start date for the current standard cost.
+List all product names that are high in quality. Please also state its selling price.
+Calculate the profit of each products. List all products with more than $100 in profit.
+Which currency pair's average exchange rate for the day is the highest?
+Who is the company's highest-paid single female employee? Include her full name and job title.
+How many accounts have an address that is too long?
+What is the longest assembly item duration for bicycles?
+How many assembly items for bicycles aren't finished?
+Please list the titles of the documents that are pending approval.
+Please list the employees who have more than 20 vacations hours and wish to receive e-mail promotions.
+Please list the credit card IDs of the employees who work as store contact.
+How many vacation hours do the male employees have on average?
+Among the employees who are married and wish to receive e-mail promotions, how much higher is their highest pay rate from the average pay rate?
+Average of the last receipt cost of the products whose average lead time is 60 days.
+What is the average total due price of products with approved status?
+What is the credit rating of the company whose average lead time is 16 days for a standard price of 18.9900 and whose last receipt date is August 27, 2011?
+Calculate the number of products if we add the products of the accessories and components categories.
+List the first and last name of all unmarried male Production Supervisors.
+How many products are there if we add all those located in the Subassembly category?
+What type of transaction was made with the only yellow product, size 62 and with a minimum inventory stock of 500 units?
+How many employees earn their salaries on a monthly basis at an hourly rate of more than 50?
+Please list the departments that are part of the Executive General and Administration group.
+How many vendors are having their products ordered with an average delivery time of 25 days?
+Please list the top three employees with the most unused sick leave along with their position titles.
+What is business number 1580's net profit?
+Which chromoly steel product model has AdventureWorks saved in English?
+What percentage of AdventureWorks employees are men?
+What is the full address of business number 24?
+What's Emma H Harris's Business Entity ID number?
+Please tell the meaning of CultureID "fr".
+For the older production technician who was hired in 2008/12/7, what's his/her birthday?
+What's the profit for the Freewheel?
+Which type of transaction was it for the "LL Road Handlebars" order happened in 2012/11/3?
+How much is HL Grip Tape's profit ratio?
+How many location IDs have actual resource hours of 2?
+What is the name of product purchased with transaction type P?
+Who are the employees that submitted resume to Human Resource Department and got hired? State the last name.
+How much is the total bonus received by sales person and what is the percentage of it against the projected yearly sales quota in 2013?
+How many products with the id "989" were sold in August 2013?
+List all of the credit cards that had expired by 2007.
+List all the pay rates of all employees that were hired at 20 years of age.
+How many employees in the Information Service department work the evening shift?
+What is the business ID of the person who has made the most sales total year to date?
+List all active vendors who offer a purchasing web service.
+What is the percentage of employees who work the night shift?
+How many products are out of stock?
+How many high-class products are sold by preferred vendors?
+Among the products that get over at least 1 review, how many of them are from the mountain product line?
+Calculate the average length of employment for employee working in the Research and Development deparment.
+What are the differences between the 288th salesperson's predicted annual sales and his or her actual sales thus far?
+Which department, altogether, has the most personnel who work the evening shift?
+What is the difference in percentage between the product descriptions written in Arabic and Thai?
+What is the Crankarm product's net profit?
+What is the name of the product with the almost highest review score?
+What is the company's second highest salary per hour for employees who are paid monthly?
+What time does the company's night shift begin? Indicate the answer in regular form.
+How much is the tax amount of the purchase order with the biggest tax amount? Indicate the purchase order ID.
+When did the Senior Tool Designer, who was 33 years old at the time he was hired, stopped working in the Engineering department?
+Among the products with an average lead time of 60, which vendor has the highest profit on net? Indicate the credit rating of such vendor.
+Where can I get the demographic information about the Valley Bicycle Specialists store?
+Among all the products that are manufactured in-house, how many of them are salable?
+Among the employees who are store contacts, how many of them have a title of "Mr."?
+What is the hashed password of David Bradley?
+Among the store contact employees, how many of them have a Vista credit card?
+What is the e-mail address of the employee who switched departments for the most times?
+Among all the employees who don't wish to receive promotion e-mails, how many of them belong to or once belonged to the Engineering Department?
+How many employees came into the Quality Assurance Group in the year 2007?
+What is the product with the most profit?
+List all the products with lower than average cost.
+What is the the percentage of profit for the product "858"?
+How many products with a thumpnail photo?
+How many of the work orders didn’t meet the due date?
+Where are the locations where the product "810" is stored?
+What is the name of the product the work order "2540" was making?
+List all the work orders that is related to the Down Tube.
+List all products with minimum order quantity of 100 and order them by product name in descending order.
+Among the companies to which Adventure Works Cycles purchases parts or other goods, what is the profit on net obtained from the vendor who has an above average credit rating? Kindly indicate each names of the vendor and the corresponding net profits.
+How many male employees have the job position of sales person?
+Please list the family names of any employees whose middle names begin with C.
+What job is person number 322 currently holding?
+What are the unit measure codes for product ID No.762?
+For the on going assembly item Component ID No. 494, what's the Unit measure for it?
+To the products which could make the profit as 21.9037, what were their list price after October of 2012?
+What is the average vacation hours taken by Sales person?
+How many times is married non sales employees against single non-sales employees?
+List all the names of the stores assigned to the sales person with the id "277".
+What is the shipping address for the sales order "43873"?
+What is the highest amount of difference between the ordered quantity and actual quantity received in a single purchase order and to which vendor was the purchase order made?
+What is the product description of Headset Ball Bearings?
+Please list all the vendors' usual selling prices of the product Hex Nut 5.
+List all product name from Australia Bike Retailer order by product ID.
+Name the sales person for store Area Bike Accessories. Which territory is he / she in?
+What categories of offers qualify for group discounts for resellers?
+What is the difference between the actual manufacturing cost of product number 818 and the estimated manufacturing cost?
+Which sales areas are expected to have the highest yearly sales quota?
+What percentage of businesses in the Northwest US have forecasted annual sales of above 300,000?
+What is the weight in pounds of the style that is produced the most by the company? If there are multiple products sharing the same weight, indicate the name of each one of them and their corresponding weights.
+Which territory has the greatest difference in sales from previous year to this year? Indicate the difference, as well as the name and country of the region.
+What profit will the company gain if they sell 10 items of the product that has the lightest weight?
+How many person have a projected yearly sales of no more than 50,000?
+Which department has the most number of night shifts?
+What is the profit on net of the products that have exactly 200 maximum order quantity? Indicate the name of the vendors to which these products were purchased from.
+To which e-mail address should I write if I want to contact David Bradley?
+Please list the names of all the store contact employees whose credit cards expired in 2007.
+Has the product Chainring Bolts been on any of the sales?
+For all the employees that have left the Engineering Department, what is the average time of their stay?
+How many transactions are there for product under the Mountain line?
+What is the job title of the newest employee in department 12?
+How many vendors only consented to move on with the 500 to 15000 piece order in terms of quality?
+What percentage of the AdventureWorks data is in Thai?
+What is the average age of the sales agents in the company by 12/31/2009?
+What is the current status of the order with the highest shipping cost?
+Name the oldest employee who is working on night shift. How old is the employee?
+What is the average age of employee in Adventure Works?
+Which product has the highest price in 2012?

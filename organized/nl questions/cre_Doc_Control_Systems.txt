@@ -1,0 +1,34 @@
+nl_question
+What document status codes do we have?
+What is the description of document status code 'working'?
+What document type codes do we have?
+What is the description of document type 'Paper'?
+What are the shipping agent names?
+What is the shipping agent code of shipping agent UPS?
+What are all role codes?
+What is the description of role code ED?
+How many employees do we have?
+What is the role of the employee named Koby?
+List all document ids and receipt dates of documents.
+How many employees does each role have? List role description, id and number of employees.
+List roles that have more than one employee. List the role description and number of employees.
+What is the document status description of the document with id 1?
+How many documents have the status code done?
+List the document type code for the document with the id 2.
+List the document ids for any documents with the status code done and the type code paper.
+What is the name of the shipping agent of the document with id 2?
+How many documents were shipped by USPS?
+Which shipping agent shipped the most documents? List the shipping agent name and the number of documents.
+What is the receipt date of the document with id 3?
+What address was the document with id 4 mailed to?
+What is the mail date of the document with id 7?
+List the document ids of documents with the status done and type Paper, which not shipped by the shipping agent named USPS.
+List document id of documents status is done and document type is Paper and the document is shipped by shipping agent named USPS.
+What is draft detail of the document with id 7?
+How many draft copies does the document with id 2 have?
+Which document has the most draft copies? List its document id and number of draft copies.
+Which documents have more than 1 draft copies? List document id and number of draft copies.
+List all employees in the circulation history of the document with id 1. List the employee's name.
+List the employees who have not showed up in any circulation history of documents. List the employee's name.
+Which employee has showed up in most circulation history documents. List the employee's name and the number of drafts and copies.
+For each document, list the number of employees who have showed up in the circulation history of that document. List the document ids and number of employees.

@@ -1,0 +1,15 @@
+table_name,column_name,column_type
+device,Device_ID,num
+device,Device,string
+device,Carrier,string
+device,Package_Version,string
+device,Applications,string
+device,Software_Platform,string
+shop,Shop_ID,num
+shop,Shop_Name,string
+shop,Location,string
+shop,Open_Date,string
+shop,Open_Year,num
+stock,Shop_ID,num
+stock,Device_ID,num
+stock,Quantity,num

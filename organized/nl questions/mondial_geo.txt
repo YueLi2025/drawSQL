@@ -1,0 +1,212 @@
+nl_question
+In which country does Polish found least in?
+Which countries have more than 90% of African? List the name of the country in full.
+State the different ethnic group and percentage of the language in Singapore.
+State the country and its population with population growth greater than 2% but infant mortality rate less than 5%.
+List the infant mortality of country with the least Amerindian.
+Calculate the population of Arab in each country?
+Among countries with more than 400,000 GDP, state its capital and population.
+Calculate the service of GDP for Brazil.
+List all countries with negative growth in population. State the country, population and growth.
+For countries with area between 500000 to 1000000, state the country and infant mortality rate.
+What is the infant mortality rate for Ethiopia?
+How much does the gross domestic products goes to the industry sector for Singapore?
+Which country has the biggest percentage of the albanian ethnic group?
+Please list the name of the countries with over 5 ethnic groups.
+Among the countries with a population of over 10000000, how many of them have a GDP of over 500000?
+Please list the capital cities of the countries with an inflation rate under 2.
+Which country has the lowest inflation rate?
+Among the countries whose agriculture percentage of the GDP is under 50%, how many of them have an area of over 8000000?
+How many cities have a salt lake located in it?
+Please list the depth of the lakes that are located in the Province of Albania.
+Which country has the most languages spoken?
+Among the countries with over 3 organizations, how many of them have an inflation rate of over 5%?
+Please list the organization names established in the countries where Dutch is spoken.
+Among the countries whose GDP is over 1000000, how many of them have a population groth rate of over 3%?
+Which country has the highest GDP per capita?
+Which country is 41% Christian? Give the full name of the country.
+Which two countries does the Detroit River flow through? Give the full name of the country.
+Which country has the most neighbors? Give the full name of the country.
+How many mountains are there in Indonesia?
+What is the quantity of the mountains does Japan have?
+What is the latitude of the island on which Mount Andrinjitra is located?
+What is the area of Egypt as a percentage of Asia?
+Which city in Japan has the most people in the country?
+For the country in which Olsztyn is located, where is the capital?
+When did Uganda declare independence?
+What kind of government does Iran have?
+Where does Bermuda belong to? Give the full name of the country.
+Which country has the city of 114339 in population? Give the full name of the country.
+What is the area of the country which became independent in 1921/3/13?
+What is the population density of the Petropavl's home country?
+What is the most populated city of the 12th highest density country?
+How many times longer is the longest border in the United States than the shortest?
+How many mountains are there in the country with the greatest population?
+Please list the mountains in the country with the lowest inflation rate.
+How many volcanic mountains are there in countries whose population is no more than 5000000?
+Among the countries with a GDP of over 1000000, how many of them have mountains higher than 1000?
+What is the greatest length of the border between 2 independent countries?
+Please list the countries that share the shortest border.
+What is the GDP of the European Continent?
+How many mountains are there on the African Continent?
+Of the deserts on the America Continent, which one covers the greatest area?
+Among the countries that use Bosnian as their language, how many of them don't have a positive population growth rate?
+What is the average percentage of agriculture of GDP in countries on the African Continent?
+Among the independent countries, how many of them has a GDP per capita of over 5000?
+Which island is city Balikpapan located on? How big is the island?
+On which island does South Yorkshire situated? State it's longtitude and latitude.
+List all islands that are greater than the island on which Warwickshire is located.
+For island area less than 200, list the island name and city it belongs to.
+In which province is city Glenrothes located? What is the capital of the province?
+List the all the cities and its city population for provinces with population more than 1000000.
+List all the coral islands along with its city and province.
+What is the average population for all cities location at Baltic Sea?
+Please state the longest river that flows to the Mediterranean Sea.
+List all the cities and provinces located at the rivers that flows to Atlantic Ocean.
+What is the name and length of rivers located at 'Orleans' city?
+List all rivers and province it is located that is greater than 1000 in length.
+For all cities where Seine is located at, which city has the greatest population? Calculate the difference from the city with least population.
+Which nations have a 100% Spanish-speaking population?
+Which countries are dependent on the British Crown?
+What province does the 4th most populous city in the United Kingdom belong to, and how many people live there?
+How many Jewish residents are there in Moldova?
+What is the average area of Asian countries?
+Which country is home to the world's tiniest desert, and what are its longitude and latitude?
+How many mountains are there in the country with the most land area?
+Which sea is the shallowest and which country surrounds it?
+What kind of political system is in place in the country with the highest inflation rate?
+Which nation has the greatest infant mortality rate among those that attained independence in 1960?
+What is the smallest border's length, and what form of government do the two nations bordering it have?
+Which religion is most prevalent in Asia?
+What are the names of the sea that can be found on the island with the biggest area?
+How many people reside in the nation's capital city, which is situated in the nation that attained independence on 8/15/1947?
+What is the proportion of English-speaking citizens in the countries that rely on the United States compared to the total number of citizens in those countries?
+What is the capital of the 3rd most populated country in Asia and what is the capital city's ratio in percentage (%) against the overall population of the country?
+What is the main spoken language in MNE?
+What's the percentage of people in Cayman Islands speak English?
+Which country was the source of Pjandsh River? Give the full name of the country.
+For the countries have the population north of a billion, which one has the lowest GDP? Give the full name of the country.
+Which three countries does the Amazonas flow through? Give the full name of the countries.
+Which country became independent on 1492-01-01? Give the full name of the country.
+How many cities in France have a population of more than 100,000?
+Among all the rivers finally flows to the sea of 540m in depth, which one has the longest length?
+For all the countries that is smaller than 100 square kilometres, which one has the most GDP?
+What is the total number of cities that Japan have?
+Which city has most population other than its capital in Bangladesh?
+Which non capital city has the most people of all?
+In which country is the city of Grozny? Give the full name of the country.
+Which religion has the majority of the people in Japan?
+Which two countries have the border in length of 803 km? Give the full names of the countries.
+How many percent of the total area of Russia is in Europe?
+Give the full names of the countries that are located in more than one continent.
+What's the number of infant mortality in Switzerland in a year?
+How many mountains are there in the United States?
+When did Equatorial Guinea become independent?
+What is the GDP per capita in Switzerland?
+What is the GDP for Service of the country with Fuenlabrada as its city.
+What is the population density of Hanoi's home country?
+How many deserts are not located in a single country? Name them.
+How many rivers belong to more than one country? Name the provinces where we can find them.
+Name of the capitals of the countries that have less than 99.95% less population than the country that has the most population.
+On which continent is the country with the most erosion of real income?
+Which two Asian countries share a border that is 1,782 kilometers long?
+List all the seas with which the deepest sea merges.
+Of all the countries that share territory with more than one continent, in which of them does the average population not exceed 10 inhabitants per square kilometer?
+Of all the countries of the Hindu religion, which has the lowest ratio of people per square meter of surface?
+On what date did the country have a gross domestic product 400% higher than Saint Kitts and Nevis become independent?
+How much more space does Asia have than Europe?
+What is the geographic location of Aarhus city? Please provide the answer with the coordinates of the location.
+What is the population gap between the United Kingdom and Italy?
+In which city is the European Bank for Reconstruction and Development's headquarters? Please include the city and province where the headquarters are located in your answer.
+Which lake is the largest in terms of both surface area and depth?
+Which nation has the highest GDP? Please give the nation's full name.
+Which nation has the lowest proportion of people who speak an African language? Please state the nation's full name.
+Please list the top 3 countries with the highest inflation rate.
+Please provide a list of every nation where English is spoken and utilized entirely.
+What nations are considered British Overseas Territories?
+Please name any three sovereign nations that have been governed by the republic since 1991.
+Which nations have a boundary with the Kalahari Desert?
+Which constitutional monarchy nations saw the greatest growth in the number of organizations after 1907?
+What is the full name of ABEDA and when was it established?
+Name the first organisation established in the Paris city. State its abbreviation, full name and date of establishment.
+List all the organisations that where its name contains 'United Nation'. State its full name and its headquarter city.
+Name all countries in which have border with Bulgaria.
+State all countries with border greater than 4,000. List the full country name.
+Among the country member of 'IOC' organization, which country has the most population?
+List all members and member type of the Islamic Development Bank.
+What is the organization(s) that has 'National Society' as member type.
+List all countries with 'Category III' membership in 'IFAD' organization. Please also provide the capital of the country.
+Name the organizations with the most members.
+Provide the population of the city of the 'World Tourism Organization' headquarter.
+State the inflation rate of Greece.
+List the full name its capital of all the countries with parliamentary democracy government.
+In which city has the greatest population, what is its percentage to its country population?
+When did the United States of America attained it's Independence?
+What is the name of the most recently founded organization in Saudi Arabia?
+Which country has the 5th highest infant mortality rate?
+What river has the 17th-longest length overall? Specify it's length.
+When did the country whose capital is Nouakchott attained it's independence?
+What is the name of the country with the smallest population, and what is its gross domestic product?
+What form of governance does the least prosperous nation in the world have?
+What year saw the greatest number of organizations created on the European continent?
+What other country does the most populated nation in the world share a border with and how long is the border between the two nations?
+What is the provincial capital of the province with a population of less than 80,000 that has the highest average population per area?
+Calculate the percentage of country which gained independence as republic after 1970.
+Find the GPD for Bosnia and Herzegovina and the type of government it belongs to.
+Provide the country with its full name which has the most ethnic group? List them all ethnic group together with its percentage.
+For country with area greater than 600000, what is agriculture percentage of GDP the country contributes?
+When did 'Bulgaria' gain independence?
+What is the number of growth population for country with the lowest infant mortality?
+Which country has the highest GDP?
+How many lakes in the Canary Islands cover an area of over 1000000?
+What is the capital city of the country that has the percentage of Armenian speakers over 90%?
+How many organizations are founded in countries with a population of under 1000000?
+How many organizations are established in countries where people speak Bosnian?
+Where country does Baghdad belongs to?
+Which country is Mountain Cerro Chirripo located in? Give the full name of the country.
+Where is the capital of country which has the largest percentage of Malay people?
+For the third largest country, which ethinic group has the most population?
+Please list the capital cities of the countries that have more than 4 mountains.
+List all the cities in Sumatra and state the population of each city.
+State the name of the lake in Albania province and in which city does it located at.
+Name the river at Little Rock city. State the length of the river.
+Provide all rivers name and length in USA.
+Which are the 2 rivers located at Belgrade city? Which river is longer and how by much?
+What are the names of the rivers in Canada?
+Which nation's GDP is the lowest among those that are communist states?
+Which Arabic-speaking country has the smallest population?
+What provinces encompass the world's biggest desert in terms of overall area?
+How many lakes are there in the 4th most populous African country with a republican form of government?
+What is the total number of Afro-Asian people in the most populous Asian country governed by a monarchy?
+What are the names of the cities along the Euphrat River's course? Indicate the capital city of the nation where the Euphrat River flows.
+What's the name of the second biggest desert?
+How many times longer is the longest river in Tajikistan than the shortest river?
+What percent of the non volcanic islands in the Lesser Antilles group of islands have an area of no more than 300 square kilometers?
+Of all the countries in which English is spoken, what percentage has English as their only language?
+Based on the data shown at Target, what percentage of countries are non-Christian?
+Of all the lakes in Bolivia, which is the deepest?
+What is the name of Anguilla's capital, and where is it located?
+Which nation has the smallest population, and where is its capital located?
+How many Italian regions are bordered by the Mediterranean Sea? How deep is the Mediterranean Sea?
+What are the most recent three independent nations?
+What sea does the Baltic Sea converge with, and how deep is the Baltic Sea?
+Provide a list of all organisations with headquarters in London?
+For each organisations with headquarters in the USA, provide the its full name and the city where the headquarter is located at.
+Lists all governments with a parliamentary democracy that achieved their independence between 01/01/1950 and 12/31/1999.
+What percentage of countries became independent during the year 1960?
+Among the countries with more than 3% population growth rate, state the country name in full along with its GDP.
+Among the countries whose government type is republic, how many of them shares a border that's longer than 200?
+Calculate the percentage of population in Edmonton city to the population of its province.
+Which are the rivers that flows to Black Sea?
+Name all the organisations that were established from 1970 to 1980.
+What is the capital of Australia? Is the capital a headquarter to any organization? Name the organization(s).
+What is the border length between 'USA' and 'MEX'
+Find the government type for the country with the highest percentage GDP in Agriculture.
+Which Asian country gave its agricultural sector the largest share of its gross domestic product?
+What is the population density of the nation whose capital city is in the Distrito Federal province, and what portion of its gross domestic product is devoted to its industries?
+What is the population of African in 'Turks and Caicos Islands'?
+Among the independent countries whose type of government is republic, what is the biggest number of deserts they have?
+What are the names of the three nations where the longest river that empties into the Atlantic Ocean stretches to?
+Which river with its mouth in the Donau River and a length greater than 500 km is located in Slovenia?
+Among the organizations where headquarters are in the 'USA', what is the percentage of the them are in 'Washington'?
+Which nation, with a population ranging from 60,000,000 to 99,000,000, has the greatest gross domestic product?

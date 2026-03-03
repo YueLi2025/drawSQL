@@ -1,0 +1,19 @@
+hard_templates
+SELECT col_name FROM table_name WHERE col_name LIKE string AND col_name = string UNION SELECT col_name FROM table_name WHERE col_name LIKE string AND col_name = string
+SELECT * FROM table_name WHERE col_name = string AND col_name = string
+SELECT * FROM table_name WHERE col_name = string AND col_name = string AND col_name = string
+SELECT * FROM table_name WHERE col_name > num
+SELECT col_name FROM table_name WHERE col_name LIKE string
+SELECT * FROM table_name WHERE (col_name + col_name) = num
+SELECT col_name FROM table_name WHERE col_name = string AND col_name LIKE string
+SELECT count(*) FROM table_name WHERE col_name LIKE string AND col_name = string
+SELECT col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT count(*) FROM table_name WHERE col_name != string AND col_name != string AND col_name != string
+SELECT count(*) FROM table_name WHERE col_name > col_name
+SELECT count(*) FROM table_name WHERE col_name + col_name > num
+SELECT max(col_name) FROM table_name
+SELECT count(*) FROM table_name WHERE col_name = num AND col_name = num
+SELECT count(col_name) FROM table_name
+SELECT count(col_name) FROM table_name WHERE col_name != string and col_name != string and col_name != string
+SELECT col_name FROM table_name WHERE col_name = string and col_name = string and col_name = string

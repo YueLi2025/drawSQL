@@ -1,0 +1,9 @@
+table_name,column_name,column_type
+Person,name,string
+Person,age,num
+Person,city,string
+Person,gender,string
+Person,job,string
+PersonFriend,name,string
+PersonFriend,friend,string
+PersonFriend,year,num

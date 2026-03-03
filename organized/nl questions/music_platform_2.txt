@@ -1,0 +1,41 @@
+nl_question
+List all podcast with its itunes url for all title containing the word 'Dream'.
+Name all the categories for podcast titled 'I Heart My Life Show'.
+Which category does the podcast titled 'SciFi Tech Talk' belong to?
+Of the arts-books and arts-design categories, which one has more podcasts and what is the numerical difference between them?
+What is the least common category?
+List all the cagetories for all the podcasts with "jessica" in the title.
+What is the category for the "Moist Boys" podcast?
+Which category is the podcast "Scaling Global" under?
+What is the category and itune url of the title "Scaling Global"?
+What is the review with the title "Hosts bring the show down" for?
+Which "music" podcast has the longest title?
+List the urls for all the "fiction-science-fiction" podcasts.
+How many podcasts are there in the category which has the most podcasts?
+How many total reviews runned at in June 2022 were added to the podcasts?
+Indicates the title of all podcasts in the fiction category.
+List all the podcast title and its itunes url under the 'society-culture' category.
+List the authors who created review for podcast titled 'Pop Rocket' in 2016 with rating less than 5.
+Find the author, rating and review creation date of review for podcast title 'In The Thick'.
+Which podcast was reviewed the latest? State the date of creation, podcast tile and rating.
+Write all the review content belonging to StormCast: The Official Warhammer Age of Sigmar Podcast.
+Write all the review titles and the contents belonging to the podcast 'More Stupider: A 90-Day Fiance Podcast' with a review rating of 1.
+How many reviews does 'LifeAfter/The Message' have which were rated below 3?
+How many podcast reviews with a rating of 3 were created during the first quarter of 2015?
+What is the average rating of all the podcasts with reviews created in 2019?
+What is the rating and category of the podcast entitled Sitcomadon?
+Indicate the id of the reviewer whose itunes id is 1516665400.
+What are the titles of the podcasts whose reviews were created between 2018-08-22T11:53:16-07:00 and 2018-11-20T11:14:20-07:00?
+To which categories do the podcasts of the reviewer whose id is EFB34EAC8E9397C belong?
+Indicate the slug and the itunes url of the podcast whose review content was written Can't stop listening.
+What dates were the Don't Lie To Your Life Coach podcast reviews created?
+In how many categories were podcast reviews created in the last six months of 2016? List them.
+Provide the names of podcasts in the art category in 2018.
+List all the podcasts reviewed by a reviewer who has a review titled "Inspired & On Fire!".
+What are the titles and categories of all the podcasts with a review that has "Absolutely fantastic" in it?
+What is the content of the earliest review for the "Stuff You Should Know" podcast?
+How many reviews does "Planet Money" have?
+What is the content of the review under the title "really interesting!" and is created on 2018-04-24 at 12:05:16?
+Among the reviews for the podcast "Please Excuse My Dead Aunt Sally", how many of them are made in the year 2019?
+How many ratings of 5 have been given to the podcast "Please Excuse My Dead Aunt Sally"?
+What is the average rating of the podcast "Please Excuse My Dead Aunt Sally"?

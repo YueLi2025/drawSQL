@@ -1,0 +1,42 @@
+nl_question
+Find the number of investors in total.
+Show all investor details.
+Show all distinct lot details.
+Show the maximum amount of transaction.
+Show all date and share count of transactions.
+What is the total share of transactions?
+Show all transaction ids with transaction code 'PUR'.
+Show all dates of transactions whose type code is "SALE".
+Show the average amount of transactions with type code "SALE".
+Show the description of transaction type with code "PUR".
+Show the minimum amount of transactions whose type code is "PUR" and whose share count is bigger than 50.
+Show the maximum share count of transactions where the amount is smaller than 10000
+Show the dates of transactions if the share count is bigger than 100 or the amount is bigger than 1000.
+Show the transaction type descriptions and dates if the share count is smaller than 10.
+Show details of all investors if they make any transaction with share count greater than 100.
+How many distinct transaction types are used in the transactions?
+Return the lot details and investor ids.
+Return the lot details of lots that belong to investors with details "l"?
+What are the purchase details of transactions with amount bigger than 10000?
+What are the sale details and dates of transactions with amount smaller than 3000?
+What are the lot details of lots associated with transactions with share count smaller than 50?
+What are the lot details of lots associated with transactions whose share count is bigger than 100 and whose type code is "PUR"?
+Show the average transaction amount for different transaction types.
+Show the maximum and minimum share count of different transaction types.
+Show the average share count of transactions for different investors.
+Show the average share count of transactions each each investor, ordered by average share count.
+Show the average amount of transactions for different investors.
+Show the average amount of transactions for different lots.
+Show the average amount of transactions for different lots, ordered by average amount of transactions.
+Show the number of transactions with transaction type code "SALE" for different investors if it is larger than 0.
+Show the number of transactions for different investors.
+Show the transaction type code that occurs the fewest times.
+Show the transaction type code that occurs the most frequently.
+Show the description of the transaction type that occurs most frequently.
+Show the id and details of the investor that has the largest number of transactions.
+Show the id and details for the investors who have the top 3 number of transactions.
+Show the ids of the investors who have at least two transactions.
+Show the ids and details of the investors who have at least two transactions with type code "SALE".
+What are the dates of transactions with at least 100 share count or amount bigger than 100?
+What are the details of all sales and purchases?
+What are the details of the lots which are not used in any transactions?

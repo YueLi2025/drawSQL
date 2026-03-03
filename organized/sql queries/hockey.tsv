@@ -1,0 +1,157 @@
+sql_query
+SELECT T1.firstName, T1.lastName FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T2.year >= 2000 AND T2.year <= 2005 GROUP BY T2.playerID HAVING COUNT(DISTINCT T2.tmID) > 2
+SELECT DISTINCT T1.nameGiven, T1.birthCountry FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID GROUP BY T1.nameGiven, T1.birthCountry HAVING SUM(T2.Min) > 5000
+SELECT T1.firstName, T1.lastName , T2.year FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T2.ENG >= 10
+SELECT T1.firstName, T1.lastName, T2.year, AVG(T2.Min) FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T1.playerID = ( SELECT playerID FROM Goalies GROUP BY playerID ORDER BY COUNT(playerID) DESC LIMIT 1 ) GROUP BY T1.firstName, T1.lastName, T2.year
+SELECT DISTINCT T1.firstName, T1.lastName, T2.year FROM Master AS T1 INNER JOIN ( SELECT playerID, year FROM Goalies WHERE CAST(SHO AS REAL) / GA > 0.05 ) AS T2 ON T2.playerID = T1.playerID
+SELECT firstName, lastName FROM Master WHERE birthCountry != deathCountry ORDER BY birthYear
+SELECT AVG(IIF(birthYear < 1990, height, NULL)) - AVG(IIF(birthYear >= 1990, height, NULL)) FROM Master
+SELECT COUNT(note) FROM AwardsMisc WHERE note IS NOT NULL
+SELECT COUNT(playerID) FROM AwardsPlayers WHERE pos = 'G' AND year = 1983
+SELECT COUNT(tmID) FROM Goalies WHERE year = 2005 AND ENG IS NULL
+SELECT DISTINCT year FROM Goalies WHERE lgID = 'NHL' AND SA IS NOT NULL
+SELECT name FROM HOF WHERE year = 1978
+SELECT COUNT(hofID) FROM HOF WHERE category = 'Builder'
+SELECT DISTINCT T2.award FROM Master AS T1 INNER JOIN AwardsCoaches AS T2 ON T1.coachID = T2.coachID WHERE T1.birthCountry = 'Canada'
+SELECT COUNT(T1.playerID) FROM Master AS T1 INNER JOIN AwardsPlayers AS T2 ON T1.playerID = T2.playerID WHERE T2.award = 'All-Rookie' AND T1.birthCity = 'Toronto'
+SELECT COUNT(T1.playerID) FROM Master AS T1 INNER JOIN AwardsPlayers AS T2 ON T1.playerID = T2.playerID WHERE T2.award = 'All-Rookie' AND T1.deathYear IS NOT NULL
+SELECT COUNT(DISTINCT T1.playerID) FROM Master AS T1 INNER JOIN AwardsPlayers AS T2 ON T1.playerID = T2.playerID WHERE T1.deathState = 'MA'
+SELECT DISTINCT T1.nameNick FROM Master AS T1 INNER JOIN AwardsPlayers AS T2 ON T1.playerID = T2.playerID WHERE T2.award = 'All-Rookie' AND T1.birthMon = 3
+SELECT COUNT(T1.playerID) FROM Master AS T1 INNER JOIN HOF AS T2 ON T1.hofID = T2.hofID WHERE T1.birthMon IN (7, 8)
+SELECT T1.birthMon FROM Master AS T1 INNER JOIN AwardsPlayers AS T2 ON T1.playerID = T2.playerID GROUP BY T2.playerID ORDER BY COUNT(T2.award) DESC LIMIT 1
+SELECT T1.birthYear FROM Master AS T1 INNER JOIN AwardsPlayers AS T2 ON T1.playerID = T2.playerID GROUP BY T1.birthYear ORDER BY COUNT(T2.award) DESC LIMIT 1
+SELECT T1.birthCountry FROM Master AS T1 INNER JOIN AwardsPlayers AS T2 ON T1.playerID = T2.playerID GROUP BY T1.birthCountry ORDER BY COUNT(T2.award) DESC LIMIT 1
+SELECT T1.birthCountry FROM Master AS T1 INNER JOIN HOF AS T2 ON T1.hofID = T2.hofID GROUP BY T1.birthCountry ORDER BY COUNT(T1.playerID) DESC LIMIT 1
+SELECT DISTINCT T1.pos FROM Master AS T1 INNER JOIN AwardsPlayers AS T2 ON T1.playerID = T2.playerID WHERE T1.birthCountry = 'Canada' AND T2.award = 'All-Rookie'
+SELECT tmID FROM Goalies WHERE playerID = 'roypa01' AND year = 1992
+SELECT GP FROM Goalies WHERE playerID = 'rutlewa01' AND year = 1967
+SELECT Min FROM Goalies WHERE playerID = 'valiqst01' AND year = 2007
+SELECT W FROM Goalies WHERE playerID = 'vanbijo01' AND year = 1990
+SELECT `T/OL` FROM Goalies WHERE playerID = 'vernomi01' AND year = 1998
+SELECT T1.firstName, T1.lastName FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T2.stint = 3 ORDER BY T1.weight DESC LIMIT 1
+SELECT T1.shootCatch FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T2.year = 2010 GROUP BY T2.playerID ORDER BY SUM(T2.SHO) DESC LIMIT 1
+SELECT T1.firstName, T1.lastName FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T2.tmID = 'NJD' GROUP BY T2.playerID ORDER BY SUM(T2.SA - T2.GA) DESC LIMIT 1
+SELECT T2.name FROM Goalies AS T1 INNER JOIN Teams AS T2 ON T1.tmID = T2.tmID WHERE T1.year = 2010 GROUP BY T2.name ORDER BY SUM(PostENG) DESC LIMIT 1
+SELECT GP FROM ScoringSC WHERE playerID = 'broadpu01' AND YEAR = 1922
+SELECT G FROM ScoringSC WHERE playerID = 'dyeba01' AND year = 1921
+SELECT playerID FROM ScoringSC ORDER BY A DESC LIMIT 1
+SELECT lgID FROM ScoringSC WHERE playerID = 'adamsja01' AND year = 1920
+SELECT DISTINCT pos FROM ScoringSC WHERE playerID = 'hartgi01'
+SELECT T1.birthYear FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T2.year = 2008 ORDER BY T2.PostSA DESC LIMIT 1
+SELECT MAX(T2.year) - MIN(T2.year) FROM Master AS T1 INNER JOIN Coaches AS T2 ON T1.coachID = T2.coachID WHERE T1.firstName = 'Don' AND T1.lastName = 'Waddell'
+SELECT T1.shootCatch FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T2.year = 1996 ORDER BY T2.SHO DESC LIMIT 1
+SELECT T1.birthYear, T1.birthMon, birthDay FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T2.year = 1965 ORDER BY T2.GA DESC LIMIT 1
+SELECT T1.firstName, T1.lastName FROM Master AS T1 INNER JOIN Scoring AS T2 ON T1.playerID = T2.playerID WHERE T2.year = 1981 GROUP BY T2.playerID ORDER BY SUM(T2.`+/-`) DESC LIMIT 1
+SELECT T1.shootCatch FROM Master AS T1 INNER JOIN Scoring AS T2 ON T1.playerID = T2.playerID WHERE T2.year = 1989 GROUP BY T2.playerID HAVING SUM(T2.SHG) = 7
+SELECT T1.firstName, T1.lastName FROM Master AS T1 INNER JOIN Scoring AS T2 ON T1.playerID = T2.playerID WHERE T2.year = 1986 GROUP BY T2.playerID ORDER BY SUM(T2.GWG) DESC LIMIT 1
+SELECT T2.SOG FROM Master AS T1 INNER JOIN Scoring AS T2 ON T1.playerID = T2.playerID WHERE T1.firstName = 'Cam' AND T1.lastName = 'Neely' AND T2.year = '1990'
+SELECT T1.playerID FROM Goalies AS T1 INNER JOIN Master AS T2 ON T1.playerID = T2.playerID WHERE T1.year = '1978' AND T2.weight > 190 ORDER BY T1.GA DESC LIMIT 1
+SELECT COUNT(playerID) FROM Master WHERE playerID IS NOT NULL AND coachID IS NOT NULL
+SELECT BenchMinor, name FROM Teams ORDER BY T DESC LIMIT 1
+SELECT award FROM Teams AS T1 INNER JOIN AwardsCoaches AS T2 ON T1.lgID = T2.lgID WHERE T1.lgID = 'NHL' GROUP BY T2.coachID, T2.award ORDER BY COUNT(T2.award) DESC LIMIT 1
+SELECT CAST(COUNT(name) AS REAL) / 30 FROM HOF WHERE year BETWEEN 1950 AND 1980 AND category = 'Player'
+SELECT SUM(W) FROM Goalies GROUP BY tmID ORDER BY SUM(SHO) DESC LIMIT 1
+SELECT tmID FROM TeamSplits WHERE YEAR = '2005' ORDER BY rW DESC LIMIT 1
+SELECT SUM(PostGA) FROM Goalies WHERE lgID = 'WCHL' AND year = '1924' GROUP BY playerID ORDER BY SUM(PostGA) DESC LIMIT 1
+SELECT OctL, tmID FROM TeamSplits WHERE year = '2006' ORDER BY OctL DESC LIMIT 1
+SELECT T1.year, T1.year - T2.birthYear FROM Scoring AS T1 INNER JOIN Master AS T2 ON T1.playerID = T2.playerID GROUP BY T1.year, T1.year - T2.birthYear ORDER BY SUM(T1.G) DESC LIMIT 1
+SELECT SUM(T1.A), T2.firstName, T2.lastName FROM Scoring AS T1 INNER JOIN Master AS T2 ON T1.playerID = T2.playerID WHERE T1.lgID = 'NHL' GROUP BY T2.firstName, T2.lastName ORDER BY SUM(T1.A) DESC LIMIT 1
+SELECT T2.name FROM SeriesPost AS T1 INNER JOIN Teams AS T2 ON T1.year = T2.year AND tmIDLoser = tmID WHERE T1.note = 'EX' AND T2.year = '1912'
+SELECT T2.nameGiven FROM Scoring AS T1 INNER JOIN Master AS T2 ON T1.playerID = T2.playerID AND T1.PIM BETWEEN 200 AND 250 AND T1.year BETWEEN 2003 AND 2005 ORDER BY T1.GP DESC LIMIT 1
+SELECT T2.lastNHL - T2.birthYear FROM GoaliesSC AS T1 INNER JOIN Master AS T2 ON T1.playerID = T2.playerID WHERE T2.lastNHL IS NOT NULL GROUP BY T2.lastNHL, T2.birthYear ORDER BY SUM(GA) LIMIT 1
+SELECT T1.pos, T2.award, T1.nameGiven, T1.lastName FROM Master AS T1 INNER JOIN AwardsCoaches AS T2 ON T2.coachID = T1.coachID GROUP BY T1.pos, T2.award, T1.nameGiven, T1.lastName ORDER BY COUNT(T2.award) LIMIT 1
+SELECT SUM(T1.g) FROM Coaches AS T1 INNER JOIN ( SELECT coachID, year FROM AwardsCoaches WHERE award = 'Second Team All-Star' ORDER BY year LIMIT 1 ) AS T2 ON T1.coachID = T2.coachID AND T1.year < T2.year
+SELECT SUM(T1.l), T1.coachID FROM Coaches AS T1 INNER JOIN Teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.notes = 'interim' AND T1.year = '1997' AND T2.name = 'Tampa Bay Lightning' GROUP BY T1.coachID
+SELECT T1.coachID FROM Coaches AS T1 INNER JOIN Teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.year = 1969 AND T2.rank = 4
+SELECT DISTINCT T2.name FROM TeamsHalf AS T1 INNER JOIN Teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.half = 1 AND T1.rank = 1 AND T1.year BETWEEN 1917 AND 1920
+SELECT CAST(SUM(BenchMinor) AS REAL) / 2 FROM Teams WHERE name = 'St. Louis Blues'
+SELECT COUNT(tmID) FROM Teams WHERE year = 2006 AND W > L AND Pts > 100
+SELECT name FROM Teams WHERE year = 2006 GROUP BY tmID, name ORDER BY CAST(SUM(BenchMinor) AS REAL) / 2 DESC LIMIT 1
+SELECT name FROM Teams WHERE year = 2006 GROUP BY tmID, name ORDER BY SUM(PIM) DESC LIMIT 3
+SELECT name FROM Teams WHERE year = 1995 AND name IN ('Florida Panthers', 'Edmonton Oilers', 'Los Angeles Kings') ORDER BY PKC DESC LIMIT 1
+SELECT T2.name FROM TeamsSC AS T1 INNER JOIN Teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.year = '1917' AND T1.W > T1.L
+SELECT COUNT(T1.tmID) FROM TeamsSC AS T1 INNER JOIN Teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.year = '1922' AND T2.Pts > 20
+SELECT T1.PIM FROM TeamsSC AS T1 INNER JOIN Teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.year = '1923' AND T2.rank = 2
+SELECT T2.name FROM TeamsSC AS T1 INNER JOIN Teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year GROUP BY T2.name ORDER BY SUM(T1.W) DESC LIMIT 1
+SELECT T1.W FROM TeamVsTeam AS T1 INNER JOIN Teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.year = 1985 AND T1.tmID = ( SELECT DISTINCT tmID FROM Teams WHERE name = 'Philadelphia Flyers' ) AND T1.oppID = ( SELECT DISTINCT tmID FROM Teams WHERE name = 'Boston Bruins' )
+SELECT DISTINCT T3.firstName FROM Coaches AS T1 INNER JOIN Teams AS T2 ON T1.year = T2.year AND T1.tmID = T2.tmID INNER JOIN Master AS T3 ON T1.coachID = T3.coachID WHERE T2.name = 'Montreal Canadiens'
+SELECT COUNT(DISTINCT hofID) FROM Coaches AS T1 INNER JOIN Teams AS T2 ON T1.year = T2.year AND T1.tmID = T2.tmID INNER JOIN Master AS T3 ON T1.coachID = T3.coachID WHERE T2.name = 'Montreal Canadiens'
+SELECT T3.height FROM Coaches AS T1 INNER JOIN Teams AS T2 ON T1.year = T2.year AND T1.tmID = T2.tmID INNER JOIN Master AS T3 ON T1.coachID = T3.coachID WHERE T2.name = 'Montreal Canadiens' AND T3.coachID IS NOT NULL ORDER BY T3.height DESC LIMIT 1
+SELECT T3.firstName FROM Coaches AS T1 INNER JOIN TeamsSC AS T2 ON T1.year = T2.year AND T1.tmID = T2.tmID INNER JOIN Master AS T3 ON T1.coachID = T3.coachID WHERE T2.year = 1922
+SELECT COUNT(DISTINCT T3.coachID) FROM Coaches AS T1 INNER JOIN Teams AS T2 ON T1.year = T2.year AND T1.tmID = T2.tmID INNER JOIN Master AS T3 ON T1.coachID = T3.coachID WHERE T2.name = 'Philadelphia Flyers' AND T3.birthMon = 3
+SELECT COUNT(DISTINCT T3.coachID) FROM Coaches AS T1 INNER JOIN Teams AS T2 ON T1.year = T2.year AND T1.tmID = T2.tmID INNER JOIN Master AS T3 ON T1.coachID = T3.coachID WHERE T2.name = 'Philadelphia Flyers' AND T3.birthCountry = 'USA'
+SELECT COUNT(DISTINCT T3.coachID) FROM Coaches AS T1 INNER JOIN Teams AS T2 ON T1.year = T2.year AND T1.tmID = T2.tmID INNER JOIN Master AS T3 ON T1.coachID = T3.coachID WHERE T2.name = 'Buffalo Sabres' AND T3.deathYear IS NOT NULL
+SELECT DISTINCT T3.name FROM TeamVsTeam AS T1 INNER JOIN Teams AS T2 ON T1.year = T2.year AND T1.oppID = T2.tmID INNER JOIN Teams AS T3 ON T1.year = T3.year AND T1.tmID = T3.tmID WHERE T2.name = 'Buffalo Sabres'
+SELECT T2.PIM FROM Teams AS T1 INNER JOIN TeamsSC AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.name = 'Montreal Canadiens' AND T1.year = 1918
+SELECT T1.year FROM Teams AS T1 INNER JOIN TeamsSC AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.name = 'Montreal Canadiens' AND T2.PIM = 49
+SELECT CAST(SUM(T2.PIM) AS REAL) / COUNT(T2.PIM) FROM Teams AS T1 INNER JOIN TeamsSC AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.name = 'Montreal Canadiens'
+SELECT SUM(T2.W / T2.G) / SUM(T2.G + T2.W) FROM Teams AS T1 INNER JOIN TeamsSC AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.name = 'Montreal Canadiens'
+SELECT name, hofID FROM HOF WHERE category = 'Builder' AND year BETWEEN 1970 AND 1979
+SELECT COUNT(playerID) FROM Master WHERE hofID IS NOT NULL AND playerID IS NOT NULL AND coachID IS NOT NULL
+SELECT T2.BenchMinor FROM Coaches AS T1 INNER JOIN Teams AS T2 ON T1.year = T2.year AND T1.tmID = T2.tmID INNER JOIN Master AS T3 ON T1.coachID = T3.coachID WHERE T3.firstName = 'Scotty' AND T3.lastName = 'Bowman' AND T1.year = 1982
+SELECT T2.shootCatch, T2.firstName, T2.lastName FROM Goalies AS T1 INNER JOIN Master AS T2 ON T1.playerID = T2.playerID AND T1.year = 1973 WHERE T1.tmID = 'QUN' AND T1.GP = 32
+SELECT COUNT(DISTINCT T1.tmID) FROM Goalies AS T1 INNER JOIN Master AS T2 ON T1.playerID = T2.playerID WHERE T2.lastName = 'Young'
+SELECT SUM(T1.GP) FROM Goalies AS T1 INNER JOIN Master AS T2 ON T1.playerID = T2.playerID WHERE T2.legendsID = 'P196402'
+SELECT COUNT(DISTINCT playerID) FROM Goalies AS T1 INNER JOIN Teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T2.name = 'Calgary Flames'
+SELECT playerID FROM Goalies AS T1 INNER JOIN Teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T2.name = 'Minnesota North Stars' GROUP BY T1.playerID ORDER BY SUM(T1.GA) DESC LIMIT 1
+SELECT COUNT(DISTINCT T1.playerID) FROM Goalies AS T1 INNER JOIN Master AS T2 ON T1.playerID = T2.playerID INNER JOIN Teams AS T3 ON T1.tmID = T3.tmID AND T1.year = T3.year WHERE T3.name = 'Haileybury Hockey Club' AND T2.hofID IS NOT NULL
+SELECT playerID, coachID FROM Master WHERE playerID IS NOT NULL AND coachID IS NOT NULL
+SELECT DISTINCT playerID FROM Master GROUP BY playerID HAVING AVG(height) = 75
+SELECT playerID FROM Master ORDER BY weight DESC LIMIT 5
+SELECT DISTINCT firstName, lastName FROM Master WHERE birthCountry = 'Finland'
+SELECT DISTINCT playerID FROM Master WHERE deathYear IS NOT NULL AND playerID IS NOT NULL
+SELECT DISTINCT T1.firstName FROM Master AS T1 INNER JOIN Coaches AS T2 ON T1.coachID = T2.coachID WHERE T2.year > 2000
+SELECT T1.height, T1.weight FROM Master AS T1 INNER JOIN AwardsCoaches AS T2 ON T1.coachID = T2.coachID WHERE T2.year = '1930'
+SELECT SUM(T2.G), STRFTIME('%Y', CURRENT_TIMESTAMP) - T1.birthyear FROM Master AS T1 INNER JOIN Scoring AS T2 ON T1.playerID = T2.playerID WHERE T1.playerID = 'aaltoan01' GROUP BY T1.birthyear
+SELECT DISTINCT T2.coachID FROM Master AS T1 INNER JOIN AwardsCoaches AS T2 ON T1.coachID = T2.coachID WHERE T1.playerID IS NULL
+SELECT SUM(T1.weight) FROM Master AS T1 INNER JOIN Scoring AS T2 ON T1.playerID = T2.playerID WHERE T2.year = 1997 AND T2.tmID = 'ANA'
+SELECT DISTINCT T3.tmID, T1.birthCountry FROM Master AS T1 INNER JOIN Scoring AS T2 ON T1.playerID = T2.playerID INNER JOIN ( SELECT year, tmID FROM Teams WHERE year = 2000 ORDER BY W / (W + L) DESC LIMIT 1 ) AS T3 ON T2.tmID = T3.tmID AND T2.year = T3.year
+SELECT CAST(T1.W AS REAL) / T1.G, T2.playerID FROM Teams AS T1 INNER JOIN Scoring AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.tmID = 'CAR' AND T1.year = 1998 GROUP BY T1.W / T1.G, T2.playerID ORDER BY SUM(T2.G) DESC LIMIT 1
+SELECT firstName, lastName FROM Master WHERE birthYear = 1990 AND birthCountry != 'USA'
+SELECT nameGiven FROM Master WHERE shootCatch IS NULL AND pos = 'F'
+SELECT firstName, lastName FROM Master WHERE hofID IS NULL
+SELECT firstName, lastName, deathYear - birthYear FROM Master WHERE shootCatch IS NULL AND deathYear IS NOT NULL
+SELECT AVG(weight) FROM Master WHERE height > 72
+SELECT T1.firstName, T1.lastName FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T2.lgID IN ('PCHA', 'NHL') GROUP BY T2.playerID HAVING COUNT(DISTINCT T2.lgID) > 1
+SELECT T1.playerID, T2.year, Min FROM Master AS T1 INNER JOIN Goalies AS T2 ON T2.playerID = T1.playerID WHERE T1.deathYear IS NOT NULL ORDER BY T2.Min DESC LIMIT 1
+SELECT T1.nameGiven, T1.height , T1.weight, STRFTIME('%Y', CURRENT_TIMESTAMP) - birthYear FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T2.tmID = 'COL' AND T2.year >= 2000 AND T2.year <= 2010 GROUP BY T1.playerID
+SELECT T1.firstName, T1.lastName, T2.year FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE CAST(T2.GA AS REAL) / T2.SA IS NOT NULL ORDER BY CAST(T2.GA AS REAL) / T2.SA LIMIT 1
+SELECT nameGiven, firstNHL, firstWHA FROM Master WHERE firstNHL IS NOT NULL AND firstWHA IS NOT NULL
+SELECT firstName, lastName, pos FROM Master WHERE deathYear IS NULL AND pos LIKE '%/%'
+SELECT nameNick, lastNHL FROM Master ORDER BY height DESC LIMIT 1
+SELECT T1.firstName, T1.lastName, T3.year FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID INNER JOIN Teams AS T3 ON T2.year = T3.year AND T2.tmID = T3.tmID WHERE T1.deathYear IS NOT NULL AND T3.name = 'Boston Bruins' AND T3.rank = 1 AND T1.pos = 'G'
+SELECT COUNT(coachID) FROM Coaches WHERE year = 2007 AND notes = 'interim'
+SELECT COUNT(hofID) FROM HOF WHERE year > 1980 AND category = 'Player'
+SELECT DISTINCT T1.nameNick FROM Master AS T1 INNER JOIN HOF AS T2 ON T1.hofID = T2.hofID WHERE T2.year = 2007
+SELECT CASE WHEN T1.hofID IS NULL THEN 'NO' ELSE T2.year END FROM Master AS T1 LEFT JOIN HOF AS T2 ON T1.hofID = T2.hofID WHERE T1.height = ( SELECT MAX(height) FROM Master )
+SELECT T2.award FROM Master AS T1 INNER JOIN AwardsCoaches AS T2 ON T1.coachID = T2.coachID WHERE T1.birthYear = 1952
+SELECT COUNT(year) FROM Goalies WHERE playerID = 'healygl01'
+SELECT T1.birthCountry FROM Master AS T1 INNER JOIN Coaches AS T2 ON T1.coachID = T2.coachID WHERE T2.year = 1998 AND T2.notes = 'co-coach with Dave Lewis'
+SELECT T2.coachID, T1.nameNick FROM Master AS T1 INNER JOIN Coaches AS T2 ON T1.coachID = T2.coachID WHERE T2.year = 2009 ORDER BY CAST(T2.W AS REAL) / (T2.W + T2.L) DESC LIMIT 1
+SELECT COUNT(year) FROM ScoringSC WHERE playerID = 'cleghsp01'
+SELECT DISTINCT T3.firstName, T3.lastName FROM Teams AS T1 INNER JOIN Coaches AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year INNER JOIN Master AS T3 ON T2.coachID = T3.coachID WHERE T1.year = '2003' GROUP BY T3.firstName, T3.lastName ORDER BY SUM(T1.BenchMinor) DESC LIMIT 1
+SELECT DISTINCT birthCountry, birthYear FROM Master GROUP BY birthCountry, birthYear ORDER BY COUNT(birthCountry) DESC LIMIT 1
+SELECT CAST(PPG AS REAL) / PPC FROM Teams WHERE year = 2009 AND name = 'New York Rangers'
+SELECT T2.name FROM TeamsSC AS T1 INNER JOIN Teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.year = '1922'
+SELECT COUNT(DISTINCT T3.coachID) FROM Coaches AS T1 INNER JOIN TeamsSC AS T2 ON T1.year = T2.year AND T1.tmID = T2.tmID INNER JOIN Master AS T3 ON T1.coachID = T3.coachID WHERE T2.year = 1922 AND T3.birthCountry = 'USA'
+SELECT T2.W FROM Teams AS T1 INNER JOIN TeamsSC AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.name = 'Montreal Canadiens' AND T2.PIM = 24
+SELECT T2.firstName, T2.lastName FROM Goalies AS T1 INNER JOIN Master AS T2 ON T1.playerID = T2.playerID WHERE T1.ENG = 10 ORDER BY T2.height DESC LIMIT 1
+SELECT CAST((SUM(CASE WHEN T1.year = 2005 THEN T1.GP ELSE 0 END) - SUM(CASE WHEN T1.year = 2006 THEN T1.GP ELSE 0 END)) AS REAL) * 100 / SUM(CASE WHEN T1.year = 2005 THEN T1.GP ELSE 0 END) FROM Goalies AS T1 INNER JOIN Master AS T2 ON T1.playerID = T2.playerID WHERE T2.firstName = 'David' AND T2.lastName = 'Aebischer'
+SELECT T2.playerID, T2.tmID FROM ( SELECT playerID FROM Master WHERE height IS NOT NULL ORDER BY height ASC LIMIT 1 ) AS T1 INNER JOIN ( SELECT DISTINCT playerID, tmID FROM Scoring WHERE year BETWEEN 1925 AND 1936 ) AS T2 ON T1.playerID = T2.playerID
+SELECT T1.nameGiven, CAST(SUM(T2.Min) AS REAL) / SUM(T2.GP) FROM Master AS T1 INNER JOIN Goalies AS T2 ON T1.playerID = T2.playerID WHERE T1.playerID = 'aebisda01' GROUP BY T1.nameGiven
+SELECT T2.award FROM Master AS T1 INNER JOIN AwardsPlayers AS T2 ON T1.playerID = T2.playerID WHERE T1.deathCity = 'Kemptville'
+SELECT IIF(T1.note = 'posthumous', 'YES', 'NO') FROM AwardsMisc AS T1 RIGHT JOIN Master AS T2 ON T1.ID = T2.playerID WHERE T2.legendsID = 'P194502'
+SELECT T1.pos FROM Master AS T1 INNER JOIN AwardsPlayers AS T2 ON T1.playerID = T2.playerID WHERE T1.firstName = 'Mike' AND T1.lastName = 'Antonovich'
+SELECT T2.legendsID FROM Goalies AS T1 INNER JOIN Master AS T2 ON T1.playerID = T2.playerID WHERE T1.year = 2011 ORDER BY 1 - CAST(T1.PostGA AS REAL) / T1.PostSA DESC LIMIT 1
+SELECT T2.nameGiven, T2.lastName FROM Scoring AS T1 INNER JOIN Master AS T2 ON T1.playerID = T2.playerID WHERE T1.SHG BETWEEN 1 AND 5 ORDER BY T1.GWG DESC LIMIT 1
+SELECT T2.rank, T2.year, T2.name FROM Scoring AS T1 INNER JOIN Teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.SHA >= 7 ORDER BY T1.A DESC LIMIT 1
+SELECT SUM(Pts), year FROM Teams GROUP BY year, tmID ORDER BY SUM(Pts) DESC LIMIT 1
+SELECT COUNT(playerID) FROM Master WHERE lastName = 'Green' AND coachID IS NULL
+SELECT DISTINCT playerID FROM Master WHERE pos LIKE '%L%' AND weight > 200 AND playerID IS NOT NULL AND pos = 'L'
+SELECT nameGiven , nameGiven , birthYear, birthMon, birthDay FROM Master WHERE deathYear IS NULL ORDER BY birthYear DESC, birthMon DESC, birthday DESC LIMIT 1
+SELECT DISTINCT firstName, lastName, T3.name FROM Goalies AS T1 INNER JOIN Master AS T2 ON T2.playerID = T1.playerID INNER JOIN Teams AS T3 ON T1.lgID = T3.lgID WHERE T1.playerID IS NOT NULL AND T2.coachID IS NOT NULL AND T2.shootCatch = 'L' AND T2.pos = 'G'
+SELECT DISTINCT firstName, lastName, T3.name FROM Goalies AS T1 INNER JOIN Master AS T2 ON T2.playerID = T1.playerID INNER JOIN Teams AS T3 ON T1.lgID = T3.lgID WHERE T2.birthCountry = 'Canada' AND T2.deathYear IS NOT NULL AND T2.pos = 'G'
+SELECT COUNT(playerID) FROM Master WHERE shootCatch IS NULL AND firstNHL = '2011'
+SELECT T2.name, T3.name FROM TeamVsTeam AS T1 INNER JOIN Teams AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year INNER JOIN Teams AS T3 ON T1.year = T3.year AND T1.oppID = T3.tmID WHERE T1.year = 1909 AND T1.T = 1
+SELECT COUNT(hofID) FROM HOF WHERE category = 'Player' AND year = 1958
+SELECT SUM(T2.G) FROM Teams AS T1 INNER JOIN Scoring AS T2 ON T1.tmID = T2.tmID AND T1.year = T2.year WHERE T1.divID = 'EW' AND T1.tmID = 'BIR' AND T1.year = 1976

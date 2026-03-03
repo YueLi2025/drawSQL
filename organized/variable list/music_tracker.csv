@@ -1,0 +1,11 @@
+table_name,column_name,column_type
+tags,id,num
+tags,index,num
+tags,tag,string
+torrents,artist,string
+torrents,groupId,num
+torrents,groupName,num
+torrents,groupYear,num
+torrents,id,num
+torrents,releaseType,string
+torrents,totalSnatched,num

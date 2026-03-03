@@ -1,0 +1,15 @@
+table_name,column_name,column_type
+church,Church_ID,num
+church,Name,string
+church,Organized_by,string
+church,Open_Date,num
+church,Continuation_of,string
+people,People_ID,num
+people,Name,string
+people,Country,string
+people,Is_Male,string
+people,Age,num
+wedding,Church_ID,num
+wedding,Male_ID,num
+wedding,Female_ID,num
+wedding,Year,num

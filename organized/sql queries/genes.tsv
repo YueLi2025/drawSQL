@@ -1,0 +1,12 @@
+sql_query
+SELECT T1.Chromosome FROM Genes AS T1 INNER JOIN Classification AS T2 ON T1.GeneID = T2.GeneID WHERE T2.Localization = 'plasma membrane'
+SELECT COUNT(T1.GeneID) FROM Genes AS T1 INNER JOIN Classification AS T2 ON T1.GeneID = T2.GeneID WHERE T2.Localization = 'nucleus' AND T1.Essential = 'Non-Essential'
+SELECT COUNT(T1.GeneID) FROM Genes AS T1 INNER JOIN Classification AS T2 ON T1.GeneID = T2.GeneID WHERE T2.Localization = 'vacuole' AND T1.Phenotype = 'Nucleic acid metabolism defects'
+SELECT T2.Expression_Corr FROM Genes AS T1 INNER JOIN Interactions AS T2 ON T1.GeneID = T2.GeneID1 INNER JOIN Genes AS T3 ON T3.GeneID = T2.GeneID2 WHERE T1.Localization = 'nucleus' AND T3.Localization = 'nucleus' ORDER BY T2.Expression_Corr DESC LIMIT 1
+SELECT Expression_Corr FROM Interactions WHERE Type = 'Physical' UNION ALL SELECT CAST(SUM(Expression_Corr < 0) AS REAL) * 100 / COUNT(*) FROM Interactions WHERE Type = 'Physical'
+SELECT T2.Type FROM Genes AS T1 INNER JOIN Interactions AS T2 ON T1.GeneID = T2.GeneID1 WHERE T1.Function = 'TRANSCRIPTION' AND T1.Essential = 'Non-Essential'
+SELECT T2.Localization FROM Genes AS T1 INNER JOIN Classification AS T2 ON T1.GeneID = T2.GeneID ORDER BY T1.Chromosome DESC LIMIT 1
+SELECT DISTINCT GeneID FROM Genes WHERE Localization = 'cytoplasm' AND Function = 'METABOLISM'
+SELECT COUNT(GeneID) FROM Classification WHERE Localization IN ('plasma', 'nucleus')
+SELECT T2.GeneID1 FROM Genes AS T1 INNER JOIN Interactions AS T2 ON T1.GeneID = T2.GeneID1 WHERE T1.Localization = 'nucleus' AND T1.Class = 'Transcription factors' AND T1.Essential = 'Essential' AND T2.Expression_Corr != 0
+SELECT CAST(COUNT(T1.GeneID) AS REAL) * 100 / ( SELECT COUNT(T1.GeneID) FROM Genes AS T1 INNER JOIN Interactions AS T2 ON T1.GeneID = T2.GeneID1 WHERE T2.Expression_Corr < 0 ) FROM Genes AS T1 INNER JOIN Interactions AS T2 ON T1.GeneID = T2.GeneID1 WHERE T2.Expression_Corr < 0 AND T1.Essential = 'Non-Essential'

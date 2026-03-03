@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+event,Event_ID,num
+event,Date,string
+event,Venue,string
+event,Name,string
+event,Event_Attendance,num
+journalist,journalist_ID,num
+journalist,Name,string
+journalist,Nationality,string
+journalist,Age,string
+journalist,Years_working,num
+news_report,journalist_ID,num
+news_report,Event_ID,num
+news_report,Work_Type,string

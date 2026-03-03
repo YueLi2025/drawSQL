@@ -1,0 +1,99 @@
+nl_question
+How many employees are there in Sydney?
+Which sales representatives in New York city whose leader is Anthony Bow with the employee number is 1143? Indicate their employee numbers.
+How many checks were issued by Euro+ Shopping Channel in the year 2004?
+Of all the classic cars, with a product scale of 1:18, which product is the most ordered product by customers?
+How many different orders with a total price greater than 4000 are cancelled?
+How many distinct orders were there in 2003 when the quantity ordered was less than 30?
+What is the total value of cancelled orders?
+Please calculate the average total price of orders from Exoto Designs Vendor in 2005.
+Please list different customer names with the payment amount of over 50,000.
+Please list the name and phone number of the customer whose order was cancelled.
+List out full name of employees who are working in Tokyo?
+Determine the email and Code of employee who are working at United State, state MA
+How many employees who are living in Australia and have the credit limit under 200000? State their email address and countries where they are working.
+State 10 emails of UK Sales Rep who have the lowest credit limit.
+Determine the email and Code of employee who are working at United State, state CA
+List out full name of employees who are working in Boston?
+State top 3 emails of UK Sales Rep who have the highest credit limit.
+List out full name and email of employees who are working in Paris?
+List the product code of the top five motorcycles, by descending order, the number of quantity in stock.
+From 2003 to 2004, how many customers have paid more than three times?
+What is the average actual profit by 1937 Lincoln Berline?
+Between 8/1/2003 and 8/30/2004, how many checks were issued by Mini Gifts Distributors Ltd.? Please list their check numbers.
+What is the total value of shipped vintage car orders from 2003-2004?
+Who is the sales agent of the customer who has made the highest payment? Include the full names of employee and his/her supervisor.
+How many customers with a canceled shipment have a credit limit greater than 115,000?
+To whom does the employee have to inform that is the sales representative of the French customer?
+What is the full address of the customer who commented that DHL be used for the order that was shipped on April 4, 2005?
+Of the clients whose businesses are located in the city of Boston, calculate which of them has a higher average amount of payment.
+Calculate the total quantity ordered for 18th Century Vintage Horse Carriage and the average price.
+Who is the sales representative that made the order which was sent to 25 Maiden Lane, Floor No. 4?
+Where's Foon Yue Tseng's office located at? Give the detailed address.
+Compared with the orders happened on 2005-04-08 and two days later, which day's order had a higher value?
+How many products with the highest expected profits were sold in total?
+How much did Petit Auto pay on 2004-08-09?
+What was the contact name for the check "NR157385"?
+Which customer made the order No. 10160? Give the contact name.
+Where was the order No. 10383 shipped to? Show me the address.
+If Dragon Souveniers, Ltd. aren't satisfied with their order and want to send a complain e-mail, which e-mail address should they send to?
+How many French customers does Gerard Hernandez take care of?
+For the product No. S18_3482 in the Order No.10108, how much discount did the customer have?
+To whom does Steve Patterson report? Please give his or her full name.
+Who is the sales representitive of Muscle Machine Inc? Please give the employee's full name.
+Please list all the customers that have Steve Patterson as their sales representitive.
+Please list the phone numbers of the top 3 customers that have the highest credit limit and have Leslie Jennings as their sales representitive.
+How many sales representitives are based in the offices in the USA?
+Where can I find the office of the President of the company?
+What's the postal code of the office the VP Sales is at?
+What is the total price of the order made by Cruz & Sons Co. on 2003/3/3?
+Which product did Cruz & Sons Co. order on 2003/3/3?
+Which product did Cruz & Sons Co. ask for the biggest amount in a single order?
+Name the product from the 'Classic Cars' production line that has the greatest expected profit.
+List all the name of customers who have orders that are still processing.
+What is the percentage of employees are in Paris office?
+List the name of employees in Japan office and who are they reporting to.
+Which customer ordered 1939 'Chevrolet Deluxe Coupe' at the highest price?
+Calculate the actual profit for order number 10100.
+Please list the top three product names with the highest unit price.
+How many 2003 Harley-Davidson Eagle Drag Bikes were ordered?
+When was the product with the highest unit price shipped?
+Please list the order number of the customer whose credit card has a limit of 45300.
+For Which order was the most profitable, please list the customer name of the order and the profit of the order.
+How many transactions payment made by customer that is lower than 10000. Group the result by year.
+List out 3 best seller products during year 2003 with their total quantity sold during 2003.
+Identify the customer and list down the country with the check number GG31455.
+Which 5 products has the lowest amount of orders? List the product names.
+List down the customer names with a disputed order status.
+Calculate the total price of shipped orders belonging to Land of Toys Inc. under the classic car line of products.
+List the country and how many customers are there.
+How many orders which expected profits greater than 100?
+Please calculate the total payment amount of customers who come from the USA.
+How many Sales Rep who are working in Tokyo? List out email and full name of those employees.
+State the email of those who are staff of Murphy Diane whose number is 1002 and living in San Francisco
+How many Sales Manager who are working in Sydney? List out their email.
+What is the phone number of all companies where the last name of the contact person starts with the letter M and are not from Germany?
+Of all the orders placed and shipped throughout the year 2005, what percentage of those orders corresponds to customer number 186?
+What profit can the seller Carousel DieCast Legends make from the sale of the product described as "The perfect holiday or anniversary gift for executives"?
+For the productline where the product No.S18_2949 was produced, what's the text description for that product line?
+How do I contact the President of the company?
+When were the products ordered by Cruz & Sons Co. on 2003-03-03 shipped?
+How much did customer 103 pay in total?
+What is the total price of the order 10100?
+List out sale rep that has sold 1969 Harley Davidson Ultimate Chopper. List out their names and quantity sold throughout the year.
+Who are the sales representatives in New York City? List their full names.
+How many countries from the USA have an In Process order status?
+How many customers have a credit limit of not more than 100,000 and which customer made the highest total payment amount for the year 2004?
+Which two products has the highest and lowest expected profits? Determine the total price for each product in terms of the largest quantity that was ordered.
+Please calculate the total value of Motorcycles orders.
+How many French customers shipped 2 orders which have been cancelled?
+How many customers who are in Norway and have credit line under 220000?
+Among the German customers, how many of the them has credit limit of zero?
+For the planes which has the hightest total price, how much it exceeds the average?
+How many kinds of products did order No. 10252 contain?
+Among the customers of empolyee 1370, who has the highest credit limit?Please list the full name of the contact person.
+Who is the sales agent of the distinct customer who paid the highest amount in the year 2004?
+How many sales representatives who have office code is 1?
+List out 3 customer numbers who have highest amount payment
+Calculate the average amount of payments made by customers during the first half of 2004.
+If I'm from the Muscle Machine Inc, to which e-mail adress should I write a letter if I want to reach the superior of my sales representitive?

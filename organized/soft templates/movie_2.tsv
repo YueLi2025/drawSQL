@@ -1,0 +1,53 @@
+soft_templates
+SELECT variable FROM variable WHERE variable = strings'
+SELECT variable FROM variable WHERE variable = strings'
+SELECT variable FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT count(*) FROM variable WHERE variable = string
+SELECT count(*) FROM variable WHERE variable = string
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT count(DISTINCT variable) FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT count(DISTINCT variable) FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT count(DISTINCT variable) FROM variable
+SELECT count(DISTINCT variable) FROM variable
+SELECT variable FROM variable WHERE variable LIKE string
+SELECT variable FROM variable WHERE variable LIKE string
+SELECT variable FROM variable WHERE variable = string OR variable = string
+SELECT variable FROM variable WHERE variable = string OR variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string OR variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string OR variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string INTERSECT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string INTERSECT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable EXCEPT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable EXCEPT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable ORDER BY variable
+SELECT variable FROM variable ORDER BY variable
+SELECT variable FROM variable ORDER BY variable
+SELECT variable FROM variable ORDER BY variable
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT count(*) , variable FROM variable GROUP BY variable
+SELECT count(*) , variable FROM variable GROUP BY variable
+SELECT count(*) , variable FROM variable WHERE variable != strings' GROUP BY variable
+SELECT count(*) , variable FROM variable WHERE variable != strings' GROUP BY variable
+SELECT variable FROM variable GROUP BY variable HAVING count(*) >= num
+SELECT variable FROM variable GROUP BY variable HAVING count(*) >= num
+SELECT DISTINCT variable FROM variable WHERE variable = strings'
+SELECT DISTINCT variable FROM variable WHERE variable = strings'
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable
+SELECT variable FROM variable
+SELECT DISTINCT variable FROM variable
+SELECT DISTINCT variable FROM variable
+SELECT * FROM variable WHERE variable = strings'
+SELECT * FROM variable WHERE variable = strings'
+SELECT variable FROM variable WHERE variable NOT IN (SELECT variable FROM variable WHERE variable != strings')
+SELECT variable FROM variable WHERE variable NOT IN (SELECT variable FROM variable WHERE variable != strings')

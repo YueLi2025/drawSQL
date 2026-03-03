@@ -1,0 +1,83 @@
+sql_query
+SELECT pilot_name FROM PilotSkills ORDER BY age DESC LIMIT 1
+SELECT pilot_name FROM PilotSkills ORDER BY age DESC LIMIT 1
+SELECT pilot_name FROM PilotSkills WHERE age  <  (SELECT avg(age) FROM PilotSkills) ORDER BY age
+SELECT pilot_name FROM PilotSkills WHERE age  <  (SELECT avg(age) FROM PilotSkills) ORDER BY age
+SELECT * FROM PilotSkills WHERE age  <  30
+select * from pilotskills where age  <  30
+SELECT pilot_name FROM PilotSkills WHERE age  <  35 AND plane_name  =  'Piper Cub'
+SELECT pilot_name FROM PilotSkills WHERE age  <  35 AND plane_name  =  'Piper Cub'
+SELECT LOCATION FROM hangar WHERE plane_name  =  'F-14 Fighter'
+SELECT LOCATION FROM hangar WHERE plane_name  =  'F-14 Fighter'
+SELECT count(DISTINCT LOCATION) FROM hangar
+SELECT count(DISTINCT LOCATION) FROM hangar
+SELECT plane_name FROM pilotskills WHERE pilot_name  =  'Jones'  AND age  =  32
+SELECT plane_name FROM pilotskills WHERE pilot_name  =  'Jones'  AND age  =  32
+SELECT count(*) FROM pilotskills WHERE age  >  40
+SELECT count(*) FROM pilotskills WHERE age  >  40
+SELECT count(*) FROM pilotskills WHERE age  <  35 AND plane_name  =  'B-52 Bomber'
+SELECT count(*) FROM pilotskills WHERE age  <  35 AND plane_name  =  'B-52 Bomber'
+SELECT pilot_name FROM pilotskills WHERE plane_name  =  'Piper Cub' ORDER BY age LIMIT 1
+SELECT pilot_name FROM pilotskills WHERE plane_name  =  'Piper Cub' ORDER BY age LIMIT 1
+SELECT plane_name FROM pilotskills GROUP BY plane_name ORDER BY count(*) DESC LIMIT 1
+SELECT plane_name FROM pilotskills GROUP BY plane_name ORDER BY count(*) DESC LIMIT 1
+SELECT plane_name FROM pilotskills GROUP BY plane_name ORDER BY count(*) LIMIT 1
+SELECT plane_name FROM pilotskills GROUP BY plane_name ORDER BY count(*) LIMIT 1
+SELECT count(DISTINCT T1.pilot_name) FROM pilotskills AS T1 JOIN hangar AS T2 ON T1.plane_name  =  T2.plane_name WHERE T2.location  =  'Chicago'
+SELECT count(DISTINCT T1.pilot_name) FROM pilotskills AS T1 JOIN hangar AS T2 ON T1.plane_name  =  T2.plane_name WHERE T2.location  =  'Chicago'
+SELECT plane_name FROM pilotskills WHERE pilot_name  =  'Smith' AND age  =  41
+SELECT plane_name FROM pilotskills WHERE pilot_name  =  'Smith' AND age  =  41
+SELECT count(DISTINCT plane_name) FROM pilotskills
+SELECT count(DISTINCT plane_name) FROM pilotskills
+SELECT count(plane_name) FROM pilotskills WHERE pilot_name  =  'Smith'
+SELECT count(plane_name) FROM pilotskills WHERE pilot_name  =  'Smith'
+SELECT count(plane_name) FROM pilotskills WHERE age  >  40
+SELECT count(plane_name) FROM pilotskills WHERE age  >  40
+SELECT pilot_name FROM pilotskills WHERE age BETWEEN 30 AND 40 ORDER BY age
+SELECT pilot_name FROM pilotskills WHERE age BETWEEN 30 AND 40 ORDER BY age
+SELECT pilot_name FROM pilotskills ORDER BY age DESC
+SELECT pilot_name FROM pilotskills ORDER BY age DESC
+SELECT LOCATION FROM hangar ORDER BY plane_name
+SELECT LOCATION FROM hangar ORDER BY plane_name
+SELECT DISTINCT plane_name FROM pilotskills ORDER BY plane_name
+SELECT DISTINCT plane_name FROM pilotskills ORDER BY plane_name
+SELECT count(pilot_name) FROM pilotskills ORDER BY age  >  40 OR age  <  30
+SELECT count(pilot_name) FROM pilotskills ORDER BY age  >  40 OR age  <  30
+SELECT pilot_name ,  age FROM pilotskills WHERE plane_name  =  'Piper Cub' AND age  >  35 UNION SELECT pilot_name ,  age FROM pilotskills WHERE plane_name  =  'F-14 Fighter' AND age  <  30
+SELECT pilot_name ,  age FROM pilotskills WHERE plane_name  =  'Piper Cub' AND age  >  35 UNION SELECT pilot_name ,  age FROM pilotskills WHERE plane_name  =  'F-14 Fighter' AND age  <  30
+SELECT pilot_name FROM pilotskills WHERE plane_name  =  'Piper Cub' EXCEPT SELECT pilot_name FROM pilotskills WHERE plane_name  =  'B-52 Bomber'
+SELECT pilot_name FROM pilotskills WHERE plane_name  =  'Piper Cub' EXCEPT SELECT pilot_name FROM pilotskills WHERE plane_name  =  'B-52 Bomber'
+SELECT pilot_name FROM pilotskills WHERE plane_name  =  'Piper Cub' INTERSECT SELECT pilot_name FROM pilotskills WHERE plane_name  =  'B-52 Bomber'
+SELECT pilot_name FROM pilotskills WHERE plane_name  =  'Piper Cub' INTERSECT SELECT pilot_name FROM pilotskills WHERE plane_name  =  'B-52 Bomber'
+SELECT avg(age) ,  min(age) FROM pilotskills
+SELECT avg(age) ,  min(age) FROM pilotskills
+SELECT T1.pilot_name FROM pilotskills AS T1 JOIN hangar AS T2 ON T1.plane_name  =  T2.plane_name WHERE T2.location  =  "Austin" INTERSECT SELECT T1.pilot_name FROM pilotskills AS T1 JOIN hangar AS T2 ON T1.plane_name  =  T2.plane_name WHERE T2.LOCATION  =  "Boston"
+SELECT T1.pilot_name FROM pilotskills AS T1 JOIN hangar AS T2 ON T1.plane_name  =  T2.plane_name WHERE T2.location  =  "Austin" INTERSECT SELECT T1.pilot_name FROM pilotskills AS T1 JOIN hangar AS T2 ON T1.plane_name  =  T2.plane_name WHERE T2.LOCATION  =  "Boston"
+SELECT pilot_name FROM pilotskills WHERE plane_name  =  'Piper Cub' OR plane_name  =  'F-14 Fighter'
+SELECT pilot_name FROM pilotskills WHERE plane_name  =  'Piper Cub' OR plane_name  =  'F-14 Fighter'
+SELECT avg(age) ,  plane_name FROM pilotskills GROUP BY plane_name
+SELECT avg(age) ,  plane_name FROM pilotskills GROUP BY plane_name
+SELECT count(*) ,  plane_name FROM pilotskills GROUP BY plane_name
+SELECT count(*) ,  plane_name FROM pilotskills GROUP BY plane_name
+SELECT pilot_name ,  plane_name ,  max(age) FROM pilotskills GROUP BY plane_name ORDER BY plane_name
+SELECT pilot_name ,  plane_name ,  max(age) FROM pilotskills GROUP BY plane_name ORDER BY plane_name
+SELECT pilot_name ,  plane_name ,  max(age) FROM pilotskills GROUP BY plane_name
+SELECT pilot_name ,  plane_name ,  max(age) FROM pilotskills GROUP BY plane_name
+SELECT max(age) ,  pilot_name FROM pilotskills GROUP BY pilot_name
+SELECT max(age) ,  pilot_name FROM pilotskills GROUP BY pilot_name
+SELECT count(T1.pilot_name) ,  avg(T1.age) ,  T2.location FROM pilotskills AS T1 JOIN hangar AS T2 ON T1.plane_name  =  T2.plane_name GROUP BY T2.location
+SELECT count(T1.pilot_name) ,  avg(T1.age) ,  T2.location FROM pilotskills AS T1 JOIN hangar AS T2 ON T1.plane_name  =  T2.plane_name GROUP BY T2.location
+SELECT count(*) ,  plane_name FROM pilotskills GROUP BY plane_name HAVING avg(age)  <  35
+SELECT count(*) ,  plane_name FROM pilotskills GROUP BY plane_name HAVING avg(age)  <  35
+SELECT T2.location FROM pilotskills AS T1 JOIN hangar AS T2 ON T1.plane_name  =  T2.plane_name WHERE T1.age  =  (SELECT min(age) FROM pilotskills)
+SELECT T2.location FROM pilotskills AS T1 JOIN hangar AS T2 ON T1.plane_name  =  T2.plane_name WHERE T1.age  =  (SELECT min(age) FROM pilotskills)
+SELECT T1.pilot_name ,  T1.age FROM pilotskills AS T1 JOIN hangar AS T2 ON T1.plane_name  =  T2.plane_name WHERE T2.location  =  "Austin"
+SELECT T1.pilot_name ,  T1.age FROM pilotskills AS T1 JOIN hangar AS T2 ON T1.plane_name  =  T2.plane_name WHERE T2.location  =  "Austin"
+SELECT pilot_name FROM pilotskills WHERE age  >  (SELECT min(age) FROM pilotskills WHERE plane_name  =  'Piper Cub') ORDER BY pilot_name
+SELECT pilot_name FROM pilotskills WHERE age  >  (SELECT min(age) FROM pilotskills WHERE plane_name  =  'Piper Cub') ORDER BY pilot_name
+SELECT count(*) FROM pilotskills WHERE age  <  (SELECT min(age) FROM pilotskills WHERE plane_name  =  'F-14 Fighter')
+SELECT count(*) FROM pilotskills WHERE age  <  (SELECT min(age) FROM pilotskills WHERE plane_name  =  'F-14 Fighter')
+SELECT DISTINCT plane_name FROM pilotskills WHERE plane_name LIKE '%Bomber%'
+SELECT DISTINCT plane_name FROM pilotskills WHERE plane_name LIKE '%Bomber%'
+SELECT count(pilot_name) FROM pilotskills WHERE age  >  (SELECT min(age) FROM pilotskills WHERE plane_name  =  'Piper Cub')
+SELECT count(pilot_name) FROM pilotskills WHERE age  >  (SELECT min(age) FROM pilotskills WHERE plane_name  =  'Piper Cub')

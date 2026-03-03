@@ -1,0 +1,81 @@
+nl_question
+How many cities do we have?
+Count the number of cities.
+List all different states .
+What are all the distinct states?
+How many countries do we have?
+Count the number of coutries.
+Show names, codes, states, countries for all cities.
+What are the names, codes, states, and countries for all cities?
+What is the latitude and longitude for Baltimore?
+What latitude and longitude correspond to Baltimore?
+Show names for all cities in state PA.
+What are the names of all cities in PA?
+How many cities are in Canada?
+Count the number of cities in Canada.
+Show names for all USA city ordered by latitude.
+What are all the city names for cities in the USA, ordered by latitude?
+Show all states and number of cities in each state.
+How many cities are in each state?
+Show all countries and number of cities in each .
+How many cities are there in each country?
+List all states with at least two cities.
+Which states have at least two cities?
+Which state has most number of cities?
+Give the state that has the most cities.
+Which country has fewest number of cities?
+Give the country with the fewest number of cities.
+Show the first name and the last name for students living in state MD.
+What are the full names of students living in MD?
+How many students live in China?
+Count the number of students living in China.
+Return the first name and major of students are living in Baltimore?
+What are the first names and majors of students living in Baltimore?
+Show the number of students living in each country.
+How many students live in each country?
+Find the number of students living in each city.
+How many students live in each city?
+Which state has most number of students?
+Give the state that has the most students.
+Which country has least number of students?
+Give the country with the fewest students.
+Show names for all cities where at least three students live.
+What are the names of cities with at least three students?
+Show all states where more than 5 students live.
+What are the states with more than 5 students?
+Show ids for all students who don't live in USA.
+What the the student ids for students not living in the USA?
+Show ids for all female (sex is F) students living in state PA.
+What are the student ids for female students in the state of PA?
+Show ids for all male students living outside of USA.
+What are the ids for male students not in the USA?
+What is the distance between BAL and CHI?
+Give the distance between BAL and CHI?
+Show me the distance between Boston and Newark.
+What is the distance between Boston and Newark?
+What is the average, minimum, maximum distance between two cities?
+Give the average, minimum, and maximum distances between two cities.
+Show me the city code of two cities with maximum distance.
+What are the city codes of the cities with the maximum distance?
+Show me the city code of two cities with a distance greater than the average.
+What are the city codes of cities with distance greater than average?
+Show me the city code of two cities with a distance less than 1000.
+What are the city codes corresponding to cities with distances less than 1000?
+What is the total distance between city BAL and all other cities.
+What is the sum of distances between BAL and other cities?
+What is the average distance between Boston and all other cities.
+Give the average distance between Boston and other cities.
+What is the name of the city closest to Chicago?
+Give the name of the nearest city to Chicago.
+What is the name of the city furthest to Boston?
+Give the city name of the city with greatest distance from Boston.
+Show all city codes and the total distance to all other cities.
+For each city, what is the the city code and sum of distances from each?
+Show all city names and the average distance to all other cities.
+What are the city name and average distances from each city?
+How far do Linda (first name) Smith (last name) and Tracy (first name) Kim (last name) live?
+What is the distance between the cities where Linda Smith and Tracy Kim live?
+What is the first name and last name of the student living furthest to Linda Smith?
+What is the full name of the student who lives furthest from Linda Smith?
+Which state does the student whose first name is Linda live in?
+Give the state that the student with first name Linda lives in.

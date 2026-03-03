@@ -1,0 +1,12 @@
+table_name,column_name,column_type
+building,Building_ID,num
+building,Region_ID,num
+building,Name,string
+building,Address,string
+building,Number_of_Stories,num
+building,Completed_Year,num
+region,Region_ID,num
+region,Name,string
+region,Capital,string
+region,Area,num
+region,Population,num

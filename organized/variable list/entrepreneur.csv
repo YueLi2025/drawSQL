@@ -1,0 +1,11 @@
+table_name,column_name,column_type
+entrepreneur,Entrepreneur_ID,num
+entrepreneur,People_ID,num
+entrepreneur,Company,string
+entrepreneur,Money_Requested,num
+entrepreneur,Investor,string
+people,People_ID,num
+people,Name,string
+people,Height,num
+people,Weight,num
+people,Date_of_Birth,string

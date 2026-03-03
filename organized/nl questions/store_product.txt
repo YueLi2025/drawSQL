@@ -1,0 +1,45 @@
+nl_question
+Find all the distinct district names ordered by city area in descending.
+What are the different district names in order of descending city area?
+Find the list of page size which have more than 3 product listed
+What is the maximum page size for everything that has more than 3 products listed?
+Find the name and population of district with population between 200000 and 2000000
+What are the district names and city populations for all districts that between 200,000 and 2,000,000 residents?
+Find the name all districts with city area greater than 10 or population larger than 100000
+What are the names of all districts with a city area greater than 10 or have more than 100000 people living there?
+Which district has the largest population?
+What is the name of the district with the most residents?
+Which district has the least area?
+What is the name of the district with the smallest area?
+Find the total population of the top 3 districts with the largest area.
+What is the total number of residents for the districts with the 3 largest areas?
+Find all types of store and number of them.
+For each type of store, how many of them are there?
+Find the names of all stores in Khanewal District.
+What are the names of all the stores located in Khanewal District?
+Find all the stores in the district with the most population.
+What are the names of all the stores in the largest district by population?
+Which city is the headquarter of the store named "Blackville" in?
+What city is the headquarter of the store Blackville?
+Find the number of stores in each city.
+How many stores are headquarted in each city?
+Find the city with the most number of stores.
+What is the city with the most number of flagship stores?
+What is the average pages per minute color?
+What is the average number of pages per minute color?
+What products are available at store named "Miramichi"?
+What products are sold at the store named Miramichi?
+Find products with max page size as "A4" and pages per minute color smaller than 5.
+What are the products with the maximum page size A4 that also have a pages per minute color smaller than 5?
+Find products with max page size as "A4" or pages per minute color smaller than 5.
+What are the products with the maximum page size eqal to A4 or a pages per minute color less than 5?
+Find all the product whose name contains the word "Scanner".
+What are all of the products whose name includes the substring "Scanner"?
+Find the most prominent max page size among all the products.
+What is the most common maximum page size?
+Find the name of the products that are not using the most frequently-used max page size.
+What are the names of all products that are not the most frequently-used maximum page size?
+Find the total population of the districts where the area is bigger than the average city area.
+What is the total population for all the districts that have an area larger tahn the average city area?
+Find the names of districts where have both city mall and village store type stores.
+What are the names of the districts that have both mall and village store style shops?

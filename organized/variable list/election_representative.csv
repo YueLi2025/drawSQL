@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+election,Election_ID,num
+election,Representative_ID,num
+election,Date,string
+election,Votes,num
+election,Vote_Percent,num
+election,Seats,num
+election,Place,num
+representative,Representative_ID,num
+representative,Name,string
+representative,State,string
+representative,Party,string
+representative,Lifespan,string

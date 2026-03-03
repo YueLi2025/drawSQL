@@ -1,0 +1,41 @@
+nl_question
+How many authors do we have?
+Show all author names.
+Show the names and other details for all authors.
+Show the other details for the author Addison Denesik.
+Show the number of documents.
+Who is the author of the document with id 4?
+Who is the author of the document "Travel to Brazil"?
+How many documents does has the author Era Kerluke written?
+Show the names and descriptions for all documents.
+Show the ids and names for all documents by author Bianka Cummings.
+Show the author name and details for the document "Travel to China".
+Show all author names and number of documents corresponding to each.
+What is the name of the author with most number of documents?
+Show the names for authors with at least two documents.
+How many business processes do we have?
+Show the next process id, process name, process description for process with id 9.
+What is the process name for the next process of the process with id 9?
+Show the number of process outcomes.
+List the codes and descriptions for all process outcomes.
+What is the description for the process outcome code working?
+Show the number of process status.
+List the codes and descriptions for all process status.
+What is the description for process status code ct?
+How many staff do we have?
+Show the ids and details for all staff.
+What are the details for the staff member with id 100.
+Show the number of staff roles.
+List the codes and descriptions for all staff roles.
+What is the description for staff role code HR?
+How many documents have a process?
+List all process ids with a document.
+Show all document ids without a process.
+List all process ids with no document.
+What is the process outcome description and process status description for the document with id 0?
+What is the process name for the document "Travel to Brazil"?
+Show all process ids and the number of documents in each process.
+How many staff are the document with id 0 and process with id 9.
+Show all staff ids and the number of document processes for each staff.
+Show all staff role codes and the number of document processes for each role.
+How many different roles does the staff with id 3 have?

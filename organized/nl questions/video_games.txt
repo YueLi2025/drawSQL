@@ -1,0 +1,153 @@
+nl_question
+How many more games were sold on game platform ID 50 than on game platform ID 51 in region ID 1?
+Please list all the games that have the same game genre as 3D Lemmings.
+How many action games are there in total?
+What is the genre of 3D Lemmings?
+Who is the publisher of 3D Lemmings?
+Please list the names of all the games published by 10TACLE Studios.
+Among the games published by 10TACLE Studios, how many of them are puzzles?
+Please list the names of all the games published by 10TACLE Studios and are puzzles.
+On which platform was Panzer Tactics released in 2007?
+Please list the names of the publishers of all the puzzle games.
+What is the name of the publisher that has published the most puzzle games?
+How many publishers have published more than 3 puzzle games?
+How many games were sold on the DS platform on average in the 4 different regions?
+Show the id of the game platform with the most sales in region 2.
+Which genre has the most games? Show its id.
+Show the number of games which were released on X360 in 2010.
+State the publisher name of the game "ModNation Racers".
+Show the id of game platform which makes the most sales in Japan.
+How many platforms are available for the game Pro Evolution Soccer 2016?
+How many games in the database belong to the genre of sports?
+State the name of the publisher with the most games.
+How many more sports games than simulation games?
+Tell the genre of the game "Resident Evil: Revelations".
+How many sales does game platform id 3871 make in Europe?
+Give the number of games which were published by Ascaron Entertainment GmbH.
+Show the name of the earliest platform in the database.
+How many games did Electronic Arts publish?
+What is the genre of the Advent Rising game?
+How many role-playing games did Microsoft Game Studios publish?
+Which publisher published the most games?
+In 2004, what are the names of the platforms where Codemasters publish its games?
+How many publishers in Japan released a game on X360 in 2011?
+Which year has the most number of PC games releases?
+List the names of all the publishers who published one game only.
+What are the names of the games that were published by 505 Games?
+List down the names of platform where the games released in 2016 can be played on.
+When was the game titled 3DS Classic Collection released?
+What is the average number of sales in Japan?
+List down the name of games published by 3DO.
+How many role-playing games are there?
+List the region name where games reached 300000 sales and above.
+Which company published the game with the most sales in North America?
+Among the games released in 2004, what is the percentage of games on PSP?
+Provide the ID of 1C Company.
+How many games are puzzle genre?
+How many games were published by Acclaim Entertainment?
+Name the publisher of the Chronicles of the Sword game.
+Provide the ID of the most popular platform in Europe.
+Name the game released in 2011.
+Mention the genre of the 2Xtreme.
+Provide the platform where the Panzer Tactics can be played.
+Calculate how many percent of sales in North America is higher than the average sale per region for platform ID 9577.
+Which is the publisher for the game "Prism: Light the Way"?
+What are the games that were released in 2006?
+What is the genre of the game "Mario vs. Donkey Kong"?
+List all the platform games.
+List the games from the publisher "Activision".
+How many different publishers have published a game that starts with "Marvel"?
+What percentage of games are sports?
+How many publishers published the Minecraft game?
+Which publisher has published the most number of Action games?
+How many Sports games did Nintendo publish?
+What are the names of the games published by American Softworks?
+How many strategy games are there?
+Which publisher published Overwatch?
+What is the name of the genre with the most number of video games?
+What is the number of games sold in Europe for game platform ID 26?
+What are the three largest numbers of games sold?
+Indicate the name of all adventure games.
+List the name of all games published by 'Pioneer LDC'.
+Indicate the name of all the games published for the 'SCD' platform.
+List the name of all games published in Japan.
+What genres are the games published by 'Agatsuma Entertainment'?
+How many games are not of the genres 'Role-Playing', 'Shooter' and 'Simulation'?
+Which publisher has published the most games in the 'Puzzle' genre?
+Which publisher has published the game 'Pachi-Slot Kanzen Kouryaku 3: Universal Koushiki Gaido Volume 3'?
+In which regions has the game 'Pengo' been sold?
+List by name all the games released in the year 2010.
+Calculate the average game sales for the PS2 platform.
+Who is the publisher of the game 2002 FIFA World Cup?
+What genre is the game 2010 FIFA World Cup South Africa?
+Which region has the highest number of games sold on all platforms?
+What are the names of games that were released in 2007?
+Indicate the release year of the game with more than 200000 sales in Japan.
+In 2010, how many PS3 games were released?
+Indicate the publisher who has published the most games of all time.
+How many shooter games are there?
+State the name of the platforms for games released in 2000.
+What are the game IDs of the games published by Bethesda Softworks?
+Calculate the total number of IDs for the game published by Capcom and Sony Computer Entertainment.
+List down the names of the games in the racing genre.
+Find out the platform of the game "Final Fantasy XIII-2".
+List the games available on Wii.
+Provide the name of games released in 2015.
+What is the name of the company that produced the game titled Adventure Time: Explore the Dungeon Because I Don't Know!?
+List down the game platform ID and region name where the games achieved 20000 sales and below.
+What is the genre of the game ID 119?
+List the game IDs of the games produced by Abylight.
+List down the name of strategy games.
+In what platform does the game ID 178 available?
+Calculate the total number of sales in North America.
+List the platform ID of the game titled Airborne Troops: Countdown to D-Day.
+How many games available on PSP were released in 2004?
+What is the diffrence between the number of games produced by Culture Brain that can be played on SNES and DS?
+In games that can be played on Wii, what is the percentage of games released in 2007?
+Among games sold in Europe, list the platform ID of games with sales lesser than 30% of the average number of sales.
+Which publisher has published the most games?
+In which year was Panzer Tactics released on DS?
+Among the games published by Nintendo, what is the percentage of those in the genre of sports?
+Name of the publisher of the game id 10031.
+How many times more is the number of games which were published by Atari than Athena?
+How many games were released on PS4 in 2014?
+What is the genre ID of the '2Xtreme' game?
+Provide the games that can be played on the SCD platform.
+How many games can be played on the Wii platform?
+How many games were released in 2001?
+What is the average number of games published by a publisher?
+What is the first year a game is released?
+How many games do not have any sales in Europe?
+What are the years that "WiiU" got a new game?
+What is the ratio of game sales between North America and Japan?
+Which year has the most number of video game releases?
+What publishers have the word 'Entertainment' in their name?
+Which game has sold the fewest units?
+What platform is the game 3Xtreme available on?
+Calculate the difference between sales of games from region ID 2 and region ID 3.
+What are the sales made by the games in Japan region?
+How many game publisher IDs have published games on the X360 platform?
+Find out the difference between the number of publishers who released the games on the PS3 and X360.
+What is the genre of the game "Grand Theft Auto V"?
+Calculate the number of games in the fighting genre.
+Calculate the total sales made by the games released in 2000.
+Calculate the difference in sales between the games released in 1990 and 2000.
+Tell the number of games whose publisher id is 352.
+List down the record ID of records released between 2000 to 2003.
+What is the total number of sales across all regions?
+What is the least common game genre?
+What is the name of the publisher that released the most video games in 2007?
+What is the genre of the game '2 Games in 1: Sonic Advance & ChuChu Rocket!'?
+How many games include the word 'Box' in their name?
+How many games were published by Activision?
+What is the percentage of games that were released on PS4 in 2014 among all platforms?
+List down the platform IDs of the games released in 2007.
+What are the platform IDs of records released in 2006?
+Give the game name of the game ID 44.
+List the genre id of the game Pro Evolution Soccer 2012.
+What is the release year of the game that gained 350000 sales in North America?
+Give the name of the publisher of the game ID 75.
+What is the title of the game that gained the most sales in Japan?
+Calculate the percentage of games published by 'Brash Entertainment'?
+What is the total number of games sold in region ID 1?
+When was the game ID 156 released?

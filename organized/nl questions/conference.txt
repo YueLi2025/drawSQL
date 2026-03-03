@@ -1,0 +1,45 @@
+nl_question
+How many conferences are there?
+What is the total number of conferences?
+List all distinct conference names.
+What are the different conference names?
+List all conference name, year, and location.
+What are the names, years, and locations of all conferences?
+Show all conference names and the number of times each conference has.
+For each conference name, how many times has it occurred?
+show all years and the number of conferences in each year.
+How many conferences occur every year?
+which year has least number of conferences?
+What year had the fewest conferences?
+Show all locations where at least two conferences are located.
+What are all locations that have hosted at least two conferences?
+Show the institution name, location and founded year of all institutions.
+What are the names, locations, and founding years for all institutions?
+How many institution are founded between 1850 and 1900?
+How many institutions were founded between 1850 and 1900?
+Show the institution name and location of institution that is most recently founded.
+What are the names and locations of the most recently-founded institution?
+Show the institution name and the number of staff for each institution founded after 1800.
+For each institution id , how many staff members does each institution have that was founded after 1800 ? return their names .
+Show institution name which there is no staff in our record.
+What is the name of the institution with no staff in the records?
+Show all staff name who are above the average age.
+What are the names of all staff members who are older than average?
+What is the maximum and minimum age of all staff from the United States?
+What are the maximum and minimum ages for all staff?
+Show all conference names which the staff from Canada attends.
+What are the names of all the conferences that has staff from Canada attending?
+Show all staff names who have been both speaker and sponsor in some conference.
+What are the names of the staff members who have been both a speaker and a sponsor at some conference?
+Show all names who have been in both ACL and Naccl.
+What are the names of everbody who has participated in both the ACL and NACCL conferences?
+Show all staff names who attend a conference in 2003 or 2004.
+What are the staff names who participated in conferences between 2003 or 2004?
+Show the conference name and year and the number of participants for each conference.
+For each conference id, what are their names, year, and number of participants?
+Find the name of the conferences that have the top 2 most number of attendants.
+What are the names of the conferences that have the top 2 most people attending?
+Find the name and nationality of the people who did not participate in any ACL conference.
+What are the names and nationalities of the people who did not participate in any ACL conferences?
+Find the name and location of the universities that did not have any staff participated in any conference in 2004.
+What are the names and locations of the universities that did not have any staff participating in any conferences in 2004?

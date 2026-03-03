@@ -1,0 +1,16 @@
+table_name,column_name,column_type
+driver,Driver_ID,num
+driver,Driver_Name,string
+driver,Entrant,string
+driver,Constructor,string
+driver,Chassis,string
+driver,Engine,string
+driver,Age,num
+race,Road,num
+race,Driver_ID,num
+race,Race_Name,string
+race,Pole_Position,string
+race,Fastest_Lap,string
+race,Winning_driver,string
+race,Winning_team,string
+race,Report,string

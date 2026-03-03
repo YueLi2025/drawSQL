@@ -1,0 +1,101 @@
+nl_question
+How many bands are there?
+Find the number of bands.
+What are all the labels?
+What are the different album labels listed?
+Find all the albums in 2012.
+return all columns of the albums created in the year of 2012.
+Find all the stage positions of the musicians with first name "Solveig"
+What are the different stage positions for all musicians whose first name is "Solveig"?
+How many songs are there?
+Count the number of songs.
+Find all the songs performed by artist with last name "Heilo"
+What are the names of the songs by the artist whose last name is "Heilo"?
+Hom many musicians performed in the song "Flash"?
+How many musicians play in the song "Flash"?
+Find all the songs produced by artists with first name "Marianne".
+What are the names of all songs produced by the artist with the first name "Marianne"?
+Who performed the song named "Badlands"? Show the first name and the last name.
+What are the first and last names of the artist who perfomed the song "Badlands"?
+Who is performing in the back stage position for the song "Badlands"? Show the first name and the last name.
+What are the first and last names of the performer who was in the back stage position for the song "Badlands"?
+How many unique labels are there for albums?
+What are the unique labels for the albums?
+What is the label that has the most albums?
+What is the label with the most albums?
+What is the last name of the musician that have produced the most number of songs?
+What is the last name of the musician who was in the most songs?
+What is the last name of the musician that has been at the back position the most?
+What is the last name of the musicians who has played back position the most?
+Find all the songs whose name contains the word "the".
+What are the names of the songs whose title has the word "the"?
+What are all the instruments used?
+What are the different instruments listed in the database?
+What instrument did the musician with last name "Heilo" use in the song "Le Pop"?
+What instruments did the musician with the last name "Heilo" play in the song "Le Pop"?
+What is the most used instrument?
+What instrument is used the most?
+How many songs have used the instrument "drums"?
+How many songs use drums as an instrument?
+What instruments does the the song "Le Pop" use?
+What are the instruments are used in the song "Le Pop"?
+How many instruments does the song "Le Pop" use?
+How many different instruments are used in the song "Le Pop"?
+How many instrument does the musician with last name "Heilo" use?
+How many different instruments does the musician with the last name "Heilo" use?
+Find all the instruments ever used by the musician with last name "Heilo"?
+What are all the instruments used by the musician with the last name "Heilo"?
+Which song has the most vocals?
+What is the song with the most vocals?
+Which vocal type is the most frequently appearring type?
+What is the type of vocables that appears most frequently?
+Which vocal type has the band mate with last name "Heilo" played the most?
+What is the type of vocals that the band member with the last name "Heilo" played the most?
+What are the vocal types used in song "Le Pop"?
+What are the types of vocals used in the song "Le Pop"?
+Find the number of vocal types used in song "Demon Kitty Rag"?
+What are the types of vocals used in the song "Demon Kitty Rag"?
+How many songs have a lead vocal?
+How many songs have vocals of type lead?
+Which vocal type did the musician with first name "Solveig" played in the song with title "A Bar in Amsterdam"?
+What are the types of vocals that the musician with the first name "Solveig" played in the song "A Bar in Amsterdam"?
+Find all the songs that do not have a lead vocal.
+What are the names of the songs without a lead vocal?
+Find all the vocal types.
+What are the different types of vocals?
+What are the albums produced in year 2010?
+What information is there on albums from 2010?
+Who performed the song named "Le Pop"?
+What is the first and last name of artist who performed "Le Pop"?
+What is the last name of the musician that have produced the most songs?
+What is the last name of the artist who sang the most songs?
+What instrument did the musician with last name "Heilo" use in the song "Badlands"?
+What instruments did the musician with the last name "Heilo" play in "Badlands"?
+How many instruments does the song "Badlands" use?
+How many different instruments are used in the song "Badlands"?
+What are the vocal types used in song "Badlands"?
+What types of vocals are used in the song "Badlands"?
+Find the number of vocal types used in song "Le Pop"
+How many vocal types are used in the song "Le Pop"?
+How many songs have a shared vocal?
+How many different songs have shared vocals?
+Find all the songs that do not have a back vocal.
+What are the different names of all songs without back vocals?
+Which vocal type has the band mate with first name "Solveig" played the most?
+What are the types of vocals that the band member with the first name "Solveig" played the most?
+Which vocal type did the musician with last name "Heilo" played in the song with title "Der Kapitan"?
+What are the types of vocals that the musician with the last name "Heilo" played in "Der Kapitan"?
+Find the first name of the band mate that has performed in most songs.
+What is the first name of the band mate who perfomed in the most songs?
+Which vocal type has the band mate with first name "Marianne" played the most?
+What is the vocal type of the band mate whose first name is "Marianne" played the most?
+Who is performing in the back stage position for the song "Der Kapitan"? Show the first name and last name.
+What is the first and last name of the artist who performed back stage for the song "Der Kapitan"?
+Find the name of songs that does not have a back vocal.
+What are the names of the songs that do not have back vocals?
+What are the songs in album "A Kiss Before You Go: Live in Hamburg"?
+What are the song titles on the album "A Kiss Before You Go: Live in Hamburg"?
+What are all the songs in albums under label "Universal Music Group"?
+What are the names of all the songs whose album is under the label of "Universal Music Group"?
+Find the number of songs in all the studio albums.
+How many songs appear in studio albums?

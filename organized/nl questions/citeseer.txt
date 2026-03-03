@@ -1,0 +1,15 @@
+nl_question
+Among all the citation, what is the percentage of paper ID under the Agents classification?
+What is the total number of word cited under that class labelled 'AI'?
+Among all the DB class type citation, which word is the most frequently cited?
+Calculate the percentage of words used in Agents class label.
+Which paper ID cited the most word? In which class label does it belongs to?
+List all the paper ID and its class type that cited the word 'word1002'.
+List all words cited in the AI class label.
+How many papers were cited by schmidt99advanced cited word3555?
+Among the papers under DB classification, which paper has the highest number of words cited?
+Name the paper which is cited most times and the paper which is cited least times? Also, find the number of times each one is cited.
+Find the words cited in papers that are cited by sima01computational?
+Under what classification do the papers that cited word1163 belong?
+In the papers classified as ML, how many cited butz01algorithmic?
+List all paper ID and its class type with more than 20 cited words.

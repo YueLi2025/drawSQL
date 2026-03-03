@@ -1,0 +1,79 @@
+sql_query
+SELECT name FROM Author
+SELECT name FROM Author
+SELECT name ,  address FROM Client
+SELECT name ,  address FROM Client
+SELECT title ,  isbn ,  SalePrice FROM Book
+SELECT title ,  isbn ,  SalePrice FROM Book
+SELECT count(*) FROM Book
+SELECT count(*) FROM Book
+SELECT count(*) FROM Author
+SELECT count(*) FROM Author
+SELECT count(*) FROM Client
+SELECT count(*) FROM Client
+SELECT name ,  address FROM Client ORDER BY name
+SELECT name ,  address FROM Client ORDER BY name
+SELECT T3.title ,  T1.name FROM Author AS T1 JOIN Author_Book AS T2 ON T2.Author  =  T1.idAuthor JOIN Book AS T3 ON T2.isbn  =  T3.isbn
+SELECT T3.title ,  T1.name FROM Author AS T1 JOIN Author_Book AS T2 ON T2.Author  =  T1.idAuthor JOIN Book AS T3 ON T2.isbn  =  T3.isbn
+SELECT T1.idOrder ,  T2.name FROM Orders AS T1 JOIN Client AS T2 ON T1.idClient  =  T2.idClient
+SELECT T1.idOrder ,  T2.name FROM Orders AS T1 JOIN Client AS T2 ON T1.idClient  =  T2.idClient
+SELECT T1.name ,  count(*) FROM Author AS T1 JOIN Author_Book AS T2 ON T1.idAuthor  =  T2.Author GROUP BY T1.idAuthor
+SELECT T1.name ,  count(*) FROM Author AS T1 JOIN Author_Book AS T2 ON T1.idAuthor  =  T2.Author GROUP BY T1.idAuthor
+SELECT isbn ,  count(*) FROM Books_Order GROUP BY isbn
+SELECT isbn ,  count(*) FROM Books_Order GROUP BY isbn
+SELECT isbn ,  sum(amount) FROM Books_Order GROUP BY isbn
+SELECT isbn ,  sum(amount) FROM Books_Order GROUP BY isbn
+SELECT T2.title FROM Books_Order AS T1 JOIN Book AS T2 ON T1.isbn  =  T2.isbn GROUP BY T1.isbn ORDER BY count(*) DESC LIMIT 1
+SELECT T2.title FROM Books_Order AS T1 JOIN Book AS T2 ON T1.isbn  =  T2.isbn GROUP BY T1.isbn ORDER BY count(*) DESC LIMIT 1
+SELECT T2.title ,  T2.PurchasePrice FROM Books_Order AS T1 JOIN BOOk AS T2 ON T1.isbn  =  T2.isbn GROUP BY T1.isbn ORDER BY sum(amount) DESC LIMIT 1
+SELECT T2.title ,  T2.PurchasePrice FROM Books_Order AS T1 JOIN BOOk AS T2 ON T1.isbn  =  T2.isbn GROUP BY T1.isbn ORDER BY sum(amount) DESC LIMIT 1
+SELECT DISTINCT T1.title FROM book AS T1 JOIN books_order AS T2 ON T1.isbn  =  T2.isbn
+SELECT DISTINCT T1.title FROM book AS T1 JOIN books_order AS T2 ON T1.isbn  =  T2.isbn
+SELECT DISTINCT T1.name FROM Client AS T1 JOIN Orders AS T2 ON T1.idClient  =  T2.idClient
+SELECT DISTINCT T1.name FROM Client AS T1 JOIN Orders AS T2 ON T1.idClient  =  T2.idClient
+SELECT T2.name ,  count(*) FROM Orders AS T1 JOIN Client AS T2 ON T1.idClient  =  T2.idClient GROUP BY T1.idClient
+SELECT T2.name ,  count(*) FROM Orders AS T1 JOIN Client AS T2 ON T1.idClient  =  T2.idClient GROUP BY T1.idClient
+SELECT T2.name FROM Orders AS T1 JOIN Client AS T2 ON T1.idClient  =  T2.idClient GROUP BY T1.idClient ORDER BY count(*) DESC LIMIT 1
+SELECT T2.name FROM Orders AS T1 JOIN Client AS T2 ON T1.idClient  =  T2.idClient GROUP BY T1.idClient ORDER BY count(*) DESC LIMIT 1
+SELECT T2.name ,  sum(T3.amount) FROM Orders AS T1 JOIN Client AS T2 ON T1.idClient  =  T2.idClient JOIN Books_Order AS T3 ON T3.idOrder  =  T1.idOrder GROUP BY T1.idClient
+SELECT T2.name ,  sum(T3.amount) FROM Orders AS T1 JOIN Client AS T2 ON T1.idClient  =  T2.idClient JOIN Books_Order AS T3 ON T3.idOrder  =  T1.idOrder GROUP BY T1.idClient
+SELECT T2.name FROM Orders AS T1 JOIN Client AS T2 ON T1.idClient  =  T2.idClient JOIN Books_Order AS T3 ON T3.idOrder  =  T1.idOrder GROUP BY T1.idClient ORDER BY sum(T3.amount) DESC LIMIT 1
+SELECT T2.name FROM Orders AS T1 JOIN Client AS T2 ON T1.idClient  =  T2.idClient JOIN Books_Order AS T3 ON T3.idOrder  =  T1.idOrder GROUP BY T1.idClient ORDER BY sum(T3.amount) DESC LIMIT 1
+SELECT title FROM book EXCEPT SELECT T1.title FROM book AS T1 JOIN books_order AS T2 ON T1.isbn  =  T2.isbn
+SELECT title FROM book EXCEPT SELECT T1.title FROM book AS T1 JOIN books_order AS T2 ON T1.isbn  =  T2.isbn
+SELECT name FROM Client EXCEPT SELECT T1.name FROM Client AS T1 JOIN Orders AS T2 ON T1.idClient  =  T2.idClient
+SELECT name FROM Client EXCEPT SELECT T1.name FROM Client AS T1 JOIN Orders AS T2 ON T1.idClient  =  T2.idClient
+SELECT max(saleprice) ,  min(saleprice) FROM Book
+SELECT max(saleprice) ,  min(saleprice) FROM Book
+SELECT avg(purchaseprice) ,  avg(saleprice) FROM Book
+SELECT avg(purchaseprice) ,  avg(saleprice) FROM Book
+SELECT max(saleprice - purchaseprice) FROM Book
+SELECT max(saleprice - purchaseprice) FROM Book
+SELECT title FROM book WHERE saleprice  >  (SELECT avg(saleprice) FROM book)
+SELECT title FROM book WHERE saleprice  >  (SELECT avg(saleprice) FROM book)
+select title from book order by saleprice asc limit 1
+select title from book order by saleprice asc limit 1
+select title from book order by purchaseprice  desc limit 1
+select title from book order by purchaseprice  desc limit 1
+SELECT avg(saleprice) FROM Book AS T1 JOIN Author_book AS T2 ON T1.isbn  =  T2.isbn JOIN Author AS T3 ON T2.Author  =  T3.idAuthor WHERE T3.name  =  "George Orwell"
+SELECT avg(saleprice) FROM Book AS T1 JOIN Author_book AS T2 ON T1.isbn  =  T2.isbn JOIN Author AS T3 ON T2.Author  =  T3.idAuthor WHERE T3.name  =  "George Orwell"
+SELECT saleprice FROM Book AS T1 JOIN Author_book AS T2 ON T1.isbn  =  T2.isbn JOIN Author AS T3 ON T2.Author  =  T3.idAuthor WHERE T3.name  =  "Plato"
+SELECT saleprice FROM Book AS T1 JOIN Author_book AS T2 ON T1.isbn  =  T2.isbn JOIN Author AS T3 ON T2.Author  =  T3.idAuthor WHERE T3.name  =  "Plato"
+SELECT T1.title FROM Book AS T1 JOIN Author_book AS T2 ON T1.isbn  =  T2.isbn JOIN Author AS T3 ON T2.Author  =  T3.idAuthor WHERE T3.name  =  "George Orwell" ORDER BY T1.saleprice LIMIT 1
+SELECT T1.title FROM Book AS T1 JOIN Author_book AS T2 ON T1.isbn  =  T2.isbn JOIN Author AS T3 ON T2.Author  =  T3.idAuthor WHERE T3.name  =  "George Orwell" ORDER BY T1.saleprice LIMIT 1
+SELECT T1.title FROM Book AS T1 JOIN Author_book AS T2 ON T1.isbn  =  T2.isbn JOIN Author AS T3 ON T2.Author  =  T3.idAuthor WHERE T3.name  =  "Plato" AND T1.saleprice  <  (SELECT avg(saleprice) FROM Book)
+SELECT T1.title FROM Book AS T1 JOIN Author_book AS T2 ON T1.isbn  =  T2.isbn JOIN Author AS T3 ON T2.Author  =  T3.idAuthor WHERE T3.name  =  "Plato" AND T1.saleprice  <  (SELECT avg(saleprice) FROM Book)
+SELECT T3.name FROM Book AS T1 JOIN Author_book AS T2 ON T1.isbn  =  T2.isbn JOIN Author AS T3 ON T2.Author  =  T3.idAuthor WHERE T1.title  =  "Pride and Prejudice"
+SELECT T3.name FROM Book AS T1 JOIN Author_book AS T2 ON T1.isbn  =  T2.isbn JOIN Author AS T3 ON T2.Author  =  T3.idAuthor WHERE T1.title  =  "Pride and Prejudice"
+SELECT T1.title FROM Book AS T1 JOIN Author_book AS T2 ON T1.isbn  =  T2.isbn JOIN Author AS T3 ON T2.Author  =  T3.idAuthor WHERE T3.name LIKE "%Plato%"
+SELECT T1.title FROM Book AS T1 JOIN Author_book AS T2 ON T1.isbn  =  T2.isbn JOIN Author AS T3 ON T2.Author  =  T3.idAuthor WHERE T3.name LIKE "%Plato%"
+SELECT count(*) FROM Book AS T1 JOIN Books_Order AS T2 ON T1.isbn  =  T2.isbn WHERE T1.title  =  "Pride and Prejudice"
+SELECT count(*) FROM Book AS T1 JOIN Books_Order AS T2 ON T1.isbn  =  T2.isbn WHERE T1.title  =  "Pride and Prejudice"
+SELECT idOrder FROM Book AS T1 JOIN Books_Order AS T2 ON T1.isbn  =  T2.isbn WHERE T1.title  =  "Pride and Prejudice" INTERSECT SELECT idOrder FROM Book AS T1 JOIN Books_Order AS T2 ON T1.isbn  =  T2.isbn WHERE T1.title  =  "The Little Prince"
+SELECT idOrder FROM Book AS T1 JOIN Books_Order AS T2 ON T1.isbn  =  T2.isbn WHERE T1.title  =  "Pride and Prejudice" INTERSECT SELECT idOrder FROM Book AS T1 JOIN Books_Order AS T2 ON T1.isbn  =  T2.isbn WHERE T1.title  =  "The Little Prince"
+SELECT T2.isbn FROM Orders AS T1 JOIN Books_Order AS T2 ON T1.idOrder  =  T2.idOrder JOIN Client AS T3 ON T1.idClient  =  T3.idClient WHERE T3.name  =  "Peter Doe" INTERSECT SELECT T2.isbn FROM Orders AS T1 JOIN Books_Order AS T2 ON T1.idOrder  =  T2.idOrder JOIN Client AS T3 ON T1.idClient  =  T3.idClient WHERE T3.name  =  "James Smith"
+SELECT T2.isbn FROM Orders AS T1 JOIN Books_Order AS T2 ON T1.idOrder  =  T2.idOrder JOIN Client AS T3 ON T1.idClient  =  T3.idClient WHERE T3.name  =  "Peter Doe" INTERSECT SELECT T2.isbn FROM Orders AS T1 JOIN Books_Order AS T2 ON T1.idOrder  =  T2.idOrder JOIN Client AS T3 ON T1.idClient  =  T3.idClient WHERE T3.name  =  "James Smith"
+SELECT T4.title FROM Orders AS T1 JOIN Books_Order AS T2 ON T1.idOrder  =  T2.idOrder JOIN Client AS T3 ON T1.idClient  =  T3.idClient JOIN book AS T4 ON T2.ISBN  =  T4.isbn WHERE T3.name  =  "Peter Doe" EXCEPT SELECT T4.title FROM Orders AS T1 JOIN Books_Order AS T2 ON T1.idOrder  =  T2.idOrder JOIN Client AS T3 ON T1.idClient  =  T3.idClient JOIN book AS T4 ON T2.ISBN  =  T4.isbn WHERE T3.name  =  "James Smith"
+SELECT T4.title FROM Orders AS T1 JOIN Books_Order AS T2 ON T1.idOrder  =  T2.idOrder JOIN Client AS T3 ON T1.idClient  =  T3.idClient JOIN book AS T4 ON T2.ISBN  =  T4.isbn WHERE T3.name  =  "Peter Doe" EXCEPT SELECT T4.title FROM Orders AS T1 JOIN Books_Order AS T2 ON T1.idOrder  =  T2.idOrder JOIN Client AS T3 ON T1.idClient  =  T3.idClient JOIN book AS T4 ON T2.ISBN  =  T4.isbn WHERE T3.name  =  "James Smith"
+SELECT T3.name FROM Orders AS T1 JOIN Books_Order AS T2 ON T1.idOrder  =  T2.idOrder JOIN Client AS T3 ON T1.idClient  =  T3.idClient JOIN Book AS T4 ON T4.isbn  =  T2.isbn WHERE T4.title  =  "Pride and Prejudice"
+SELECT T3.name FROM Orders AS T1 JOIN Books_Order AS T2 ON T1.idOrder  =  T2.idOrder JOIN Client AS T3 ON T1.idClient  =  T3.idClient JOIN Book AS T4 ON T4.isbn  =  T2.isbn WHERE T4.title  =  "Pride and Prejudice"

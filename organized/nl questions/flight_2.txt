@@ -1,0 +1,81 @@
+nl_question
+Which country does Airline "JetBlue Airways" belong to?
+What country is Jetblue Airways affiliated with?
+What is the abbreviation of Airline "JetBlue Airways"?
+Which abbreviation corresponds to Jetblue Airways?
+List all airline names and their abbreviations in "USA".
+What are the airline names and abbreviations for airlines in the USA?
+List the airport code and name in the city of Anthony.
+Give the airport code and airport name corresonding to the city Anthony.
+How many airlines do we have?
+What is the total number of airlines?
+How many airports do we have?
+Return the number of  airports.
+How many flights do we have?
+Return the number of flights.
+Which airline has abbreviation 'UAL'?
+Give the airline with abbreviation 'UAL'.
+How many airlines are from USA?
+Return the number of airlines in the USA.
+Which city and country is the Alton airport at?
+Give the city and country for the Alton airport.
+What is the airport name for airport 'AKO'?
+Return the name of the airport with code 'AKO'.
+What are airport names at City 'Aberdeen'?
+What are the names of airports in Aberdeen?
+How many flights depart from 'APG'?
+Count the number of flights departing from 'APG'.
+How many flights have destination ATO?
+Count the number of flights into ATO.
+How many flights depart from City Aberdeen?
+Return the number of flights departing from Aberdeen.
+How many flights arriving in Aberdeen city?
+Return the number of flights arriving in Aberdeen.
+How many flights depart from City 'Aberdeen' and have destination City 'Ashley'?
+How many flights fly from Aberdeen to Ashley?
+How many flights does airline 'JetBlue Airways' have?
+Give the number of Jetblue Airways flights.
+How many 'United Airlines' flights go to Airport 'ASY'?
+Count the number of United Airlines flights arriving in ASY Airport.
+How many 'United Airlines' flights depart from Airport 'AHD'?
+Return the number of United Airlines flights leaving from AHD Airport.
+How many United Airlines flights go to City 'Aberdeen'?
+Count the number of United Airlines flights that arrive in Aberdeen.
+Which city has most number of arriving flights?
+Which city has the most frequent destination airport?
+Which city has most number of departing flights?
+Which city is the most frequent source airport?
+What is the code of airport that has the highest number of flights?
+What is the airport code of the airport with the most flights?
+What is the code of airport that has fewest number of flights?
+Give the code of the airport with the least flights.
+Which airline has most number of flights?
+What airline serves the most flights?
+Find the abbreviation and country of the airline that has fewest number of flights?
+What is the abbreviation of the airilne has the fewest flights and what country is it in?
+What are airlines that have some flight departing from airport 'AHD'?
+Which airlines have a flight with source airport AHD?
+What are airlines that have flights arriving at airport 'AHD'?
+Which airlines have a flight with destination airport AHD?
+Find all airlines that have flights from both airports 'APG' and 'CVO'.
+Which airlines have departing flights from both APG and CVO airports?
+Find all airlines that have flights from airport 'CVO' but not from 'APG'.
+Which airlines have departures from CVO but not from APG airports?
+Find all airlines that have at least 10 flights.
+Which airlines have at least 10 flights?
+Find all airlines that have fewer than 200 flights.
+Which airlines have less than 200 flights?
+What are flight numbers of Airline "United Airlines"?
+Which flight numbers correspond to United Airlines flights?
+What are flight numbers of flights departing from Airport "APG"?
+Give the flight numbers of flights leaving from APG.
+What are flight numbers of flights arriving at Airport "APG"?
+Give the flight numbers of flights landing at APG.
+What are flight numbers of flights departing from City "Aberdeen "?
+Give the flight numbers of flights leaving from Aberdeen.
+What are flight numbers of flights arriving at City "Aberdeen"?
+Give the flight numbers of flights arriving in Aberdeen.
+Find the number of flights landing in the city of Aberdeen or Abilene.
+How many flights land in Aberdeen or Abilene?
+Find the name of airports which do not have any flight in and out.
+Which airports do not have departing or arriving flights?

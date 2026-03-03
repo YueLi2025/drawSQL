@@ -1,0 +1,62 @@
+sql_query
+SELECT text FROM twitter WHERE Likes = ( SELECT MAX( Likes) FROM twitter )
+SELECT City FROM location WHERE City IS NOT NULL AND Country = 'Argentina'
+SELECT T2.City FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID WHERE T2.Country = 'Argentina' GROUP BY T2.City ORDER BY COUNT(T1.TweetID) DESC LIMIT 1
+SELECT COUNT(T1.TweetID) FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID WHERE T2.City = 'Buenos Aires' AND T1.IsReshare = 'TRUE'
+SELECT T2.Country FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID WHERE T2.Country IN ('Argentina', 'Australia') AND T1.Sentiment > 0 GROUP BY T2.Country ORDER BY COUNT(T1.TweetID) DESC LIMIT 1
+SELECT COUNT(T1.TweetID) FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID WHERE T2.City = 'Buenos Aires' AND T1.Weekday = 'Thursday'
+SELECT T2.Gender FROM twitter AS T1 INNER JOIN user AS T2 ON T1.UserID = T2.UserID ORDER BY T1.Reach DESC LIMIT 1
+SELECT COUNT(T1.TweetID) FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID INNER JOIN user AS T3 ON T1.UserID = T3.UserID WHERE T3.Gender = 'Male' AND T2.Country = 'Argentina'
+SELECT DISTINCT StateCode FROM location WHERE State = 'Gwynedd'
+SELECT DISTINCT LocationID FROM location WHERE State = 'West Sussex'
+SELECT T1.text FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID WHERE T2.State = 'Connecticut' ORDER BY T1.Klout DESC LIMIT 1
+SELECT COUNT(T1.Likes) FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID INNER JOIN user AS T3 ON T3.UserID = T1.UserID WHERE T2.State = 'Wisconsin' AND T3.Gender = 'Female'
+SELECT T2.Gender FROM twitter AS T1 INNER JOIN user AS T2 ON T1.UserID = T2.UserID WHERE T1.TweetID = 'tw-715909161071091712'
+SELECT T2.Gender FROM twitter AS T1 INNER JOIN user AS T2 ON T1.UserID = T2.UserID WHERE T1.Weekday = 'Wednesday' ORDER BY T1.Klout DESC LIMIT 1
+SELECT COUNT(T1.TweetID) FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID WHERE T1.Weekday = 'Thursday' AND T2.State = 'Michigan'
+SELECT T2.StateCode FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID WHERE T1.TweetID = 'tw-685681052912873473'
+SELECT LocationID FROM twitter WHERE TweetID = 'tw-682714048199311366'
+SELECT T2.Gender FROM twitter AS T1 INNER JOIN user AS T2 ON T1.UserID = T2.UserID WHERE T1.TweetID = 'tw-682714583044243456'
+SELECT T.Gender FROM ( SELECT T2.Gender, COUNT( text) AS num FROM twitter AS T1 INNER JOIN user AS T2 ON T1.UserID = T2.UserID WHERE T1.Lang = 'en' GROUP BY T2.Gender ) T ORDER BY T.num DESC LIMIT 1
+SELECT DISTINCT T2.Gender FROM twitter AS T1 INNER JOIN user AS T2 ON T1.UserID = T2.UserID WHERE T1.RetweetCount > 30
+SELECT T.Country FROM ( SELECT T2.Country, SUM(T1.Likes) AS num FROM twitter AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID GROUP BY T2.Country ) T ORDER BY T.num DESC LIMIT 1
+SELECT T1.text FROM twitter AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID WHERE T2.City = 'Rawang' AND T2.State = 'Selangor' AND T2.Country = 'Malaysia'
+SELECT DISTINCT T1.Lang FROM twitter AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID WHERE T2.Country = 'Brazil'
+SELECT T.Country FROM ( SELECT T2.Country, SUM(T1.Sentiment) AS num FROM twitter AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID WHERE T1.Sentiment > 0 GROUP BY T2.Country ) T ORDER BY T.num DESC LIMIT 1
+SELECT UserID FROM twitter GROUP BY UserID ORDER BY COUNT(DISTINCT TweetID) DESC LIMIT 1
+SELECT T2.Gender FROM twitter AS T1 INNER JOIN user AS T2 ON T1.UserID = T2.UserID ORDER BY T1.Likes DESC LIMIT 1
+SELECT COUNT(T1.TweetID) FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID INNER JOIN user AS T3 ON T3.UserID = T1.UserID WHERE T2.Country = 'Australia' AND T3.Gender = 'Male' AND T1.Sentiment > 0
+SELECT SUM(CASE WHEN T1.Sentiment > 0 THEN 1 ELSE 0 END) - SUM(CASE WHEN T1.Sentiment = 0 THEN 1 ELSE 0 END) AS diff FROM twitter AS T1 INNER JOIN user AS T2 ON T1.UserID = T2.UserID WHERE T2.Gender = 'Male'
+SELECT COUNT(T1.TweetID) FROM twitter AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID WHERE T1.Day = 31 AND T2.State = 'Santa' AND T2.Country = 'Argentina'
+SELECT T.City FROM ( SELECT T2.City, COUNT(T1.TweetID) AS num FROM twitter AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID WHERE T2.Country = 'Canada' GROUP BY T2.City ) T ORDER BY T.num DESC LIMIT 3
+SELECT DISTINCT T2.City FROM twitter AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID WHERE Sentiment = 0
+SELECT text FROM twitter WHERE IsReshare = 'TRUE'
+SELECT COUNT(TweetID) AS tweet_number FROM twitter WHERE Reach > 1000
+SELECT T1.text FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID WHERE T1.Sentiment > 0 AND T2.City = 'Buenos Aires'
+SELECT T1.text FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID INNER JOIN user AS T2 ON T2.UserID = T1.UserID INNER JOIN user AS T3 ON T1.UserID = T3.UserID WHERE T2.City = 'Buenos Aires' AND T3.Gender = 'Male'
+SELECT COUNT(UserID) AS user_number FROM user WHERE Gender = 'Unknown'
+SELECT COUNT(State) AS State_number FROM location WHERE Country = 'United Kingdom'
+SELECT COUNT(T1.TweetID) FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID WHERE T2.State = 'Texas' AND T1.IsReshare = 'TRUE'
+SELECT COUNT(T1.TweetID) FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID WHERE T1.Sentiment > 0 AND T2.State = 'Ha Noi'
+SELECT T2.City FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID WHERE T1.text = 'One of our favorite stories is @FINRA_News''s move to the cloud with AWS Enterprise Support! https://amp.twimg.com/v/991837f1-4815-4edc-a88f-e68ded09a02a'
+SELECT T2.Gender FROM twitter AS T1 INNER JOIN user AS T2 ON T1.UserID = T2.UserID WHERE T1.RetweetCount = 535
+SELECT Reach FROM twitter WHERE text = 'Happy New Year to all those AWS instances of ours!'
+SELECT COUNT(DISTINCT TweetID) FROM twitter WHERE Lang = 'en'
+SELECT COUNT(TweetID) FROM twitter WHERE Weekday = 'Wednesday'
+SELECT text FROM twitter WHERE Weekday = 'Thursday'
+SELECT COUNT(T1.TweetID) FROM twitter AS T1 INNER JOIN user AS T2 ON T1.UserID = T2.UserID WHERE T2.Gender = 'Male'
+SELECT SUM(T1.Likes) FROM twitter AS T1 INNER JOIN user AS T2 ON T1.UserID = T2.UserID WHERE T1.Lang = 'ru' AND T2.Gender = 'Male'
+SELECT COUNT(DISTINCT TweetID) FROM twitter WHERE Klout > 50
+SELECT text FROM twitter ORDER BY Reach DESC LIMIT 3
+SELECT COUNT(DISTINCT T1.TweetID) FROM twitter AS T1 INNER JOIN user AS T2 ON T1.UserID = T2.UserID WHERE T2.Gender = 'Male' AND T1.Weekday = 'Monday'
+SELECT SUM(T1.Likes) / COUNT(T1.TweetID) FROM twitter AS T1 INNER JOIN user AS T2 ON T1.UserID = T2.UserID WHERE T2.Gender = 'Male' AND T1.Weekday = 'Monday'
+SELECT T2.Country FROM twitter AS T1 INNER JOIN location AS T2 ON T2.LocationID = T1.LocationID WHERE T1.Reach = 547851
+SELECT COUNT(T1.UserID) FROM twitter AS T1 INNER JOIN user AS T2 ON T1.UserID = T2.UserID WHERE T2.Gender = 'Female' AND T1.IsReshare = 'TRUE'
+SELECT COUNT(DISTINCT T1.TweetID) FROM twitter AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID WHERE T1.Lang = 'fr' AND T2.Country = 'Australia'
+SELECT COUNT(TweetID) AS tweet_number FROM twitter WHERE Lang = 'en'
+SELECT T1.text FROM twitter AS T1 INNER JOIN user AS T2 ON T1.UserID = T2.UserID WHERE T2.Gender = 'Unknown'
+SELECT text FROM twitter WHERE Lang != 'en'
+SELECT COUNT(DISTINCT TweetID) FROM twitter WHERE IsReshare = 'TRUE' AND Likes > 100
+SELECT T2.City FROM twitter AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID ORDER BY T1.RetweetCount DESC LIMIT 1
+SELECT T2.text FROM user AS T1 INNER JOIN twitter AS T2 ON T1.UserID = T2.UserID INNER JOIN location AS T3 ON T2.LocationID = T3.LocationID WHERE T3.Country = 'Argentina' AND T1.Gender = 'Male' ORDER BY T2.Likes DESC LIMIT 1
+SELECT SUM(CASE WHEN T2.City = 'Bangkok' THEN Likes ELSE NULL END) / COUNT(CASE WHEN T2.City = 'Bangkok' THEN 1 ELSE 0 END) AS bNum , SUM(CASE WHEN City = 'Chiang Mai' THEN Likes ELSE NULL END) / COUNT(CASE WHEN City = 'Chiang Mai' THEN TweetID ELSE NULL END) AS cNum FROM twitter AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID WHERE T2.City IN ('Bangkok', 'Chiang Mai')

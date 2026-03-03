@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+customers,Id,num
+customers,LastName,string
+customers,FirstName,string
+goods,Id,string
+goods,Flavor,string
+goods,Food,string
+goods,Price,num
+items,Receipt,num
+items,Ordinal,num
+items,Item,string
+receipts,ReceiptNumber,num
+receipts,Date,string
+receipts,CustomerId,num

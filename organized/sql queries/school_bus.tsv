@@ -1,0 +1,19 @@
+sql_query
+SELECT count(*) FROM driver
+SELECT name ,  home_city ,  age FROM driver
+SELECT party ,  count(*) FROM driver GROUP BY party
+SELECT name FROM driver ORDER BY age DESC
+SELECT DISTINCT home_city FROM driver
+SELECT home_city FROM driver GROUP BY home_city ORDER BY count(*) DESC LIMIT 1
+SELECT party FROM driver WHERE home_city  =  'Hartford' AND age  >  40
+SELECT home_city FROM driver WHERE age  >  40 GROUP BY home_city HAVING count(*)  >=  2
+SELECT home_city FROM driver EXCEPT SELECT home_city FROM driver WHERE age  >  40
+SELECT name FROM driver WHERE driver_id NOT IN (SELECT driver_id FROM school_bus)
+SELECT TYPE FROM school GROUP BY TYPE HAVING count(*)  =  2
+SELECT T2.school ,  T3.name FROM school_bus AS T1 JOIN school AS T2 ON T1.school_id  =  T2.school_id JOIN driver AS T3 ON T1.driver_id  =  T3.driver_id
+SELECT max(years_working) ,  min(years_working) ,  avg(years_working) FROM school_bus
+SELECT school ,  TYPE FROM school WHERE school_id NOT IN (SELECT school_id FROM school_bus)
+SELECT T2.type ,  count(*) FROM school_bus AS T1 JOIN school AS T2 ON T1.school_id  =  T2.school_id GROUP BY T2.type
+SELECT count(*) FROM driver WHERE home_city  =  'Hartford' OR age  <  40
+SELECT name FROM driver WHERE home_city  =  'Hartford' AND age  <  40
+SELECT t1.name FROM driver AS t1 JOIN school_bus AS t2 ON t1.driver_id  =  t2.driver_id ORDER BY years_working DESC LIMIT 1

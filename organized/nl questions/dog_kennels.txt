@@ -1,0 +1,83 @@
+nl_question
+Which states have both owners and professionals living there?
+Find the states where both owners and professionals live.
+What is the average age of the dogs who have gone through any treatments?
+Find the average age of the dogs who went through treatments.
+Which professionals live in the state of Indiana or have done treatment on more than 2 treatments? List his or her id, last name and cell phone.
+Find the id, last name and cell phone of the professionals who live in the state of Indiana or have performed more than two treatments.
+Which dogs have not cost their owner more than 1000 for treatment ? List the dog names .
+What are the names of the dogs for which the owner has not spend more than 1000 for treatment ?
+Which first names are used for professionals or owners but are not used as dog names?
+Find the first names that are used for professionals or owners but are not used as dog names.
+Which professional did not operate any treatment on dogs? List the professional's id, role and email.
+Give me the id, role and email of the professionals who did not perform any treatment on dogs.
+Which owner owns the most dogs? List the owner id, first name and last name.
+Return the owner id, first name and last name of the owner who has the most dogs.
+Which professionals have done at least two treatments? List the professional's id, role, and first name.
+What are the id, role, and first name of the professionals who have performed two or more treatments?
+What is the name of the breed with the most dogs?
+Which breed do the most dogs have? Give me the breed name.
+Which owner has paid for the most treatments on his or her dogs? List the owner id and last name.
+Tell me the owner id and last name of the owner who spent the most on treatments of his or her dogs.
+What is the description of the treatment type that costs the least money in total?
+Give me the description of the treatment type whose total cost is the lowest.
+Which owner has paid the largest amount of money in total for their dogs? Show the owner id and zip code.
+Find the owner id and zip code of the owner who spent the most money in total for his or her dogs.
+Which professionals have done at least two types of treatments? List the professional id and cell phone.
+Find the id and cell phone of the professionals who operate two or more types of treatments.
+What are the first name and last name of the professionals who have done treatment with cost below average?
+Which professionals have operated a treatment that costs less than the average? Give me theor first names and last names.
+List the date of each treatment, together with the first name of the professional who operated it.
+What are the date and the operating professional's first name of each treatment?
+List the cost of each treatment and the corresponding treatment type description.
+What are the cost and treatment type description of each treatment?
+List each owner's first name, last name, and the size of his for her dog.
+What are each owner's first name, last name, and the size of their dog?
+List pairs of the owner's first name and the dogs's name.
+What are each owner's first name and their dogs's name?
+List the names of the dogs of the rarest breed and the treatment dates of them.
+Which dogs are of the rarest breed? Show their names and treatment dates.
+Which dogs are owned by someone who lives in Virginia? List the owner's first name and the dog's name.
+Find the first names of owners living in Virginia and the names of dogs they own.
+What are the arriving date and the departing date of the dogs who have gone through a treatment?
+Find the arriving date and the departing date of the dogs that received a treatment.
+List the last name of the owner owning the youngest dog.
+Who owns the youngest dog? Give me his or her last name.
+List the emails of the professionals who live in the state of Hawaii or the state of Wisconsin.
+What are the emails of the professionals living in either the state of Hawaii or the state of Wisconsin?
+What are the arriving date and the departing date of all the dogs?
+List the arrival date and the departure date for all the dogs.
+How many dogs went through any treatments?
+Count the number of dogs that went through a treatment.
+How many professionals have performed any treatment to dogs?
+Find the number of professionals who have ever treated dogs.
+Which professionals live in a city containing the substring 'West'? List his or her role, street, city and state.
+Find the role, street, city and state of the professionals living in a city that contains the substring 'West'.
+Which owners live in the state whose name contains the substring 'North'? List his first name, last name and email.
+Return the first name, last name and email of the owners living in a state whose name contains the substring 'North'.
+How many dogs have an age below the average?
+Count the number of dogs of an age below the average.
+How much does the most recent treatment cost?
+Show me the cost of the most recently performed treatment.
+How many dogs have not gone through any treatment?
+Tell me the number of dogs that have not received any treatment .
+How many owners temporarily do not have any dogs?
+Find the number of owners who do not own any dogs at this moment.
+How many professionals did not operate any treatment on dogs?
+Find the number of professionals who have not treated any dogs.
+List the dog name, age and weight of the dogs who have been abandoned? 1 stands for yes, and 0 stands for no.
+What are the dog name, age and weight of the dogs that were abandoned? Note that 1 stands for yes, and 0 stands for no in the tables.
+What is the average age of all the dogs?
+Compute the average age of all the dogs.
+What is the age of the oldest dog?
+Tell me the age of the oldest dog.
+How much does each charge type costs? List both charge type and amount.
+List each charge type and its amount.
+How much does the most expensive charge type costs?
+What is the charge amount of the most expensive charge type?
+List the email, cell phone and home phone of all the professionals.
+What are the email, cell phone and home phone of each professional?
+What are all the possible breed type and size type combinations?
+Find the distinct breed type and size type combinations for dogs.
+List the first name of all the professionals along with the description of the treatment they have done.
+What are each professional's first name and description of the treatment they have performed?

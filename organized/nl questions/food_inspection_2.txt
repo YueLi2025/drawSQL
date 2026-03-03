@@ -1,0 +1,110 @@
+nl_question
+Please list the full names of all the sanitarians under the supervision of Darlisha Jacobs.
+Please list the full names of the sanitarians who did at least one inspection in May, 2010.
+How many inspections were sanitarian Joshua Rosa responsible for in 2010?
+Please list the assumed name of all the facilities inspected by Joshua Rosa.
+Please list the location coordinates of all the facilities that had an inspection on 2010/5/11.
+Please list the full names of all the sanitarians who have inspected the facility Burbank.
+Please list the assumed name of all the facilities that failed an inspection in 2010.
+What is the full name of the sanitarian who inspected Amundsen High School on 2010/5/11?
+Among the inspections done by sanitarian Joshua Rosa, how many of them have the result of "pass"?
+After Azha Restaurant Inc. passed the inspection on 2010/1/21, when was the follow-up inspection done?
+Among the facilities that had undergone at least one inspection in 2010, how many of them have the most serious food safety issues?
+Which employee was responsible for inspection no.48224? Give the full name.
+How many restaurants were inspected on 2015/5/8?
+How many "food maintenance" related violations did inspection no.1454071 have?
+State the number of violations did Royal Thai Cuisine has during the 2015/5/8 inspection.
+Who is responsible for most of the inspections? Give the full name.
+How many inspections done by Lisa Tillman ended up with the result of "Out of Business"?
+Show the phone number of the sanitarian who was responsible for inspection no.634597.
+State the salary of the employee who did the most inspections.
+When did Renaldi's Pizza had its first inspection?
+What is the full name of the employee who was responsible for the most inspection in March 2016?
+Out of all the short form complaint inspections done by David Hodges, how many businesses passed?
+How much is the total fine given to Ron of Japan Inc in its inspection done on February 2014?
+List the full names of the employees who were responsible for inspecting Taqueria La Paz.
+What is the full name of the employee who gave the highest amount of fine of all time?
+What is the establishment's name and employee involved in the inspection ID 44256 on May 5, 2010?
+Give the address of the schools that passed the inspection in March 2010.
+What is the employee's full name involved in the canvass inspection type on March 09, 2010?
+How many restaurants with the highest risk level still passed the inspection?
+List the names of employees involved in an inspection with the Display of Inspection Report Summary category.
+What is the title of the employee involved in inspection ID 60332?
+How many of the restaurants with the lowest risk level failed the complaint inspection type?
+Provide the fine paid and the complete address of the establishment with inspection ID 48216.
+What is the inspection ID of the inspection with critical point level, $500 fine, and inspector comment "CDI ON 5-17-10"?
+What are the inspector's comments and clean operating requirement code for inspection ID 54216 and point ID 34?
+List the point IDs and fines of the inspections done on 7th August 2010.
+How many inspections were done under the personnel category?
+Which facilities were inspected by Sarah Lindsey on 20th November 2012?
+Provide the categories and fines for the inspections done by Lisa Tillman in January 2014.
+Who inspected Jean Samocki and what was the result?
+How much did Hacienda Los Torres from ward 36 fine for failing an inspection?
+Provide the names and locations of the facilities that failed inspections on 29th July 2013.
+Provide the first name of employee who did inspection ID 48225?
+Tell the address of employee who did inspection ID 52238?
+Write down the last name of employee who did inspection ID 52238?
+What is the inspection result for inspection done by Thomas Langley?
+List down the phone numbers of employees who did Canvass inspection.
+What are the inspection results for Xando Coffee & Bar / Cosi Sandwich Bar?
+What type of inspection was done at John Schaller?
+List down the dba name of restaurants that were inspected due to license.
+How many inspections done in 2010 had serious food safety issue?
+Calculate the total salary for employees who did inspection from ID 52270 to 52272.
+Calculate the average salary for employees who did inspection on License Re-Inspection.
+When did restaurant John Schaller has its first inspection in 2010?
+What is the full name of the employee that inspected establishments with license 1334073?
+Which establishments did Joshua Rosa inspect?
+Name the food businesses that passed the inspection in 2010.
+What is the name of the establishment that Joshua Rosa inspected?
+What is the risk level of the establishment that Bob Benson inspected?
+Which establishments did Bob Benson inspect in 2010 and what was the results?
+How many inspection points with serious point level that have no fine?
+What is the percentage of establishments with a risk level of 1 among all of the establishments that passed the inspection?
+Provide the facility type and license number of establishments with the lowest risk level but failed the inspection.
+What is the result of the February 24, 2010 inspection involving the employee named "Arnold Holder"?
+How many restaurants failed the inspection in April 2010?
+List all inspection IDs where the employee named "Rosemary Kennedy" was involved.
+What type of inspection was done on July 07, 2010, involving the employee named "Lisa Tillman"?
+List down the names of the establishments with the highest risk level and failed the inspection.
+What is the establishment's name with an inspection category of No Smoking Regulations?
+What is the difference in the number of restaurants that passed and failed the canvass inspection type?
+Among the facilities that have undergone at least one inspection in 2010, how many of them are in ward no.42?
+How many inspections did All Style Buffet Restaurant have?
+When did Wing Hung Chop Suey Restaurant have its first inspection?
+For the sanitarian who lives on 5000 N Wolcott Ave, how many establishments did he/she inspect in the May of 2011?
+State the inspection pass rate of Pockets Restaurant.
+What are the names of the businesses that passed with conditions in May 2012?
+How much is the salary of the employee who has the highest number of inspections done of all time?
+What is the assumed name of the business that has the highest total fine in 2014?
+What is the precise location of the establishment with the highest number of failed inspections?
+What are the comments of the inspector during the inspection of Taqueria La Fiesta on 1/25/2010?
+Which business had the highest number of inspections done? Calculate the percentage of passed and failed inspections of the said business.
+Provide the names and inspection results of the facilities located in Burnham.
+Compare the number of inspections under toxic items and no-smoking regulations.
+How many inspections were done under the display of inspection report summary category?
+List down the address of employees who did inspection dated 11/5/2010.
+What is the job title of employee who did inspection ID 52269?
+State the name of dbas with verified quality.
+How many employees have salary greater than 70000 but fail the inspection?
+How many taverns failed in July 2010?
+Among the list of employees, what is the total number of supervisors?
+How many employees are living in Hoffman Estates, IL?
+Provide the last name of the employee involved in the inspection ID 52256.
+List point level of inspections with no fine.
+How many grocery stores paid $250 fine upon their inspection?
+Name the taverns that failed the inspection in January 2010.
+What is the average number of inspections did risk level 3 taverns have?
+How many sanitarian employees in Chicago are from the zip code 60617?
+What is the full name of the employee with the lowest salary?
+How many establishments that are doing business as Homemade Pizza have a risk level of 2?
+How many inspections were done in January 2011?
+Calculate the percentage of inspections with the fine for a minor food safety problem.
+What is the title of the employee that inspected the establishment with license number 1576687?
+How much salary does Jessica Anthony receive?
+What is the employee's last name at 7211 S Hermitage Ave, Chicago, IL?
+Calculate the total amount of fine under the food equipment and utensil category.
+Did license number 1222441 pass the inspection and what is the zip code number of it?
+What is the total number of establishments with the highest risk level?
+What is the inspection ID where the employee named "David Hodges" is currently employed in the "Kamayan Express" establishment?
+Among the establishments that failed the inspection in February 2010, list the names of the employees with a salary greater than 70% of the average salary of all employees.

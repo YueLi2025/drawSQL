@@ -1,0 +1,41 @@
+sql_query
+SELECT count(*) FROM wrestler
+SELECT count(*) FROM wrestler
+SELECT Name FROM wrestler ORDER BY Days_held DESC
+SELECT Name FROM wrestler ORDER BY Days_held DESC
+SELECT Name FROM wrestler ORDER BY Days_held ASC LIMIT 1
+SELECT Name FROM wrestler ORDER BY Days_held ASC LIMIT 1
+SELECT DISTINCT Reign FROM wrestler WHERE LOCATION != "Tokyo , Japan"
+SELECT DISTINCT Reign FROM wrestler WHERE LOCATION != "Tokyo , Japan"
+SELECT Name ,  LOCATION FROM wrestler
+SELECT Name ,  LOCATION FROM wrestler
+SELECT Elimination_Move FROM Elimination WHERE Team  =  "Team Orton"
+SELECT Elimination_Move FROM Elimination WHERE Team  =  "Team Orton"
+SELECT T2.Name ,  T1.Elimination_Move FROM elimination AS T1 JOIN wrestler AS T2 ON T1.Wrestler_ID  =  T2.Wrestler_ID
+SELECT T2.Name ,  T1.Elimination_Move FROM elimination AS T1 JOIN wrestler AS T2 ON T1.Wrestler_ID  =  T2.Wrestler_ID
+SELECT T2.Name ,  T1.Team FROM elimination AS T1 JOIN wrestler AS T2 ON T1.Wrestler_ID  =  T2.Wrestler_ID ORDER BY T2.Days_held DESC
+SELECT T2.Name ,  T1.Team FROM elimination AS T1 JOIN wrestler AS T2 ON T1.Wrestler_ID  =  T2.Wrestler_ID ORDER BY T2.Days_held DESC
+SELECT T1.Time FROM elimination AS T1 JOIN wrestler AS T2 ON T1.Wrestler_ID  =  T2.Wrestler_ID ORDER BY T2.Days_held DESC LIMIT 1
+SELECT T1.Time FROM elimination AS T1 JOIN wrestler AS T2 ON T1.Wrestler_ID  =  T2.Wrestler_ID ORDER BY T2.Days_held DESC LIMIT 1
+SELECT T1.Time FROM elimination AS T1 JOIN wrestler AS T2 ON T1.Wrestler_ID  =  T2.Wrestler_ID WHERE T2.Days_held  >  50
+SELECT T1.Time FROM elimination AS T1 JOIN wrestler AS T2 ON T1.Wrestler_ID  =  T2.Wrestler_ID WHERE T2.Days_held  >  50
+SELECT Team ,  COUNT(*) FROM elimination GROUP BY Team
+SELECT Team ,  COUNT(*) FROM elimination GROUP BY Team
+SELECT Team FROM elimination GROUP BY Team HAVING COUNT(*)  >  3
+SELECT Team FROM elimination GROUP BY Team HAVING COUNT(*)  >  3
+SELECT Reign ,  Days_held FROM wrestler
+SELECT Reign ,  Days_held FROM wrestler
+SELECT Name FROM wrestler WHERE Days_held  <  100
+SELECT Name FROM wrestler WHERE Days_held  <  100
+SELECT Reign FROM wrestler GROUP BY Reign ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Reign FROM wrestler GROUP BY Reign ORDER BY COUNT(*) DESC LIMIT 1
+SELECT LOCATION FROM wrestler GROUP BY LOCATION HAVING COUNT(*)  >  2
+SELECT LOCATION FROM wrestler GROUP BY LOCATION HAVING COUNT(*)  >  2
+SELECT Name FROM wrestler WHERE Wrestler_ID NOT IN (SELECT Wrestler_ID FROM elimination)
+SELECT Name FROM wrestler WHERE Wrestler_ID NOT IN (SELECT Wrestler_ID FROM elimination)
+SELECT Team FROM Elimination WHERE Eliminated_By  =  "Orton" INTERSECT SELECT Team FROM Elimination WHERE Eliminated_By  =  "Benjamin"
+SELECT Team FROM Elimination WHERE Eliminated_By  =  "Orton" INTERSECT SELECT Team FROM Elimination WHERE Eliminated_By  =  "Benjamin"
+SELECT COUNT (DISTINCT team) FROM elimination
+SELECT COUNT (DISTINCT team) FROM elimination
+SELECT TIME FROM elimination WHERE Eliminated_By  =  "Punk" OR Eliminated_By  =  "Orton"
+SELECT TIME FROM elimination WHERE Eliminated_By  =  "Punk" OR Eliminated_By  =  "Orton"

@@ -1,0 +1,16 @@
+table_name,column_name,column_type
+headphone,Headphone_ID,num
+headphone,Model,string
+headphone,Class,string
+headphone,Driver-matched_dB,num
+headphone,Construction,string
+headphone,Earpads,string
+headphone,Price,num
+stock,Store_ID,num
+stock,Headphone_ID,num
+stock,Quantity,num
+store,Store_ID,num
+store,Name,string
+store,Neighborhood,string
+store,Parking,string
+store,Date_Opened,string

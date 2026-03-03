@@ -1,0 +1,129 @@
+nl_question
+To which community area does the neighborhood Albany Park belong?
+How many neighborhoods are there in the community area of Lincoln Square?
+Please list the names of all the neighborhoods in Central Chicago.
+Please list the precise location coordinates of all the crimes in Central Chicago.
+How many crimes had happened in the community area with the most population?
+Among the crimes in Woodlawn, how many of them happened in January, 2018?
+Where did case No. JB100065 happen? Give the name of the district.
+Where is the coordinate (41.66236555, -87.63470194) located? Give the name of the district.
+Give the name of the person who was responsible for case No.JB524952.
+How many different neighborhoods are there in Roseland community?
+Tell the number of cases with arrests in North Lawndale community.
+What is the percentage of larceny cases among all cases that happened in Edgewater community?
+How many crimes were committed at 018XX S KOMENSKY AVEin May 2018?
+Who is the commanding officer in the district with the highest number of disorderly conduct?
+What is the precise location or coordinate where most of the robberies in Rogers Park occurred?
+How many solicit on public way prostitution crimes were arrested in West Garfield Park?
+How many neighborhoods are there in Near North Side?
+Out of all the incidents of domestic violence reported at the ward represented by alderman Walter Burnett Jr., how many were arrested?
+What is the short description of the crime committed the most by criminals in the least populated community?
+How many domestic violence cases were reported in May 2018?
+How many cases have been arrested among the crimes that happened in the restaurant of Englewood?
+Provide case numbers, aldermen's full names, and district names of the crimes that happened in 0000X N FRANCISCO AVE.
+How many crimes were Misc Non-Index Offense?
+List down the neighborhood areas of Douglas.
+Among the criminal sexual assaults in the district of Adnardo Gutierrez, how many cases happened in the residence?
+How many percent of domestic violence cases were arrested in West Pullman?
+Calculate the percentage of the domestic violence cases handled by Christopher Taliaferro. Among them, list report numbers of cases that happened in the bank.
+How many of the crimes that happened in the street have FBI title "Homicide 1st & 2nd Degree"?
+Who is the alderman in the ward associated with the crime with report number 23769?
+What is the total number of crimes that happened in Bridgeport with beat less than 1000?
+How many domestic violence cases were brought in the ward that uses "ward13@cityofchicago.org"?
+What is the district address associated with the case JB107731?
+Calculate the total beat of the crimes reported in a community area in the central side with population of 50,000 and above.
+What kind of location in Austin reported the most number of crimes?
+Which community area has the highest number of crimes reported on the street?
+Find the ward office's address and phone number of the ward where the most crimes without arrest occurred.
+Give the case number and coordinates of the places where child abduction is reported.
+Find the community area where the least number of domestic crimes happened.
+Among the incidents reported in Harrison, what percentage are disorderly conduct?
+Calculate the difference in the average number of vehicular hijackings and aggravated vehicular hijackings in the districts.
+What is the first name of the aldermen of wards with more than 50,000 inhabitants?
+List crimes that the FBI has classified as Drug Abuse by their report number.
+What is the exact location of the crimes that occurred in the Belmont Cragin community?
+How many domestic crime cases has Commander Ronald A. Pontecore Jr. been responsible for investigating?
+How many crimes described as 'The theft of a motor vehicle' by the FBI have taken place in the Lake View community?
+In which district have there been more intimidation-type crimes?
+What types of domestic crimes have occurred the most in the North Lawndale community?
+What percentage of non-domestic crimes have occurred in the Jefferson Park district?
+Who is the crime against criminal sexual abuse?
+Who is the commanding officer in the district with the highest number of reported crimes where no arrest has been made?
+Between Deering and Near West districts, which district reported the most number of crime incidents that happened in a library?
+How many arrests have been made due to forcible entry burglary that took place in a day care center?
+What is the name of the district with the highest number of domestic violence cases?
+What is the general and specific description of incident 275?
+What are the neighborhoods that are located in the North Center community area?
+Please list any three criminal sexual assault cases against persons where the criminals have been arrested.
+Please name three communities that experience the fraud incident.
+At which district did the multiple homicide case number JB120039 occurred?
+Provide at least 5 ward office addresses associated with the crimes that happened in the community of Montclare.
+List down the district's commander associated with the crime that happened at the yard and has a beat of 532.
+What is the neighborhood name in the community area of Lake View?
+What is the FBI description of the crime for report number 23778?
+Which alderman represents the ward with the most number of crimes in January, 2018? Please give his or her full name.
+Please list the location coordinates of all the incidents that had happened in the ward represented by alderman Pat Dowell.
+Please list the case numbers of all the incidents with the generic description of "BATTERY" in the IUCR classification.
+Please list the blocks where all the incidents in the district commanded by Robert A. Rubio took place.
+Which district is the community area Lincoln Square grouped into?
+How many crimes had happened in Central Chicago?
+More crimes happened in which community area in January, 2018, Woodlawn or Lincoln Square?
+What is the fax number for the district with the most number of crimes in January, 2018?
+Among the crimes in all the districts in Chicago, what is the percentage of them happening in the Central district?
+Give the neighborhood name of West Englewood community.
+Give the FBI code description of case No.JB134191.
+What is the name of the community with the highest population?
+Give the detailed description of all the crimes against society.
+How many vandalisms were arrested in the ward represented by Edward Burke?
+Provide the responsible person and his/her email address of Chicago Lawn.
+How many crimes were handled by Brendan Reilly on 7th October 2018?
+Among the crimes in the Central, calculate the percentage of larceny incidents.
+List the location descriptions and aldermen's full names of the arson by explosive.
+Provide the occurrence date and location of the deceptive practice due to the unlawful use of recorded sound.
+How many aldermen have "James" as their first name?
+List the case numbers of domestic violence crimes reported in Lincoln Square.
+List the case number of crimes against society that happened in June 2018.
+Find the commander's name, email address, and phone number of the Ogden district.
+Among the crimes, what percentage are severe?
+On average, how many community areas are there in a side?
+What is the most reported crime in the Northwest side?
+List all the crimes of the narcotic type that exist.
+What phone number does alderman Emma Mitts have to call if she wants to speak to the commander in charge of the investigation of the crimes that have occurred in her ward?
+In which ward of more than 55,000 inhabitants are there more crimes of intimidation with extortion?
+How many crime against property are there?
+How many districts are there in the police district building with a zip code of 60608?
+How many violation of laws are there where no arrest has been made?
+How many crime against society were reported in Englewood?
+What are the communities that are grouped together on the central side?
+What is the difference between the number of communities that are located on the north and south sides with a population of more than 30,000?
+Please list all of the contact information for the police district Near West.
+Who is responsible for crime cases in district Lincoln?
+What is the percentage of severe cases that are related to sexual assault?
+How many crime cases have been classified as "Weapons Violation" by the FBI?
+What is the general description for case number JB106010?
+Give the FBI code for the crime described by "The killing of one human being by another."
+List down the report number of crimes associated with the district commander named Jill M. Stevens.
+Among the crimes happened in the neighborhood called "Avalon Park", what is the percentage of crimes that happened inside the house?
+What is the full name of the alderman of ward no.21?
+How many incidents have the general description of "ASSAULT" in the IUCR classification?
+Among the crimes with no arrest made, how many of them happened in the ward represented by alderman Pat Dowell?
+How many community areas are there in Central Chicago?
+How many simple assaults happened on 2018/9/8?
+How many arrests were made in 2018 in an animal hospital under FBI code 08B?
+What is the legislative district's office address where 010XX W LAKE ST is located?
+Give the coordinate of the alleys where a crime was reported and an arrest was made.
+What is the average number of reckless homicides that happened in a district?
+In drug abuse crimes, what percentage is related to cannabis?
+What is the average number of less severe crimes reported a day in February of 2018?
+How many weapons violation crimes have occurred in the Calumet district?
+Which commander has had to deal with more cases of criminal sexual abuse?
+What is the percentage of crime cases that have been classified as "drug abuse" by the FBI and happened on the street?
+Who was the alderman of the legislative district where case No. JB103470 took place? Give the full name.
+What is the alderman's full name of the most crowded ward?
+Describe the specific description and case locations under IUCR 142.
+Please list the area name of the communities in the Far north side, which has a population of more than 50000 but less than 70000.
+How many crimes against society happened in the Wentworth district according to the FBI?
+What are the full names of the top 5 most crowded ward aldermen?
+What is the beat and location description of the case JB112212?
+How many incidents are considered "severe" in the IUCR classification?
+Please list the case numbers of all the crimes whose short description of the kind of crime is "Homicide 1st & 2nd Degree" in the FBI classification.

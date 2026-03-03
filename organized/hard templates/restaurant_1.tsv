@@ -1,0 +1,23 @@
+hard_templates
+SELECT ResName FROM Restaurant;
+SELECT col_name FROM table_name WHERE ResName = string ;
+SELECT col_name FROM table_name WHERE ResName = string ;
+SELECT ResTypeName FROM Restaurant_Type;
+SELECT ResTypeDescription FROM table_name WHERE ResTypeName = string ;
+SELECT ResName , col_name FROM table_name ORDER BY col_name DESC LIMIT num ;
+SELECT col_name FROM table_name WHERE Fname = string AND Lname = string ;
+SELECT col_name FROM table_name WHERE Fname = string AND Lname = string ;
+SELECT Fname , Lname FROM table_name WHERE col_name = num ;
+SELECT col_name FROM table_name WHERE Fname = string AND Lname = string ;
+SELECT count(*) FROM table_name WHERE col_name = num ;
+SELECT col_name , count(*) FROM table_name GROUP BY col_name ORDER BY count( col_name ) DESC LIMIT num ;
+SELECT col_name , count(*) FROM table_name GROUP BY col_name ORDER BY count( col_name ) ASC LIMIT num ;
+SELECT col_name , count(*) FROM table_name GROUP BY col_name HAVING count( col_name ) BETWEEN num AND num ;
+SELECT Fname , Lname FROM table_name WHERE col_name > num AND col_name = num ;
+SELECT Fname , Lname FROM table_name WHERE col_name > num AND col_name != num AND col_name = string ;
+SELECT count(*) FROM table_name JOIN table_name ON table_name.col_name = table_name.col_name Restaurant_Type ON table_name.col_namename.col_name BY table_name.col_nameable_name.col_nameng
+SELECT sum( col_name ) FROM table_name JOIN table_name ON table_name.col_name = table_name.col_nameRE table_name.col_name = string AND table_name.col_name = string ;
+SELECT count(*) FROM table_name JOIN table_name ON table_name.col_name = table_name.col_nameN Restaurant ON table_name.col_nameable_name.col_name WHERE table_name.col_name = string AND table_name.col_name = string AND table_name.col_name = string ;
+SELECT col_name FROM table_name JOIN table_name ON table_name.col_name = table_name.col_nameN Restaurant ON table_name.col_nameable_name.col_name WHERE table_name.col_name = string AND table_name.col_name = string AND table_name.col_name = string ;
+SELECT table_name.col_name , sum(table_name.col_nameOM Visits_Restaurant JOIN table_name ON table_name.col_nameable_name.col_name GROUP BY table_name.col_name ORDER BY sum(table_name.col_nameC LIMIT num ;
+SELECT table_name.col_name , table_name.col_name FROM table_name JOIN table_name ON table_name.col_name = table_name.col_nameUP BY table_name.col_name ORDER BY count(*) DESC LIMIT num ;

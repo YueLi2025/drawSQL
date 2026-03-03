@@ -1,0 +1,16 @@
+sql_query
+SELECT count(*) FROM radio
+select transmitter from radio order by erp_kw asc
+SELECT tv_show_name ,  Original_Airdate FROM tv_show
+SELECT Station_name FROM city_channel WHERE Affiliation != "ABC"
+SELECT Transmitter FROM radio WHERE ERP_kW  >  150 OR ERP_kW  <  30
+SELECT Transmitter FROM radio ORDER BY ERP_kW DESC LIMIT 1
+SELECT avg(ERP_kW) FROM radio
+SELECT Affiliation ,  COUNT(*) FROM city_channel GROUP BY Affiliation
+SELECT Affiliation FROM city_channel GROUP BY Affiliation ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Affiliation FROM city_channel GROUP BY Affiliation HAVING COUNT(*)  >  3
+SELECT City ,  Station_name FROM city_channel ORDER BY Station_name ASC
+SELECT T3.Transmitter ,  T2.City FROM city_channel_radio AS T1 JOIN city_channel AS T2 ON T1.City_channel_ID  =  T2.ID JOIN radio AS T3 ON T1.Radio_ID  =  T3.Radio_ID
+SELECT T3.Transmitter ,  T2.Station_name FROM city_channel_radio AS T1 JOIN city_channel AS T2 ON T1.City_channel_ID  =  T2.ID JOIN radio AS T3 ON T1.Radio_ID  =  T3.Radio_ID ORDER BY T3.ERP_kW DESC
+SELECT T2.Transmitter ,  COUNT(*) FROM city_channel_radio AS T1 JOIN radio AS T2 ON T1.Radio_ID  =  T2.Radio_ID GROUP BY T2.Transmitter
+SELECT Transmitter FROM radio WHERE Radio_ID NOT IN (SELECT Radio_ID FROM city_channel_radio)

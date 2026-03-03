@@ -1,0 +1,45 @@
+sql_query
+SELECT count(*) FROM vehicles
+SELECT count(*) FROM vehicles
+SELECT name FROM vehicles ORDER BY model_year DESC
+SELECT name FROM vehicles ORDER BY model_year DESC
+SELECT DISTINCT type_of_powertrain FROM vehicles
+SELECT DISTINCT type_of_powertrain FROM vehicles
+SELECT name ,  type_of_powertrain ,  annual_fuel_cost FROM vehicles WHERE model_year  =  2013 OR model_year  =  2014
+SELECT name ,  type_of_powertrain ,  annual_fuel_cost FROM vehicles WHERE model_year  =  2013 OR model_year  =  2014
+SELECT type_of_powertrain FROM vehicles WHERE model_year  =  2014 INTERSECT SELECT type_of_powertrain FROM vehicles WHERE model_year  =  2013
+SELECT type_of_powertrain FROM vehicles WHERE model_year  =  2014 INTERSECT SELECT type_of_powertrain FROM vehicles WHERE model_year  =  2013
+SELECT type_of_powertrain ,  count(*) FROM vehicles GROUP BY type_of_powertrain
+SELECT type_of_powertrain ,  count(*) FROM vehicles GROUP BY type_of_powertrain
+SELECT type_of_powertrain FROM vehicles GROUP BY type_of_powertrain ORDER BY count(*) DESC LIMIT 1
+SELECT type_of_powertrain FROM vehicles GROUP BY type_of_powertrain ORDER BY count(*) DESC LIMIT 1
+SELECT min(annual_fuel_cost) ,  max(annual_fuel_cost) ,  avg(annual_fuel_cost) FROM vehicles
+SELECT min(annual_fuel_cost) ,  max(annual_fuel_cost) ,  avg(annual_fuel_cost) FROM vehicles
+SELECT name ,  model_year FROM vehicles WHERE city_fuel_economy_rate  <=  highway_fuel_economy_rate
+SELECT name ,  model_year FROM vehicles WHERE city_fuel_economy_rate  <=  highway_fuel_economy_rate
+SELECT type_of_powertrain ,  avg(annual_fuel_cost) FROM vehicles GROUP BY type_of_powertrain HAVING count(*)  >=  2
+SELECT type_of_powertrain ,  avg(annual_fuel_cost) FROM vehicles GROUP BY type_of_powertrain HAVING count(*)  >=  2
+SELECT name ,  age ,  membership_credit FROM customers
+SELECT name ,  age ,  membership_credit FROM customers
+SELECT name ,  age FROM customers ORDER BY membership_credit DESC LIMIT 1
+SELECT name ,  age FROM customers ORDER BY membership_credit DESC LIMIT 1
+SELECT avg(age) FROM customers WHERE membership_credit  >  (SELECT avg(membership_credit) FROM customers)
+SELECT avg(age) FROM customers WHERE membership_credit  >  (SELECT avg(membership_credit) FROM customers)
+SELECT * FROM discount
+SELECT * FROM discount
+SELECT T2.name ,  sum(T1.total_hours) FROM renting_history AS T1 JOIN vehicles AS T2 ON T1.vehicles_id  =  T2.id GROUP BY T2.id
+SELECT T2.name ,  sum(T1.total_hours) FROM renting_history AS T1 JOIN vehicles AS T2 ON T1.vehicles_id  =  T2.id GROUP BY T2.id
+SELECT name FROM vehicles WHERE id NOT IN (SELECT vehicles_id FROM renting_history)
+SELECT name FROM vehicles WHERE id NOT IN (SELECT vehicles_id FROM renting_history)
+SELECT T2.name FROM renting_history AS T1 JOIN customers AS T2 ON T1.customer_id  =  T2.id GROUP BY T2.id HAVING count(*)  >=  2
+SELECT T2.name FROM renting_history AS T1 JOIN customers AS T2 ON T1.customer_id  =  T2.id GROUP BY T2.id HAVING count(*)  >=  2
+SELECT T2.name ,  T2.model_year FROM renting_history AS T1 JOIN vehicles AS T2 ON T1.vehicles_id  =  T2.id GROUP BY T2.id ORDER BY count(*) DESC LIMIT 1
+SELECT T2.name ,  T2.model_year FROM renting_history AS T1 JOIN vehicles AS T2 ON T1.vehicles_id  =  T2.id GROUP BY T2.id ORDER BY count(*) DESC LIMIT 1
+SELECT T2.name FROM renting_history AS T1 JOIN vehicles AS T2 ON T1.vehicles_id  =  T2.id GROUP BY T2.id ORDER BY sum(T1.total_hours) DESC
+SELECT T2.name FROM renting_history AS T1 JOIN vehicles AS T2 ON T1.vehicles_id  =  T2.id GROUP BY T2.id ORDER BY sum(T1.total_hours) DESC
+SELECT T2.name FROM renting_history AS T1 JOIN discount AS T2 ON T1.discount_id  =  T2.id GROUP BY T2.id ORDER BY count(*) DESC LIMIT 1
+SELECT T2.name FROM renting_history AS T1 JOIN discount AS T2 ON T1.discount_id  =  T2.id GROUP BY T2.id ORDER BY count(*) DESC LIMIT 1
+SELECT T2.name ,  T2.Type_of_powertrain FROM renting_history AS T1 JOIN vehicles AS T2 ON T1.vehicles_id  =  T2.id GROUP BY T1.vehicles_id HAVING sum(T1.total_hours)  >  30
+SELECT T2.name ,  T2.Type_of_powertrain FROM renting_history AS T1 JOIN vehicles AS T2 ON T1.vehicles_id  =  T2.id GROUP BY T1.vehicles_id HAVING sum(T1.total_hours)  >  30
+SELECT avg(City_fuel_economy_rate) ,  avg(Highway_fuel_economy_rate) , Type_of_powertrain FROM vehicles GROUP BY Type_of_powertrain
+SELECT avg(City_fuel_economy_rate) ,  avg(Highway_fuel_economy_rate) , Type_of_powertrain FROM vehicles GROUP BY Type_of_powertrain

@@ -1,0 +1,69 @@
+nl_question
+How many counties are there in total?
+Count the total number of counties.
+Show the county name and population of all counties.
+What are the name and population of each county?
+Show the average population of all counties.
+On average how large is the population of the counties?
+Return the maximum and minimum population among all counties.
+What are the maximum and minimum population of the counties?
+Show all the distinct districts for elections.
+What are the distinct districts for elections?
+Show the zip code of the county with name "Howard".
+What is the zip code the county named "Howard" is located in?
+Show the delegate from district 1 in election.
+Who is the delegate of district 1 in the elections?
+Show the delegate and committee information of elections.
+What are the delegate and committee information for each election record?
+How many distinct governors are there?
+Count the number of distinct governors.
+Show the lieutenant governor and comptroller from the democratic party.
+Who are the lieutenant governor and comptroller from the democratic party?
+In which distinct years was the governor "Eliot Spitzer"?
+Find the distinct years when the governor was named "Eliot Spitzer".
+Show all the information about election.
+Return all the information for each election record.
+Show the delegates and the names of county they belong to.
+What are the delegate and name of the county they belong to, for each county?
+Which delegates are from counties with population smaller than 100000?
+Find the delegates who are from counties with population below 100000.
+How many distinct delegates are from counties with population larger than 50000?
+Count the number of distinct delegates who are from counties with population above 50000.
+What are the names of the county that the delegates on "Appropriations" committee belong to?
+Which county do the delegates on "Appropriations" committee belong to? Give me the county names.
+Show the delegates and the names of the party they belong to.
+For each delegate, find the names of the party they are part of.
+Who were the governors of the parties associated with delegates from district 1?
+Find the parties associated with the delegates from district 1. Who served as governors of the parties?
+Who were the comptrollers of the parties associated with the delegates from district 1 or district 2?
+Find the parties associated with the delegates from district 1 or 2. Who served as comptrollers of the parties?
+Return all the committees that have delegates from Democratic party.
+Which committees have delegates from the Democratic party?
+Show the name of each county along with the corresponding number of delegates from that county.
+For each county, find the name of the county and the number of delegates from that county.
+Show the name of each party and the corresponding number of delegates from that party.
+For each party, return the name of the party and the number of delegates from that party.
+Return the names of all counties sorted by population in ascending order.
+Sort the names of all counties in ascending order of population.
+Return the names of all counties sorted by county name in descending alphabetical order.
+Sort the names of all counties in descending alphabetical order.
+Show the name of the county with the biggest population.
+Which county has the largest population? Give me the name of the county.
+Show the 3 counties with the smallest population.
+What are the 3 counties that have the smallest population? Give me the county names.
+Show the names of counties that have at least two delegates.
+Which counties have two or more delegates? Give me the county names.
+Show the name of the party that has at least two records.
+Which party has two or more records?
+Show the name of the party that has the most delegates.
+Which party has the largest number of delegates?
+Show the people that have been governor the most times.
+Which people severed as governor most frequently?
+Show the people that have been comptroller the most times and the corresponding number of times.
+Which people severed as comptroller most frequently? Give me the name of the person and the frequency count.
+What are the names of parties that do not have delegates in election?
+Which parties did not have any delegates in elections?
+What are the names of parties that have both delegates on "Appropriations" committee and
+Which parties have delegates in both the "Appropriations" committee and the "Economic Matters" committee?
+Which committees have delegates from both democratic party and liberal party?
+Find the committees that have delegates both from from the democratic party and the liberal party.

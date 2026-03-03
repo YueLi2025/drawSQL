@@ -1,0 +1,10 @@
+table_name,column_name,column_type
+Manufacturers,Code,num
+Manufacturers,Name,string
+Manufacturers,Headquarter,string
+Manufacturers,Founder,string
+Manufacturers,Revenue,num
+Products,Code,num
+Products,Name,string
+Products,Price,others
+Products,Manufacturer,num

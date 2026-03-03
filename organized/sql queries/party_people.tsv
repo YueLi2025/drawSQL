@@ -1,0 +1,45 @@
+sql_query
+SELECT count(*) FROM region
+SELECT count(*) FROM region
+SELECT DISTINCT region_name FROM region ORDER BY Label
+SELECT DISTINCT region_name FROM region ORDER BY Label
+SELECT count(DISTINCT party_name) FROM party
+SELECT count(DISTINCT party_name) FROM party
+SELECT minister ,  took_office ,  left_office FROM party ORDER BY left_office
+SELECT minister ,  took_office ,  left_office FROM party ORDER BY left_office
+SELECT minister FROM party WHERE took_office  >  1961 OR took_office  <  1959
+SELECT minister FROM party WHERE took_office  >  1961 OR took_office  <  1959
+SELECT minister FROM party WHERE party_name != 'Progress Party'
+SELECT minister FROM party WHERE party_name != 'Progress Party'
+SELECT minister ,  party_name FROM party ORDER BY took_office DESC
+SELECT minister ,  party_name FROM party ORDER BY took_office DESC
+SELECT minister FROM party ORDER BY left_office DESC LIMIT 1
+SELECT minister FROM party ORDER BY left_office DESC LIMIT 1
+SELECT T1.member_name ,  T2.party_name FROM Member AS T1 JOIN party AS T2 ON T1.party_id  =  T2.party_id
+SELECT T1.member_name ,  T2.party_name FROM Member AS T1 JOIN party AS T2 ON T1.party_id  =  T2.party_id
+SELECT T2.party_name ,  count(*) FROM Member AS T1 JOIN party AS T2 ON T1.party_id  =  T2.party_id GROUP BY T1.party_id
+SELECT T2.party_name ,  count(*) FROM Member AS T1 JOIN party AS T2 ON T1.party_id  =  T2.party_id GROUP BY T1.party_id
+SELECT T2.party_name FROM Member AS T1 JOIN party AS T2 ON T1.party_id  =  T2.party_id GROUP BY T1.party_id ORDER BY count(*) DESC LIMIT 1
+SELECT T2.party_name FROM Member AS T1 JOIN party AS T2 ON T1.party_id  =  T2.party_id GROUP BY T1.party_id ORDER BY count(*) DESC LIMIT 1
+SELECT T1.party_name ,  T2.region_name FROM party AS T1 JOIN region AS T2 ON T1.region_id  =  T2.region_id
+SELECT T1.party_name ,  T2.region_name FROM party AS T1 JOIN region AS T2 ON T1.region_id  =  T2.region_id
+SELECT party_name FROM party WHERE party_id NOT IN (SELECT party_id FROM Member)
+SELECT party_name FROM party WHERE party_id NOT IN (SELECT party_id FROM Member)
+SELECT member_name FROM member WHERE party_id  =  3 INTERSECT SELECT member_name FROM member WHERE party_id  =  1
+SELECT member_name FROM member WHERE party_id  =  3 INTERSECT SELECT member_name FROM member WHERE party_id  =  1
+SELECT T1.member_name FROM Member AS T1 JOIN party AS T2 ON T1.party_id  =  T2.party_id WHERE T2.Party_name != "Progress Party"
+SELECT T1.member_name FROM Member AS T1 JOIN party AS T2 ON T1.party_id  =  T2.party_id WHERE T2.Party_name != "Progress Party"
+SELECT count(*) FROM party_events
+SELECT count(*) FROM party_events
+SELECT T2.party_name ,  count(*) FROM party_events AS T1 JOIN party AS T2 ON T1.party_id  =  T2.party_id GROUP BY T1.party_id
+SELECT T2.party_name ,  count(*) FROM party_events AS T1 JOIN party AS T2 ON T1.party_id  =  T2.party_id GROUP BY T1.party_id
+SELECT member_name FROM member EXCEPT SELECT T1.member_name FROM member AS T1 JOIN party_events AS T2 ON T1.member_id  =  T2.member_in_charge_id
+SELECT member_name FROM member EXCEPT SELECT T1.member_name FROM member AS T1 JOIN party_events AS T2 ON T1.member_id  =  T2.member_in_charge_id
+SELECT T2.party_name FROM party_events AS T1 JOIN party AS T2 ON T1.party_id  =  T2.party_id GROUP BY T1.party_id HAVING count(*)  >=  2
+SELECT T2.party_name FROM party_events AS T1 JOIN party AS T2 ON T1.party_id  =  T2.party_id GROUP BY T1.party_id HAVING count(*)  >=  2
+SELECT T1.member_name FROM member AS T1 JOIN party_events AS T2 ON T1.member_id  =  T2.member_in_charge_id GROUP BY T2.member_in_charge_id ORDER BY count(*) DESC LIMIT 1
+SELECT T1.member_name FROM member AS T1 JOIN party_events AS T2 ON T1.member_id  =  T2.member_in_charge_id GROUP BY T2.member_in_charge_id ORDER BY count(*) DESC LIMIT 1
+SELECT event_name FROM party_events GROUP BY event_name HAVING count(*)  >  2
+SELECT event_name FROM party_events GROUP BY event_name HAVING count(*)  >  2
+SELECT count(*) FROM region AS t1 JOIN party AS t2 ON t1.region_id  =  t2.region_id JOIN party_events AS t3 ON t2.party_id  =  t3.party_id WHERE t1.region_name  =  "United Kingdom" AND t3.Event_Name  =  "Annaual Meeting"
+SELECT count(*) FROM region AS t1 JOIN party AS t2 ON t1.region_id  =  t2.region_id JOIN party_events AS t3 ON t2.party_id  =  t3.party_id WHERE t1.region_name  =  "United Kingdom" AND t3.Event_Name  =  "Annaual Meeting"

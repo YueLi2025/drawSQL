@@ -1,0 +1,12 @@
+table_name,column_name,column_type
+people,People_ID,num
+people,Nationality,string
+people,Name,string
+people,Birth_Date,string
+people,Height,num
+poker_player,Poker_Player_ID,num
+poker_player,People_ID,num
+poker_player,Final_Table_Made,num
+poker_player,Best_Finish,num
+poker_player,Money_Rank,num
+poker_player,Earnings,num

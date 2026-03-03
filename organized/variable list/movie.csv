@@ -1,0 +1,28 @@
+table_name,column_name,column_type
+actor,ActorID,num
+actor,Biography,string
+actor,Birth City,string
+actor,Birth Country,string
+actor,Date of Birth,date
+actor,Ethnicity,string
+actor,Gender,boolean
+actor,Height (Inches),num
+actor,Name,string
+actor,NetWorth,string
+characters,ActorID,num
+characters,Character Name,string
+characters,MovieID,num
+characters,creditOrder,string
+characters,pay,num
+characters,screentime,string
+movie,Budget,num
+movie,Genre,string
+movie,Gross,num
+movie,MPAA Rating,string
+movie,MovieID,num
+movie,Rating,num
+movie,Rating Count,num
+movie,Release Date,date
+movie,Runtime,num
+movie,Summary,string
+movie,Title,string

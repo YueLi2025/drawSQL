@@ -1,0 +1,81 @@
+sql_query
+SELECT founder FROM manufacturers WHERE name  =  'Sony'
+SELECT founder FROM manufacturers WHERE name  =  'Sony'
+SELECT headquarter FROM manufacturers WHERE founder  =  'James'
+SELECT headquarter FROM manufacturers WHERE founder  =  'James'
+SELECT name ,  headquarter FROM manufacturers ORDER BY revenue DESC
+SELECT name ,  headquarter FROM manufacturers ORDER BY revenue DESC
+SELECT avg(revenue) ,  max(revenue) ,  sum(revenue) FROM manufacturers
+SELECT avg(revenue) ,  max(revenue) ,  sum(revenue) FROM manufacturers
+SELECT count(*) FROM manufacturers WHERE founder  =  'Andy'
+SELECT count(*) FROM manufacturers WHERE founder  =  'Andy'
+SELECT sum(revenue) FROM manufacturers WHERE headquarter  =  'Austin'
+SELECT sum(revenue) FROM manufacturers WHERE headquarter  =  'Austin'
+SELECT DISTINCT headquarter FROM manufacturers
+SELECT DISTINCT headquarter FROM manufacturers
+SELECT count(*) FROM manufacturers WHERE headquarter  =  'Tokyo' OR headquarter  =  'Beijing'
+SELECT count(*) FROM manufacturers WHERE headquarter  =  'Tokyo' OR headquarter  =  'Beijing'
+SELECT founder FROM manufacturers WHERE name LIKE 'S%'
+SELECT founder FROM manufacturers WHERE name LIKE 'S%'
+SELECT name FROM manufacturers WHERE revenue BETWEEN 100 AND 150
+SELECT name FROM manufacturers WHERE revenue BETWEEN 100 AND 150
+SELECT sum(revenue) FROM manufacturers WHERE Headquarter  =  'Tokyo' OR Headquarter  =  'Taiwan'
+SELECT sum(revenue) FROM manufacturers WHERE Headquarter  =  'Tokyo' OR Headquarter  =  'Taiwan'
+SELECT T1.name FROM products AS T1 JOIN manufacturers AS T2 ON T1.Manufacturer  =  T2.code WHERE T2.name  =  'Creative Labs' INTERSECT SELECT T1.name FROM products AS T1 JOIN manufacturers AS T2 ON T1.Manufacturer  =  T2.code WHERE T2.name  =  'Sony'
+SELECT T1.name FROM products AS T1 JOIN manufacturers AS T2 ON T1.Manufacturer  =  T2.code WHERE T2.name  =  'Creative Labs' INTERSECT SELECT T1.name FROM products AS T1 JOIN manufacturers AS T2 ON T1.Manufacturer  =  T2.code WHERE T2.name  =  'Sony'
+SELECT name ,  headquarter ,  founder FROM manufacturers ORDER BY revenue DESC LIMIT 1
+SELECT name ,  headquarter ,  founder FROM manufacturers ORDER BY revenue DESC LIMIT 1
+SELECT name ,  headquarter ,  revenue FROM manufacturers ORDER BY revenue DESC
+SELECT name ,  headquarter ,  revenue FROM manufacturers ORDER BY revenue DESC
+SELECT name FROM manufacturers WHERE revenue  >  (SELECT avg(revenue) FROM manufacturers)
+SELECT name FROM manufacturers WHERE revenue  >  (SELECT avg(revenue) FROM manufacturers)
+SELECT name FROM manufacturers WHERE revenue  <  (SELECT min(revenue) FROM manufacturers WHERE headquarter  =  'Austin')
+SELECT name FROM manufacturers WHERE revenue  <  (SELECT min(revenue) FROM manufacturers WHERE headquarter  =  'Austin')
+SELECT sum(revenue) FROM manufacturers WHERE revenue  >  (SELECT min(revenue) FROM manufacturers WHERE headquarter  =  'Austin')
+SELECT sum(revenue) FROM manufacturers WHERE revenue  >  (SELECT min(revenue) FROM manufacturers WHERE headquarter  =  'Austin')
+SELECT sum(revenue) ,  founder FROM manufacturers GROUP BY founder
+SELECT sum(revenue) ,  founder FROM manufacturers GROUP BY founder
+SELECT name ,  max(revenue) ,  Headquarter FROM manufacturers GROUP BY Headquarter
+SELECT name ,  max(revenue) ,  Headquarter FROM manufacturers GROUP BY Headquarter
+SELECT sum(revenue) ,  name FROM manufacturers GROUP BY name
+SELECT sum(revenue) ,  name FROM manufacturers GROUP BY name
+SELECT avg(T1.price) ,  T2.name FROM products AS T1 JOIN manufacturers AS T2 ON T1.Manufacturer  =  T2.code GROUP BY T2.name
+SELECT avg(T1.price) ,  T2.name FROM products AS T1 JOIN manufacturers AS T2 ON T1.Manufacturer  =  T2.code GROUP BY T2.name
+SELECT count(DISTINCT T1.name) ,  T2.Headquarter FROM products AS T1 JOIN manufacturers AS T2 ON T1.Manufacturer  =  T2.code GROUP BY T2.Headquarter
+SELECT count(DISTINCT T1.name) ,  T2.Headquarter FROM products AS T1 JOIN manufacturers AS T2 ON T1.Manufacturer  =  T2.code GROUP BY T2.Headquarter
+SELECT count(DISTINCT name) FROM products WHERE name NOT IN (SELECT T1.name FROM products AS T1 JOIN manufacturers AS T2 ON T1.Manufacturer  =  T2.code WHERE T2.name  =  'Sony')
+SELECT count(DISTINCT name) FROM products WHERE name NOT IN (SELECT T1.name FROM products AS T1 JOIN manufacturers AS T2 ON T1.Manufacturer  =  T2.code WHERE T2.name  =  'Sony')
+SELECT name FROM manufacturers EXCEPT SELECT T2.name FROM products AS T1 JOIN manufacturers AS T2 ON T1.Manufacturer  =  T2.code WHERE T1.name  =  'DVD drive'
+SELECT name FROM manufacturers EXCEPT SELECT T2.name FROM products AS T1 JOIN manufacturers AS T2 ON T1.Manufacturer  =  T2.code WHERE T1.name  =  'DVD drive'
+SELECT count(*) ,  T2.name FROM products AS T1 JOIN manufacturers AS T2 ON T1.Manufacturer  =  T2.code GROUP BY T2.name
+SELECT count(*) ,  T2.name FROM products AS T1 JOIN manufacturers AS T2 ON T1.Manufacturer  =  T2.code GROUP BY T2.name
+SELECT Name FROM Products
+SELECT Name FROM Products
+SELECT name ,  price FROM products
+SELECT name ,  price FROM products
+SELECT name FROM products WHERE price  <=  200
+SELECT name FROM products WHERE price  <=  200
+SELECT * FROM products WHERE price BETWEEN 60 AND 120
+SELECT * FROM products WHERE price BETWEEN 60 AND 120
+SELECT avg(price) FROM products
+SELECT avg(price) FROM products
+SELECT avg(price) FROM products WHERE Manufacturer  =  2
+SELECT avg(price) FROM products WHERE Manufacturer  =  2
+SELECT count(*) FROM products WHERE price >= 180
+SELECT count(*) FROM products WHERE price >= 180
+SELECT name ,  price FROM products WHERE price  >=  180 ORDER BY price DESC ,  name ASC
+SELECT name ,  price FROM products WHERE price  >=  180 ORDER BY price DESC ,  name ASC
+SELECT * FROM products AS T1 JOIN Manufacturers AS T2 ON T1.manufacturer  =  T2.code
+SELECT * FROM products AS T1 JOIN Manufacturers AS T2 ON T1.manufacturer  =  T2.code
+SELECT AVG(Price) ,  Manufacturer FROM Products GROUP BY Manufacturer
+SELECT AVG(Price) ,  Manufacturer FROM Products GROUP BY Manufacturer
+SELECT avg(T1.Price) ,  T2.name FROM products AS T1 JOIN Manufacturers AS T2 ON T1.manufacturer  =  T2.code GROUP BY T2.name
+SELECT avg(T1.Price) ,  T2.name FROM products AS T1 JOIN Manufacturers AS T2 ON T1.manufacturer  =  T2.code GROUP BY T2.name
+SELECT avg(T1.Price) ,  T2.name FROM products AS T1 JOIN Manufacturers AS T2 ON T1.manufacturer  =  T2.code GROUP BY T2.name HAVING avg(T1.price) >= 150
+SELECT avg(T1.Price) ,  T2.name FROM products AS T1 JOIN Manufacturers AS T2 ON T1.manufacturer  =  T2.code GROUP BY T2.name HAVING avg(T1.price) >= 150
+SELECT name ,  price FROM Products ORDER BY price ASC LIMIT 1
+SELECT name ,  price FROM Products ORDER BY price ASC LIMIT 1
+SELECT T1.Name ,  max(T1.Price) ,  T2.name FROM products AS T1 JOIN Manufacturers AS T2 ON T1.manufacturer  =  T2.code GROUP BY T2.name
+SELECT T1.Name ,  max(T1.Price) ,  T2.name FROM products AS T1 JOIN Manufacturers AS T2 ON T1.manufacturer  =  T2.code GROUP BY T2.name
+SELECT code ,  name ,  min(price) FROM products GROUP BY name
+SELECT code ,  name ,  min(price) FROM products GROUP BY name

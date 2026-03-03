@@ -1,0 +1,53 @@
+sql_query
+SELECT count(*) FROM club
+SELECT count(*) FROM club
+SELECT DISTINCT Region FROM club ORDER BY Region ASC
+SELECT DISTINCT Region FROM club ORDER BY Region ASC
+SELECT avg(Gold) FROM club_rank
+SELECT avg(Gold) FROM club_rank
+SELECT Competition_type ,  Country FROM competition
+SELECT Competition_type ,  Country FROM competition
+SELECT DISTINCT YEAR FROM competition WHERE Competition_type != "Tournament"
+SELECT DISTINCT YEAR FROM competition WHERE Competition_type != "Tournament"
+SELECT max(Silver) ,  min(Silver) FROM club_rank
+SELECT max(Silver) ,  min(Silver) FROM club_rank
+SELECT count(*) FROM club_rank WHERE Total  <  10
+SELECT count(*) FROM club_rank WHERE Total  <  10
+SELECT name FROM club ORDER BY Start_year ASC
+SELECT name FROM club ORDER BY Start_year ASC
+SELECT name FROM club ORDER BY name DESC
+SELECT name FROM club ORDER BY name DESC
+SELECT T1.name ,  T2.Player_id FROM club AS T1 JOIN player AS T2 ON T1.Club_ID  =  T2.Club_ID
+SELECT T1.name ,  T2.Player_id FROM club AS T1 JOIN player AS T2 ON T1.Club_ID  =  T2.Club_ID
+SELECT T1.name FROM club AS T1 JOIN player AS T2 ON T1.Club_ID  =  T2.Club_ID WHERE T2.Position  =  "Right Wing"
+SELECT T1.name FROM club AS T1 JOIN player AS T2 ON T1.Club_ID  =  T2.Club_ID WHERE T2.Position  =  "Right Wing"
+SELECT avg(T2.Points) FROM club AS T1 JOIN player AS T2 ON T1.Club_ID  =  T2.Club_ID WHERE T1.name  =  "AIB"
+SELECT avg(T2.Points) FROM club AS T1 JOIN player AS T2 ON T1.Club_ID  =  T2.Club_ID WHERE T1.name  =  "AIB"
+SELECT POSITION ,  avg(Points) FROM player GROUP BY POSITION
+SELECT POSITION ,  avg(Points) FROM player GROUP BY POSITION
+SELECT POSITION FROM player GROUP BY name HAVING avg(Points)  >=  20
+SELECT POSITION FROM player GROUP BY name HAVING avg(Points)  >=  20
+SELECT Competition_type ,  COUNT(*) FROM competition GROUP BY Competition_type
+SELECT Competition_type ,  COUNT(*) FROM competition GROUP BY Competition_type
+SELECT Competition_type FROM competition GROUP BY Competition_type ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Competition_type FROM competition GROUP BY Competition_type ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Competition_type FROM competition GROUP BY Competition_type HAVING COUNT(*)  <=  5
+SELECT Competition_type FROM competition GROUP BY Competition_type HAVING COUNT(*)  <=  5
+SELECT name FROM CLub WHERE Club_ID NOT IN (SELECT Club_ID FROM player)
+SELECT name FROM CLub WHERE Club_ID NOT IN (SELECT Club_ID FROM player)
+SELECT POSITION FROM player WHERE Points  >  20 INTERSECT SELECT POSITION FROM player WHERE Points  <  10
+SELECT POSITION FROM player WHERE Points  >  20 INTERSECT SELECT POSITION FROM player WHERE Points  <  10
+SELECT sum(Points) FROM player
+SELECT sum(Points) FROM player
+SELECT count(DISTINCT POSITION) FROM player
+SELECT count(DISTINCT POSITION) FROM player
+SELECT name FROM player WHERE points  >  (SELECT avg(points) FROM player)
+SELECT name FROM player WHERE points  >  (SELECT avg(points) FROM player)
+SELECT count(*) ,  POSITION FROM player WHERE points  <  30 GROUP BY POSITION
+SELECT count(*) ,  POSITION FROM player WHERE points  <  30 GROUP BY POSITION
+SELECT country FROM competition WHERE competition_type  =  'Tournament' GROUP BY country ORDER BY count(*) DESC LIMIT 1
+SELECT country FROM competition WHERE competition_type  =  'Tournament' GROUP BY country ORDER BY count(*) DESC LIMIT 1
+SELECT country FROM competition WHERE competition_type  =  'Friendly' INTERSECT SELECT country FROM competition WHERE competition_type  =  'Tournament'
+SELECT country FROM competition WHERE competition_type  =  'Friendly' INTERSECT SELECT country FROM competition WHERE competition_type  =  'Tournament'
+SELECT country FROM competition EXCEPT SELECT country FROM competition WHERE competition_type  =  'Friendly'
+SELECT country FROM competition EXCEPT SELECT country FROM competition WHERE competition_type  =  'Friendly'

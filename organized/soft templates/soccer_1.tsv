@@ -1,0 +1,15 @@
+soft_templates
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT avg( variable ) FROM variable
+SELECT max( variable ) , min( variable ) FROM variable
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable > ( SELECT avg( variable ) FROM variable )
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = ( SELECT max( variable ) FROM variable)
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable > num AND variable = string
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable >= num AND variable <= num
+SELECT variable , avg( variable ) FROM variable GROUP BY variable
+SELECT variable , count(*) FROM variable WHERE variable > num GROUP BY variable
+SELECT variable FROM variable WHERE variable >= num INTERSECT SELECT variable FROM variable WHERE variable > num
+SELECT variable FROM variable WHERE variable >= num AND variable <= num INTERSECT SELECT variable FROM variable WHERE variable = string
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable ORDER BY variable DESC LIMIT num
+SELECT DISTINCT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable ORDER BY variable DESC LIMIT num

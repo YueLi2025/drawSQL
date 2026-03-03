@@ -1,0 +1,16 @@
+nl_question
+How many members are there?
+List the names of members in ascending alphabetical order.
+What are the names and countries of members?
+Show the names of members whose country is "United States" or "Canada".
+Show the different countries and the number of members from each.
+Show the most common country across members.
+Which countries have more than two members?
+Show the leader names and locations of colleges.
+Show the names of members and names of colleges they go to.
+Show the names of members and the locations of colleges they go to in ascending alphabetical order of member names.
+Show the distinct leader names of colleges associated with members from country "Canada".
+Show the names of members and the decoration themes they have.
+Show the names of members that have a rank in round higher than 3.
+Show the names of members in ascending order of their rank in rounds.
+List the names of members who did not participate in any round.

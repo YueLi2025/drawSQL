@@ -1,0 +1,45 @@
+nl_question
+How many races are there?
+Count the number of races.
+List the winning drivers and winning teams of races in ascending alphabetical order of winning team.
+What are the winning drivers and teams of races, ordered alphabetically by team?
+Which winning drivers of races had pole position that is not "Junior Strous"?
+Return the winning drivers of races who did not have the pole position of Junior Strous.
+Who are the constructors of drivers sorted by drivers' age in ascending order?
+Return the different constructors of drivers, ordered by age ascending.
+What are the distinct entrant types of drivers aged 20 or older?
+Give the different entrant types for drivers at least 20 years old.
+What are the maximum and minimum age of driver?
+Return the maximum and minimum age across drivers.
+How many different engines are used by drivers with age older than 30 or younger than 20?
+Count the number of different engines used by drivers who had an age either over 30 or under 20.
+List all names of drivers in descending alphabetical order.
+What are the names of drivers, ordered descending alphabetically?
+Please show the names of drivers and the names of races they participate in.
+What are the names of drivers and the names of the races they took part in?
+Please show the names of drivers and the number of races they participate in.
+How many races did each driver participate in?
+Please show the age of the driver who participated in the most number of races.
+What is the age of the driver who raced in the most races?
+Please show the names and ages of the drivers who participated in at least two races.
+What are the names and ages of drivers who raced in two or more races?
+Please list the names of races with drivers aged 26 or older participating.
+What are the names of races in which drivers 26 or older took part?
+List the names of drivers whose constructor is not "Bugatti".
+What are the names od drivers who did not have the constructor Bugatti?
+List different constructors and the number of drivers that use each constructor.
+How many drivers use each constructor?
+List the most common type of engine used by drivers.
+What is the most common type of engine?
+List the types of engines that are used by at least two drivers.
+What are the engine types that are used by two or more drivers?
+List the names of drivers that do not participate in any race.
+What are names of drivers who did not take part in a race?
+Show the constructors that are used both by drivers with age lower than 20 and drivers with age over than 30.
+What are the constructors who are used by both drivers who are younger than 20 and drivers older than 30?
+Find the teams that won more than once.
+Which teams won more than 1 race?
+Find the names of drivers who were in both "James Hinchcliffe" and "Carl Skerlong" pole positions before.
+What are the names of drivers who had both the pole position James Hinchcliffe and the pole position Carl Skerlong?
+find the name of drivers who were never in "James Hinchcliffe" pole position before.
+What are the names of drivers except for those who had the pole position James Hinchcliffe?

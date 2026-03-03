@@ -1,0 +1,41 @@
+soft_templates
+SELECT count(*) FROM variable
+SELECT count(*) FROM variable
+SELECT variable FROM variable ORDER BY variable DESC
+SELECT variable FROM variable ORDER BY variable DESC
+SELECT DISTINCT variable FROM variable WHERE variable != string
+SELECT DISTINCT variable FROM variable WHERE variable != string
+SELECT min( variable ) , max( variable ) FROM variable
+SELECT min( variable ) , max( variable ) FROM variable
+SELECT variable FROM variable ORDER BY variable ASC
+SELECT variable FROM variable ORDER BY variable ASC
+SELECT variable FROM variable ORDER BY variable ASC
+SELECT variable FROM variable ORDER BY variable ASC
+SELECT variable FROM variable WHERE variable > num
+SELECT variable FROM variable WHERE variable > num
+SELECT variable FROM variable ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable ORDER BY variable DESC LIMIT num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT variable FROM variable WHERE variable = (SELECT variable FROM variable ORDER BY variable DESC LIMIT num )
+SELECT variable FROM variable WHERE variable = (SELECT variable FROM variable ORDER BY variable DESC LIMIT num )
+SELECT count(*) FROM variable WHERE variable IN (SELECT variable FROM variable WHERE variable > num )
+SELECT count(*) FROM variable WHERE variable IN (SELECT variable FROM variable WHERE variable > num )
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable > num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable > num
+SELECT variable , COUNT(*) FROM variable GROUP BY variable
+SELECT variable , COUNT(*) FROM variable GROUP BY variable
+SELECT variable FROM variable GROUP BY variable ORDER BY COUNT(*) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY COUNT(*) DESC LIMIT num
+SELECT variable FROM variable WHERE variable NOT IN (SELECT variable FROM variable)
+SELECT variable FROM variable WHERE variable NOT IN (SELECT variable FROM variable)
+SELECT variable FROM variable WHERE variable = string INTERSECT SELECT variable FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable = string INTERSECT SELECT variable FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable IN (SELECT variable FROM variable WHERE variable < num )
+SELECT variable FROM variable WHERE variable IN (SELECT variable FROM variable WHERE variable < num )
+SELECT variable FROM variable ORDER BY variable DESC
+SELECT variable FROM variable ORDER BY variable DESC

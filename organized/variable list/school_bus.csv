@@ -1,0 +1,15 @@
+table_name,column_name,column_type
+driver,Driver_ID,num
+driver,Name,string
+driver,Party,string
+driver,Home_city,string
+driver,Age,num
+school,School_ID,num
+school,Grade,string
+school,School,string
+school,Location,string
+school,Type,string
+school_bus,School_ID,num
+school_bus,Driver_ID,num
+school_bus,Years_Working,num
+school_bus,If_full_time,boolean

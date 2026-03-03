@@ -1,0 +1,6 @@
+nl_question
+Which distinct state makes beer that has the least amount of bitterness?
+Where in New York can you locate the brewery that makes the bitterest beer? List both the brewery's name and the name of the city.
+What is the average alcohol content per 12-ounce beer bottle produced by Boston Beer Company?
+Of all the beer styles produced by Stevens Point Brewery, how many percent do they allot for American Adjunct Lager?
+When compared to the total number of breweries in the US producing American Blonde Ale, how many in the state of Wisconsin produces American Blonde Ale? Indicate your answer in percentage (%).

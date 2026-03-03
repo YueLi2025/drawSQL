@@ -1,0 +1,39 @@
+nl_question
+How many employees are there?
+Count the number of employees
+Sort employee names by their age in ascending order.
+List the names of employees and sort in ascending order of age.
+What is the number of employees from each city?
+Count the number of employees for each city.
+Which cities do more than one employee under age 30 come from?
+Find the cities that have more than one employee under age 30.
+Find the number of shops in each location.
+How many shops are there in each location?
+Find the manager name and district of the shop whose number of products is the largest.
+What are the manager name and district of the shop that sells the largest number of products?
+find the minimum and maximum number of products of all stores.
+What are the minimum and maximum number of products across all the shops?
+Return the name, location and district of all shops in descending order of number of products.
+Sort all the shops by number products in descending order, and return the name, location and district of each shop.
+Find the names of stores whose number products is more than the average number of products.
+Which shops' number products is above the average? Give me the shop names.
+find the name of employee who was awarded the most times in the evaluation.
+Which employee received the most awards in evaluations? Give me the employee name.
+Find the name of the employee who got the highest one time bonus.
+Which employee received the biggest bonus? Give me the employee name.
+Find the names of employees who never won any award in the evaluation.
+What are the names of the employees who never received any evaluation?
+What is the name of the shop that is hiring the largest number of employees?
+Which shop has the most employees? Give me the shop name.
+Find the name of the shops that do not hire any employee.
+Which shops run with no employees? Find the shop names
+Find the number of employees hired in each shop; show the shop name as well.
+For each shop, return the number of employees working there and the name of the shop.
+What is total bonus given in all evaluations?
+Find the total amount of bonus given in all the evaluations.
+Give me all the information about hiring.
+What is all the information about hiring?
+Which district has both stores with less than 3000 products and stores with more than 10000 products?
+Find the districts in which there are both shops selling less than 3000 products and shops selling more than 10000 products.
+How many different store locations are there?
+Count the number of distinct store locations.

@@ -1,0 +1,16 @@
+nl_question
+what are the event details of the services that have the type code 'Marriage'?
+What are the ids and details of events that have more than one participants?
+How many events have each participants attended? List the participant id, type and the number.
+What are all the the participant ids, type code and details?
+How many participants belong to the type 'Organizer'?
+List the type of the services in alphabetical order.
+List the service id and details for the events.
+How many events had participants whose details had the substring 'Dr.'
+What is the most common participant type?
+Which service id and type has the least number of participants?
+What is the id of the event with the most participants?
+Which events id does not have any participant with detail 'Kenyatta Kuhn'?
+Which services type had both successful and failure event details?
+How many events did not have any participants?
+What are all the distinct participant ids who attended any events?

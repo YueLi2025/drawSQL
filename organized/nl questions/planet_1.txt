@@ -1,0 +1,77 @@
+nl_question
+Who receieved the heaviest package?
+What is the name of the client who received the heaviest package?
+What is the total weight of all the packages that customer Leo Wong sent?
+What is the total weight for all packages that Leo Wong sent?
+What is the position of Amy Wong?
+What position does Amy Wong have?
+What is Turanga Leela's salary and position?
+What is the salary and position of the employee named Turanga Leela?
+What is the average salary of all intern jobs?
+What is the average salary of an intern?
+What level is Physician?
+What is the clearance level of a physician?
+List Package Number of all package sent by Leo Wong?
+What is the number of all packages that Leo Wong sent?
+List all package numbers received by Leo Wong ?
+What are all of the package numbers received by Leo Wong?
+List all package sent or received by Leo Wong.
+What are all the different package numbers that Leo Wong sent or received?
+Count the number of packages sent by Ogden Wernstrom and received by Leo Wong.
+How many packages sent by Ogden Wernstrom and received by Leo Wong?
+What are the contents of package sent by John Zoidfarb?
+What are the package contents of all those sent by John Zoidfarb?
+What is the heaviest package sent by the clients which 'John' is part of their name? List package number and weight.
+What is the package number and weight of the heaviest package that was sent by a client named John or something similar?
+List package number and weight of top 3 lightest packages.
+What is the package number and weight of the 3 lightest packages?
+Who sent most number of packages? List client name and number of packages sent by that client.
+What is the name of the client who sent the most packages and how many were there?
+Who received least number of packages ? List client name and number of packages received by that client .
+What is the smallest number of packages received and by whom ?
+Who sent more than one packages? List the client's name.
+What is the name of all clients who sent more than one package?
+What are the Coordinates of planet Mars?
+What are the coordinates of the planet named Mars?
+List all Planets' names and coordinates in alphabetical order of name.
+What are the names and coordinates of all planets in alphabetical order by name?
+List all shipment id under Phillip J. Fry's management.
+What are the shipment IDs of every delivery managed by Phillip J Fry?
+List the dates of all shipments.
+What are the dates of every shipment in the database?
+List all shipment ids for the planet Mars.
+What are the shipment ids for the planet Mars?
+List all shipment ids for the planet Mars and under the management of Turanga Leela.
+What are the ids of all shipments on the planet Mars that are managed by Turanga Leela?
+List all shipment ids on the planet Mars or under the management of Turanga Leela.
+What are the ids for all shipments on the planet Mars that Turanga Leela manages?
+What is the total shipments in each planet? List the planet name and total shipments.
+How many shipments take place on each planet?
+Which planet has most shipments? List the planet name.
+What is the name of the planet with the most shipments?
+List the manger's name and number of shipments under his management.
+What are the number of shipments managed and names of each manager?
+Calculate total weight of package shipped on Mars.
+what is the total weight of all packages shipped on Mars?
+Calculate total weight of package shipped in each planet . show the name of each planet .
+what is the total package weight for each planet, list its name ?
+Which planet has total weight of shipment greater than 30? List planet name.
+What are the names of all planets tjat have a total shipment weight greater than 30?
+List package number of package shipped in planet Omicron Persei 8 and sent by Zapp Brannigan.
+What are the number of packages sent by Zapp Brannigan and shipped on the Omicron Persei 8?
+List package number of packages shipped in Omicron Persei 8 planet or sent by Zapp Brannigan.
+What are the number of packages shipped on Omicron Persei 8 planet or sent by Zapp Brannigan?
+Which packages have weight between 10 and 30? List the package number and weight.
+What are the package numbers and weights that are between 10 and 30?
+Which employees do not have clearance in Mars? List employee's name.
+What are the names of all employees who don't have clearance on Mars?
+Which employees have clearance in Omega III? List employees' name.
+What are the names of all employees with clearance on Omega III?
+Which planets that have exact one employee has clearance? List planets' name.
+What are the names of all planets with one employee that has clearance?
+Which employees have salaries between 5000 and 10000? List employees' name.
+What are the employees's names for those that have salaries between 5000 and 10000?
+Find the name of employees whose salary is above the average salary or more than 5000.
+What are the names of all employees who have a salary greater than average or more than 5000?
+Find the number of employees who do not have clearance in Mars .
+What is the number of employees that do not have clearance on Mars ?

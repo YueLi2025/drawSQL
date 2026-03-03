@@ -1,0 +1,83 @@
+nl_question
+How many addresses do we have?
+Count the number of addresses.
+List all address ids and address details.
+What are all the address ids and address details?
+How many products do we have?
+Count the number of products.
+Show all product ids, product type codes, and product name.
+What are the ids, type codes, and names for all products?
+What is the price for the product with name Monitor?
+Give the price of the Monitor product.
+Show the minimum, average, maximum price for all products.
+What are the minimum, average, and maximum prices across all products?
+What is the average price for products with type Clothes?
+Return the average price of Clothes.
+How many hardware type products do we have?
+Count the number of products of the type Hardware.
+Show all product names with price higher than the average.
+What are the names of products that have a price above the average for all products.
+Show all hardware product names with price higher than the average price of hardware type products.
+What are the names of Hardware product with prices above the average price of Hardware products.
+What is the name of the most expensive product with type Clothes?
+Give the name of the most expensive Clothes product.
+What is the product id and product name for the cheapest Hardware type product?
+Give the id and name of the cheapest Hardware product.
+List all product names in descending order of price.
+What are the names of the products, sorted by descending price?
+Show all hardware type products in ascending order of price.
+What are the names of all Hardware products, sorted by price ascending?
+List all product type codes and the number of products in each type.
+How many products are there for each product type?
+Show all product type codes and the average price for each type.
+What is the average price of products for each product type?
+What are the product type code with at least two products?
+Give the product type codes of product types that have two or more products.
+What is the product type code with most number of products?
+What is the most frequent product type code?
+How many customers do we have?
+Count the number of customers.
+Show all customer ids and customer names.
+What are the ids and names of all customers?
+What is the customer address, customer phone, and customer email for Jeromy?
+Give the address, phone, and email for customers with the name Jeromy.
+Show all payment method codes and the number of customers in each code.
+How many customers use each payment method?
+What is the payment method code used by most number of customers?
+Give the code of the payment method that is most commonly used.
+Show all customer names with the  payment method code used by least number of customers.
+What are the names of customers who use the least common payment method?
+What is the payment method and customer number for customer named Jeromy?
+Give the payment method code and customer number corresponding to the customer named Jeromy.
+What are the distinct payment methods used by customers?
+Give the different payment method codes that customers use.
+Show the id and the product type for all products, order by product name.
+What are the ids and product types for all products, sorted alphabetically by product name?
+What is the product type with least number of products?
+What is the code of the product type that is least common?
+How many customer orders do we have?
+Count the number of customer orders.
+Show the order ids, order dates, and order status codes for all orders by customer Jeromy.
+What were the ids, dates, and status codes for orders made by Jeromy?
+Show all customer names, ids and the number of orders by each customer.
+What are the names, ids, and number of orders made for each customer?
+What is the customer id, name, phone, and email for the customer with most orders?
+Give the id, name, phone, and email corresponding to the customer who made the most orders.
+Show all order status and the number of orders in each status.
+How many orders have each order status code?
+What is the order status code that is most common?
+Give the order status code that is most frequent across customer orders.
+How many customers do not have an order?
+Count the number of customers who have not made an order.
+Show all product names without an order.
+What are the names of products that have not been ordered?
+How many products named Monitor have been ordered?
+What is the total number of Monitor products that have been ordered?
+How many customers have ordered the product named Monitor?
+Count the number of different customers who have bought a Monitor Product.
+How many customers have an order?
+Count the number of differnt customers who have made an order.
+Show all customer ids without an order.
+What are the ids of customers who have not made an order?
+Show all the order dates and ids of the orders with quantity of any product larger than 6 or with more than 3 products.
+What are the order ids and corresponding order dates for orders with a quantity greater than 6 or consisting of more than 3 products?

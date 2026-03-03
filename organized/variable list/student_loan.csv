@@ -1,0 +1,16 @@
+table_name,column_name,column_type
+bool,name,string
+disabled,name,string
+enlist,name,string
+enlist,organ,string
+enrolled,month,num
+enrolled,name,string
+enrolled,school,string
+filed_for_bankrupcy,name,string
+longest_absense_from_school,month,num
+longest_absense_from_school,name,string
+male,name,string
+no_payment_due,bool,string
+no_payment_due,name,string
+person,name,string
+unemployed,name,string

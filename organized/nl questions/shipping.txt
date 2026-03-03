@@ -1,0 +1,82 @@
+nl_question
+How many shipments were ordered by S K L Enterprises Inc in 2017?
+What is the total number of pounds being transported for S K L Enterprises Inc?
+How many shipments were ordered by a customer in Florida?
+Please list the IDs of all the shipments made by a retailer customer.
+Among the customers having at least one shipment in 2017, how many of them have an annual revenue of over 30000000?
+What is the full name of the driver that has done the most shipments in 2017?
+Among the shipments in 2017, how many of them have the destination in New Jersey?
+What is the maximum weight being transported to New York during a single shipment?
+Please list the destination cities of all the shipments ordered by S K L Enterprises Inc.
+What is the average weight of the goods being transported on a single shipment ordered by S K L Enterprises Inc?
+How many shipments were delivered by the oldest truck model?
+Who was the customer of shipment no.1275? Give the customer's name.
+Where was the destination city of shipment no.1701?
+Give the name of the driver of shipment no.1021.
+Tell the name of the driver who received the shipment on 2017/11/5.
+Show the population of the city which was the destination of shipment no.1398.
+Provide the ship date of the first shipment to customers in South Carolina.
+For the shipment received by Leszek Kieltyka on 2017/9/25, what was its weight?
+What is the area of the destination city of shipment No.1346?
+Provide the weight of the shipment to U-haul Center Of N Syracuse on 2016/9/21.
+Who was the driver of truck no.3 on 2016/9/19? Tell the full name.
+Calculate the population density of the city as the destination of shipment no.1369.
+What is the average number of shipments done by the Kenworth trucks?
+To whom did the company transport its heaviest shipment?
+What is the full name of the driver who transported the first shipment of the company?
+In total, how many shipments were transported to Olympic Camper Sales Inc?
+How much is the annual revenue of the customer with the most number of shipments?
+Determine the percentage of manufacturers who are from Texas among all of Lorenzo's customers.
+Identify the total weight of shipments transported to San Mateo, California, in 2016.
+What was the maximum weight of the shipment carried to Boston? Name the customer of that shipment.
+Where was shipment no. 1002 headed?
+Identify the full name of the driver who delivered a shipment to the city of New York in February 2016.
+Name the customer who sent the shipment to Oak Park.
+Among all shipments placed by Sunguard Window Tinting & Truck Accessories in 2017, identify the percentage of shipments whose weight exceeded 10,000 pounds.
+What is the model year of the truck used in shipment id 1003?
+What is the brand of truck used in shipment id 1011?
+What is the first name of the driver who transported shipment id 1028?
+List out the state of driver who transported the shipment id 1055.
+State the address of drivers who transported the shipment with weight greater than 50000 pounds.
+Give the full name of driver who transported the items on 3/2/2016.
+What is the percentage of wholesaler customers who have shipment weight of not greater than 70000 pounds?
+What is the last name of driver who transported shipment id 1088?
+Give the phone of drivers who transported shipment weight of greater than 20000 pounds.
+What is the brand and model of truck used in shipment id 1055?
+What is the most populated city in California?
+Who is the driver that transported the lightest weight of shipment? Provide the full name of the driver.
+List all the name of the customers that received a shipment in February 2017.
+Provide the brand of the truck and the name of the driver that transported goods in Klett & Sons Repair.
+How many shipments did Zachery Hicks transport goods to New York in the year 2016?
+In which city did the heaviest shipment transported?
+What is the ship ID of shipments shipped to the city with the largest area?
+List the drivers who shipped the shipments to the least populated city.
+Among the shipments shipped to Cicero, Illinois, how many shipments weighed between 9,000 to 15,000?
+Among the shipments delivered by Maria Craft, how many shipments were delivered in 2017?
+What is the truck's model year used to ship the ship ID 1245?
+Where does the driver of ship ID 1127 live?
+How many shipments were delivered to a customer from New York?
+What is the name of the customer of ship ID 1147?
+List the ship ID of shipments shipped to the most populated city.
+List the weight of the customer's shipment with annual revenue of 39448581.
+What is the customer's address for the shipment with ship ID 1117?
+Calculate the difference between the number of shipments shipped by the truck with the model year 2005 and model year 2006.
+List the driver's name of the shipment with a weight greater than 95% of the average weight of all shipments.
+Among the shipments done by Sue Newell, how many of them are for S K L Enterprises Inc?
+How many shipments in 2017 were done by Sue Newell?
+State the headquarter of the truck which completed shipment no.1045.
+How many pounds did Sue Newell transport during her first shipment?
+How many of the shipments bound for New York City were shipped to Harry's Hot Rod Auto and Truck Accessories?
+State the weight of shipments transported by Peterbilt.
+What is the average annual revenue of customers who have shipment weight of less than 65000 pounds?
+How many customers are manufacturer?
+How many cities are in Connecticut?
+What model year of truck delivered the ship ID 1233?
+Give the annual revenue of the customer of ship ID 1047.
+What is the weight of the shipment delivered by Andrea Simons on March 7, 2016?
+List the driver's name of the shipment shipped on February 22, 2016.
+How much more pounds in total were transported to New York than to Chicago?
+How many shipments did Holger Nohr transport to North Las Vegas overall?
+How many trucks were manufactured in year 2009?
+Among all the shipments to Florida, what is the percentage of the shipment to Jacksonville?
+Among all shipments delivered by Sue Newel, identify the percentage of shipments that were placed by Autoware Inc.

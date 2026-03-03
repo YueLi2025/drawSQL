@@ -1,0 +1,74 @@
+sql_query
+SELECT T1.Name, T1.Capital, T2.Language FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode INNER JOIN City AS T3 ON T1.Code = T3.CountryCode WHERE T2.IsOfficial = 'T' ORDER BY T1.LifeExpectancy DESC LIMIT 1
+SELECT T1.HeadOfState FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' ORDER BY T2.Percentage LIMIT 1
+SELECT T2.Language FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Belgium' AND T2.IsOfficial = 'T'
+SELECT T2.Name, T2.District FROM Country AS T1 INNER JOIN City AS T2 ON T1.Code = T2.CountryCode WHERE T1.LocalName = 'Hajastan'
+SELECT T2.District FROM Country AS T1 INNER JOIN City AS T2 ON T1.Code = T2.CountryCode WHERE T1.HeadOfState = 'Adolf Ogi'
+SELECT T1.HeadOfState FROM Country AS T1 INNER JOIN City AS T2 ON T1.Code = T2.CountryCode WHERE T2.District = 'Santa Catarina'
+SELECT T2.Language FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'China' AND T2.IsOfficial = 'T'
+SELECT T1.GovernmentForm FROM Country AS T1 INNER JOIN City AS T2 ON T1.Code = T2.CountryCode WHERE T2.Name = 'Manila'
+SELECT T2.Language FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Continent = 'Europe'
+SELECT T1.HeadOfState FROM Country AS T1 INNER JOIN City AS T2 ON T1.Code = T2.CountryCode WHERE T2.Name = 'Pyongyang'
+SELECT SUM(CASE WHEN T2.IsOfficial = 'F' THEN 1 ELSE 0 END) FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Italy'
+SELECT T2.Name FROM Country AS T1 INNER JOIN City AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Russian Federation' ORDER BY T2.Population ASC LIMIT 1
+SELECT T2.Language, T2.IsOfficial FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.IndepYear = 1830 GROUP BY T2.Language, T2.IsOfficial
+SELECT T1.Capital FROM Country AS T1 INNER JOIN City AS T2 ON T1.Code = T2.CountryCode ORDER BY T1.Population DESC LIMIT 1
+SELECT T1.Name, T2.Language FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.IndepYear > 1990 AND T2.IsOfficial = 'T'
+SELECT T2.Language FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Malaysia'
+SELECT T2.LifeExpectancy FROM City AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code ORDER BY T1.Population DESC LIMIT 1
+SELECT T2.GNP FROM City AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code ORDER BY T1.Population ASC LIMIT 1
+SELECT T1.Name FROM City AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T2.Name = 'China'
+SELECT T1.District FROM City AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T2.Name = ( SELECT Name FROM Country ORDER BY SurfaceArea DESC LIMIT 1 )
+SELECT COUNT(DISTINCT T1.Name) FROM City AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T2.HeadOfState = 'Kostis Stefanopoulos'
+SELECT T1.Language FROM CountryLanguage AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T1.IsOfficial = 'T' AND T2.name = 'Greece'
+SELECT T2.SurfaceArea, T2.GNP FROM City AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T1.District = 'Namibe'
+SELECT T2.Name FROM CountryLanguage AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T2.GNP < 1000 AND T1.IsOfficial = 'T' AND T1.Language = 'Dutch'
+SELECT T2.LifeExpectancy FROM City AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T1.Name = 'Calama'
+SELECT CAST(SUM(CASE WHEN T1.District = 'England' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM City AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T2.GovernmentForm = 'Constitutional Monarchy'
+SELECT CAST(SUM(CASE WHEN T2.GovernmentForm = 'Republic' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM CountryLanguage AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T1.Language = 'Italian'
+SELECT T1.Name FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' AND T2.IsOfficial = 'T' LIMIT 5
+SELECT Language FROM CountryLanguage WHERE CountryCode = 'USA'
+SELECT COUNT(ID) FROM City WHERE District = 'England'
+SELECT T2.Language FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Region = 'Baltic Countries' AND T2.Percentage > 80
+SELECT T1.HeadOfState FROM Country AS T1 INNER JOIN City AS T2 ON T1.Code = T2.CountryCode ORDER BY T2.Population DESC LIMIT 1
+SELECT T2.Name FROM Country AS T1 INNER JOIN City AS T2 ON T1.Code = T2.CountryCode WHERE T1.LifeExpectancy = 66.4
+SELECT T2.Language FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Population < 8000
+SELECT Name FROM Country WHERE IndepYear = 1994
+SELECT Name FROM Country WHERE Continent = 'Asia'
+SELECT Name FROM Country WHERE Continent = 'Asia' ORDER BY GNP DESC LIMIT 1
+SELECT COUNT(ID) FROM City WHERE Name = 'PHL'
+SELECT LocalName FROM Country WHERE Name = 'Ukraine'
+SELECT COUNT(Code) FROM Country WHERE GovernmentForm = 'Socialistic Republic'
+SELECT T2.Percentage FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'China' AND T2.Language = 'Chinese'
+SELECT T2.Language FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode ORDER BY T1.Population ASC LIMIT 1
+SELECT T1.Name FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' AND T2.IsOfficial = 'T'
+SELECT T1.Name FROM Country AS T1 INNER JOIN City AS T2 ON T1.Code = T2.CountryCode ORDER BY T2.Population DESC LIMIT 1
+SELECT AVG(T1.LifeExpectancy) FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'Arabic'
+SELECT CAST((T1.GNP - T1.GNPOld) AS REAL) / T1.GNPOld FROM Country AS T1 INNER JOIN City AS T2 ON T1.Code = T2.CountryCode WHERE T2.Name = 'Shanghai'
+SELECT District FROM City WHERE name = 'Zaanstad'
+SELECT IndepYear FROM Country WHERE Name = 'Brunei'
+SELECT COUNT(*) FROM Country WHERE GNP = 0
+SELECT AVG(SurfaceArea) FROM Country
+SELECT COUNT(DISTINCT T2.Language) FROM City AS T1 INNER JOIN CountryLanguage AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.District = 'Tocantins'
+SELECT T2.Population FROM City AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T1.Name = 'Queimados'
+SELECT T2.Name FROM CountryLanguage AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T1.IsOfficial = 'T' AND T1.Language = 'English'
+SELECT T1.District FROM City AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code ORDER BY T2.SurfaceArea ASC LIMIT 1
+SELECT T2.LocalName FROM City AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T1.Name = 'The Valley'
+SELECT T2.Name, T1.Name FROM City AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T2.SurfaceArea > 7000000
+SELECT AVG(T2.LifeExpectancy) FROM CountryLanguage AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T1.Language = 'Japanese'
+SELECT T2.Name, COUNT(T1.Name) FROM City AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T2.SurfaceArea = 652090 GROUP BY T2.Name
+SELECT T2.Name, T1.Language FROM CountryLanguage AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T2.IndepYear BETWEEN 1980 AND 1995
+SELECT SUM(CASE WHEN Language = 'Portuguese' THEN 1 ELSE 0 END) FROM CountryLanguage
+SELECT T2.Language FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Region = 'Baltic Countries' AND T2.Percentage > 80
+SELECT T1.Name, T1.Population, T1.Capital, T2.Language FROM Country AS T1 INNER JOIN CountryLanguage AS T2 ON T1.Code = T2.CountryCode INNER JOIN City AS T3 ON T1.Code = T3.CountryCode WHERE T2.IsOfficial = 'T' ORDER BY T1.SurfaceArea LIMIT 1
+SELECT Continent FROM Country ORDER BY SurfaceArea LIMIT 1
+SELECT T1.SurfaceArea FROM Country AS T1 INNER JOIN City AS T2 ON T1.Code = T2.CountryCode WHERE T2.Name = 'Sutton Coldfield'
+SELECT T2.Name FROM Country AS T1 INNER JOIN City AS T2 ON T1.Code = T2.CountryCode ORDER BY T1.LifeExpectancy DESC LIMIT 1
+SELECT Name FROM City ORDER BY Population DESC LIMIT 1
+SELECT COUNT(*) FROM Country WHERE LifeExpectancy = 75.1
+SELECT T2.GNP FROM City AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T1.District = 'Entre Rios' LIMIT 1
+SELECT T1.Language FROM CountryLanguage AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code WHERE T2.HeadOfState = 'Pierre Buyoya'
+SELECT Name FROM Country ORDER BY LifeExpectancy LIMIT 1
+SELECT T2.Name, T1.Code, T1.LifeExpectancy FROM Country AS T1 INNER JOIN City AS T2 ON T1.Code = T2.CountryCode ORDER BY T2.Population DESC LIMIT 1
+SELECT Name FROM Country ORDER BY SurfaceArea ASC LIMIT 1
+SELECT T2.Name FROM City AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.Code ORDER BY T1.Population DESC, T2.SurfaceArea DESC LIMIT 1

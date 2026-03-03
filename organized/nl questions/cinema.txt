@@ -1,0 +1,31 @@
+nl_question
+Show all the locations where no cinema has capacity over 800.
+Show all the locations where some cinemas were opened in both year 2010 and year 2011.
+How many cinema do we have?
+Count the number of cinemas.
+Show name, opening year, and capacity for each cinema.
+Show the cinema name and location for cinemas with capacity above average.
+What are all the locations with a cinema?
+Find the distinct locations that has a cinema.
+Show all the cinema names and opening years in descending order of opening year.
+What are the name and location of the cinema with the largest capacity?
+Show the average, minimum, and maximum capacity for all the cinemas opened in year 2011 or later.
+Show each location and the number of cinemas there.
+What is the location with the most cinemas opened in year 2010 or later?
+Show all the locations with at least two cinemas with capacity above 300.
+Which locations have 2 or more cinemas with capacity over 300?
+Show the title and director for all films.
+What are the title and director of each film?
+Show all directors.
+Who are all the directors?
+List all directors along with the number of films directed by each director.
+What is total number of show times per dat for each cinema?
+What are the title and maximum price of each film?
+Give me the title and highest price for each film.
+Show cinema name, film title, date, and price for each record in schedule.
+What are the title and director of the films without any schedule?
+Show director with the largest number of show times in total.
+Find the locations that have more than one movie theater with capacity above 300.
+In which locations are there more than one movie theater with capacity above 300?
+How many films have the word 'Dummy' in their titles?
+Count the number of films whose title contains the word 'Dummy'.

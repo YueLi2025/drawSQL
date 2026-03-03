@@ -1,0 +1,109 @@
+nl_question
+Which region has the most number of sales team?
+List all the customers with name containing the word 'Group'.
+Name the sales team and the region of order number 'SO - 000137'.
+List all the order numbers for In-Store sales and find the city where the store is located.
+List the name of all customers who had made orders online.
+Calculate the average net profit for bakeware product.
+List down the customer IDs and names that start with alphabet "W".
+Among the sales with 40% discount via in-store channel, how many products were shipped from warehouse code of WARE-NMK1003?
+Mention the most populated city and median income of the store in Florida state.
+List the store located cities with regions in no water area of California state.
+Compare the number of orders between "Platters" and "Serveware" products.
+Among the sales team in South region, write down the numbers of orders made by the sales team ID of one digit.
+List out the name of products which have been applied 10% discount.
+List out the city name of states located in South region.
+What is the region of stores which have type of "Town" in the list?
+How many orders that Medsep Group had made?
+State the customer name of orders which has shipped date in 7/8/2018.
+Among the orders placed by Ei, how many orders have quantity greater than 4?
+Among the orders placed by Pacific Ltd, how many orders have been applied 5% discount ?
+What is the customer names of orders which have unit cost greater than 4000USD?
+Please list the customer names whose order quantity was more than 5 on 6/1/2018.
+What is the percentage of total orders of Stephen Payne that had a net profit of over 1000?
+How many sales team were from Northeast?
+List all the name of products with the ID of 30 to 40.
+Calculate ratio between the highest unit cost and the lowest unit cost?
+List the order for all in-store sales along with the products sold.
+State all the order numbers for sales team of Samuel Fowler.
+What is the difference in order number from "WARE-MKL1006" and "WARE-NBV1002"?
+Write down the store IDs and region of the state "Michigan".
+Compare the total number of orders between customer "Apollo Ltd" and "Pacific Ltd".
+List down the customer names and product names of the order made by "Anthony Torres" via distributor channel.
+Count the number of orders made from the store in city with population of 3000000 to 4000000.
+Indicate the procured dates for the customer whose ID is 11.
+How many states are in the Midwest region?
+What are the names of the sales teams that have served to customer Apotheca, Ltd?
+In which regions are the stores that have shipped products through the WARE-UHY1004 warehouse?
+List all the cities where Shawn Torres sells Audio products.
+What sales channels are used the most in the 3 places with the highest median income?
+To which region does the sales team that has used the WARE-MKL1006 warehouse the most times for its shipments belong?
+How many online purchases did Ole Group make in May 2019?
+At what Latitude and Longitude is the store that has used the WARE-PUJ1005 warehouse the fewest times?
+Provide order number, warehouse code of customers Elorac, Corp.
+Among sales teams in Midwest region, which sales team has an order quantity greater than 5?
+Which region is Joshua Bennet located in?
+What is the name of the customer who purchased the product with the highest net profiit?
+Name the product that was registered in the sales order 'SO - 0005951'.
+List all the order numbers along with its product name for each order under the sales team of 'Douglas Tucker'.
+List down the product IDs and names that include the word "Outdoor".
+Describe the customer names and lasting delivery periods for the product of "Bedroom Furniture" by wholesale channel in 2019.
+Describe the customer names and product names which had over 3800 USD in net profit.
+List out the name of orders which have delivery date of 6/13/2018.
+How many orders placed were with more than 5 product quantities?
+State the full name of state code "GA".
+How many states located in the Midwest region?
+Calculate the average net profit of phones which have sales channel of distributor.
+Calculate the average net profit of bar tools which has ordered quantity exceed 5.
+List out the discount levels applied for all orders from Ole Group.
+Please list the id and detailed position of all stores in Birmingham city.
+Which city has the largest population?
+How many CDP stores are there in California?
+Please list all sale team names which had orders on 5/31/2018.
+Which sales team name has the least orders in 2019?
+What is the unit cost of order SO - 000103?
+What is the detailed position of the store which has order SO - 000115?
+Which product was ordered the most in 2018?
+How many products sold by Adam Hernandez?
+List all orders where its products were shipped from Daly City.
+Find the number of baseball ordered in December 2017.
+Find the average number of ornaments sold each month in 2018.
+Name the products via wholesale channel of the store under Pacific/Honolulu time zone.
+How many orders through distributor were for the minimum quantity?
+List by ID all sales teams that have sold products at a 10% discount in store.
+How many Borough-type stores located in the city of Brooklyn have a population of less than 3 million?
+Indicate order numbers with an order date after 1/1/2018.
+Name of customers who have ordered Cocktail Glasses by online sales channel.
+What is the store id of the store located in the most populous county?
+How many online orders were shipped during the month of June 2018?
+In 2019, how many orders were shipped by the sales team with the highest number of orders in the said year? Provide the name of the sales team.
+Among the products with an order quantity of no less than 5 that was shipped in the month of May 2019, what is the name of the product with the lowest net profit?
+Which sales channel was most preferred in commercializing products in January 2020 based on the number of orders placed?
+Identify the top customer of the store located in Gilbert, Arizona based on net profit associated with the customer relationship in 2019.
+What is the average median income for all City type of stores?
+List the ID, city, state and region for the store type which is fewer between borough and CDP.
+Calculate the order percentage by "Carlos Miller" sales team.
+How many orders have order date in 5/31/2018?
+List out the product name of order which has unit cost of 781.22.
+What is the percentage of total orders from stores in Orange County in 2018?
+Which sales team id has the highest number of orders in 2018?
+Please list the names of customers who have total orders of over 3 in 2018.
+Describe the product names delivered in 2021 for the customer "Sundial".
+List the order numbers and product names which were ordered on 6th June, 2018.
+Find the average yearly order by customer Weimei Corp for 2018, 2019 and 2020.
+How many stores procured products on October 27, 2018, in the city of Oregon?
+In which city is the store with the highest sales order unit price located?
+What percentage of sell orders on 04/04/2020 were for the state of New York?
+Please indicate store id in the state of California that have been applied 20% discount in store.
+Please indicate total order quantity of product Candles and calculate the percentage of such product among all the orders.
+What is the type of store located in the city with the highest amount of water area?
+How many orders were shipped by the sales team with the highest amount of shipped orders in 2020? Give the name of the said sales team.
+State the delivery date of cookware.
+In 2020, what were the total orders of all stores in Maricopa County?
+State the name of all city in Maricopa County along with its latitude and longitude.
+Mention the customer names and IDs which ordered total net profit of above 5000 USD through online channel.
+Find the net profit of the floral products which were delivered in 2021.
+What is the least purchased product by stores in the city of Santa Clarita?
+What is the average household income in cities in the state of New Hampshire where there are stores of the type city?
+How many sales teams are there in the Midwest?
+What is the average household income of Glendale?

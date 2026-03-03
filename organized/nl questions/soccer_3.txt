@@ -1,0 +1,41 @@
+nl_question
+How many clubs are there?
+Count the number of clubs.
+List the name of clubs in ascending alphabetical order.
+What are the names of clubs, ordered alphabetically?
+What are the managers and captains of clubs?
+Return the managers and captains of all clubs.
+List the name of clubs whose manufacturer is not "Nike"
+What are the names of clubs who do not have the manufacturer Nike?
+What are the names of players in ascending order of wins count?
+Return the names of players in order of count of wins, ascending.
+What is the name of the player with the highest earnings?
+Return the name of the player who earns the most money.
+What are the distinct countries of players with earnings higher than 1200000?
+From which countries are players who make more than 1200000 from?
+What is the country of the player with the highest earnings among players that have more than 2 win counts?
+Of players who have more than 2 wins, what is the country of the player who makes the most?
+Show names of players and names of clubs they are in.
+What are the names of players and the corresponding clubs that they are in?
+Show names of clubs that have players with more than 2 win counts.
+What are the names of clubs that have players who have won more than twice?
+Show names of players from the club with manager "Sam Allardyce".
+What are the names of players from the club managed by Sam Allardyce?
+Show names of clubs in descending order of average earnings of players belonging.
+What are the names of clubs, ordered descending by the average earnings of players within each?
+Show different manufacturers and the number of clubs they are associated with.
+How many clubs use each manufacturer?
+Please show the most common manufacturer of clubs.
+Which manufacturer is most common among clubs?
+List the manufacturers that are associated with more than one club.
+Which manufacturers work for more than 1 club?
+List the country that have more than one player.
+Which countries have produced more than one player?
+List the name of clubs that do not have players.
+What are the names of clubs that do not have any players?
+Show the country of players with earnings more than 1400000 and players with earnings less than 1100000.
+Which country has produced both players with earnings over 1400000 and players with earnings below 1100000?
+What is the number of distinct countries of all players?
+How many different countries are players from?
+Show the earnings of players from country "Australia" or "Zimbabwe".
+What are the earnings of players from either of the countries of Australia or Zimbabwe?

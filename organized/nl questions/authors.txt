@@ -1,0 +1,105 @@
+nl_question
+How many authors are affiliated with University of California Berkeley?
+What is the paper "Stitching videos streamed by mobile phones in real-time" about?
+How many authors does the paper "Equation Solving in Geometrical Theories" have?
+What is the title of the paper published in 1995 and whose author included Thomas Wiegand?
+Write down the title and affiliation of the preprinted paper written by "Roger J.Marshal".
+Write down homepage URL of journal for paper "364: Induction of Mixed Chimerism and Transplantation Tolerance in a Non-Human Primate Lung Allograft Model: Early Results".
+List down all paper name that were published in conference "International Conference on Internet Computing".
+List the names of all authors affiliated with Birkbeck University of London.
+What is the full name of the conference where paper number 5 was published?
+Please provide the full name of the conference where one of the papers of Jean-luc Hainaut were published.
+List the short name and home page URL of all the international conferences on artificial intelligence.
+How many authors is affiliated to the organization "Otterbein University"?
+What is the short name for "Software - Concepts and Tools / Structured Programming"?
+What are the keywords for the paper which was published on "Modeling Identification and Control" in 1994?
+Which conference has the longest name?
+What is the name of author with the ID of 1722?
+State the name and affiliation of author for the 'Education, democracy and growth' paper?
+Provide the name of the author who is affiliated with the organization named 'ABB Electrical Machines'.
+Among the authors of the paper "Stitching videos streamed by mobile phones in real-time", how many of them are affiliated with Cairo Microsoft Innovation Lab?
+Please list the titles of the paper whose authors include Klaus Zimmermann.
+Which author of the paper "Incremental Extraction of Keyterms for Classifying Multilingual Documents in the Web" is affiliated with National Taiwan University Department of Computer Science and Information Engineering Taiwan?
+How many journals have a word "computing" in its full name?
+In year 1999, list the titles and conference's short name of paper authored by someone named "Philip".
+What is the title of the paper published in 2003 by an author with affiliation with Department of Network Science, Graduate School of Information Systems, The University of Electro-Communications?
+What is the title and author ID of paper with conference ID less than 100 in year 2006?
+What is the ratio of author with affiliation and without affiliation?
+How many papers were preprinted between the years 1990 and 2000?
+List the short name of all conferences whose full name begins with International Symposium.
+List author name for articles that are preprinted but not published.
+What is the full name of the journals that are published in the database papers whose topic is Sustainability?
+Please list the names of the authors of the paper "Hypermethylation of the <I>TPEF/HPP1</I> Gene in Primary and Metastatic Colorectal Cancers".
+Please list the titles of any two papers that Jundu has written.
+List the names of authors affiliated with the University of Oxford in alphabetical order.
+How many authors finished the paper "An Improved Active Suspension Model for Attitude Control of Electric Vehicles" together?
+How many journals don’t have a short name?
+List the name of the author that affiliated with University of Illinois Chicago?
+State the title of papers published in the Ibm Journal of Research and Development.
+Mention the titile of paper writen by Joe Lograsso.
+Please list the titles of the papers published in the journal "Concepts in Magnetic Resonance Part A" in 2008.
+How many papers were published in 2011 in the journal whose short name is "Mol Brain"?
+List the title of papers with a conference ID from 160 to 170, include their conference short name.
+What is the title and journal homepage of the latest published paper?
+Write down the author's name and IDs who are affiliated with Univeristiy of Oulu.
+List author affiliation for papers whose topic is Quantum Physics.
+Provide the title of the latest publication published by it's author 'Zuliang Du'.
+How many papers were published in the journal "Concepts in Magnetic Resonance Part A"?
+Among the papers published in the journal "Molecular Brain", how many of them were published in the year 2011?
+How many papers whose authors include Thomas Wiegand were published in 1995?
+What is the average number of papers published in the journal "Molecular Brain" every year from 2008 to 2011?
+Enumerate the paper and author ID of authors with affiliation with Cairo Microsoft Innovation Lab.
+List down the author ID of authors with a name of "Peter".
+What is the total number and conference's homepage of papers held in a conference with an ID of 187 during 1990 to 2000?
+Among the papers with conference ID of 0, list down the authors of papers with a journal ID less than 100.
+Among author ID of under 1000, who published the paper in affiliation with Zurich, ETH, provide paper ID, year and keyword if any.
+Name the title, year and keyword of the paper which were written by the author ID of 661002 with the affiliation of "Scientific Computing and Imaging Institute, University of Utah, UT 84112, USA" organization.
+Calculate the differences of the paper number with the journal name of IWC in 2000 and 2010.
+Provide any four valid Journal ID along with short name and full name of the papers which were made in 2013.
+How many of the papers are preprinted or not published?
+State the full name of conference for paper "The Dissimilarity Representation as a Tool for Three-Way Data Classification: A 2D Measure".
+What is the homepage address for paper "Energy-efficiency bounds for noise-tolerant dynamic circuits"?
+Write down the name of authors for paper with id from 101 to 105.
+Identify by conference full name all papers in which a journal was not published but a conference.
+Identify by publication year in the paper database all journals that don't have short name.
+What is the name of the co-authors of the paper titled 'Particle identification using the time-over-threshold method in the ATLAS Transition Radiation Tracker'?
+In how many papers and in what years was the International Conference on Database Theory published?
+What was the topic of the article "A Formal Approach to Service Component Architecture" and when was it published?
+How many papers were in the journal "Iet Software/iee Proceedings - Software"?
+What is the title of the paper that was written by Cheng Huang and affiliated with Microsoft?
+What are the three journals that the papers written by Andrew Cain were published in? Please provide your answer with the full name of each journal.
+Please list all of the associations that the authors of the paper "FIBER: A Generalized Framework for Auto-tuning Software" are affiliated with.
+What is the journal's short and full names that feature papers on the "Materials" topic?
+Find the names of papers which are published in the year 1996.
+List the title and author's name of papers published in the 2007 Neoplasia journal.
+What is the average number of papers published in the World Computer Congress each year?
+Give the Title and author's name of the books that were preprint in 1997.
+What is the full name of the conference in which the paper titled "Extended Fuzzy Regression Models" was published?
+How many papers are published under the conference "Mathematics of Program Construction "?
+List all the title of the paper that Jianli Hua published.
+Who authored the paper titled "Testing timed automata "?
+List all the paper that the journal "Theoretical Computer Science " published in 2003.
+What is the conference homepage URL of the paper titled "Quality evaluation of long duration audiovisual content"?
+List all the paper that were under the conference homepage URL "http://www.irma-international.org/".
+Calculate the total average number of papers published from 2002 to 2010 under the conference "Information and Knowledge Engineering".
+Give the number of papers that were published on "IEEE Transactions on Nuclear Science" in 1999.
+What was the name of the paper that was published on "IEEE Transactions on Pattern Analysis and Machine Intelligence" in 2011?
+Tell the number of papers that were presented at "International Symposium on Software Testing and Analysis" conference.
+How many papers were presented at 'ECSQARU' in 2003?
+Show the keywords of the paper that was presented at "International Radar Symposium" in 2012.
+How many times more for the papers that were presented at the "International Conference on Thermoelectrics" conference than "International Conference on Wireless Networks, Communications and Mobile Computing“ conference?
+List all of the papers written by the author "Karin Rengefors."
+How many papers were published by the "Virtual Reality, IEEE Annual International Symposium" conference in 2012?
+Which year did the "Internet, Multimedia Systems and Applications" conference publish the most papers?
+What are the different ways the name of the author, Randall Davis, is written on their papers?
+List all of the conferences where a paper was published in 2008.
+What is the homepage URL for the journal that published the most papers?
+What is the proportion of the papers that have the keyword "cancer"? Please provide a list of authors and their affiliations.
+How many papers were published in 2005. Calculate the difference between the number of paper published in 2005 and the number of paper published in the previous year.
+Where was the 'A context-based navigation paradigm for accessing Web data' paper published? State the name of the conference.
+How many papers were published in International Workshop on Inductive Logic Programming from 2001 to 2009?
+Indicate the year and a full name of the journal in which the publication named 'Area Effects in Cepaea' was published.
+Provide the number of publications published in the journal named 'Academic Medicine' between 2005 and 2010.
+Provide the average number of papers that are published in the journal named 'Information Sciences' annually.
+Indicate the number of authors affiliated with the organization named 'Arizona State University'.
+Mention the name of author for paper id 5 and state the keyword of this page.

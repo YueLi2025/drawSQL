@@ -1,0 +1,78 @@
+sql_query
+SELECT COUNT(T1.id) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T2.Act = 1 AND T1.Title = 'Twelfth Night'
+SELECT T2.Description FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T1.Title = 'Twelfth Night' AND T2.Act = 1 AND T2.Scene = 2
+SELECT SUM(IIF(T2.Act = 1, 1, 0)) - SUM(IIF(T2.Act = 5, 1, 0)) AS more FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T1.Title = 'Twelfth Night'
+SELECT DISTINCT T1.Title FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id INNER JOIN characters AS T4 ON T3.character_id = T4.id WHERE T4.CharName = 'Lord Abergavenny'
+SELECT DISTINCT T4.CharName FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id INNER JOIN characters AS T4 ON T3.character_id = T4.id WHERE T1.Title = 'Twelfth Night'
+SELECT SUM(T3.ParagraphNum) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id WHERE T2.Act = 1 AND T2.Scene = 1 AND T1.Title = 'Twelfth Night'
+SELECT SUM(T1.ParagraphNum) FROM paragraphs AS T1 INNER JOIN characters AS T2 ON T1.character_id = T2.id WHERE T2.CharName = 'Lord Abergavenny'
+SELECT COUNT(T2.id) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T2.Description = 'OLIVIA’S house.' AND T1.Title = 'Twelfth Night'
+SELECT COUNT(DISTINCT T4.id) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id INNER JOIN characters AS T4 ON T3.character_id = T4.id WHERE T1.Title = 'Twelfth Night'
+SELECT COUNT(DISTINCT T3.character_id) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id WHERE T1.Title = 'Titus Andronicus'
+SELECT T1.Description FROM characters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.character_id WHERE T2.id = '640171'
+SELECT COUNT(T2.Scene) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T1.Title = 'King John'
+SELECT T2.Description FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T2.Act = '2' AND T2.Scene = '2' AND T1.Title = 'Midsummer Night''s Dream'
+SELECT CAST(SUM(IIF(T2.GenreType = 'Tragedy', 1, 0)) AS REAL) * 100 / COUNT(T1.Scene) FROM chapters AS T1 INNER JOIN works AS T2 ON T1.work_id = T2.id WHERE T2.Date = '1594'
+SELECT CAST(COUNT(T1.id) AS REAL) / COUNT(DISTINCT T2.id) FROM chapters AS T1 INNER JOIN works AS T2 ON T1.work_id = T2.id WHERE T2.Date = '1599'
+SELECT T2.LongTitle FROM chapters AS T1 INNER JOIN works AS T2 ON T1.work_id = T2.id WHERE T1.Act = 1 ORDER BY T1.Scene DESC LIMIT 1
+SELECT T2.Description FROM paragraphs AS T1 INNER JOIN chapters AS T2 ON T1.chapter_id = T2.id ORDER BY T1.ParagraphNum DESC LIMIT 1
+SELECT T2.Description FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T1.LongTitle = 'Twelfth Night, Or What You Will' AND T2.Scene = 2 AND T2.Act = 2
+SELECT T1.ParagraphNum FROM paragraphs AS T1 INNER JOIN chapters AS T2 ON T1.chapter_id = T2.id WHERE T2.Act = 1 ORDER BY T2.Scene DESC LIMIT 1
+SELECT T1.character_id FROM paragraphs AS T1 INNER JOIN chapters AS T2 ON T1.chapter_id = T2.id WHERE T1.PlainText = 'His name, I pray you.' AND T2.Description = 'Florence. Without the walls. A tucket afar off.'
+SELECT COUNT(DISTINCT T3.character_id) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id WHERE T1.Title = 'Hamlet'
+SELECT COUNT(DISTINCT T2.work_id) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T2.Act = 1 AND T2.Scene < 2 AND T1.GenreType = 'History'
+SELECT SUM(DISTINCT T2.Act) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T1.Title = 'Sonnets'
+SELECT T2.Description FROM paragraphs AS T1 INNER JOIN chapters AS T2 ON T1.chapter_id = T2.id INNER JOIN characters AS T3 ON T1.character_id = T3.id WHERE T3.Abbrev = '1Play' ORDER BY T1.chapter_id LIMIT 1
+SELECT MAX(T2.ParagraphNum) FROM characters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.character_id WHERE T1.CharName = 'Sir Richard Ratcliff'
+SELECT T1.Date, T1.id FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T2.Scene = 154
+SELECT COUNT(T2.id) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T1.Title = 'Midsummer Night''s Dream'
+SELECT CAST(SUM(IIF(T1.Title = 'All''s Well That Ends Well', 1, 0)) AS REAL) * 100 / COUNT(T3.id) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id
+SELECT id FROM works WHERE Title LIKE '%Henry%'
+SELECT T1.Description FROM characters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.character_id WHERE T2.ParagraphNum = 20
+SELECT COUNT(DISTINCT T2.chapter_id) FROM characters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.character_id WHERE T1.CharName = 'Gratiano' AND T1.Description = 'friend to Antonio and Bassiano'
+SELECT DISTINCT T1.CharName FROM characters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.character_id WHERE T2.ParagraphNum = 3
+SELECT T2.ParagraphNum FROM characters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.character_id WHERE T1.CharName = 'Aedile'
+SELECT T1.CharName FROM characters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.character_id WHERE T2.chapter_id = 18708 LIMIT 2
+SELECT CAST(SUM(IIF(T2.act = 5, 1, 0)) AS REAL) * 100 / COUNT(T2.act) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T1.Title = 'Titus Andronicus'
+SELECT T2.ParagraphNum, T2.id FROM characters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.character_id WHERE T1.CharName = 'Sir Andrew Aguecheek'
+SELECT T1.Title, T4.CharName FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id INNER JOIN characters AS T4 ON T3.character_id = T4.id ORDER BY T1.Date DESC LIMIT 1
+SELECT T1.LongTitle FROM works AS T1 RIGHT JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T2.Description = 'Mytilene. A street before the brothel.'
+SELECT T2.Description FROM works AS T1 RIGHT JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T1.Title = 'Venus and Adonis' ORDER BY T2.Scene DESC LIMIT 1
+SELECT COUNT(T4.id) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id INNER JOIN characters AS T4 ON T3.character_id = T4.id WHERE T2.Act = 1 AND T2.Scene = 2 AND T4.id = 1238 AND T4.CharName = 'Viola' AND T1.Title = 'Twelfth Night'
+SELECT T2.character_id, T1.work_id FROM chapters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.chapter_id WHERE T2.PlainText = 'Fear not thou, man, thou shalt lose nothing here.'
+SELECT DISTINCT T2.Scene FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id INNER JOIN characters AS T4 ON T3.character_id = T4.id WHERE T1.Title = 'Twelfth Night' AND T4.CharName = 'Sir Toby Belch'
+SELECT DISTINCT T1.title FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id INNER JOIN characters AS T4 ON T3.character_id = T4.id WHERE T1.DATE < 1600 AND T1.GenreType = 'Tragedy' AND T4.CharName = 'Tybalt'
+SELECT T2.id FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T1.DATE > ( SELECT AVG(DATE) FROM works ) * 0.89
+SELECT T3.PlainText FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id WHERE T2.Act = 1 AND T2.Scene = 1 AND T1.Title = 'Twelfth Night'
+SELECT COUNT(id) FROM works WHERE GenreType = 'Comedy'
+SELECT MIN(Date) FROM works WHERE GenreType = 'Poem'
+SELECT DISTINCT Abbrev FROM characters WHERE CharName = 'Earl of Westmoreland'
+SELECT SUM(T2.ParagraphNum) FROM chapters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.chapter_id WHERE T1.Description = 'A Sea-port in Cyprus. An open place near the quay.'
+SELECT COUNT(id) FROM characters WHERE Description = 'servant to Timon'
+SELECT Title FROM works WHERE Date = ( SELECT MIN(Date) FROM works )
+SELECT COUNT(id) FROM works WHERE GenreType = 'Poem'
+SELECT ParagraphNum FROM paragraphs WHERE PlainText = 'Ay, surely, mere the truth: I know his lady.'
+SELECT SUM(T2.Scene) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T2.Act = 5 AND T1.LongTitle = 'History of Henry VIII'
+SELECT DISTINCT T1.Title, T1.GenreType FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T2.Act = 1
+SELECT DISTINCT T1.CharName, T1.Description FROM characters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.character_id WHERE T2.Chapter_id = 18710
+SELECT T2.Scene, T2.Description FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T1.LongTitle = 'Pericles, Prince of Tyre' AND T2.Act = 1
+SELECT DISTINCT T1.LongTitle FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id INNER JOIN characters AS T4 ON T3.character_id = T4.id WHERE T4.Description = 'Servant to Montague'
+SELECT T1.CharName, T2.ParagraphNum, T2.PlainText FROM characters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.character_id WHERE T1.Description = 'cousin to the king'
+SELECT COUNT(id) FROM characters WHERE Abbrev = 'All'
+SELECT SUM(IIF(GenreType = 'Comedy', 1, 0)) - SUM(IIF(GenreType = 'History', 1, 0)) FROM works WHERE Date > 1593
+SELECT T1.CharName FROM characters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.character_id WHERE T2.ParagraphNum = 8 AND T2.chapter_id = 18820
+SELECT COUNT(id) FROM works WHERE GenreType = 'Tragedy'
+SELECT COUNT(id) FROM works WHERE Title LIKE '%Henry%'
+SELECT character_id FROM paragraphs WHERE PlainText = 'O my poor brother! and so perchance may he be.'
+SELECT COUNT(id) FROM works WHERE Date < 1602
+SELECT ParagraphNum FROM paragraphs WHERE PlainText = 'This is Illyria, lady.'
+SELECT COUNT(ParagraphNum) FROM paragraphs WHERE chapter_id = 18881
+SELECT COUNT(T2.chapter_id) FROM characters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.character_id WHERE T1.CharName = 'First Witch'
+SELECT CAST(SUM(T2.Scene) AS REAL) / COUNT(T2.act) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id WHERE T1.Title = 'Antony and Cleopatra'
+SELECT DISTINCT T3.Description FROM characters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.character_id INNER JOIN chapters AS T3 ON T2.chapter_id = T3.id WHERE T1.CharName = 'Orsino' AND T3.ID = 18704
+SELECT T1.CharName FROM characters AS T1 INNER JOIN paragraphs AS T2 ON T1.id = T2.character_id WHERE T2.PlainText = 'This is Illyria, lady.'
+SELECT CAST(SUM(IIF(T4.CharName = 'antonio', 1, 0)) AS REAL) * 100 / COUNT(T1.id) FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id INNER JOIN characters AS T4 ON T3.character_id = T4.id WHERE T1.GenreType = 'Comedy'
+SELECT DISTINCT T1.Title FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id INNER JOIN characters AS T4 ON T3.character_id = T4.id WHERE T4.CharName = 'Shylock'
+SELECT CharName FROM characters WHERE Description = 'Daughter to Capulet'
+SELECT T2.Title FROM chapters AS T1 INNER JOIN works AS T2 ON T1.work_id = T2.id WHERE T1.Description = 'A field near Windsor.'
+SELECT DISTINCT T1.title FROM works AS T1 INNER JOIN chapters AS T2 ON T1.id = T2.work_id INNER JOIN paragraphs AS T3 ON T2.id = T3.chapter_id INNER JOIN characters AS T4 ON T3.character_id = T4.id WHERE T4.CharName = 'Froth'

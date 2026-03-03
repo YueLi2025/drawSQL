@@ -1,0 +1,22 @@
+nl_question
+How many railways are there?
+List the builders of railways in ascending alphabetical order.
+List the wheels and locations of the railways.
+What is the maximum level of managers in countries that are not "Australia"?
+What is the average age for all managers?
+What are the names of managers in ascending order of level?
+What are the names and arrival times of trains?
+What is the name of the oldest manager?
+Show the names of trains and locations of railways they are in.
+Show the builder of railways associated with the trains named "Andaman Exp".
+Show id and location of railways that are associated with more than one train.
+Show the id and builder of the railway that are associated with the most trains.
+Show different builders of railways, along with the corresponding number of railways using each builder.
+Show the most common builder of railways.
+Show different locations of railways along with the corresponding number of railways at each location.
+Show the locations that have more than one railways.
+List the object number of railways that do not have any trains.
+Show the countries that have both managers of age above 50 and managers of age below 46.
+Show the distinct countries of managers.
+Show the working years of managers in descending order of their level.
+Show the countries that have managers of age above 50 or below 46.

@@ -1,0 +1,49 @@
+nl_question
+How many film are there?
+Count the number of films.
+List the distinct director of all films.
+What are the different film Directors?
+What is the average ticket sales gross in dollars of films?
+Return the average gross sales in dollars across all films.
+What are the low and high estimates of film markets?
+Return the low and high estimates for all film markets.
+What are the types of film market estimations in year 1995?
+Return the types of film market estimations in 1995.
+What are the maximum and minimum number of cities in all markets.
+Return the maximum and minimum number of cities across all markets.
+How many markets have number of cities smaller than 300?
+Count the number of markets that have a number of cities lower than 300.
+List all countries of markets in ascending alphabetical order.
+What are the countries for each market, ordered alphabetically?
+List all countries of markets in descending order of number of cities.
+What are the countries for each market ordered by decreasing number of cities?
+Please show the titles of films and the types of market estimations.
+What are the titles of films and corresponding types of market estimations?
+Show the distinct director of films with market estimation in the year of 1995.
+Who are the different directors of films which had market estimation in 1995?
+What is the average number of cities of markets with low film market estimate bigger than 10000?
+Give the average number of cities within markets that had a low market estimation larger than 10000?
+Please list the countries and years of film market estimations.
+What are the countries of markets and their corresponding years of market estimation?
+Please list the years of film market estimations when the market is in country "Japan" in descending order.
+What are the years of film market estimation for the market of Japan, ordered by year descending?
+List the studios of each film and the number of films produced by that studio.
+How films are produced by each studio?
+List the name of film studio that have the most number of films.
+What is the name of teh studio that created the most films?
+List the names of studios that have at least two films.
+What are the names of studios that have made two or more films?
+List the title of films that do not have any market estimation.
+What are the titles of films that do not have a film market estimation?
+Show the studios that have produced films with director "Nicholas Meyer" and "Walter Hill".
+What are the names of studios that have produced films with both Nicholas Meyer and Walter Hill?
+Find the titles and studios of the films that are produced by some film studios that contained the word "Universal".
+What are the titles and studios of films that have been produced by a studio whose name contains "Universal"?
+Show the studios that have not produced films with director "Walter Hill".
+Which studios have never worked with the director Walter Hill?
+List the studios which average gross is above 4500000.
+Which studios have an average gross of over 4500000?
+What is the title of the film that has the highest high market estimation.
+Return the title of the film with the highest high estimate?
+What are the titles and directors of the films were never presented in China?
+Return the titles and directors of films that were never in the market of China.

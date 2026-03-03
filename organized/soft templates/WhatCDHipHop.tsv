@@ -1,0 +1,38 @@
+soft_templates
+SELECT variable FROM variable ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY sum(variable) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY sum(variable) DESC LIMIT num
+SELECT variable FROM variable as variable JOIN variable as variable ON variable = variable WHERE variable = string and variable = string ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable as variable JOIN variable as variable ON variable = variable WHERE variable = string and variable = string and variable >= num ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable as variable JOIN variable as variable ON variable = variable WHERE variable = string GROUP BY variable ORDER BY sum(variable) DESC LIMIT num
+SELECT variable FROM variable WHERE variable = string ORDER BY variable DESC LIMIT num
+SELECT sum(variable), variable FROM variable GROUP BY variable
+SELECT count(*), variable FROM variable GROUP BY variable
+SELECT count(*), variable FROM variable GROUP BY variable
+SELECT variable FROM variable ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable ORDER BY variable LIMIT num
+SELECT DISTINCT variable FROM variable
+SELECT variable, variable FROM variable
+SELECT variable, variable FROM variable
+SELECT DISTINCT variable FROM variable
+SELECT DISTINCT variable FROM variable
+SELECT variable FROM variable WHERE variable > num ORDER BY variable DESC LIMIT num
+SELECT DISTINCT variable FROM variable WHERE variable > num AND variable = string
+SELECT variable FROM variable as variable JOIN variable as variable ON variable = variable WHERE variable = string ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable WHERE variable = string AND variable = (SELECT max(variable) FROM variable WHERE variable = string) UNION SELECT variable FROM variable WHERE variable = string AND variable = (SELECT min(variable) FROM variable WHERE variable = string)
+SELECT variable FROM variable WHERE variable = string ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable as variable JOIN variable as variable ON variable = variable WHERE variable >= num GROUP BY variable ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(variable) LIMIT num
+SELECT variable FROM variable WHERE variable = num GROUP BY variable ORDER BY variable DESC LIMIT num
+SELECT variable, variable FROM variable as variable JOIN variable as variable ON variable = variable
+SELECT variable FROM variable GROUP BY variable ORDER BY count(variable) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(variable) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY avg(variable) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY sum(variable) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY sum(variable) DESC LIMIT num
+SELECT sum(variable), variable FROM variable GROUP BY variable
+SELECT sum(variable) FROM variable WHERE variable BETWEEN num AND num UNION SELECT sum(variable) FROM variable WHERE variable < num
+SELECT count(*) FROM ( SELECT variable FROM variable GROUP BY variable HAVING count(*) > num )
+SELECT sum(variable) FROM variable WHERE variable = string  UNION SELECT sum(variable) FROM variable WHERE variable = string
+SELECT variable FROM variable GROUP BY variable HAVING count(*) = num
+SELECT variable FROM variable WHERE variable > num GROUP BY variable

@@ -1,0 +1,16 @@
+soft_templates
+SELECT count(*) FROM variable
+select variable from variable order by variable asc
+SELECT variable , variable FROM variable
+SELECT variable FROM variable WHERE variable != string
+SELECT variable FROM variable WHERE variable > num OR variable < num
+SELECT variable FROM variable ORDER BY variable DESC LIMIT num
+SELECT avg(variable) FROM variable
+SELECT variable , COUNT(*) FROM variable GROUP BY variable
+SELECT variable FROM variable GROUP BY variable ORDER BY COUNT(*) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable HAVING COUNT(*) > num
+SELECT variable , variable FROM variable ORDER BY variable ASC
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable ORDER BY variable DESC
+SELECT variable , COUNT(*) FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable
+SELECT variable FROM variable WHERE variable NOT IN (SELECT variable FROM variable)

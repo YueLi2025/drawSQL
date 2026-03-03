@@ -1,0 +1,7 @@
+table_name,column_name,column_type
+greater manchester crime,crime id,string
+greater manchester crime,crime ts,date
+greater manchester crime,location,string
+greater manchester crime,lsoa,string
+greater manchester crime,type,string
+greater manchester crime,outcome,string

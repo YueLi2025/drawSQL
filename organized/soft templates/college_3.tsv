@@ -1,0 +1,75 @@
+soft_templates
+SELECT count(*) FROM variable
+SELECT count(*) FROM variable
+SELECT count(*) FROM variable WHERE variable > num
+SELECT count(*) FROM variable WHERE variable > num
+SELECT CName FROM variable WHERE variable = num
+SELECT CName FROM variable WHERE variable = num
+SELECT CName FROM variable WHERE variable = string
+SELECT CName FROM variable WHERE variable = string
+SELECT count(*) FROM variable WHERE variable = string
+SELECT count(*) FROM variable WHERE variable = string
+SELECT DPhone FROM variable WHERE variable = num
+SELECT DPhone FROM variable WHERE variable = num
+SELECT COUNT(DISTINCT StuID) FROM variable WHERE variable = string
+SELECT COUNT(DISTINCT StuID) FROM variable WHERE variable = string
+SELECT max(gradepoint) , min(gradepoint) FROM variable
+SELECT max(gradepoint) , min(gradepoint) FROM variable
+SELECT DISTINCT Fname FROM variable WHERE Fname LIKE string
+SELECT DISTINCT Fname FROM variable WHERE Fname LIKE string
+SELECT Fname , Lname FROM variable WHERE variable = string AND variable = string
+SELECT Fname , Lname FROM variable WHERE variable = string AND variable = string
+SELECT variable FROM variable WHERE variable = string AND variable = string
+SELECT variable FROM variable WHERE variable = string AND variable = string
+SELECT DName FROM variable WHERE variable = string
+SELECT DName FROM variable WHERE variable = string
+SELECT * FROM variable ORDER BY variable
+SELECT * FROM variable ORDER BY variable
+SELECT CName FROM variable ORDER BY variable
+SELECT CName FROM variable ORDER BY variable
+SELECT Fname FROM variable ORDER BY variable DESC
+SELECT Fname FROM variable ORDER BY variable DESC
+SELECT LName FROM variable WHERE variable = string ORDER BY variable DESC
+SELECT LName FROM variable WHERE variable = string ORDER BY variable DESC
+SELECT Lname FROM variable WHERE variable = string ORDER BY Lname
+SELECT Lname FROM variable WHERE variable = string ORDER BY Lname
+SELECT Fname FROM variable WHERE variable = string ORDER BY Fname
+SELECT Fname FROM variable WHERE variable = string ORDER BY Fname
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT DName FROM variable EXCEPT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT DName FROM variable EXCEPT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(*) ASC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(*) ASC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) ASC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) ASC LIMIT num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable HAVING COUNT(*) >= num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable HAVING COUNT(*) >= num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable , variable FROM variable AS variable JOIN variable AS variable JOIN variable AS variable ON variable = variable AND variable = variable
+SELECT variable , variable , variable FROM variable AS variable JOIN variable AS variable JOIN variable AS variable ON variable = variable AND variable = variable
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable JOIN variable AS variable ON variable = variable AND variable = variable WHERE variable >= num
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable JOIN variable AS variable ON variable = variable AND variable = variable WHERE variable >= num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT avg(variable) FROM variable AS variable JOIN variable AS variable JOIN variable AS variable ON variable = variable AND variable = variable WHERE variable = string
+SELECT avg(variable) FROM variable AS variable JOIN variable AS variable JOIN variable AS variable ON variable = variable AND variable = variable WHERE variable = string
+SELECT max(variable) , min(variable) FROM variable AS variable JOIN variable AS variable JOIN variable AS variable ON variable = variable AND variable = variable WHERE variable = string
+SELECT max(variable) , min(variable) FROM variable AS variable JOIN variable AS variable JOIN variable AS variable ON variable = variable AND variable = variable WHERE variable = string
+SELECT CName FROM variable WHERE variable = num UNION SELECT CName FROM variable WHERE variable = num AND variable = num
+SELECT CName FROM variable WHERE variable = num UNION SELECT CName FROM variable WHERE variable = num AND variable = num
+SELECT DName FROM variable WHERE variable = string UNION SELECT DName FROM variable WHERE variable = string AND variable = string
+SELECT DName FROM variable WHERE variable = string UNION SELECT DName FROM variable WHERE variable = string AND variable = string
+SELECT Fname FROM variable WHERE StuID NOT IN (SELECT StuID FROM variable)
+SELECT Fname FROM variable WHERE StuID NOT IN (SELECT StuID FROM variable)

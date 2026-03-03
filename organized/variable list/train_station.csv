@@ -1,0 +1,15 @@
+table_name,column_name,column_type
+station,Station_ID,num
+station,Name,string
+station,Annual_entry_exit,num
+station,Annual_interchanges,num
+station,Total_Passengers,num
+station,Location,string
+station,Main_Services,string
+station,Number_of_Platforms,num
+train,Train_ID,num
+train,Name,string
+train,Time,string
+train,Service,string
+train_station,Train_ID,num
+train_station,Station_ID,num

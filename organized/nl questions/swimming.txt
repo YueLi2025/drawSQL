@@ -1,0 +1,31 @@
+nl_question
+How many events are there?
+List all the event names by year from the most recent to the oldest.
+What is the name of the event that happened in the most recent year?
+How many stadiums are there?
+Find the name of the stadium that has the maximum capacity.
+Find the names of stadiums whose capacity is smaller than the average capacity.
+Find the country that has the most stadiums.
+Which country has at most 3 stadiums listed?
+Which country has both stadiums with capacity greater than 60000 and stadiums with capacity less than 50000?
+How many cities have a stadium that was opened before the year of 2006?
+How many stadiums does each country have?
+Which countries do not have a stadium that was opened after 2006?
+How many stadiums are not in country "Russia"?
+Find the names of all swimmers, sorted by their 100 meter scores in ascending order.
+How many different countries are all the swimmers from?
+List countries that have more than one swimmer.
+Find all 200 meter and 300 meter results of swimmers with nationality "Australia".
+Find the names of swimmers who has a result of "win".
+What is the name of the stadium which held the most events?
+Find the name and capacity of the stadium where the event named "World Junior" happened.
+Find the names of stadiums which have never had any event.
+Find the name of the swimmer who has the most records.
+Find the name of the swimmer who has at least 2 records.
+Find the name and nationality of the swimmer who has won (i.e., has a result of "win") more than 1 time.
+Find the names of the swimmers who have no record.
+Find the names of the swimmers who have both "win" and "loss" results in the record.
+Find the names of stadiums that some Australian swimmers have been to.
+Find the names of stadiums that the most swimmers have been to.
+Find all details for each swimmer.
+What is the average capacity of the stadiums that were opened in year 2005?

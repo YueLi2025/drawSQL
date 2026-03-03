@@ -1,0 +1,53 @@
+sql_query
+SELECT title FROM movies WHERE rating  =  'null'
+SELECT title FROM movies WHERE rating  =  'null'
+SELECT title FROM movies WHERE rating  =  'G'
+SELECT title FROM movies WHERE rating  =  'G'
+SELECT T1.title FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie WHERE T2.name  =  'Odeon'
+SELECT T1.title FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie WHERE T2.name  =  'Odeon'
+SELECT T1.title ,  T2.name FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie
+SELECT T1.title ,  T2.name FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie
+SELECT count(*) FROM movies WHERE rating  =  'G'
+SELECT count(*) FROM movies WHERE rating  =  'G'
+SELECT count(*) FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie
+SELECT count(*) FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie
+SELECT count(DISTINCT T1.code) FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie
+SELECT count(DISTINCT T1.code) FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie
+SELECT count(DISTINCT name) FROM movietheaters
+SELECT count(DISTINCT name) FROM movietheaters
+SELECT rating FROM movies WHERE title LIKE '%Citizen%'
+SELECT rating FROM movies WHERE title LIKE '%Citizen%'
+SELECT title FROM movies WHERE rating  =  'G' OR rating  =  'PG'
+SELECT title FROM movies WHERE rating  =  'G' OR rating  =  'PG'
+SELECT T1.title FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie WHERE T2.name  =  'Odeon' OR T2.name  =  'Imperial'
+SELECT T1.title FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie WHERE T2.name  =  'Odeon' OR T2.name  =  'Imperial'
+SELECT T1.title FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie WHERE T2.name  =  'Odeon' INTERSECT SELECT T1.title FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie WHERE T2.name  =  'Imperial'
+SELECT T1.title FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie WHERE T2.name  =  'Odeon' INTERSECT SELECT T1.title FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie WHERE T2.name  =  'Imperial'
+SELECT title FROM movies EXCEPT SELECT T1.title FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie WHERE T2.name  =  'Odeon'
+SELECT title FROM movies EXCEPT SELECT T1.title FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie WHERE T2.name  =  'Odeon'
+SELECT title FROM movies ORDER BY title
+SELECT title FROM movies ORDER BY title
+SELECT title FROM movies ORDER BY rating
+SELECT title FROM movies ORDER BY rating
+SELECT name FROM movietheaters GROUP BY name ORDER BY count(*) DESC LIMIT 1
+SELECT name FROM movietheaters GROUP BY name ORDER BY count(*) DESC LIMIT 1
+SELECT T1.title FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie GROUP BY T1.title ORDER BY count(*) DESC LIMIT 1
+SELECT T1.title FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie GROUP BY T1.title ORDER BY count(*) DESC LIMIT 1
+SELECT count(*) ,  rating FROM movies GROUP BY rating
+SELECT count(*) ,  rating FROM movies GROUP BY rating
+SELECT count(*) ,  rating FROM movies WHERE rating != 'null' GROUP BY rating
+SELECT count(*) ,  rating FROM movies WHERE rating != 'null' GROUP BY rating
+SELECT name FROM movietheaters GROUP BY name HAVING count(*)  >=  1
+SELECT name FROM movietheaters GROUP BY name HAVING count(*)  >=  1
+SELECT DISTINCT name FROM MovieTheaters WHERE Movie  =  'null'
+SELECT DISTINCT name FROM MovieTheaters WHERE Movie  =  'null'
+SELECT T2.name FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie WHERE T1.rating  =  'G'
+SELECT T2.name FROM movies AS T1 JOIN movietheaters AS T2 ON T1.code  =  T2.movie WHERE T1.rating  =  'G'
+SELECT title FROM movies
+SELECT title FROM movies
+SELECT DISTINCT rating FROM movies
+SELECT DISTINCT rating FROM movies
+SELECT * FROM movies WHERE rating  =  'null'
+SELECT * FROM movies WHERE rating  =  'null'
+SELECT Title FROM Movies WHERE Code NOT IN (SELECT Movie FROM MovieTheaters WHERE Movie != 'null')
+SELECT Title FROM Movies WHERE Code NOT IN (SELECT Movie FROM MovieTheaters WHERE Movie != 'null')

@@ -1,0 +1,105 @@
+hard_templates
+SELECT col_name FROM table_name WHERE col_name > num
+SELECT col_name FROM table_name WHERE col_name > num
+SELECT col_name FROM table_name WHERE lat < num
+SELECT col_name FROM table_name WHERE lat < num
+SELECT col_name , max(lat) FROM table_name GROUP BY col_name
+SELECT col_name , max(lat) FROM table_name GROUP BY col_name
+SELECT col_name , col_name FROM table_name ORDER BY col_name LIMIT num
+SELECT col_name , col_name FROM table_name ORDER BY col_name LIMIT num
+SELECT avg(lat) , avg(long) FROM table_name WHERE col_name = string
+SELECT avg(lat) , avg(long) FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name ORDER BY col_name LIMIT num
+SELECT col_name FROM table_name ORDER BY col_name LIMIT num
+SELECT sum( col_name ) , max( col_name ) FROM table_name WHERE col_name = num
+SELECT sum( col_name ) , max( col_name ) FROM table_name WHERE col_name = num
+SELECT col_name , avg( col_name ) FROM table_name WHERE col_name LIKE string GROUP BY col_name
+SELECT col_name , avg( col_name ) FROM table_name WHERE col_name LIKE string GROUP BY col_name
+SELECT count(DISTINCT col_name ) FROM table_name
+SELECT count(DISTINCT col_name ) FROM table_name
+SELECT count(DISTINCT col_name ) FROM table_name
+SELECT count(DISTINCT col_name ) FROM table_name
+SELECT COUNT(*) FROM table_name WHERE col_name = string
+SELECT COUNT(*) FROM table_name WHERE col_name = string
+SELECT DISTINCT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = num
+SELECT DISTINCT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = num
+SELECT col_name , col_name FROM table_name WHERE col_name LIKE string GROUP BY col_name ORDER BY COUNT(*) DESC LIMIT num
+SELECT col_name , col_name FROM table_name WHERE col_name LIKE string GROUP BY col_name ORDER BY COUNT(*) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name = num GROUP BY col_name ORDER BY COUNT(*) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name = num GROUP BY col_name ORDER BY COUNT(*) DESC LIMIT num
+SELECT COUNT(*) FROM table_name WHERE col_name > num AND col_name > num
+SELECT COUNT(*) FROM table_name WHERE col_name > num AND col_name > num
+SELECT table_alias0.col_name , table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name ORDER BY table_alias1.col_name LIMIT num
+SELECT table_alias0.col_name , table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name ORDER BY table_alias1.col_name LIMIT num
+SELECT col_name FROM table_name WHERE col_name = string INTERSECT SELECT col_name FROM table_name GROUP BY col_name HAVING avg( col_name ) > num
+SELECT col_name FROM table_name WHERE col_name = string INTERSECT SELECT col_name FROM table_name GROUP BY col_name HAVING avg( col_name ) > num
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name HAVING avg(table_alias1.col_name) > num UNION SELECT col_name , col_name FROM table_name WHERE col_name LIKE string
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name HAVING avg(table_alias1.col_name) > num UNION SELECT col_name , col_name FROM table_name WHERE col_name LIKE string
+SELECT col_name FROM table_name WHERE col_name = num GROUP BY col_name ORDER BY COUNT (*) DESC LIMIT num
+SELECT col_name FROM table_name WHERE col_name = num GROUP BY col_name ORDER BY COUNT (*) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY avg( col_name ) LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY avg( col_name ) LIMIT num
+SELECT avg( col_name ) FROM table_name WHERE col_name NOT IN (SELECT col_name FROM table_name WHERE col_name = string )
+SELECT avg( col_name ) FROM table_name WHERE col_name NOT IN (SELECT col_name FROM table_name WHERE col_name = string )
+SELECT avg(long) FROM table_name WHERE col_name NOT IN (SELECT col_name FROM table_name GROUP BY col_name HAVING max( col_name ) > num )
+SELECT avg(long) FROM table_name WHERE col_name NOT IN (SELECT col_name FROM table_name GROUP BY col_name HAVING max( col_name ) > num )
+SELECT col_name , col_name FROM table_name WHERE col_name >= num
+SELECT col_name , col_name FROM table_name WHERE col_name >= num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name HAVING avg(table_alias1.col_name) > num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name HAVING avg(table_alias1.col_name) > num
+SELECT col_name , count(*) FROM table_name WHERE col_name >= num GROUP BY col_name
+SELECT col_name , count(*) FROM table_name WHERE col_name >= num GROUP BY col_name
+SELECT col_name , col_name FROM table_name WHERE col_name < (SELECT min( col_name ) FROM table_name WHERE col_name = num )
+SELECT col_name , col_name FROM table_name WHERE col_name < (SELECT min( col_name ) FROM table_name WHERE col_name = num )
+SELECT table_alias0.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT table_alias0.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name ORDER BY table_alias1.col_name DESC LIMIT num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name ORDER BY table_alias1.col_name DESC LIMIT num
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name != string
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name != string
+SELECT col_name FROM table_name WHERE col_name = num AND col_name != string AND col_name != string
+SELECT col_name FROM table_name WHERE col_name = num AND col_name != string AND col_name != string
+SELECT col_name FROM table_name WHERE lat > num EXCEPT SELECT col_name FROM table_name GROUP BY col_name HAVING min( col_name ) < num
+SELECT col_name FROM table_name WHERE lat > num EXCEPT SELECT col_name FROM table_name GROUP BY col_name HAVING min( col_name ) < num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name HAVING avg( col_name ) > num EXCEPT SELECT col_name FROM table_name WHERE col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name HAVING avg( col_name ) > num EXCEPT SELECT col_name FROM table_name WHERE col_name = string
+SELECT col_name , lat , col_name FROM table_name ORDER BY lat LIMIT num
+SELECT col_name , lat , col_name FROM table_name ORDER BY lat LIMIT num
+SELECT col_name , col_name , col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name , col_name , col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name , COUNT(*) FROM table_name GROUP BY col_name HAVING COUNT(*) >= num
+SELECT col_name , COUNT(*) FROM table_name GROUP BY col_name HAVING COUNT(*) >= num
+SELECT col_name , col_name FROM table_name GROUP BY col_name HAVING COUNT(*) >= num
+SELECT col_name , col_name FROM table_name GROUP BY col_name HAVING COUNT(*) >= num
+SELECT col_name FROM table_name GROUP BY col_name HAVING avg( col_name ) < num
+SELECT col_name FROM table_name GROUP BY col_name HAVING avg( col_name ) < num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY max(lat) DESC
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY max(lat) DESC
+SELECT col_name , col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name , col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name , col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT col_name , col_name FROM table_name ORDER BY col_name DESC LIMIT num
+SELECT table_alias0.col_name , table_alias0.col_name , avg(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name
+SELECT table_alias0.col_name , table_alias0.col_name , avg(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name
+SELECT table_alias0.col_name , table_alias0.col_name , min(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name
+SELECT table_alias0.col_name , table_alias0.col_name , min(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name
+SELECT DISTINCT col_name FROM table_name WHERE col_name < num
+SELECT DISTINCT col_name FROM table_name WHERE col_name < num
+SELECT DISTINCT col_name FROM table_name EXCEPT SELECT DISTINCT col_name FROM table_name WHERE col_name >= num
+SELECT DISTINCT col_name FROM table_name EXCEPT SELECT DISTINCT col_name FROM table_name WHERE col_name >= num
+SELECT col_name FROM table_name WHERE col_name >= (SELECT avg( col_name ) FROM table_name WHERE col_name = num )
+SELECT col_name FROM table_name WHERE col_name >= (SELECT avg( col_name ) FROM table_name WHERE col_name = num )
+SELECT col_name FROM table_name WHERE col_name BETWEEN num AND num
+SELECT col_name FROM table_name WHERE col_name BETWEEN num AND num
+SELECT col_name , col_name - col_name FROM table_name ORDER BY col_name - col_name LIMIT num
+SELECT col_name , col_name - col_name FROM table_name ORDER BY col_name - col_name LIMIT num
+SELECT DISTINCT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name > num
+SELECT DISTINCT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name > num
+SELECT col_name FROM table_name GROUP BY col_name HAVING avg( col_name ) < num INTERSECT SELECT col_name FROM table_name GROUP BY col_name HAVING count(*) >= num
+SELECT col_name FROM table_name GROUP BY col_name HAVING avg( col_name ) < num INTERSECT SELECT col_name FROM table_name GROUP BY col_name HAVING count(*) >= num
+SELECT col_name FROM table_name WHERE col_name = string EXCEPT SELECT col_name FROM table_name GROUP BY col_name HAVING count(*) > num
+SELECT col_name FROM table_name WHERE col_name = string EXCEPT SELECT col_name FROM table_name GROUP BY col_name HAVING count(*) > num
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 JOIN table_name AS table_alias2 JOIN table_name AS table_alias3 ON table_alias0.col_name = table_alias1.col_name AND table_alias1.col_name = table_alias3.col_name AND table_alias2.col_name = table_alias3.col_name WHERE table_alias0.col_name = string AND table_alias2.col_name = string
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 JOIN table_name AS table_alias2 JOIN table_name AS table_alias3 ON table_alias0.col_name = table_alias1.col_name AND table_alias1.col_name = table_alias3.col_name AND table_alias2.col_name = table_alias3.col_name WHERE table_alias0.col_name = string AND table_alias2.col_name = string
+SELECT avg(table_alias0.col_name) , avg(table_alias0.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT avg(table_alias0.col_name) , avg(table_alias0.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name

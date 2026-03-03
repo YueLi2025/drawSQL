@@ -1,0 +1,89 @@
+nl_question
+How many faculty do we have?
+What is the total number of faculty members?
+What ranks do we have for faculty?
+Find the list of distinct ranks for faculty.
+Show all the distinct buildings that have faculty rooms.
+What buildings have faculty offices?
+Show the rank, first name, and last name for all the faculty.
+What are the rank, first name, and last name of the faculty members?
+Show the first name, last name, and phone number for all female faculty members.
+What are the first name, last name, and phone number of all the female faculty members?
+Show ids for all the male faculty.
+What are the faculty ids of all the male faculty members?
+How many female Professors do we have?
+Count the number of female Professors we have.
+Show the phone, room, and building for the faculty named Jerry Prince.
+What are the phone, room, and building of the faculty member called Jerry Prince?
+How many Professors are in building NEB?
+Count the number of Professors who have office in building NEB.
+Show the first name and last name for all the instructors.
+What are the first name and last name of all the instructors?
+Show all the buildings along with the number of faculty members the buildings have.
+How many faculty members does each building have? List the result with the name of the building.
+Which building has most faculty members?
+Find the building that has the largest number of faculty members.
+Show all the buildings that have at least 10 professors.
+In which buildings are there at least ten professors?
+For each faculty rank, show the number of faculty members who have it.
+How many faculty members do we have for each faculty rank?
+Show all the ranks and the number of male and female faculty for each rank.
+How many faculty members do we have for each rank and gender?
+Which rank has the smallest number of faculty members?
+Find the faculty rank that has the least members.
+Show the number of male and female assistant professors.
+How many male and female assistant professors do we have?
+What are the first name and last name of Linda Smith's advisor?
+Who is the advisor of Linda Smith? Give me the first name and last name.
+Show the ids of students whose advisors are professors.
+Which students have professors as their advisors? Find their student ids.
+Show first name and last name for all the students advised by Michael Goodrich.
+Which students are advised by Michael Goodrich? Give me their first and last names.
+Show the faculty id of each faculty member, along with the number of students he or she advises.
+What are the faculty id and the number of students each faculty has?
+Show all the faculty ranks and the number of students advised by each rank.
+How many students are advised by each rank of faculty? List the rank and the number of students.
+What are the first and last name of the faculty who has the most students?
+Give me the the first and last name of the faculty who advises the most students.
+Show the ids for all the faculty members who have at least 2 students.
+Which faculty members advise two ore more students? Give me their faculty ids.
+Show ids for the faculty members who don't advise any student.
+What are the ids of the faculty members who do not advise any student.
+What activities do we have?
+List all the activities we have.
+How many activities do we have?
+Find the number of activities available.
+How many faculty members participate in an activity?
+Give me the number of faculty members who participate in an activity
+Show the ids of the faculty who don't participate in any activity.
+Which faculty do not participate in any activity? Find their faculty ids.
+Show the ids of all the faculty members who participate in an activity and advise a student.
+What are ids of the faculty members who not only participate in an activity but also advise a student.
+How many activities does Mark Giuliano participate in?
+Find the number of activities Mark Giuliano is involved in.
+Show the names of all the activities Mark Giuliano participates in.
+What are the names of the activities Mark Giuliano is involved in
+Show the first and last name of all the faculty members who participated in some activity, together with the number of activities they participated in.
+What is the first and last name of the faculty members who participated in at least one activity? For each of them, also show the number of activities they participated in.
+Show all the activity names and the number of faculty involved in each activity.
+How many faculty members participate in each activity? Return the activity names and the number of faculty members.
+What is the first and last name of the faculty participating in the most activities?
+Find the first and last name of the faculty who is involved in the largest number of activities.
+What is the name of the activity that has the most faculty members involved in?
+Which activity has the most faculty members participating in? Find the activity name.
+Show the ids of the students who don't participate in any activity.
+What are the ids of the students who are not involved in any activity
+Show the ids for all the students who participate in an activity and are under 20.
+What are the ids of the students who are under 20 years old and are involved in at least one activity.
+What is the first and last name of the student participating in the most activities?
+Tell me the first and last name of the student who has the most activities.
+What is the name of the activity with the most students?
+Find the name of the activity that has the largest number of student participants.
+Find the first names of the faculty members who are playing Canoeing or Kayaking.
+Which faculty members are playing either Canoeing or Kayaking? Tell me their first names.
+Find the first names of professors who are not playing Canoeing or Kayaking.
+What are the first names of the professors who do not play Canoeing or Kayaking as activities?
+Find the first names of the faculty members who participate in Canoeing and Kayaking.
+What are the first names of the faculty members playing both Canoeing and Kayaking?
+Find the ids of the students who participate in Canoeing and Kayaking.
+Which students participate in both Canoeing and Kayaking as their activities? Tell me their student ids.

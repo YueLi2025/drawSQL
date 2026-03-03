@@ -1,0 +1,106 @@
+nl_question
+What's the description of the series code SM.POP.TOTL for Aruba?
+Please list the countries in Latin America & Caribbean with a note on the series code SM.POP.TOTL.
+Among the countries with note on the series code SM.POP.TOTL, how many of them are in the low-income group?
+How many low-income countries under the lending category of the International Development Associations have a note on the series code SM.POP.TOTL?
+Among the countries in the High income: OECD group whose currency unit is Euro, how many of them have a note on the series code SP.DYN.AMRT.FE?
+What is the description of the footnote on the series code AG.LND.FRST.K2 in 1990 for Aruba?
+On which years did Aruba got a footnote on the series code AG.LND.FRST.K2?
+What is the average adolescent fertility rate of the country whose Alpha2Code is 1A over the years this indicator was calculated.
+List down the series codes in which the topic is about Environment: Emissions and the license type is restricted. Please include their alpha code.
+What is the series note description of the series "SP.DYN.TO65.MA.ZS" which covers the topic "Health: Mortality" in 1967?
+List the sources for the Net Migration in South American countries in 2002.
+Please calculate the percentage of Sub-Saharan African countries which are in the Special trade system.
+Mention the series code of countries using pound sterling as their currency unit. Which country belongs to high income group among them.
+Which low income country has a series code of DT.DOD.DECT.CD? Name the country code of it.
+List the series code of country with country notes description as "Data sources : Eurostat" and state the Wb2Code of these countries.
+What is the percentage of countries in the Middle East and North Africa that have finished reporting on their real external debt?
+What proportion of Sub-Saharan Africa's countries have lower middle incomes?
+Please provide the subject of series of Austria.
+Please list the notes for Aruba on the indicators under the topic of Environment: Energy production & use.
+For the country that has notes on the indicator Inflation, consumer prices, in which region is it in?
+How many countries have notes on the indicator Stocks traded, turnover ratio of domestic shares?
+Among the countries in the group of Heavily Indebted Poor Countries, how many of them are under the lending category of the International Development Associations?
+Please list the descriptions of the series code SM.POP.TOTL for all the countries that are under the lending category of the International Development Associations.
+List the East Asia & Pacific countries which are under the High income: nonOECD group. Please include their alpha code.
+What are the Indicator names and aggregation methods when the topic is Economic Policy & Debt: Balance of payments: Capital & financial account?
+List down the World Bank code of the countries whose country note has described "Data source : Human Mortality Database by University of California, Berkeley, and Max Planck Institute for Demographic Research."? Please include their lending category.
+Find the countries in south Asia which are in the low-income group. What is the source of their recent income and expenditure data? List it alongside the table name of the countries.
+List down 10 country codes and it's short names.
+Which countries use Euro as their currency? List down the table name.
+Which high income group countries are from Asia?
+Which country have completed vital registration? List all the countries.
+Which form of government has more countries that have completed the actual external debt reporting between the two types of government accounting concepts, budgetary central government vs. consolidated central government?
+Please list the full names of any three countries that have their series code with a description of UN Energy Statistics (2014).
+What is the series code for Germany and what is its description?
+Please list the countries under the lending category of the International Development Associations and have a external debt reporting finished by estimation.
+How many footnotes did Aruba got on different series code in the year 2002?
+List out the series code and country code of the poor countries that located in Latin American & Carribbean.
+Mention the series code of countries using Australian dollar as their currency unit. Which country belongs to middle income group among them.
+List out the country code and country name of the rich countries using Euro as their currency unit
+List out the table name and currency unit of countries using series code as FP.CPI.TOTL
+State the table name of country with description of "Covers mainland Tanzania only".
+Write down the description and series code of Benin in year 2005.
+How many countries are using the same type of currency? Please list the short names of any 3 countries.
+What South Asian nations have low incomes? Please include the entire names of the nations in your answer.
+Please provide full name of any two countries using special trade system.
+Please list the countries that got the footnote "Data are classified as official aid." on the series code DC.DAC.AUSL.CD in 2002.
+For how many consecutive years did Aruba get a footnote on the series code BX.KLT.DINV.CD.WD?
+What is the average value of Adjusted net enrolment rate, primary, both sexes (%) indicator in Algeria from 1975 to 1980?
+In 1970, how many Middle Eastern & North African countries whose value for CO2 emissions from gaseous fuel consumption (kt) indicator is more than 600?
+Please write down the footnote descriptions of Albania in 1981.
+Enumerate the footnote narratives of The Bahamas under the series code SH.DTH.IMRT in the year 1984.
+What is the topic of the series when the Total reserves minus gold (current US$) indicator of Haiti hit the value of 3,000,000 in 1961? Please include its series code and license type.
+What are the sources for the data of children who finished primary school education in Latin America & Caribbean countries?
+In the countries for which the latest trade data are from 2013, what was the GDP growth in 2014? List them in the ascending order of GDP.
+How many low income countries are there in South Asia?
+Which upper middle income country has the lowest value of CO2 emissions (kt)?
+What is the minimum of International migrant stock, total of heavily indebted poor countries?
+Please list the indicator names belonging to Education: Inputs topic in 2000.
+What percentage of countries in South Asia have the Life expectancy at birth, female (years) greater than 50?
+From 1960 to 1965, which country had the highest Death rate, crude (per 1,000 people)?
+Please list the indicator names of Arab World whose values are higher than 50 in 1960.
+Which country has the highest value of Merchandise imports by the reporting economy (current US$)?
+Please list annual indicator names which have values of more than 100 in 1965.
+From 1968 to 1970, what are indicator names whose license type is open and values are less than 100?
+Please list out all annual indicator names of Sudan in 1961?
+List out the series code of countries using Euro as their currency unit.
+Mention the series code of countries using Hong Kong dollar as their currency unit.
+List out the country name of lower earning countries
+How many of the countries name start with alphabet A? List down the Alpha2Code of them.
+Name the countries' long name with national accounts base year prior to 1980.
+What are the footnote description of Finland in year 2000?
+List the long name of countries with indicator name in 1980.
+State the currency of Malaysia and what are the indicator code used by this country in 1970?
+How many footnotes have been made in year 1980 and what are the table names of these countries that made the footnotes?
+Among the low income countries, which country has the lowest fertility rate?
+How much is the total urban population of middle income countries in 1960?
+How many countries using the 1993 System of National Accounts methodology?
+Which country have conducted population census from 2010 until 2012 and have completed vital registration?
+Which country have the highest CO2 emissions in 1960?
+What country have the series code of SP.DYN.CBRT.IN?
+Which country have data classified as official aid?
+What country have its data estimated based on regression?
+In 1960, what is largest population for country with upper middle income?
+How many countries uses the 1968 System of National Accounts methodology?
+What upper middle income country under East Asia & Pacific region which covers the topic about Social Protection & Labor: Migration ? Indicate the short name of the said country.
+Name the country in which the topic is about Poverty: Shared Prosperity. Indicate the long name of the country.
+What country has the latest trade data with a series code of "SP.DYN.CDRT.IN "? List the table name of the country.
+Which country has the lowest percentage of arable land?
+What are the subjects of series that have a restricted type of license?
+Which countries in the upper middle income category still have unfinished external debt reporting? Please provide the country codes in your answer.
+From 1961 to 1980, what was the highest percentage of land used for agriculture in the Republic of Benin?
+What was the deposit interest rate in the Commonwealth of Australia in 1979 in percentage?
+Which nation completed its external debt reporting in 1980 and had a Land under cereal production value of 3018500?
+What portion of the nations in Latin America and the Caribbean had more than 50% of their land used for agriculture in 1961?
+What are the full names of the countries in South Asia that belongs to the low income group?
+What is the indicator code for Mobile Cellular Subscriptions of Brazil?
+In Sub-Saharan Africa, how many female out-of-school children of primary school age are there in the country with the higest number of female out-of-school children of primary school age? Indicate the year of when it was recorded.
+What is the series code for number of infant deaths in year 1965 for the country whose full name is Islamic State of Afghanistan?
+What are the indicator codes for the Republic of Albania in the year 1960?
+What is the lending category of the country with a cereal production of 6140000 metric tons for the year 1966?
+In which years does the country whose Alpha2Code is 1A have a result of the indicator Adolescent fertility rate?
+What's the long name of the country that got 3000000 on the indicator Arms exports in 1960?
+Please list the Alpha2Codes of all the countries that have an indicator on Rural population in 1960.
+What is the note for Australia on the indicator SP.ADO.TFRT?
+What's the value of the indicator whose long definition is "Adolescent fertility rate is the number of births per 1,000 women ages 15-19." for the Arab World in 1960?

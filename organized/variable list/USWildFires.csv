@@ -1,0 +1,20 @@
+table_name,column_name,column_type
+fires,fire year,num
+fires,discovery date,num
+fires,discovery doy,num
+fires,discovery time,string
+fires,stat cause code,num
+fires,stat cause descr,string
+fires,cont date,string
+fires,cont doy,string
+fires,cont time,string
+fires,fire size,num
+fires,fire size class,string
+fires,latitude,num
+fires,longitude,num
+fires,owner code,num
+fires,owner descr,string
+fires,state,string
+fires,county,string
+fires,fips code,string
+fires,fips name,string

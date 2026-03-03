@@ -1,0 +1,41 @@
+sql_query
+SELECT count(*) FROM school
+SELECT count(*) FROM school
+SELECT LOCATION FROM school ORDER BY Enrollment ASC
+SELECT LOCATION FROM school ORDER BY Enrollment ASC
+SELECT LOCATION FROM school ORDER BY Founded DESC
+SELECT LOCATION FROM school ORDER BY Founded DESC
+SELECT Enrollment FROM school WHERE Denomination != "Catholic"
+SELECT Enrollment FROM school WHERE Denomination != "Catholic"
+SELECT avg(Enrollment) FROM school
+SELECT avg(Enrollment) FROM school
+SELECT Team FROM player ORDER BY Team ASC
+SELECT Team FROM player ORDER BY Team ASC
+SELECT count(DISTINCT POSITION) FROM player
+SELECT count(DISTINCT POSITION) FROM player
+SELECT Team FROM player ORDER BY Age DESC LIMIT 1
+SELECT Team FROM player ORDER BY Age DESC LIMIT 1
+SELECT Team FROM player ORDER BY Age DESC LIMIT 5
+SELECT Team FROM player ORDER BY Age DESC LIMIT 5
+SELECT T1.Team ,  T2.Location FROM player AS T1 JOIN school AS T2 ON T1.School_ID  =  T2.School_ID
+SELECT T1.Team ,  T2.Location FROM player AS T1 JOIN school AS T2 ON T1.School_ID  =  T2.School_ID
+SELECT T2.Location FROM player AS T1 JOIN school AS T2 ON T1.School_ID  =  T2.School_ID GROUP BY T1.School_ID HAVING COUNT(*)  >  1
+SELECT T2.Location FROM player AS T1 JOIN school AS T2 ON T1.School_ID  =  T2.School_ID GROUP BY T1.School_ID HAVING COUNT(*)  >  1
+SELECT T2.Denomination FROM player AS T1 JOIN school AS T2 ON T1.School_ID  =  T2.School_ID GROUP BY T1.School_ID ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T2.Denomination FROM player AS T1 JOIN school AS T2 ON T1.School_ID  =  T2.School_ID GROUP BY T1.School_ID ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T1.Location ,  T2.Nickname FROM school AS T1 JOIN school_details AS T2 ON T1.School_ID  =  T2.School_ID
+SELECT T1.Location ,  T2.Nickname FROM school AS T1 JOIN school_details AS T2 ON T1.School_ID  =  T2.School_ID
+SELECT Denomination ,  COUNT(*) FROM school GROUP BY Denomination
+SELECT Denomination ,  COUNT(*) FROM school GROUP BY Denomination
+SELECT Denomination ,  COUNT(*) FROM school GROUP BY Denomination ORDER BY COUNT(*) DESC
+SELECT Denomination ,  COUNT(*) FROM school GROUP BY Denomination ORDER BY COUNT(*) DESC
+SELECT School_Colors FROM school ORDER BY Enrollment DESC LIMIT 1
+SELECT School_Colors FROM school ORDER BY Enrollment DESC LIMIT 1
+SELECT LOCATION FROM school WHERE School_ID NOT IN (SELECT School_ID FROM Player)
+SELECT LOCATION FROM school WHERE School_ID NOT IN (SELECT School_ID FROM Player)
+SELECT Denomination FROM school WHERE Founded  <  1890 INTERSECT SELECT Denomination FROM school WHERE Founded  >  1900
+SELECT Denomination FROM school WHERE Founded  <  1890 INTERSECT SELECT Denomination FROM school WHERE Founded  >  1900
+SELECT Nickname FROM school_details WHERE Division != "Division 1"
+SELECT Nickname FROM school_details WHERE Division != "Division 1"
+SELECT Denomination FROM school GROUP BY Denomination HAVING COUNT(*)  >  1
+SELECT Denomination FROM school GROUP BY Denomination HAVING COUNT(*)  >  1

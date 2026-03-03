@@ -1,0 +1,31 @@
+sql_query
+SELECT count(*) FROM submission
+SELECT count(*) FROM submission
+SELECT Author FROM submission ORDER BY Scores ASC
+SELECT Author FROM submission ORDER BY Scores ASC
+SELECT Author ,  College FROM submission
+SELECT Author ,  College FROM submission
+SELECT Author FROM submission WHERE College  =  "Florida" OR College  =  "Temple"
+SELECT Author FROM submission WHERE College  =  "Florida" OR College  =  "Temple"
+SELECT avg(Scores) FROM submission
+SELECT avg(Scores) FROM submission
+SELECT Author FROM submission ORDER BY Scores DESC LIMIT 1
+SELECT Author FROM submission ORDER BY Scores DESC LIMIT 1
+SELECT College ,  COUNT(*) FROM submission GROUP BY College
+SELECT College ,  COUNT(*) FROM submission GROUP BY College
+SELECT College FROM submission GROUP BY College ORDER BY COUNT(*) DESC LIMIT 1
+SELECT College FROM submission GROUP BY College ORDER BY COUNT(*) DESC LIMIT 1
+SELECT College FROM submission WHERE Scores  >  90 INTERSECT SELECT College FROM submission WHERE Scores  <  80
+SELECT College FROM submission WHERE Scores  >  90 INTERSECT SELECT College FROM submission WHERE Scores  <  80
+SELECT T2.Author ,  T1.Result FROM acceptance AS T1 JOIN submission AS T2 ON T1.Submission_ID  =  T2.Submission_ID
+SELECT T2.Author ,  T1.Result FROM acceptance AS T1 JOIN submission AS T2 ON T1.Submission_ID  =  T2.Submission_ID
+SELECT T1.Result FROM acceptance AS T1 JOIN submission AS T2 ON T1.Submission_ID  =  T2.Submission_ID ORDER BY T2.Scores DESC LIMIT 1
+SELECT T1.Result FROM acceptance AS T1 JOIN submission AS T2 ON T1.Submission_ID  =  T2.Submission_ID ORDER BY T2.Scores DESC LIMIT 1
+SELECT T2.Author ,  COUNT(DISTINCT T1.workshop_id) FROM acceptance AS T1 JOIN submission AS T2 ON T1.Submission_ID  =  T2.Submission_ID GROUP BY T2.Author
+SELECT T2.Author ,  COUNT(DISTINCT T1.workshop_id) FROM acceptance AS T1 JOIN submission AS T2 ON T1.Submission_ID  =  T2.Submission_ID GROUP BY T2.Author
+SELECT T2.Author FROM acceptance AS T1 JOIN submission AS T2 ON T1.Submission_ID  =  T2.Submission_ID GROUP BY T2.Author HAVING COUNT(DISTINCT T1.workshop_id)  >  1
+SELECT T2.Author FROM acceptance AS T1 JOIN submission AS T2 ON T1.Submission_ID  =  T2.Submission_ID GROUP BY T2.Author HAVING COUNT(DISTINCT T1.workshop_id)  >  1
+SELECT Date ,  Venue FROM workshop ORDER BY Venue
+SELECT Date ,  Venue FROM workshop ORDER BY Venue
+SELECT Author FROM submission WHERE Submission_ID NOT IN (SELECT Submission_ID FROM acceptance)
+SELECT Author FROM submission WHERE Submission_ID NOT IN (SELECT Submission_ID FROM acceptance)

@@ -1,0 +1,71 @@
+nl_question
+Among the users who gave a rating of 5, how many of them are male?
+List the top 10 USA movies, by descending order, from the highest to the lowest, the user rating.
+What is the average number of casts of movies that are from the USA?
+What are the ID of actors that had worked together with director 22397? What was the genre of that movie?
+Please list down the ID of actors and directors in action movies.
+What are the ID of actors with quality rating of 3 acted in English USA movies?
+List down the ID of movies with running time of 3 and average revenue of 1?
+UK produced what genre of movies?
+Action movies are mostly directed by directors of which country?
+What is the percentage of female audiences who viewed movies with rating 2?
+Among divergent movies that got the highest rating, how many of them are from the UK?
+For the movies in English that are the oldest, how many of them have the lowest rating?
+Please list the country of the movie that stars an actress who acts the worse.
+What is the highest average rating for action movies made in the USA?
+Among the films directed by directors who direct the best, how many of them have an average rating of over 3.5?
+Which adventure movie has the highest average rating?
+What is the most distinct rated movie with a running time of 0?
+Which directors with the best quality directed the most films?
+Please list all horror films that have a rating of 1.
+List the IDs of all the directors who worked on French films.
+List all of the user ids and ages who rated movies with the id 1695219?
+Which genre contains the greatest number of non-English films?
+List the cast and the director of the movie with the id 1949144.
+Please list the actor IDs whose movies have the newest published date.
+Who are cast members in an English movie which has a running time equal to 2? Please list their IDs.
+How many American movies have cast number more than 1?
+Please list movie IDs which has the oldest publication date and the cast numbers are zero.
+How many American comedies are there?
+How many latest released dramas and action movies?
+What horror movies have a running time of at least 2? Please list movie IDs.
+What's different average revenue status for director who directed the movie that got the most 1 ratings?
+List the movie that has been rated most by 25 years old users.
+How many separate 35 year-old uesers have rated the movie from UK?
+List the user ids and ages who gave the rate 2 to the movie No. 2409051.
+Please give the ids of the oldest films that got the most ratings.
+Which different movies from France got the least ratings?
+How many different actors have played a role in the highest rating movie?
+Which Crime film got the lowest average rating?
+What's the ratio of gender in actors to actress in all the UK movies?
+How many 35-year-old female users gave the movie 1711133 a rating of 3?
+How many unique directors with an average earnings of 2 and a quality of 3 have not made comedy films? List them.
+How many of the worst actors are men and how many of the worst actors are women? Indicate your answer in ratio form.
+Which actor has appeared in the most films?
+What is the most popular genre of film directed by directors?
+What are the most common film genres made by the worst directors?
+What non-English American film/s has received the lowest user ratings? Mention the movie's I.D.
+What are the genres of all the English-language foreign films having a runtime of two hours or less? List each one.
+What is the total amount male and female actors who were casted in movie ID 1684910 and what is the proportion between the highest quality actors against the worst quality of actors? Indicate your answer in percentage. List the the director as well as the genre.
+List the different director IDs of the movies whose user rating is more than 4.
+List the genres of the movies which actor id 851 is the star.
+How many movies from the USA which user rating is less than 3?
+List the top 5 movies from other countries which to language is not in English.
+What is the ID of audiences that gave the most rating of 5?
+List down 5 non English adventure movies from UK?
+Please list the genre of the movies that are the newest and is in English.
+Among the action movies from the USA, how many of them are not in English?
+Please list different IDs of movies that are the newest and have gotten the lowest rating.
+Please list the genre of the movies that are directed by the directors with the highest level of average revenue.
+List the ids and ratings of each actors played in the movie with the id 1722327?
+What is the proportion of action movies directors who are called 'box office success paradox'?
+What is the total average movie directed by the directors who's quality and revenue is 4?
+How many female actresses appeared in the movie 2312852, what country was it in, and what was it's running time?
+How many female actors acted in the movies of year 4?
+Among the actors who acted in UK movies, what percentage of actors received a rating of at least 3?
+Please calculate negative critical reception of American movies
+Among the English comedy movies produced in the UK, how many movies with a running time of 3 was rated the highest by users between the age 45-50? Indicate the movie names.
+Please list the ID of the movie that has been mostly rated by female users.
+How many different female users have rated movies from France?
+For different directors who direct well, how many of them have directed an action film?
+Which actor has acted in at least 2 French films? Please list their IDs.

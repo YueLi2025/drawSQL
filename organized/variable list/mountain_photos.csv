@@ -1,0 +1,17 @@
+table_name,column_name,column_type
+camera_lens,id,num
+camera_lens,brand,string
+camera_lens,name,string
+camera_lens,focal_length_mm,num
+camera_lens,max_aperture,num
+mountain,id,num
+mountain,name,string
+mountain,Height,num
+mountain,Prominence,num
+mountain,Range,string
+mountain,Country,string
+photos,id,num
+photos,camera_lens_id,num
+photos,mountain_id,num
+photos,color,string
+photos,name,string

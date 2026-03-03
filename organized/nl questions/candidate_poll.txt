@@ -1,0 +1,41 @@
+nl_question
+How many candidates are there?
+Count the number of candidates.
+Which poll resource provided the most number of candidate information?
+Return the poll resource associated with the most candidates.
+what are the top 3 highest support rates?
+Return the top 3 greatest support rates.
+Find the id of the candidate who got the lowest oppose rate.
+What is the id of the candidate with the lowest oppose rate?
+Please list support, consider, and oppose rates for each candidate in ascending order by unsure rate.
+What are the support, consider, and oppose rates of each candidate, ordered ascending by their unsure rate?
+which poll source does the highest oppose rate come from?
+Return the poll source corresponding to the candidate who has the oppose rate.
+List all people names in the order of their date of birth from old to young.
+What are the names of all people, ordered by their date of birth?
+Find the average height and weight for all males (sex is M).
+What are the average height and weight across males (sex is M)?
+find the names of people who are taller than 200 or lower than 190.
+What are the names of people who have a height greater than 200 or less than 190?
+Find the average and minimum weight for each gender.
+What are the average and minimum weights for people of each sex?
+Find the name and gender of the candidate who got the highest support rate.
+What is the name and sex of the candidate with the highest support rate?
+Find the name of the candidates whose oppose percentage is the lowest for each sex.
+For each sex, what is the name and sex of the candidate with the oppose rate for their sex?
+which gender got the highest average uncertain ratio.
+What is the sex of the candidate who had the highest unsure rate?
+what are the names of people who did not participate in the candidate election.
+Give the names of people who did not participate in the candidate election.
+Find the names of the candidates whose support percentage is lower than their oppose rate.
+What are the names of candidates who have a lower support rate than oppose rate?
+how many people are there whose weight is higher than 85 for each gender?
+Count the number of people of each sex who have a weight higher than 85.
+find the highest support percentage, lowest consider rate and oppose rate of all candidates.
+Return the maximum support rate, minimum consider rate, and minimum oppose rate across all candidates?
+list all female (sex is F) candidate names in the alphabetical order.
+What are the names of all female candidates in alphabetical order (sex is F)?
+find the name of people whose height is lower than the average.
+What are the names of people who are shorter than average?
+List all info about all people.
+What is all the information about all people?

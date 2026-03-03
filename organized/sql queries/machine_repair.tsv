@@ -1,0 +1,31 @@
+sql_query
+SELECT count(*) FROM technician
+SELECT count(*) FROM technician
+SELECT Name FROM technician ORDER BY Age ASC
+SELECT Name FROM technician ORDER BY Age ASC
+SELECT Team ,  Starting_Year FROM technician
+SELECT Team ,  Starting_Year FROM technician
+SELECT Name FROM technician WHERE Team != "NYY"
+SELECT Name FROM technician WHERE Team != "NYY"
+SELECT Name FROM technician WHERE Age  =  36 OR Age  =  37
+SELECT Name FROM technician WHERE Age  =  36 OR Age  =  37
+SELECT Starting_Year FROM technician ORDER BY Age DESC LIMIT 1
+SELECT Starting_Year FROM technician ORDER BY Age DESC LIMIT 1
+SELECT Team ,  COUNT(*) FROM technician GROUP BY Team
+SELECT Team ,  COUNT(*) FROM technician GROUP BY Team
+SELECT Team FROM technician GROUP BY Team ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Team FROM technician GROUP BY Team ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Team FROM technician GROUP BY Team HAVING COUNT(*)  >=  2
+SELECT Team FROM technician GROUP BY Team HAVING COUNT(*)  >=  2
+SELECT T3.Name ,  T2.Machine_series FROM repair_assignment AS T1 JOIN machine AS T2 ON T1.machine_id  =  T2.machine_id JOIN technician AS T3 ON T1.technician_ID  =  T3.technician_ID
+SELECT T3.Name ,  T2.Machine_series FROM repair_assignment AS T1 JOIN machine AS T2 ON T1.machine_id  =  T2.machine_id JOIN technician AS T3 ON T1.technician_ID  =  T3.technician_ID
+SELECT T3.Name FROM repair_assignment AS T1 JOIN machine AS T2 ON T1.machine_id  =  T2.machine_id JOIN technician AS T3 ON T1.technician_ID  =  T3.technician_ID ORDER BY T2.quality_rank
+SELECT T3.Name FROM repair_assignment AS T1 JOIN machine AS T2 ON T1.machine_id  =  T2.machine_id JOIN technician AS T3 ON T1.technician_ID  =  T3.technician_ID ORDER BY T2.quality_rank
+SELECT T3.Name FROM repair_assignment AS T1 JOIN machine AS T2 ON T1.machine_id  =  T2.machine_id JOIN technician AS T3 ON T1.technician_ID  =  T3.technician_ID WHERE T2.value_points  >  70
+SELECT T3.Name FROM repair_assignment AS T1 JOIN machine AS T2 ON T1.machine_id  =  T2.machine_id JOIN technician AS T3 ON T1.technician_ID  =  T3.technician_ID WHERE T2.value_points  >  70
+SELECT T2.Name ,  COUNT(*) FROM repair_assignment AS T1 JOIN technician AS T2 ON T1.technician_ID  =  T2.technician_ID GROUP BY T2.Name
+SELECT T2.Name ,  COUNT(*) FROM repair_assignment AS T1 JOIN technician AS T2 ON T1.technician_ID  =  T2.technician_ID GROUP BY T2.Name
+SELECT Name FROM technician WHERE technician_id NOT IN (SELECT technician_id FROM repair_assignment)
+SELECT Name FROM technician WHERE technician_id NOT IN (SELECT technician_id FROM repair_assignment)
+SELECT Starting_Year FROM technician WHERE Team  =  "CLE" INTERSECT SELECT Starting_Year FROM technician WHERE Team  =  "CWS"
+SELECT Starting_Year FROM technician WHERE Team  =  "CLE" INTERSECT SELECT Starting_Year FROM technician WHERE Team  =  "CWS"

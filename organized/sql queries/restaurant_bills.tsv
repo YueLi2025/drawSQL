@@ -1,0 +1,31 @@
+sql_query
+SELECT count(*) FROM customer
+SELECT count(*) FROM customer
+SELECT Name FROM customer ORDER BY Level_of_Membership ASC
+SELECT Name FROM customer ORDER BY Level_of_Membership ASC
+SELECT Nationality ,  Card_Credit FROM customer
+SELECT Nationality ,  Card_Credit FROM customer
+SELECT Name FROM customer WHERE Nationality  =  "England" OR Nationality  =  "Australia"
+SELECT Name FROM customer WHERE Nationality  =  "England" OR Nationality  =  "Australia"
+SELECT avg(Card_Credit) FROM customer WHERE Level_of_Membership  >  1
+SELECT avg(Card_Credit) FROM customer WHERE Level_of_Membership  >  1
+SELECT Card_Credit FROM customer ORDER BY Level_of_Membership DESC LIMIT 1
+SELECT Card_Credit FROM customer ORDER BY Level_of_Membership DESC LIMIT 1
+SELECT Nationality ,  COUNT(*) FROM customer GROUP BY Nationality
+SELECT Nationality ,  COUNT(*) FROM customer GROUP BY Nationality
+SELECT Nationality FROM customer GROUP BY Nationality ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Nationality FROM customer GROUP BY Nationality ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Nationality FROM customer WHERE Card_Credit  <  50 INTERSECT SELECT Nationality FROM customer WHERE Card_Credit  >  75
+SELECT Nationality FROM customer WHERE Card_Credit  <  50 INTERSECT SELECT Nationality FROM customer WHERE Card_Credit  >  75
+SELECT T1.Name ,  T2.Dish_Name FROM customer AS T1 JOIN customer_order AS T2 ON T1.Customer_ID  =  T2.Customer_ID
+SELECT T1.Name ,  T2.Dish_Name FROM customer AS T1 JOIN customer_order AS T2 ON T1.Customer_ID  =  T2.Customer_ID
+SELECT T1.Name ,  T2.Dish_Name FROM customer AS T1 JOIN customer_order AS T2 ON T1.Customer_ID  =  T2.Customer_ID ORDER BY T2.Quantity DESC
+SELECT T1.Name ,  T2.Dish_Name FROM customer AS T1 JOIN customer_order AS T2 ON T1.Customer_ID  =  T2.Customer_ID ORDER BY T2.Quantity DESC
+SELECT T1.Name ,  sum(T2.Quantity) FROM customer AS T1 JOIN customer_order AS T2 ON T1.Customer_ID  =  T2.Customer_ID GROUP BY T1.Name
+select t1.name ,  sum(t2.quantity) from customer as t1 join customer_order as t2 on t1.customer_id  =  t2.customer_id group by t1.name
+SELECT T1.Name FROM customer AS T1 JOIN customer_order AS T2 ON T1.Customer_ID  =  T2.Customer_ID GROUP BY T1.Name HAVING sum(T2.Quantity)  >  1
+SELECT T1.Name FROM customer AS T1 JOIN customer_order AS T2 ON T1.Customer_ID  =  T2.Customer_ID GROUP BY T1.Name HAVING sum(T2.Quantity)  >  1
+SELECT DISTINCT Manager FROM branch
+SELECT DISTINCT Manager FROM branch
+SELECT name FROM customer WHERE Customer_ID NOT IN (SELECT Customer_ID FROM customer_order)
+SELECT name FROM customer WHERE Customer_ID NOT IN (SELECT Customer_ID FROM customer_order)

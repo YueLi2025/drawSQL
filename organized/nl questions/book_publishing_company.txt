@@ -1,0 +1,64 @@
+nl_question
+What is the title with the most ordered quantity in year 1992?
+List the title, price and publication date for all sales with 'ON invoice' payment terms.
+What is the title that have at least 10% royalty without minimum range amount.
+Among the titles with royalty percentage, which title has the greatest royalty percentage. State it's minimum range to enjoy this royalty percentage.
+Provide a list of titles together with its publisher name for all publishers located in the USA.
+List all titles with sales of quantity more than 20 and store located in the CA state.
+Name the store with the highest quantity in sales? What is the least quantity title from the store's sale?
+Name the store with ID 7066 and calculate the percentage of the the quantity ordered that were on 'Net 30' payment terms.
+State the publisher name for publisher ID 877? Calculate its average year to date sales.
+In which year has the most hired employees?
+List all employees who are at the maximum level in their job designation.
+List all employees working for publisher 'GGG&G'. State their name and job description.
+For each publisher, state the type of titles they published order by the publisher name.
+Name the publisher which has the most titles published in 1991.
+Name the title with the highest price published by 'Binnet & Hardley'.
+Name all the authors for all business titles.
+List all the titles and year to date sales by author who are not on contract.
+For all authors from CA who are not on contract, which title of his/hers has the most year to date sales.
+Calculate the percentage of the employees who are Editor or Designer?
+List all titles which have year to date sales higher than the average order by pubisher name.
+What is the highest level of job to get to for the employee who got hired the earliest?
+In which city is the store with the highest total sales quantity located?
+Please list the stores that ordered the book "Life Without Fear".
+Among the stores that have ordered the book "Life Without Fear", how many of them are located in Massachusetts?
+In which country is the publisher of the book "Life Without Fear" located?
+What is the publisher that has published the most expensive book?
+Among the publishers in the USA, how many of them have published books that are over $15?
+What is the average quantity of each order for the book "Life Without Fear"?
+Which one is the cheapest business book?
+Show me the employ id of the highest employee who doesn't have a middle name.
+Is the author of "Sushi, Anyone?" on the contract?
+Which publisher had the highest job level? Give his/her full name.
+What's Pedro S Afonso's job title?
+How many levels are there left for Diego W Roel to reach if he/she could go to the max level for his/her position?
+List the type of the book for the order which was sold on 1993/5/29.
+Tell me about the information of the French publisher.
+Which city did Victoria P Ashworth work in?
+How many sales did the store in Remulade make?
+Which titles has above average royalty rate? Give those title's name, type and price?
+In 1994 which title had less order quanty than the average order quantity? Find the title name, type and price.
+List the title name, type, and price of the titles published by New Moon Books. Arrange the list in ascending order of price.
+In the books published by US publishers, which book has the highest royalty? List these books in the descending order of royalty.
+Which title is about helpful hints on how to use your electronic resources, which publisher published it and what is the price of this book?
+Of the titles, which title is about the Carefully researched study of the effects of strong emotions on the body, which state-based publisher published this book, and what is the year-to-date sale?
+State the title and royalty percentage for title ID BU2075 between 10000 to 50000 range.
+List all titles published in year 1991. Also provide notes details of the title and the publisher's name.
+Who are the employees working for publisher not located in USA? State the employee's name and publisher name.
+Among all employees, who have job level greater than 200. State the employee name and job description.
+Name all the authors for 'Sushi, Anyone?'.
+How many publishers are in the USA?
+Please list the first names of the employees who work as Managing Editor.
+What is the average level employees working as Managing Editor are at? How many levels are there between the average level and the highest level?
+Which type of book had the most pre-paid amount?
+Which job level is O'Rourke at?
+What's on the notes for the order happened on 1994/9/14?
+For the quantities, what percent more did the store in Fremont sell than the store in Portland in 1993?
+Among all the employees, how many percent more for the publishers than designers?
+Name all employees who were hired before year 1990.
+Which employee has the lowest job level. State the first name, last name and when he /she was hired.
+Please give more detailed information about the first three books that sell the best.
+What's the royalty for the bestseller book?
+What's the publisher of the book "Silicon Valley Gastronomic Treats"? Give the publisher's name.
+Name the top five titles that sold more than average and list them in descending order of the number of sales in California stores?

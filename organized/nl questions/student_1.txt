@@ -1,0 +1,69 @@
+nl_question
+Find the number of students in total.
+How many students are there?
+Find the last names of students studying in room 111.
+What are the last names of students in room 111?
+Find the first names of students studying in room 108.
+What are the first names of students in room 108?
+What are the first names of students studying in room 107?
+List the first names of all the students in room 107.
+For each classroom report the grade that is taught in it. Report just the classroom number and the grade number.
+What are the grade number and classroom number of each class in the list?
+Which grade is studying in classroom 103?
+Find the grade taught in classroom 103.
+Find the grade studying in room 105.
+Which grade is studying in room 105?
+Which classrooms are used by grade 4?
+Find the classrooms in which grade 4 is studying.
+Which classrooms are used by grade 5?
+Show me the classrooms grade 5 is using.
+Find the last names of the teachers that teach fifth grade.
+what are the last names of the teachers who teach grade 5?
+Find the first names of the teachers that teach first grade.
+What are the first names of the teachers who teach grade 1?
+Find the first names of all the teachers that teach in classroom 110.
+Which teachers teach in classroom 110? Give me their first names.
+Find the last names of teachers teaching in classroom 109.
+Which teachers teach in classroom 109? Give me their last names.
+Report the first name and last name of all the teachers.
+What are the first name and last name of all the teachers?
+Report the first name and last name of all the students.
+Show each student's first name and last name.
+Find all students taught by OTHA MOYER. Output the first and last names of the students.
+Which students study under the teacher named OTHA MOYER? Give me the first and last names of the students.
+Find all students taught by MARROTTE KIRK. Output first and last names of students.
+Which are the first and last names of the students taught by MARROTTE KIRK?
+Find the first and last name of all the teachers that teach EVELINA BROMLEY.
+Which teachers teach the student named EVELINA BROMLEY? Give me the first and last name  of the teachers.
+Find the last names of all the teachers that teach GELL TAMI.
+What are the last names of the teachers who teach the student called GELL TAMI?
+How many students does LORIA ONDERSMA teaches?
+Count the number of students the teacher LORIA ONDERSMA teaches.
+How many students does KAWA GORDON teaches?
+Find the number of students taught by the teacher KAWA GORDON.
+Find the number of students taught by TARRING LEIA.
+How many students are taught by teacher TARRING LEIA?
+How many teachers does the student named CHRISSY NABOZNY have?
+Find the number of teachers who teach the student called CHRISSY NABOZNY.
+How many teachers does the student named MADLOCK RAY have?
+Find the number of teachers who teach the student called MADLOCK RAY.
+Find all first-grade students who are NOT taught by OTHA MOYER. Report their first and last names.
+What are the first and last names of the first-grade students who are NOT taught by teacher OTHA MOYER?
+Find the last names of the students in third grade that are not taught by COVIN JEROME.
+Which students in third grade are not taught by teacher COVIN JEROME? Give me the last names of the students.
+For each grade, report the grade, the number of classrooms in which it is taught and the total number of students in the grade.
+For each grade, return the grade number, the number of classrooms used for the grade, and the total number of students enrolled in the grade.
+For each classroom, report the classroom number and the number of grades using it.
+For each classroom, show the classroom number and count the number of distinct grades that use the room.
+Which classroom has the most students?
+Find the classroom that the most students use.
+Report the number of students in each classroom.
+For each classroom, show the classroom number and find how many students are using it.
+For each grade 0 classroom, report the total number of students.
+For each grade 0 classroom, return the classroom number and the count of students.
+Report the total number of students for each fourth-grade classroom.
+For each fourth-grade classroom, show the classroom number and the total number of students using it.
+Find the name of the teacher who teaches the largest number of students.
+Which teacher teaches the most students? Give me the first name and last name of the teacher.
+Find the number of students in one classroom.
+How many students does one classroom have?

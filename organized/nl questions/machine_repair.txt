@@ -1,0 +1,31 @@
+nl_question
+How many technicians are there?
+What is the number of technicians?
+List the names of technicians in ascending order of age.
+What are the names of the technicians by ascending order of age?
+What are the team and starting year of technicians?
+What is the team and starting year for each technician?
+List the name of technicians whose team is not "NYY".
+What is the name of the technician whose team is not 'NYY'?
+Show the name of technicians aged either 36 or 37
+What are the names of the technicians aged either 36 or 37?
+What is the starting year of the oldest technicians?
+What is the starting year for the oldest technician?
+Show different teams of technicians and the number of technicians in each team.
+For each team, how many technicians are there?
+Please show the team that has the most number of technicians.
+What are the teams with the most technicians?
+Show the team that have at least two technicians.
+What is the team with at least 2 technicians?
+Show names of technicians and series of machines they are assigned to repair.
+What are the names of technicians and the machine series that they repair?
+Show names of technicians in ascending order of quality rank of the machine they are assigned.
+What are the names of the technicians by ascending order of quality rank for the machine they are assigned?
+Show names of technicians who are assigned to repair machines with value point more than 70.
+What are the names of the technicians that are assigned to repair machines with more point values than 70?
+Show names of technicians and the number of machines they are assigned to repair.
+What are the names of the technicians  and how many machines are they assigned to repair?
+List the names of technicians who have not been assigned to repair machines.
+What are the names of the technicians that have not been assigned to repair machines?
+Show the starting years shared by technicians from team "CLE" and "CWS".
+What are the starting years shared by the technicians from the team "CLE" or "CWS"?

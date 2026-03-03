@@ -1,0 +1,43 @@
+sql_query
+SELECT distinct(catalog_entry_name) FROM catalog_contents
+SELECT distinct(catalog_entry_name) FROM catalog_contents
+SELECT attribute_data_type FROM Attribute_Definitions GROUP BY attribute_data_type HAVING count(*)  >  3
+SELECT attribute_data_type FROM Attribute_Definitions GROUP BY attribute_data_type HAVING count(*)  >  3
+SELECT attribute_data_type FROM Attribute_Definitions WHERE attribute_name  =  "Green"
+SELECT attribute_data_type FROM Attribute_Definitions WHERE attribute_name  =  "Green"
+SELECT catalog_level_name ,  catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10
+SELECT catalog_level_name ,  catalog_level_number FROM Catalog_Structure WHERE catalog_level_number BETWEEN 5 AND 10
+SELECT distinct(catalog_publisher) FROM catalogs WHERE catalog_publisher LIKE "%Murray%"
+SELECT distinct(catalog_publisher) FROM catalogs WHERE catalog_publisher LIKE "%Murray%"
+SELECT catalog_publisher FROM catalogs GROUP BY catalog_publisher ORDER BY count(*) DESC LIMIT 1
+SELECT catalog_publisher FROM catalogs GROUP BY catalog_publisher ORDER BY count(*) DESC LIMIT 1
+SELECT t1.catalog_name ,  t1.date_of_publication FROM catalogs AS t1 JOIN catalog_structure AS t2 ON t1.catalog_id  =  t2.catalog_id WHERE catalog_level_number  >  5
+SELECT t1.catalog_name ,  t1.date_of_publication FROM catalogs AS t1 JOIN catalog_structure AS t2 ON t1.catalog_id  =  t2.catalog_id WHERE catalog_level_number  >  5
+SELECT t1.catalog_entry_name FROM Catalog_Contents AS t1 JOIN Catalog_Contents_Additional_Attributes AS t2 ON t1.catalog_entry_id  =  t2.catalog_entry_id WHERE t2.attribute_value  =  (SELECT attribute_value FROM Catalog_Contents_Additional_Attributes GROUP BY attribute_value ORDER BY count(*) DESC LIMIT 1)
+SELECT t1.catalog_entry_name FROM Catalog_Contents AS t1 JOIN Catalog_Contents_Additional_Attributes AS t2 ON t1.catalog_entry_id  =  t2.catalog_entry_id WHERE t2.attribute_value  =  (SELECT attribute_value FROM Catalog_Contents_Additional_Attributes GROUP BY attribute_value ORDER BY count(*) DESC LIMIT 1)
+SELECT catalog_entry_name FROM catalog_contents ORDER BY price_in_dollars DESC LIMIT 1
+SELECT catalog_entry_name FROM catalog_contents ORDER BY price_in_dollars DESC LIMIT 1
+SELECT t2.catalog_level_name FROM catalog_contents AS t1 JOIN catalog_structure AS t2 ON t1.catalog_level_number  =  t2.catalog_level_number ORDER BY t1.price_in_dollars LIMIT 1
+SELECT t2.catalog_level_name FROM catalog_contents AS t1 JOIN catalog_structure AS t2 ON t1.catalog_level_number  =  t2.catalog_level_number ORDER BY t1.price_in_dollars LIMIT 1
+SELECT avg(price_in_euros) ,  min(price_in_euros) FROM catalog_contents
+SELECT avg(price_in_euros) ,  min(price_in_euros) FROM catalog_contents
+SELECT catalog_entry_name FROM catalog_contents ORDER BY height DESC LIMIT 1
+SELECT catalog_entry_name FROM catalog_contents ORDER BY height DESC LIMIT 1
+SELECT catalog_entry_name FROM catalog_contents ORDER BY capacity ASC LIMIT 1
+SELECT catalog_entry_name FROM catalog_contents ORDER BY capacity ASC LIMIT 1
+SELECT catalog_entry_name FROM catalog_contents WHERE product_stock_number LIKE "2%"
+SELECT catalog_entry_name FROM catalog_contents WHERE product_stock_number LIKE "2%"
+SELECT t1.catalog_entry_name FROM Catalog_Contents AS t1 JOIN Catalog_Contents_Additional_Attributes AS t2 ON t1.catalog_entry_id  =  t2.catalog_entry_id WHERE t2.catalog_level_number  =  "8"
+SELECT t1.catalog_entry_name FROM Catalog_Contents AS t1 JOIN Catalog_Contents_Additional_Attributes AS t2 ON t1.catalog_entry_id  =  t2.catalog_entry_id WHERE t2.catalog_level_number  =  "8"
+SELECT catalog_entry_name FROM catalog_contents WHERE LENGTH  <  3 OR width  >  5
+SELECT catalog_entry_name FROM catalog_contents WHERE LENGTH  <  3 OR width  >  5
+SELECT t1.attribute_name ,  t1.attribute_id FROM Attribute_Definitions AS t1 JOIN Catalog_Contents_Additional_Attributes AS t2 ON t1.attribute_id  =  t2.attribute_id WHERE t2.attribute_value  =  0
+SELECT t1.attribute_name ,  t1.attribute_id FROM Attribute_Definitions AS t1 JOIN Catalog_Contents_Additional_Attributes AS t2 ON t1.attribute_id  =  t2.attribute_id WHERE t2.attribute_value  =  0
+SELECT catalog_entry_name ,  capacity FROM Catalog_Contents WHERE price_in_dollars  >  700
+SELECT catalog_entry_name ,  capacity FROM Catalog_Contents WHERE price_in_dollars  >  700
+SELECT date_of_latest_revision FROM Catalogs GROUP BY date_of_latest_revision HAVING count(*)  >  1
+SELECT date_of_latest_revision FROM Catalogs GROUP BY date_of_latest_revision HAVING count(*)  >  1
+SELECT count(*) FROM catalog_contents
+SELECT count(*) FROM catalog_contents
+SELECT catalog_entry_name FROM catalog_contents WHERE next_entry_id  >  8
+SELECT catalog_entry_name FROM catalog_contents WHERE next_entry_id  >  8

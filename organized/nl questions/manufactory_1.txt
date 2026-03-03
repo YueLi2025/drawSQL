@@ -1,0 +1,81 @@
+nl_question
+Who is the founder of Sony?
+Return the founder of Sony.
+Where is the headquarter of the company founded by James?
+What is the headquarter of the company whose founder is James?
+Find all manufacturers' names and their headquarters, sorted by the ones with highest revenue first.
+What are the names and headquarters of all manufacturers, ordered by revenue descending?
+What are the average, maximum and total revenues of all companies?
+Return the average, maximum, and total revenues across all manufacturers.
+How many companies were created by Andy?
+Return the number of companies created by Andy.
+Find the total revenue created by the companies whose headquarter is located at Austin.
+What is the sum of revenue from companies with headquarters in Austin?
+What are the different cities listed?
+Give the distinct headquarters of manufacturers.
+Find the number of manufactures that are based in Tokyo or Beijing.
+How many manufacturers have headquarters in either Tokyo or Beijing?
+Find the founder of the company whose name begins with the letter 'S'.
+Who is the founders of companies whose first letter is S?
+Find the name of companies whose revenue is between 100 and 150.
+What are the names of companies with revenue between 100 and 150?
+What is the total revenue of all companies whose main office is at Tokyo or Taiwan?
+Return the total revenue of companies with headquarters in Tokyo or Taiwan.
+Find the name of product that is produced by both companies Creative Labs and Sony.
+What are the names of products produced by both Creative Labs and Sony?
+Find the name, headquarter and founder of the manufacturer that has the highest revenue.
+What are the names, headquarters and founders of the company with the highest revenue?
+Find the name, headquarter and revenue of all manufacturers sorted by their revenue in the descending order.
+What are the names, headquarters and revenues for manufacturers, sorted by revenue descending?
+Find the name of companies whose revenue is greater than the average revenue of all companies.
+What are the names of manufacturers with revenue greater than the average of all revenues?
+Find the name of companies whose revenue is smaller than the revenue of all companies based in Austin.
+What are the names of companies with revenue less than the lowest revenue of any manufacturer in Austin?
+Find the total revenue of companies whose revenue is larger than the revenue of some companies based in Austin.
+What is the total revenue of companies with revenue greater than the lowest revenue of any manufacturer in Austin?
+Find the total revenue of companies of each founder.
+What is the total revenue of companies started by founder?
+Find the name and revenue of the company that earns the highest revenue in each city.
+What are the names and revenues of the companies with the highest revenues in each headquarter city?
+Find the total revenue for each manufacturer.
+What is the total revenue of each manufacturer?
+Find the average prices of all products from each manufacture, and list each company's name.
+What are the average prices of products for each manufacturer?
+Find the number of different products that are produced by companies at different headquarter cities.
+How many different products are produced in each headquarter city?
+Find number of products which Sony does not make.
+How many products are not made by Sony?
+Find the name of companies that do not make DVD drive.
+What are the names of companies that do not make DVD drives?
+Find the number of products for each manufacturer, showing the name of each company.
+How many products are there for each manufacturer?
+Select the names of all the products in the store.
+What are the names of all products?
+Select the names and the prices of all the products in the store.
+What are the names and prices of all products in the store?
+Select the name of the products with a price less than or equal to $200.
+What are the names of products with price at most 200?
+Find all information of all the products with a price between $60 and $120.
+What is all the information of all the products that have a price between 60 and 120?
+Compute the average price of all the products.
+What is the average price across all products?
+Compute the average price of all products with manufacturer code equal to 2.
+What is the average price of products with manufacturer codes equal to 2?
+Compute the number of products with a price larger than or equal to $180.
+How many products have prices of at least 180?
+Select the name and price of all products with a price larger than or equal to $180, and sort first by price (in descending order), and then by name  (in ascending order).
+What are the names and prices of products that cost at least 180, sorted by price decreasing and name ascending?
+Select all the data from the products and each product's manufacturer.
+What is all the product data, as well as  each product's manufacturer?
+Select the average price of each manufacturer's products, showing only the manufacturer's code.
+What are the average prices of products, grouped by manufacturer code?
+Select the average price of each manufacturer's products, showing the manufacturer's name.
+What are the average prices of products, grouped by manufacturer name?
+Select the names of manufacturer whose products have an average price higher than or equal to $150.
+What are the names and average prices of products for manufacturers whose products cost on average 150 or more?
+Select the name and price of the cheapest product.
+What is the name and price of the cheapest product?
+Select the name of each manufacturer along with the name and price of its most expensive product.
+For each manufacturer name, what are the names and prices of their most expensive product?
+Select the code of the product that is cheapest in each product category.
+What are the codes and names of the cheapest products in each category?

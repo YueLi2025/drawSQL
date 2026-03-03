@@ -1,0 +1,87 @@
+hard_templates
+SELECT count(*) FROM table_name
+SELECT count(*) FROM table_name
+SELECT count(DISTINCT gtype) FROM table_name
+SELECT count(DISTINCT gtype) FROM table_name
+SELECT DISTINCT gtype FROM table_name
+SELECT DISTINCT gtype FROM table_name
+SELECT gname , gtype FROM table_name ORDER BY gname
+SELECT gname , gtype FROM table_name ORDER BY gname
+SELECT gname FROM table_name WHERE gtype = string
+SELECT gname FROM table_name WHERE gtype = string
+SELECT gtype FROM table_name WHERE gname = string
+SELECT gtype FROM table_name WHERE gname = string
+SELECT count(*) FROM table_name WHERE gtype = string
+SELECT count(*) FROM table_name WHERE gtype = string
+SELECT gtype , count(*) FROM table_name GROUP BY gtype
+SELECT gtype , count(*) FROM table_name GROUP BY gtype
+SELECT gtype FROM table_name GROUP BY gtype ORDER BY count(*) DESC LIMIT num
+SELECT gtype FROM table_name GROUP BY gtype ORDER BY count(*) DESC LIMIT num
+SELECT gtype FROM table_name GROUP BY gtype ORDER BY count(*) LIMIT num
+SELECT gtype FROM table_name GROUP BY gtype ORDER BY count(*) LIMIT num
+SELECT StuID FROM table_name WHERE col_name = string
+SELECT StuID FROM table_name WHERE col_name = string
+SELECT StuID FROM table_name WHERE col_name = num
+SELECT StuID FROM table_name WHERE col_name = num
+SELECT Fname FROM table_name WHERE col_name = num
+SELECT Fname FROM table_name WHERE col_name = num
+SELECT col_name , avg( col_name ) , min( col_name ) , max( col_name ) FROM table_name GROUP BY col_name
+SELECT col_name , avg( col_name ) , min( col_name ) , max( col_name ) FROM table_name GROUP BY col_name
+SELECT col_name FROM table_name GROUP BY col_name HAVING count(*) >= num
+SELECT col_name FROM table_name GROUP BY col_name HAVING count(*) >= num
+SELECT count(DISTINCT sportname) FROM table_name
+SELECT count(DISTINCT sportname) FROM table_name
+SELECT count(DISTINCT StuID) FROM table_name
+SELECT count(DISTINCT StuID) FROM table_name
+SELECT StuID FROM table_name WHERE onscholarship = string
+SELECT StuID FROM table_name WHERE onscholarship = string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT sum(gamesplayed) FROM table_name
+SELECT sum(gamesplayed) FROM table_name
+SELECT sum(gamesplayed) FROM table_name WHERE sportname = string AND onscholarship = string
+SELECT sum(gamesplayed) FROM table_name WHERE sportname = string AND onscholarship = string
+SELECT sportname , count(*) FROM table_name GROUP BY sportname
+SELECT sportname , count(*) FROM table_name GROUP BY sportname
+SELECT StuID , count(*) , sum(gamesplayed) FROM table_name GROUP BY StuID
+SELECT StuID , count(*) , sum(gamesplayed) FROM table_name GROUP BY StuID
+SELECT StuID FROM table_name GROUP BY StuID HAVING sum(hoursperweek) > num
+SELECT StuID FROM table_name GROUP BY StuID HAVING sum(hoursperweek) > num
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY count(*) DESC LIMIT num
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY count(*) DESC LIMIT num
+SELECT sportname FROM table_name WHERE onscholarship = string GROUP BY sportname ORDER BY count(*) DESC LIMIT num
+SELECT sportname FROM table_name WHERE onscholarship = string GROUP BY sportname ORDER BY count(*) DESC LIMIT num
+SELECT StuID FROM table_name EXCEPT SELECT StuID FROM table_name
+SELECT StuID FROM table_name EXCEPT SELECT StuID FROM table_name
+SELECT StuID FROM table_name WHERE col_name = num INTERSECT SELECT StuID FROM table_name WHERE onscholarship = string
+SELECT StuID FROM table_name WHERE col_name = num INTERSECT SELECT StuID FROM table_name WHERE onscholarship = string
+SELECT StuID FROM table_name WHERE col_name = string INTERSECT SELECT StuID FROM table_name WHERE sportname = string
+SELECT StuID FROM table_name WHERE col_name = string INTERSECT SELECT StuID FROM table_name WHERE sportname = string
+SELECT StuID FROM table_name WHERE col_name = string EXCEPT SELECT StuID FROM table_name WHERE sportname = string
+SELECT StuID FROM table_name WHERE col_name = string EXCEPT SELECT StuID FROM table_name WHERE sportname = string
+SELECT sum(hoursperweek) , sum(gamesplayed) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT sum(hoursperweek) , sum(gamesplayed) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT sum(hoursperweek) , sum(gamesplayed) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name < num
+SELECT sum(hoursperweek) , sum(gamesplayed) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name < num
+SELECT count(DISTINCT StuID) FROM table_name
+SELECT count(DISTINCT StuID) FROM table_name
+SELECT StuID FROM table_name EXCEPT SELECT StuID FROM table_name
+SELECT StuID FROM table_name EXCEPT SELECT StuID FROM table_name
+SELECT StuID FROM table_name INTERSECT SELECT StuID FROM table_name
+SELECT StuID FROM table_name INTERSECT SELECT StuID FROM table_name
+SELECT gameid , sum( col_name ) FROM table_name GROUP BY gameid
+SELECT gameid , sum( col_name ) FROM table_name GROUP BY gameid
+SELECT Stuid , sum( col_name ) FROM table_name GROUP BY Stuid
+SELECT Stuid , sum( col_name ) FROM table_name GROUP BY Stuid
+SELECT gname FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY sum( col_name ) DESC LIMIT num
+SELECT gname FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY sum( col_name ) DESC LIMIT num
+SELECT gname FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name HAVING sum( col_name ) >= num
+SELECT gname FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name HAVING sum( col_name ) >= num
+SELECT Gname FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias2.col_name = table_alias0.col_name WHERE table_alias2.col_name = string AND table_alias2.col_name = string
+SELECT Gname FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias2.col_name = table_alias0.col_name WHERE table_alias2.col_name = string AND table_alias2.col_name = string
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string OR table_alias0.col_name = string
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string OR table_alias0.col_name = string
+SELECT fname , col_name FROM table_name WHERE StuID IN (SELECT StuID FROM table_name WHERE SportName = string INTERSECT SELECT StuID FROM table_name WHERE SportName = string )
+SELECT fname , col_name FROM table_name WHERE StuID IN (SELECT StuID FROM table_name WHERE SportName = string INTERSECT SELECT StuID FROM table_name WHERE SportName = string )
+SELECT lname , col_name FROM table_name WHERE StuID IN (SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string INTERSECT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string )
+SELECT lname , col_name FROM table_name WHERE StuID IN (SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string INTERSECT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string )

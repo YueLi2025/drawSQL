@@ -1,0 +1,12 @@
+nl_question
+For the genes that are located in the plasma membrane, please list their number of chromosomes.
+How many non-essential genes are located in the nucleus?
+Among the genes with nucleic acid metabolism defects, how many of them can be found in the vacuole?
+Among the pairs of genes that are both located in the nucleus, what is the highest expression correlation score?
+What kind of expression correlation occurs in physical type interacting gene pairs and what percentage of these are negatively correlated?
+What type of interactions occurs in genes whose function is cellular transport and transport medicine and are classified as non-essential?
+Please list the location of the genes that have the most chromosomes.
+Lists all genes by identifier number located in the cytoplasm and whose function is metabolism.
+How many different genes do we have if we add those located in the plasma and in the nucleus?
+Taking all the essential genes of the transcription factors class located in the nucleus as a reference, how many of them carry out a genetic-type interaction with another gene? List them.
+Which negatively correlated, genetically interacting genes are non-essential? What percentage do they represent with respect to those that are essential?

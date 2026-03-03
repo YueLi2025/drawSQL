@@ -1,0 +1,39 @@
+sql_query
+SELECT count(*) FROM employee
+SELECT count(*) FROM employee
+SELECT name FROM employee ORDER BY age
+SELECT name FROM employee ORDER BY age
+SELECT count(*) ,  city FROM employee GROUP BY city
+SELECT count(*) ,  city FROM employee GROUP BY city
+SELECT city FROM employee WHERE age  <  30 GROUP BY city HAVING count(*)  >  1
+SELECT city FROM employee WHERE age  <  30 GROUP BY city HAVING count(*)  >  1
+SELECT count(*) ,  LOCATION FROM shop GROUP BY LOCATION
+SELECT count(*) ,  LOCATION FROM shop GROUP BY LOCATION
+SELECT manager_name ,  district FROM shop ORDER BY number_products DESC LIMIT 1
+SELECT manager_name ,  district FROM shop ORDER BY number_products DESC LIMIT 1
+SELECT min(Number_products) ,  max(Number_products) FROM shop
+SELECT min(Number_products) ,  max(Number_products) FROM shop
+SELECT name ,  LOCATION ,  district FROM shop ORDER BY number_products DESC
+SELECT name ,  LOCATION ,  district FROM shop ORDER BY number_products DESC
+SELECT name FROM shop WHERE number_products  >  (SELECT avg(number_products) FROM shop)
+SELECT name FROM shop WHERE number_products  >  (SELECT avg(number_products) FROM shop)
+SELECT t1.name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID  =  t2.Employee_ID GROUP BY t2.Employee_ID ORDER BY count(*) DESC LIMIT 1
+SELECT t1.name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID  =  t2.Employee_ID GROUP BY t2.Employee_ID ORDER BY count(*) DESC LIMIT 1
+SELECT t1.name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID  =  t2.Employee_ID ORDER BY t2.bonus DESC LIMIT 1
+SELECT t1.name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID  =  t2.Employee_ID ORDER BY t2.bonus DESC LIMIT 1
+SELECT name FROM employee WHERE Employee_ID NOT IN (SELECT Employee_ID FROM evaluation)
+SELECT name FROM employee WHERE Employee_ID NOT IN (SELECT Employee_ID FROM evaluation)
+SELECT t2.name FROM hiring AS t1 JOIN shop AS t2 ON t1.shop_id  =  t2.shop_id GROUP BY t1.shop_id ORDER BY count(*) DESC LIMIT 1
+SELECT t2.name FROM hiring AS t1 JOIN shop AS t2 ON t1.shop_id  =  t2.shop_id GROUP BY t1.shop_id ORDER BY count(*) DESC LIMIT 1
+SELECT name FROM shop WHERE shop_id NOT IN (SELECT shop_id FROM hiring)
+SELECT name FROM shop WHERE shop_id NOT IN (SELECT shop_id FROM hiring)
+SELECT count(*) ,  t2.name FROM hiring AS t1 JOIN shop AS t2 ON t1.shop_id  =  t2.shop_id GROUP BY t2.name
+SELECT count(*) ,  t2.name FROM hiring AS t1 JOIN shop AS t2 ON t1.shop_id  =  t2.shop_id GROUP BY t2.name
+SELECT sum(bonus) FROM evaluation
+SELECT sum(bonus) FROM evaluation
+SELECT * FROM hiring
+SELECT * FROM hiring
+SELECT district FROM shop WHERE Number_products  <  3000 INTERSECT SELECT district FROM shop WHERE Number_products  >  10000
+SELECT district FROM shop WHERE Number_products  <  3000 INTERSECT SELECT district FROM shop WHERE Number_products  >  10000
+SELECT count(DISTINCT LOCATION) FROM shop
+SELECT count(DISTINCT LOCATION) FROM shop

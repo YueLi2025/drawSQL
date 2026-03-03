@@ -1,0 +1,125 @@
+hard_templates
+SELECT table_alias0.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT table_alias0.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT col_name , col_name , col_name FROM table_name WHERE col_name < num
+SELECT col_name , col_name , col_name FROM table_name WHERE col_name < num
+SELECT col_name , col_name FROM table_name WHERE col_name = string
+SELECT col_name , col_name FROM table_name WHERE col_name = string
+SELECT * FROM table_name WHERE col_name = string
+SELECT * FROM table_name WHERE col_name = string
+SELECT * FROM departments WHERE col_name = string
+SELECT * FROM departments WHERE col_name = string
+SELECT col_name FROM table_name WHERE col_name NOT LIKE string
+SELECT col_name FROM table_name WHERE col_name NOT LIKE string
+SELECT col_name , col_name , col_name , col_name , col_name FROM table_name WHERE col_name NOT LIKE string
+SELECT col_name , col_name , col_name , col_name , col_name FROM table_name WHERE col_name NOT LIKE string
+SELECT col_name , col_name , col_name , col_name , col_name FROM table_name WHERE col_name NOT LIKE string ORDER BY col_name
+SELECT col_name , col_name , col_name , col_name , col_name FROM table_name WHERE col_name NOT LIKE string ORDER BY col_name
+SELECT col_name FROM table_name WHERE col_name BETWEEN num AND num
+SELECT col_name FROM table_name WHERE col_name BETWEEN num AND num
+SELECT * FROM table_name WHERE col_name BETWEEN num AND num AND col_name != string OR col_name != num
+SELECT * FROM table_name WHERE col_name BETWEEN num AND num AND col_name != string OR col_name != num
+SELECT col_name , col_name , col_name FROM employees WHERE col_name = string
+SELECT col_name , col_name , col_name FROM employees WHERE col_name = string
+SELECT col_name , col_name , col_name FROM table_name WHERE col_name LIKE string
+SELECT col_name , col_name , col_name FROM table_name WHERE col_name LIKE string
+SELECT col_name , col_name FROM table_name WHERE col_name BETWEEN string AND string
+SELECT col_name , col_name FROM table_name WHERE col_name BETWEEN string AND string
+SELECT col_name , col_name FROM table_name WHERE col_name = num OR col_name = num
+SELECT col_name , col_name FROM table_name WHERE col_name = num OR col_name = num
+SELECT col_name , col_name FROM table_name WHERE col_name != string
+SELECT col_name , col_name FROM table_name WHERE col_name != string
+SELECT * FROM table_name WHERE col_name < string
+SELECT * FROM table_name WHERE col_name < string
+SELECT * FROM table_name WHERE col_name LIKE string OR col_name LIKE string ORDER BY col_name DESC
+SELECT * FROM table_name WHERE col_name LIKE string OR col_name LIKE string ORDER BY col_name DESC
+SELECT * FROM table_name WHERE col_name > string
+SELECT * FROM table_name WHERE col_name > string
+SELECT col_name FROM table_name WHERE col_name > num
+SELECT col_name FROM table_name WHERE col_name > num
+SELECT col_name , col_name - col_name FROM table_name WHERE col_name BETWEEN num AND num
+SELECT col_name , col_name - col_name FROM table_name WHERE col_name BETWEEN num AND num
+SELECT col_name FROM table_name WHERE col_name = string AND col_name BETWEEN num AND num AND col_name = num
+SELECT col_name FROM table_name WHERE col_name = string AND col_name BETWEEN num AND num AND col_name = num
+SELECT col_name , MAX( col_name ) FROM table_name GROUP BY col_name
+SELECT col_name , MAX( col_name ) FROM table_name GROUP BY col_name
+SELECT col_name FROM table_name GROUP BY col_name HAVING COUNT( col_name ) > num
+SELECT col_name FROM table_name GROUP BY col_name HAVING COUNT( col_name ) > num
+SELECT DISTINCT col_name FROM table_name GROUP BY col_name , col_name HAVING COUNT( col_name ) >= num
+SELECT DISTINCT col_name FROM table_name GROUP BY col_name , col_name HAVING COUNT( col_name ) >= num
+SELECT col_name , AVG( col_name ) FROM table_name WHERE col_name != string GROUP BY col_name
+SELECT col_name , AVG( col_name ) FROM table_name WHERE col_name != string GROUP BY col_name
+SELECT col_name , COUNT(*) FROM table_name GROUP BY col_name
+SELECT col_name , COUNT(*) FROM table_name GROUP BY col_name
+SELECT col_name FROM table_name WHERE col_name - col_name > num GROUP BY col_name HAVING COUNT(*) >= num
+SELECT col_name FROM table_name WHERE col_name - col_name > num GROUP BY col_name HAVING COUNT(*) >= num
+SELECT col_name FROM table_name GROUP BY col_name HAVING COUNT(*) >= num
+SELECT col_name FROM table_name GROUP BY col_name HAVING COUNT(*) >= num
+SELECT table_alias0.col_name , table_alias3.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name JOIN table_name AS table_alias3 ON table_alias2.col_name = table_alias3.col_name
+SELECT table_alias0.col_name , table_alias3.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name JOIN table_name AS table_alias3 ON table_alias2.col_name = table_alias3.col_name
+SELECT table_alias1.col_name , COUNT(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name
+SELECT table_alias1.col_name , COUNT(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name
+SELECT * FROM job_history AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name >= num
+SELECT * FROM job_history AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name >= num
+SELECT col_name , AVG( col_name ) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name
+SELECT col_name , AVG( col_name ) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name
+SELECT col_name , col_name FROM table_name WHERE col_name > (SELECT col_name FROM table_name WHERE col_name = num )
+SELECT col_name , col_name FROM table_name WHERE col_name > (SELECT col_name FROM table_name WHERE col_name = num )
+SELECT MIN( col_name ) , col_name FROM table_name GROUP BY col_name
+SELECT MIN( col_name ) , col_name FROM table_name GROUP BY col_name
+SELECT col_name , col_name , col_name FROM table_name WHERE col_name IN (SELECT MIN( col_name ) FROM table_name GROUP BY col_name )
+SELECT col_name , col_name , col_name FROM table_name WHERE col_name IN (SELECT MIN( col_name ) FROM table_name GROUP BY col_name )
+SELECT col_name FROM table_name WHERE col_name > (SELECT AVG( col_name ) FROM table_name)
+SELECT col_name FROM table_name WHERE col_name > (SELECT AVG( col_name ) FROM table_name)
+SELECT col_name , col_name FROM table_name WHERE col_name = (SELECT col_name FROM table_name WHERE col_name = string )
+SELECT col_name , col_name FROM table_name WHERE col_name = (SELECT col_name FROM table_name WHERE col_name = string )
+SELECT DISTINCT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT DISTINCT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT DISTINCT * FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = table_alias1.col_name
+SELECT DISTINCT * FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = table_alias1.col_name
+SELECT * FROM departments WHERE col_name = string
+SELECT * FROM departments WHERE col_name = string
+SELECT col_name FROM table_name GROUP BY col_name HAVING COUNT(*) >= num
+SELECT col_name FROM table_name GROUP BY col_name HAVING COUNT(*) >= num
+SELECT DISTINCT col_name FROM table_name GROUP BY col_name , col_name HAVING COUNT( col_name ) >= num
+SELECT DISTINCT col_name FROM table_name GROUP BY col_name , col_name HAVING COUNT( col_name ) >= num
+SELECT col_name FROM table_name GROUP BY col_name HAVING AVG( col_name ) > num
+SELECT col_name FROM table_name GROUP BY col_name HAVING AVG( col_name ) > num
+SELECT table_alias0.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = num
+SELECT table_alias0.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = num
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT * FROM table_name WHERE col_name BETWEEN (SELECT MIN( col_name ) FROM table_name) AND num
+SELECT * FROM table_name WHERE col_name BETWEEN (SELECT MIN( col_name ) FROM table_name) AND num
+SELECT * FROM table_name WHERE col_name NOT IN (SELECT col_name FROM table_name WHERE col_name BETWEEN num AND num )
+SELECT * FROM table_name WHERE col_name NOT IN (SELECT col_name FROM table_name WHERE col_name BETWEEN num AND num )
+SELECT col_name , col_name , col_name FROM table_name WHERE col_name = (SELECT col_name FROM table_name WHERE col_name = string )
+SELECT col_name , col_name , col_name FROM table_name WHERE col_name = (SELECT col_name FROM table_name WHERE col_name = string )
+SELECT col_name , col_name , col_name FROM table_name WHERE col_name = ( SELECT col_name FROM table_name WHERE col_name = string ) AND col_name != string
+SELECT col_name , col_name , col_name FROM table_name WHERE col_name = ( SELECT col_name FROM table_name WHERE col_name = string ) AND col_name != string
+SELECT col_name , col_name , col_name FROM table_name WHERE col_name IN ( SELECT col_name FROM table_name WHERE col_name LIKE string )
+SELECT col_name , col_name , col_name FROM table_name WHERE col_name IN ( SELECT col_name FROM table_name WHERE col_name LIKE string )
+SELECT col_name , col_name , col_name , col_name FROM table_name WHERE col_name > ( SELECT AVG ( col_name ) FROM table_name ) AND col_name IN ( SELECT col_name FROM table_name WHERE col_name LIKE string )
+SELECT col_name , col_name , col_name , col_name FROM table_name WHERE col_name > ( SELECT AVG ( col_name ) FROM table_name ) AND col_name IN ( SELECT col_name FROM table_name WHERE col_name LIKE string )
+SELECT col_name , col_name FROM table_name WHERE col_name < ( SELECT min( col_name ) FROM table_name WHERE col_name = string )
+SELECT col_name , col_name FROM table_name WHERE col_name < ( SELECT min( col_name ) FROM table_name WHERE col_name = string )
+SELECT col_name , col_name , col_name , col_name FROM table_name WHERE col_name > ( SELECT max( col_name ) FROM table_name WHERE col_name = string )
+SELECT col_name , col_name , col_name , col_name FROM table_name WHERE col_name > ( SELECT max( col_name ) FROM table_name WHERE col_name = string )
+SELECT col_name , SUM( col_name ) FROM table_name GROUP BY col_name HAVING count(*) >= num
+SELECT col_name , SUM( col_name ) FROM table_name GROUP BY col_name HAVING count(*) >= num
+SELECT * FROM table_name WHERE col_name NOT IN (SELECT col_name FROM table_name)
+SELECT * FROM table_name WHERE col_name NOT IN (SELECT col_name FROM table_name)
+SELECT col_name , col_name , col_name , col_name , MAX( col_name ) FROM table_name GROUP BY col_name
+SELECT col_name , col_name , col_name , col_name , MAX( col_name ) FROM table_name GROUP BY col_name
+SELECT table_alias0.col_name , table_alias0.col_name , table_alias1.col_name , table_alias2.col_name , table_alias2.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name
+SELECT table_alias0.col_name , table_alias0.col_name , table_alias1.col_name , table_alias2.col_name , table_alias2.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name
+SELECT table_alias0.col_name , table_alias0.col_name , table_alias2.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias0.col_name LIKE string
+SELECT table_alias0.col_name , table_alias0.col_name , table_alias2.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias0.col_name LIKE string
+SELECT table_alias0.col_name , table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name
+SELECT table_alias0.col_name , table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias1.col_name = table_alias0.col_name
+SELECT table_alias0.col_name , table_alias0.col_name , table_alias0.col_name , table_alias3.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name JOIN table_name AS table_alias3 ON table_alias2.col_name = table_alias3.col_name
+SELECT table_alias0.col_name , table_alias0.col_name , table_alias0.col_name , table_alias3.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name JOIN table_name AS table_alias3 ON table_alias2.col_name = table_alias3.col_name
+SELECT col_name , COUNT(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY col_name
+SELECT col_name , COUNT(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY col_name
+SELECT col_name , col_name , col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN locations AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias2.col_name = string
+SELECT col_name , col_name , col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN locations AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias2.col_name = string

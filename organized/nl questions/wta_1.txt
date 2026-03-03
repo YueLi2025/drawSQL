@@ -1,0 +1,63 @@
+nl_question
+Find the total number of players.
+How many players are there?
+Find the total number of matches.
+Count the number of matches.
+List the first name and birth date of all players from the country with code USA.
+What are the first names and birth dates of players from the USA?
+Find the average age of losers and winners of all matches.
+What are the average ages of losers and winners across matches?
+Find the average rank of winners in all matches.
+What is the average rank for winners in all matches?
+Find the highest rank of losers in all matches.
+What is the best rank of losers across all matches?
+find the number of distinct country codes of all players.
+How many distinct countries do players come from?
+Find the number of distinct name of losers.
+How many different loser names are there?
+Find the name of tourney that has more than 10 matches.
+What are the names of tournaments that have more than 10 matches?
+List the names of all winners who played in both 2013 and 2016.
+What are the names of players who won in both 2013 and 2016?
+List the number of all matches who played in years of 2013 or 2016.
+How many matches were played in 2013 or 2016?
+What are the country code and first name of the players who won in both tourney WTA Championships and Australian Open?
+What are the first names and country codes for players who won both the WTA Championships and the Australian Open?
+Find the first name and country code of the oldest player.
+What is the first name and country code of the oldest player?
+List the first and last name of all players in the order of birth date.
+What are the full names of all players, sorted by birth date?
+List the first and last name of all players who are left / L hand in the order of birth date.
+What are the full names of all left handed players, in order of birth date?
+Find the first name and country code of the player who did the most number of tours.
+What is the first name and country code of the player with the most tours?
+Find the year that has the most number of matches.
+Which year had the most matches?
+Find the name and rank points of the winner who won the most times.
+What is the name of the winner who has won the most matches, and how many rank points does this player have?
+Find the name of the winner who has the highest rank points and participated in the Australian Open tourney.
+What is the name of the winner with the most rank points who participated in the Australian Open tournament?
+find the names of loser and winner who played in the match with greatest number of minutes.
+What are the names of the winner and loser who played in the longest match?
+Find the average ranking for each player and their first name.
+What are the first names of all players, and their average rankings?
+Find the total ranking points for each player and their first name.
+What are the first names of all players, and their total ranking points?
+find the number of players for each country.
+How many players are from each country?
+find the code of the country where has the greatest number of players.
+What is the code of the country with the most players?
+Find the codes of countries that have more than 50 players.
+What are the codes of countries with more than 50 players?
+Find the total number of tours for each ranking date.
+How many total tours were there for each ranking date?
+Find the number of matches happened in each year.
+How many matches were played in each year?
+Find the name and rank of the 3 youngest winners across all matches.
+What are the names and ranks of the three youngest winners across all matches?
+How many different winners both participated in the WTA Championships and were left handed?
+Find the number of left handed winners who participated in the WTA Championships.
+Find the first name, country code and birth date of the winner who has the highest rank points in all matches.
+What is the first name, country code, and birth date of the player with the most winner rank points across all matches?
+Find the number of players for each hand type.
+How many players are there for each hand type?

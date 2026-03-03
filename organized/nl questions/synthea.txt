@@ -1,0 +1,142 @@
+nl_question
+According to the observation on 2008/3/11, what was the height of Elly Koss?
+During all the observations of Elly Koss, what was the highest Systolic Blood Pressure observed?
+For how many times had Elly Koss have her Systolic Blood Pressure observed?
+For how long was Elly Koss required to take Acetaminophen?
+Please list all the medication that are prescribed to Elly Koss.
+Why did Elly Koss need to take Acetaminophen?
+What medication did Elly Koss take when she had Streptococcal sore throat?
+What was the condition of Elly Koss on 2009/1/8?
+For how long did Elly Koss's cystitis last?
+According to all the observations of Elly Koss, what was her average weight?
+Give the body height status of Mr. Vincent Wyman on 2010/8/2.
+How many care plans has Mrs. Norman Berge taken?
+Why did Mrs. Annabelle Pouros take leucovorin 100 mg injection on 1970/12/19? State the reason.
+Give the procedure description of Ms. Jacquelyn Shanahan on 2009/8/9.
+Give the number of claims did Ms. Abbie Cole have in the year of 2011.
+How many allergies does Mrs. Saundra Monahan have?
+Describe the encounter of Mr. Hubert Baumbach on 2008/10/25.
+What kind of condition did Keven Kuhn have from 2016/9/24 to 2016/10/10? Describe the condition.
+When did Mrs. Ira Deckow have the standard pregnancy test?
+What is the most common allergy among patients?
+What is the most common condition among the female Americans?
+Among the patients that started taking Ibuprofen 200mg Oral Tablet in 2016, how many Dominican patients stopped taking the medicine after exactly one month?
+How many of the patients born in 1920s had pneumonia?
+How many Black patients were immunized with DTaP in 2013?
+How many conditions did Tyree Eichmann have?
+Among the patients with prediabetes, how many are female?
+Indicate the patient's full name with the lowest body mass index in kg/m2.
+What is the age of the patient with hypertension named Giovanni Russel?
+Count all of the living patients that had a stroke.
+Among the patients with hypertension, what is the average of their diastolic blood pressure?
+What is the medicine prescribed for the patient with social security number 999-94-3751?
+Give the social security number of the female Irish patient allergic to grass pollen.
+What is the glucose level of the patient that lives at 365 Della Crossroad Suite 202, Deerfield, MA 01342 US?
+List the procedures received by Emmy Waelchi.
+Provide the patients' full names who received the extraction of wisdom tooth.
+Provide the body weight of Elly Koss in every observation.
+How many times did Keven Kuhn receive DTaP immunization?
+Among observations in 2011, provide the names and ages of patients whose Systolic Blood Pressures are 200mmHg.
+How many stroke patients have married?
+List down the last name of patients who are allergic to dairy products.
+List down the encounter descriptions of patients who were born in Pittsfield MA US.
+How many patients with 'allergy to eggs' have been immunized with 'Td (adult) preservative free'?
+How many patients with a body weight of more than 100 kg have a 'diabetes self-management plan' care plan?
+What gender is more prone to 'dander (animal) allergy'?
+On what dates did the billable period begin for patients with the last name Dickinson?
+How many women need to take 'Nitroglycerin 0.4 MG/ACTUAT [Nitrolingual]'?
+What is the average body weight of Asian patients?
+How many times was Elly Koss given a care plan between 1/11/2009 and 10/23/2010?
+How long did Berry Keebler take the Acetaminophen 160 MG when he was admitted due to acute bronchitis?
+In 2010, how many single patients took Nitrofurantoin 5 mg/ML [Furadantin] to cure cystitis?
+Tell me the reason for Lavelle Vandervort's encounter on 11/20/2013?
+From 1/9/2011 to 8/29/2012, how many German patients have their outpatient encounters?
+How many types of medication have been prescribed to Mr. Major D'Amore since his visit to the hospital?
+List out all the observation information collected for the patient named Bella Rolfson.
+How many mothers have taken immunization during prenatal visit?
+How many male patients are diagnosed with hypertension as compared to female patients?
+How many unmarried women were checked for normal pregnancy?
+What is the average body mass index for patients with higher total cholesterol?
+Name the reason Walter Bahringer visited medical professionals in July 2009.
+How old was Mr. Stacy Morar at the time of his first emergency room admission due to a drug overdose?
+What drug is administered more often to treat child attention deficit disorder?
+Indicate the time frame and details of the most recent care plan suggested to Jacquelyn Shanahan.
+Identify the allergy period for Isadora Moen and what triggered it.
+How old was Mrs. Laronda Bernier at the time of her most recent medical encounter?
+What condition forced Mrs. Joye Homenick to seek medical attention in 2017?
+How long did Elly Koss have to take Acetaminophen 160 MG?
+State description of medication taken by Joe Homenick.
+What is the start date of the care plan of the patient whose maiden name is Adams?
+Among the male patients, who has the earliest starting date of the care plan?
+Mention the description of the care plan of American patients.
+List out the start date of the care plan of alive patients.
+How many white patients have the reason code of 10509002?
+List out full name of patients who have "Diabetic diet" in the description of the care plan.
+How many Italian patients have the care plan code of 304510005?
+Provide the full names of patients who have been taking Penicillin V Potassium 250 MG since 1948.
+How many white patients whose birth year is 1935 have a stroke?
+List the patient ids whose disease has the most occurrences.
+List all the full names of patients with a condition described as cystitis.
+Indicate the start date of patient Walter Bahringer's care plan.
+Describe the care plans of patient Major D'Amore's plan of care.
+Among the white patients, what is the average body height of the patients?
+Indicate the care plan needed for the patient living at 179 Sydni Roads, Taunton, MA 02780 US.
+Provide the social security number of the patient with the highest systolic blood pressure.
+What is the care plan for the patient with social security number 999-15-3685?
+Who is the patient with a body weight of 61.97 kg?
+What is the difference between the number of married patients and the number of single patients with diabetes?
+The highest Systolic Blood Pressure was observed in which patient? Please give his or her full name.
+Please give the full names of all the patients who had been prescribed with Acetaminophen.
+State the prevalence rate of condition no. 368581000119106.
+Provide the name of the patient who had a claim on 1947/9/11.
+Calculate the average period of Mr. Wesley Lemke's care plans.
+State the average period of Ms. Angelena Kertzmann's several normal pregnancies.
+How many patients are allergic to eggs?
+What is the id of the patient whose hypertension started most recently?
+What is/are the ids of the tallest patient/s?
+What are the full names of the patients who started taking Yaz 28 Day Pack in 2011?
+List the ids of all the patients with condition that has a prevalence percentage of 18.8%.
+How many Asian female patients take oxaliplatin 5 MG/ML [Eloxatin]?
+Name the patients who had an allergy to soy.
+Which procedures and medications were received by the patient with the third-degree burn?
+Provide medications received by patients with an allergy to mould on 6th June 2016.
+Describe the care plans received by the patient with secondary malignant neoplasm of the colon.
+What is the prevalence rate of the patients' diseases started on 9th May 2014?
+Among the immunizations in 2017, calculate the percentage of patients who received the Influenza seasonal injectable preservative free. Among them, how many patients are English?
+What are the birth date of patients who took outpatient encounter care plan?
+How many of the patients who have stopped taking medication for 'coronary heart disease' are still alive?
+How many of the patients who underwent a 'bone immobilization' procedure have a driver's license?
+How many patients of Irish ethnicity take medication for 'myocardial infarction'?
+Write down the Social Security numbers of patients who have latex allergies.
+Please provide the dates on which Elly Koss was immunized with the influenza seasonal injectable preservative-free vaccine.
+From 7/9/2010 to 10/29/2013, how many black patients were immunized with the meningococcal MCV4P vaccine?
+Give me the reason, name of the drug, and duration of medication under encounter ID 23c293ec-dbae-4a22-896e-f12cf3c8bac3. Tell me if the patient is still alive.
+How many patients with shellfish allergies died when they were under 12 years old? Please give their full names.
+List out patient names with calcium deficiency.
+Please include the full name of the patient who received a lung transplant.
+When did Mrs. Joye Homenick receive her most recent influenza seasonal vaccine?
+What are the medical encounter ids of patients who were born in Pembroke MA US?
+What is the percentage of female patients who started the care plan in 2010?
+List the full names of patients with nut allergy.
+Describe the condition of patient Wilmer Koepp.
+Among the patients with viral sinusitis condition, which patient's gender is most affected? Provide the number for each respectively.
+Which conditions the patient has when receiving the IPV immunization?
+List 5 patients' name that need medication due to streptococcal sore throat disorder.
+Among the male patients, list down 5 birth dates of patients taking the medication "Penicillin V Potassium 250 MG".
+List down the full name of Irish patients diagnosed with the prevalent diseases that have an occurrence greater than the 96% of the average occurrences of all conditions.
+By how much did Elly Koss's weight increase from the observation in 2008 to the observation in 2009?
+How many patients have diabetes that started in 1988?
+Among the patients that died, what is the condition of the oldest patient?
+List down the address of patients who have billable period in 2010.
+Calculate the average age of patients with prediabetes care plan.
+What is the care plan, procedure, medication and the patient's full name for encounter 6f2e3935-b203-493e-a9c0-f23e847b9798?
+Among all patients who sought medical attention in 2010 due to contact dermatitis, identify the percentage of females.
+How many interactions did Lorri Simons have with medical professionals between 2010 and 2017? What percentage of encounters are attributed to prenatal visits?
+List out the stop date of the care plan of dead patients.
+Provide the allergen of the Dominican patient named Dirk Languish.
+How many patients who are allergic to peanuts have asthma?
+What is the code of the prevalent disease with the highest occurrences?
+Among the patients with acute bronchitis, what is the percentage of Asian women?
+Who had to take Clopidogrel 75 MG Oral Tablet for over 10 years?
+State the description of the reason why Angelo Buckridge needs the care plan.
+Who is the 44-year-old patient diagnosed with drug overdose?

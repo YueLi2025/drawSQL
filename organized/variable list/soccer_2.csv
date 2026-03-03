@@ -1,0 +1,12 @@
+table_name,column_name,column_type
+College,cName,string
+College,state,string
+College,enr,num
+Player,pID,num
+Player,pName,string
+Player,yCard,string
+Player,HS,num
+Tryout,pID,num
+Tryout,cName,string
+Tryout,pPos,string
+Tryout,decision,string

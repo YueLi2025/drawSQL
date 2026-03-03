@@ -1,0 +1,31 @@
+nl_question
+Please list the IDs of all the trains that run in the east direction and have less than 4 cars.
+Please list the directions in which the trains with at least one empty-loaded car run.
+In which direction does the train with an ellipse-shape car run?
+Please list the shapes of all the head cars on the trains that run in the east direction.
+Among the cars on a train that runs in the east direction, how many of them have a flat roof and a circle load shape?
+Please list the directions in which the trains with 4 short cars run.
+What is the average number of cars on trains that run in the east direction?
+Among the trains running east, how many trains have at least 4 cars?
+Which direction do most of the trains with rectangle-shaped second cars run?
+Among the trains running west, how many trains have no more than one car with an open roof?
+How many cars running east have double-sided tail cars?
+List all the directions of the trains that have empty cars.
+Among the trains running west, how many trains have three-wheeled, jagged roof cars?
+Provide the directions for all the trains that have 2 or less cars.
+What is the percentage of all the trains with at least 4 cars? List the directions of the said trains.
+How many trains are there that run in the east direction?
+How many cars are there on train no.1?
+What is the shape of the tail car on train no.1?
+Please list the IDs of all the trains with at least one car in a non-regular shape.
+What are the load shapes of all the short ellipse cars?
+What are the ids of the train running east?
+How many wheels do the long cars have?
+How many trains running west have double sided cars in 3rd position?
+How many eastbound trains have rectangular-shaped head cars?
+Please list the IDs of all the cars on train no.1 that have 2 wheels.
+What is the total number of short cars on all the trains that run in the east direction?
+How many cars on a train that runs in the east direction have a flat roof?
+How many short cars are in the shape of hexagon?
+How many trains are running west?
+Among the trains that run in the east direction, how many of them have at least one car in a non-regular shape?

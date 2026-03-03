@@ -1,0 +1,17 @@
+table_name,column_name,column_type
+categories,category,string
+categories,podcast_id,string
+podcasts,itunes_id,string
+podcasts,itunes_url,string
+podcasts,podcast_id,string
+podcasts,slug,string
+podcasts,title,string
+reviews,author_id,string
+reviews,content,string
+reviews,created_at,date
+reviews,podcast_id,string
+reviews,rating,num
+reviews,title,string
+runs,max_rowid,string
+runs,reviews_added,num
+runs,run_at,date

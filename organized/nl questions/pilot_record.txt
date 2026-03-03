@@ -1,0 +1,16 @@
+nl_question
+How many pilots are there?
+List the names of pilots in ascending order of rank.
+What are the positions and teams of pilots?
+List the distinct positions of pilots older than 30.
+Show the names of pilots from team "Bradley" or "Fordham".
+What is the joined year of the pilot of the highest rank?
+What are the different nationalities of pilots? Show each nationality and the number of pilots of each nationality.
+Show the most common nationality of pilots.
+Show the pilot positions that have both pilots joining after year 2005 and pilots joining before 2000.
+Show the names of pilots and models of aircrafts they have flied with.
+Show the names of pilots and fleet series of the aircrafts they have flied with in ascending order of the rank of the pilot.
+Show the fleet series of the aircrafts flied by pilots younger than 34
+Show the names of pilots and the number of records they have.
+Show names of pilots that have more than one record.
+List the names of pilots that do not have any record.

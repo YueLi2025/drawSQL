@@ -1,0 +1,45 @@
+sql_query
+SELECT count(*) FROM race
+SELECT count(*) FROM race
+SELECT Winning_driver ,  Winning_team FROM race ORDER BY Winning_team ASC
+SELECT Winning_driver ,  Winning_team FROM race ORDER BY Winning_team ASC
+SELECT Winning_driver FROM race WHERE Pole_Position != 'Junior Strous'
+SELECT Winning_driver FROM race WHERE Pole_Position != 'Junior Strous'
+SELECT DISTINCT CONSTRUCTOR FROM driver ORDER BY Age ASC
+SELECT DISTINCT CONSTRUCTOR FROM driver ORDER BY Age ASC
+SELECT DISTINCT Entrant FROM driver WHERE Age  >=  20
+SELECT DISTINCT Entrant FROM driver WHERE Age  >=  20
+SELECT max(Age) ,  min(Age) FROM driver
+SELECT max(Age) ,  min(Age) FROM driver
+SELECT count(DISTINCT Engine) FROM driver WHERE Age  >  30 OR Age  <  20
+SELECT count(DISTINCT Engine) FROM driver WHERE Age  >  30 OR Age  <  20
+SELECT Driver_Name FROM driver ORDER BY Driver_Name DESC
+SELECT Driver_Name FROM driver ORDER BY Driver_Name DESC
+SELECT T1.Driver_Name ,  T2.Race_Name FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID
+SELECT T1.Driver_Name ,  T2.Race_Name FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID
+SELECT T1.Driver_Name ,  COUNT(*) FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID GROUP BY T1.Driver_ID
+SELECT T1.Driver_Name ,  COUNT(*) FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID GROUP BY T1.Driver_ID
+SELECT T1.Age FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID GROUP BY T1.Driver_ID ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T1.Age FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID GROUP BY T1.Driver_ID ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T1.Driver_Name ,  T1.Age FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID GROUP BY T1.Driver_ID HAVING COUNT(*)  >=  2
+SELECT T1.Driver_Name ,  T1.Age FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID GROUP BY T1.Driver_ID HAVING COUNT(*)  >=  2
+SELECT T2.Race_Name FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID WHERE T1.Age  >=  26
+SELECT T2.Race_Name FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID WHERE T1.Age  >=  26
+SELECT Driver_Name FROM driver WHERE CONSTRUCTOR != "Bugatti"
+SELECT Driver_Name FROM driver WHERE CONSTRUCTOR != "Bugatti"
+SELECT CONSTRUCTOR ,  COUNT(*) FROM driver GROUP BY CONSTRUCTOR
+SELECT CONSTRUCTOR ,  COUNT(*) FROM driver GROUP BY CONSTRUCTOR
+SELECT Engine FROM driver GROUP BY Engine ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Engine FROM driver GROUP BY Engine ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Engine FROM driver GROUP BY Engine HAVING COUNT(*)  >=  2
+SELECT Engine FROM driver GROUP BY Engine HAVING COUNT(*)  >=  2
+SELECT Driver_Name FROM driver WHERE Driver_ID NOT IN (SELECT Driver_ID FROM race)
+SELECT Driver_Name FROM driver WHERE Driver_ID NOT IN (SELECT Driver_ID FROM race)
+SELECT CONSTRUCTOR FROM driver WHERE Age  <  20 INTERSECT SELECT CONSTRUCTOR FROM driver WHERE Age  >  30
+SELECT CONSTRUCTOR FROM driver WHERE Age  <  20 INTERSECT SELECT CONSTRUCTOR FROM driver WHERE Age  >  30
+SELECT Winning_team FROM race GROUP BY Winning_team HAVING count(*)  >  1
+SELECT Winning_team FROM race GROUP BY Winning_team HAVING count(*)  >  1
+SELECT T1.Driver_Name FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID WHERE Pole_Position  =  "Carl Skerlong" INTERSECT SELECT T1.Driver_Name FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID WHERE Pole_Position  =  "James Hinchcliffe"
+SELECT T1.Driver_Name FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID WHERE Pole_Position  =  "Carl Skerlong" INTERSECT SELECT T1.Driver_Name FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID WHERE Pole_Position  =  "James Hinchcliffe"
+SELECT Driver_Name FROM driver EXCEPT SELECT T1.Driver_Name FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID WHERE Pole_Position  =  "James Hinchcliffe"
+SELECT Driver_Name FROM driver EXCEPT SELECT T1.Driver_Name FROM driver AS T1 JOIN race AS T2 ON T1.Driver_ID  =  T2.Driver_ID WHERE Pole_Position  =  "James Hinchcliffe"

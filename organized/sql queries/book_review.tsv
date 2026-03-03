@@ -1,0 +1,22 @@
+sql_query
+SELECT count(*) FROM book
+SELECT Title FROM book ORDER BY Title ASC
+SELECT Title FROM book ORDER BY Pages DESC
+SELECT TYPE ,  Release FROM book
+SELECT max(Chapters) ,  min(Chapters) FROM book
+SELECT Title FROM book WHERE TYPE != "Poet"
+SELECT avg(Rating) FROM review
+SELECT T1.Title ,  T2.Rating FROM book AS T1 JOIN review AS T2 ON T1.Book_ID  =  T2.Book_ID
+SELECT T2.Rating FROM book AS T1 JOIN review AS T2 ON T1.Book_ID  =  T2.Book_ID ORDER BY T1.Chapters DESC LIMIT 1
+SELECT T2.Rank FROM book AS T1 JOIN review AS T2 ON T1.Book_ID  =  T2.Book_ID ORDER BY T1.Pages ASC LIMIT 1
+SELECT T1.Title FROM book AS T1 JOIN review AS T2 ON T1.Book_ID  =  T2.Book_ID ORDER BY T2.Rank LIMIT 1
+SELECT avg(T2.Readers_in_Million) FROM book AS T1 JOIN review AS T2 ON T1.Book_ID  =  T2.Book_ID WHERE T1.Type  =  "Novel"
+SELECT TYPE ,  COUNT(*) FROM book GROUP BY TYPE
+SELECT TYPE FROM book GROUP BY TYPE ORDER BY COUNT(*) DESC LIMIT 1
+SELECT TYPE FROM book GROUP BY TYPE HAVING COUNT(*)  >=  3
+SELECT T1.Title FROM book AS T1 JOIN review AS T2 ON T1.Book_ID  =  T2.Book_ID ORDER BY T2.Rating ASC
+SELECT T1.Title ,  T1.audio FROM book AS T1 JOIN review AS T2 ON T1.Book_ID  =  T2.Book_ID ORDER BY T2.Readers_in_Million DESC
+SELECT count(*) FROM book WHERE Book_ID NOT IN (SELECT Book_ID FROM review)
+SELECT TYPE FROM book WHERE Chapters  >  75 INTERSECT SELECT TYPE FROM book WHERE Chapters  <  50
+SELECT count(DISTINCT TYPE) FROM book
+SELECT TYPE ,  title FROM book EXCEPT SELECT T1.type ,  T1.title FROM book AS T1 JOIN review AS T2 ON T1.Book_ID  =  T2.Book_ID;

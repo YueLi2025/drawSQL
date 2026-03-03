@@ -1,0 +1,11 @@
+table_name,column_name,column_type
+Movie,mID,num
+Movie,title,string
+Movie,year,num
+Movie,director,string
+Rating,rID,num
+Rating,mID,num
+Rating,stars,num
+Rating,ratingDate,date
+Reviewer,rID,num
+Reviewer,name,string

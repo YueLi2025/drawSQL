@@ -1,0 +1,11 @@
+table_name,column_name,column_type
+Boats,bid,num
+Boats,name,string
+Boats,color,string
+Reserves,sid,num
+Reserves,bid,num
+Reserves,day,string
+Sailors,sid,num
+Sailors,name,string
+Sailors,rating,num
+Sailors,age,num

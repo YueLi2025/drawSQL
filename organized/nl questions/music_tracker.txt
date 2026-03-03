@@ -1,0 +1,32 @@
+nl_question
+What is the release title of the single under the "funk" tag that was released the oldest?
+Name all the release titles of the "ep's" under the alternative tag.
+What is the tag and the artist of the most downloaded single?
+How many tags does the release "city funk" have？
+Among the releases that were released in 2000, how many of them were released as an album and tagged "pop"?
+How many albums and Single-Tables were released by the artist named '50 cent' between 2010 and 2015?
+Provide the title, release year and the tag associated with the live album that has the highest number of downloads?
+Among the artists from 1980 to 1982. Which artist was tagged as "disco"?
+Among the artists with the id from 10 to 30. Which artist released the product with the tag "funk" in 1980?
+List the group name has the most downloaded that have released jazz genres from 1982 or later.
+How many singles were released between 1979 and 1981 labeled as "soul"?
+How many christmas albums were released in 2004?
+Please list all release titles whose tag is jazz in 2005.
+From 1980 to 2000, which artist had the most disco releases?
+Which artists have released singles with the tag 1970s?
+Please list the titles of all the releases with the tag "1980s".
+Among the releases with the tag "1980s", which one of them is the most downloaded? Please give its title.
+How many releases by the artist michael jackson are tagged "pop"?
+What are the average download times for the a release tagged "1980s"?
+An American rapper '2Pac' released his first solo album in 1991, how many years have passed until his next album was released?
+Provide the name of artists who had no more than 100 downloads and are tagged "funk" in 1980.
+Which artist has id "16"? Provide her or his tag genre.
+How many times was the album released by blowfly in 1980 downloaded?
+How many releases are tagged "1980s"?
+Please list the releases that have been downloaded for more than 20000 times.
+What are the tags of the release "sugarhill gang"?
+Which artist released singles between 1980 to 1982?
+Among id from 10 to 50. Which artist tagged as "new.york" has the most downloads?
+How many singles were released in 1979?
+Which album title and tag that millie jackson released in 1980?
+Provide the name of the artist who released his or her Single-Table in 2012 with the highest number of downloads. Name the Single-Table title as well.

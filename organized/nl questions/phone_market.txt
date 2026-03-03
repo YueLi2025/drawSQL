@@ -1,0 +1,16 @@
+nl_question
+How many phones are there?
+List the names of phones in ascending order of price.
+What are the memories and carriers of phones?
+List the distinct carriers of phones with memories bigger than 32.
+Show the names of phones with carrier either "Sprint" or "TMobile".
+What is the carrier of the most expensive phone?
+Show different carriers of phones together with the number of phones with each carrier.
+Show the most frequently used carrier of the phones.
+Show the carriers that have both phones with memory smaller than 32 and phones with memory bigger than 64.
+Show the names of phones and the districts of markets they are on.
+Show the names of phones and the districts of markets they are on, in ascending order of the ranking of the market.
+Show the names of phones that are on market with number of shops greater than 50.
+For each phone, show its names and total number of stocks.
+Show the names of phones that have total number of stocks bigger than 2000, in descending order of the total number of stocks.
+List the names of phones that are not on any market.

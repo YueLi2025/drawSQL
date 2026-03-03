@@ -1,0 +1,31 @@
+sql_query
+SELECT LOCATION FROM cinema EXCEPT SELECT LOCATION FROM cinema WHERE capacity  >  800
+SELECT LOCATION FROM cinema WHERE openning_year  =  2010 INTERSECT SELECT LOCATION FROM cinema WHERE openning_year  =  2011
+SELECT count(*) FROM cinema
+SELECT count(*) FROM cinema
+SELECT name ,  openning_year ,  capacity FROM cinema
+SELECT name ,  LOCATION FROM cinema WHERE capacity  >  (SELECT avg(capacity) FROM cinema)
+SELECT DISTINCT LOCATION FROM cinema
+SELECT DISTINCT LOCATION FROM cinema
+SELECT name ,  openning_year FROM cinema ORDER BY openning_year DESC
+SELECT name ,  LOCATION FROM cinema ORDER BY capacity DESC LIMIT 1
+SELECT avg(capacity) ,  min(capacity) ,  max(capacity) FROM cinema WHERE openning_year  >=  2011
+SELECT LOCATION ,  count(*) FROM cinema GROUP BY LOCATION
+SELECT LOCATION FROM cinema WHERE openning_year  >=  2010 GROUP BY LOCATION ORDER BY count(*) DESC LIMIT 1
+SELECT LOCATION FROM cinema WHERE capacity  >  300 GROUP BY LOCATION HAVING count(*)  >=  2
+SELECT LOCATION FROM cinema WHERE capacity  >  300 GROUP BY LOCATION HAVING count(*)  >=  2
+SELECT title ,  directed_by FROM film
+SELECT title ,  directed_by FROM film
+SELECT DISTINCT directed_by FROM film
+SELECT DISTINCT directed_by FROM film
+SELECT directed_by ,  count(*) FROM film GROUP BY directed_by
+SELECT T2.name ,  sum(T1.show_times_per_day) FROM schedule AS T1 JOIN cinema AS T2 ON T1.cinema_id  =  T2.cinema_id GROUP BY T1.cinema_id
+SELECT T2.title ,  max(T1.price) FROM schedule AS T1 JOIN film AS T2 ON T1.film_id  =  T2.film_id GROUP BY T1.film_id
+SELECT T2.title ,  max(T1.price) FROM schedule AS T1 JOIN film AS T2 ON T1.film_id  =  T2.film_id GROUP BY T1.film_id
+SELECT T3.name ,  T2.title ,  T1.date ,  T1.price FROM schedule AS T1 JOIN film AS T2 ON T1.film_id  =  T2.film_id JOIN cinema AS T3 ON T1.cinema_id  =  T3.cinema_id
+SELECT title ,  directed_by FROM film WHERE film_id NOT IN (SELECT film_id FROM schedule)
+SELECT T2.directed_by FROM schedule AS T1 JOIN film AS T2 ON T1.film_id  =  T2.film_id GROUP BY T2.directed_by ORDER BY sum(T1.show_times_per_day) DESC LIMIT 1
+SELECT LOCATION FROM cinema WHERE capacity  >  300 GROUP BY LOCATION HAVING count(*)  >  1
+SELECT LOCATION FROM cinema WHERE capacity  >  300 GROUP BY LOCATION HAVING count(*)  >  1
+SELECT count(*) FROM film WHERE title LIKE "%Dummy%"
+SELECT count(*) FROM film WHERE title LIKE "%Dummy%"

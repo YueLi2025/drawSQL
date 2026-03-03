@@ -1,0 +1,75 @@
+hard_templates
+SELECT count(*) FROM table_name
+SELECT count(*) FROM table_name
+SELECT count(*) FROM table_name WHERE col_name > num
+SELECT count(*) FROM table_name WHERE col_name > num
+SELECT CName FROM table_name WHERE col_name = num
+SELECT CName FROM table_name WHERE col_name = num
+SELECT CName FROM table_name WHERE col_name = string
+SELECT CName FROM table_name WHERE col_name = string
+SELECT count(*) FROM table_name WHERE col_name = string
+SELECT count(*) FROM table_name WHERE col_name = string
+SELECT DPhone FROM table_name WHERE col_name = num
+SELECT DPhone FROM table_name WHERE col_name = num
+SELECT COUNT(DISTINCT StuID) FROM table_name WHERE col_name = string
+SELECT COUNT(DISTINCT StuID) FROM table_name WHERE col_name = string
+SELECT max(gradepoint) , min(gradepoint) FROM table_name
+SELECT max(gradepoint) , min(gradepoint) FROM table_name
+SELECT DISTINCT Fname FROM table_name WHERE Fname LIKE string
+SELECT DISTINCT Fname FROM table_name WHERE Fname LIKE string
+SELECT Fname , Lname FROM table_name WHERE col_name = string AND col_name = string
+SELECT Fname , Lname FROM table_name WHERE col_name = string AND col_name = string
+SELECT col_name FROM table_name WHERE col_name = string AND col_name = string
+SELECT col_name FROM table_name WHERE col_name = string AND col_name = string
+SELECT DName FROM table_name WHERE col_name = string
+SELECT DName FROM table_name WHERE col_name = string
+SELECT * FROM table_name ORDER BY col_name
+SELECT * FROM table_name ORDER BY col_name
+SELECT CName FROM table_name ORDER BY col_name
+SELECT CName FROM table_name ORDER BY col_name
+SELECT Fname FROM table_name ORDER BY col_name DESC
+SELECT Fname FROM table_name ORDER BY col_name DESC
+SELECT LName FROM table_name WHERE col_name = string ORDER BY col_name DESC
+SELECT LName FROM table_name WHERE col_name = string ORDER BY col_name DESC
+SELECT Lname FROM table_name WHERE col_name = string ORDER BY Lname
+SELECT Lname FROM table_name WHERE col_name = string ORDER BY Lname
+SELECT Fname FROM table_name WHERE col_name = string ORDER BY Fname
+SELECT Fname FROM table_name WHERE col_name = string ORDER BY Fname
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name ORDER BY count(*) DESC LIMIT num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name ORDER BY count(*) DESC LIMIT num
+SELECT DName FROM table_name EXCEPT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT DName FROM table_name EXCEPT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name ORDER BY count(*) ASC LIMIT num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name ORDER BY count(*) ASC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) ASC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) ASC LIMIT num
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY count(*) DESC LIMIT num
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY count(*) DESC LIMIT num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY count(*) DESC LIMIT num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY count(*) DESC LIMIT num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name HAVING COUNT(*) >= num
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name HAVING COUNT(*) >= num
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string
+SELECT table_alias2.col_name , table_alias2.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 JOIN table_name AS table_alias2 ON table_alias0.col_name = table_alias1.col_name AND table_alias0.col_name = table_alias2.col_name
+SELECT table_alias2.col_name , table_alias2.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 JOIN table_name AS table_alias2 ON table_alias0.col_name = table_alias1.col_name AND table_alias0.col_name = table_alias2.col_name
+SELECT DISTINCT table_alias2.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 JOIN table_name AS table_alias2 ON table_alias0.col_name = table_alias1.col_name AND table_alias0.col_name = table_alias2.col_name WHERE table_alias1.col_name >= num
+SELECT DISTINCT table_alias2.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 JOIN table_name AS table_alias2 ON table_alias0.col_name = table_alias1.col_name AND table_alias0.col_name = table_alias2.col_name WHERE table_alias1.col_name >= num
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = num
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = num
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = num
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias2.col_name JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias0.col_name = string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias2.col_name JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias0.col_name = string
+SELECT avg(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 JOIN table_name AS table_alias2 ON table_alias0.col_name = table_alias1.col_name AND table_alias0.col_name = table_alias2.col_name WHERE table_alias2.col_name = string
+SELECT avg(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 JOIN table_name AS table_alias2 ON table_alias0.col_name = table_alias1.col_name AND table_alias0.col_name = table_alias2.col_name WHERE table_alias2.col_name = string
+SELECT max(table_alias1.col_name) , min(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 JOIN table_name AS table_alias2 ON table_alias0.col_name = table_alias1.col_name AND table_alias0.col_name = table_alias2.col_name WHERE table_alias2.col_name = string
+SELECT max(table_alias1.col_name) , min(table_alias1.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 JOIN table_name AS table_alias2 ON table_alias0.col_name = table_alias1.col_name AND table_alias0.col_name = table_alias2.col_name WHERE table_alias2.col_name = string
+SELECT CName FROM table_name WHERE col_name = num UNION SELECT CName FROM table_name WHERE col_name = num AND col_name = num
+SELECT CName FROM table_name WHERE col_name = num UNION SELECT CName FROM table_name WHERE col_name = num AND col_name = num
+SELECT DName FROM table_name WHERE col_name = string UNION SELECT DName FROM table_name WHERE col_name = string AND col_name = string
+SELECT DName FROM table_name WHERE col_name = string UNION SELECT DName FROM table_name WHERE col_name = string AND col_name = string
+SELECT Fname FROM table_name WHERE StuID NOT IN (SELECT StuID FROM table_name)
+SELECT Fname FROM table_name WHERE StuID NOT IN (SELECT StuID FROM table_name)

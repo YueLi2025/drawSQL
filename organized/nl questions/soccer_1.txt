@@ -1,0 +1,15 @@
+nl_question
+List all country and league names.
+How many leagues are there in England?
+What is the average weight of all players?
+What is the maximum and minimum height of all players?
+List all player names who have an overall rating higher than the average.
+What are the names of players who have the best dribbling?
+List the names of all players who have a crossing score higher than 90 and prefer their right foot.
+List the names of all left-footed players who have overall rating between 85 and 90.
+What is the average rating for right-footed players and left-footed players?
+Of all players with an overall rating greater than 80, how many are right-footed and left-footed?
+List all of the player ids with a height of at least 180cm and an overall rating higher than 85.
+List all of the ids for left-footed players with a height between 180cm and 190cm.
+Who are the top 3 players in terms of overall rating?
+List the names and birthdays of the top five players in terms of potential.

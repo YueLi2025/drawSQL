@@ -1,0 +1,17 @@
+table_name,column_name,column_type
+aircraft,aid,num
+aircraft,name,string
+aircraft,distance,num
+certificate,eid,num
+certificate,aid,num
+employee,eid,num
+employee,name,string
+employee,salary,num
+flight,flno,num
+flight,origin,string
+flight,destination,string
+flight,distance,num
+flight,departure_date,date
+flight,arrival_date,date
+flight,price,num
+flight,aid,num

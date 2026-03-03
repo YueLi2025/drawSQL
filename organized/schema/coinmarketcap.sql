@@ -1,0 +1,40 @@
+CREATE TABLE coins (
+  id INTEGER,
+  name TEXT,
+  slug TEXT,
+  symbol TEXT,
+  status TEXT,
+  category TEXT,
+  description TEXT,
+  subreddit TEXT,
+  notice TEXT,
+  tags TEXT,
+  tag_names TEXT,
+  website TEXT,
+  platform_id INTEGER,
+  date_added TEXT,
+  date_launched TEXT,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE historical (
+  date TEXT,
+  coin_id INTEGER,
+  cmc_rank INTEGER,
+  market_cap REAL,
+  price REAL,
+  open REAL,
+  high REAL,
+  low REAL,
+  close REAL,
+  time_high TEXT,
+  time_low TEXT,
+  volume_24h REAL,
+  percent_change_1h REAL,
+  percent_change_24h REAL,
+  percent_change_7d REAL,
+  circulating_supply REAL,
+  total_supply REAL,
+  max_supply REAL,
+  num_market_pairs INTEGER
+);

@@ -1,0 +1,19 @@
+nl_question
+Are the customers holding coupons with amount 500 bad or good?
+How many bookings did each customer make? List the customer id, first name, and the count.
+What is the maximum total amount paid by a customer? List the customer id and amount.
+What are the id and the amount of refund of the booking that incurred the most times of payments?
+What is the id of the product that is booked for 3 times?
+What is the product description of the product booked with an amount of 102.76?
+What are the start date and end date of the booking that has booked the product named 'Book collection A'?
+What are the names of products whose availability equals to 1?
+How many different product types are there?
+What are the first name, last name, and gender of all the good customers? Order by their last name.
+What is the average amount due for all the payments?
+What are the maximum, minimum, and average booked count for the products booked?
+What are all the distinct payment types?
+What are the daily hire costs for the products with substring 'Book' in its name?
+How many products are never booked with amount higher than 200?
+What are the coupon amount of the coupons owned by both good and bad customers?
+What are the payment date of the payment with amount paid higher than 300 or with payment type is 'Check'
+What are the names and descriptions of the products that are of 'Cutlery' type and have daily hire cost lower than 20?

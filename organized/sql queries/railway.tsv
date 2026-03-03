@@ -1,0 +1,22 @@
+sql_query
+SELECT count(*) FROM railway
+SELECT Builder FROM railway ORDER BY Builder ASC
+SELECT Wheels ,  LOCATION FROM railway
+SELECT max(LEVEL) FROM manager WHERE Country != "Australia "
+SELECT avg(Age) FROM manager
+SELECT Name FROM manager ORDER BY LEVEL ASC
+SELECT Name ,  Arrival FROM train
+SELECT Name FROM manager ORDER BY Age DESC LIMIT 1
+SELECT T2.Name ,  T1.Location FROM railway AS T1 JOIN train AS T2 ON T1.Railway_ID  =  T2.Railway_ID
+SELECT T1.Builder FROM railway AS T1 JOIN train AS T2 ON T1.Railway_ID  =  T2.Railway_ID WHERE T2.Name  =  "Andaman Exp"
+SELECT T2.Railway_ID ,  T1.Location FROM railway AS T1 JOIN train AS T2 ON T1.Railway_ID  =  T2.Railway_ID GROUP BY T2.Railway_ID HAVING COUNT(*)  >  1
+SELECT T2.Railway_ID ,  T1.Builder FROM railway AS T1 JOIN train AS T2 ON T1.Railway_ID  =  T2.Railway_ID GROUP BY T2.Railway_ID ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Builder ,  COUNT(*) FROM railway GROUP BY Builder
+SELECT Builder FROM railway GROUP BY Builder ORDER BY COUNT(*) DESC LIMIT 1
+SELECT LOCATION ,  COUNT(*) FROM railway GROUP BY LOCATION
+SELECT LOCATION FROM railway GROUP BY LOCATION HAVING COUNT(*)  >  1
+SELECT ObjectNumber FROM railway WHERE Railway_ID NOT IN (SELECT Railway_ID FROM train)
+SELECT Country FROM manager WHERE Age  >  50 INTERSECT SELECT Country FROM manager WHERE Age  <  46
+SELECT DISTINCT Country FROM manager
+SELECT Working_year_starts FROM manager ORDER BY LEVEL DESC
+SELECT Country FROM manager WHERE Age  >  50 OR Age  <  46

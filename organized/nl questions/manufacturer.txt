@@ -1,0 +1,17 @@
+nl_question
+How many furniture components are there in total?
+Return the name and id of the furniture with the highest market rate.
+find the total market rate of the furnitures that have the top 2 market shares.
+Find the component amounts and names of all furnitures that have more than 10 components.
+Find the name and component amount of the least popular furniture.
+Find the names of furnitures whose prices are lower than the highest price.
+Which manufacturer has the most number of shops? List its name and year of opening.
+Find the average number of factories for the manufacturers that have more than 20 shops.
+List all manufacturer names and ids ordered by their opening year.
+Give me the name and year of opening of the manufacturers that have either less than 10 factories or more than 10 shops.
+what is the average number of factories and maximum number of shops for manufacturers that opened before 1990.
+Find the id and number of shops for the company that produces the most expensive furniture.
+Find the number of funiture types produced by each manufacturer as well as the company names.
+Give me the names and prices of furnitures which some companies are manufacturing.
+Find the market shares and names of furnitures which no any company is producing in our records.
+Find the name of the company that produces both furnitures with less than 6 components and furnitures with more than 10 components.

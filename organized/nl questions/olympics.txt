@@ -1,0 +1,157 @@
+nl_question
+Please list the names of all the Olympic games that John Aalberg has taken part in.
+What was the name of the Olympic game that John Aalberg took part in when he was 31?
+When John Aalberg took part in the 1994 Winter Olympic Game, how old was he?
+Please list the names of all the Olympic competitors from Finland.
+The Olympic competitor John Aalberg is from which region?
+What is the NOC code of the region where the tallest male Olympic competitor is from?
+Among all the Olympic competitors from Finland, how many of them are female?
+In which city was the 1992 Summer Olympic Games held?
+Please list the names of the Olympic games that were held in London.
+In which year did London hold its earliest Olympic game?
+Among the competitors of the 1994 Winter Olympic Game, what is the percentage of those from Finland?
+Which sport does the event "Shooting Women's Trap" belong to?
+Which city was the host of 1936 Winter Olympic Games?
+Tell the number of swimming related events.
+Which game has Jessica Carolina Aguilera Aguilera participated in? Give the id of the game.
+Give the name of the tallest athlete from Sweden.
+How many athletes in the database are from Guatemala?
+Who has participated in the most Olympic Games in the database?
+How many competitor ids does Martina Kohlov have?
+What is the percentage of male athletes from Estonia?
+How many 24 years old competitors competed in Men's Basketball?
+What are the names of the events under Art Competitions?
+How many gold medals does Henk Jan Zwolle have?
+What is the name of the event where competitors received the most gold medals?
+Which cities hosted at least 3 Olympic games?
+How many Summer games were held in Stockholm?
+Which region do most of the athletes are from?
+Where was the first Olympic game held?
+In the Winter and Summer Olympics of 1988, which game has the most number of competitors? Find the difference of the number of competitors between the two games.
+What age of the competitors is the most numerous?
+In which cities were the 1976 winter and summer games held?
+What is the name of the competitor who has won the most medals?
+Where is competitor Estelle Nze Minko from?
+What is the name of all the sports Chin Eei Hui has competed in?
+What is the name of the oldest person who participated in the Olympic Games?
+In which Olympic Games have the largest number of women participation?
+How many persons participated in the Sapporo Olympics?
+In which Olympic Games has Morten Aleksander Djupvik participated?
+How many different events are there of Modern Pentathlon?
+Calculate the average age of the persons who participated in the 1992 Summer Games.
+List out years that only have summer games.
+How many athletes participated in the 2014 Winter Olympics?
+How many athlete from China participate in the 2016 Summer Olympics?
+How many gold medals were given to the winners in the Ice Hockey Men's Ice Hockey event?
+List out all the gold medalist winners in cycling sport.
+List out all the medals won by Lee Chong Wei.
+What is the percentage of female athletes below 20s who participated in the 2002 Winter Olympic?
+What is the ratio male to female athletes in the 2012 Summer Olympic?
+Which summer Olympic have the highest and lowest number of participants?
+What is the average height of male athletes playing basketball sport?
+How many female athletes are from the Philippines?
+Which region is Yao Ming from?
+At what age did Michael Fred Phelps, II join the Olympics?
+How many Men's 200 Metres Freestyle events did Ian James Thorpe compete in?
+How many times was Larysa Semenivna Latynina (Diriy-) declared as champion in Gymnastics Women's Individual All-Around?
+What are the names of the cities where Carl Lewis Borack competed?
+Which city was the 1992 Summer Olympic held?
+How many athletes over the age of 59 competed in the 2016 Summer Olympics?
+How many 10-year old athletes participated in the Gymnastics Men's Parallel Bars, Teams event?
+Which region does the NOC code "COL" stand for?
+Provide hockey's sport id.
+What is the id of Rio de Janeiro?
+How many people have won the gold medal of the event "Rowing Women's Coxed Eights"?
+How many kinds of events belong to the sport of cycling?
+What is Vijay Singh Chauhan's region name?
+When did Roma host the Olympic Games?
+How many games has Prithipal Singh participated in?
+State the number of athletes in the 1984 Summer Olympic Games who were more than 50 years old.
+How many kinds of events does athletics have?
+Who is the heaviest athlete from Russia?
+Give the height of the tallest athlete from Portugal.
+Tell the host city of the 1968 Winter Olympic Games.
+Which region has the most athletes?
+What is the percentage of athletes from Vanuatu who are taller than 175?
+Calculate the average weight of male athletes from Tonga.
+From 1900 to 1992, how many games did London host?
+Please list all game names that were held in Los Angeles.
+What is the game name that was held in Beijing in 2008?
+What is the percentage of champions at the age of over 30?
+At which age did A Lamusi participate in 2012 Summer?
+How many competitors were there who participated in 2000 Summer with age 31?
+How many male competitors were there who participated in 1948 Summer?
+Please list all competitors' names who participated in 1936 Summer.
+Who is the youngest competitor that participated in 2014 Winter?
+What is the average age of competitors who participated in 1988 Winter?
+What is the percentage of female competitors whose heights are over 170 that participated in the game in 1988?
+What is the sport name of "Cross Country Skiing Men's 10/15 kilometres Pursuit" event?
+What is the region id of Christine Jacoba Aaftink?
+Mention the height of people who belong to region id 7.
+What are the id of the games held in London?
+State the event name of Basketball.
+What is the name of medal that competitor id 9 obtained?
+List out the id of event that achieve the gold medal.
+Which city were the Olympic games held in 1992?
+Which region is the majority of the athletes from?
+What is the name of the oldest competitor?
+Which sport did John Aalberg participate in?
+How many Belgian men have competed in an Olympic Games?
+How many different football events are there?
+What were the cities in which John Aalberg competed?
+How many competitors over the age of 30 participated in the 1992 Winter Olympics?
+What is the name of the Olympic game with the most competitors held in Barcelona?
+List the name of competitors from Argentina.
+What is the average age of Argentina's athletes who participated in the Summer Olympics in 2012?
+Calculate the percentage of bronze medals won by men's basketball players.
+List the name of the games that Georgios Abaris participated.
+Calculate the average age of the competitors who participated in the 1924 Winter.
+What is the NOC code of the region of the competitors weighted 77 kg?
+List the names of the games held in Paris.
+Provide the competitors' names who joined the 2000 Summer.
+In which city was the game held where the oldest competitor participated?
+What is the name of the youngest competitor?
+List down the games ID of games held in Tokyo.
+Give the NOC code and region name of the heaviest competitor.
+In what year and season did Sohail Abbas compete?
+In which city the 2004 Summer was held?
+What is the season of the game where a competitor who weighted 73 kg and 180 cm tall, participated?
+Provide the names of competitors who received a gold medal.
+Provide the age of the tallest competitor.
+In the 2014 Winter game, what is the percentage of competitors who age 28 years old?
+Among the males, list the region name of people with height greater than 87% of the average height of all people listed.
+How many Olympic competitors are from Finland?
+For how many times has London held the Olympic games?
+For Peter Kohnke, show the name of his/her region.
+Who is the youngest person who participated in the Olympics?
+How many athletes are from Australia?
+How many males from Belgium have participated in an Olympic Games?
+Calculate the percentage of women who have participated in Equestrianism Mixed Three-Day Event, Individual.
+Which region has the highest medal number?
+How many athletes playing in Canoeing fall into overweight BMI category in the 2008 Summer games?
+How many athletes are there in the region where Clara Hughes is from?
+What is the average age of the athletes from the United States of America who competed in the 2016 Summer Olympics?
+Where was the 1920 Summer held?
+How many Summer games are there that were held in Paris?
+What is the average age of the people who participated in the winter season?
+Who is the heaviest athlete?
+How many athletes took part in the Olympic games held in Barcelona?
+In Barcelona, how many Olympic games were held?
+Provide the name of competitors from Greece.
+Compute the average height of competitors whose age ranges from 22 to 28.
+Show the name of the competitor id 90991.
+Calculate the bmi of the competitor id 147420.
+In which cities beginning with the letter M have the Olympic Games been held?
+How many Olympics games were held during the 90s?
+How many Olympic games were held in London?
+How many 20 years old athletes were there in the 1984 Summer Olympic Games?
+State the name of the city that held game id 3.
+List out the name of the game that the people participated in games id 13.
+What is the percentage of the people who are under 35 and participated in the summer season?
+What is the average height of the male Olympic competitors from Finland?
+How many Olympic Games has London hosted?
+How many Olympic events did Michael Phelps II join in total? Find the percentage of the events where he won a gold medal.
+Among the Olympic games held in Los Angeles, what is the name of the Olympic game that has the most number of competitors?
+Tell the weight of Dagfinn Sverre Aarskog.
+What is the percentage of people whose age greater than 24 and participate in winter season?
+How many people who are below 30 and participated in the summer season?

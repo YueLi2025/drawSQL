@@ -1,0 +1,37 @@
+nl_question
+How many users holds neutral attitude towards the HTC Weather app? Indicate the app's rating on the Google Play Store.
+What are the top 5 installed free apps?
+How many of the users hold neutral attitude on "10 Best Foods for You" app and what category is this app?
+What are the apps that users pretty like this app and how many installs amount of these apps?
+What is the rating for "Draw A Stickman"?
+List the top 5 shopping apps with the most reviews.
+What are the apps with only 5,000+ installs?
+Which free app has the most Negative comments?
+How many negative comments are there in all the apps with 100,000,000+ installs?
+What are the content ratings for the apps that have "gr8" in their comments?
+What is the total Sentiment polarity score of the most expensive app?
+Which Photography app has the highest total Sentiment subjectivity score?
+What is the number of installments of the app with the highest total Sentiment polarity score?
+Which apps have been reviewed more than 75 000 000 times and the content is suitable for teenagers?
+How much is the average sentiment polarity score of Golf GPS Rangefinder: Golf Pad and what is it's rating in the Google Play Store?
+Indicate the number of installs and include the percentage of positive sentiments of FREEDOME VPN Unlimited anonymous Wifi Security.
+What is the rating of Dragon Ball Legends and how many users dislike this App?
+Which education App has the worst rating and state the translated review if available.
+What is the lowest sentiment polarity score of the Basketball Stars app for people who dislikes the app pretty much and how many downloads does it have?
+How many apps have rating of 5?
+Which apps have not been updated since year 2015 and what kind of sentiment users hold on it?
+What is the number of neutral comments from all the weather apps?
+Which apps have 5 rating? List out then application name.
+List out genre that have downloads more than 1000000000.
+What is the average review number for application with 5 rating?
+How much is the size of Browser 4G and how many users have a pretty positive favorability on it?
+List all free sports Apps and their translated review.
+What is the rating for "Garden Coloring Book"? List all of its reviews.
+What genre does Honkai Impact 3rd belong to?
+Among the role playing game genre, how many are targeted to teens and what is their average sentiment polarity score?
+What is the average rating of Apps falling under the racing genre and what is the percentage ratio of positive sentiment reviews?
+What is the name and category of the app with the highest amount of -1 sentiment polarity score?
+What percentage of no comment reviews are from "Teen" content rating apps?
+List down app that does not have negative sentiment and give their average rating?
+What is the percentage for free application with a rating 4.5 and above have not been updated since 2018?
+For the Honkai Impact 3rd App, what is the highest sentiment polarity score and what genre does it belong to?

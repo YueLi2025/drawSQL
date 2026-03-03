@@ -1,0 +1,41 @@
+sql_query
+SELECT count(*) FROM club
+SELECT count(*) FROM club
+SELECT Name FROM club ORDER BY Name ASC
+SELECT Name FROM club ORDER BY Name ASC
+SELECT Manager ,  Captain FROM club
+SELECT Manager ,  Captain FROM club
+SELECT Name FROM club WHERE Manufacturer != "Nike"
+SELECT Name FROM club WHERE Manufacturer != "Nike"
+SELECT Name FROM player ORDER BY Wins_count ASC
+SELECT Name FROM player ORDER BY Wins_count ASC
+SELECT Name FROM player ORDER BY Earnings DESC LIMIT 1
+SELECT Name FROM player ORDER BY Earnings DESC LIMIT 1
+SELECT DISTINCT Country FROM player WHERE Earnings  >  1200000
+SELECT DISTINCT Country FROM player WHERE Earnings  >  1200000
+SELECT Country FROM player WHERE Wins_count  >  2 ORDER BY Earnings DESC LIMIT 1
+SELECT Country FROM player WHERE Wins_count  >  2 ORDER BY Earnings DESC LIMIT 1
+SELECT T2.Name ,  T1.Name FROM club AS T1 JOIN player AS T2 ON T1.Club_ID  =  T2.Club_ID
+SELECT T2.Name ,  T1.Name FROM club AS T1 JOIN player AS T2 ON T1.Club_ID  =  T2.Club_ID
+SELECT T1.Name FROM club AS T1 JOIN player AS T2 ON T1.Club_ID  =  T2.Club_ID WHERE T2.Wins_count  >  2
+SELECT T1.Name FROM club AS T1 JOIN player AS T2 ON T1.Club_ID  =  T2.Club_ID WHERE T2.Wins_count  >  2
+SELECT T2.Name FROM club AS T1 JOIN player AS T2 ON T1.Club_ID  =  T2.Club_ID WHERE T1.Manager  =  "Sam Allardyce"
+SELECT T2.Name FROM club AS T1 JOIN player AS T2 ON T1.Club_ID  =  T2.Club_ID WHERE T1.Manager  =  "Sam Allardyce"
+SELECT T1.Name FROM club AS T1 JOIN player AS T2 ON T1.Club_ID  =  T2.Club_ID GROUP BY T1.Club_ID ORDER BY avg(T2.Earnings) DESC
+SELECT T1.Name FROM club AS T1 JOIN player AS T2 ON T1.Club_ID  =  T2.Club_ID GROUP BY T1.Club_ID ORDER BY avg(T2.Earnings) DESC
+SELECT Manufacturer ,  COUNT(*) FROM club GROUP BY Manufacturer
+SELECT Manufacturer ,  COUNT(*) FROM club GROUP BY Manufacturer
+SELECT Manufacturer FROM club GROUP BY Manufacturer ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Manufacturer FROM club GROUP BY Manufacturer ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Manufacturer FROM club GROUP BY Manufacturer HAVING COUNT(*)  >  1
+SELECT Manufacturer FROM club GROUP BY Manufacturer HAVING COUNT(*)  >  1
+SELECT Country FROM player GROUP BY Country HAVING COUNT(*)  >  1
+SELECT Country FROM player GROUP BY Country HAVING COUNT(*)  >  1
+SELECT Name FROM club WHERE Club_ID NOT IN (SELECT Club_ID FROM player)
+SELECT Name FROM club WHERE Club_ID NOT IN (SELECT Club_ID FROM player)
+SELECT Country FROM player WHERE Earnings  >  1400000 INTERSECT SELECT Country FROM player WHERE Earnings  <  1100000
+SELECT Country FROM player WHERE Earnings  >  1400000 INTERSECT SELECT Country FROM player WHERE Earnings  <  1100000
+SELECT COUNT (DISTINCT Country) FROM player
+SELECT COUNT (DISTINCT Country) FROM player
+SELECT Earnings FROM player WHERE Country  =  "Australia" OR Country  =  "Zimbabwe"
+SELECT Earnings FROM player WHERE Country  =  "Australia" OR Country  =  "Zimbabwe"

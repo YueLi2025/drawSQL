@@ -1,0 +1,38 @@
+nl_question
+In 2019, how many users in the United States have a family history of mental illness?
+Betweeen 2016 to 2019, which year recorded the highest number of people with mental illness?
+How many users believed that their productivity is ever affected by a mental health issue overall?
+What are the ages of the oldest and youngest user that were surveyed? Indicate their user id.
+What is the average age of the survey respondents in the United States?
+What is the oldest age of the users in 2014's survey?
+How many users answered "No" to the question "Would you bring up a mental health issue with a potential employer in an interview?" in 2014's survey?
+Please list the IDs of the users who answered "Yes" to the question "Do you think that discussing a physical health issue with your employer would have negative consequences?" in 2014's survey.
+How many users participated in the mental health survey for 2014?
+How many users lived in Canada according to 2018's survey?
+Please list all the questions in the mental health survey for 2014.
+What is the average result of the question "What is your age?" in 2014's survey?
+How many users answered the question No.20?
+What answer did user No. 2681 give to the question "Do you currently have a mental health disorder?"?
+Provide the number of users who took part in the "mental health survey for 2016".
+What was the most common answer for the question "What country do you work in?"?
+How many different answers did the question "Describe the conversation you had with your previous employer about your mental health, including their reactions and actions taken to address your mental health issue/questions." get?
+Give the number of users who took the "mental health survey for 2018".
+How many users answered the question "Overall, how much importance does your employer place on physical health?"?
+What was the percentage for the answer of "Yes" was given to the question "Has your employer ever formally discussed mental health (for example, as part of a wellness campaign or other official communication)?"?
+How many times more for the number of users who took the "mental health survey for 2017" than "mental health survey for 2018"?
+How many respondents younger than 25 years old did participate in the survey in 2016?
+How many respondents who participated in the survey in 2019 have ever sought treatment for a mental health disorder from a mental health professional?
+From 2016 to 2019, how many users each year were asked the question 13?
+What is the percentage of the the users who would bring up a mental health issue with a potential employer in an interview?
+Please list all the answers to the question "Any additional notes or comments" that are not null in 2014's survey.
+According to 2016's survey, what is the number of users with a mental health disorder in the past?
+How many users answered "Yes" to the question "Have you had a mental health disorder in the past?" in 3 consecutive years starting from 2016?
+How many questions did user No.5 answer?
+For the question “What US state or territory do you work in?”, how many people gave "Kansas" as the answer?
+For all the users who have been asked "Have you ever been diagnosed with a mental health disorder?", how many of them said "Yes"?
+How many respondents who participated in the survey in 2014 work remotely at least 50% of the time?
+List the top three popular responses to the question of the survey in 2017 with the question ID no.85.
+How many users answered "No" to question 19?
+How many questions were asked in the questionary for the mental health survey?
+How many female users were surveyed in the mental health survey for 2017 in the state of Nebraska?
+State the number of questions that were asked in the "mental health survey for 2018".

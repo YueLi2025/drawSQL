@@ -1,0 +1,6 @@
+hard_templates
+SELECT DISTINCT table_alias1.col_name, table_alias0.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name IS NOT NULL AND table_alias0.col_name = ( SELECT MIN(col_name) FROM table_name )
+SELECT table_alias1.col_name, table_alias1.col_name FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string ORDER BY table_alias0.col_name DESC LIMIT num
+SELECT AVG(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias0.col_name = num
+SELECT CAST(SUM(col_name(table_alias0.col_name = string, num, num)) AS column_alias0) * num / COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT CAST(SUM(col_name(table_alias1.col_name = string, num, num)) AS column_alias0) * num / COUNT(table_alias0.col_name) FROM table_name AS table_alias0 INNER JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string

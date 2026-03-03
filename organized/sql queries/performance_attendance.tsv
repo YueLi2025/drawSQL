@@ -1,0 +1,16 @@
+sql_query
+SELECT count(*) FROM performance
+SELECT HOST FROM performance ORDER BY Attendance ASC
+SELECT Date ,  LOCATION FROM performance
+SELECT Attendance FROM performance WHERE LOCATION  =  "TD Garden" OR LOCATION  =  "Bell Centre"
+SELECT avg(Attendance) FROM performance
+SELECT Date FROM performance ORDER BY Attendance DESC LIMIT 1
+SELECT LOCATION ,  COUNT(*) FROM performance GROUP BY LOCATION
+SELECT LOCATION FROM performance GROUP BY LOCATION ORDER BY COUNT(*) DESC LIMIT 1
+SELECT LOCATION FROM performance GROUP BY LOCATION HAVING COUNT(*)  >=  2
+SELECT LOCATION FROM performance WHERE Attendance  >  2000 INTERSECT SELECT LOCATION FROM performance WHERE Attendance  <  1000
+SELECT T2.Name ,  T3.Location FROM member_attendance AS T1 JOIN member AS T2 ON T1.Member_ID  =  T2.Member_ID JOIN performance AS T3 ON T1.Performance_ID  =  T3.Performance_ID
+SELECT T2.Name ,  T3.Location FROM member_attendance AS T1 JOIN member AS T2 ON T1.Member_ID  =  T2.Member_ID JOIN performance AS T3 ON T1.Performance_ID  =  T3.Performance_ID ORDER BY T2.Name ASC
+SELECT T3.Date FROM member_attendance AS T1 JOIN member AS T2 ON T1.Member_ID  =  T2.Member_ID JOIN performance AS T3 ON T1.Performance_ID  =  T3.Performance_ID WHERE T2.Role  =  "Violin"
+SELECT T2.Name ,  T3.Date FROM member_attendance AS T1 JOIN member AS T2 ON T1.Member_ID  =  T2.Member_ID JOIN performance AS T3 ON T1.Performance_ID  =  T3.Performance_ID ORDER BY T3.Attendance DESC
+SELECT Name FROM member WHERE Member_ID NOT IN (SELECT Member_ID FROM member_attendance)

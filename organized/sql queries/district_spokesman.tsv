@@ -1,0 +1,22 @@
+sql_query
+SELECT name FROM district ORDER BY Area_km DESC LIMIT 1
+SELECT area_km ,  Government_website FROM district ORDER BY Population LIMIT 1
+SELECT name ,  population FROM district WHERE area_km  >  (SELECT avg(area_km) FROM district)
+SELECT max(area_km) ,  avg(area_km) FROM district
+SELECT sum(population) FROM district ORDER BY area_km DESC LIMIT 3
+SELECT name ,  Government_website ,  district_id FROM district ORDER BY Population
+SELECT name FROM district WHERE Government_website LIKE "%gov%"
+SELECT district_id ,  name FROM district WHERE area_km  >  3000 OR population  >  4000
+SELECT name ,  speach_title FROM spokesman
+SELECT avg(points) ,  avg(age) FROM spokesman WHERE rank_position  =  1
+SELECT name ,  points FROM spokesman WHERE age  <  40
+SELECT name FROM spokesman ORDER BY age DESC LIMIT 1
+SELECT name FROM spokesman WHERE points  <  (SELECT avg(points) FROM spokesman)
+SELECT t1.name FROM district AS t1 JOIN spokesman_district AS t2 ON t1.District_ID  =  t2.District_ID GROUP BY t2.District_ID ORDER BY count(*) DESC LIMIT 1
+SELECT t1.name FROM spokesman AS t1 JOIN spokesman_district AS t2 ON t1.Spokesman_ID  =  t2.Spokesman_ID WHERE t2.start_year  <  2004
+SELECT t1.name ,  count(*) FROM district AS t1 JOIN spokesman_district AS t2 ON t1.District_ID  =  t2.District_ID GROUP BY t2.District_ID
+SELECT t3.name FROM spokesman AS t1 JOIN spokesman_district AS t2 ON t1.Spokesman_ID  =  t2.Spokesman_ID JOIN district AS t3 ON t3.district_id  =  t2.district_id WHERE t1.rank_position  =  1 INTERSECT SELECT t3.name FROM spokesman AS t1 JOIN spokesman_district AS t2 ON t1.Spokesman_ID  =  t2.Spokesman_ID JOIN district AS t3 ON t3.district_id  =  t2.district_id WHERE t1.rank_position  =  2
+SELECT t1.name FROM district AS t1 JOIN spokesman_district AS t2 ON t1.District_ID  =  t2.District_ID GROUP BY t2.District_ID HAVING count(*)  >  1
+SELECT count(*) FROM district WHERE district_id NOT IN (SELECT district_id FROM spokesman_district)
+SELECT name FROM spokesman WHERE Spokesman_ID NOT IN (SELECT Spokesman_ID FROM spokesman_district)
+SELECT sum(population) ,  avg(population) FROM district WHERE district_id IN (SELECT district_id FROM spokesman_district)

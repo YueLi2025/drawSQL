@@ -1,0 +1,103 @@
+nl_question
+Who is the director of the movie Sex, Drink and Bloodshed?
+What is the user ID of the user, who was a subscriber when he created the list, who created a list for 10 consecutive years? If there are multiple users, indicate each of their user IDs.
+How many movies were added to the list with the most number of movies? Indicate whether the user was a paying subscriber or not when he created the list.
+Among the lists created by user 4208563, which one has the highest number of followers? Indicate how many followers it has and whether the user was a subscriber or not when he created the list.
+How many movie lists were still updated 10 years after it was created?
+What's the description for the movie list "Short and pretty damn sweet"?
+Where can I find the movie list "Short and pretty damn sweet"?
+Was the user who created the list "250 Favourite Films" a trialist when he or she created the list?
+How many movie lists with over 100 movies had user 85981819 created when he or she was a paying subscriber?
+What's the description of user 85981819's movie list with the most followers?
+When did the creator of the list "250 Favourite Films" last updated a movie list?
+Which of the films released in 2006 was the most popular among Mubi users?
+Please provide the title of the list with the most comments on the list.
+What's the cover image of the user who created the movie list 'Georgia related films'?
+What was the title of the first list created by a user 85981819? And please provide the user_avatar_image_url.
+Which year had the most released films?
+Who is the director that made the most movies? Give the director's id.
+How many movies did the director of the highest movie popularity make?
+Who was the earliest user created a list but didn't get any followers? Give the user ID.
+Give the number of followers for the user who posted the most lists.
+How many followers did the user who posted the list "Non-American Films about World War II" have?
+What's the number of users gave the movie "Downfall" a rating of "4"?
+Show the portrait picture of the user who created the list "Vladimir Vladimirovich Nabokov".
+For the user who post the list that contained the most number of the movies, is he/she a paying subscriber when creating that list?
+How many critics were given to the movie that got the most movie popularity number.
+From all the movies that got more than 13000 popularity number, which one had the least ratings.
+For the lists that got more than 3000 followers, how many did the users who created those lists are paying subscribers?
+Give the percentage of subscribers who rated who rated the movie "G.I. Jane".
+Name all lists created by a user who was a subcriber when created the list.
+List all the titles created by user who was a subsriber when he created the list and have less than 50 movies in the list.
+Who is the user who created the list titled 'Sound and Vision'? Was he a subcriber when he created the list?
+List all movies rated by user 39115684. State the title, rating date and rating score.
+What is the name of the list that was updated most recently?
+Who created the list that has 142 comments? Indicate the user id of the user, if there are multiple lists with 142 comments, list the user id of the person who created the list
+Who is the director that directed the highest number of movies in the 70s? If there are multiple directors with the same amount of movies, list all of their names and indicate the highest rating score that those movies got from the users.
+What is the list ID that was first created by user 85981819?
+How many movie lists were created by user 83373278 when he or she was a subscriber?
+How many movies registered on Mubi are directed by Hong Sang-soo?
+How many more movie lists were created by the user who created the movie list "250 Favourite Films"?
+When was the movie Cops released?
+Please list the id of the director of the movie "It's Winter".
+How many followers does the list created by the user whose user_avatar_image_url is https://assets.mubicdn.net/images/avatars/74983/images-w150.jpg?1523895214 have?
+Give the url of movie which was rated 5 on 2013/5/3 5:11:17.
+Among the lists created in 2016, which is the list that was updated most recently.
+What is the percentage of list created by user who was a subscriber when he created the list?
+Which title list has not been updated for the longest period of time? State how long it has not been updated?
+Between 1970 to 1980, how many movies with a popularity of more than 11,000 were released?
+What is the URL to the movie director page on Mubi of the movie titled "Red Blooded American Girl"
+What is the name of the most followed list?
+What are the URL to the list page on Mubi of the lists with followers between 1-2 and whose last update timestamp was on 2012?
+Among the lists with at least one follower, how many were created by user who was subscriber when created the list?
+For all list titles with at least 200 movies in the list, what is their average number of followers?
+Name movie titles released in year 1945. Sort the listing by the descending order of movie popularity.
+What is the average rating for movie titled 'When Will I Be Loved'?
+List all movie title rated in April 2020 from user who was a trialist.
+List all movies with the best rating score. State the movie title and number of Mubi user who loves the movie.
+For all movies where users left a critic, find the movie name, user, rating and critics comments from the user.
+For movie titled 'Welcome to the Dollhouse', how many percentage of the ratings were rated with highest score.
+What is the percentage of rated movies were released in year 2021?
+For movie id 1269, how many users, who was a paying subscriber and was eligible for trial when he rated the movie, gave the movie a rating score of less than or equal to 2?
+When was the first movie released and who directed it?
+Which year was the third movie directed by Quentin Tarantino released? Indicate the user ids of the user who gave it a rating score of 4.
+What is the URL to the movie director page on Mubi of the director whose movie was critic by user 2452551 and was given 39 likes?
+What is the average rating score of the movie "When Will I Be Loved" and who was its director?
+What is the name of the movie whose critic received the highest number of likes related to the critic made by the user rating the movie?
+How much is the popularity of the movie that has the highest popularity between 1920 to 1929 and when did the movie received its first rating score of 1 from the users who were a paying subscriber when they rated the movie ?
+How many users, who were a paying subscriber when they rated the movie, gave the movie that was released in 1924 and directed by Erich von Stroheim a rating score of 5?
+What is the URL to the rating on Mubi of the Riff-Raff movie that was given the highest rating score by user 22030372?
+How many users, who were not a a trialist when they rated the movie, gave the movie "The South" a rating score of not more than 2?
+What is the average rating score of the movie "The Crowd" and who was its director?
+How many movies have a popularity of more than 400 but less than 500? Indicate the name of the movies and the highest rating score each movie has received.
+In which year was the movie "La Antena" released?
+What's the avatar image of the user who created the movie list "250 Favourite Films"?
+How many users liked the movie "A Way of Life" to the highest extent?
+Please list all the critics made by the user rating the movie "A Way of Life".
+How many critics of the movie "Imitation of Life" got more than 1 like?
+Which user made a critic for the film "When Will I Be Loved" and got 2 comments for the critic?
+Was user 39115684 a trialist when he or she rated the movie "A Way of Life"?
+How many users have rated the most popular movie?
+User 58149469's critic on which film got 1 like and 2 comments?
+Among the users who are trailists when rating the movie "When Will I Be Loved", how many of them have rated "1" on the movie?
+How many ratings on the movie "A Way of Life" are made after the year 2011?
+What's of rating on the movie "Innocence Unprotected" by the user who created the movie list "250 Favourite Films"?
+Please list the movies rated by the user who created the movie list "250 Favourite Films".
+What's the average rating score of the movie "A Way of Life"?
+What's the percentage of the users who have rated "1" on the movie "When Will I Be Loved"?
+How many films were released in 2007?
+How many films did Åke Sandgren direct?
+Which of the film released in 2008 scored the highest?
+Please list the names of the top three movies in the number of likes related to the critic made by the user rating the movie.
+How many users in Mubi give the movie "White Night Wedding for 5"?
+Please list the names of the films released in 2003 among the films scored by user 2941 .
+How many users were not trialists when they rated the movie "Patti Smith: Dream of Life"?
+Please list the names of the top three movies in the number comments related to the critic made by the user rating the movie.
+What is the average score for the movie Versailles Rive-Gauche?
+Please list the names of the movies that received more than 20 likes?
+Who gave a "4" rating to the movie "Freaks" at 2013/5/4 6:33:32? Give his/her user id.
+For all the movies that were released in 1995, how many lower than 3 ratings did the most popularity movie had?
+What is the percentage of users gave "5" to the movie "Go Go Tales"?
+What is the name of the movie whose critic received the highest amount of likes? Indicate the URL to the rating on Mubi.
+What is the average number of followers of the lists created by the user who rated the movie "Pavee Lackeen: The Traveller Girl" on 3/27/2011 at 2:06:34 AM?
+What is the name of the movie that was rated recently by user 57756708?

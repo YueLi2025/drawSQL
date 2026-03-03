@@ -1,0 +1,30 @@
+soft_templates
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT avg(variable - variable) FROM variable
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable WHERE variable BETWEEN num AND num GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT count(*) FROM variable WHERE variable = num AND variable > num
+SELECT variable FROM variable WHERE variable = num GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT sum(variable), variable FROM variable WHERE variable = string AND variable BETWEEN num AND num GROUP BY variable
+SELECT * FROM variable WHERE variable = string AND variable LIKE string
+SELECT variable FROM variable WHERE variable = string AND variable = num ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable WHERE variable = string AND variable = num
+SELECT count(*) FROM variable WHERE variable = num AND variable LIKE string
+SELECT count(DISTINCT variable) FROM variable
+SELECT avg(variable) FROM variable where variable BETWEEN num AND num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable ORDER BY variable DESC LIMIT num
+SELECT count(*) FROM variable WHERE variable = string
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*)
+SELECT count(DISTINCT variable) FROM variable
+SELECT sum(variable) FROM variable WHERE variable = string and variable = string
+SELECT * FROM variable WHERE variable = string AND variable = num ORDER BY variable DESC LIMIT num
+SELECT count(*) FROM variable WHERE variable = string AND variable > num
+SELECT sum(variable) FROM variable WHERE variable = string AND variable BETWEEN num AND num
+SELECT sum(variable) FROM variable
+SELECT sum(variable) FROM variable WHERE variable = string AND variable BETWEEN num AND num  UNION SELECT sum(variable) FROM variable WHERE variable = string AND variable BETWEEN num AND num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num

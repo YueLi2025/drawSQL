@@ -1,0 +1,185 @@
+nl_question
+What is the name of the publisher of the book "The Illuminati"?
+How many books were published by publisher "Thomas Nelson"?
+What is the name of the publisher that has published the most number of books?
+Please give the title of the oldest book published by publisher "Thomas Nelson".
+Among the books published by publisher "Thomas Nelson", how many of them have over 300 pages?
+What is the name of the publisher of the book with the most pages?
+How many books are in English?
+Please list the titles of all the books in British English.
+What is the cheapest order price of the book "The Little House"?
+Please list the titles of all the books that Lucas Wyldbore has ordered.
+Among the books ordered by Lucas Wyldbore, how many of them are over 300 pages?
+What is the total price of all the books ordered by Lucas Wyldbore?
+How much money on average does Lucas Wyldbore spend on book orders?
+Among the books ordered by Lucas Wyldbore, what is the percentage of those books over $13?
+How many orders has Cordy Dumbarton made?
+List the title of the earliest published Japanese book.
+For the publisher which published the most books, show its name.
+How many books were published by Kensington?
+Which language was book id 1405 written in?
+Which customer has made the most orders? Show his/her full name.
+Name the book title of the bestseller.
+How many books did David Foster Wallace write?
+How many orders does the book "O Xará" have?
+Give the number of Ukrainian addresses in the database.
+Which country does Žirovnica city belong to?
+Calculate the percentage of the International shipping orders on 2022/11/10.
+What is the average number of pages of David Coward's books?
+What is the cost of the slowest and least expensive shipping method?
+What is the title of the first book that was published in 1900?
+What is the full name of the customer who ordered the most books of all time?
+How many orders did Antonia Poltun return?
+Which shipping method is preferred by customers the most?
+How many orders were delivered in 2021?
+How many books did A.R. Braunmuller write?
+What is the name of the publisher who published Agatha Christie's first book?
+List all the names of the books written by Danielle Steel.
+How many books by William Shakespeare were published by Penguin Classics?
+What is the name of the publisher that published the most books?
+What is the total shipping cost of all the orders made by Page Holsey? Indicate how many of the said orders were ordered in 2022.
+How many of the books authored by Al Gore have less than 400 pages?
+What is the title of the most expensive book?
+Calculate the total price of books ordered by customer named Lucas Wyldbore.
+List the ISBN of the book published in Spanish.
+Among the books that cost less than 1 dollar, how many were published by Berkley Trade?
+List the title of the books purchased by the customer named Zia Roizin.
+Who authored the book with greatest number of pages?
+List the email of customers that bought the book titled Switch on the Night.
+List the author's name of the books published by Abrams.
+What is the publisher name of the book titled The Illuminati?
+In books authored by Abraham Lincoln, what is the percentage of the books published in 1992?
+Among the books published in 2004, list the name of the publisher of books with number of pages greater than 70% of the average number of pages of all books.
+Which books were released by Orson Scott Card in 2001?
+Provide the authors and titles of the books which have more than 3000 pages.
+Who wrote "The Prophet"?
+How many books were published by Ace Hardcover?
+Which publisher published Barry Eisler's book?
+How many books were published in Japanese?
+Sum the total price of the orders for The Prophet book.
+Provide the number of orders by Daisey Lamball in 2021.
+How many customers are from Australia?
+How many orders were delivered in December 2019?
+Provide the customers' names who ordered the Fantasmas.
+List all the authors named "George".
+Which year has the most customer orders?
+What is the most common domain for the email address among all the customers?
+Which language is the rarest among all the books?
+List all the order dates for the customer named "Adrian Kunzelmann".
+How many addresses are from the Philippines?
+Who is the author who wrote the most books?
+What are the books published by "Harper Collins"?
+How many orders were returned in the year 2020?
+What is the second-least common method of shipping?
+What is the book with the most orders?
+What is the address that received the most orders?
+How much time does it take to update the status of order "2398"?
+Which customer has the most addresses?
+List all the authors who wrote fewer pages than the average.
+What are the city addresses of the customers located in the United States of America?
+How many orders did Marcelia Goering place in 2021 that uses the Priority Shipping method?
+Which books have the most expensive price?
+What is the most expensive price paid by a customer for the book "Bite Me If You Can (Argeneau #6)"?
+List all the titles of the Spanish books published by Alfaguara.
+What are the languages of the first two published books?
+Among the books that were published by Scholastic, how many were written by J.K Rowling?
+What are the names of all the publishers who have published at least 30 books?
+Indicate the last number of each street.
+Indicate the title of the six books with the greatest potential value as collectibles.
+In which cities are the customers of Costa Rica located?
+Which customer addresses are no longer active?
+What is the full name of the customers who live in Baiyin city?
+What is the email of the customers who place their orders with priority method?
+Identify by their id all the orders that have been cancelled.
+What is the status of the orders placed on 04/10/2022?
+What is the highest price at which a customer bought the book 'The Prophet'?
+List the titles of all the books that Peter H. Smith wrote.
+How many books under 300 pages has HarperCollins Publishers published?
+How many books have been published in Japanese?
+What is the average number of pages in the books written by Jennifer Crusie?
+Who is the author of the book with the biggest page count?
+How many books written by Akira Watanabe are available on Gravity?
+Who is the author of the book The Mystery in the Rocky Mountains?
+Name the publisher of the oldest book.
+Identify the cost difference between Priority and Express shipping methods.
+How many orders have been cancelled in 2022?
+List all the books published by BBC Audiobooks.
+Among all orders updated in 2022, identify the percentage that has been returned.
+Among all addresses provided by customers, identify the percentage that are not in use anymore.
+List all books authored by Tom Clancy.
+Which book by Hirohiko Araki was published on 6/6/2006?
+Who is the publisher of Hitchhiker's Guide To The Galaxy: The Filming of the Douglas Adams classic?
+List all books published by ADV Manga.
+Write the full name of the customers whose address is at 55 Dorton Pass, Huangqiao.
+List 10 addresses located in Poland.
+What is the shipping method ordered by Nicolette Sadler at 6/29/2020 7:40:07 PM?
+List all books written in Arabic.
+Which language is 'El plan infinito' written in?
+What is the average number of book pages written by Zilpha Keatley Snyder?
+What is the full name of customer with email ckupis4@tamu.edu?
+How many books were written by author A.J. Ayer?
+Name the title of books written by author A.J.Ayer.
+The book name "The Season: A Candid Look at Broadway" was published by which publisher?
+What is the average of English books among all books published by Carole Marsh Mysteries?
+Name the title of the book with the most number of pages that was published from 1990 to 2000 by publisher Free Press.
+What is the current address of customer Kandy?
+How many books were ordered by customer Kandy Adamec?
+How many orders got returned in 2022?
+Name the publisher who published the most books.
+What is the percentage of books that cost greater than $10 and were ordered by customer Ruthanne Vatini?
+List the title of books published by AK Press.
+Who ordered the book with the cheapest price?
+List down the ISBN of the books purchased by the customer with an email of fsier3e@ihg.com.
+Give the author's name of the books that cost 19 dollars and above.
+Provide the publisher name of the book with ISBN 76092025986.
+What is the price of the book with ISBN 9780763628321?
+What is the number of pages of the book in the order ID 1167?
+Provide the title of the books published in British-English.
+How many books were published by Brava in 2006?
+What is the title of the book in the order ID 931?
+What is the language of the book titled Zorro?
+Provide the email of the customers that purchased books with a price range of 3 to 5 dollars.
+List the ISBN of the books that cost 7.5 dollars.
+Give the publisher's name of the books authored by Alan Lee.
+What is the sum of the number of pages of the books ordered by Mick Sever?
+Write down the author's name of the book most recently published.
+Among the books purchased by less than 1 dollar, what is the difference between the number of books with less than 500 pages and books with greater than 500 pages?
+What are the language and title of the ordered books with price less than 20% of the average price of all ordered books?
+Which city does the address id 547 belong to?
+What is the full name of the customer who owns the "aalleburtonkc@yellowbook.com" e-mail address?
+How many orders in 2022 have Iran as their destinations?
+Among Daisey Lamball's orders, how many were shipped via International shipping?
+What is the name of the publisher with publisher ID 22?
+List the author's and publisher's name of the book published on July 10, 1997.
+What is the language of the book with ISBN 23755004321?
+Name the streets in Dallas.
+Count the number of books written by Orson Scott Card.
+How many percent of orders in 2020 used international shipping?
+What is the average price for the order line?
+How many publishers have the word "book" in their name?
+How many of the customer addresses are inactive?
+How many authors are named Adam?
+How many customers use a Yahoo! Mail e-mail address?
+Indicate the ISBN13 of all the books that have less than 140 pages and more than 135.
+How many books were ordered in the last month of the year 2020?
+On what date did the customers who live at number 460 of their respective streets place their orders?
+On what dates were books ordered at a price of 16.54?
+What percentage of the orders placed by Kaleena were shipped by the international method?
+Provide the full address of Ursola Purdy.
+How many pages does 'Seaward' have?
+Who is the author of First Things First?
+Which book has the most number of pages?
+What is the title of the first book that was written by A.J. Ayer?
+Among the books published by Birlinn in 2008, how many books have pages around 600 to 700?
+Among the books published by publisher ID 1929, how many of them have over 500 pages?
+What is the publication date of the book with the most pages?
+What is the name of the first book written by J.K Rowling?
+List all of the books that were published in 1995.
+How many customers ordered the book titled "Anleitung zum Zickigsein"
+Indicate the full name of all customers whose last name begins with the letter K.
+Identify the publisher of the book Girls' Night In.
+Which country is 9 Green Ridge Point, Arendal located at?
+What is the order price of the book "The Servant Leader" in 2003?
+In books published by Ace Book, what is the percentage of English books published?
+Other than zero, what is the lowest price paid by a customer for an order?
+Who published the book "The Secret Garden"?

@@ -1,0 +1,43 @@
+sql_query
+SELECT count(*) FROM game
+SELECT count(*) FROM game
+SELECT Title ,  Developers FROM game ORDER BY Units_sold_Millions DESC
+SELECT Title ,  Developers FROM game ORDER BY Units_sold_Millions DESC
+SELECT avg(Units_sold_Millions) FROM game WHERE developers != 'Nintendo'
+SELECT avg(Units_sold_Millions) FROM game WHERE developers != 'Nintendo'
+SELECT Platform_name ,  Market_district FROM platform
+SELECT Platform_name ,  Market_district FROM platform
+SELECT Platform_name ,  Platform_ID FROM platform WHERE Download_rank  =  1
+SELECT Platform_name ,  Platform_ID FROM platform WHERE Download_rank  =  1
+SELECT max(Rank_of_the_year) ,  min(Rank_of_the_year) FROM player
+SELECT max(Rank_of_the_year) ,  min(Rank_of_the_year) FROM player
+SELECT count(*) FROM player WHERE Rank_of_the_year  <=  3
+SELECT count(*) FROM player WHERE Rank_of_the_year  <=  3
+SELECT Player_name FROM player ORDER BY Player_name ASC
+SELECT Player_name FROM player ORDER BY Player_name ASC
+SELECT Player_name ,  College FROM player ORDER BY Rank_of_the_year DESC
+SELECT Player_name ,  College FROM player ORDER BY Rank_of_the_year DESC
+SELECT T3.Player_name ,  T3.rank_of_the_year FROM game AS T1 JOIN game_player AS T2 ON T1.Game_ID  =  T2.Game_ID JOIN player AS T3 ON T2.Player_ID  =  T3.Player_ID WHERE T1.Title  =  "Super Mario World"
+SELECT T3.Player_name ,  T3.rank_of_the_year FROM game AS T1 JOIN game_player AS T2 ON T1.Game_ID  =  T2.Game_ID JOIN player AS T3 ON T2.Player_ID  =  T3.Player_ID WHERE T1.Title  =  "Super Mario World"
+SELECT DISTINCT T1.Developers FROM game AS T1 JOIN game_player AS T2 ON T1.Game_ID  =  T2.Game_ID JOIN player AS T3 ON T2.Player_ID  =  T3.Player_ID WHERE T3.College  =  "Auburn"
+SELECT DISTINCT T1.Developers FROM game AS T1 JOIN game_player AS T2 ON T1.Game_ID  =  T2.Game_ID JOIN player AS T3 ON T2.Player_ID  =  T3.Player_ID WHERE T3.College  =  "Auburn"
+SELECT avg(Units_sold_Millions) FROM game AS T1 JOIN game_player AS T2 ON T1.Game_ID  =  T2.Game_ID JOIN player AS T3 ON T2.Player_ID  =  T3.Player_ID WHERE T3.Position  =  "Guard"
+SELECT avg(Units_sold_Millions) FROM game AS T1 JOIN game_player AS T2 ON T1.Game_ID  =  T2.Game_ID JOIN player AS T3 ON T2.Player_ID  =  T3.Player_ID WHERE T3.Position  =  "Guard"
+SELECT T1.Title ,  T2.Platform_name FROM game AS T1 JOIN platform AS T2 ON T1.Platform_ID  =  T2.Platform_ID
+SELECT T1.Title ,  T2.Platform_name FROM game AS T1 JOIN platform AS T2 ON T1.Platform_ID  =  T2.Platform_ID
+SELECT T1.Title FROM game AS T1 JOIN platform AS T2 ON T1.Platform_ID  =  T2.Platform_ID WHERE T2.Market_district  =  "Asia" OR T2.Market_district  =  "USA"
+SELECT T1.Title FROM game AS T1 JOIN platform AS T2 ON T1.Platform_ID  =  T2.Platform_ID WHERE T2.Market_district  =  "Asia" OR T2.Market_district  =  "USA"
+SELECT Franchise ,  COUNT(*) FROM game GROUP BY Franchise
+SELECT Franchise ,  COUNT(*) FROM game GROUP BY Franchise
+SELECT Franchise FROM game GROUP BY Franchise ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Franchise FROM game GROUP BY Franchise ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Franchise FROM game GROUP BY Franchise HAVING COUNT(*)  >=  2
+SELECT Franchise FROM game GROUP BY Franchise HAVING COUNT(*)  >=  2
+SELECT Player_name FROM player WHERE Player_ID NOT IN (SELECT Player_ID FROM game_player)
+SELECT Player_name FROM player WHERE Player_ID NOT IN (SELECT Player_ID FROM game_player)
+SELECT T1.Title FROM game AS T1 JOIN game_player AS T2 ON T1.Game_ID  =  T2.Game_ID JOIN player AS T3 ON T2.Player_ID  =  T3.Player_ID WHERE T3.College  =  "Oklahoma" INTERSECT SELECT T1.Title FROM game AS T1 JOIN game_player AS T2 ON T1.Game_ID  =  T2.Game_ID JOIN player AS T3 ON T2.Player_ID  =  T3.Player_ID WHERE T3.College  =  "Auburn"
+SELECT T1.Title FROM game AS T1 JOIN game_player AS T2 ON T1.Game_ID  =  T2.Game_ID JOIN player AS T3 ON T2.Player_ID  =  T3.Player_ID WHERE T3.College  =  "Oklahoma" INTERSECT SELECT T1.Title FROM game AS T1 JOIN game_player AS T2 ON T1.Game_ID  =  T2.Game_ID JOIN player AS T3 ON T2.Player_ID  =  T3.Player_ID WHERE T3.College  =  "Auburn"
+SELECT DISTINCT Franchise FROM game
+SELECT DISTINCT Franchise FROM game
+SELECT Title FROM game EXCEPT SELECT T1.Title FROM game AS T1 JOIN game_player AS T2 ON T1.Game_ID  =  T2.Game_ID JOIN player AS T3 ON T2.Player_ID  =  T3.Player_ID WHERE T3.Position  =  "Guard"
+SELECT Title FROM game EXCEPT SELECT T1.Title FROM game AS T1 JOIN game_player AS T2 ON T1.Game_ID  =  T2.Game_ID JOIN player AS T3 ON T2.Player_ID  =  T3.Player_ID WHERE T3.Position  =  "Guard"

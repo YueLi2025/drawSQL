@@ -1,0 +1,31 @@
+nl_question
+How many singers are there?
+What is the count of singers?
+List the name of singers in ascending order of net worth.
+What are the names of singers ordered by ascending net worth?
+What are the birth year and citizenship of singers?
+What are the birth years and citizenships of the singers?
+List the name of singers whose citizenship is not "France".
+What are the names of the singers who are not French citizens?
+Show the name of singers whose birth year is either 1948 or 1949?
+What are the names of the singers whose birth years are either 1948 or 1949?
+What is the name of the singer with the largest net worth?
+What is the name of the singer who is worth the most?
+Show different citizenship of singers and the number of singers of each citizenship.
+For each citizenship, how many singers are from that country?
+Please show the most common citizenship of singers.
+What is the most common singer citizenship ?
+Show different citizenships and the maximum net worth of singers of each citizenship.
+For each citizenship, what is the maximum net worth?
+Show titles of songs and names of singers.
+What are the song titles and singer names?
+Show distinct names of singers that have songs with sales more than 300000.
+what are the different names of the singers that have sales more than 300000?
+Show the names of singers that have more than one song.
+What are the names of the singers that have more than one songs?
+Show the names of singers and the total sales of their songs.
+For each singer name, what is the total sales for their songs?
+List the name of singers that do not have any song.
+What is the sname of every sing that does not have any song?
+Show the citizenship shared by singers with birth year before 1945 and after 1955.
+What are the citizenships that are shared by singers with a birth year before 1945 and after 1955?

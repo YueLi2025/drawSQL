@@ -1,0 +1,1 @@
+For the NXT title that had the shortest match (excluding titles with "title change"), what were the names of the two wrestlers involved?

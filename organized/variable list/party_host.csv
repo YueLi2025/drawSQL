@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+host,Host_ID,num
+host,Name,string
+host,Nationality,string
+host,Age,string
+party,Party_ID,num
+party,Party_Theme,string
+party,Location,string
+party,First_year,string
+party,Last_year,string
+party,Number_of_hosts,num
+party_host,Party_ID,num
+party_host,Host_ID,num
+party_host,Is_Main_in_Charge,boolean

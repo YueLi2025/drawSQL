@@ -1,0 +1,39 @@
+nl_question
+Please list the names of all the products whose supplier is in Japan.
+Give the full name of the youngest employee.
+Provide the number of orders that were handled by Michael Suyama.
+How many kinds of products are there in the the category of "dairy products"?
+Which category does "tofu" belong to?
+Give the contact name of the supplier for the product "Gudbrandsdalsost".
+Tell the country name of the supplier for "Scottish Longbreads".
+How many customers are there in the country with the highest number of customers?
+What is the full name of the employee who handled the highest amount of orders?
+What is the name of the contact person of the Pavlova supplier company?
+What are the products that belong to the beverage category?
+Who is the person to contact to get Camembert Pierrot?
+What is the contact name for product Teatime Chocolate Biscuits?
+In 1996, how many orders were from customers in the UK?
+Which country are the majority of the suppliers located?
+In August of 1996, how many orders were placed by the customer with the highest amount of orders?
+What are the ID and description of the condiments category?
+What were the products supplied by the company in Spain?
+Provide the full name of the employee who processed the sales order with ID 10274.
+List all product names under Confections.
+Name the products where the suppliers come from Finland.
+The product 'Mozzarella di Giovanni' belongs in which category? Include the category's description as well.
+Mention the first name of employee who took care the order id 10250.
+Give the full name of employee who handled the order id 10280.
+How many suppliers are there in the United States of America?
+List down the customer ids who placed order with Michael Suyama.
+How many orders have Margaret Peacock placed?
+How many orders were made by the customers in Ireland.
+How many suppliers does Northwind have in USA?
+What is the name of product with the ID of 77?
+How many orders were handled by Michael Suyama. State the order ID.
+How many customers are located in London?
+How many customers are there in Berlin, Germany?
+Please calculate the number of orders from customers by country in 1996.
+Indicate category name of soft drinks, coffees, teas, beers, and ales in description list.
+How many suppliers are from UK?
+Calculate the total products that are supplied by Japan suppliers.
+How many companies do ship Northwind's orders?

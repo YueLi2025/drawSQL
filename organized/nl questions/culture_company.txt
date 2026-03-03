@@ -1,0 +1,39 @@
+nl_question
+How many book clubs are there?
+Count the number of book clubs.
+show the titles, and authors or editors for all books made after the year 1989.
+What are the titles and authors or editors that correspond to books made after 1989?
+Show all distinct publishers for books.
+What are all the different book publishers?
+Show the years, book titles, and publishers for all books, in descending order by year.
+What are the years, titles, and publishers for all books, ordered by year descending?
+Show all publishers and the number of books for each publisher.
+How many books are there for each publisher?
+What is the publisher with most number of books?
+Return the publisher that has published the most books.
+Show all book categories and the number of books in each category.
+How many books fall into each category?
+List categories that have at least two books after year 1989.
+What categories have two or more corresponding books that were made after 1989?
+Show publishers with a book published in 1989 and a book in 1990.
+What are the publishers who have published a book in both 1989 and 1990?
+Show all publishers which do not have a book in 1989.
+Which publishers did not publish a book in 1989?
+Show all movie titles, years, and directors, ordered by budget.
+What are the titles, years, and directors of all movies, ordered by budget in millions?
+How many movie directors are there?
+Count the number of different directors.
+What is the title and director for the movie with highest worldwide gross in the year 2000 or before?
+Return the title and director of the movie released in the year 2000 or earlier that had the highest worldwide gross.
+Show all director names who have a movie in both year 1999 and 2000.
+Which directors had a movie both in the year 1999 and 2000?
+Show all director names who have a movie in the year 1999 or 2000.
+Which directors had a movie in either 1999 or 2000?
+What is the average, maximum, and minimum budget for all movies before 2000.
+Return the average, maximum, and minimum budgets in millions for movies made before the year 2000.
+List all company names with a book published by Alyson.
+What are all the company names that have a book published by Alyson?
+Show the movie titles and book titles for all companies in China.
+What are the titles of movies and books corresponding to companies incorporated in China?
+Show all company names with a movie directed in year 1999.
+What are all company names that have a corresponding movie directed in the year 1999?

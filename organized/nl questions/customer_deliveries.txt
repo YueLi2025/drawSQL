@@ -1,0 +1,17 @@
+nl_question
+Find the ids of orders whose status is 'Success'.
+Find the name and price of the product that has been ordered the greatest number of times.
+Find the number of customers in total.
+How many different payment methods are there?
+Show the details of all trucks in the order of their license number.
+Find the name of the most expensive product.
+Find the names of customers who are not living in the state of California.
+List the names and emails of customers who payed by Visa card.
+Find the names and phone numbers of customers living in California state.
+Find the states which do not have any employee in their record.
+List the names, phone numbers, and emails of all customers sorted by their dates of becoming customers.
+Find the name of the first 5 customers.
+Find the payment method that is used most frequently.
+List the names of all routes in alphabetic order.
+Find the name of route that has the highest number of deliveries.
+List the state names and the number of customers living in each state.

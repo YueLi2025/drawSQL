@@ -1,0 +1,41 @@
+sql_query
+SELECT count(*) FROM county_public_safety
+SELECT count(*) FROM county_public_safety
+SELECT Name FROM county_public_safety ORDER BY Population DESC
+SELECT Name FROM county_public_safety ORDER BY Population DESC
+SELECT DISTINCT Police_force FROM county_public_safety WHERE LOCATION != "East"
+SELECT DISTINCT Police_force FROM county_public_safety WHERE LOCATION != "East"
+SELECT min(Crime_rate) ,  max(Crime_rate) FROM county_public_safety
+SELECT min(Crime_rate) ,  max(Crime_rate) FROM county_public_safety
+SELECT Crime_rate FROM county_public_safety ORDER BY Police_officers ASC
+SELECT Crime_rate FROM county_public_safety ORDER BY Police_officers ASC
+SELECT Name FROM city ORDER BY Name ASC
+SELECT Name FROM city ORDER BY Name ASC
+SELECT Hispanic FROM city WHERE Black  >  10
+SELECT Hispanic FROM city WHERE Black  >  10
+SELECT Name FROM county_public_safety ORDER BY Population DESC LIMIT 1
+SELECT Name FROM county_public_safety ORDER BY Population DESC LIMIT 1
+SELECT Name FROM city ORDER BY White DESC LIMIT 5
+SELECT Name FROM city ORDER BY White DESC LIMIT 5
+SELECT T1.Name ,  T2.Name FROM city AS T1 JOIN county_public_safety AS T2 ON T1.County_ID  =  T2.County_ID
+SELECT T1.Name ,  T2.Name FROM city AS T1 JOIN county_public_safety AS T2 ON T1.County_ID  =  T2.County_ID
+SELECT T1.White ,  T2.Crime_rate FROM city AS T1 JOIN county_public_safety AS T2 ON T1.County_ID  =  T2.County_ID
+SELECT T1.White ,  T2.Crime_rate FROM city AS T1 JOIN county_public_safety AS T2 ON T1.County_ID  =  T2.County_ID
+SELECT name FROM city WHERE county_ID  =  (SELECT county_ID FROM county_public_safety ORDER BY Police_officers DESC LIMIT 1)
+SELECT name FROM city WHERE county_ID  =  (SELECT county_ID FROM county_public_safety ORDER BY Police_officers DESC LIMIT 1)
+SELECT count(*) FROM city WHERE county_ID IN (SELECT county_ID FROM county_public_safety WHERE population  >  20000)
+SELECT count(*) FROM city WHERE county_ID IN (SELECT county_ID FROM county_public_safety WHERE population  >  20000)
+SELECT T2.Crime_rate FROM city AS T1 JOIN county_public_safety AS T2 ON T1.County_ID  =  T2.County_ID WHERE T1.White  >  90
+SELECT T2.Crime_rate FROM city AS T1 JOIN county_public_safety AS T2 ON T1.County_ID  =  T2.County_ID WHERE T1.White  >  90
+SELECT Police_force ,  COUNT(*) FROM county_public_safety GROUP BY Police_force
+SELECT Police_force ,  COUNT(*) FROM county_public_safety GROUP BY Police_force
+SELECT LOCATION FROM county_public_safety GROUP BY LOCATION ORDER BY COUNT(*) DESC LIMIT 1
+SELECT LOCATION FROM county_public_safety GROUP BY LOCATION ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Name FROM county_public_safety WHERE County_ID NOT IN (SELECT County_ID FROM city)
+SELECT Name FROM county_public_safety WHERE County_ID NOT IN (SELECT County_ID FROM city)
+SELECT Police_force FROM county_public_safety WHERE LOCATION  =  "East" INTERSECT SELECT Police_force FROM county_public_safety WHERE LOCATION  =  "West"
+SELECT Police_force FROM county_public_safety WHERE LOCATION  =  "East" INTERSECT SELECT Police_force FROM county_public_safety WHERE LOCATION  =  "West"
+SELECT name FROM city WHERE county_id IN (SELECT county_id FROM county_public_safety WHERE Crime_rate  <  100)
+SELECT name FROM city WHERE county_id IN (SELECT county_id FROM county_public_safety WHERE Crime_rate  <  100)
+SELECT Case_burden FROM county_public_safety ORDER BY Population DESC
+SELECT Case_burden FROM county_public_safety ORDER BY Population DESC

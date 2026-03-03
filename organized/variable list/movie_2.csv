@@ -1,0 +1,7 @@
+table_name,column_name,column_type
+MovieTheaters,Code,num
+MovieTheaters,Name,string
+MovieTheaters,Movie,num
+Movies,Code,num
+Movies,Title,string
+Movies,Rating,string

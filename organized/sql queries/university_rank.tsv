@@ -1,0 +1,45 @@
+sql_query
+SELECT university_name ,  city ,  state FROM University ORDER BY university_name
+SELECT university_name ,  city ,  state FROM University ORDER BY university_name
+SELECT count(*) FROM University WHERE state  =  'Illinois' OR state  =  'Ohio'
+SELECT count(*) FROM University WHERE state  =  'Illinois' OR state  =  'Ohio'
+SELECT max(enrollment) ,  avg(enrollment) ,  min(enrollment) FROM University
+SELECT max(enrollment) ,  avg(enrollment) ,  min(enrollment) FROM University
+SELECT team_name FROM University WHERE enrollment  >  (SELECT avg(enrollment) FROM University)
+select team_name from university where enrollment  >  (select avg(enrollment) from university)
+SELECT DISTINCT home_conference FROM University
+SELECT DISTINCT home_conference FROM University
+SELECT home_conference ,  count(*) FROM University GROUP BY home_conference
+SELECT home_conference ,  count(*) FROM University GROUP BY home_conference
+SELECT state FROM University GROUP BY state ORDER BY count(*) DESC LIMIT 1
+SELECT state FROM University GROUP BY state ORDER BY count(*) DESC LIMIT 1
+SELECT home_conference FROM University GROUP BY home_conference HAVING avg(enrollment)  >  2000
+SELECT home_conference FROM University GROUP BY home_conference HAVING avg(enrollment)  >  2000
+SELECT home_conference FROM University GROUP BY home_conference ORDER BY sum(enrollment) LIMIT 1
+SELECT home_conference FROM University GROUP BY home_conference ORDER BY sum(enrollment) LIMIT 1
+SELECT major_name ,  major_code FROM Major ORDER BY major_code
+SELECT major_name ,  major_code FROM Major ORDER BY major_code
+SELECT T1.rank ,  T3.major_name FROM Major_Ranking AS T1 JOIN University AS T2 JOIN Major AS T3 ON T1.university_id  =  T2.university_id AND T1.major_id  =  T3.major_id WHERE T2.university_name  =  'Augustana College'
+SELECT T1.rank ,  T3.major_name FROM Major_Ranking AS T1 JOIN University AS T2 JOIN Major AS T3 ON T1.university_id  =  T2.university_id AND T1.major_id  =  T3.major_id WHERE T2.university_name  =  'Augustana College'
+SELECT T2.university_name ,  T2.city ,  T2.state FROM Major_Ranking AS T1 JOIN University AS T2 JOIN Major AS T3 ON T1.university_id  =  T2.university_id AND T1.major_id  =  T3.major_id WHERE T1.rank  =  1 AND T3.major_name  =  'Accounting'
+SELECT T2.university_name ,  T2.city ,  T2.state FROM Major_Ranking AS T1 JOIN University AS T2 JOIN Major AS T3 ON T1.university_id  =  T2.university_id AND T1.major_id  =  T3.major_id WHERE T1.rank  =  1 AND T3.major_name  =  'Accounting'
+SELECT T2.university_name FROM Major_Ranking AS T1 JOIN University AS T2 ON T1.university_id  =  T2.university_id WHERE T1.rank  =  1 GROUP BY T2.university_name ORDER BY count(*) DESC LIMIT 1
+SELECT T2.university_name FROM Major_Ranking AS T1 JOIN University AS T2 ON T1.university_id  =  T2.university_id WHERE T1.rank  =  1 GROUP BY T2.university_name ORDER BY count(*) DESC LIMIT 1
+SELECT university_name FROM University EXCEPT SELECT T2.university_name FROM Major_Ranking AS T1 JOIN University AS T2 ON T1.university_id  =  T2.university_id WHERE T1.rank  =  1
+SELECT university_name FROM University EXCEPT SELECT T2.university_name FROM Major_Ranking AS T1 JOIN University AS T2 ON T1.university_id  =  T2.university_id WHERE T1.rank  =  1
+SELECT T2.university_name FROM Major_Ranking AS T1 JOIN University AS T2 JOIN Major AS T3 ON T1.university_id  =  T2.university_id AND T1.major_id  =  T3.major_id WHERE T3.major_name  =  'Accounting' INTERSECT SELECT T2.university_name FROM Major_Ranking AS T1 JOIN University AS T2 JOIN Major AS T3 ON T1.university_id  =  T2.university_id AND T1.major_id  =  T3.major_id WHERE T3.major_name  =  'Urban Education'
+SELECT T2.university_name FROM Major_Ranking AS T1 JOIN University AS T2 JOIN Major AS T3 ON T1.university_id  =  T2.university_id AND T1.major_id  =  T3.major_id WHERE T3.major_name  =  'Accounting' INTERSECT SELECT T2.university_name FROM Major_Ranking AS T1 JOIN University AS T2 JOIN Major AS T3 ON T1.university_id  =  T2.university_id AND T1.major_id  =  T3.major_id WHERE T3.major_name  =  'Urban Education'
+SELECT T1.university_name ,  T2.rank FROM University AS T1 JOIN Overall_ranking AS T2 ON T1.university_id  =  T2.university_id WHERE T1.state  =  'Wisconsin'
+SELECT T1.university_name ,  T2.rank FROM University AS T1 JOIN Overall_ranking AS T2 ON T1.university_id  =  T2.university_id WHERE T1.state  =  'Wisconsin'
+SELECT T1.university_name FROM University AS T1 JOIN Overall_ranking AS T2 ON T1.university_id  =  T2.university_id ORDER BY T2.research_point DESC LIMIT 1
+SELECT T1.university_name FROM University AS T1 JOIN Overall_ranking AS T2 ON T1.university_id  =  T2.university_id ORDER BY T2.research_point DESC LIMIT 1
+SELECT T1.university_name FROM University AS T1 JOIN Overall_ranking AS T2 ON T1.university_id  =  T2.university_id ORDER BY T2.reputation_point
+SELECT T1.university_name FROM University AS T1 JOIN Overall_ranking AS T2 ON T1.university_id  =  T2.university_id ORDER BY T2.reputation_point
+SELECT T2.university_name FROM Major_Ranking AS T1 JOIN University AS T2 JOIN Major AS T3 ON T1.university_id  =  T2.university_id AND T1.major_id  =  T3.major_id WHERE T1.rank  <=  3 AND T3.major_name  =  "Accounting"
+SELECT T2.university_name FROM Major_Ranking AS T1 JOIN University AS T2 JOIN Major AS T3 ON T1.university_id  =  T2.university_id AND T1.major_id  =  T3.major_id WHERE T1.rank  <=  3 AND T3.major_name  =  "Accounting"
+SELECT sum(enrollment) FROM University AS T1 JOIN Overall_ranking AS T2 ON T1.university_id  =  T2.university_id WHERE T2.rank  >=  5
+SELECT sum(enrollment) FROM University AS T1 JOIN Overall_ranking AS T2 ON T1.university_id  =  T2.university_id WHERE T2.rank  >=  5
+SELECT T1.University_Name ,  T2.Citation_point FROM University AS T1 JOIN Overall_ranking AS T2 ON T1.university_id  =  T2.university_id ORDER BY T2.Reputation_point DESC LIMIT 3
+SELECT T1.University_Name ,  T2.Citation_point FROM University AS T1 JOIN Overall_ranking AS T2 ON T1.university_id  =  T2.university_id ORDER BY T2.Reputation_point DESC LIMIT 3
+SELECT state FROM university WHERE enrollment  <  3000 GROUP BY state HAVING count(*)  >  2
+SELECT state FROM university WHERE enrollment  <  3000 GROUP BY state HAVING count(*)  >  2

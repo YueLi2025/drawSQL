@@ -1,0 +1,41 @@
+nl_question
+What is id of the city that hosted events in the most recent year?
+Find the city that hosted some events in the most recent year. What is the id of this city?
+Find the match ids of the cities that hosted competition "1994 FIFA World Cup qualification"?
+What is the match id of the competition called "1994 FIFA World Cup qualification"?
+Find the cities which were once a host city after 2010?
+Which cities served as a host city after 2010?
+Which city has hosted the most events?
+Find the city that hosted the most events.
+What is the venue of the competition "1994 FIFA World Cup qualification" hosted by "Nanjing ( Jiangsu )"?
+Find the venue of the competition "1994 FIFA World Cup qualification" which was hosted by "Nanjing ( Jiangsu )".
+Give me the temperature of Shanghai in January.
+What is the temperature of "Shanghai" city in January?
+What is the host year of city "Taizhou ( Zhejiang )"?
+IN which year did city "Taizhou ( Zhejiang )" serve as a host city?
+Which three cities have the largest regional population?
+What are the three largest cities in terms of regional population?
+Which city has the lowest GDP? Please list the city name and its GDP.
+What is the city with the smallest GDP? Return the city and its GDP.
+Which city has the highest temperature in February?
+In February, which city marks the highest temperature?
+Give me a list of cities whose temperature in March is lower than that in July or higher than that in Oct?
+Which cities' temperature in March is lower than that in July or higher than that in Oct?
+Give me a list of cities whose temperature in Mar is lower than that in July and which have also served as host cities?
+Which cities have lower temperature in March than in July and have been once host cities?
+Give me a list of cities whose temperature in Mar is lower than that in Dec and which have never been host cities.
+Which cities have lower temperature in March than in Dec and have never served as host cities?
+Give me a list of cities whose temperature in Feb is higher than that in Jun or cities that were once host cities?
+Which cities have higher temperature in Feb than in Jun or have once served as host cities?
+Please give me a list of cities whose regional population is over 10000000.
+Which cities have regional population above 10000000?
+Please give me a list of cities whose regional population is over 8000000 or under 5000000.
+Which cities have regional population above 8000000 or below 5000000?
+Find the number of matches in different competitions.
+For each competition, count the number of matches.
+List venues of all matches in the order of their dates starting from the most recent one.
+What are the venues of all the matches? Sort them in the descending order of match date.
+what is the GDP of the city with the largest population.
+Find the GDP of the city with the largest regional population.
+What are the GDP and population of the city that already served as a host more than once?
+Which cities have served as host cities more than once? Return me their GDP and population.

@@ -1,0 +1,41 @@
+sql_query
+SELECT count(*) FROM climber
+SELECT count(*) FROM climber
+SELECT Name FROM climber ORDER BY Points DESC
+SELECT Name FROM climber ORDER BY Points DESC
+SELECT Name FROM climber WHERE Country != "Switzerland"
+SELECT Name FROM climber WHERE Country != "Switzerland"
+SELECT max(Points) FROM climber WHERE Country  =  "United Kingdom"
+SELECT max(Points) FROM climber WHERE Country  =  "United Kingdom"
+SELECT COUNT(DISTINCT Country) FROM climber
+SELECT COUNT(DISTINCT Country) FROM climber
+SELECT Name FROM mountain ORDER BY Name ASC
+SELECT Name FROM mountain ORDER BY Name ASC
+SELECT Country FROM mountain WHERE Height  >  5000
+SELECT Country FROM mountain WHERE Height  >  5000
+SELECT Name FROM mountain ORDER BY Height DESC LIMIT 1
+SELECT Name FROM mountain ORDER BY Height DESC LIMIT 1
+SELECT DISTINCT Range FROM mountain ORDER BY Prominence DESC LIMIT 3
+SELECT DISTINCT Range FROM mountain ORDER BY Prominence DESC LIMIT 3
+SELECT T1.Name ,  T2.Name FROM climber AS T1 JOIN mountain AS T2 ON T1.Mountain_ID  =  T2.Mountain_ID
+SELECT T1.Name ,  T2.Name FROM climber AS T1 JOIN mountain AS T2 ON T1.Mountain_ID  =  T2.Mountain_ID
+SELECT T1.Name ,  T2.Height FROM climber AS T1 JOIN mountain AS T2 ON T1.Mountain_ID  =  T2.Mountain_ID
+SELECT T1.Name ,  T2.Height FROM climber AS T1 JOIN mountain AS T2 ON T1.Mountain_ID  =  T2.Mountain_ID
+SELECT T2.Height FROM climber AS T1 JOIN mountain AS T2 ON T1.Mountain_ID  =  T2.Mountain_ID ORDER BY T1.Points DESC LIMIT 1
+SELECT T2.Height FROM climber AS T1 JOIN mountain AS T2 ON T1.Mountain_ID  =  T2.Mountain_ID ORDER BY T1.Points DESC LIMIT 1
+SELECT DISTINCT T2.Name FROM climber AS T1 JOIN mountain AS T2 ON T1.Mountain_ID  =  T2.Mountain_ID WHERE T1.Country  =  "West Germany"
+SELECT DISTINCT T2.Name FROM climber AS T1 JOIN mountain AS T2 ON T1.Mountain_ID  =  T2.Mountain_ID WHERE T1.Country  =  "West Germany"
+SELECT T1.Time FROM climber AS T1 JOIN mountain AS T2 ON T1.Mountain_ID  =  T2.Mountain_ID WHERE T2.Country  =  "Uganda"
+SELECT T1.Time FROM climber AS T1 JOIN mountain AS T2 ON T1.Mountain_ID  =  T2.Mountain_ID WHERE T2.Country  =  "Uganda"
+SELECT Country ,  COUNT(*) FROM climber GROUP BY Country
+SELECT Country ,  COUNT(*) FROM climber GROUP BY Country
+SELECT Country FROM mountain GROUP BY Country HAVING COUNT(*)  >  1
+SELECT Country FROM mountain GROUP BY Country HAVING COUNT(*)  >  1
+SELECT Name FROM mountain WHERE Mountain_ID NOT IN (SELECT Mountain_ID FROM climber)
+SELECT Name FROM mountain WHERE Mountain_ID NOT IN (SELECT Mountain_ID FROM climber)
+SELECT Country FROM mountain WHERE Height  >  5600 INTERSECT SELECT Country FROM mountain WHERE Height  <  5200
+SELECT Country FROM mountain WHERE Height  >  5600 INTERSECT SELECT Country FROM mountain WHERE Height  <  5200
+SELECT Range FROM mountain GROUP BY Range ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Range FROM mountain GROUP BY Range ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Name FROM mountain WHERE Height  >  5000 OR Prominence  >  1000
+SELECT Name FROM mountain WHERE Height  >  5000 OR Prominence  >  1000

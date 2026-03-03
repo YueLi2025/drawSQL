@@ -1,0 +1,75 @@
+nl_question
+How many courses are there in total?
+Count the number of courses.
+How many courses have more than 2 credits?
+Count the number of courses with more than 2 credits.
+List all names of courses with 1 credit?
+What are the names of courses with 1 credit?
+Which courses are taught on days MTW?
+What are the course names for courses taught on MTW?
+What is the number of departments in Division "AS"?
+How many departments are in the division AS?
+What are the phones of departments in Room 268?
+Give the phones for departments in room 268.
+Find the number of students that have at least one grade "B".
+How many students have had at least one "B" grade?
+Find the max and min grade point for all letter grade.
+What are the maximum and minumum grade points?
+Find the first names of students whose first names contain letter "a".
+What are the first names for students who have an "a" in their first name?
+Find the first names and last names of male (sex is M) faculties who live in building NEB.
+What are the full names of faculties with sex M and who live in building NEB?
+Find the rooms of faculties with rank professor who live in building NEB.
+What are the rooms for members of the faculty who are professors and who live in building NEB?
+Find the department name that is in Building "Mergenthaler".
+What is the name of the department in the Building Mergenthaler?
+List all information about courses sorted by credits in the ascending order.
+What is all the information about courses, ordered by credits ascending?
+List the course name of courses sorted by credits.
+What are the course names, ordered by credits?
+Find the first name of students in the descending order of age.
+What are the first names of students, ordered by age from greatest to least?
+Find the last name of female (sex is F) students in the descending order of age.
+What are the last names of female students, ordered by age descending?
+Find the last names of faculties in building Barton in alphabetic order.
+What are the last names of faculty in building Barton, sorted by last name?
+Find the first names of faculties of rank Professor in alphabetic order.
+What are the first names for all faculty professors, ordered by first name?
+Find the name of the department that has the biggest number of students minored in?
+What is the name of the department with the most students minoring in it?
+Find the name of the department that has no students minored in?
+What is the name of the department htat has no students minoring in it?
+Find the name of the department that has the fewest members.
+What is the name of the department with the fewest members?
+Find the rank of the faculty that the fewest faculties belong to.
+What is the least common faculty rank?
+What are the first and last names of the instructors who teach the top 3 number of courses?
+What are the full names of the 3 instructors who teach the most courses?
+Which building does the instructor who teaches the most number of courses live in?
+Give the building that the instructor who teaches the greatest number of courses lives in.
+What are the name of courses that have at least five enrollments?
+Give the names of the courses with at least five enrollments.
+Find the first name and last name of the instructor of course that has course name
+What is the full name of the instructor who has a course named COMPUTER LITERACY?
+Find the department name and room of the course INTRODUCTION TO COMPUTER SCIENCE.
+What are the department name and room for the course INTRODUCTION TO COMPUTER SCIENCE?
+Find the student first and last names and grade points of all enrollments.
+What are the full names and gradepoints for all enrollments?
+Find the distinct student first names of all students that have grade point at least 3.8 in one course.
+What are the distinct first names for students with a grade point of 3.8 or above in at least one course?
+Find the full names of faculties who are members of department with department number 520.
+What are the full names of faculty members who are a part of department 520?
+What are the first names and last names of the students that minor in the department with DNO 140.
+What are the full names of students minoring in department 140?
+Find the last names of faculties who are members of computer science department.
+What are the last names of faculty who are part of the computer science department?
+Find the average grade point of student whose last name is Smith.
+What is the average gradepoint for students with the last name Smith?
+What is the maximum and minimum grade point of students who live in NYC?
+Give the maximum and minimum gradepoints for students living in NYC?
+Find the names of courses that have either 3 credits or 1 credit but 4 hours.
+What are the names of courses that give either 3 credits, or 1 credit and 4 hours?
+Find the names of departments that are either in division AS or in division EN and in Building NEB.
+What are the names of departments either in division AS, or in division EN and in building NEB?
+Find the first name of students not enrolled in any course.
+What are the first names of all students that are not enrolled in courses?

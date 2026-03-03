@@ -1,0 +1,34 @@
+sql_query
+SELECT document_status_code FROM Ref_Document_Status;
+SELECT document_status_description FROM Ref_Document_Status WHERE document_status_code = "working";
+SELECT document_type_code FROM Ref_Document_Types;
+SELECT document_type_description FROM Ref_Document_Types WHERE document_type_code = "Paper";
+SELECT shipping_agent_name FROM Ref_Shipping_Agents;
+SELECT shipping_agent_code FROM Ref_Shipping_Agents WHERE shipping_agent_name = "UPS";
+SELECT role_code FROM ROLES;
+SELECT role_description FROM ROLES WHERE role_code = "ED";
+SELECT count(*) FROM Employees;
+SELECT T1.role_description FROM ROLES AS T1 JOIN Employees AS T2 ON T1.role_code = T2.role_code WHERE T2.employee_name = "Koby";
+SELECT document_id ,  receipt_date FROM Documents;
+SELECT T1.role_description ,  T2.role_code ,  count(*) FROM ROLES AS T1 JOIN Employees AS T2 ON T1.role_code = T2.role_code GROUP BY T2.role_code;
+SELECT Roles.role_description , count(Employees.employee_id) FROM ROLES JOIN Employees ON Employees.role_code = Roles.role_code GROUP BY Employees.role_code HAVING count(Employees.employee_id)  >  1;
+SELECT Ref_Document_Status.document_status_description FROM Ref_Document_Status JOIN Documents ON Documents.document_status_code = Ref_Document_Status.document_status_code WHERE Documents.document_id = 1;
+SELECT count(*) FROM Documents WHERE document_status_code = "done";
+SELECT document_type_code FROM Documents WHERE document_id = 2;
+SELECT document_id FROM Documents WHERE document_status_code = "done" AND document_type_code = "Paper";
+SELECT Ref_Shipping_Agents.shipping_agent_name FROM Ref_Shipping_Agents JOIN Documents ON Documents.shipping_agent_code = Ref_Shipping_Agents.shipping_agent_code WHERE Documents.document_id = 2;
+SELECT count(*) FROM Ref_Shipping_Agents JOIN Documents ON Documents.shipping_agent_code = Ref_Shipping_Agents.shipping_agent_code WHERE Ref_Shipping_Agents.shipping_agent_name = "USPS";
+SELECT Ref_Shipping_Agents.shipping_agent_name , count(Documents.document_id) FROM Ref_Shipping_Agents JOIN Documents ON Documents.shipping_agent_code = Ref_Shipping_Agents.shipping_agent_code GROUP BY Ref_Shipping_Agents.shipping_agent_code ORDER BY count(Documents.document_id) DESC LIMIT 1;
+SELECT receipt_date FROM Documents WHERE document_id = 3;
+SELECT Addresses.address_details FROM Addresses JOIN Documents_Mailed ON Documents_Mailed.mailed_to_address_id = Addresses.address_id WHERE document_id = 4;
+SELECT mailing_date FROM Documents_Mailed WHERE document_id = 7;
+SELECT document_id FROM Documents WHERE document_status_code  =  "done" AND document_type_code = "Paper" EXCEPT SELECT document_id FROM Documents JOIN Ref_Shipping_Agents ON Documents.shipping_agent_code = Ref_Shipping_Agents.shipping_agent_code WHERE Ref_Shipping_Agents.shipping_agent_name = "USPS";
+SELECT document_id FROM Documents WHERE document_status_code  =  "done" AND document_type_code = "Paper" INTERSECT SELECT document_id FROM Documents JOIN Ref_Shipping_Agents ON Documents.shipping_agent_code = Ref_Shipping_Agents.shipping_agent_code WHERE Ref_Shipping_Agents.shipping_agent_name = "USPS";
+SELECT draft_details FROM Document_Drafts WHERE document_id = 7;
+SELECT count(*) FROM Draft_Copies WHERE document_id = 2;
+SELECT document_id , count(copy_number) FROM Draft_Copies GROUP BY document_id ORDER BY count(copy_number) DESC LIMIT 1;
+SELECT document_id , count(*) FROM Draft_Copies GROUP BY document_id HAVING count(*)  >  1;
+SELECT Employees.employee_name FROM Employees JOIN Circulation_History ON Circulation_History.employee_id = Employees.employee_id WHERE Circulation_History.document_id = 1;
+SELECT employee_name FROM Employees EXCEPT SELECT Employees.employee_name FROM Employees JOIN Circulation_History ON Circulation_History.employee_id = Employees.employee_id
+SELECT Employees.employee_name , count(*) FROM Employees JOIN Circulation_History ON Circulation_History.employee_id = Employees.employee_id GROUP BY Circulation_History.document_id , Circulation_History.draft_number , Circulation_History.copy_number ORDER BY count(*) DESC LIMIT 1;
+SELECT document_id ,  count(DISTINCT employee_id) FROM Circulation_History GROUP BY document_id;

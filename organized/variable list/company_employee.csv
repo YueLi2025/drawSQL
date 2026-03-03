@@ -1,0 +1,17 @@
+table_name,column_name,column_type
+company,Company_ID,num
+company,Name,string
+company,Headquarters,string
+company,Industry,string
+company,Sales_in_Billion,num
+company,Profits_in_Billion,num
+company,Assets_in_Billion,num
+company,Market_Value_in_Billion,num
+employment,Company_ID,num
+employment,People_ID,num
+employment,Year_working,num
+people,People_ID,num
+people,Age,num
+people,Name,string
+people,Nationality,string
+people,Graduation_College,string

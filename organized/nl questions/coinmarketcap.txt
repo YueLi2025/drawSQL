@@ -1,0 +1,38 @@
+nl_question
+Please list the names of coins that has been disappeared.
+What's the descripition of BitBar?
+List the names of coins that cannot be traded in 2014.
+Name the coins that have three tags.
+Name the coin that has the highest market capitalization for all transactions in 2018.
+What is the total value of Argentum coined traded in the past 24 hours on 2016/10/11.
+List the price for Zetacoin on 13/11/1 and the next 7 consecutive days. What is the average price for these 7 days?
+For all transactions for WRAP in August 2016, list the time to achieve highest price and the time to achieve the lowest price.
+State the transaction date whereby DigixDAO was transacted at the hightest price.
+Name the coin with the highest percentage price changed in 24 hours. State the transaction date and price.
+What is the average monthly circulating supply for Frozen in 2014.
+List all the inactive coins and state the last date of its transaction?
+What was the price of 1 Bitcoin in 2016?
+State the transaction date and the price when Bitcoin was bottomed?
+Name the coin and date of transactions with the greatest decline in percent change in 1 hour.
+Which crytocurrency was ranked the first by CoinMarketCap on 2013/4/28?
+How much dollars was a Bitcoin worth on 2013/4/28 according to the coin market?
+Which crytocurrency was not opened on 2013/5/3?
+What was the price of Bitcoin when it closed at the end of the day on 2013/4/29?
+When did Bitcoin reach its highest price on 2013/4/29?
+What was the number of Bitcoins verifiably burned until 2013/4/28?
+Which crytocurrency was traded in the highest value on 2016/1/8?
+Please list the names of the crytocurrencies that have a total amount of existence of over 10000000 on 2013/4/28.
+Which crytocurrency had a bigger number of coins circulating in the market and in the general public's hands on 2013/4/28, Bitcoin or Litecoin?
+What was the average price of a Bitcoin in the year 2013?
+How many coins were added in May 2013? Please list the names of coins.
+What is the name of the coin with the highest price?
+Please name the coin that ranked first among the coins traded on April 29, 2013.
+What is the name of the coin that creates the most total value in the past 24 hours?
+Name the coins that were not opened on May 2013.
+When is the highest closed price of CHNCoin?
+When is Devcoin most valuable in the market?
+List the names of the top five coins traded on January 1, 2014.
+When was Lebowskis not opened?
+When is the highest price of Terracoin?
+How many times was Bytecoin traded in June 2013?
+What's the percentage of coins that is higher than the price 1 hour ago in May 29,2013? List the names of these coins.

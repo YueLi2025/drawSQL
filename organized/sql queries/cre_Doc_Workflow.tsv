@@ -1,0 +1,41 @@
+sql_query
+SELECT count(*) FROM Authors
+SELECT author_name FROM Authors
+SELECT author_name ,  other_details FROM Authors
+SELECT other_details FROM Authors WHERE author_name  =  "Addison Denesik"
+SELECT count(*) FROM Documents
+SELECT author_name FROM Documents WHERE document_id  =  4
+SELECT author_name FROM Documents WHERE document_name  =  "Travel to Brazil"
+SELECT count(*) FROM Documents WHERE author_name  =  "Era Kerluke"
+SELECT document_name ,  document_description FROM Documents
+SELECT document_id ,  document_name FROM Documents WHERE author_name  =  "Bianka Cummings"
+SELECT T2.author_name ,  T2.other_details FROM Documents AS T1 JOIN Authors AS T2 ON T1.author_name  =  T2.author_name WHERE document_name  =  "Travel to China"
+SELECT author_name ,  count(*) FROM Documents GROUP BY author_name
+SELECT author_name FROM Documents GROUP BY author_name ORDER BY count(*) DESC LIMIT 1
+SELECT author_name FROM Documents GROUP BY author_name HAVING count(*)  >=  2
+SELECT count(*) FROM Business_processes
+SELECT next_process_id ,  process_name ,  process_description FROM Business_processes WHERE process_id  =  9
+SELECT process_name FROM Business_processes WHERE process_id  =  (SELECT next_process_id FROM Business_processes WHERE process_id  =  9)
+SELECT count(*) FROM Process_outcomes
+SELECT process_outcome_code ,  process_outcome_description FROM Process_outcomes
+SELECT process_outcome_description FROM Process_outcomes WHERE process_outcome_code  =  "working"
+SELECT count(*) FROM Process_status
+SELECT process_status_code ,  process_status_description FROM Process_status
+SELECT process_status_description FROM Process_status WHERE process_status_code  =  "ct"
+SELECT count(*) FROM Staff
+SELECT staff_id ,  staff_details FROM Staff
+SELECT staff_details FROM Staff WHERE staff_id  =  100
+SELECT count(*) FROM Ref_staff_roles
+SELECT staff_role_code ,  staff_role_description FROM Ref_staff_roles
+SELECT staff_role_description FROM Ref_staff_roles WHERE staff_role_code  =  "HR"
+SELECT count(DISTINCT document_id) FROM Documents_processes
+SELECT DISTINCT process_id FROM Documents_processes
+SELECT document_id FROM Documents EXCEPT SELECT document_id FROM Documents_processes
+SELECT process_id FROM Business_processes EXCEPT SELECT process_id FROM Documents_processes
+SELECT T2.process_outcome_description ,  T3.process_status_description FROM Documents_processes AS T1 JOIN Process_outcomes AS T2 ON T1.process_outcome_code  =  T2.process_outcome_code JOIN Process_Status AS T3 ON T1.process_status_code  =  T3.process_status_code WHERE T1.document_id  =  0
+SELECT T3.process_name FROM Documents_processes AS T1 JOIN Documents AS T2 ON T1.document_id  =  T2.document_id JOIN Business_processes AS T3 ON T1.process_id  =  T3.process_id WHERE T2.document_name  =  "Travel to Brazil"
+SELECT process_id ,  count(*) FROM Documents_processes GROUP BY process_id
+SELECT count(*) FROM Staff_in_processes WHERE document_id  =  0 AND process_id  =  9
+SELECT staff_id ,  count(*) FROM Staff_in_processes GROUP BY staff_id
+SELECT staff_role_code ,  count(*) FROM Staff_in_processes GROUP BY staff_role_code
+SELECT count(DISTINCT staff_role_code) FROM Staff_in_processes WHERE staff_id  =  3

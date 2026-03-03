@@ -1,0 +1,80 @@
+nl_question
+What is the id of the repository with the highest number of solution path?
+What is the most liked repository? Indicate its github address and the amount of stars it has received.
+How much is the processed time of downloading the most popular repository?
+Which repository has the longest amount of processed time of downloading? Indicate whether the solution paths in the repository can be implemented without needs of compilation.
+Please list the path of the solution that contains files found within the repository most people like.
+What is the github address of the repository that contains files used by solution ID12?
+Which solution contains files within a more popular repository, the solution ID18 or solution ID19?
+Please give the url of the repository whose files are contained in solution ID 9?
+How many solutions are in "https://github.com/derickbailey/presentations-and-training.git"?
+Please provide the id of the respository that the most people like.
+Please provide the number of forks that the repository of the solution 35 have.
+Please provide the id of the solution whose repository has the most watchers.
+Please provide the id of the respository that received the most forks among the respositories that receive 21 stars.
+How many solution path does the repository with 111 stars, 58 forks, and 111 watchers?
+How many followers do the most followed repository on Github have? Give the github address of the repository.
+How many solution paths are there inside the 2nd most popular repository?
+How many solutions contain files found within the repository most people like?
+Please list all the paths of the solutions containing files within the repository whose url is "https://github.com/maxild/playground.git".
+What is the average time needed for the solutions containing files within the repository whose url is "https://github.com/jeffdik/tachy.git" to be processd?
+How many stars does the repository of the solution No. 45997 have?
+For the repository which got '8094' Stars, how many solutions does it contain?
+For the repository with '8094' watchers , how many solutions does it contain?
+For the repository which got '189' Stars, how many solutions which needs to be compiled does it contain?
+Please provide the number of stars that the repository of the solution 20 have.
+What is the percentage of respositories that receive more than 2,000 stars?
+What is the url of solution 1?
+What is the task of method number 2?
+What format does the method number 8's comment have?
+Please provide a link to the most well-known repository's Github address.
+What is the solution path for method number 3?
+What is the language of method number 28 that can be found in the repository number 3?
+What is the average processed time of the solution with a repository of 254 likes, 88 followers, and 254 watchers?
+What is the name of the solution path with the highest processed time?
+How many more followers in percentage are there for the repository used by solution ID 18 than solution ID19?
+How many solutions does the repository which has 1445 Forks contain?
+Please provide the solution id of the respository among the respository that receive 238 forks.
+What is the time of sampling of the solution with the highest sampling time? Indicate the id number of the solution.
+In the "https://github.com/wallerdev/htmlsharp.git", give all the linearized sequenced of API calls.
+What is the average processed time of the solution paths inside the "https://github.com/zphingphong/DiscardCustomerApp.git"?
+How much is the processed time of the method whose tokenized name is "about box1 dispose"? Indicate the language of the method.
+What's the task of the method whose tokenized name is "html parser feed"?
+Are the comments for the method "HtmlSharp.HtmlParser.Feed" in XML format?
+Which method has the summary "Write a command to the log"?
+What is the language of the method ''PixieTests.SqlConnectionLayerTests.TestSqlCreateGuidColumn"?
+List the summary of the method "Castle.MonoRail.Framework.Test.StubViewComponentContext.RenderSection".
+Give the tokenized name for the method "Supay.Irc.Messages.KnockMessage.GetTokens".
+What is the solution path for the method "IQ.Data.DbQueryProvider.CanBeEvaluatedLocally"?
+For the method which got the tokenized name as 'interp parser expr', what is the processed time for its solution?
+What is the repository number for the solution of method "SCore.Poisson.ngtIndex"?
+Give the repository Url of the one with most solutions.
+Among all the solution of the 'zh-cn' methods, which path is most often used?
+Show the solution path for the method "Mosa.Platform.x86.Instructions.IMul.EmitLegacy"?
+For the method which got the tokenized name as 't jadwal entity get single mpic', what is the path time for its solution?
+Give the repository ID for the solution of method "Kalibrasi.Data.EntityClasses.THistoryJadwalEntity.GetSingleTjadwal".
+Give the number of solutions that the repository which has 3060 Stars contains.
+For the solution of the most 'sw' methods, what is its path?
+How many percent more of the stars for the repository of solution No.51424 than No.167053?
+How many percent more of the Forks for the repository of solution No.53546 than No.1502?
+What is the total processed time of all solutions from the repository with the most forks?
+List all the path of solution from all the "it" lang code method.
+What is the path of solution of "spinachLexer.mT__55" method?
+What are the "en" methods with solutions from repository "1093"
+What are the paths of solutions in repository "https://github.com/ecoffey/Bebop.git"
+What is the repository id of the method with tokenized name "crc parameters get hash code"?
+What is the url for repository that has the longest processed time solution?
+List all the solutions of repositories with the Forks higher than half of the watchers.
+What is the solution's path of method "HtmlSharp.HtmlParser.Feed"?
+What is the percentage of the methods' solutions that need to be compiled among the methods whose comments is XML format?
+What the percentage of the english methods among the methods whose comments is XML format?
+Please provide the path of solution of method whose full comment is Feeds data into the parser.
+What is the percentage of solutions for the method that needs to be compiled in the English methods?
+How many more stars in percentage are there for the repository of solution "1" than solution "2"?
+How many methods in the same repository share a tokenized name that begins with "query language..."?
+What is the task method of the tokenized name "string extensions to pascal case "?
+Provide the tokenized name of the method "Sky.Excel.ExcelBook.TypeConvert".
+How many path does the github address "https://github.com/jeffdik/tachy.git" have?
+How many XML format does the github address "https://github.com/dogeth/vss2git.git" have?
+Provide the github address with the summary of method "A test for Decompose ".
+How many language code of method is used for the github address "https://github.com/managedfusion/managedfusion.git "?

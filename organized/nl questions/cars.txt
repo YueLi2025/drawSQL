@@ -1,0 +1,74 @@
+nl_question
+Among the cars with 8 cylinders, what is the name of the one that's the most expensive?
+Among the cars over 3000lbs, how many of them cost less than $30000?
+How much US dollars does a Ford Torino cost?
+What was the origin country of the car model ford torino produced in 1970?
+Among the car models introduced in the market in 1970, how many of them have the USA as their origin country?
+Please list all the years in which the car model Chevrolet Impala was introduced in the market.
+Among the cars with an acceleration of over 10 miles per squared hour, how many of them cost more than $20000 and less than $30000?
+Please list the weights of all the cars with the price over $40000.
+What is the maximum acceleration of a car with price over $40000?
+What is the average price of cars with 8 cylinders?
+What is the maximum sweep volume of a car that costs less than $30000?
+How many cars in the database are originated from Europe?
+Show the origin country of Chevrolet Malibu.
+Tell the origin country of car no.382.
+Which is the origin country of the $44274.40748 car?
+How much is the Volkswagen Dasher with 14.1 mph acceleration?
+Provide the engine displacement status of the $37443.85589 car.
+Provide the price of the only Toyota Corona hardtop in the database.
+How many cylinders does the cheapest car have?
+Which car in the database provides the best crash protection based on its weight? How much is it?
+State the origin country of the fastest car in the database.
+What is the percentage of Japanese cars in the database?
+Calculate the swept volume of the $34538.97449 car.
+How many cars were released in the USA in 1981?
+How much is the car with the highest sweep volume?
+What is the fastest car made by Japan?
+How many times was Ford Maverick introduced to the market?
+Which country produced the most fuel-efficient car?
+Which Dodge car is the cheapest?
+What is the name of the most expensive car that was produced by the USA?
+How much is the Peugeot 505s Turbo Diesel?
+What is the miles per square hour of the cheapest car produced by the USA?
+Which country produced the highest number of cars? Calculate the annual average number of cars that the said country produced from the very start to the present.
+Calculate the average price of cars from Europe.
+What is the price of the car ID 15?
+Among the cars produced in year 1973, how many of the cars have horsepower less than 100?
+Give the model year of the heaviest car.
+What is the horsepower and model year of the car named Subaru Dl?
+Among the cars originated from Japan, what is the name of the car with the highest price?
+What are the names of the cars worth 20000?
+Provide the price and country origin of the car named Ford Maverick.
+List the car's name with a price worth greater than 85% of the average price of all cars.
+Calculate the difference between the number of cars that has a horsepower of 130 with the model year 1970 and model year 1976
+Among the cars from Asia, list the IDs of cars that were introduced in 1979.
+Among the cars introduced in 1977, provide the names and the horse powers of cars from Europe.
+What is the price of a Chevrolet Bel Air?
+What is the average price per car produced in Japan?
+Which country produced the car with the lowest price?
+Which car is the cheapest? Provide its acceleration, number of cylinders, and producing year.
+How many models of Ford Maverick were produced?
+Calculate the percentage of cars that belong to the USA.
+What is the price of Chevrolet Vega 2300?
+Which country does Chevy C20 come from?
+Which car consumes fuel the most and has the highest price?
+List the name of the most expensive car.
+How many cars with horsepower greater than 200 were produced in 1975?
+Calculate the percentage of American cars among all cars.
+When was the $32650.65157 car introduced to the market? State the year.
+Which country produced the car with the lowest mileage per gallon?
+Calculate the average production rate per year from 1971 to 1980. Among them, name the cars with a weight of fewer than 1800 lbs.
+What is the average price of model 70 cars?
+List the price of Ford cars from model 1970 to 1980.
+Which is the most fuel efficient car in 1975?
+What years did the Buick Skylark 320 get in production?
+Please list the names of the top 3 most expensive cars.
+What are the miles per gallon of the most expensive car?
+Among the cars with an engine displacement of no less than 400 cubic millimeter, how many cars cost at least 30,000?
+List the name of the cars with model year 1975.
+How many cars worth greater than 40000 were from the USA?
+Which country produced the most expensive car in 1970?
+Please list the names of all the car models whose origin country is the USA.
+Provide the name and model of the car with the highest price.
+List the names and prices of the cars with model 82 and mileage per gallon of greater than 30.

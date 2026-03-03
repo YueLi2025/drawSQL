@@ -1,0 +1,77 @@
+nl_question
+What is the average amount of a student loan?
+Compute the average amount of student loans.
+List the biographical data and student id for the students who take 2 or more classes and the students who have less than 2 detentions.
+What are the biographical data and student id of the students who either took two or more classes and or have less than two detentions?
+List the details of the teachers who teach some class whose detail has the substring 'data' but do not teach a class whose detail contains the prefix 'net'
+Which teachers teach a class that has the substring 'data' in its detail but do not teach a class that has prefix 'net' in its detail? Give me the teacher details.
+List the biographical data of the students who never had a detention or student loan .
+Which students never had a detention or student loan ? Find their biographical data .
+What are the loan amounts and loan dates of the students who have at least 2 achievements?
+List the amount and date of loan for the students who have two or more achievements.
+List the detail and id of the teacher who teaches the most courses.
+What are the detail and id of the teacher who teaches the largest number of courses?
+What are the distinct descriptions of all the detentions which have ever happened?
+Return the distinct descriptions of all the detentions that have happened.
+List the personal details and the address type descriptions of all the students.
+What are the personal details and the address type descriptions of each student?
+List the the address details and the biographical information of the students.
+What are the address details and biographical information of each student?
+List the biographical data and the date of the transcript of all the students.
+What are the biographical data and the date of transcript issuance of each student?
+How many students got the most common result in the behavioral monitoring details? Also list the result details.
+Find the most common result in the behavioral monitoring details. What are the count and the details of this result?
+Which students not only got the most common result but also got a result obtained by 3 students in behaviour monitoring? List the student's biographical data and details.
+Find the biographical data and details of students who got not only the most common result but also a result that is obtained by 3 students in behaviour monitoring.
+Which students only got the most common result for his or her all behaviour monitoring details? List the students' biographical information.
+What is the biographical information of the students who got the most common result for their behaviour monitoring details ?
+Which students have gone through any event? List the students' biographical data and event date.
+Find the biographical data and event date for students who participated in any events.
+How many students have joined in the most common type of event? List the number, the event type and description.
+What is the type of event the most students joined? Give me the number of students, and the event type code and description.
+How are all the achievements described? List the achievement detail and the type description.
+What are the achievement detail and the type description of each achievements?
+How many teachers have taught a student who has not won any achievements?
+Count the number of teachers who have taught students who have never won an achievement.
+List the date of the transcripts and the transcript details.
+What are the date and detail of each transcript?
+List the achievement type code, achievement details and the date of the achievements.
+What are the type code, details, and date of each achievement?
+Show the detention start time and end time of the detentions.
+What are the starting time and ending time of each detention record?
+Show the biographical information of the students whose details include the substring 'Suite'.
+Which students have 'Suite' as a substring in their details? Give me their biographical information.
+List the details for all the pairs of teachers and students who are in the same class.
+What are the pairs of teachers and students who are in the same class? Give me the pairs of their details.
+How many courses do teachers teach at most? Also find the id of the teacher who teaches the most.
+Which teacher teaches the most courses? Give me the id of the teacher and the number of courses he or she teaches.
+How many courses do students take at most? Also find the id of the student who takes the most courses.
+Which student is taking the most courses? Give me the id of the student and the number of courses he or she is taking.
+Which students take 2 courses? List student id and details.
+What are the ids and details of the students who take 2 courses?
+What is the least common detention type? Show the type code and the description.
+Give me the type code and description of the least common detention type.
+Which students have a student loan more than the average amount? List the students' biographical data and the details.
+Find the biographical data and details for students whose student loan is above the average amount.
+When was the earliest date of loan?
+Return the earliest date of loan in the record.
+Which student has the loan with the minimum value? List the student's biographical information.
+Find the biographical information of the student with the smallest student loan.
+When was the transcript issued for the student with loan of maximum value?
+What is the transcript issuance date for the student with the largest amount of loan?
+Which teachers have taught the student with the earliest transcript issuance? List the teacher details.
+Find the details of the teachers who have taught the student with the earliest transcript issuance.
+How much total loan does each student have ? List the student ids and the amounts .
+For each student, find the student id and the total amount of loan he or she has.
+How many courses does each student take? List the student id, the student biographical data and the course count.
+For each student, find the student id, student biographical data, and the number of courses he or she takes.
+How many students have gone through a detention?
+Count the number of students who have a detention record.
+What is the code and description of the most common student address type?
+What is the most common student address type? Give me the code and description of the address type.
+For those students who have gone through an event, who do not have a student loan? List the students' biographical data
+Among the students who have an event record, who do not have a student loan? Return the students' biographical data.
+List the start time and the end time of the students' addresses for the students who have 2 transcripts.
+What are the start time and end time of addresses for the students who receive 2 transcripts?
+When did all the detentions start?
+Give me the detention start date for all the detention records.

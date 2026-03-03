@@ -1,0 +1,43 @@
+nl_question
+What is the model of the vehicle with maximum top speed whose power is higher than 6000?
+Of vehicles with power over 6000, return the model of the vehicle with the greatest top speed.
+What are the names of the drivers who are citizens of the 'United States'?
+Return the names of drivers with citizenship from the United States.
+How many vehicles has a driver driven at most, and what is the driver id of the driver who has driven this many vehicles?
+What is the id of the driver who has driven the most vehicles, and how many vehicles is this?
+What is the maximum and average power for the vehicles manufactured by 'Zhuzhou'?
+Return the maximum and average power for the vehicles built by Zhuzhou.
+What is the id of the vehicle driven for the least times for the vehicles ever used?
+Return the id of the vehicle that has been driven the fewest times.
+What is the top speed and power of the vehicle manufactured in the year of 1996?
+Return the top speed and power of the vehicle that was built in the year 1996.
+What are the build year, model name and builder of the vehicles?
+Give the build year, model, and builder of each vehicle.
+How many drivers have driven vehicles built in 2012?
+Count the number of different drivers who have driven vehicles built in 2012.
+How many drivers have raced in 'NASCAR'?
+Count the number of drivers who have raced in NASCAR.
+What is the average top speed of vehicles?
+Return the average top speed across all vehicles.
+What are the distinct driver names who have driven vehicles with power more than 5000 ?
+Return the names of drivers who have driven vehicles with power over 5000.
+Which car models have total production larger than 100 or top speed higher than 150?
+Give the models of cars that have a total production of over 100 or a top speed over 150.
+What are the model names and build year of the cars with 'DJ' in its model name?
+Return the model and build year of cars that include "DJ" in their model names.
+What are the models which have not been driven by any drivers?
+Return the models of vehicles that have never been driven.
+What are the vehicle ids and models of the vehicle which have been driven by two drivers or been manufactured by 'Ziyang'.
+Return the ids and models of vehicles that have been driven by exactly two drivers or built by Ziyang.
+What are the vehicle ids and models which have been driven by more than 2 drivers or been driven by the driver named 'Jeff Gordon'?
+Return the ids and models of vehicles that have been driven by more than 2 drivers or been driven by the Jeff Gordon.
+How many vehicles have maximum top speed?
+Count the number of vehicles that have a top speed equal to the maximum across all vehicles.
+Show all driver names in the alphabetical order.
+What are the names of drivers, returned in alphbetical order?
+How many drivers have been racing in each racing series?
+Count the number of drivers that have raced in each series.
+What are the name and citizenship of the drivers who have driven the vehicle model 'DJ1'?
+Return the names and citizenships of drivers who have driven the vehicle with the model 'DJ1'.
+How many drivers have not driven any cars?
+Count the number of drivers who have not driven any vehicles.

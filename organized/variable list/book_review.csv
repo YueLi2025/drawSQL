@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+book,Book_ID,num
+book,Title,string
+book,Type,string
+book,Pages,num
+book,Chapters,num
+book,Audio,string
+book,Release,string
+review,Review_ID,num
+review,Book_ID,num
+review,Rating,num
+review,Readers_in_Million,num
+review,Rank,num

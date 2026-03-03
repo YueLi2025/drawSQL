@@ -1,0 +1,30 @@
+nl_question
+the names of models that launched between 2002 and 2004.
+Which model has the least amount of RAM? List the model name and the amount of RAM.
+What are the chip model and screen mode of the phone with hardware model name "LG-P760"?
+How many phone hardware models are produced by the company named "Nokia Corporation"?
+What is maximum and minimum RAM size of phone produced by company named "Nokia Corporation"?
+What is the average ROM size of phones produced by the company named "Nokia Corporation"?
+List the hardware model name and company name for all the phones that were launched in year 2002 or have RAM size greater than 32.
+Find all phones that have word 'Full' in their accreditation types. List the Hardware Model name and Company name.
+Find the Char cells, Pixels and Hardware colours for the screen of the phone whose hardware model name is "LG-P760".
+List the hardware model name and company name for the phone whose screen mode type is "Graphics."
+Find the name of the company that has the least number of phone models. List the company name and the number of phone model produced by that company.
+List the name of the company that produced more than one phone model.
+List the maximum, minimum and average number of used kb in screen mode.
+List the name of the phone model launched in year 2002 and with the highest RAM size.
+What are the wifi and screen mode type of the hardware model named "LG-P760"?
+List the hardware model name for the phones that have screen mode type "Text" or RAM size greater than 32.
+List the hardware model name for the phones that were produced by "Nokia Corporation" or whose screen mode type is "Graphics."
+List the hardware model name for the phons that were produced by "Nokia Corporation" but whose screen mode type is not Text.
+List the phone hardware model and company name for the phones whose screen usage in kb is between 10 and 15.
+Find the number of phones for each accreditation type.
+How many phones belongs to each accreditation type?
+Find the accreditation level that more than 3 phones use.
+Find the details for all chip models.
+How many models do not have the wifi function?
+Count the number of chip model that do not have wifi.
+List all the model names sorted by their launch year.
+Find the average ram mib size of the chip models that are never used by any phone.
+Find the names of the chip models that are not used by any phone with full accreditation type.
+Find the pixels of the screen modes that are used by both phones with full accreditation types and phones with Provisional accreditation types.

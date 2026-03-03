@@ -1,0 +1,16 @@
+table_name,column_name,column_type
+playstore,App,string
+playstore,Category,string
+playstore,Content Rating,string
+playstore,Genres,string
+playstore,Installs,string
+playstore,Price,string
+playstore,Rating,num
+playstore,Reviews,num
+playstore,Size,string
+playstore,Type,boolean
+user_reviews,App,string
+user_reviews,Sentiment,string
+user_reviews,Sentiment_Polarity,string
+user_reviews,Sentiment_Subjectivity,string
+user_reviews,Translated_Review,string

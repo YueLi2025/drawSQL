@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+people,People_ID,num
+people,Name,string
+people,Height,num
+people,Weight,num
+people,Home Town,string
+perpetrator,Perpetrator_ID,num
+perpetrator,People_ID,num
+perpetrator,Date,string
+perpetrator,Year,num
+perpetrator,Location,string
+perpetrator,Country,string
+perpetrator,Killed,num
+perpetrator,Injured,num

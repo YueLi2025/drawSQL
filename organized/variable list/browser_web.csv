@@ -1,0 +1,12 @@
+table_name,column_name,column_type
+Web_client_accelerator,id,num
+Web_client_accelerator,name,string
+Web_client_accelerator,Operating_system,string
+Web_client_accelerator,Client,string
+Web_client_accelerator,Connection,string
+accelerator_compatible_browser,accelerator_id,num
+accelerator_compatible_browser,browser_id,num
+accelerator_compatible_browser,compatible_since_year,num
+browser,id,num
+browser,name,string
+browser,market_share,num

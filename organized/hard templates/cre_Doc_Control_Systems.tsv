@@ -1,0 +1,34 @@
+hard_templates
+SELECT col_name FROM Ref_Document_Status;
+SELECT col_name FROM table_name WHERE col_name = string ;
+SELECT col_name FROM Ref_Document_Types;
+SELECT col_name FROM table_name WHERE col_name = string ;
+SELECT col_name FROM Ref_Shipping_Agents;
+SELECT col_name FROM table_name WHERE col_name = string ;
+SELECT col_name FROM ROLES;
+SELECT col_name FROM table_name WHERE col_name = string ;
+SELECT count(*) FROM Employees;
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string ;
+SELECT col_name , col_name FROM Documents;
+SELECT table_alias0.col_name , table_alias1.col_name , count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name;
+SELECT table_name.col_name , count(table_name.col_name) FROM table_name JOIN table_name ON table_name.col_name = table_name.col_name GROUP BY table_name.col_name HAVING count(table_name.col_name) > num ;
+SELECT table_name.col_name FROM table_name JOIN table_name ON table_name.col_name = table_name.col_name WHERE table_name.col_name = num ;
+SELECT count(*) FROM table_name WHERE col_name = string ;
+SELECT col_name FROM table_name WHERE col_name = num ;
+SELECT col_name FROM table_name WHERE col_name = string AND col_name = string ;
+SELECT table_name.col_name FROM table_name JOIN table_name ON table_name.col_name = table_name.col_name WHERE table_name.col_name = num ;
+SELECT count(*) FROM table_name JOIN table_name ON table_name.col_name = table_name.col_name WHERE table_name.col_name = string ;
+SELECT table_name.col_name , count(table_name.col_name) FROM table_name JOIN table_name ON table_name.col_name = table_name.col_name GROUP BY table_name.col_name ORDER BY count(table_name.col_name) DESC LIMIT num ;
+SELECT col_name FROM table_name WHERE col_name = num ;
+SELECT table_name.col_name FROM table_name JOIN table_name ON table_name.col_namename WHERE col_name = num ;
+SELECT col_name FROM table_name WHERE col_name = num ;
+SELECT col_name FROM table_name WHERE col_name = string AND col_name = string EXCEPT SELECT col_name FROM table_name JOIN table_name ON table_name.col_name = table_name.col_name WHERE table_name.col_name = string ;
+SELECT col_name FROM table_name WHERE col_name = string AND col_name = string INTERSECT SELECT col_name FROM table_name JOIN table_name ON table_name.col_name = table_name.col_name WHERE table_name.col_name = string ;
+SELECT col_name FROM table_name WHERE col_name = num ;
+SELECT count(*) FROM table_name WHERE col_name = num ;
+SELECT col_name , count( col_name ) FROM table_name GROUP BY col_name ORDER BY count( col_name ) DESC LIMIT num ;
+SELECT col_name , count(*) FROM table_name GROUP BY col_name HAVING count(*) > num ;
+SELECT table_name.col_name FROM table_name JOIN table_name ON table_name.col_namee.col_name WHERE table_name.col_name
+SELECT col_name FROM table_name EXCEPT SELECT table_name.col_name FROM table_name JOIN table_name ON table_name.col_namee.col_name
+SELECT table_name.col_name , count(*) FROM table_name JOIN table_name ON table_name.col_namee.col_name GROUP BY table_name.col_namee.col_name.col_nameunt(*) DESC LIMIT num ;
+SELECT col_name , count(DISTINCT col_name ) FROM table_name GROUP BY col_name ;

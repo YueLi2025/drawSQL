@@ -1,0 +1,91 @@
+sql_query
+SELECT count(*) FROM Author
+SELECT count(*) FROM Author
+SELECT count(*) FROM Paper
+SELECT count(*) FROM Paper
+SELECT count(*) FROM Affiliation
+SELECT count(*) FROM Affiliation
+SELECT count(*) FROM Paper WHERE venue  =  "NAACL" AND YEAR  =  2000
+SELECT count(*) FROM Paper WHERE venue  =  "NAACL" AND YEAR  =  2000
+SELECT count(DISTINCT T1.paper_id) FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Affiliation AS T3 ON T2.affiliation_id  =  T3.affiliation_id WHERE T3.name LIKE "Columbia University" AND T1.year  =  2009
+SELECT count(DISTINCT T1.paper_id) FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Affiliation AS T3 ON T2.affiliation_id  =  T3.affiliation_id WHERE T3.name LIKE "Columbia University" AND T1.year  =  2009
+SELECT DISTINCT name ,  address FROM Affiliation
+SELECT DISTINCT name ,  address FROM Affiliation
+SELECT DISTINCT venue ,  YEAR FROM paper ORDER BY YEAR
+SELECT DISTINCT venue ,  YEAR FROM paper ORDER BY YEAR
+SELECT DISTINCT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Affiliation AS T3 ON T2.affiliation_id  =  T3.affiliation_id WHERE T3.name  =  "Harvard University"
+SELECT DISTINCT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Affiliation AS T3 ON T2.affiliation_id  =  T3.affiliation_id WHERE T3.name  =  "Harvard University"
+SELECT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Author AS T3 ON T3.author_id  =  T2.author_id WHERE T3.name LIKE "%Mckeown%"
+SELECT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Author AS T3 ON T3.author_id  =  T2.author_id WHERE T3.name LIKE "%Mckeown%"
+SELECT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Affiliation AS T3 ON T2.affiliation_id  =  T3.affiliation_id WHERE T3.name LIKE "Stanford University" INTERSECT SELECT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Affiliation AS T3 ON T2.affiliation_id  =  T3.affiliation_id WHERE T3.name LIKE "Columbia University"
+SELECT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Affiliation AS T3 ON T2.affiliation_id  =  T3.affiliation_id WHERE T3.name LIKE "Stanford University" INTERSECT SELECT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Affiliation AS T3 ON T2.affiliation_id  =  T3.affiliation_id WHERE T3.name LIKE "Columbia University"
+SELECT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Author AS T3 ON T2.author_id  =  T3.author_id WHERE T3.name LIKE "%Mckeown ,  Kathleen%" INTERSECT SELECT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Author AS T3 ON T2.author_id  =  T3.author_id WHERE T3.name LIKE "%Rambow ,  Owen%"
+SELECT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Author AS T3 ON T2.author_id  =  T3.author_id WHERE T3.name LIKE "%Mckeown ,  Kathleen%" INTERSECT SELECT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Author AS T3 ON T2.author_id  =  T3.author_id WHERE T3.name LIKE "%Rambow ,  Owen%"
+SELECT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Author AS T3 ON T2.author_id  =  T3.author_id WHERE T3.name LIKE "%Mckeown%" EXCEPT SELECT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Author AS T3 ON T2.author_id  =  T3.author_id WHERE T3.name LIKE "%Rambow%"
+SELECT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Author AS T3 ON T2.author_id  =  T3.author_id WHERE T3.name LIKE "%Mckeown%" EXCEPT SELECT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Author AS T3 ON T2.author_id  =  T3.author_id WHERE T3.name LIKE "%Rambow%"
+SELECT DISTINCT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Author AS T3 ON T2.author_id  =  T3.author_id WHERE  T3.name LIKE "%Mckeown ,  Kathleen%" OR T3.name LIKE "%Rambow ,  Owen%"
+SELECT DISTINCT T1.title ,  T1.paper_id FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Author AS T3 ON T2.author_id  =  T3.author_id WHERE  T3.name LIKE "%Mckeown ,  Kathleen%" OR T3.name LIKE "%Rambow ,  Owen%"
+SELECT T1.name ,  count(*) FROM Author AS T1 JOIN Author_list AS T2 ON T1.author_id  =  T2.author_id GROUP BY T1.author_id ORDER BY count(*) DESC
+SELECT T1.name ,  count(*) FROM Author AS T1 JOIN Author_list AS T2 ON T1.author_id  =  T2.author_id GROUP BY T1.author_id ORDER BY count(*) DESC
+SELECT T1.name FROM Affiliation AS T1 JOIN Author_list AS T2 ON T1.affiliation_id  =  T2.affiliation_id GROUP BY T1.affiliation_id ORDER BY count(*) DESC
+SELECT T1.name FROM Affiliation AS T1 JOIN Author_list AS T2 ON T1.affiliation_id  =  T2.affiliation_id GROUP BY T1.affiliation_id ORDER BY count(*) DESC
+SELECT T1.name FROM Author AS T1 JOIN Author_list AS T2 ON T1.author_id  =  T2.author_id GROUP BY T1.author_id HAVING count(*)  >  50
+SELECT T1.name FROM Author AS T1 JOIN Author_list AS T2 ON T1.author_id  =  T2.author_id GROUP BY T1.author_id HAVING count(*)  >  50
+SELECT T1.name FROM Author AS T1 JOIN Author_list AS T2 ON T1.author_id  =  T2.author_id GROUP BY T1.author_id HAVING count(*)  =  1
+SELECT T1.name FROM Author AS T1 JOIN Author_list AS T2 ON T1.author_id  =  T2.author_id GROUP BY T1.author_id HAVING count(*)  =  1
+SELECT venue ,  YEAR FROM paper GROUP BY venue ,  YEAR ORDER BY count(*) DESC LIMIT 1
+SELECT venue ,  YEAR FROM paper GROUP BY venue ,  YEAR ORDER BY count(*) DESC LIMIT 1
+SELECT venue FROM paper GROUP BY venue ORDER BY count(*) LIMIT 1
+SELECT venue FROM paper GROUP BY venue ORDER BY count(*) LIMIT 1
+SELECT count(*) FROM Citation WHERE cited_paper_id  =  "A00-1002"
+SELECT count(*) FROM Citation WHERE cited_paper_id  =  "A00-1002"
+SELECT count(*) FROM Citation WHERE paper_id  =  "D12-1027"
+SELECT count(*) FROM Citation WHERE paper_id  =  "D12-1027"
+SELECT paper_id ,  count(*) FROM Citation GROUP BY cited_paper_id ORDER BY count(*) DESC LIMIT 1
+SELECT paper_id ,  count(*) FROM Citation GROUP BY cited_paper_id ORDER BY count(*) DESC LIMIT 1
+SELECT T2.title FROM Citation AS T1 JOIN Paper AS T2 ON T2.paper_id  =  T1.paper_id GROUP BY T1.paper_id ORDER BY count(*) DESC LIMIT 1
+SELECT T2.title FROM Citation AS T1 JOIN Paper AS T2 ON T2.paper_id  =  T1.paper_id GROUP BY T1.paper_id ORDER BY count(*) DESC LIMIT 1
+SELECT paper_id ,  count(*) FROM Citation GROUP BY cited_paper_id ORDER BY count(*) DESC LIMIT 10
+SELECT paper_id ,  count(*) FROM Citation GROUP BY cited_paper_id ORDER BY count(*) DESC LIMIT 10
+select count(*) from citation as t1 join author_list as t2 on t1.cited_paper_id  =  t2.paper_id join author as t3 on t2.author_id  =  t3.author_id where t3.name = "mckeown ,  kathleen"
+select count(*) from citation as t1 join author_list as t2 on t1.cited_paper_id  =  t2.paper_id join author as t3 on t2.author_id  =  t3.author_id where t3.name = "mckeown ,  kathleen"
+select count(*) from citation as t1 join author_list as t2 on t1.paper_id  =  t2.paper_id join author as t3 on t2.author_id  =  t3.author_id where t3.name = "mckeown ,  kathleen"
+select count(*) from citation as t1 join author_list as t2 on t1.paper_id  =  t2.paper_id join author as t3 on t2.author_id  =  t3.author_id where t3.name = "mckeown ,  kathleen"
+SELECT T3.name ,  count(*) FROM Citation AS T1 JOIN Author_list AS T2 ON T1.cited_paper_id  =  T2.paper_id JOIN Author AS T3 ON T2.author_id  =  T3.author_id GROUP BY T2.author_id ORDER BY count(*) DESC LIMIT 1
+SELECT T3.name ,  count(*) FROM Citation AS T1 JOIN Author_list AS T2 ON T1.cited_paper_id  =  T2.paper_id JOIN Author AS T3 ON T2.author_id  =  T3.author_id GROUP BY T2.author_id ORDER BY count(*) DESC LIMIT 1
+select distinct t1.venue ,  t1.year from paper as t1 join author_list as t2 on t1.paper_id  =  t2.paper_id join author as t3 on t2.author_id  =  t3.author_id where t3.name = "mckeown ,  kathleen"
+select distinct t1.venue ,  t1.year from paper as t1 join author_list as t2 on t1.paper_id  =  t2.paper_id join author as t3 on t2.author_id  =  t3.author_id where t3.name = "mckeown ,  kathleen"
+select distinct t1.venue ,  t1.year from paper as t1 join author_list as t2 on t1.paper_id  =  t2.paper_id join affiliation as t3 on t2.affiliation_id  =  t3.affiliation_id where t3.name = "columbia university"
+select distinct t1.venue ,  t1.year from paper as t1 join author_list as t2 on t1.paper_id  =  t2.paper_id join affiliation as t3 on t2.affiliation_id  =  t3.affiliation_id where t3.name = "columbia university"
+SELECT T3.name FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Author AS T3 ON T3.author_id  =  T2.author_id WHERE T1.year  =  2009 GROUP BY T2.author_id ORDER BY count(*) DESC LIMIT 1
+SELECT T3.name FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Author AS T3 ON T3.author_id  =  T2.author_id WHERE T1.year  =  2009 GROUP BY T2.author_id ORDER BY count(*) DESC LIMIT 1
+SELECT T3.name FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Affiliation AS T3 ON T2.affiliation_id  =  T3.affiliation_id WHERE T1.year  =  2009 GROUP BY T2.affiliation_id ORDER BY count(*) DESC LIMIT 3
+SELECT T3.name FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Affiliation AS T3 ON T2.affiliation_id  =  T3.affiliation_id WHERE T1.year  =  2009 GROUP BY T2.affiliation_id ORDER BY count(*) DESC LIMIT 3
+select count(distinct t1.paper_id) from paper as t1 join author_list as t2 on t1.paper_id  =  t2.paper_id join affiliation as t3 on t2.affiliation_id  =  t3.affiliation_id where t1.year  <=  2009 and t3.name = "columbia university"
+select count(distinct t1.paper_id) from paper as t1 join author_list as t2 on t1.paper_id  =  t2.paper_id join affiliation as t3 on t2.affiliation_id  =  t3.affiliation_id where t1.year  <=  2009 and t3.name = "columbia university"
+SELECT count(DISTINCT T1.paper_id) FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Affiliation AS T3 ON T2.affiliation_id  =  T3.affiliation_id WHERE T1.year  >=  2000 AND T1.year  <=  2009 AND T3.name LIKE "Stanford University"
+SELECT count(DISTINCT T1.paper_id) FROM Paper AS T1 JOIN Author_list AS T2 ON T1.paper_id  =  T2.paper_id JOIN Affiliation AS T3 ON T2.affiliation_id  =  T3.affiliation_id WHERE T1.year  >=  2000 AND T1.year  <=  2009 AND T3.name LIKE "Stanford University"
+SELECT T2.title FROM Author_list AS T1 JOIN Paper AS T2 ON T1.paper_id  =  T2.paper_id GROUP BY T2.paper_id ORDER BY count(*) DESC LIMIT 1
+SELECT T2.title FROM Author_list AS T1 JOIN Paper AS T2 ON T1.paper_id  =  T2.paper_id GROUP BY T2.paper_id ORDER BY count(*) DESC LIMIT 1
+select count (distinct t2.author_id) from author_list as t1 join author_list as t2 on t1.paper_id  =  t2.paper_id and t1.author_id != t2.author_id join author as t3 on t1.author_id  =  t3.author_id where t3.name = "mckeown ,  kathleen"
+select count (distinct t2.author_id) from author_list as t1 join author_list as t2 on t1.paper_id  =  t2.paper_id and t1.author_id != t2.author_id join author as t3 on t1.author_id  =  t3.author_id where t3.name = "mckeown ,  kathleen"
+select t4.name from author_list as t1 join author_list as t2 on t1.paper_id  =  t2.paper_id and t1.author_id != t2.author_id join author as t3 on t1.author_id  =  t3.author_id join author as t4 on t2.author_id  =  t4.author_id where t3.name = "mckeown ,  kathleen" group by t2.author_id order by count(*) desc limit 1
+select t4.name from author_list as t1 join author_list as t2 on t1.paper_id  =  t2.paper_id and t1.author_id != t2.author_id join author as t3 on t1.author_id  =  t3.author_id join author as t4 on t2.author_id  =  t4.author_id where t3.name = "mckeown ,  kathleen" group by t2.author_id order by count(*) desc limit 1
+SELECT paper_id FROM Paper WHERE title LIKE "%translation%"
+SELECT paper_id FROM Paper WHERE title LIKE "%translation%"
+SELECT paper_id ,  title FROM Paper WHERE paper_id NOT IN (SELECT cited_paper_id FROM Citation)
+SELECT paper_id ,  title FROM Paper WHERE paper_id NOT IN (SELECT cited_paper_id FROM Citation)
+SELECT T1.name FROM Affiliation AS T1 JOIN Author_list AS T2 ON T1.affiliation_id  =  T2.affiliation_id WHERE T1.address LIKE "%China%" GROUP BY T1.affiliation_id ORDER BY count(*) DESC LIMIT 1
+SELECT T1.name FROM Affiliation AS T1 JOIN Author_list AS T2 ON T1.affiliation_id  =  T2.affiliation_id WHERE T1.address LIKE "%China%" GROUP BY T1.affiliation_id ORDER BY count(*) DESC LIMIT 1
+SELECT count(*) ,  venue ,  YEAR FROM Paper GROUP BY venue ,  YEAR
+SELECT count(*) ,  venue ,  YEAR FROM Paper GROUP BY venue ,  YEAR
+SELECT count(DISTINCT T2.paper_id) ,  T1.name FROM Affiliation AS T1 JOIN Author_list AS T2 ON T1.affiliation_id  =  T2.affiliation_id GROUP BY T1.affiliation_id
+SELECT count(DISTINCT T2.paper_id) ,  T1.name FROM Affiliation AS T1 JOIN Author_list AS T2 ON T1.affiliation_id  =  T2.affiliation_id GROUP BY T1.affiliation_id
+SELECT T2.title FROM Citation AS T1 JOIN Paper AS T2 ON T1.cited_paper_id  =  T2.paper_id GROUP BY T1.cited_paper_id HAVING count(*)  >  50
+SELECT T2.title FROM Citation AS T1 JOIN Paper AS T2 ON T1.cited_paper_id  =  T2.paper_id GROUP BY T1.cited_paper_id HAVING count(*)  >  50
+SELECT count(*) FROM Author WHERE Author_id NOT IN ( SELECT T2.author_id FROM Citation AS T1 JOIN Author_list AS T2 ON T1.cited_paper_id  =  T2.paper_id GROUP BY T1.cited_paper_id HAVING count(DISTINCT T1.paper_id)  >  50)
+SELECT count(*) FROM Author WHERE Author_id NOT IN ( SELECT T2.author_id FROM Citation AS T1 JOIN Author_list AS T2 ON T1.cited_paper_id  =  T2.paper_id GROUP BY T1.cited_paper_id HAVING count(DISTINCT T1.paper_id)  >  50)
+SELECT name FROM Author WHERE author_id IN (SELECT T1.author_id FROM Author_list AS T1 JOIN Paper AS T2 ON T1.paper_id  =  T2.paper_id WHERE T2.venue  =  "ACL" AND T2.year  =  2009 INTERSECT SELECT T1.author_id FROM Author_list AS T1 JOIN Paper AS T2 ON T1.paper_id  =  T2.paper_id WHERE T2.venue  =  "NAACL" AND T2.year  =  2009)
+SELECT name FROM Author WHERE author_id IN (SELECT T1.author_id FROM Author_list AS T1 JOIN Paper AS T2 ON T1.paper_id  =  T2.paper_id WHERE T2.venue  =  "ACL" AND T2.year  =  2009 INTERSECT SELECT T1.author_id FROM Author_list AS T1 JOIN Paper AS T2 ON T1.paper_id  =  T2.paper_id WHERE T2.venue  =  "NAACL" AND T2.year  =  2009)
+SELECT name FROM Author WHERE author_id NOT IN (SELECT T1.author_id FROM Author_list AS T1 JOIN Paper AS T2 ON T1.paper_id  =  T2.paper_id WHERE T2.venue  =  "ACL")
+SELECT name FROM Author WHERE author_id NOT IN (SELECT T1.author_id FROM Author_list AS T1 JOIN Paper AS T2 ON T1.paper_id  =  T2.paper_id WHERE T2.venue  =  "ACL")

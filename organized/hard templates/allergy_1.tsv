@@ -1,0 +1,99 @@
+hard_templates
+SELECT count(DISTINCT col_name ) FROM table_name
+SELECT count(DISTINCT col_name ) FROM table_name
+SELECT count(DISTINCT allergytype) FROM table_name
+SELECT count(DISTINCT allergytype) FROM table_name
+SELECT DISTINCT allergytype FROM table_name
+SELECT DISTINCT allergytype FROM table_name
+SELECT col_name , allergytype FROM table_name
+SELECT col_name , allergytype FROM table_name
+SELECT DISTINCT col_name FROM table_name WHERE allergytype = string
+SELECT DISTINCT col_name FROM table_name WHERE allergytype = string
+SELECT allergytype FROM table_name WHERE col_name = string
+SELECT allergytype FROM table_name WHERE col_name = string
+SELECT count(*) FROM table_name WHERE allergytype = string
+SELECT count(*) FROM table_name WHERE allergytype = string
+SELECT allergytype , count(*) FROM table_name GROUP BY allergytype
+SELECT allergytype , count(*) FROM table_name GROUP BY allergytype
+SELECT allergytype FROM table_name GROUP BY allergytype ORDER BY count(*) DESC LIMIT num
+SELECT allergytype FROM table_name GROUP BY allergytype ORDER BY count(*) DESC LIMIT num
+SELECT allergytype FROM table_name GROUP BY allergytype ORDER BY count(*) ASC LIMIT num
+SELECT allergytype FROM table_name GROUP BY allergytype ORDER BY count(*) ASC LIMIT num
+SELECT count(*) FROM table_name
+SELECT count(*) FROM table_name
+SELECT Fname , Lname FROM table_name
+SELECT Fname , Lname FROM table_name
+SELECT count(DISTINCT col_name ) FROM table_name
+SELECT count(DISTINCT col_name ) FROM table_name
+SELECT DISTINCT col_name FROM table_name
+SELECT DISTINCT col_name FROM table_name
+SELECT DISTINCT col_name FROM table_name
+SELECT DISTINCT col_name FROM table_name
+SELECT Fname , Lname , col_name FROM table_name WHERE col_name = string
+SELECT Fname , Lname , col_name FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name WHERE col_name = string
+SELECT count(*) FROM table_name WHERE col_name = num
+SELECT count(*) FROM table_name WHERE col_name = num
+SELECT col_name FROM table_name WHERE col_name > num
+SELECT col_name FROM table_name WHERE col_name > num
+SELECT col_name FROM table_name WHERE LName = string
+SELECT col_name FROM table_name WHERE LName = string
+SELECT col_name FROM table_name WHERE col_name = num
+SELECT col_name FROM table_name WHERE col_name = num
+SELECT count(*) FROM table_name WHERE col_name = string OR col_name = string
+SELECT count(*) FROM table_name WHERE col_name = string OR col_name = string
+SELECT min( col_name ) , avg( col_name ) , max( col_name ) FROM table_name
+SELECT min( col_name ) , avg( col_name ) , max( col_name ) FROM table_name
+SELECT LName FROM table_name WHERE col_name = (SELECT min( col_name ) FROM table_name)
+SELECT LName FROM table_name WHERE col_name = (SELECT min( col_name ) FROM table_name)
+SELECT col_name FROM table_name WHERE col_name = (SELECT max( col_name ) FROM table_name)
+SELECT col_name FROM table_name WHERE col_name = (SELECT max( col_name ) FROM table_name)
+SELECT col_name , count(*) FROM table_name GROUP BY col_name
+SELECT col_name , count(*) FROM table_name GROUP BY col_name
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name , count(*) FROM table_name GROUP BY col_name
+SELECT col_name , count(*) FROM table_name GROUP BY col_name
+SELECT avg( col_name ) , col_name FROM table_name GROUP BY col_name
+SELECT avg( col_name ) , col_name FROM table_name GROUP BY col_name
+SELECT col_name , count(*) FROM table_name GROUP BY col_name
+SELECT col_name , count(*) FROM table_name GROUP BY col_name
+SELECT col_name , count(*) FROM table_name GROUP BY col_name
+SELECT col_name , count(*) FROM table_name GROUP BY col_name
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT count(*) FROM table_name WHERE col_name = string
+SELECT count(*) FROM table_name WHERE col_name = string
+SELECT col_name FROM table_name GROUP BY col_name HAVING count(*) >= num
+SELECT col_name FROM table_name GROUP BY col_name HAVING count(*) >= num
+SELECT col_name FROM table_name EXCEPT SELECT col_name FROM table_name
+SELECT col_name FROM table_name EXCEPT SELECT col_name FROM table_name
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias0.col_name = string OR table_alias0.col_name = string
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias0.col_name = string OR table_alias0.col_name = string
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name FROM table_name GROUP BY col_name ORDER BY count(*) DESC LIMIT num
+SELECT col_name , count(*) FROM table_name GROUP BY col_name
+SELECT col_name , count(*) FROM table_name GROUP BY col_name
+SELECT table_alias1.col_name , count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name
+SELECT table_alias1.col_name , count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name
+SELECT lname , col_name FROM table_name WHERE col_name IN (SELECT col_name FROM table_name WHERE col_name = string INTERSECT SELECT col_name FROM table_name WHERE col_name = string )
+SELECT lname , col_name FROM table_name WHERE col_name IN (SELECT col_name FROM table_name WHERE col_name = string INTERSECT SELECT col_name FROM table_name WHERE col_name = string )
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias2.col_name = table_alias1.col_name WHERE table_alias2.col_name = string ORDER BY table_alias0.col_name
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias2.col_name = table_alias1.col_name WHERE table_alias2.col_name = string ORDER BY table_alias0.col_name
+SELECT fname , col_name FROM table_name WHERE col_name IN (SELECT col_name FROM table_name WHERE col_name = string EXCEPT SELECT col_name FROM table_name WHERE col_name = string )
+SELECT fname , col_name FROM table_name WHERE col_name IN (SELECT col_name FROM table_name WHERE col_name = string EXCEPT SELECT col_name FROM table_name WHERE col_name = string )
+SELECT avg( col_name ) FROM table_name WHERE col_name IN ( SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string INTERSECT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string )
+SELECT avg( col_name ) FROM table_name WHERE col_name IN ( SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string INTERSECT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string )
+SELECT fname , lname FROM table_name WHERE col_name NOT IN (SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string )
+SELECT fname , lname FROM table_name WHERE col_name NOT IN (SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string )
+SELECT count(*) FROM table_name WHERE col_name = string AND col_name IN (SELECT col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string )
+SELECT count(*) FROM table_name WHERE col_name = string AND col_name IN (SELECT col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string )
+SELECT DISTINCT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string OR table_alias1.col_name = string
+SELECT DISTINCT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string OR table_alias1.col_name = string
+SELECT count(*) FROM table_name WHERE col_name > num AND col_name NOT IN ( SELECT col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string OR table_alias1.col_name = string )
+SELECT count(*) FROM table_name WHERE col_name > num AND col_name NOT IN ( SELECT col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string OR table_alias1.col_name = string )
+SELECT fname , col_name FROM table_name WHERE col_name NOT IN (SELECT col_name FROM table_name WHERE col_name = string )
+SELECT fname , col_name FROM table_name WHERE col_name NOT IN (SELECT col_name FROM table_name WHERE col_name = string )

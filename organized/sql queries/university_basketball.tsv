@@ -1,0 +1,47 @@
+sql_query
+SELECT school ,  nickname FROM university ORDER BY founded
+SELECT school ,  nickname FROM university ORDER BY founded
+SELECT school ,  LOCATION FROM university WHERE affiliation  =  'Public'
+SELECT school ,  LOCATION FROM university WHERE affiliation  =  'Public'
+SELECT founded FROM university ORDER BY enrollment DESC LIMIT 1
+SELECT founded FROM university ORDER BY enrollment DESC LIMIT 1
+SELECT founded FROM university WHERE affiliation != 'Public' ORDER BY founded DESC LIMIT 1
+SELECT founded FROM university WHERE affiliation != 'Public' ORDER BY founded DESC LIMIT 1
+SELECT count(DISTINCT school_id) FROM basketball_match
+SELECT count(DISTINCT school_id) FROM basketball_match
+SELECT acc_percent FROM basketball_match ORDER BY acc_percent DESC LIMIT 1
+SELECT acc_percent FROM basketball_match ORDER BY acc_percent DESC LIMIT 1
+SELECT t1.Primary_conference FROM university AS t1 JOIN basketball_match AS t2 ON t1.school_id  =  t2.school_id ORDER BY t2.acc_percent LIMIT 1
+SELECT t1.Primary_conference FROM university AS t1 JOIN basketball_match AS t2 ON t1.school_id  =  t2.school_id ORDER BY t2.acc_percent LIMIT 1
+SELECT t2.team_name ,  t2.ACC_Regular_Season FROM university AS t1 JOIN basketball_match AS t2 ON t1.school_id  =  t2.school_id ORDER BY t1.founded LIMIT 1
+SELECT t2.team_name ,  t2.ACC_Regular_Season FROM university AS t1 JOIN basketball_match AS t2 ON t1.school_id  =  t2.school_id ORDER BY t1.founded LIMIT 1
+SELECT t2.All_Games ,  t1.location FROM university AS t1 JOIN basketball_match AS t2 ON t1.school_id  =  t2.school_id WHERE team_name  =  'Clemson'
+SELECT t2.All_Games ,  t1.location FROM university AS t1 JOIN basketball_match AS t2 ON t1.school_id  =  t2.school_id WHERE team_name  =  'Clemson'
+SELECT avg(enrollment) FROM university WHERE founded  <  1850
+SELECT avg(enrollment) FROM university WHERE founded  <  1850
+SELECT enrollment ,  primary_conference FROM university ORDER BY founded LIMIT 1
+SELECT enrollment ,  primary_conference FROM university ORDER BY founded LIMIT 1
+SELECT sum(enrollment) ,  min(enrollment) FROM university
+SELECT sum(enrollment) ,  min(enrollment) FROM university
+SELECT sum(enrollment) ,  affiliation FROM university GROUP BY affiliation
+SELECT sum(enrollment) ,  affiliation FROM university GROUP BY affiliation
+SELECT count(*) FROM university WHERE school_id NOT IN (SELECT school_id FROM basketball_match)
+SELECT count(*) FROM university WHERE school_id NOT IN (SELECT school_id FROM basketball_match)
+SELECT school FROM university WHERE founded  >  1850 OR affiliation  =  'Public'
+SELECT school FROM university WHERE founded  >  1850 OR affiliation  =  'Public'
+SELECT count(DISTINCT affiliation) FROM university
+SELECT count(DISTINCT affiliation) FROM university
+SELECT count(*) FROM university WHERE LOCATION LIKE "%NY%"
+SELECT count(*) FROM university WHERE LOCATION LIKE "%NY%"
+SELECT t2.team_name FROM university AS t1 JOIN basketball_match AS t2 ON t1.school_id  =  t2.school_id WHERE enrollment  <  (SELECT avg(enrollment) FROM university)
+SELECT t2.team_name FROM university AS t1 JOIN basketball_match AS t2 ON t1.school_id  =  t2.school_id WHERE enrollment  <  (SELECT avg(enrollment) FROM university)
+SELECT count(*) ,  affiliation FROM university WHERE enrollment  >  20000 GROUP BY affiliation
+SELECT count(*) ,  affiliation FROM university WHERE enrollment  >  20000 GROUP BY affiliation
+SELECT sum(Enrollment) ,  affiliation FROM university WHERE founded  >  1850 GROUP BY affiliation
+SELECT sum(Enrollment) ,  affiliation FROM university WHERE founded  >  1850 GROUP BY affiliation
+SELECT max(Enrollment) FROM university
+SELECT max(Enrollment) FROM university
+SELECT * FROM basketball_match
+SELECT * FROM basketball_match
+SELECT team_name FROM basketball_match ORDER BY All_Home DESC
+SELECT team_name FROM basketball_match ORDER BY All_Home DESC

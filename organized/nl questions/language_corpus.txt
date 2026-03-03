@@ -1,0 +1,91 @@
+nl_question
+What is the title of Catalan language wikipedia page with revision page id '16203226'?
+List the titles for all Catalan language wikipedia page from revision page id 106600 to 106700.
+Calculate the average number of the word occurrences in which ‘system’ appeared as the first word in the pair.
+What is the title of the Catalan language Wikipedia page that has the highest number of different words?
+How many words are repeated on the Llista de conflictes armats page?
+What number of words are there on revision page 27457362?
+Which Wikipedia page number has the highest number of words in the Catalan language?
+How many times does the Catalan word "nombre" repeat itself?
+List out the title of Catalan language Wikipedia page that has wikipedia revision page id as 106601.
+Which word that has 71303 appearance in the Catalan language?
+What is the locale of the language of the page titled "Abril"?
+How many word that has number of different words equal to 3?
+How many words are there on the page titled "Asclepi"?
+What is the locale of the language of the page titled "Asclepi"?
+How many times did the word "grec" occur on the page titled "Àbac"?
+Which word has the most repetitions in the Catalan language? Give the ID of the word.
+How many occurrences does the word "panajot" have?
+How many times of repetition does the word "exemple" show in the Catalan language?
+Among the wikipedia pages on Catalan with more than 300 different words, how many of them have a revision ID of over 28330000?
+How many Catalan language wikipedia pages have between 1000 to 2000 number of different words?
+List all the first words of the biwords pair where the second word is 'antic'.
+What is the total pages of Wikipedia in Catalan language?
+What is the wikipedia page id of Arqueozoologia?
+Among the title with single digit word count, list down 5 revision page ID of these titles.
+What are the words that were paired with "John", list down 10 of them.
+How many Catalan-language Wikipedia pages are there overall?
+Please list any three Wikipedia pages that are written in Catalan, together with their titles and revision page numbers.
+Which word has the most repetitions in the Catalan language?
+What percentage of Catalan-language Wikipedia pages have more than 10,000 words?
+How many times the word "desena" occurs?
+How many words have repetitions greater than 2000 and lower than 5000?
+What is the locale of the language of the page titled "Anys 90"?
+List out the total pages of the words that has repeated times more than 3000.
+What is the occurrence of the word "nombre"?
+Which biwords pair has a higher occurrence, "àbac-xinès" or "àbac-grec"?
+How many more times does the first word in the biwords pair "àbac-xinès" occur than the biwords pair itself?
+Which word that has 274499 repetitions in the Catalan language?
+List all the Catalan language wikipedia page title with less than 10 number of different words in these pages.
+List the page number for Catalan language wikipedia pages containing the word 'Art' in the page title.
+In Abadia, what is the word id of the of the Catalan language that appeared the highest amount of times? Indicate the how many times did they said word id appeared.
+What is the total word of title "Adam" and "Acampada"?
+What is the percentage of words in the Catalan language that have a repetition of more than 16,000 times?
+List out the total pages of Wikipedia in Catalan language.
+State the Wikipedia page title that has revision page id of 28040864.
+Which of these pages have more words, the page titled "Afluent" or "Asclepi"?
+State the word ID for "periodograma".
+How many Wikipedia pages with over 4000 different words are there on the Catalan language?
+List the page id of wikipedia about Catalan language which have the appearance of the word 'decimal'?
+Show all the title of pages and number of occurences for each page where the word 'quipu' appears.
+What is the word id of the catalan language that was repeated no more than 10 times in the said language?
+How many times did the word pair "i" and "a" appeared in the Cataln language/page?
+What is the title of corpus with most words?
+List down the page id of titles start with alphabet "b".
+What is the title of corpus where word "desena" appear?
+What is the word id for title "Sometent"?
+List down the revision page id of titles where "fresc" appears.
+Indicate which is the word that is repeated the most times.
+Calculate the average number of different words that appear on all pages whose title begins with A.
+Calculate the percentage of times that the same word appears in a pair.
+Indicate on how many different pages the word ripoll appears.
+Which Wikipedia page number does the Catalan language's name, Acampada, appear on?
+Please list any three Wikipedia pages with more than 300 words.
+How many times did the word number 8 appear?
+Please list the top three most frequently occurring words and their ids.
+What is the language of the pair of words numbered 1 and 616?
+What is the second word in the pair of words number 1 and 8968?
+How many times on page number 16 does the second word in the pair of words 1 and 109 appear?
+What is the percentage of the words that have been repeated under 180 times in the Catalan language?
+How many words has the appearance times greater than 10?
+How many pages of Wikipedia are there in total on the Catalan language?
+Please list the Catalan words with an occurrence of over 200000.
+Please list the title of the pages on which the word "grec" occurred for over 20 times.
+How many words are there on the page that the word "grec" has occurred for 52 times?
+What's the occurrence of the biwords pair whose first word is "àbac" and second word is "xinès"?
+Please list all the biwords pairs with "àbac" as its first word.
+How many Wikipedia pages are there on the language of the biwords pair "àbac-xinès"?
+How much higher in percentage does the word "grec" occur on the page titled "Àbac" than on the page titled "Astronomia"?
+How many pages does the Catalan language have in Wikipedia?
+What is the word ID for the second word for the biwords pair with most repetitions?
+Which word has the time of occurrences as 340691?
+For the biwords pair that appears "116430" times, what is the second word of the pair?
+Which word has the most appearances in the Wikipedia page with the title of "Agricultura"? Give the word ID.
+How many appearances does the word ID No. 2823 have in the Wikipedia page "Astre"?
+How many times does the biwords "que gregorio" appear in the language?
+How many biword pairs contain the word "base" as the second word?
+How many times greater is the appearances of the biword pair "a base" than "a decimal"?
+What is the word that occurs the most in the Catalan language?
+Please list the titles of the top 3 Wikipedia pages with the most different words on the Catalan language.
+How many biwords pairs are there whose second word is "grec"?
+Among the biwords pairs with "àbac" as its first word, how many of them have an occurrence of over 10?

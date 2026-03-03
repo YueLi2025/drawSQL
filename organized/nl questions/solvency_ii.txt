@@ -1,0 +1,16 @@
+nl_question
+How many products are there?
+List the name of products in ascending order of price.
+What are the names and type codes of products?
+Show the prices of the products named "Dining" or "Trading Policy".
+What is the average price for products?
+What is the name of the product with the highest price?
+Show different type codes of products and the number of products with each type code.
+Show the most common type code across products.
+Show the product type codes that have at least two products.
+Show the product type codes that have both products with price higher than 4500 and products with price lower than 3000.
+Show the names of products and the number of events they are in.
+Show the names of products and the number of events they are in, sorted by the number of events in descending order.
+Show the names of products that are in at least two events.
+Show the names of products that are in at least two events in ascending alphabetical order of product name.
+List the names of products that are not in any event.

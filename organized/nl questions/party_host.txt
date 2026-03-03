@@ -1,0 +1,31 @@
+nl_question
+How many parties are there?
+Count the number of parties.
+List the themes of parties in ascending order of number of hosts.
+What are the themes of parties ordered by the number of hosts in ascending manner?
+What are the themes and locations of parties?
+Give me the theme and location of each party.
+Show the first year and last year of parties with theme "Spring" or "Teqnology".
+What are the first year and last year of the parties whose theme is "Spring" or "Teqnology"?
+What is the average number of hosts for parties?
+Compute the average number of hosts for parties.
+What is the location of the party with the most hosts?
+Which party had the most hosts? Give me the party location.
+Show different nationalities along with the number of hosts of each nationality.
+How many hosts does each nationality have? List the nationality and the count.
+Show the most common nationality of hosts.
+Which nationality has the most hosts?
+Show the nations that have both hosts older than 45 and hosts younger than 35.
+Which nations have both hosts of age above 45 and hosts of age below 35?
+Show the themes of parties and the names of the party hosts.
+For each party, return its theme and the name of its host.
+Show the locations of parties and the names of the party hosts in ascending order of the age of the host.
+For each party, find its location and the name of its host. Sort the result in ascending order of the age of the host.
+Show the locations of parties with hosts older than 50.
+Which parties have hosts of age above 50? Give me the party locations.
+Show the host names for parties with number of hosts greater than 20.
+Which parties have more than 20 hosts? Give me the host names for these parties.
+Show the name and the nationality of the oldest host.
+What are the name and the nationality of the host of the highest age?
+List the names of hosts who did not serve as a host of any party in our record.
+What are the names of hosts who did not host any party in our record?

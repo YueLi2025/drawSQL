@@ -1,0 +1,19 @@
+soft_templates
+SELECT variable FROM variable WHERE variable LIKE string AND variable = string UNION SELECT variable FROM variable WHERE variable LIKE string AND variable = string
+SELECT * FROM variable WHERE variable = string AND variable = string
+SELECT * FROM variable WHERE variable = string AND variable = string AND variable = string
+SELECT * FROM variable WHERE variable > num
+SELECT variable FROM variable WHERE variable LIKE string
+SELECT * FROM variable WHERE (variable + variable) = num
+SELECT variable FROM variable WHERE variable = string AND variable LIKE string
+SELECT count(*) FROM variable WHERE variable LIKE string AND variable = string
+SELECT variable FROM variable ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT count(*) FROM variable WHERE variable != string AND variable != string AND variable != string
+SELECT count(*) FROM variable WHERE variable > variable
+SELECT count(*) FROM variable WHERE variable + variable > num
+SELECT max(variable) FROM variable
+SELECT count(*) FROM variable WHERE variable = num AND variable = num
+SELECT count(variable) FROM variable
+SELECT count(variable) FROM variable WHERE variable != string and variable != string and variable != string
+SELECT variable FROM variable WHERE variable = string and variable = string and variable = string

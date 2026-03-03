@@ -1,0 +1,99 @@
+nl_question
+Find the titles of all movies directed by steven spielberg.
+What are the names of all movies directed by Steven Spielberg?
+What is the name of the movie produced after 2000 and directed by James Cameron?
+What are the titles of all movies that James Cameron directed after 2000?
+How many movies were made before 2000?
+How many movies were made before 2000?
+Who is the director of movie Avatar?
+Who directed Avatar?
+How many reviewers listed?
+How many reviewers are there?
+What is the id of the reviewer whose name has substring “Mike”?
+What is the id of the reviewer whose name includes the word "Mike"?
+What is the reviewer id of Daniel Lewis?
+What is the id of the reviewer named Daniel Lewis?
+What is the total number of ratings that has more than 3 stars?
+How many movie ratings have more than 3 stars?
+What is the lowest and highest rating star?
+What is the maximum and mininum number of stars a rating can receive?
+Find all years that have a movie that received a rating of 4 or 5, and sort them in increasing order of year.
+In what years did a movie receive a 4 or 5 star rating, and list the years from oldest to most recently?
+What are the names of directors who directed movies with 5 star rating? Also return the title of these movies.
+What are the names of the directors who created a movie with a 5 star rating, and what was the name of those movies?
+What is the average rating star for each reviewer?
+What is the average number of stars that each reviewer awards for a movie?
+Find the titles of all movies that have no ratings.
+What are the titles of all movies that have not been rated?
+Find the names of all reviewers who have ratings with a NULL value for the date.
+What are the different names of all reviewers whose ratings do not have a date field?
+What is the average rating stars and title for the oldest movie?
+For the oldest movie listed, what is its average rating and title?
+What is the name of the most recent movie?
+What is the title of the newest movie?
+What is the maximum stars and year for the most recent movie?
+What is highest rating for the most recent movie and when was it released?
+What is the names of movies whose created year is after all movies directed by Steven Spielberg?
+What are the names of all movies that were created after the most recent Steven Spielberg film?
+What are the titles and directors of the movies whose star is greater than the average stars of the movies directed by James Cameron?
+What are the titles and directors of all movies that have a rating higher than the average James Cameron film rating?
+Return reviewer name, movie title, stars, and ratingDate. And sort the data first by reviewer name, then by movie title, and lastly by number of stars.
+What is the reviewer name, film title, movie rating, and rating date  for every movie ordered by reviewer name, movie title, then finally rating?
+Find the names of all reviewers who have contributed three or more ratings.
+What are the names of all reviewers that have rated 3 or more movies?
+Find the names of all reviewers who rated Gone with the Wind.
+What are the names of all the different reviewers who rates Gone with the Wind?
+Find the names of all directors whose movies are rated by Sarah Martinez.
+What are the names of all directors whose movies have been reviewed by Sarah Martinez?
+For any rating where the name of reviewer is the same as the director of the movie, return the reviewer name, movie title, and number of stars.
+What are the different reviewer names, movie titles, and stars for every rating where the reviewer had the same name as the director?
+Return all reviewer names and movie names together in a single list.
+What are the names of all the reviewers and movie names?
+Find the titles of all movies not reviewed by Chris Jackson.
+What are the titles of all movies that were not reviewed by Chris Jackson?
+For all directors who directed more than one movie, return the titles of all movies directed by them, along with the director name. Sort by director name, then movie title.
+For all directors who have directed more than one movie, what movies have they directed and what are their names?
+For directors who had more than one movie, return the titles and produced years of all movies directed by them.
+For each director who directed more than one movie, what are the titles and dates of release for all those movies?
+What are the names of the directors who made exactly one movie?
+What are the names of all directors who made one movie?
+What are the names of the directors who made exactly one movie excluding director NULL?
+What are the names of all directors who have made one movie except for the director named NULL?
+How many movie reviews does each director get?
+For each director, how many reviews have they received?
+Find the movies with the highest average rating. Return the movie titles and average rating.
+What are the movie titles with the highest average rating and what are those ratings?
+What are the movie titles and average rating of the movies with the lowest average rating?
+What are the titles and average ratings for all movies that have the lowest average rating?
+What are the names and years of the movies that has the top 3 highest rating star?
+What are the names and years released for the movies with the top 3 highest ratings?
+For each director, return the director's name together with the title of the movie they directed that received the highest rating among all of their movies, and the value of that rating. Ignore movies whose director is NULL.
+For each director, what are the titles and ratings for all the movies they reviewed?
+Find the title and star rating of the movie that got the least rating star for each reviewer.
+For each reviewer id, what is the title and rating for the movie with the smallest rating?
+Find the title and score of the movie with the lowest rating among all movies directed by each director.
+For each director, what is the title and score of their most poorly rated movie?
+What is the name of the movie that is rated by most of times?
+What is the name of the movie that has been reviewed the most?
+What are the titles of all movies that have rating star is between 3 and 5?
+What are the titles of all movies that have between 3 and 5 stars?
+Find the names of reviewers who had given higher than 3 star ratings.
+What are the names of the reviewers who have rated a movie more than 3 stars before?
+Find the average rating star for each movie that are not reviewed by Brittany Harris.
+What is the average rating for each movie that has never been reviewed by Brittany Harris?
+What are the ids of the movies that are not reviewed by Brittany Harris.
+What are the ids of all moviest hat have not been reviewed by Britanny Harris?
+Find the average rating star for each movie that received at least 2 ratings.
+For each movie that received more than 3 reviews, what is the average rating?
+find the ids of reviewers who did not give 4 star.
+What are the ids of all reviewers who did not give 4 stars?
+Find the ids of reviewers who didn't only give 4 star.
+What are the ids of all reviewers who have not given 4 stars at least once?
+What are names of the movies that are either made after 2000 or reviewed by Brittany Harris?
+What are the names of all movies that were made after 2000 or reviewed by Brittany Harris?
+What are names of the movies that are either made before 1980 or directed by James Cameron?
+What are the names of all movies made before 1980 or had James Cameron as the director?
+What are the names of reviewers who had rated 3 star and 4 star?
+What are the names of all reviewers that have given 3 or 4 stars for reviews?
+What are the names of movies that get 3 star and 4 star?
+What are the names of all movies that received 3 or 4 stars?

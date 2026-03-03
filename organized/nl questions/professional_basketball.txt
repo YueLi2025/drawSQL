@@ -1,0 +1,114 @@
+nl_question
+List the team name and the total wins of the team in year 2005 which has greater winning from the previous year.
+Which are the teams coached by 'adelmri01' from year 1990-1995. List the team name, year and offense point.
+Which coach of the Chicago Bulls during the year 1981 won the NBA Coach of the Year award in the 1970s?
+In what year did the only team to beat the Houston in the final round of postseason series games earn its lowest ranking?
+What is the birth date of the player with the most assists during the 1985 All-Star season?
+Which player, born in Winter Haven, played 12 minutes per season during the 1980s in the All-Stars?
+Between the years 1990 and 2007, of the total rebounds achieved by each player, how many managed to exceed 75% of defensive rebounds?
+Of all the teams coached by the winner of the 1994 NBA Coach of the Year award, which team has lost the most times playing at home?
+Which winning team in the final round of the postseason series games against the LAL won more than 60 games in the NBA league during the year 1996?
+What is the name of the coach during whose period of coaching, a team has the most numbers of games won in the post-season games?
+Among the players who went to high school in Chicago, how many of them belongs to the west conference?
+For the players who belongs to the east conference, please list the name of the college they went to.
+Among the players from the NBL league, how many of them were born in Spencer?
+Please list the birth date of the player who has won the most MVPs.
+Among the players born in Whitestone, how many of them have won the MVP?
+What is the average weight of the players who have won the award of Rookie of the year?
+Please list the top ten teams with the highest scores in 2000.
+Which teams have winning rate less than 50%?
+Which coach has serviced in NBA for more than 10 years.
+Which player from "AFS" team has the tallest height?
+Please list down the last name of players from "BLB" team.
+Please list the coach IDs who received the award twice from 1970 to 1990.
+From 1962 to 2011, how many coaches received both NBA and ABA awards?
+Please list the last names and first names of all-star players who are higher than 75 inch.
+What is the minimum weight of all-star players coming from UCLA college?
+From 1960 to 1970, what is the total point of all-star players who are still alive?
+How many players received Rookie of the Year award from 1969 to 2010?
+From 1950 to 1970, what is the maximum point of players whose teams were ranked 1?
+Among the teams that were ranked 3 from 1937 to 1940, what is the team name whose players had the highest point?
+In 1937, how many teams whose players got at least 500 points?
+In 1990, how many players whose teams had the winning rate of more than 75%?
+What are the basketball players' BMI ranges?
+Who is the tallest player in Denver Nuggets since 1980?
+Among the players who have passed away, who had the most award?
+What is the full name of the team that has the most players from UCLA?
+What is the average BMI of an All-star player?
+What is the full name of the team with the fastest growth in winning rate in the 'ABA' league from 1972 to 1973?
+Among the coaches who won the 'ABA Coach of the Year' award, which is the coach with the highest number of won games?
+What is the full name of the team that the 'NBA Coach of the Year' 1992 winner coached?
+Among the Most improved Players awarded from 1985-1990, how many player whose country is USA?
+Please list out the first name and last name of player who attended California college and have been selected as all stars?
+How many players received Most Valuable Player award from 1969 to 1975?
+Which state has the most players selected as all stars?
+List out all the coach ID who have served more than 2 different teams.
+Which coach has the most 'won' than 'lost' in year '1988'?
+Name the team in which the coach won the title 'NBA Coach of the Year' in 2010.
+List the full name and age of the player when he won the "Finals MVP" in 2003.
+List the champion (team name) and year from year 1950 to 1960.
+Name the youngest player who ever won "Rookie of the Year".
+List the full name of players who are drafted from round 1 in 1973 but not born in USA.
+List all the coatches of the Oklahoma City Thunder
+How many players, in games played in 1990, achieved 50% or less of oRebounds than dRebounds.
+How many players did not get more than 10 steals between the years 2000 and 2005?
+Which winning team in the 1947 playoff quarterfinals managed to score 3,513 defensive points that same year?
+Percentage of games lost out of total games played by the Houston Mavericks
+How many times between 1975 and 1980 did the player abdulka01 play for LAL?
+Please list the top five players with the most steals in the year 1997. Please give their full name.
+What is the name of the university that was drafted from the player who won the NBA Finals MVP in 1990?
+Among the NBA winning coaches, which are from STL team? Please list their coach id.
+How many times have coaches who were from CHI been awarded as NBA Coach of the Year?
+Which player from Wake Forest college did the most offensive rebounds than defensive rebounds in the all-star? Please mention the full name of the player including the middle name if have any.
+Find the full name of the player born in Atlanta and have the highest number of blocks. Also, in which team did this player perform the most number of blocks?
+Which team did the MVP of 1997 NBA season play in?
+Among the coaches who won the 'NBA coach of the year' award from 1971 - 1975, how many of them were in 'POR' team?
+Give the player id of the man who had the most turnovers whose team missed the playoffs in year 1988.
+In the year 1998, how many home wins did the team which had the 1st round, 12th pick have that year?
+For the player who had the most rebounds throughout his allstar appearances, what was his weight and height?
+Where was the high school of the player who had the most rebounds in the NBA allstar history?
+For the latest passing player who could play all the positions in the court, how many points did he have in his career?
+Which team did the youngest player who could be in F-G position play in the NBA?
+For the players who played the most PBLA games, who was graduated from Central Missouri State college?
+For all the full attendence players in 1995, which player had most turnovers? Give the full name of the player.
+Which team did the all league rebound champion play in 1997? Give the full name of the team.
+Who is the longest serving coach from year 1970 to 1980. List the coach ID and the team(s) he served.
+In year 2000, who are the coaches with more than 50 games won. List the coachID, team name and number of game won at home game.
+Which team(s) had 90% games won. List the coach ID for the team and year played.
+What is the nickname of the NBA player whose team competed in the Western Conference in the season 2006 and who had a total of two blocks?
+in which year costela01 obtained the best balance of games won as a coach?
+How many total minutes has the Brooklyn-born player, known by the name of Superman, played during all of his NBA All-Star seasons?
+Among the players from the ABA league, how many of them have the center position?
+Please list the first name of the players from the NBA league with the forward position.
+Among the players who have won the award of Rookie of the year, what is the height of the tallest player?
+Who are the coaches for team with winning rate of 80% and above?
+How many teams have played more than 3800 points and have player with "Most Valuable Player" award?
+Please list the top three shortest black players.
+How many players with the first name Joe were drafted in 1970?
+What is the first and last name of the player with the highest field goal made rate in 1973?
+What is the full name of the team that selected Mike Lynn?
+How many teams in the NBA which has at least 3 all-star players?
+How many players whose teams were ranked 6 in 1937?
+List the full name of players who are born outside USA.
+From which college was the player who won the most award in 1970.
+How many All Star players who played in the 1973 season were black?
+Please list the players who received the "Most Valuable Player" award in the NBA league after the year of 1990, along with their IDs.
+What is the percentage of coaches in 1969 who were awarded "NBA Coach of the Year"?
+Among the NBA All-star players in 1996 season , which have more than 70% free throw rate? Please give their player id.
+How many games did team of the scoring champion win in 2001 NBA season?
+For the player who was drafted in the 1st round, 6th position in 1976, which team did he play in that year?
+In the year 1997 allstar game, which teams did the players had the most rebounds play in? List their team ids.
+Who is the coach for 'BOS' team in year 1950. List the coach ID together with the number of game won and lost.
+Of all the All-star players who played in the Eastern Conference for no more than 5 minutes, how many went to Illinois College?
+From 1962 to 1975, how many coaches received the award?
+What is the maximum weight of USA all-star players?
+How old was Alexis Ajinca when he was first drafted?
+What is the average height of an East conference All-star player?
+List the first name, last name, height and weight of the players who has all free throw attempted successfully made.
+For the 2001 rebounds leader in the league, when was his birthday?
+Which team(s) has greater than 75% lost among all the games played.
+For team who has more home won than home lost more than 80%, list the team name and the offense points.
+Among the players that went to high school in New York and have won the MVP, what is their average height?
+Please list the last names and first names of all-star players whose team were ranked 1 for consecutive 3 years from 1937 to 1940.
+Please list the team names which have at least 5 players were born in the same state.
+Player from which team has the highest point per minute in NBA from 1991 to 2000?

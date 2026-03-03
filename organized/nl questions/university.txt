@@ -1,0 +1,121 @@
+nl_question
+What is the ranking system ID of the award criteria?
+Give the name of the country that has the most universities.
+In 2014, what is the name of the university which was considered a leader in the publications rank?
+What is the name of the university that has the lowest number of students of all time?
+How many universities are there in the United States of America?
+How many universities scored 0 in Awards between 2005 to 2015?
+Which country is the University of Oxford located?
+How many times did the Yale University achieve a score of no less than 10 in the Quality of Education Rank?
+What are the names of the criteria under Center for World University Rankings?
+List the names of all the universities that have no less than 50,000 students in the year 2012.
+Between 2011 to 2016, in which countries can you find the universities where at least 50% of its students are international students?
+Provide the ranking system of the ranking criteria named Quality of Education Rank.
+What is the student staff ratio of Harvard University in 2012?
+Calculate the total number of students in universities located in Sweden.
+What is the ranking criteria ID of Brown University in 2014?
+What is the criteria name of the university ID 32 in 2015?
+Compute the average score of the university located in Brazil.
+List the criteria names under the ranking system called Center for World University Ranking.
+Indicate the university's name with the highest ranking score in Teaching.
+What is the percentage of Harvard university's international students in 2011?
+How many female students were there at Stanford University in 2011?
+In which nation is Harvard University located?
+What is the name of the ranking system for Teaching criteria?
+In Argentina, how many universities are there?
+Which universities have more than 100,000 students in 2011?
+How many criteria are associated with ranking system Center for World University Rankings?
+What is the difference in overall student enrollment and international student enrollment at the Harvard university from 2011 to 2012?
+What is the country ID of the University of Tokyo?
+Provide the ranking system ID of the Center for World University Rankings.
+What is the ID of the Publications Rank criteria?
+Provide the number of students at Yale University in 2016.
+Provide the number of staff at the University of Auckland in 2015.
+How many international students attended Harvard University in 2012?
+Calculate the number of female students at Arizona State University in 2014.
+Provide the universities which got the highest scores.
+List the ranking criteria under the Shanghai Ranking system.
+In 2011, which university got the lowest score in teaching criteria?
+Provide the ranking system name for the "Quality of Education Rank" criteria.
+Provide the ranking criteria and scores in 2005 that were received by Harvard University.
+Calculate the average score per university under Alumni criteria in 2008.
+Please list the IDs of the universities with the top 3 female students percentage in 2011.
+In which year did university ID 1 have the most students?
+What is the name of the university with the most international students in 2011?
+Please list the names of all the universities in Australia.
+What is the name of the university with the highest score in teaching in the year 2011?
+Please list the names of the universities with a score in teaching of over 90 in 2011.
+Please list the names of all the ranking criteria of Harvard University in 2011.
+What are the names of the universities that got 98 in teaching in 2011?
+Among the universities in Australia, how many of them have a student staff ratio of over 15 in 2011?
+How many female students did Stanford University have in 2011?
+Which country is University of Veterinary Medicine Vienna located in? Give its country id.
+What is the id of the criteria "Citations Rank"?
+Which university had the most students in 2011? Show its name.
+For Chosun University, what was its score on "Influence Rank" in 2015?
+What is the percentage of the international students in University of Oslo in 2015?
+For the University of Southampton in 2015, on which criteria did it score the best?
+Which ranking system is criteria "Total Shanghai" in?
+How many female students were there in Pierre and Marie Curie University in 2015?
+What was the score for University of Florida in "N and S" in 2014?
+Calculate the number of international students of University of Wisconsin-Madison in 2013.
+Show the name of the university with the lowest number of students in 2015.
+How many times more was the number of students of University of Ottawa than Joseph Fourier University in 2013?
+Calculate the average number of criterias among "Times Higher Education World University Ranking","Shanghai Ranking" and "Center for World University Rankings".
+Provide the country ID of Cyprus.
+Provide the criteria name of the ranking criteria ID 13.
+Give the criteria name where Harvard University scored 100.
+Provide the university name and ID of the university found in Turkey.
+How many female students are there in University of Pennsylvania in 2011?
+In which country does Johns Hopkins University located?
+Give the names of universities with number of students ranges from 400 to 1000.
+In what year does the Brown University score the highest?
+Calculate the average score of Emory University from 2011 to 2016.
+Give the name of the university with the most number of students in 2015.
+How many universities scored 40 in teaching criteria?
+List the names of universities with a score less than 28% of the average score of all universities in 2015.
+How many criteria belong to ranking system ID 3?
+In 2016, what is the name of the university in Australia with the highest score in Citations criteria?
+What are the names of the top 5 universities with the highest number of international students?
+What is the university ID of the university with the largest student staff ratio?
+Compute the average percentage of female students.
+Provide the number of international students and number of students in 2013 in university ID 20.
+What is the university ID of Harvard University?
+List the university ID of the university that scored 100 in 2011.
+Give the location of the university ID 112.
+List the name of universities located in Spain.
+Provide the country name of universities with the number of students greater than 98% of the average student population of all universities in 2013.
+Among all universities, how many female students were there in 2011?
+How many institutions with over 50,000 students in 2011 had a percentage of oversea students of more than 10%?
+Provide the ID of the university with the highest percentage of female students in 2012.
+What are the top three universities with the most international students?
+How many universities had over 30000 students in 2011?
+List the universities in Denmark.
+Which country has the University of SÃ£o Paulo?
+What is the ID of the university with the most students in 2011?
+Among the universities with over 20000 students in 2011, how many of them have an international students percentage of over 25% in the same year?
+How many students did Harvard University have in 2011?
+Which country is Harvard University in?
+Among the universities with a score in teaching of over 90 in 2011, how many of them are in the United States of America?
+Which country is McMaster University located in?
+How many Turkish universities are there in the database?
+What is the score of university ID 68 in 2015?
+In years 2011 to 2013, what is the total number of female students in university ID 40?
+Provide the score of the most populated university in 2011.
+What is the total number of ranking criteria under the ranking system called Shanghai Ranking?
+How many universities are located in Japan?
+Calculate the difference between the total number of students and the number of international international students in Univeristy of Tokyo from 2011 to 2014.
+How many universities have at least 80,000 students in the year 2011?
+How many state universities are there?
+What is the name of the university that had the highest number of international students for 6 consecutive years?
+In which country does the most populated university in 2014 located ?
+What is the student staff ratio at the university with the greatest student staff ratio of all time?
+What is the university ID with the most students in 2011?
+Which university had the highest reputation in 2012?
+Name the university that had the most students in 2011.
+How many universities got less than 50 scores under ranking criteria ID 6 in 2011?
+Give the id of "Center for World University Rankings".
+Give the student staff ratio of university ID 35.
+Give the name and score of the university ID 124.
+List the countries of universities that scored 70 and below in 2016.
+Calculate the average score of university ID 79 between year 2013 to 2015.

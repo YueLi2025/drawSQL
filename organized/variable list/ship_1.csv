@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+Ship,Ship_ID,num
+Ship,Name,string
+Ship,Type,string
+Ship,Built_Year,num
+Ship,Class,string
+Ship,Flag,string
+captain,Captain_ID,num
+captain,Name,string
+captain,Ship_ID,num
+captain,age,string
+captain,Class,string
+captain,Rank,string

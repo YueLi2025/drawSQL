@@ -1,0 +1,41 @@
+nl_question
+How many companies are there?
+Count the number of companies.
+List the names of companies in descending order of market value.
+Sort the company names in descending order of the company's market value.
+What are the names of companies whose headquarters are not "USA"?
+Find the names of the companies whose headquarters are not located in "USA".
+What are the name and assets of each company, sorted in ascending order of company name?
+List the name and assets of each company in ascending order of company name.
+What are the average profits of companies?
+Compute the average profits companies make.
+What are the maximum and minimum sales of the companies whose industries are not "Banking".
+Find the maximum and minimum sales of the companies that are not in the "Banking" industry.
+How many different industries are the companies in?
+Count the number of distinct company industries.
+List the names of buildings in descending order of building height.
+What are the names of buildings sorted in descending order of building height?
+Find the stories of the building with the largest height.
+What is the stories of highest building?
+List the name of a building along with the name of a company whose office is in the building.
+For each company, return the company name and the name of the building its office is located in.
+Show the names of the buildings that have more than one company offices.
+Which buildings have more than one company offices? Give me the building names.
+Show the name of the building that has the most company offices.
+Which building has the largest number of company offices? Give me the building name.
+Please show the names of the buildings whose status is "on-hold", in ascending order of stories.
+Find the names of the buildings in "on-hold" status, and sort them in ascending order of building stories.
+Please show each industry and the corresponding number of companies in that industry.
+Whah are the name of each industry and the number of companies in that industry?
+Please show the industries of companies in descending order of the number of companies.
+Sort all the industries in descending order of the count of companies in each industry
+List the industry shared by the most companies.
+Which industry has the most companies?
+List the names of buildings that have no company office.
+Which buildings do not have any company office? Give me the building names.
+Show the industries shared by companies whose headquarters are "USA" and companies whose headquarters are "China".
+Which industries have both companies with headquarter in "USA" and companies with headquarter in "China"?
+Find the number of companies whose industry is "Banking" or "Conglomerate",
+How many companies are in either "Banking" industry or "Conglomerate" industry?
+Show the headquarters shared by more than two companies.
+Which headquarter locations are used by more than 2 companies?

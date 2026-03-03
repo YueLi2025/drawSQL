@@ -1,0 +1,66 @@
+sql_query
+SELECT DISTINCT T2.name FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.score = 100
+SELECT T1.type FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.`date` = '2014-01-14' AND T2.name = 'Tiramisu Kitchen'
+SELECT T1.description FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.`date` = '2014-01-14' AND T2.name = 'Tiramisu Kitchen' AND T1.risk_category = 'Low Risk'
+SELECT DISTINCT T1.description FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.risk_category = 'High Risk' AND T2.name = 'Tiramisu Kitchen'
+SELECT COUNT(T1.business_id) FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.type = 'Routine - Unscheduled' AND T2.name = 'Tiramisu Kitchen'
+SELECT COUNT(T2.business_id) FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T2.name = 'Tiramisu Kitchen' AND T1.type = 'Routine - Unscheduled' AND T1.score > 70
+SELECT CASE WHEN SUM(CASE WHEN T2.name = 'OMNI S.F. Hotel - 2nd Floor Pantry' THEN 1 ELSE 0 END) > SUM(CASE WHEN T2.name = 'Tiramisu Kitchen' THEN 1 ELSE 0 END) THEN 'OMNI S.F. Hotel - 2nd Floor Pantry' ELSE 'Tiramisu Kitchen' END AS result FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.risk_category = 'Low Risk'
+SELECT COUNT(T2.business_id) FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T2.city IN ('San Francisco', 'SF', 'S.F.', 'SAN FRANCISCO') AND T1.risk_category = 'High Risk'
+SELECT T2.name FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.risk_category = 'High Risk' GROUP BY T2.name ORDER BY COUNT(T2.name) DESC LIMIT 1
+SELECT business_id FROM violations GROUP BY business_id ORDER BY COUNT(business_id) DESC LIMIT 1
+SELECT T2.name FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.risk_category = 'High Risk' GROUP BY T2.name ORDER BY COUNT(T2.name) DESC LIMIT 1
+SELECT COUNT(DISTINCT T1.violation_type_id) FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T2.name = 'Stacks Restaurant' AND T1.`date` = '2016-10-04'
+SELECT T1.description FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T2.name = 'Chez Fayala, Inc.' AND T1.`date` = '2016-07-01' AND T1.risk_category = 'Moderate Risk'
+SELECT T2.name FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE score = ( SELECT MIN(score) FROM inspections WHERE `date` = '2016-09-26' AND type = 'Routine - Unscheduled' ) AND T1.`date` = '2016-09-26' AND T1.type = 'Routine - Unscheduled'
+SELECT COUNT(T1.business_id) FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T2.name = 'Soma Restaurant And Bar' AND T1.type = 'Routine - Unscheduled'
+SELECT T2.address FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.risk_category = 'Low Risk' GROUP BY T2.address ORDER BY COUNT(T1.business_id) DESC LIMIT 1
+SELECT T2.name FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.`date` = ( SELECT MIN(`date`) FROM violations WHERE risk_category = 'Low Risk' AND description = 'Permit license or inspection report not posted' ) AND T1.risk_category = 'Low Risk' AND T1.description = 'Permit license or inspection report not posted'
+SELECT COUNT(T1.business_id) FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T2.business_certificate = '304977' AND T1.`date` = '2013-10-07'
+SELECT CAST(SUM(CASE WHEN T2.risk_category = 'Moderate Risk' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T2.business_id) FROM businesses AS T1 INNER JOIN violations AS T2 ON T1.business_id = T2.business_id WHERE T1.name = 'Melody Lounge'
+SELECT DISTINCT T2.name FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE STRFTIME('%Y', T1.`date`) = '2013' AND T1.score = 100
+SELECT T2.city FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE STRFTIME('%Y', T1.`date`) = '2016' AND T1.risk_category = 'High Risk' GROUP BY T2.city ORDER BY COUNT(T2.city) DESC LIMIT 1
+SELECT T2.name FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.score = ( SELECT MIN(score) FROM inspections )
+SELECT COUNT(T1.business_id) FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T2.name = 'Tiramisu Kitchen' AND T1.risk_category = 'High Risk'
+SELECT T2.name FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE STRFTIME('%Y', T1.`date`) = '2013' AND T1.description = 'Contaminated or adulterated food'
+SELECT DISTINCT T4.name FROM ( SELECT T3.name, T3.years, row_number() OVER (PARTITION BY T3.name ORDER BY T3.years) AS rowNumber FROM ( SELECT DISTINCT name, STRFTIME('%Y', `date`) AS years FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.score = 100 ) AS T3 ) AS T4 GROUP BY T4.name, date(T4.years || '-01-01', '-' || (T4.rowNumber - 1) || ' years') HAVING COUNT(T4.years) = 4
+SELECT AVG(T1.score) FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE STRFTIME('%Y', T1.`date`) BETWEEN '2014' AND '2016' AND T2.owner_name = 'Yiu Tim Chan' AND T2.address = '808 Pacific Ave' AND T2.city = 'San Francisco'
+SELECT AVG(T1.score) FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id GROUP BY T2.owner_name ORDER BY COUNT(T2.business_id) DESC LIMIT 1
+SELECT T2.name FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE STRFTIME('%Y', T1.`date`) = '2014' AND T1.risk_category = 'Low Risk' GROUP BY T2.name ORDER BY COUNT(T2.business_id) DESC LIMIT 1
+SELECT T4.owner_name FROM violations AS T3 INNER JOIN businesses AS T4 ON T3.business_id = T4.business_id INNER JOIN ( SELECT T2.owner_name FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id GROUP BY T2.owner_name ORDER BY COUNT(T1.business_id) DESC LIMIT 5 ) AS T5 ON T4.owner_name = T5.owner_name WHERE T3.risk_category = 'High Risk' GROUP BY T4.owner_name ORDER BY COUNT(T3.risk_category) DESC LIMIT 1
+SELECT T2.name, AVG(T1.score) FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id GROUP BY T2.name ORDER BY COUNT(T2.business_id) DESC LIMIT 1
+SELECT COUNT(DISTINCT business_id) FROM inspections WHERE STRFTIME('%Y', `date`) = '2013' AND score = ( SELECT MAX(score) FROM inspections WHERE STRFTIME('%Y', `date`) = '2013' )
+SELECT business_id, risk_category, description FROM violations WHERE violation_type_id = '103101'
+SELECT T1.`date` FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T2.city = 'SAN BRUNO' ORDER BY T1.score DESC LIMIT 1
+SELECT DISTINCT T1.violation_type_id, T1.description FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T2.name = 'STARBUCKS' AND T1.risk_category = 'High Risk'
+SELECT T1.`date`, T1.risk_category, T1.description, T2.name FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T2.owner_name = 'Jade Chocolates LLC'
+SELECT DISTINCT T2.name, T2.city, T2.tax_code FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.risk_category = 'High Risk' AND T1.`date` = '2014-06-03' LIMIT 5
+SELECT T1.type FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T2.name = 'El Aji Peruvian Restaurant' ORDER BY T1.score DESC LIMIT 1
+SELECT T2.name, T2.address FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.`date` = '2015-02-02' AND T1.type = 'Reinspection/Followup'
+SELECT DISTINCT owner_name FROM businesses WHERE owner_zip = '94104'
+SELECT DISTINCT T2.owner_name FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.score = 100
+SELECT COUNT(DISTINCT T2.business_id) FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T2.postal_code = 94117 AND T1.risk_category = 'High Risk'
+SELECT DISTINCT T3.name FROM violations AS T1 INNER JOIN inspections AS T2 ON T1.business_id = T2.business_id INNER JOIN businesses AS T3 ON T2.business_id = T3.business_id WHERE T1.`date` = '2016-05-27' AND T1.violation_type_id = 103157 AND T2.type = 'Routine - Unscheduled'
+SELECT DISTINCT T2.owner_name FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.risk_category = 'High Risk' AND T1.violation_type_id = 103109 AND T1.description = 'Unclean or unsanitary food contact surfaces'
+SELECT DISTINCT T2.name FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T2.owner_city = 'Cameron Park' AND T1.score = 100
+SELECT DISTINCT T2.owner_name FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.violation_type_id = 103156 AND T1.`date` = '2014-06-12'
+SELECT DISTINCT T1.name, T3.risk_category FROM businesses AS T1 INNER JOIN inspections AS T2 ON T1.business_id = T2.business_id INNER JOIN violations AS T3 ON T1.business_id = T3.business_id WHERE T2.score > 0.8 * ( SELECT AVG(score) FROM inspections )
+SELECT COUNT(owner_state) FROM businesses WHERE owner_state = 'CA'
+SELECT COUNT(`date`) FROM inspections WHERE STRFTIME('%Y', `date`) = '2016' AND type = 'Routine - Unscheduled'
+SELECT COUNT(DISTINCT T2.business_id) FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE STRFTIME('%Y', T1.`date`) = '2016' AND T2.city IN ('San Francisco', 'SAN FRANCISCO', 'SF', 'S.F.')
+SELECT COUNT(T1.business_id) FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.`date` = '2014-01-14' AND T2.name = 'Tiramisu Kitchen' AND T1.risk_category = 'Low Risk'
+SELECT DISTINCT T2.name FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE STRFTIME('%Y', T1.`date`) = '2014' AND T1.risk_category = 'Low Risk'
+SELECT T2.name FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.score = 100 AND T1.`date` = '2016-09-28' AND T1.type = 'Routine - Unscheduled'
+SELECT COUNT(business_id) FROM businesses WHERE city = 'HAYWARD'
+SELECT COUNT(DISTINCT business_id) FROM inspections WHERE score < 50
+SELECT business_id FROM inspections WHERE type = 'Structural Inspection' AND `date` LIKE '2016-02%'
+SELECT T1.`date`, T1.score, T1.type FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T2.tax_code = 'AA'
+SELECT DISTINCT T2.business_id, T2.name, T2.address FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.date = '2016-07-30'
+SELECT T2.owner_name FROM violations AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T1.risk_category = 'High Risk' AND T1.description = 'Improper cooking time or temperatures'
+SELECT COUNT(tax_code) FROM businesses WHERE tax_code = 'H25'
+SELECT CAST(SUM(CASE WHEN T1.risk_category = 'Low Risk' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.risk_category) FROM violations AS T1 INNER JOIN inspections AS T2 ON T1.business_id = T2.business_id INNER JOIN businesses AS T3 ON T2.business_id = T3.business_id WHERE T2.score < 95 AND T3.postal_code = 94110
+SELECT COUNT(score) FROM inspections WHERE score = 100
+SELECT AVG(T1.score) FROM inspections AS T1 INNER JOIN businesses AS T2 ON T1.business_id = T2.business_id WHERE T2.name = 'Tiramisu Kitchen'
+SELECT COUNT(business_id) FROM inspections WHERE STRFTIME('%Y', `date`) = '2014' AND type = 'Foodborne Illness Investigation'
+SELECT COUNT(T1.owner_name) FROM ( SELECT owner_name FROM businesses GROUP BY owner_name HAVING COUNT(owner_name) > 5 ) T1
+SELECT COUNT(risk_category) FROM violations WHERE STRFTIME('%Y', `date`) = '2014' AND risk_category = 'Low Risk'

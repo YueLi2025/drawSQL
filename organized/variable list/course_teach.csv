@@ -1,0 +1,11 @@
+table_name,column_name,column_type
+course,Course_ID,num
+course,Staring_Date,string
+course,Course,string
+course_arrange,Course_ID,num
+course_arrange,Teacher_ID,num
+course_arrange,Grade,num
+teacher,Teacher_ID,num
+teacher,Name,string
+teacher,Age,string
+teacher,Hometown,string

@@ -1,0 +1,11 @@
+table_name,column_name,column_type
+editor,Editor_ID,num
+editor,Name,string
+editor,Age,num
+journal,Journal_ID,num
+journal,Date,string
+journal,Theme,string
+journal,Sales,num
+journal_committee,Editor_ID,num
+journal_committee,Journal_ID,num
+journal_committee,Work_Type,string

@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+countries,id,num
+countries,name,string
+countries,overall_score,num
+countries,justice_score,num
+countries,health_score,num
+countries,education_score,num
+countries,economics_score,num
+countries,politics_score,num
+languages,id,num
+languages,name,string
+official_languages,language_id,num
+official_languages,country_id,num

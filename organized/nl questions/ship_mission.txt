@@ -1,0 +1,31 @@
+nl_question
+How many ships are there?
+What is the number of ships?
+List the name of ships in ascending order of tonnage.
+what are the names of the ships ordered by ascending tonnage?
+What are the type and nationality of ships?
+What are the types and nationalities of every ship?
+List the name of ships whose nationality is not "United States".
+What are the names of the ships that are not from the United States?
+Show the name of ships whose nationality is either United States or United Kingdom.
+What are the names of the ships  that are from either the US or the UK?
+What is the name of the ship with the largest tonnage?
+What is the ship with the largest amount of tonnage called?
+Show different types of ships and the number of ships of each type.
+For each type, how many ships are there?
+Please show the most common type of ships.
+What is the most common type of ships?
+List the nations that have more than two ships.
+What are the nations that have more than two ships?
+Show different types of ships and the average tonnage of ships of each type.
+For each type, what is the average tonnage?
+Show codes and fates of missions, and names of ships involved.
+What are the mission codes, fates, and names of the ships involved?
+Show names of ships involved in a mission launched after 1928.
+What are the names of ships that were involved in a mission launched after 1928?
+Show the distinct fate of missions that involve ships with nationality "United States"
+What are the different fates of the mission that involved ships from the United States?
+List the name of ships that are not involved in any mission
+What are the names of the ships that are not involved in any missions?
+Show the types of ships that have both ships with tonnage larger than 6000 and ships with tonnage smaller than 4000.
+What are the types of the ships that have both shiips with tonnage more than 6000 and those with tonnage less than 4000?

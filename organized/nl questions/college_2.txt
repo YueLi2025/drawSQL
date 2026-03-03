@@ -1,0 +1,171 @@
+nl_question
+Find the buildings which have rooms with capacity more than 50.
+What are the distinct buildings with capacities of greater than 50?
+Count the number of rooms that are not in the Lamberton building.
+How many classrooms are not in Lamberton?
+What is the name and building of the departments whose budget is more than the average budget?
+Give the name and building of the departments with greater than average budget.
+Find the room number of the rooms which can sit 50 to 100 students and their buildings.
+What are the room numbers and corresponding buildings for classrooms which can seat between 50 to 100 students?
+Find the name and building of the department with the highest budget.
+What is the department name and corresponding building for the department with the greatest budget?
+What is the name of the student who has the highest total credits in the History department.
+Give the name of the student in the History department with the most credits.
+How many rooms does the Lamberton building have?
+Count the number of classrooms in Lamberton.
+How many students have advisors?
+Count the number of students who have advisors.
+How many departments offer courses?
+Count the number of departments which offer courses.
+How many different courses offered by Physics department?
+Count the number of courses in the Physics department.
+Find the title of courses that have two prerequisites?
+What are the titles for courses with two prerequisites?
+Find the title, credit, and department name of courses that have more than one prerequisites?
+What is the title, credit value, and department name for courses with more than one prerequisite?
+How many courses that do not have prerequisite?
+Count the number of courses without prerequisites.
+Find the name of the courses that do not have any prerequisite?
+What are the titles of courses without prerequisites?
+How many different instructors have taught some course?
+Count the number of distinct instructors who have taught a course.
+Find the total budgets of the Marketing or Finance department.
+What is the sum of budgets of the Marketing and Finance departments?
+Find the department name of the instructor whose name contains 'Soisalon'.
+What is the name of the department with an instructure who has a name like 'Soisalon'?
+How many rooms whose capacity is less than 50 does the Lamberton building have?
+Count the number of rooms in Lamberton with capacity lower than 50.
+Find the name and budget of departments whose budgets are more than the average budget.
+What are the names and budgets of departments with budgets greater than the average?
+what is the name of the instructor who is in Statistics department and earns the lowest salary?
+Give the name of the lowest earning instructor in the Statistics department.
+Find the title of course that is provided by both Statistics and Psychology departments.
+What is the title of a course that is listed in both the Statistics and Psychology departments?
+Find the title of course that is provided by Statistics but not Psychology departments.
+What are the titles of courses that are in the Statistics department but not the Psychology department?
+Find the id of instructors who taught a class in Fall 2009 but not in Spring 2010.
+What are the ids of instructors who taught in the Fall of 2009 but not in the Spring of 2010?
+Find the name of students who took any class in the years of 2009 and 2010.
+What are the names of the students who took classes in 2009 or 2010?
+Find the names of the top 3 departments that provide the largest amount of courses?
+What are the names of the 3 departments with the most courses?
+Find the name of the department that offers the highest total credits?
+What is the name of the department with the most credits?
+List the names of all courses ordered by their titles and credits.
+Given the titles of all courses, in order of titles and credits.
+Which department has the lowest budget?
+Give the name of the department with the lowest budget.
+List the names and buildings of all departments sorted by the budget from large to small.
+What are the names and buildings of the deparments, sorted by budget descending?
+Who is the instructor with the highest salary?
+Give the name of the highest paid instructor.
+List the information of all instructors ordered by their salary in ascending order.
+Give all information regarding instructors, in order of salary from least to greatest.
+Find the name of the students and their department names sorted by their total credits in ascending order.
+What are the names of students and their respective departments, ordered by number of credits from least to greatest?
+list in alphabetic order all course names and their instructors' names in year 2008.
+Show all titles and their instructors' names for courses in 2008, in alphabetical order by title.
+Find the name of instructors who are advising more than one student.
+What are the names of instructors who advise more than one student?
+Find the name of the students who have more than one advisor?
+What are the names of students who have more than one advisor?
+Find the number of rooms with more than 50 capacity for each building.
+How many rooms in each building have a capacity of over 50?
+Find the maximum and average capacity among rooms in each building.
+What are the greatest and average capacity for rooms in each building?
+Find the title of the course that is offered by more than one department.
+What are the titles of courses that are offered in more than one department?
+Find the total credits of courses provided by different department.
+How many total credits are offered by each department?
+Find the minimum salary for the departments whose average salary is above the average payment of all instructors.
+What is the lowest salary in departments with average salary greater than the overall average.
+Find the number of courses provided in each semester and year.
+How many courses are provided in each semester and year?
+Find the year which offers the largest number of courses.
+Which year had the greatest number of courses?
+Find the year and semester when offers the largest number of courses.
+What is the year and semester with the most courses?
+Find the name of department has the highest amount of students?
+What is the name of the deparment with the highest enrollment?
+Find the total number of students in each department.
+How many students are in each department?
+Find the semester and year which has the least number of student taking any class.
+Which semeseter and year had the fewest students?
+What is the id of the instructor who advises of all students from History department?
+Give id of the instructor who advises students in the History department.
+Find the name and salary of the instructors who are advisors of any student from History department?
+What are the names and salaries of instructors who advises students in the History department?
+Find the id of the courses that do not have any prerequisite?
+What are the ids of courses without prerequisites?
+Find the name of the courses that do not have any prerequisite?
+What are the names of courses without prerequisites?
+What is the title of the prerequisite class of International Finance course?
+Give the title of the prerequisite to the course International Finance.
+Find the title of course whose prerequisite is course Differential Geometry.
+What is the title of the course with Differential Geometry as a prerequisite?
+Find the names of students who have taken any course in the fall semester of year 2003.
+What are the names of students who took a course in the Fall of 2003?
+What is the title of the course that was offered at building Chandler during the fall semester in the year of 2010?
+Give the title of the course offered in Chandler during the Fall of 2010.
+Find the name of the instructors who taught C Programming course before.
+What are the names of instructors who have taught C Programming courses?
+Find the name and salary of instructors who are advisors of the students from the Math department.
+What are the names and salaries of instructors who advise students in the Math department?
+Find the name of instructors who are advisors of the students from the Math department, and sort the results by students' total credit.
+What are the names of all instructors who advise students in the math depart sorted by total credits of the student.
+What is the course title of the prerequisite of course Mobile Computing?
+What is the title of the course that is a prerequisite for Mobile Computing?
+Find the name of instructor who is the advisor of the student who has the highest number of total credits.
+What is the name of the instructor who advises the student with the greatest number of total credits?
+Find the name of instructors who didn't teach any courses?
+What are the names of instructors who didn't teach?
+Find the id of instructors who didn't teach any courses?
+What are the ids of instructors who didnt' teach?
+Find the names of instructors who didn't each any courses in any Spring semester.
+What are the names of instructors who didn't teach courses in the Spring?
+Find the name of the department which has the highest average salary of professors.
+Which department has the highest average instructor salary?
+Find the number and averaged salary of all instructors who are in the department with the highest budget.
+How many instructors are in the department with the highest budget, and what is their average salary?
+What is the title and credits of the course that is taught in the largest classroom (with the highest capacity)?
+Give the title and credits for the course that is taught in the classroom with the greatest capacity.
+Find the name of students who didn't take any course from Biology department.
+What are the names of students who haven't taken any Biology courses?
+Find the total number of students and total number of instructors for each department.
+How many students and instructors are in each department?
+Find the name of students who have taken the prerequisite course of the course with title International Finance.
+What are the names of students who have taken the prerequisite for the course International Finance?
+Find the name and salary of instructors whose salary is below the average salary of the instructors in the Physics department.
+What are the names and salaries for instructors who earn less than the average salary of instructors in the Physics department?
+Find the name of students who took some course offered by Statistics department.
+What are the names of students who have taken Statistics courses?
+Find the building, room number, semester and year of all courses offered by Psychology department sorted by course titles.
+What are the building, room number, semester and year of courses in the Psychology department, sorted using course title?
+Find the names of all instructors in computer science department
+What are the names of all instructors in the Comp. Sci. department?
+Find the names of all instructors in Comp. Sci. department with salary > 80000.
+What are the names of the instructors in the Comp. Sci. department who earn more than 80000?
+Find the names of all instructors who have taught some course and the course_id.
+What are the names of all instructors who have taught a course, as well as the corresponding course id?
+Find the names of all instructors in the Art department who have taught some course and the course_id.
+What are the names of Art instructors who have taught a course, and the corresponding course id?
+Find the names of all instructors whose name includes the substring “dar”.
+What are the names of all instructors with names that include "dar"?
+List in alphabetic order the names of all distinct instructors.
+List the distinct names of the instructors, ordered by name.
+Find courses that ran in Fall 2009 or in Spring 2010.
+What are the ids for courses in the Fall of 2009 or the Spring of 2010?
+Find courses that ran in Fall 2009 and in Spring 2010.
+What are the ids for courses that were offered in both Fall of 2009 and Spring of 2010?
+Find courses that ran in Fall 2009 but not in Spring 2010.
+What are the ids of courses offered in Fall of 2009 but not in Spring of 2010?
+Find the salaries of all distinct instructors that are less than the largest salary.
+What are the distinct salaries of all instructors who earned less than the maximum salary?
+Find the total number of instructors who teach a course in the Spring 2010 semester.
+How many instructors teach a course in the Spring of 2010?
+Find the names and average salaries of all departments whose average salary is greater than 42000.
+What are the names and average salaries for departments with average salary higher than 42000?
+Find names of instructors with salary greater than that of some (at least one) instructor in the Biology department.
+What are the names of instructors who earn more than at least one instructor from the Biology department?
+Find the names of all instructors whose salary is greater than the salary of all instructors in the Biology department.
+What are the names of all instructors with a higher salary than any of the instructors in the Biology department?

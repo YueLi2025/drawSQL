@@ -1,0 +1,12 @@
+table_name,column_name,column_type
+Acceptance,Submission_ID,num
+Acceptance,Workshop_ID,num
+Acceptance,Result,string
+submission,Submission_ID,num
+submission,Scores,num
+submission,Author,string
+submission,College,string
+workshop,Workshop_ID,num
+workshop,Date,string
+workshop,Venue,string
+workshop,Name,string

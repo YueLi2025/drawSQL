@@ -1,0 +1,41 @@
+nl_question
+How many assessment notes are there in total?
+What are the dates of the assessment notes?
+How many addresses have zip code 197?
+How many distinct incident type codes are there?
+Return all distinct detention type codes.
+What are the start and end dates for incidents with incident type code "NOISE"?
+Return all detention summaries.
+Return the cell phone number and email address for all students.
+What is the email of the student with first name "Emma" and last name "Rohan"?
+How many distinct students have been in detention?
+What is the gender of the teacher with last name "Medhurst"?
+What is the incident type description for the incident type with code "VIOLENCE"?
+Find the maximum and minimum monthly rental for all student addresses.
+Find the first names of teachers whose email address contains the word "man".
+List all information about the assessment notes sorted by date in ascending order.
+List all cities of addresses in alphabetical order.
+Find the first names and last names of teachers in alphabetical order of last name.
+Find all information about student addresses, and sort by monthly rental in descending order.
+Find the id and first name of the student that has the most number of assessment notes?
+Find the ids and first names of the 3 teachers that have the most number of assessment notes?
+Find the id and last name of the student that has the most behavior incidents?
+Find the id and last name of the teacher that has the most detentions with detention type code "AFTER"?
+What are the id and first name of the student whose addresses have the highest average monthly rental?
+Find the id and city of the student address with the highest average monthly rental.
+What are the code and description of the most frequent behavior incident type?
+What are the code and description of the least frequent detention type ?
+Find the dates of assessment notes for students with first name "Fanny".
+Find the texts of assessment notes for teachers with last name "Schuster".
+Find the start and end dates of behavior incidents of students with last name "Fahey".
+Find the start and end dates of detentions of teachers with last name "Schultz".
+What are the id and zip code of the address with the highest monthly rental?
+What is the cell phone number of the student whose address has the lowest monthly rental?
+What are the monthly rentals of student addresses in Texas state?
+What are the first names and last names of students with address in Wisconsin state?
+What are the line 1 and average monthly rentals of all student addresses?
+What is the zip code of the address where the teacher with first name "Lyla" lives?
+What are the email addresses of teachers whose address has zip code "918"?
+How many students are not involved in any behavior incident?
+Find the last names of teachers who are not involved in any detention.
+What are the line 1 of addresses shared by some students and some teachers?

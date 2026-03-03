@@ -1,0 +1,41 @@
+nl_question
+How many schools are there?
+Count the number of schools.
+List the locations of schools in ascending order of enrollment.
+What is the list of school locations sorted in ascending order of school enrollment?
+List the locations of schools in descending order of founded year.
+What is the list of school locations sorted in descending order of school foundation year?
+What are the enrollments of schools whose denomination is not "Catholic"?
+List the enrollment for each school that does not have "Catholic" as denomination.
+What is the average enrollment of schools?
+Take the average of the school enrollment.
+What are the teams of the players, sorted in ascending alphabetical order?
+Find the team of each player and sort them in ascending alphabetical order.
+How many different positions of players are there?
+Count the number of distinct player positions.
+Find the team of the player of the highest age.
+Which team has the oldest player?
+List the teams of the players with the top 5 largest ages.
+What are the teams that have the 5 oldest players?
+For each player, show the team and the location of school they belong to.
+What are the team and the location of school each player belongs to?
+Show the locations of schools that have more than 1 player.
+Which schools have more than 1 player? Give me the school locations.
+Show the denomination of the school that has the most players.
+What is the denomination of the school the most players belong to?
+Show locations and nicknames of schools.
+What are the location and nickname of each school?
+Please show different denominations and the corresponding number of schools.
+For each denomination, return the denomination and the count of schools with that denomination.
+Please show different denominations and the corresponding number of schools in descending order.
+Order denominations in descending order of the count of schools with the denomination. Return each denomination with the count of schools.
+List the school color of the school that has the largest enrollment.
+What is the school color of the school with the largest enrollment?
+List the locations of schools that do not have any player.
+Which schools do not have any player? Give me the school locations.
+Show the denomination shared by schools founded before 1890 and schools founded after 1900
+What are the denominations used by both schools founded before 1890 and schools founded  after 1900?
+Show the nicknames of schools that are not in division 1.
+What are the nicknames of schools whose division is not 1?
+Show the denomination shared by more than one school.
+What are the denomination more than one school have?

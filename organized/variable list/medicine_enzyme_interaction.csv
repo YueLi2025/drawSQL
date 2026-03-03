@@ -1,0 +1,15 @@
+table_name,column_name,column_type
+enzyme,id,num
+enzyme,name,string
+enzyme,Location,string
+enzyme,Product,string
+enzyme,Chromosome,string
+enzyme,OMIM,num
+enzyme,Porphyria,string
+medicine,id,num
+medicine,name,string
+medicine,Trade_Name,string
+medicine,FDA_approved,string
+medicine_enzyme_interaction,enzyme_id,num
+medicine_enzyme_interaction,medicine_id,num
+medicine_enzyme_interaction,interaction_type,string

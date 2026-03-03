@@ -1,0 +1,54 @@
+nl_question
+List all the course IDs for professional or master/graduate courses.
+Provide the ID of professors who are teaching high-level or harder undergraduate course.
+Which level of courses is taught by professor ID 297?
+Provide the ID of professors who teach in both harder undergraduate course and master/graduate courses.
+Which are the courses with the most number of professors? State the course ID and the level of the course.
+How many basic and medium undergraduate courses are there?
+Which course has more teachers, course no.16 or course no.18?
+Is the teacher who teaches course no.9 a faculty member?
+Please list the levels of the all courses taught by teacher no.79.
+What is the level of the course with the most number of teachers?
+Please list the IDs of the professors that teaches more than 3 courses.
+What is the average number of courses taught by a professor?
+Calculate the percentage of high-level undergraduate course.
+List down the advised student IDs and IDs of employing professor in faculty.
+Mention the person ID of faculty professor who taught course ID 104 and the course level.
+Find the professor ID and position in faculty who taught high-level undergraduate course of less than 10 in ID.
+List the professor ID who taught the course ID from 121 to 130 of basic undergraduate courses.
+List any five of course IDs with professor IDs who taught master courses.
+Which professor taught the least amount of courses?
+How many advisors are in charge of advising all the students in 1st year?
+What is the position in the faculty of the professor who teaches the highest number of courses?
+What year in the program do the students with more than 2 advisors are in?
+Among the students being advised by advisors, which students' year in the program do the advisors advise the majority of?
+What is the average number of professional or master/undergraduate courses being taught by each professor?
+How many courses were taught by more than 4 people?
+Which professor taught the most courses and what is the position of this person in the university?
+How many professors are teaching course ID 18?
+List the ID and years in program for students taught by advisor with ID 5.
+Find the ID of advisor of student ID 80 and state the level of courses taught by him/her.
+How many people teaches course no.11?
+How many teachers are faculty employees?
+Please list the IDs of the teachers who have advised more than 4 others to teach.
+Please list the IDs of the advisors of the students who are in the 5th year of their program.
+What is the ratio of professors and students?
+Provide the position status and IDs of professor who advised student ID "303".
+List the person IDs and course levels of the affiliated professors in faculty.
+List the course IDs and levels of person IDs from 40 to 50.
+How many non-faculty members are not undergoing the phase of qualifications?
+Among the students being advised by Advisor 5, how many students are in the 5th year?
+How many professors teaches no more than two high-level or harder undergraduate courses?
+How many professors teaches basic or medium undergraduate courses?
+What is the total of professional courses available at the university? List out all the course id.
+What is the sum of year 1 and year 2 students?
+Name the advisors for students in Year 3 of the program.
+What level is course 165? List the professors who teach the course.
+Who are the professors who gave advice to students in the 12th years of program?
+Among the faculty affiliated professor, how many professors teaches professional or master/undergraduate courses?
+Which courses were taught by a professor who is not a faculty member?
+In total, all the students in the 3rd year of their program are advised by how many professors?
+Describe the year in program and in phase status for the student with most number in advisor.
+List the advisor IDs for students with eighth year of program and position status in faculty of those professors.
+How many students are under advisor 415?
+How many professional or master/graduate courses are there?

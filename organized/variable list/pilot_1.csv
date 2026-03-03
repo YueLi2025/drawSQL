@@ -1,0 +1,6 @@
+table_name,column_name,column_type
+Hangar,plane_name,string
+Hangar,location,string
+PilotSkills,pilot_name,string
+PilotSkills,plane_name,string
+PilotSkills,age,num

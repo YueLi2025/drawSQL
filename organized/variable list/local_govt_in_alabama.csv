@@ -1,0 +1,11 @@
+table_name,column_name,column_type
+Events,Event_ID,num
+Events,Service_ID,num
+Events,Event_Details,string
+Participants,Participant_ID,num
+Participants,Participant_Type_Code,string
+Participants,Participant_Details,string
+Participants_in_Events,Event_ID,num
+Participants_in_Events,Participant_ID,num
+Services,Service_ID,num
+Services,Service_Type_Code,string

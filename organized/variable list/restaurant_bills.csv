@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+branch,Branch_ID,num
+branch,Manager,string
+branch,Years_opened,num
+branch,Location_of_office,string
+customer,Customer_ID,num
+customer,Name,string
+customer,Nationality,string
+customer,Card_Credit,num
+customer,Level_of_Membership,num
+customer_order,Customer_ID,num
+customer_order,Branch_ID,num
+customer_order,Dish_Name,string
+customer_order,Quantity,num

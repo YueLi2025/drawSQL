@@ -1,0 +1,121 @@
+nl_question
+On which day was the most verbose complaint received?
+Which complaint is more urgent, complaint ID CR2400594 or ID CR2405641?
+What is the detailed product of the complaint filed by Diesel Galloway on 2014/7/3?
+For how long was the complaint filed by Matthew Pierce on 2016/10/28 delayed?
+What is the full name of the client whose complaint on 2017/3/27 was received by MICHAL?
+For how long did the complaint filed on 2017/3/27 by Rachel Hicks last?
+Please list the full names of all the clients whose complaints are still in progress.
+How many complaints on credit cards in the year 2016 were filed by male clients?
+Which division is Diesel Galloway in?
+What is the percentage of the increase of complaints filed by the clients from New York from the year 2016 to the year 2017?
+What was the serve time for the complaint call from client "C00007127" on 2017/2/22?
+Which detailed product did Mr Lennox Oliver Drake complain about?
+Did Ms. Lyric Emely Taylor provide the consent for result of the complaint call on 2016/5/20?
+How many days delay for the complaint call from Mr. Brantley Julian Stanley on 2012/5/18?
+What was the review context from Jacksonville on 2017/7/22?
+Which product received a review from Indianapolis on 2016/10/7?
+How many stars did "Eagle Capital" received from Little Rock on 2013/4/4?
+For the client who made the complaint call "CR0217298", what was his/her birthday？
+For all the complaint callers on 2017/3/27, what percentage of the clients are females?
+Which product got the most five stars, and how many?
+Calculate the average age of clients from the Midwest region.
+In the calls from the mountain division, how many are from teenage clients?
+Among the clients born between 1980 and 2000, list the name of male clients who complained through referral.
+What is the medium through which most complaints are registered in Florida?
+Calculate the average number of complaints received from New Bedford each year which are closed with explanation.
+Among the calls from California, what percentage are priority 1?
+Calculate the difference in the average age of elderly and middle-aged clients in the Northeast region.
+List by their ID the complaints received by the company on 25/09/2014 that took the longest.
+In which region have the most 1-star reviews been done?
+How many male clients are from the state of Massachusetts?
+List by name all customers who provided consent for the tag Older American.
+How many complaints made by women and served after 3 pm received a timely response from the company?
+How many complaints were served in 5 minutes or less by DORIT and responded to the customer with an explanation, were made by phone?
+How many reviews by people between 30 and 50 years include the word 'great'?
+What is the full address of the customers who, having received a timely response from the company, have dispute about that response?
+What is the average age of Norwalk clients?
+How many clients who live in Kansas City provided a 1-star review?
+Which state has the highest number of clients who gave a 5-star review?
+Which region does Noah Thompson live in?
+What are the products that people who were born after 2005 complain about?
+How long was Kendall Allen's complaint about her credit card?
+What was the issue that the client with the longest server time faced?
+What is the percentage of male clients complaining about their credit cards?
+Please list any two clients with their full names who have been tagged as "Older American" by the company without seeking their permission.
+List the full names of all clients who live in the Pacific division.
+List all the issues of the complaints made by Kaitlyn Eliza Elliott.
+Which region has the second most clients?
+Who is the owner of the final phone number for the complaints on server "MORIAH" on 9/11/2013?
+Among the teenager clients who use Google account and Microsoft account, which group of client is more than the other?
+What is the first name of clients who have the highest priority?
+Among the elderlies, state the last name of whose complaint is handled in server YIFAT?
+How many clients who live in New York City have the complaint outcome as "AGENT"?
+Which product received the most complaints from elder clients?
+Complaint about Credit Card mostly came from clients of which age group?
+What is the full name of clients who have issue about balance transfer?
+What is the email address of clients who submitted their complaints via postal mail?
+Calculate the average age of clients whose response is "Closed with relief".
+How many times per year does a credit card customer complain about overlimit fees?
+Give me the full birthdate, email and phone number of the youngest client in Indianapolis .
+List the full names and phone numbers of clients that were from the Pacific.
+Please calculate the number of clients by each division.
+What is the average age of clients in South Atlantic?
+Which city in the Midwest region has the least number of clients?
+Which city in West North Central has the highest number of customers over the age of 60?
+Which state has the most cities?
+In 2015, how many complaints about Billing disputes were sent by clients in Portland?
+Among the complaints received in year 2015, what is total number of complaints timely response and closed with an explanation?
+Among the female clients that age between 20 to 40, list the date when their complaints were received.
+List the product reviewed with 1 star on March 14, 2016 from Newton, Massachusetts.
+In reviews for the Eagle National Bank product, how many of the 5 star reviews where from Nashville, Tennessee?
+What are the issues of the complains of male clients and products from age 25 and below?
+Among the reviews from midwest region, what are the products that received 1 star?
+In complaints about the credit card product, list the phone number of the oldest client.
+In complaints received in 2014, how many of them were submitted via call?
+List the product and its issues of the complains of clients with age greater than the 60% of average age of all clients.
+In reviews of product with 5 stars, what is the percentage of the reviews coming from the division of East North Central?
+When did the earliest complaint start on 2017/3/22?
+Was the tag in the complaint filed by Matthew Pierce on 2016/10/28 approved by himself?
+Please list the full names of all the male clients in the Pacific division.
+Which district did the review on 2018/9/11 come from? Give the name of the city.
+List all the states in the South region.
+What is the number of complaints related to Credit cards came from female clients?
+List by their ID number the 3 longest complaints.
+How many clients have an email account other than gmail.com?
+How many Credit Card complaints did Sharon handle?
+How many cases of billing dispute issues occurred in the Mountain division?
+Lists the last name of all clients who made a PS-type complaint and were served by TOVA.
+How many clients with the last name Alvarado are from Maryland?
+How many complaints from female clients born in the year 2000 were not sent through the web?
+What percentage of clients who sent their complaints by postal mail are age 50 and older?
+How did Kyran Muller submit his complaint?
+How many times does the consumer have no dispute over a non-timely response from the company?
+How many of the complaints are longer than 15 minutes?
+What is the address of the client who made a complaint via postal mail on March 14, 2012?
+List all the server of the phone complaints with a late response from the company.
+Compute the average time in minute for each age group
+What percentage of complaints are from the elderly?
+What is the full name of client whose email address is emily.garcia43@outlook.com?
+Calculate the percentage of complaints made by Google account client in server ZOHARI.
+Pick 5 clients with 0 priority and write down their last name.
+Write down the call id of clients whose first name start with alphabet "B".
+State the first name of male clients who did not receive timely response from the call center.
+List down the issues for complaint with server time of below 10 minutes.
+Write the complaint ID, call ID, and final phone number of complaints through AVIDAN server from 1/1/2014 to 12/30/2014.
+What is the longest server time when the call is about the issue of arbitration?
+Please list all clients' phone numbers and complaint IDs which are still in progress.
+List the products involved in the complaints received on March 2017 via TOVA server.
+Among all the clients from the New York city, how many of them have filed a complaint on the issue of Deposits and withdrawals?
+Please list the full name, date of birth, and email id of the elderly clients in descending order of age.
+List the full name and phone number of clients who submitted the complaint via fax.
+How many complaints are not in process with an agent?
+How many clients under the age of 35 gave Eagle National Mortgage 1 star?
+Please list all first and last names of clients who live in New York city.
+Please give the first name and phone number of the client whose complaint id is CR0922485.
+Please list the emails of the clients whose complaint date received is 7/3/2014.
+What is the average number of complaints on credit cards filed by clients from New York in the 3 consecutive years starting from 2015?
+In what years were the clients who demanded more problems with Certificate of deposit born?
+What is the birth date of the youngest client?
+What is the oldest age of male clients?
+In 2012, how many complaints about Credit card product came from clients in Omaha?

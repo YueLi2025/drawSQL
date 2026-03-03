@@ -1,0 +1,41 @@
+nl_question
+How many poker players are there?
+Count the number of poker players.
+List the earnings of poker players in descending order.
+What are the earnings of poker players, ordered descending by value?
+List the final tables made and the best finishes of poker players.
+What are the final tables made and best finishes for all poker players?
+What is the average earnings of poker players?
+Return the average earnings across all poker players.
+What is the money rank of the poker player with the highest earnings?
+Return the money rank of the player with the greatest earnings.
+What is the maximum number of final tables made among poker players with earnings less than 200000?
+Return the maximum final tables made across all poker players who have earnings below 200000.
+What are the names of poker players?
+Return the names of all the poker players.
+What are the names of poker players whose earnings is higher than 300000?
+Give the names of poker players who have earnings above 300000.
+List the names of poker players ordered by the final tables made in ascending order.
+What are the names of poker players, ordered ascending by the number of final tables they have made?
+What is the birth date of the poker player with the lowest earnings?
+Return the birth date of the poker player with the lowest earnings.
+What is the money rank of the tallest poker player?
+Return the money rank of the poker player with the greatest height.
+What is the average earnings of poker players with height higher than 200?
+Give average earnings of poker players who are taller than 200.
+What are the names of poker players in descending order of earnings?
+Return the names of poker players sorted by their earnings descending.
+What are different nationalities of people and the corresponding number of people from each nation?
+How many people are there of each nationality?
+What is the most common nationality of people?
+Give the nationality that is most common across all people.
+What are the nationalities that are shared by at least two people?
+Return the nationalities for which there are two or more people.
+List the names and birth dates of people in ascending alphabetical order of name.
+What are the names and birth dates of people, ordered by their names in alphabetical order?
+Show names of people whose nationality is not "Russia".
+What are the names of people who are not from Russia?
+List the names of people that are not poker players.
+What are the names of people who do not play poker?
+How many distinct nationalities are there?
+Count the number of different nationalities.

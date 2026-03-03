@@ -1,0 +1,24 @@
+soft_templates
+SELECT variable FROM variable WHERE variable like string GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable WHERE variable = string ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable WHERE variable = string ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT count(*) FROM variable WHERE variable like string
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable WHERE variable = string GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable WHERE variable LIKE string GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable WHERE variable LIKE string GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT count(*) FROM variable WHERE variable = string
+SELECT count(*) FROM variable
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable WHERE variable LIKE string GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT count(*) FROM variable WHERE variable LIKE string
+SELECT count(*) FROM variable WHERE variable LIke string
+SELECT variable FROM variable WHERE variable LIke string GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) LIMIT num
+SELECT variable FROM variable WHERE variable = string GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable WHERE variable = string GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable WHERE variable = string GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable WHERE variable = string

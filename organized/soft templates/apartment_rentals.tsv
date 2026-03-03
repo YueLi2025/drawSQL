@@ -1,0 +1,81 @@
+soft_templates
+SELECT count(*) FROM variable
+SELECT count(*) FROM variable
+SELECT variable , variable FROM variable
+SELECT variable , variable FROM variable
+SELECT DISTINCT variable FROM variable
+SELECT DISTINCT variable FROM variable
+SELECT variable FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable = string
+SELECT variable , variable FROM variable WHERE variable = string
+SELECT variable , variable FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable LIKE string
+SELECT variable FROM variable WHERE variable LIKE string
+SELECT min( variable ) , max( variable ) FROM variable
+SELECT min( variable ) , max( variable ) FROM variable
+SELECT avg( variable ) FROM variable
+SELECT avg( variable ) FROM variable
+SELECT apt_number , variable FROM variable
+SELECT apt_number , variable FROM variable
+SELECT avg( variable ) FROM variable WHERE apt_type_code = string
+SELECT avg( variable ) FROM variable WHERE apt_type_code = string
+SELECT apt_number FROM variable WHERE apt_type_code = string
+SELECT apt_number FROM variable WHERE apt_type_code = string
+SELECT variable , variable FROM variable
+SELECT variable , variable FROM variable
+SELECT variable FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable = string
+SELECT variable , variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT variable , variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable > num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable > num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT avg( variable ) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT avg( variable ) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT variable , variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable > num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable > num
+SELECT sum(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT sum(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT sum(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT sum(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable > num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable > num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , COUNT(*) FROM variable GROUP BY variable
+SELECT variable , COUNT(*) FROM variable GROUP BY variable
+SELECT apt_number FROM variable ORDER BY variable ASC
+SELECT apt_number FROM variable ORDER BY variable ASC
+SELECT apt_number FROM variable ORDER BY variable DESC LIMIT num
+SELECT apt_number FROM variable ORDER BY variable DESC LIMIT num
+SELECT apt_type_code , COUNT(*) FROM variable GROUP BY apt_type_code ORDER BY COUNT(*) ASC
+SELECT apt_type_code , COUNT(*) FROM variable GROUP BY apt_type_code ORDER BY COUNT(*) ASC
+SELECT apt_type_code FROM variable GROUP BY apt_type_code ORDER BY avg( variable ) DESC LIMIT num
+SELECT apt_type_code FROM variable GROUP BY apt_type_code ORDER BY avg( variable ) DESC LIMIT num
+SELECT apt_type_code , variable , variable FROM variable GROUP BY apt_type_code ORDER BY sum( variable ) DESC LIMIT num
+SELECT apt_type_code , variable , variable FROM variable GROUP BY apt_type_code ORDER BY sum( variable ) DESC LIMIT num
+SELECT apt_type_code FROM variable GROUP BY apt_type_code ORDER BY count(*) DESC LIMIT num
+SELECT apt_type_code FROM variable GROUP BY apt_type_code ORDER BY count(*) DESC LIMIT num
+SELECT apt_type_code FROM variable WHERE variable > num GROUP BY apt_type_code ORDER BY count(*) DESC LIMIT num
+SELECT apt_type_code FROM variable WHERE variable > num GROUP BY apt_type_code ORDER BY count(*) DESC LIMIT num
+SELECT apt_type_code , max( variable ) , min( variable ) FROM variable GROUP BY apt_type_code
+SELECT apt_type_code , max( variable ) , min( variable ) FROM variable GROUP BY apt_type_code
+SELECT variable , COUNT(*) FROM variable GROUP BY variable ORDER BY COUNT(*) DESC
+SELECT variable , COUNT(*) FROM variable GROUP BY variable ORDER BY COUNT(*) DESC
+SELECT count(*) FROM variable WHERE apt_id NOT IN (SELECT apt_id FROM variable)
+SELECT count(*) FROM variable WHERE apt_id NOT IN (SELECT apt_id FROM variable)
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string INTERSECT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string INTERSECT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num INTERSECT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num INTERSECT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = num

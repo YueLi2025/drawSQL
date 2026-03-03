@@ -1,0 +1,45 @@
+nl_question
+How many vehicles do we have?
+Count the number of vehicles.
+Show names for all vehicles in descending order of model year.
+What are the names of all vehicles, ordered by model year descending?
+List all distinct types of powertrain of vehicles.
+What are the different types of powertrains?
+Show name, type of powertrain, and annual fuel cost for all vehicles with model year 2013 or 2014.
+What are the names, types of powertrains, and yearly fuel costs for vehicles with model years in either 2013 2014?
+Show types of powertrain with vehicles both from 2014 and 2013.
+What are the types of powertrains that have vehicles that were made in both 2013 and 2014?
+Show all types of powertrain and the number of vehicles in each type.
+How many vehicles have each type of powertrain?
+What is the type of powertrain with most number of vehicles.
+Which type of powertrain is most common?
+Show minimum, maximum, and average annual fuel cost for all vehicles.
+What are the minimum, maximum, and average annual fuel costs across all vehicles?
+Show name and model year for vehicles with city fuel economy rate less than or equal to highway fuel economy rate.
+What are the names and model years for vehicles that have a city fuel economy rate less than or equal to its highway fuel economy rate?
+Show the type of powertrain with at least two vehicles, and the average annual fuel cost for vehicles in each such type.
+What are the types of powertrains for which there are two or more vehicles, and what are their average annual fuel costs?
+Show the name, age, membership credit for all customers?
+What are the names, ages, and membership credits for all customers?
+Show the name and age of the customer with maximum membership credit.
+What is the name and age of the customer with the most membership credit?
+What is the average age for customers with a membership credit above the average?
+Return the average age for customers who have membership above the average across all customers.
+Show all information for all discounts.
+Return all information about discounts.
+Show the name and total hours of renting for each vehicle.
+What are the names and total rental hours for each vehicle?
+Show the name of vehicles with no renting history.
+What are the names of vehicles that have never been rented?
+Show the name of customer with at least two renting history records.
+What are the names of customers who have two or more records of rental history?
+Show the name and model year of the vehicle with most number of renting history records.
+What is the name and model year of the vehicle which has been rented the most times?
+Show the vehicle name with a descending order of total hours of renting.
+What are the names of vehicles, sorted descending by total hours of renting?
+What is the discount name with most number of renting history records?
+Return the name of the discount that corresponds to the most rental history records.
+Find the name and powertrain type of the cars that rented for more than 30 total hours.
+What are the names and powertrain types of cars that have more than 30 total rental hours?
+Find the average city and highway fuel rates for cars with different powertrain types.
+What are the average city fuel economy rate, average highway fuel economy rate for different types of powertrains?

@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+mission,Mission_ID,num
+mission,Ship_ID,num
+mission,Code,string
+mission,Launched_Year,num
+mission,Location,string
+mission,Speed_knots,num
+mission,Fate,string
+ship,Ship_ID,num
+ship,Name,string
+ship,Type,string
+ship,Nationality,string
+ship,Tonnage,num

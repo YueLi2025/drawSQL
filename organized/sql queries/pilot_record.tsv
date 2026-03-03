@@ -1,0 +1,16 @@
+sql_query
+SELECT count(*) FROM pilot
+SELECT Pilot_name FROM pilot ORDER BY Rank ASC
+SELECT POSITION ,  Team FROM pilot
+SELECT DISTINCT POSITION FROM pilot WHERE Age  >  30
+SELECT Pilot_name FROM pilot WHERE Team  =  "Bradley" OR Team  =  "Fordham"
+SELECT Join_Year FROM pilot ORDER BY Rank ASC LIMIT 1
+SELECT Nationality ,  COUNT(*) FROM pilot GROUP BY Nationality
+SELECT Nationality FROM pilot GROUP BY Nationality ORDER BY COUNT(*) DESC LIMIT 1
+SELECT POSITION FROM pilot WHERE Join_Year  <  2000 INTERSECT SELECT POSITION FROM pilot WHERE Join_Year  >  2005
+SELECT T3.Pilot_name ,  T2.Model FROM pilot_record AS T1 JOIN aircraft AS T2 ON T1.Aircraft_ID  =  T2.Aircraft_ID JOIN pilot AS T3 ON T1.Pilot_ID  =  T3.Pilot_ID
+SELECT T3.Pilot_name ,  T2.Fleet_Series FROM pilot_record AS T1 JOIN aircraft AS T2 ON T1.Aircraft_ID  =  T2.Aircraft_ID JOIN pilot AS T3 ON T1.Pilot_ID  =  T3.Pilot_ID ORDER BY T3.Rank
+SELECT T2.Fleet_Series FROM pilot_record AS T1 JOIN aircraft AS T2 ON T1.Aircraft_ID  =  T2.Aircraft_ID JOIN pilot AS T3 ON T1.Pilot_ID  =  T3.Pilot_ID WHERE T3.Age  <  34
+SELECT T2.Pilot_name ,  COUNT(*) FROM pilot_record AS T1 JOIN pilot AS T2 ON T1.pilot_ID  =  T2.pilot_ID GROUP BY T2.Pilot_name
+SELECT T2.Pilot_name ,  COUNT(*) FROM pilot_record AS T1 JOIN pilot AS T2 ON T1.pilot_ID  =  T2.pilot_ID GROUP BY T2.Pilot_name HAVING COUNT(*)  >  1
+SELECT Pilot_name FROM pilot WHERE Pilot_ID NOT IN (SELECT Pilot_ID FROM pilot_record)

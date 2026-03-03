@@ -1,0 +1,16 @@
+table_name,column_name,column_type
+author,Author_ID,num
+author,Name,string
+author,Age,num
+author,Gender,string
+book,Book_ID,num
+book,Title,string
+book,Book_Series,string
+book,Author_ID,num
+book,Press_ID,num
+book,Sale_Amount,string
+book,Release_date,string
+press,Press_ID,num
+press,Name,string
+press,Month_Profits_billion,num
+press,Year_Profits_billion,num

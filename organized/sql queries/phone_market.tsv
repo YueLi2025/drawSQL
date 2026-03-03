@@ -1,0 +1,16 @@
+sql_query
+SELECT count(*) FROM phone
+SELECT Name FROM phone ORDER BY Price ASC
+SELECT Memory_in_G ,  Carrier FROM phone
+SELECT DISTINCT Carrier FROM phone WHERE Memory_in_G  >  32
+SELECT Name FROM phone WHERE Carrier  =  "Sprint" OR Carrier  =  "TMobile"
+SELECT Carrier FROM phone ORDER BY Price DESC LIMIT 1
+SELECT Carrier ,  COUNT(*) FROM phone GROUP BY Carrier
+SELECT Carrier FROM phone GROUP BY Carrier ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Carrier FROM phone WHERE Memory_in_G  <  32 INTERSECT SELECT Carrier FROM phone WHERE Memory_in_G  >  64
+SELECT T3.Name ,  T2.District FROM phone_market AS T1 JOIN market AS T2 ON T1.Market_ID  =  T2.Market_ID JOIN phone AS T3 ON T1.Phone_ID  =  T3.Phone_ID
+SELECT T3.Name ,  T2.District FROM phone_market AS T1 JOIN market AS T2 ON T1.Market_ID  =  T2.Market_ID JOIN phone AS T3 ON T1.Phone_ID  =  T3.Phone_ID ORDER BY T2.Ranking
+SELECT T3.Name FROM phone_market AS T1 JOIN market AS T2 ON T1.Market_ID  =  T2.Market_ID JOIN phone AS T3 ON T1.Phone_ID  =  T3.Phone_ID WHERE T2.Num_of_shops  >  50
+SELECT T2.Name ,  sum(T1.Num_of_stock) FROM phone_market AS T1 JOIN phone AS T2 ON T1.Phone_ID  =  T2.Phone_ID GROUP BY T2.Name
+SELECT T2.Name FROM phone_market AS T1 JOIN phone AS T2 ON T1.Phone_ID  =  T2.Phone_ID GROUP BY T2.Name HAVING sum(T1.Num_of_stock)  >=  2000 ORDER BY sum(T1.Num_of_stock) DESC
+SELECT Name FROM phone WHERE Phone_id NOT IN (SELECT Phone_ID FROM phone_market)

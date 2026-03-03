@@ -1,0 +1,42 @@
+table_name,column_name,column_type
+Customers,Customer Names,string
+Customers,CustomerID,num
+Products,Product Name,string
+Products,ProductID,num
+Regions,Region,string
+Regions,State,string
+Regions,StateCode,string
+Sales Orders,CurrencyCode,string
+Sales Orders,DeliveryDate,date
+Sales Orders,Discount Applied,num
+Sales Orders,Order Quantity,num
+Sales Orders,OrderDate,date
+Sales Orders,OrderNumber,string
+Sales Orders,ProcuredDate,date
+Sales Orders,Sales Channel,string
+Sales Orders,ShipDate,date
+Sales Orders,Unit Cost,string
+Sales Orders,Unit Price,string
+Sales Orders,WarehouseCode,string
+Sales Orders,_CustomerID,num
+Sales Orders,_ProductID,num
+Sales Orders,_SalesTeamID,num
+Sales Orders,_StoreID,num
+Sales Team,Region,string
+Sales Team,Sales Team,string
+Sales Team,SalesTeamID,num
+Store Locations,AreaCode,num
+Store Locations,City Name,string
+Store Locations,County,string
+Store Locations,Household Income,num
+Store Locations,Land Area,num
+Store Locations,Latitude,num
+Store Locations,Longitude,num
+Store Locations,Median Income,num
+Store Locations,Population,num
+Store Locations,State,string
+Store Locations,StateCode,string
+Store Locations,StoreID,num
+Store Locations,Time Zone,string
+Store Locations,Type,string
+Store Locations,Water Area,num

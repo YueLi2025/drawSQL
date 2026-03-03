@@ -1,0 +1,16 @@
+table_name,column_name,column_type
+finrev fed 17,state code,num
+finrev fed 17,idcensus,num
+finrev fed 17,school district,string
+finrev fed 17,nces id,string
+finrev fed 17,yr data,num
+finrev fed 17,t fed rev,num
+finrev fed 17,c14,num
+finrev fed 17,c25,num
+ndecoreexcel math grade8,year,num
+ndecoreexcel math grade8,state,string
+ndecoreexcel math grade8,all students,string
+ndecoreexcel math grade8,average scale score,num
+finrev fed key 17,state code,num
+finrev fed key 17,state,string
+finrev fed key 17,# records,string

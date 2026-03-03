@@ -1,0 +1,112 @@
+nl_question
+List all the businesses with more than 4.5 stars
+List all businesses with rating 3.5
+List all user ids with name Michelle
+Find all states in which there is a Whataburger
+Find all cities in which there is a restaurant called " MGM Grand Buffet "
+Find the cities of businesses rated below 1.5
+Find all cities which has a " Taj Mahal " .
+List all the reviews which rated a business less than 1
+List all the restaurant rated more than 3.5
+find all cities which has a " Taj Mahal " restaurant
+list all the reviews by Niloofar
+list all the businesses which have a review by Niloofar
+list all the businesses which Niloofar rated 5
+List all the reviews by Michelle for Italian restaurant
+find the number of reviews written for " Cafe Zinho " restaurant in Texas
+List all 5 star Italian restaurant
+List all the neighbourhoods with Italian restaurant in Madison
+List all the neighbourhoods with Italian restaurant rated less than 2.5 in Madison
+find all the restaurant in Pennsylvania
+List all businesses that are restaurant in Pennsylvania .
+Find all the reviews for all Pet Groomers with more than 100 reviews
+What are all the breweries in " Los Angeles " ?
+Find all breweries in Los Angeles
+Find all breweries in " Los Angeles "
+Find all users who reviewed restaurant " Mesa Grill "
+List the addresses of all Walmart in " Los Angeles "
+Find all restaurant reviewed by Patrick in " Dallas "
+Which restaurant in Dallas were reviewed by user Patrick ?
+Find all Bars reviewed by Patrick
+Find all Bars reviewed by Patrick with at least 3 stars
+Find all users who have written tips for " Barrio Cafe " in 2015
+Find all businesses in Texas with a rating below 2
+Find all restaurant Seafood in Los Angeles
+List all the Seafood restaurant in " Los Angeles "
+Find all restaurant that serve Seafood in " Los Angeles "
+Find all reviews by Patrick with a rating above 4
+Find all Apple Store in " Los Angeles "
+Find all Dallas restaurant with a rating above 4.5
+What neighbourhood is restaurant " Flat Top Grill " in ?
+Find all tips about " Vintner Grill " that received more than 9 likes
+Find all reviews about " Kabob Palace " in year 2014
+Find all users who have written tips about businesses in Dallas
+Find all cities in Texas in which there is a restaurant called " MGM Grand Buffet "
+Find the users who have given tips on Pet Groomers
+Find all tips for " Cafe Zinho " in Texas .
+List all users who reviewed businesses that are restaurant .
+List all tips for " Cafe Zinho " in Pennsylvania in 2010 .
+List all users who reviewed businesses that are restaurant in 2010 .
+Find all the tips from a user who has written a review in 2012
+Find all reviews for businesses rated 2.5
+find the number of escape games in Madison
+What is the number of escape games in Madison
+How many escape games exist in Madison
+What is the number of escape games in " Madison " ?
+How many escape games are there in Madison ?
+find the number of restaurant rated more than 3.5
+find the total checkins in Moroccan restaurant in " Los Angeles "
+find the total checkins in Moroccan restaurant in " Los Angeles " on Friday
+find the total checkins in Moroccan restaurant in " Los Angeles " per day
+find the total checkins in Italian Delis in each state on Sunday
+How many reviews has Niloofar written in 2015
+what is the average rating given in Michelle reviews
+What is the number of checkins for " Cafe Zinho " on Friday
+how many users reviewed " Sushi Too " in Pittsburgh
+What is the number of restaurant in Pittsburgh rated 4.5
+How many tips have been written in 2015
+What is the total likes on tips from Niloofar
+What is the total likes on tips about " Cafe Zinho "
+What is the total likes on tips from Niloofar about " Cafe Zinho "
+How many tips has Michelle written in 2010
+Return me the number of tips that are written by Michelle in 2010 .
+How many tips has Michelle written in April
+what is the number of restaurant in Texas
+How many Bars in " Dallas " have a rating above 3.5 ?
+How many Bars in Dallas have a rating above 3.5 ?
+How many people reviewed the restaurant " Texas de Brazil " in Dallas Texas ?
+How many people reviewed " Bistro Di Napoli " in 2015 ?
+How many restaurant are there in the Hazelwood district of Dallas ?
+How many Starbucks are there in Dallas Texas ?
+How many reviews does " Acacia Cafe " have ?
+Find the average number of checkins in restaurant " Barrio Cafe " per day
+How many businesses are there in the " Stone Meadows " neighbourhood in Madison ?
+How many reviews has Adrienne written ?
+How many reviews has Michelle written in March 2014 ?
+How many businesses has Michelle reviewed in 2010 ?
+How many businesses in " San Diego " has Christine reviewed in 2010 ?
+How many Target are there in " Los Angeles " ?
+How many users have reviewed Irish Pub in Dallas ?
+What is the average rating of reviews written in year 2014 ?
+How many people reviewed restaurant " Vintner Grill " in 2010 ?
+Find the number of reviews on businesses located in " South Summerlin " neighbourhood
+Find the number of users called Michelle
+Return me the number of businesses that are restaurant .
+Return me the number of cities that has " Panda Express " .
+Return me the number of tips that are written by Michelle .
+Find the total checkins in " Brighton Heights " neighbourhood
+Find the total number of reviews written in March
+Find the number of tips written in each month
+How many neighbourhoods have a business with rating 5 in Madison ?
+Give me all the Moroccan restaurant in Texas
+which business has the most number of checkins
+which neighbourhood has the most number of businesses in Madison
+Find all Mexican restaurant in Dallas with at least 3.5 stars
+Find all Mexican restaurant in Dallas with a rating above 3.5
+Find all restaurant with Valet Service in Dallas Texas
+Find all Italian restaurant in the Meadowood neighbourhood of Madison
+Find all Bars in " Los Angeles " with at least 30 reviews and average rating above 3 stars
+How many Egyptian restaurant are there in Edinburgh ?
+Find users whose average review rating is below 3
+Find the business with the most number of reviews in April
+Find the business which has the most number of categories

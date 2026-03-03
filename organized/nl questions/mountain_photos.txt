@@ -1,0 +1,18 @@
+nl_question
+How many camera lenses have a focal length longer than 15 mm?
+Find the brand and name for each camera lens, and sort in descending order of maximum aperture.
+List the id, color scheme, and name for all the photos.
+What are the maximum and average height of the mountains?
+What are the average prominence of the mountains in country 'Morocco'?
+What are the name, height and prominence of mountains which do not belong to the range 'Aberdare Range'?
+What are the id and name of the photos for mountains?
+What are the id and name of the mountains that have at least 2 photos?
+What are the names of the cameras that have taken picture of the most mountains?
+What are the names of photos taken with the lens brand 'Sigma' or 'Olympus'?
+How many different kinds of lens brands are there?
+How many camera lenses are not used in taking any photos?
+How many distinct kinds of camera lenses are used to take photos of mountains in the country 'Ethiopia'?
+List the brands of lenses that took both a picture of mountains with range 'Toubkal Atlas' and a picture of mountains with range 'Lasta Massif'
+Show the name and prominence of the mountains whose picture is not taken by a lens of brand 'Sigma'.
+List the camera lens names containing substring "Digital".
+What is the name of each camera lens and the number of photos taken by it? Order the result by the count of photos.

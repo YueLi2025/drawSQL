@@ -1,0 +1,27 @@
+nl_question
+How many schools are there?
+Count the number of schools.
+Show all school names in alphabetical order.
+List the name, location, mascot for all schools.
+What are the total and average enrollment of all schools?
+What are the mascots for schools with enrollments above the average?
+List the name of the school with the smallest enrollment.
+Show the average, maximum, minimum enrollment of all schools.
+Show each county along with the number of schools and total enrollment in each county.
+How many donors have endowment for school named "Glenn"?
+List each donator name and the amount of endowment in descending order of the amount of endowment.
+List the names of the schools without any endowment.
+List all the names of schools with an endowment amount smaller than or equal to 10.
+Show the names of donors who donated to both school "Glenn" and "Triton."
+Show the names of all the donors except those whose donation amount less than 9.
+List the amount and donor name for the largest amount of donation.
+How many budgets are above 3000 in year 2001 or before?
+Count the number of budgets in year 2001 or before whose budgeted amount is greater than 3000
+Show each school name, its budgeted amount, and invested amount in year 2002 or after.
+Show all donor names.
+How many budget record has a budget amount smaller than the invested amount?
+What is the total budget amount for school "Glenn" in all years?
+Show the names of schools with a total budget amount greater than 100 or a total endowment greater than 10.
+Find the names of schools that have more than one donator with donation amount above 8.5.
+Find the number of schools that have more than one donator whose donation amount is less than 8.5.
+List the name, IHSAA Football Class, and Mascot of the schools that have more than 6000 of budgeted amount or were founded before 2003, in the order of percent of total invested budget and total budgeted budget.

@@ -1,0 +1,79 @@
+sql_query
+SELECT * FROM Sailors WHERE age  >  30
+SELECT * FROM Sailors WHERE age  >  30
+SELECT name ,  age FROM Sailors WHERE age  <  30
+SELECT name ,  age FROM Sailors WHERE age  <  30
+SELECT DISTINCT bid FROM Reserves WHERE sid = 1
+SELECT DISTINCT bid FROM Reserves WHERE sid = 1
+SELECT T1.name FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid WHERE T2.bid  =  102
+SELECT T1.name FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid WHERE T2.bid  =  102
+SELECT DISTINCT bid FROM Reserves
+SELECT DISTINCT bid FROM Reserves
+SELECT name FROM Sailors WHERE name LIKE '%e%'
+SELECT name FROM Sailors WHERE name LIKE '%e%'
+SELECT DISTINCT sid FROM Sailors WHERE age  >  (SELECT min(age) FROM Sailors);
+SELECT DISTINCT sid FROM Sailors WHERE age  >  (SELECT min(age) FROM Sailors);
+SELECT DISTINCT name FROM Sailors WHERE age  >  (SELECT min(age) FROM Sailors WHERE rating  >  7);
+SELECT DISTINCT name FROM Sailors WHERE age  >  (SELECT min(age) FROM Sailors WHERE rating  >  7);
+SELECT DISTINCT T1.name ,  T1.sid FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid
+SELECT DISTINCT T1.name ,  T1.sid FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid
+SELECT DISTINCT T1.name ,  T1.sid FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid GROUP BY T2.sid HAVING COUNT(*)  >  1
+select distinct t1.name ,  t1.sid from sailors as t1 join reserves as t2 on t1.sid  =  t2.sid group by t2.sid having count(*)  >=  2
+SELECT DISTINCT T2.sid FROM Boats AS T1 JOIN Reserves AS T2 ON  T1.bid  =  T2.bid WHERE T1.color  =  'red' OR T1.color  =  "blue"
+SELECT DISTINCT T2.sid FROM Boats AS T1 JOIN Reserves AS T2 ON  T1.bid  =  T2.bid WHERE T1.color  =  'red' OR T1.color  =  "blue"
+SELECT DISTINCT T2.sid ,  T3.name FROM Boats AS T1 JOIN Reserves AS T2 ON  T1.bid  =  T2.bid JOIN Sailors AS T3 ON T2.sid  =  T3.sid WHERE T1.color  =  'red' OR T1.color  =  "blue"
+SELECT DISTINCT T2.sid ,  T3.name FROM Boats AS T1 JOIN Reserves AS T2 ON  T1.bid  =  T2.bid JOIN Sailors AS T3 ON T2.sid  =  T3.sid WHERE T1.color  =  'red' OR T1.color  =  "blue"
+SELECT DISTINCT T2.sid FROM Boats AS T1 JOIN Reserves AS T2 ON  T1.bid  =  T2.bid WHERE T1.color  =  'red' INTERSECT SELECT DISTINCT T2.sid FROM Boats AS T1 JOIN Reserves AS T2 ON  T1.bid  =  T2.bid WHERE T1.color  =  "blue"
+SELECT DISTINCT T2.sid FROM Boats AS T1 JOIN Reserves AS T2 ON  T1.bid  =  T2.bid WHERE T1.color  =  'red' INTERSECT SELECT DISTINCT T2.sid FROM Boats AS T1 JOIN Reserves AS T2 ON  T1.bid  =  T2.bid WHERE T1.color  =  "blue"
+SELECT DISTINCT T2.sid ,  T3.name FROM Boats AS T1 JOIN Reserves AS T2 ON  T1.bid  =  T2.bid JOIN Sailors AS T3 ON T2.sid  =  T3.sid WHERE T1.color  =  'red' INTERSECT SELECT DISTINCT T2.sid ,  T3.name FROM Boats AS T1 JOIN Reserves AS T2 ON  T1.bid  =  T2.bid JOIN Sailors AS T3 ON T2.sid  =  T3.sid WHERE T1.color  =  "blue"
+SELECT DISTINCT T2.sid ,  T3.name FROM Boats AS T1 JOIN Reserves AS T2 ON  T1.bid  =  T2.bid JOIN Sailors AS T3 ON T2.sid  =  T3.sid WHERE T1.color  =  'red' INTERSECT SELECT DISTINCT T2.sid ,  T3.name FROM Boats AS T1 JOIN Reserves AS T2 ON  T1.bid  =  T2.bid JOIN Sailors AS T3 ON T2.sid  =  T3.sid WHERE T1.color  =  "blue"
+SELECT sid FROM Sailors EXCEPT SELECT sid FROM Reserves
+SELECT sid FROM Sailors EXCEPT SELECT sid FROM Reserves
+SELECT sid ,  name FROM Sailors EXCEPT SELECT T1.sid ,  T1.name FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid
+SELECT sid ,  name FROM Sailors EXCEPT SELECT T1.sid ,  T1.name FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid
+SELECT sid FROM Sailors EXCEPT SELECT T1.sid FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid
+SELECT sid FROM Sailors EXCEPT SELECT T1.sid FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid
+SELECT DISTINCT T1.name FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid WHERE  T2.bid  =  103
+SELECT DISTINCT T1.name FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid WHERE  T2.bid  =  103
+SELECT name FROM Sailors WHERE rating  >  (SELECT min(rating) FROM Sailors WHERE name  =  'Luis')
+SELECT name FROM Sailors WHERE rating  >  (SELECT min(rating) FROM Sailors WHERE name  =  'Luis')
+SELECT name FROM Sailors WHERE rating  >  (SELECT max(rating) FROM Sailors WHERE name  =  'Luis')
+SELECT name FROM Sailors WHERE rating  >  (SELECT max(rating) FROM Sailors WHERE name  =  'Luis')
+SELECT DISTINCT T1.name ,  T1.sid FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid WHERE  T1.rating  >  2
+SELECT DISTINCT T1.name ,  T1.sid FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid WHERE  T1.rating  >  2
+SELECT name ,  age FROM Sailors WHERE age  =  ( SELECT max(age) FROM Sailors )
+SELECT name ,  age FROM Sailors WHERE age  =  ( SELECT max(age) FROM Sailors )
+SELECT COUNT(*) FROM Sailors
+SELECT COUNT(*) FROM Sailors
+SELECT AVG(age) FROM Sailors WHERE rating  =  7
+SELECT AVG(age) FROM Sailors WHERE rating  =  7
+select count(*) from sailors where name like 'd%'
+select count(*) from sailors where name like 'd%'
+SELECT AVG(rating) ,  MAX(age) FROM Sailors
+SELECT AVG(rating) ,  MAX(age) FROM Sailors
+SELECT bid ,  count(*) FROM Reserves GROUP BY bid
+SELECT bid ,  count(*) FROM Reserves GROUP BY bid
+SELECT bid ,  count(*) FROM Reserves GROUP BY bid HAVING bid  >  50
+SELECT bid ,  count(*) FROM Reserves GROUP BY bid HAVING bid  >  50
+SELECT bid ,  count(*) FROM Reserves GROUP BY bid HAVING count(*)  >  1
+SELECT bid ,  count(*) FROM Reserves GROUP BY bid HAVING count(*)  >  1
+SELECT bid ,  count(*) FROM Reserves WHERE sid  >  1 GROUP BY bid
+SELECT bid ,  count(*) FROM Reserves WHERE sid  >  1 GROUP BY bid
+SELECT T1.rating ,  avg(T1.age) FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid JOIN Boats AS T3 ON T3.bid  =  T2.bid WHERE T3.color  =  'red' GROUP BY T1.rating
+SELECT T1.rating ,  avg(T1.age) FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid JOIN Boats AS T3 ON T3.bid  =  T2.bid WHERE T3.color  =  'red' GROUP BY T1.rating
+SELECT name ,  rating ,  age FROM Sailors ORDER BY rating ,  age
+SELECT name ,  rating ,  age FROM Sailors ORDER BY rating ,  age
+SELECT count(*) FROM Boats
+SELECT count(*) FROM Boats
+SELECT count(*) FROM Boats WHERE color  =  'red'
+SELECT count(*) FROM Boats WHERE color  =  'red'
+SELECT T3.name FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid JOIN Boats AS T3 ON T3.bid  =  T2.bid WHERE T1.age BETWEEN 20 AND 30
+SELECT T3.name FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid JOIN Boats AS T3 ON T3.bid  =  T2.bid WHERE T1.age BETWEEN 20 AND 30
+SELECT name FROM Sailors WHERE rating  >  (SELECT max(T1.rating) FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid JOIN Boats AS T3 ON T3.bid  =  T2.bid WHERE T3.color  =  'red')
+SELECT name FROM Sailors WHERE rating  >  (SELECT max(T1.rating) FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid JOIN Boats AS T3 ON T3.bid  =  T2.bid WHERE T3.color  =  'red')
+SELECT max(rating) FROM Sailors
+SELECT max(rating) FROM Sailors
+SELECT T1.name FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid JOIN Boats AS T3 ON T3.bid  =  T2.bid WHERE T3.name  =  'Melon'
+SELECT T1.name FROM Sailors AS T1 JOIN Reserves AS T2 ON T1.sid  =  T2.sid JOIN Boats AS T3 ON T3.bid  =  T2.bid WHERE T3.name  =  'Melon'
+SELECT name ,  age FROM Sailors ORDER BY rating DESC
+SELECT name ,  age FROM Sailors ORDER BY rating DESC

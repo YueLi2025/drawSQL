@@ -1,0 +1,12 @@
+table_name,column_name,column_type
+club,Club_ID,num
+club,Overall_Ranking,num
+club,Team_Leader,string
+club,Club_Name,string
+club_leader,Club_ID,num
+club_leader,Member_ID,num
+club_leader,Year_Join,string
+member,Member_ID,num
+member,Name,string
+member,Nationality,string
+member,Age,num

@@ -1,0 +1,23 @@
+nl_question
+Show me all the restaurants.
+What is the address of the restaurant Subway?
+What is the rating of the restaurant Subway?
+List all restaurant types.
+What is the description of the restaurant type Sandwich?
+Which restaurants have highest rating? List the restaurant name and its rating.
+What is the age of student Linda Smith?
+What is the gender of the student Linda Smith?
+List all students' first names and last names who majored in 600.
+Which city does student Linda Smith live in?
+Advisor 1121 has how many students?
+Which Advisor has most of students? List advisor and the number of students.
+Which major has least number of students? List the major and the number of students.
+Which major has between 2 and 30 number of students? List major and the number of students.
+Which student's age is older than 18 and is majoring in 600? List each student's first and last name.
+List all female students age is older than 18 who is not majoring in 600. List students' first name and last name.
+How many restaurant is the Sandwich type restaurant?
+How long does student Linda Smith spend on the restaurant in total?
+How many times has the student Linda Smith visited Subway?
+When did Linda Smith visit Subway?
+At which restaurant did the students spend the least amount of time? List restaurant and the time students spent on in total.
+Which student visited restaurant most often? List student's first name and last name.

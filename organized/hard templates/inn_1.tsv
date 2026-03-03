@@ -1,0 +1,75 @@
+hard_templates
+SELECT roomName FROM table_name WHERE basePrice < num AND col_name = num AND col_name = string ;
+SELECT roomName FROM table_name WHERE basePrice < num AND col_name = num AND col_name = string ;
+SELECT roomName , RoomId FROM table_name WHERE basePrice > num AND maxOccupancy > num ;
+SELECT roomName , RoomId FROM table_name WHERE basePrice > num AND maxOccupancy > num ;
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY count(*) DESC LIMIT num ;
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY count(*) DESC LIMIT num ;
+SELECT col_name FROM table_name WHERE FirstName = string AND LastName = string ;
+SELECT col_name FROM table_name WHERE FirstName = string AND LastName = string ;
+SELECT count(*) FROM table_name WHERE FirstName = string AND LastName = string ;
+SELECT count(*) FROM table_name WHERE FirstName = string AND LastName = string ;
+SELECT table_alias1.col_name , table_alias0.col_name , table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY table_alias0.col_name DESC LIMIT num ;
+SELECT table_alias1.col_name , table_alias0.col_name , table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name ORDER BY table_alias0.col_name DESC LIMIT num ;
+SELECT col_name FROM table_name WHERE CheckIn = string AND FirstName = string AND LastName = string ;
+SELECT col_name FROM table_name WHERE CheckIn = string AND FirstName = string AND LastName = string ;
+SELECT col_name FROM table_name WHERE CheckIn = string AND FirstName = string AND LastName = string ;
+SELECT col_name FROM table_name WHERE CheckIn = string AND FirstName = string AND LastName = string ;
+SELECT sum( col_name ) FROM table_name WHERE bedtype = string ;
+SELECT sum( col_name ) FROM table_name WHERE bedtype = string ;
+SELECT roomName , col_name FROM table_name WHERE bedtype = string ORDER BY basePrice;
+SELECT roomName , col_name FROM table_name WHERE bedtype = string ORDER BY basePrice;
+SELECT roomName , basePrice FROM table_name ORDER BY basePrice ASC LIMIT num ;
+SELECT roomName , basePrice FROM table_name ORDER BY basePrice ASC LIMIT num ;
+SELECT col_name FROM table_name WHERE roomName = string ;
+SELECT col_name FROM table_name WHERE roomName = string ;
+SELECT bedType , avg(basePrice) FROM table_name GROUP BY bedType;
+SELECT bedType , avg(basePrice) FROM table_name GROUP BY bedType;
+SELECT sum(maxOccupancy) FROM table_name WHERE col_name = string ;
+SELECT sum(maxOccupancy) FROM table_name WHERE col_name = string ;
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name ORDER BY count(table_alias1.col_name) ASC LIMIT num ;
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name ORDER BY count(table_alias1.col_name) ASC LIMIT num ;
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = table_alias0.col_name + table_alias0.col_name;
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = table_alias0.col_name + table_alias0.col_name;
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name - table_alias1.col_name > num
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name - table_alias1.col_name > num
+SELECT count(*) FROM Rooms;
+SELECT count(*) FROM Rooms;
+SELECT count(*) FROM table_name WHERE bedType = string ;
+SELECT count(*) FROM table_name WHERE bedType = string ;
+SELECT bedType , count(*) FROM table_name GROUP BY bedType;
+SELECT bedType , count(*) FROM table_name GROUP BY bedType;
+SELECT roomName FROM table_name ORDER BY maxOccupancy DESC LIMIT num ;
+SELECT roomName FROM table_name ORDER BY maxOccupancy DESC LIMIT num ;
+SELECT RoomId , roomName FROM table_name ORDER BY basePrice DESC LIMIT num ;
+SELECT RoomId , roomName FROM table_name ORDER BY basePrice DESC LIMIT num ;
+SELECT roomName , bedType FROM table_name WHERE col_name = string ;
+SELECT roomName , bedType FROM table_name WHERE col_name = string ;
+SELECT col_name , count(*) FROM table_name WHERE bedType = string GROUP BY col_name ;
+SELECT col_name , count(*) FROM table_name WHERE bedType = string GROUP BY col_name ;
+SELECT col_name , avg(basePrice) , min(basePrice) FROM table_name GROUP BY col_name ;
+SELECT col_name , avg(basePrice) , min(basePrice) FROM table_name GROUP BY col_name ;
+SELECT roomName FROM table_name ORDER BY basePrice;
+SELECT roomName FROM table_name ORDER BY basePrice;
+SELECT col_name , count(*) FROM table_name WHERE basePrice > num GROUP BY col_name ;
+SELECT col_name , count(*) FROM table_name WHERE basePrice > num GROUP BY col_name ;
+SELECT bedType , avg(basePrice) FROM table_name GROUP BY bedType;
+SELECT bedType , avg(basePrice) FROM table_name GROUP BY bedType;
+SELECT roomName FROM table_name WHERE bedType = string OR bedType = string ;
+SELECT roomName FROM table_name WHERE bedType = string OR bedType = string ;
+SELECT count(DISTINCT bedType) FROM Rooms;
+SELECT count(DISTINCT bedType) FROM Rooms;
+SELECT RoomId , roomName FROM table_name ORDER BY basePrice DESC LIMIT num ;
+SELECT RoomId , roomName FROM table_name ORDER BY basePrice DESC LIMIT num ;
+SELECT roomName FROM table_name WHERE basePrice > ( SELECT avg(basePrice) FROM table_name );
+SELECT roomName FROM table_name WHERE basePrice > ( SELECT avg(basePrice) FROM table_name );
+SELECT count(*) FROM table_name WHERE roomid NOT IN (SELECT DISTINCT col_name FROM table_name)
+SELECT count(*) FROM table_name WHERE roomid NOT IN (SELECT DISTINCT col_name FROM table_name)
+SELECT table_alias1.col_name , count(*) , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name
+SELECT table_alias1.col_name , count(*) , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name HAVING count(*) > num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name HAVING count(*) > num
+SELECT roomname FROM table_name WHERE baseprice BETWEEN num AND num
+SELECT roomname FROM table_name WHERE baseprice BETWEEN num AND num
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE firstname LIKE string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE firstname LIKE string

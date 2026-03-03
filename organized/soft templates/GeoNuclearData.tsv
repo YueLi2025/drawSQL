@@ -1,0 +1,30 @@
+soft_templates
+SELECT variable FROM variable WHERE variable = string GROUP BY variable ORDER BY count(variable) DESC LIMIT num
+SELECT variable, variable FROM variable WHERE variable = string
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable WHERE variable = string
+SELECT count(*) FROM variable WHERE variable = string
+SELECT count(DISTINCT variable) FROM variable
+SELECT count(*) FROM variable WHERE variable = string
+SELECT variable FROM variable Group BY variable HAVING count(variable) > num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(variable) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable HAVING count(variable) = num
+SELECT variable FROM variable GROUP BY variable ORDER BY sum(variable) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY sum(variable) LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY sum(variable) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(variable) DESC LIMIT num
+SELECT variable FROM variable WHERE variable = string GROUP BY variable ORDER BY count(variable) DESC LIMIT num
+SELECT variable FROM variable ORDER BY variable DESC LIMIT num
+SELECT count(*) FROM variable WHERE variable = string and variable = string
+SELECT count(variable) FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable = string
+SELECT variable FROM variable where variable = string and variable = string
+SELECT variable FROM variable ORDER BY variable LIMIT num
+SELECT count(*) FROM variable WHERE variable = string AND variable = string
+SELECT variable FROM variable WHERE variable = string ORDER BY variable DESC LIMIT num
+SELECT max(variable) FROM variable WHERE variable = string and variable = string
+SELECT variable FROM variable WHERE variable = string GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable, variable FROM variable WHERE variable = string ORDER BY variable LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY avg(variable) DESC LIMIT num
+SELECT variable FROM variable WHERE variable = string

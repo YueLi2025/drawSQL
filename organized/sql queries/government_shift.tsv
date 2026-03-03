@@ -1,0 +1,41 @@
+sql_query
+select channel_details from channels order by channel_details
+select channel_details from channels order by channel_details
+SELECT count(*) FROM services
+SELECT count(*) FROM services
+SELECT analytical_layer_type_code FROM analytical_layer GROUP BY analytical_layer_type_code ORDER BY count(*) DESC LIMIT 1
+SELECT analytical_layer_type_code FROM analytical_layer GROUP BY analytical_layer_type_code ORDER BY count(*) DESC LIMIT 1
+SELECT t3.service_details FROM customers AS t1 JOIN customers_and_services AS t2 ON t1.customer_id  =  t2.customer_id JOIN services AS t3 ON t2.service_id  =  t3.service_id WHERE t1.customer_details  =  "Hardy Kutch"
+SELECT t3.service_details FROM customers AS t1 JOIN customers_and_services AS t2 ON t1.customer_id  =  t2.customer_id JOIN services AS t3 ON t2.service_id  =  t3.service_id WHERE t1.customer_details  =  "Hardy Kutch"
+select t1.service_details from services as t1 join customers_and_services as t2 on t1.service_id  =  t2.service_id group by t1.service_details having count(*)  >  3
+SELECT t1.service_details FROM services AS t1 JOIN customers_and_services AS t2 ON t1.service_id  =  t2.service_id GROUP BY t1.service_details HAVING count(*)  >  3
+SELECT t1.customer_details FROM customers AS t1 JOIN customers_and_services AS t2 ON t1.customer_id  =  t2.customer_id GROUP BY t1.customer_details ORDER BY count(*) DESC LIMIT 1
+select t1.customer_details from customers as t1 join customers_and_services as t2 on t1.customer_id  =  t2.customer_id group by t1.customer_details order by count(*) desc limit 1
+select t1.customer_details from customers as t1 join customers_and_services as t2 on t1.customer_id  =  t2.customer_id group by t1.customer_details order by count(*) desc limit 1
+select t1.customer_details from customers as t1 join customers_and_services as t2 on t1.customer_id  =  t2.customer_id group by t1.customer_details order by count(*) desc limit 1
+select customer_details from customers where customer_id not in (select customer_id from customers_and_services)
+select customer_details from customers where customer_id not in (select customer_id from customers_and_services)
+select distinct t1.customer_details from customers as t1 join customers_and_services as t2 on t1.customer_id  =  t2.customer_id where t2.service_id  =  (select service_id from services group by service_id order by count(*) asc limit 1)
+select distinct t1.customer_details from customers as t1 join customers_and_services as t2 on t1.customer_id  =  t2.customer_id where t2.service_id  =  (select service_id from services group by service_id order by count(*) asc limit 1)
+SELECT count(DISTINCT customers_and_services_details) FROM customers_and_services
+SELECT count(DISTINCT customers_and_services_details) FROM customers_and_services
+SELECT customer_details FROM customers WHERE customer_details LIKE "%Kutch%"
+SELECT customer_details FROM customers WHERE customer_details LIKE "%Kutch%"
+SELECT DISTINCT t3.service_details FROM customers AS t1 JOIN customers_and_services AS t2 ON t1.customer_id  =  t2.customer_id JOIN services AS t3 ON t2.service_id  =  t3.service_id JOIN customer_interactions AS t4 ON t3.service_id  =  t4.service_id WHERE t1.customer_details  =  "Hardy Kutch" OR t4.services_and_channels_details  =  "good"
+SELECT DISTINCT t3.service_details FROM customers AS t1 JOIN customers_and_services AS t2 ON t1.customer_id  =  t2.customer_id JOIN services AS t3 ON t2.service_id  =  t3.service_id JOIN customer_interactions AS t4 ON t3.service_id  =  t4.service_id WHERE t1.customer_details  =  "Hardy Kutch" OR t4.services_and_channels_details  =  "good"
+SELECT DISTINCT t3.service_details FROM customers AS t1 JOIN customers_and_services AS t2 ON t1.customer_id  =  t2.customer_id JOIN services AS t3 ON t2.service_id  =  t3.service_id JOIN customer_interactions AS t4 ON t3.service_id  =  t4.service_id WHERE t1.customer_details  =  "Hardy Kutch" AND t4.services_and_channels_details  =  "bad"
+SELECT DISTINCT t3.service_details FROM customers AS t1 JOIN customers_and_services AS t2 ON t1.customer_id  =  t2.customer_id JOIN services AS t3 ON t2.service_id  =  t3.service_id JOIN customer_interactions AS t4 ON t3.service_id  =  t4.service_id WHERE t1.customer_details  =  "Hardy Kutch" AND t4.services_and_channels_details  =  "bad"
+select distinct t1.service_details from services as t1 join customer_interactions as t2 on t1.service_id  =  t2.service_id join channels as t3 on t2.channel_id  =  t3.channel_id where t3.channel_details  =  "15 ij"
+SELECT DISTINCT t1.service_details FROM services AS t1 JOIN customer_interactions AS t2 ON t1.service_id  =  t2.service_id JOIN channels AS t3 ON t2.channel_id  =  t3.channel_id WHERE t3.channel_details  =  "15 ij"
+select t1.customer_details from customers as t1 join customer_interactions as t2 on t1.customer_id  =  t2.customer_id where t2.status_code  =  "stuck" and services_and_channels_details  =  "bad"
+SELECT t1.customer_details FROM customers AS t1 JOIN customer_interactions AS t2 ON t1.customer_id  =  t2.customer_id WHERE t2.status_code  =  "Stuck" AND services_and_channels_details  =  "bad"
+SELECT count(*) FROM integration_platform WHERE integration_platform_details  =  "Success"
+SELECT count(*) FROM integration_platform WHERE integration_platform_details  =  "Success"
+select distinct t1.customer_details from customers as t1 join customer_interactions as t2 on t1.customer_id  =  t2.customer_id join integration_platform as t3 where t3.integration_platform_details  =  "fail"
+SELECT DISTINCT t1.customer_details FROM customers AS t1 JOIN customer_interactions AS t2 ON t1.customer_id  =  t2.customer_id JOIN integration_platform AS t3 WHERE t3.integration_platform_details  =  "Fail"
+select service_details from services except select t2.service_details from customers_and_services as t1 join services as t2 on t1.service_id  =  t2.service_id
+select service_details from services except select t2.service_details from customers_and_services as t1 join services as t2 on t1.service_id  =  t2.service_id
+SELECT analytical_layer_type_code ,  count(*) FROM analytical_layer GROUP BY analytical_layer_type_code
+SELECT analytical_layer_type_code ,  count(*) FROM analytical_layer GROUP BY analytical_layer_type_code
+select distinct t1.service_details from services as t1 join customers_and_services as t2 on t1.service_id  =  t2.service_id where t2.customers_and_services_details  =  "unsatisfied"
+SELECT DISTINCT t1.service_details FROM services AS t1 JOIN customers_and_services AS t2 ON t1.service_id  =  t2.service_id WHERE t2.customers_and_services_details  =  "Unsatisfied"

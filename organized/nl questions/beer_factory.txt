@@ -1,0 +1,105 @@
+nl_question
+What is the name of the root beer brand that has the longest history?
+What is the name of the root beer brand with the lowest unit profit available to wholesalers?
+How many transactions had Frank-Paul Santangelo made in July, 2014?
+Among the transactions made in July, 2014, how many of them were made by a male customer?
+Among the users that permit the company to send regular emails to them, how many of them had made a transaction with a Visa card in July, 2014?
+Please list the brands of all the root beer that Frank-Paul Santangelo had purchased on 2014/7/7.
+Of the 4 root beers that Frank-Paul Santangelo purchased on 2014/7/7, how many of them were in cans?
+How many root beers of the Bulldog were purchased in August, 2014?
+What is the number of the credit card that Frank-Paul Santangelo used to purchase root beers on 2014/7/7?
+Among all the root beers purchased by Frank-Paul Santangelo, how many of them were non-sweetened?
+Tell the number of reviews given by James House.
+Show the credit card number of Lisa Ling.
+State the coordinate of Sac State American River Courtyard.
+Provide the name of the location where transaction no.100885 happened.
+Which city does the customer who finished transaction no.103545 live in?
+For the customer who leaves the review content of "Tastes like Australia.", when was his/her first purchase date?
+When did Natalie Dorris buy her first root beer?
+For the root beer brand with the most 5 star ratings, what is the name of the brewery?
+For the customer who gave a 3 star rating to Frostie brand on 2014/4/24, did the user permit the company to send regular emails to him/her?
+For the root beer brand which got the review with the content of "The quintessential dessert root beer. No ice cream required.", what is the current retail price of the root beer?
+What is the percentage of 5 star ratings River City brand root beer get?
+Which brand of root beer did Jayne Collins give the lowest rating?
+Which brewery does the most purchased root beer in 2016 belong to?
+What are the full names of the customer who gave River City a 5-star?
+How many root beers did Tom Hanks purchase between 2015 to 2016?
+Which brand of root beer was highly rated by customers?
+How many Henry Weinhard's were bought by Nicholas Sparks?
+Between Sac State Union and Sac State American River Courtyard, which location sold the most Dog n Suds root beer?
+What is the precise location of Sac State Union?
+What are the brands of the root beers that received 5-star ratings from no less than 5 customers?
+Among the root beer purchased in 2014, what percentage were sold in cans?
+Find the brand Id of the root beer which has the most number of customers who gave 1-star ratings.
+Among the transactions, what percentage is done by using a visa card?
+Calculate the percentage of sales done at Sac State American River Courtyard.
+What is the average cost of root beers purchased for more than 2 dollars and sold in bottles?
+Which root beer got the most five stars in 2012? Give the brand name of this beer.
+Calculate the difference between the number of root beers sold that use cane sugar and corn syrup.
+Find and list the full name and email of the customers who used American Express cards in Sac State Union.
+In the reviews of September 2014. Which brand of beers obtained the highest star ratings?
+What brands of beer has Peg Winchester consumed?
+What brand of beer has been the worst rated most times?
+What credit card is the most used in the purchase of non-alcoholic beer?
+What is the name of all the customers who have ever given a 5-star review?
+At what latitude is the Thomas Kemper brand beer consumed the most?
+What star rating is the most common for beers containing corn syrup?
+What is the precise location of zip code 95819?
+What brands of beers are manufactured at coordinates 38,566,129, -121,426,432?
+Tally the email addresses and phone numbers of customers from Sacramento who gave a star rating of more than 3 in 2014.
+Calculate the total purchases made by customers using their Visa credit cards in the Sac State American River Courtyard between 6/3/2014 and 11/27/2015.
+How many transactions were made in Sac State Union using the American Express credit card in 2014?
+What is the precise coordinate of Sac State Union?
+What did the customer say in his or her review of Bulldog root beer on 7/26/2013?
+List down the brand names of root beer that gained a 5-star rating from a customer's review in 2013. Calculate the unit profit available to wholesalers for each brand.
+What is the credit card type used by Kenneth Walton?
+How many transactions have been made to purchase a root beer brand from California?
+What is the amount difference between the bottles of root beer sold from Louisiana and Missouri?
+List out root beer brand that is not caffeinated and not containing cane sugar. What is the total amount sold for this products?
+Which of the root beer brand have the lowest purchase?
+What is the percentage difference of River City sale compare to Frostie?
+What is the percentage of female customers who subscribed to the email list?
+Which type of card did Dick Ruthven use to pay for all of his transactions?
+How many stars did Urijah Faber rate for Frostie?
+How many purchases were made at Sac State American River Courtyard using Master Card?
+Which brand in 2012 has the lowest star rating and contains cane sugar as well as honey?
+What is the precise location of the place where Tommy Kono made a purchase in 2014?
+Please name any three root beer brands that have the highest market evaluation and acceptance.
+What is the precise location of the Sac State American River Courtyard?
+How many breweries are located in North America?
+In which city is the brewery AJ Stephans Beverages located?
+What is the full name of the customer that had made the most transactions in August, 2014?
+Please list the full names of the customers who have purchased at least one root beer produced by AJ Stephans Beverages.
+Please list the dates on which a male customer has purchased more than 3 root beers.
+What is the average number of root beers of the brand A&W sold in a day in August, 2014?
+Among all the root beers sold in 2014, what is the percentage of the root beers produced by the brewery AJ Stephans Beverages?
+What is the average number of reviews of all the root beer brands from "CA" State?
+How many breweries are there in Australia?
+How many customers are named Charles in Sacramento?
+How many transactions were paid through MasterCard in 2014?
+How many canned A&W were purchased in 2016?
+How many brands of root beers are available in cans and contain corn syrup and artificial sweeteners?
+From which cities are the customers who gave 5 stars in their reviews in November 2012?
+What percentage of customers who paid with a Discover Credit Card gave a 3-star rating?
+List the brand IDs of the beers whose star rating is more than 3.
+What is the full name of the customer who gave a 5-star rating and commented "The quintessential dessert root beer. No ice cream required" on his review?
+Give me the brewery and brand names of canned root beer that were purchased before 6/6/2015.
+List out the root beer ID for the brand Bulldog, Bundaberg, Dad's, Dog n Suds and Virgil's.
+How many bottles of beer have been bought by Jim Breech?
+What is the average review given by a subscriber?
+What is the best seller root beer brand and what is the average star rating for this root beer?
+Please name all of the cities in California.
+What is the email address of the customer who made a purchase in transaction 100016?
+Which location sold more bottles of beer?
+What are the full names of the first top 10 customers?
+List the full name and phone number of male customers from Fair Oaks who are subscribed to the email list.
+Find the root beer with the most and least amount of profit per unit and list the container types in which these root beers are sold.
+How many Folsom customers prefer to pay with Visa?
+What is the average unit profit for wholesalers of canned beers?
+How many times did Anna Himes use her Mastercard when paying between 12/25/2014 and 5/20/2016 ?
+What is the transaction ratio being made at Sac State American River Courtyard and Sac State Union?
+Which brand has the lowest star rating with a "Too spicy!" review?
+Please list the names of all the root beer brands that are advertised on facebook.
+Which customer has the most reviews? State the full name.
+How many female customers permit the company to send regular emails to them?
+How many sweet bottled root beers that do not contain cane sugar were purchased in 2015 through the selling company located in Sac State American River Courtyard?

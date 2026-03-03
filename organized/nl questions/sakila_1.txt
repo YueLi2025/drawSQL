@@ -1,0 +1,83 @@
+nl_question
+How many different last names do the actors and actresses have?
+Count the number of different last names actors have.
+What is the most popular first name of the actors?
+Return the most common first name among all actors.
+What is the most popular full name of the actors?
+Return the most common full name among all actors.
+Which districts have at least two addresses?
+Give the districts which have two or more addresses.
+What is the phone number and postal code of the address 1031 Daugavpils Parkway?
+Give the phone and postal code corresponding to the address '1031 Daugavpils Parkway'.
+Which city has the most addresses? List the city name, number of addresses, and city id.
+What are the city name, id, and number of addresses corresponding to the city with the most addressed?
+How many addresses are in the district of California?
+Count the number of addressed in the California district.
+Which film is rented at a fee of 0.99 and has less than 3 in the inventory? List the film title and id.
+What are the title and id of the film which has a rental rate of 0.99 and an inventory of below 3?
+How many cities are in Australia?
+Count the number of cities in Australia.
+Which countries have at least 3 cities?
+What are the countries that contain 3 or more cities?
+Find all the payment dates for the payments with an amount larger than 10 and the payments handled by a staff person with the first name Elsa.
+What are the payment dates for any payments that have an amount greater than 10 or were handled by a staff member with the first name Elsa?
+How many customers have an active value of 1?
+Count the number of customers who are active.
+Which film has the highest rental rate? And what is the rate?
+What are the title and rental rate of the film with the highest rental rate?
+Which film has the most number of actors or actresses? List the film name, film id and description.
+What are the title, id, and description of the movie with the greatest number of actors?
+Which film actor (actress) starred the most films? List his or her first name, last name and actor id.
+Return the full name and id of the actor or actress who starred in the greatest number of films.
+Which film actors (actresses) played a role in more than 30 films? List his or her first name and last name.
+What are the full names of actors who had roles in more than 30 films?
+Which store owns most items?
+What is the id of the store that has the most items in inventory?
+What is the total amount of all payments?
+Return the sum of all payment amounts.
+Which customer, who has made at least one payment, has spent the least money? List his or her first name, last name, and the id.
+What is the full name and id of the customer who has the lowest total amount of payment?
+What is the genre name of the film HUNGER ROOF?
+Return the name of the category to which the film 'HUNGER ROOF' belongs.
+How many films are there in each category? List the genre name, genre id and the count.
+What are the names and ids of the different categories, and how many films are in each?
+Which film has the most copies in the inventory? List both title and id.
+What is the title and id of the film that has the greatest number of copies in inventory?
+What is the film title and inventory id of the item in the inventory which was rented most frequently?
+Return the title and inventory id of the film that is rented most often.
+How many languages are in these films?
+Count the number of different languages in these films.
+What are all the movies rated as R? List the titles.
+Return the titles of any movies with an R rating.
+Where is store 1 located?
+Return the address of store 1.
+Which staff handled least number of payments? List the full name and the id.
+Give the full name and staff id of the staff who has handled the fewest payments.
+Which language does the film AIRPORT POLLOCK use? List the language name.
+What is the name of the language that the film 'AIRPORT POLLOCK' is in?
+How many stores are there?
+Count the number of stores.
+How many kinds of different ratings are listed?
+Count the number of different film ratings.
+Which movies have 'Deleted Scenes' as a substring in the special feature?
+Return the titles of films that include 'Deleted Scenes' in their special feature section.
+How many items in inventory does store 1 have?
+Count the number of items store 1 has in stock.
+When did the first payment happen?
+What was the date of the earliest payment?
+Where does the customer with the first name Linda live? And what is her email?
+Return the address and email of the customer with the first name Linda.
+Find all the films longer than 100 minutes, or rated PG, except those who cost more than 200 for replacement. List the titles.
+What are the titles of films that are either longer than 100 minutes or rated PG other than those that cost more than 200 to replace?
+What is the first name and the last name of the customer who made the earliest rental?
+Return the full name of the customer who made the first rental.
+What is the full name of the staff member who has rented a film to a customer with the first name April and the last name Burns?
+Return the full name of the staff who provided a customer with the first name April and the last name Burns with a film rental.
+Which store has most the customers?
+Return the id of the store with the most customers.
+What is the largest payment amount?
+Return the amount of the largest payment.
+Where does the staff member with the first name Elsa live?
+Give the address of the staff member who has the first name Elsa.
+What are the first names of customers who have not rented any films after '2005-08-23 02:06:01'?
+Return the first names of customers who did not rented a film after the date '2005-08-23 02:06:01'.

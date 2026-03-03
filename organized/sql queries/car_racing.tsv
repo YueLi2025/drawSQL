@@ -1,0 +1,51 @@
+sql_query
+SELECT count(*) FROM driver
+SELECT count(*) FROM driver
+SELECT make ,  count(*) FROM driver WHERE points  >  150 GROUP BY make
+SELECT make ,  count(*) FROM driver WHERE points  >  150 GROUP BY make
+SELECT avg(age) ,  Make FROM driver GROUP BY make
+SELECT avg(age) ,  Make FROM driver GROUP BY make
+SELECT avg(Laps) FROM driver WHERE age  <  20
+SELECT avg(Laps) FROM driver WHERE age  <  20
+SELECT Manager ,  Sponsor FROM team ORDER BY Car_Owner
+SELECT Manager ,  Sponsor FROM team ORDER BY Car_Owner
+SELECT make FROM team GROUP BY team HAVING count(*)  >  1
+SELECT make FROM team GROUP BY team HAVING count(*)  >  1
+SELECT Make FROM team WHERE Car_Owner  =  "Buddy Arrington"
+SELECT Make FROM team WHERE Car_Owner  =  "Buddy Arrington"
+SELECT max(Points) ,  min(Points) FROM driver
+SELECT max(Points) ,  min(Points) FROM driver
+SELECT count(*) FROM driver WHERE Points  <  150
+SELECT count(*) FROM driver WHERE Points  <  150
+SELECT Driver FROM driver ORDER BY Age ASC
+SELECT Driver FROM driver ORDER BY Age ASC
+SELECT Driver FROM driver ORDER BY Points DESC
+SELECT Driver FROM driver ORDER BY Points DESC
+SELECT T2.Driver ,  T1.Country FROM country AS T1 JOIN driver AS T2 ON T1.Country_ID  =  T2.Country
+SELECT T2.Driver ,  T1.Country FROM country AS T1 JOIN driver AS T2 ON T1.Country_ID  =  T2.Country
+SELECT max(T2.Points) FROM country AS T1 JOIN driver AS T2 ON T1.Country_ID  =  T2.Country WHERE T1.Capital  =  "Dublin"
+SELECT max(T2.Points) FROM country AS T1 JOIN driver AS T2 ON T1.Country_ID  =  T2.Country WHERE T1.Capital  =  "Dublin"
+SELECT avg(T2.age) FROM country AS T1 JOIN driver AS T2 ON T1.Country_ID  =  T2.Country WHERE T1.Official_native_language  =  "English"
+SELECT avg(T2.age) FROM country AS T1 JOIN driver AS T2 ON T1.Country_ID  =  T2.Country WHERE T1.Official_native_language  =  "English"
+SELECT T1.Country FROM country AS T1 JOIN driver AS T2 ON T1.Country_ID  =  T2.Country WHERE T2.Points  >  150
+SELECT T1.Country FROM country AS T1 JOIN driver AS T2 ON T1.Country_ID  =  T2.Country WHERE T2.Points  >  150
+SELECT T1.Capital FROM country AS T1 JOIN driver AS T2 ON T1.Country_ID  =  T2.Country ORDER BY T2.Points DESC LIMIT 1
+SELECT T1.Capital FROM country AS T1 JOIN driver AS T2 ON T1.Country_ID  =  T2.Country ORDER BY T2.Points DESC LIMIT 1
+SELECT Make ,  COUNT(*) FROM driver GROUP BY Make
+SELECT Make ,  COUNT(*) FROM driver GROUP BY Make
+SELECT Make FROM driver GROUP BY Make ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Make FROM driver GROUP BY Make ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Make FROM driver GROUP BY Make HAVING COUNT(*)  >=  3
+SELECT Make FROM driver GROUP BY Make HAVING COUNT(*)  >=  3
+SELECT Team FROM team WHERE Team_ID NOT IN (SELECT Team_ID FROM team_driver)
+SELECT Team FROM team WHERE Team_ID NOT IN (SELECT Team_ID FROM team_driver)
+SELECT t2.country FROM driver AS t1 JOIN country AS t2 ON t1.country  =  t2.country_id WHERE t1.Make  =  "Dodge" INTERSECT SELECT t2.country FROM driver AS t1 JOIN country AS t2 ON t1.country  =  t2.country_id WHERE t1.Make  =  "Chevrolet"
+SELECT t2.country FROM driver AS t1 JOIN country AS t2 ON t1.country  =  t2.country_id WHERE t1.Make  =  "Dodge" INTERSECT SELECT t2.country FROM driver AS t1 JOIN country AS t2 ON t1.country  =  t2.country_id WHERE t1.Make  =  "Chevrolet"
+SELECT sum(Points) ,  avg(Points) FROM driver
+SELECT sum(Points) ,  avg(Points) FROM driver
+SELECT country FROM country WHERE country_id NOT IN (SELECT country FROM driver)
+SELECT country FROM country WHERE country_id NOT IN (SELECT country FROM driver)
+SELECT t1.manager ,  t1.sponsor FROM team AS t1 JOIN team_driver AS t2 ON t1.team_id  =  t2.team_id GROUP BY t2.team_id ORDER BY count(*) DESC LIMIT 1
+SELECT t1.manager ,  t1.sponsor FROM team AS t1 JOIN team_driver AS t2 ON t1.team_id  =  t2.team_id GROUP BY t2.team_id ORDER BY count(*) DESC LIMIT 1
+SELECT t1.manager ,  t1.car_owner FROM team AS t1 JOIN team_driver AS t2 ON t1.team_id  =  t2.team_id GROUP BY t2.team_id HAVING count(*)  >=  2
+SELECT t1.manager ,  t1.car_owner FROM team AS t1 JOIN team_driver AS t2 ON t1.team_id  =  t2.team_id GROUP BY t2.team_id HAVING count(*)  >=  2

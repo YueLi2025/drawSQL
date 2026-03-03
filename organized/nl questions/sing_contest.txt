@@ -1,0 +1,21 @@
+nl_question
+How many songs contain "Love" in their names?
+List the name of the songs in ascending, lexicographical order.
+List the names and languages of the songs .
+What are the maximum and minimum voice sound quality score of the performances?
+What are the voice sound quality score, rhythm tempo score and stage presence score performed by the participant named 'Freeway'?
+What are the id, language and original artist of the songs whose name is not 'Love'?
+What are the names and original artists of the song whose English translation is 'All the streets of love'?
+What are the distinct stage presence scores for all the songs that are in language 'English' ?
+What are the ids and names of the participants who have performed at least two songs?
+What are the ids, names and popularity of the participants, order by the number of songs they perform?
+What are the id and name of the participants who received score 5 for their sound quality or rhythm tempo?
+What are the voice sound quality scores received for the song named ' The Balkan Girls ' in English language ?
+What are the id and name of the song sung by the most participants?
+How many performances have a stage presence score less than 7 or higher than 9?
+How many songs listed are not performed?
+What are the average rhythm scores for the songs in each different language?
+What are the distinct names of the participants who have sung a song in 'English'?
+What are the name and popularity of participants who have sung a song both in 'Croatian' language and in 'English' language?
+Which song names have the substring "Is"?
+Find the original artists who sing songs with rhythm tempo above 5 , and list results in descending order of voice sound quality .

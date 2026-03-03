@@ -1,0 +1,19 @@
+nl_question
+How many members have the black membership card?
+Find the number of members living in each address.
+Give me the names of members whose address is in Harford or Waterbury.
+Find the ids and names of members who are under age 30 or with black membership card.
+Find the purchase time, age and address of each member, and show the results in the order of purchase time.
+Which membership card has more than 5 members?
+Which address has both members younger than 30 and members older than 40?
+What is the membership card held by both members living in Hartford and ones living in Waterbury address?
+How many members are not living in Hartford?
+Which address do not have any member with the black membership card?
+Show the shop addresses ordered by their opening year.
+What are the average score and average staff number of all shops?
+Find the id and address of the shops whose score is below the average score.
+Find the address and staff number of the shops that do not have any happy hour.
+What are the id and address of the shops which have a happy hour in May?
+which shop has happy hour most frequently? List its id and number of happy hours.
+Which month has the most happy hours?
+Which months have more than 2 happy hours?

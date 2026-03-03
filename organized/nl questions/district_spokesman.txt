@@ -1,0 +1,22 @@
+nl_question
+Find the name of the district which has the largest area.
+Select the area and government website of the district with the smallest population.
+Find the names and populations of the districts whose area is greater than the average area.
+Give me the biggest and average areas of all districts.
+What is the total population of the districts whose areas are in the top 3?
+List the ids, names, and government websites of all districts sorted by population.
+Find the names of districts whose government links use a 'gov' domain.
+Return the ids and names of the districts whose population is larger than 4000 or area bigger than 3000.
+Find all spokesman's names and speech titles.
+Find the average points and average ages of all spokesmen whose rank position is 1.
+What are the names and points of spokesmen who are younger than 40?
+Who is the oldest spokesman?
+Which spokesman has lower points than the average?
+Find the name of the district which has greatest number of spokesmen.
+Find the names of spokesmen who have served some district before 2004.
+Find the number of spokesmen for each district, and the show district names as well.
+Find the names of the districts which have had both spokesman with rank position 1 and 2.
+Find the names of districts which have more than one spokesman.
+Find the number of districts which have no spokesmen.
+Find the name of spokesmen who do not speak for any district.
+Find the total and average population of the districts which have some spokesman.

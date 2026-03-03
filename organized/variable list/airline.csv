@@ -1,0 +1,33 @@
+table_name,column_name,column_type
+Air Carriers,Code,num
+Air Carriers,Description,string
+Airlines,ACTUAL_ELAPSED_TIME,num
+Airlines,ARR_DELAY,num
+Airlines,ARR_DELAY_NEW,num
+Airlines,ARR_TIME,num
+Airlines,CANCELLATION_CODE,string
+Airlines,CANCELLED,num
+Airlines,CARRIER_DELAY,num
+Airlines,CRS_DEP_TIME,num
+Airlines,CRS_ELAPSED_TIME,string
+Airlines,DEP_DELAY,num
+Airlines,DEP_DELAY_NEW,num
+Airlines,DEP_TIME,num
+Airlines,DEST,string
+Airlines,DEST_AIRPORT_ID,num
+Airlines,DEST_AIRPORT_SEQ_ID,num
+Airlines,DEST_CITY_MARKET_ID,num
+Airlines,FL_DATE,string
+Airlines,LATE_AIRCRAFT_DELAY,num
+Airlines,NAS_DELAY,string
+Airlines,OP_CARRIER_AIRLINE_ID,num
+Airlines,OP_CARRIER_FL_NUM,num
+Airlines,ORIGIN,string
+Airlines,ORIGIN_AIRPORT_ID,num
+Airlines,ORIGIN_AIRPORT_SEQ_ID,num
+Airlines,ORIGIN_CITY_MARKET_ID,num
+Airlines,SECURITY_DELAY,num
+Airlines,TAIL_NUM,string
+Airlines,WEATHER_DELAY,num
+Airports,Code,string
+Airports,Description,string

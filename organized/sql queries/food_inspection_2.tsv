@@ -1,0 +1,110 @@
+sql_query
+SELECT first_name, last_name FROM employee WHERE title = 'Sanitarian' AND supervisor = ( SELECT employee_id FROM employee WHERE first_name = 'Darlisha' AND last_name = 'Jacobs' )
+SELECT DISTINCT T1.first_name, T1.last_name FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE strftime('%Y-%m', T2.inspection_date) = '2010-05' AND T1.title = 'Sanitarian'
+SELECT COUNT(T2.inspection_id) FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE strftime('%Y', T2.inspection_date) = '2010' AND T1.first_name = 'Joshua' AND T1.last_name = 'Rosa'
+SELECT DISTINCT T3.dba_name FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id INNER JOIN establishment AS T3 ON T2.license_no = T3.license_no WHERE T1.first_name = 'Joshua' AND T1.last_name = 'Rosa'
+SELECT DISTINCT T2.latitude, T2.longitude FROM inspection AS T1 INNER JOIN establishment AS T2 ON T1.license_no = T2.license_no WHERE T1.inspection_date = '2010-05-11'
+SELECT DISTINCT T1.first_name, T1.last_name FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id INNER JOIN establishment AS T3 ON T2.license_no = T3.license_no WHERE T3.dba_name = 'Burbank' AND T1.title = 'Sanitarian'
+SELECT DISTINCT T2.dba_name FROM inspection AS T1 INNER JOIN establishment AS T2 ON T1.license_no = T2.license_no WHERE T1.results = 'Fail' AND strftime('%Y', T1.inspection_date) = '2010'
+SELECT T1.first_name, T1.last_name FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id INNER JOIN establishment AS T3 ON T2.license_no = T3.license_no WHERE T2.inspection_date = '2010-05-11' AND T3.dba_name = 'AMUNDSEN HIGH SCHOOL' AND T1.title = 'Sanitarian'
+SELECT COUNT(T2.inspection_id) FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T2.results = 'Pass' AND T1.first_name = 'Joshua' AND T1.last_name = 'Rosa'
+SELECT T1.followup_to FROM inspection AS T1 INNER JOIN establishment AS T2 ON T1.license_no = T2.license_no WHERE T2.dba_name = 'Azha Restaurant Inc.' AND T1.results = 'Pass' AND T1.inspection_date = '2010-01-21'
+SELECT COUNT(DISTINCT T2.license_no) FROM inspection AS T1 INNER JOIN establishment AS T2 ON T1.license_no = T2.license_no WHERE strftime('%Y', T1.inspection_date) = '2010' AND T2.risk_level = 3
+SELECT T2.first_name, T2.last_name FROM inspection AS T1 INNER JOIN employee AS T2 ON T1.employee_id = T2.employee_id WHERE T1.inspection_id = 48224
+SELECT COUNT(T2.license_no) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T2.inspection_date = '2015-05-08' AND T1.facility_type = 'Restaurant'
+SELECT COUNT(T2.point_id) FROM inspection_point AS T1 INNER JOIN violation AS T2 ON T1.point_id = T2.point_id WHERE T2.inspection_id = '1454071' AND T1.category = 'Food Maintenance'
+SELECT COUNT(T3.point_id) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no INNER JOIN violation AS T3 ON T2.inspection_id = T3.inspection_id WHERE T2.inspection_date = '2015-05-08' AND T1.dba_name = 'ROYAL THAI CUISINE'
+SELECT T.first_name, T.last_name FROM ( SELECT T2.employee_id, T2.first_name, T2.last_name, COUNT(T1.inspection_id) FROM inspection AS T1 INNER JOIN employee AS T2 ON T1.employee_id = T2.employee_id GROUP BY T2.employee_id, T2.first_name, T2.last_name ORDER BY COUNT(T1.inspection_id) DESC LIMIT 1 ) AS T
+SELECT COUNT(T1.inspection_id) FROM inspection AS T1 INNER JOIN employee AS T2 ON T1.employee_id = T2.employee_id WHERE T2.first_name = 'Lisa' AND T2.last_name = 'Tillman' AND T1.results = 'Out of Business'
+SELECT T2.phone FROM inspection AS T1 INNER JOIN employee AS T2 ON T1.employee_id = T2.employee_id WHERE T1.inspection_id = 634597 AND T2.title = 'Sanitarian'
+SELECT T1.salary FROM employee AS T1 INNER JOIN ( SELECT T.employee_id, COUNT(T.inspection_id) FROM inspection AS T GROUP BY T.employee_id ORDER BY COUNT(T.inspection_id) DESC LIMIT 1 ) AS T2 ON T1.employee_id = T2.employee_id
+SELECT MIN(T2.inspection_date) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T1.dba_name = 'RENALDI''S PIZZA'
+SELECT T3.first_name, T3.last_name FROM ( SELECT T1.employee_id, COUNT(T1.inspection_id) FROM inspection AS T1 WHERE strftime('%Y-%m', T1.inspection_date) = '2016-03' GROUP BY T1.employee_id ORDER BY COUNT(T1.inspection_id) DESC LIMIT 1 ) AS T2 INNER JOIN employee AS T3 ON T2.employee_id = T3.employee_id
+SELECT COUNT(DISTINCT T2.license_no) FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T1.first_name = 'David' AND T1.last_name = 'Hodges' AND T1.employee_id = 153225 AND T2.inspection_type = 'Short Form Complaint' AND T2.results = 'Pass'
+SELECT SUM(T3.fine) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no INNER JOIN violation AS T3 ON T2.inspection_id = T3.inspection_id WHERE strftime('%Y-%m', T2.inspection_date) = '2014-02' AND T1.dba_name = 'RON OF JAPAN INC'
+SELECT DISTINCT T3.first_name, T3.last_name FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no INNER JOIN employee AS T3 ON T2.employee_id = T3.employee_id WHERE T1.dba_name = 'TAQUERIA LA PAZ'
+SELECT T.first_name, T.last_name FROM ( SELECT T1.first_name, T1.last_name, SUM(T3.fine) FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id INNER JOIN violation AS T3 ON T2.inspection_id = T3.inspection_id GROUP BY T1.first_name, T1.last_name ORDER BY SUM(T3.fine) DESC LIMIT 1 ) t
+SELECT T1.dba_name, T3.first_name, T3.last_name FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no INNER JOIN employee AS T3 ON T2.employee_id = T3.employee_id WHERE T2.inspection_date = '2010-05-05' AND T2.inspection_id = 44256
+SELECT DISTINCT T1.address FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE strftime('%Y-%m', T2.inspection_date) = '2010-03' AND T2.results = 'Pass' AND T1.facility_type = 'School'
+SELECT DISTINCT T1.first_name, T1.last_name FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T2.inspection_date = '2010-03-09' AND T2.inspection_type = 'Canvass'
+SELECT COUNT(DISTINCT T1.license_no) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T1.risk_level = 3 AND T2.results = 'Pass' AND T1.facility_type = 'Restaurant'
+SELECT DISTINCT T1.first_name, T1.last_name FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id INNER JOIN violation AS T3 ON T2.inspection_id = T3.inspection_id INNER JOIN inspection_point AS T4 ON T3.point_id = T4.point_id WHERE T4.category = 'Display of Inspection Report Summary'
+SELECT T1.title FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T2.inspection_id = 60332
+SELECT COUNT(DISTINCT T1.license_no) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T1.risk_level = '1' AND T2.inspection_type = 'Complaint' AND T1.facility_type = 'Restaurant' AND T2.results = 'Fail'
+SELECT DISTINCT T3.fine, T1.state, T1.city, T1.address FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no INNER JOIN violation AS T3 ON T2.inspection_id = T3.inspection_id WHERE T2.inspection_id = 48216
+SELECT T2.inspection_id FROM inspection_point AS T1 INNER JOIN violation AS T2 ON T1.point_id = T2.point_id WHERE T2.fine = 500 AND T1.point_level = 'Critical' AND T2.inspector_comment = 'CDI ON 5-17-10'
+SELECT T2.inspector_comment, T1.code FROM inspection_point AS T1 INNER JOIN violation AS T2 ON T1.point_id = T2.point_id WHERE T2.inspection_id = 54216 AND T2.point_id = 34
+SELECT T2.point_id, T2.fine FROM inspection AS T1 INNER JOIN violation AS T2 ON T1.inspection_id = T2.inspection_id WHERE T1.inspection_date = '2010-08-07'
+SELECT COUNT(T1.inspection_id) FROM violation AS T1 INNER JOIN inspection_point AS T2 ON T1.point_id = T2.point_id WHERE T2.category = 'Personnel'
+SELECT DISTINCT T1.dba_name FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no INNER JOIN employee AS T3 ON T2.employee_id = T3.employee_id WHERE T2.inspection_date = '2012-11-20' AND T3.first_name = 'Sarah' AND T3.last_name = 'Lindsey'
+SELECT DISTINCT T4.category, T3.fine FROM inspection AS T1 INNER JOIN employee AS T2 ON T1.employee_id = T2.employee_id INNER JOIN violation AS T3 ON T1.inspection_id = T3.inspection_id INNER JOIN inspection_point AS T4 ON T3.point_id = T4.point_id WHERE T2.first_name = 'Lisa' AND T2.last_name = 'Tillman' AND strftime('%Y-%m', T1.inspection_date) = '2014-01'
+SELECT T3.first_name, T3.last_name, T2.results FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no INNER JOIN employee AS T3 ON T2.employee_id = T3.employee_id WHERE T1.dba_name = 'JEAN SAMOCKI'
+SELECT SUM(T3.fine) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no INNER JOIN violation AS T3 ON T2.inspection_id = T3.inspection_id WHERE T1.dba_name = 'HACIENDA LOS TORRES' AND T1.ward = 36 AND T2.results = 'Fail'
+SELECT T2.dba_name, T2.longitude, T2.latitude FROM inspection AS T1 INNER JOIN establishment AS T2 ON T1.license_no = T2.license_no WHERE T1.inspection_date = '2013-07-29' AND T1.results = 'Fail'
+SELECT T1.first_name FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T2.inspection_id = 48225
+SELECT T1.address FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T2.inspection_id = 52238
+SELECT T1.last_name FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T2.inspection_id = 52238
+SELECT DISTINCT T2.results FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T1.first_name = 'Thomas' AND T1.last_name = 'Langley'
+SELECT DISTINCT T1.phone FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T2.inspection_type = 'Canvass'
+SELECT DISTINCT T2.results FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T1.dba_name = 'XANDO COFFEE & BAR / COSI SANDWICH BAR'
+SELECT DISTINCT T2.inspection_type FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T1.dba_name = 'JOHN SCHALLER'
+SELECT T1.dba_name FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T2.inspection_type = 'License'
+SELECT COUNT(T2.inspection_id) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE strftime('%Y', T2.inspection_date) = '2010' AND T1.risk_level = 3
+SELECT SUM(T2.salary) FROM inspection AS T1 INNER JOIN employee AS T2 ON T1.employee_id = T2.employee_id WHERE T1.inspection_id BETWEEN 52270 AND 52272
+SELECT AVG(T2.salary) FROM inspection AS T1 INNER JOIN employee AS T2 ON T1.employee_id = T2.employee_id WHERE T1.inspection_type = 'License Re-Inspection'
+SELECT MIN(T2.inspection_date) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T1.dba_name = 'JOHN SCHALLER' AND strftime('%Y', T2.inspection_date) = '2010'
+SELECT DISTINCT T1.first_name, T1.last_name FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T2.license_no = 1334073
+SELECT DISTINCT T3.dba_name FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id INNER JOIN establishment AS T3 ON T2.license_no = T3.license_no WHERE T1.first_name = 'Joshua' AND T1.last_name = 'Rosa'
+SELECT DISTINCT T1.dba_name FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE strftime('%Y', T2.inspection_date) = '2010' AND T2.results = 'Pass' AND T1.facility_type = 'Liquor'
+SELECT DISTINCT T3.dba_name FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id INNER JOIN establishment AS T3 ON T2.license_no = T3.license_no WHERE T1.first_name = 'Joshua' AND T1.last_name = 'Rosa'
+SELECT DISTINCT T3.risk_level FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id INNER JOIN establishment AS T3 ON T2.license_no = T3.license_no WHERE T1.first_name = 'Bob' AND T1.last_name = 'Benson'
+SELECT DISTINCT T3.dba_name, T2.results FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id INNER JOIN establishment AS T3 ON T2.license_no = T3.license_no WHERE T1.first_name = 'Bob' AND T1.last_name = 'Benson' AND strftime('%Y', T2.inspection_date) = '2010'
+SELECT COUNT(DISTINCT T2.point_id) FROM inspection_point AS T1 INNER JOIN violation AS T2 ON T1.point_id = T2.point_id WHERE T1.point_level = 'Serious ' AND T2.fine = 0
+SELECT CAST(COUNT(CASE WHEN T1.risk_level = 1 THEN T1.license_no END) AS REAL) * 100 / COUNT(T1.license_no) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T2.results = 'Pass'
+SELECT DISTINCT T1.facility_type, T1.license_no FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T1.risk_level = 1 AND T2.results = 'Fail'
+SELECT DISTINCT T2.results FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T2.inspection_date = '2010-02-24' AND T1.first_name = 'Arnold' AND T1.last_name = 'Holder'
+SELECT COUNT(DISTINCT T1.license_no) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE strftime('%Y-%m', T2.inspection_date) = '2010-04' AND T1.facility_type = 'Restaurant' AND T2.results = 'Fail'
+SELECT DISTINCT T2.inspection_id FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T1.first_name = 'Rosemary' AND T1.last_name = 'Kennedy'
+SELECT DISTINCT T2.inspection_type FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T1.first_name = 'Lisa' AND T1.last_name = 'Tillman' AND T2.inspection_date = '2010-07-07'
+SELECT DISTINCT T1.dba_name FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T1.risk_level = 3 AND T2.results = 'Fail'
+SELECT DISTINCT T1.dba_name FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no INNER JOIN violation AS T3 ON T2.inspection_id = T3.inspection_id INNER JOIN inspection_point AS T4 ON T3.point_id = T4.point_id WHERE T4.category = 'No Smoking Regulations'
+SELECT COUNT(CASE WHEN T2.results = 'Pass' THEN T1.license_no END) - COUNT(CASE WHEN T2.results = 'Fail' THEN T1.license_no END) AS diff FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T2.inspection_type = 'Canvass' AND T1.facility_type = 'Restaurant'
+SELECT COUNT(DISTINCT T1.license_no) FROM inspection AS T1 INNER JOIN establishment AS T2 ON T1.license_no = T2.license_no WHERE strftime('%Y', T1.inspection_date) = '2010' AND T2.ward = 42
+SELECT COUNT(T2.inspection_id) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T1.facility_type = 'Restaurant' AND T1.dba_name = 'All Style Buffet'
+SELECT MIN(T2.inspection_date) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T1.aka_name = 'WING HUNG CHOP SUEY RESTAURANT'
+SELECT COUNT(T1.inspection_id) FROM inspection AS T1 INNER JOIN employee AS T2 ON T1.employee_id = T2.employee_id WHERE T2.address = '5000 N Wolcott Ave' AND T2.title = 'Sanitarian' AND strftime('%Y-%m', T1.inspection_date) = '2011-05'
+SELECT CAST(COUNT(CASE WHEN T2.results = 'Pass' THEN T2.inspection_id ELSE NULL END) AS REAL) * 100 / COUNT(T2.inspection_id) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T1.dba_name = 'POCKETS' AND T1.facility_type = 'Restaurant'
+SELECT DISTINCT T2.dba_name FROM inspection AS T1 INNER JOIN establishment AS T2 ON T1.license_no = T2.license_no WHERE strftime('%Y-%m', T1.inspection_date) = '2012-05' AND T1.results = 'Pass w/ Conditions'
+SELECT T1.salary FROM employee AS T1 INNER JOIN ( SELECT employee_id, COUNT(inspection_id) FROM inspection GROUP BY employee_id ORDER BY COUNT(inspection_id) DESC LIMIT 1 ) AS T2 ON T1.employee_id = T2.employee_id
+SELECT T.dba_name FROM ( SELECT T1.dba_name, SUM(T3.fine) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no INNER JOIN violation AS T3 ON T2.inspection_id = T3.inspection_id WHERE strftime('%Y', T2.inspection_date) = '2014' GROUP BY T1.dba_name ORDER BY SUM(T3.fine) DESC LIMIT 1 ) AS T
+SELECT T1.latitude, T1.longitude FROM establishment AS T1 INNER JOIN ( SELECT license_no FROM inspection WHERE results = 'Fail' GROUP BY license_no ORDER BY COUNT(results) DESC LIMIT 1 ) AS T2 ON T1.license_no = T2.license_no
+SELECT T3.inspector_comment FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no INNER JOIN violation AS T3 ON T2.inspection_id = T3.inspection_id WHERE T2.inspection_date = '2010-01-25' AND T1.dba_name = 'TAQUERIA LA FIESTA'
+SELECT T2.dba_name , CAST(SUM(CASE WHEN T1.results = 'Pass' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.inspection_id) AS percentagePassed , CAST(SUM(CASE WHEN T1.results = 'Fail' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.inspection_id) FROM inspection AS T1 INNER JOIN establishment AS T2 ON T1.license_no = T2.license_no GROUP BY T2.dba_name ORDER BY COUNT(T1.license_no) DESC LIMIT 1
+SELECT DISTINCT T1.dba_name, T2.results FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T1.city = 'BURNHAM'
+SELECT COUNT(CASE WHEN T2.category = 'Toxic Items' THEN T1.inspection_id END) AS Tox_nums , COUNT(CASE WHEN T2.category = 'No Smoking Regulations' THEN T1.inspection_id END) AS NosmoNums FROM violation AS T1 INNER JOIN inspection_point AS T2 ON T1.point_id = T2.point_id
+SELECT COUNT(T2.inspection_id) FROM inspection_point AS T1 INNER JOIN violation AS T2 ON T1.point_id = T2.point_id WHERE T1.category = 'Display of Inspection Report Summary'
+SELECT DISTINCT T1.address FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T2.inspection_date = '2010-11-05'
+SELECT T1.title FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T2.inspection_id = 52269
+SELECT DISTINCT T1.dba_name FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T2.results LIKE '%Pass%'
+SELECT COUNT(DISTINCT T1.employee_id) FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T2.results = 'Fail' AND T1.salary > 70000
+SELECT COUNT(DISTINCT T1.license_no) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE strftime('%Y-%m', T2.inspection_date) = '2010-07' AND T2.results = 'Fail' AND T1.facility_type = 'Restaurant'
+SELECT COUNT(employee_id) FROM employee WHERE title = 'Supervisor'
+SELECT COUNT(employee_id) FROM employee WHERE state = 'IL' AND city = 'Hoffman Estates'
+SELECT DISTINCT T1.last_name FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T2.inspection_id = 52256
+SELECT DISTINCT T1.point_level FROM inspection_point AS T1 INNER JOIN violation AS T2 ON T1.point_id = T2.point_id WHERE T2.fine = 0
+SELECT COUNT(DISTINCT T1.license_no) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no INNER JOIN violation AS T3 ON T2.inspection_id = T3.inspection_id WHERE T1.facility_type = 'Grocery Store' AND T3.fine = 250
+SELECT DISTINCT T1.dba_name FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no INNER JOIN violation AS T3 ON T2.inspection_id = T3.inspection_id WHERE strftime('%Y-%m', T2.inspection_date) = '2010-01' AND T2.results = 'Fail' AND T1.facility_type = 'TAVERN'
+SELECT CAST(COUNT(T2.inspection_id) AS REAL) / COUNT(DISTINCT T1.license_no) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T1.risk_level = 3 AND T1.facility_type = 'TAVERN'
+SELECT COUNT(employee_id) FROM employee WHERE zip = '60617'
+SELECT first_name, last_name FROM employee ORDER BY salary ASC LIMIT 1
+SELECT COUNT(license_no) FROM establishment WHERE risk_level = 2 AND dba_name = 'HOMEMADE PIZZA'
+SELECT COUNT(inspection_id) FROM inspection WHERE strftime('%Y-%m', inspection_date) = '2011-01'
+SELECT CAST(COUNT(CASE WHEN fine = 100 THEN inspection_id END) AS REAL) * 100 / COUNT(inspection_id) FROM violation
+SELECT DISTINCT T1.title FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T2.license_no = 1576687
+SELECT salary FROM employee WHERE first_name = 'Jessica' AND last_name = 'Anthony'
+SELECT last_name FROM employee WHERE address = '7211 S Hermitage Ave' AND city = 'Chicago' AND state = 'IL'
+SELECT SUM(T2.fine) FROM inspection_point AS T1 INNER JOIN violation AS T2 ON T1.point_id = T2.point_id WHERE T1.category = 'Food Equipment and Utensil'
+SELECT DISTINCT T2.results, T1.zip FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE T1.license_no = 1222441
+SELECT COUNT(license_no) FROM establishment WHERE risk_level = 3
+SELECT T2.inspection_id FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no INNER JOIN employee AS T3 ON T2.employee_id = T3.employee_id WHERE T3.first_name = 'David' AND T3.last_name = 'Hodges' AND T1.dba_name = 'KAMAYAN EXPRESS'
+SELECT DISTINCT T1.employee_id FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE T2.results = 'Fail' AND strftime('%Y-%m', T2.inspection_date) = '2010-02' AND T1.salary > 0.7 * ( SELECT AVG(salary) FROM employee )

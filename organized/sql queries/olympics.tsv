@@ -1,0 +1,157 @@
+sql_query
+SELECT T1.games_name FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.full_name = 'John Aalberg'
+SELECT T1.games_name FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.full_name = 'John Aalberg' AND T2.age = 31
+SELECT T2.age FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.full_name = 'John Aalberg' AND T1.games_name = '1994 Winter'
+SELECT T3.full_name FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.region_name = 'Finland'
+SELECT T1.region_name FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.full_name = 'John Aalberg'
+SELECT T1.noc FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.gender = 'M' ORDER BY T3.height DESC LIMIT 1
+SELECT COUNT(T3.id) FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.region_name = 'Finland' AND T3.gender = 'F'
+SELECT T2.city_name FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T3.games_name = '1992 Summer'
+SELECT T3.games_name FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T2.city_name = 'London'
+SELECT T3.games_year FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T2.city_name = 'London' ORDER BY T3.games_year LIMIT 1
+SELECT CAST(COUNT(CASE WHEN T5.region_name = 'Finland' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T3.id) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id INNER JOIN person_region AS T4 ON T3.id = T4.person_id INNER JOIN noc_region AS T5 ON T4.region_id = T5.id WHERE T1.games_name = '1994 Winter'
+SELECT T1.sport_name FROM sport AS T1 INNER JOIN event AS T2 ON T1.id = T2.sport_id WHERE T2.event_name LIKE 'Shooting Women%s Trap'
+SELECT T2.city_name FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T3.games_name = '1936 Winter'
+SELECT COUNT(T2.event_name) FROM sport AS T1 INNER JOIN event AS T2 ON T1.id = T2.sport_id WHERE T1.sport_name = 'Swimming'
+SELECT T2.games_id FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id WHERE T1.full_name = 'Jessica Carolina Aguilera Aguilera'
+SELECT T3.full_name FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.region_name = 'Sweden' ORDER BY T3.height DESC LIMIT 1
+SELECT COUNT(T1.person_id) FROM person_region AS T1 INNER JOIN noc_region AS T2 ON T1.region_id = T2.id WHERE T2.region_name = 'Guatemala'
+SELECT T1.full_name FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id GROUP BY T2.person_id ORDER BY COUNT(T2.person_id) DESC LIMIT 1
+SELECT COUNT(T2.id) FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id WHERE T1.full_name = 'Martina Kohlov'
+SELECT CAST(COUNT(CASE WHEN T3.gender = 'M' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T2.person_id) FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.region_name = 'Estonia'
+SELECT COUNT(T2.person_id) FROM competitor_event AS T1 INNER JOIN games_competitor AS T2 ON T1.competitor_id = T2.id INNER JOIN event AS T3 ON T1.event_id = T3.id WHERE T3.event_name LIKE 'Basketball Men%s Basketball' AND T2.age = 24
+SELECT T2.event_name FROM sport AS T1 INNER JOIN event AS T2 ON T1.id = T2.sport_id WHERE T1.sport_name = 'Art Competitions'
+SELECT COUNT(T1.id) FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id INNER JOIN competitor_event AS T3 ON T2.id = T3.competitor_id INNER JOIN medal AS T4 ON T3.medal_id = T4.id WHERE T1.full_name = 'Henk Jan Zwolle' AND T4.medal_name = 'Gold'
+SELECT T2.event_name FROM competitor_event AS T1 INNER JOIN event AS T2 ON T1.event_id = T2.id INNER JOIN medal AS T3 ON T1.medal_id = T3.id WHERE T3.medal_name = 'Gold' GROUP BY T2.id ORDER BY COUNT(T1.event_id) DESC LIMIT 1
+SELECT T2.city_name FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id GROUP BY T2.id HAVING COUNT(T1.games_id) >= 3
+SELECT COUNT(T3.id) FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T2.city_name = 'Stockholm' AND T3.season = 'Summer'
+SELECT T2.region_name FROM person_region AS T1 INNER JOIN noc_region AS T2 ON T1.region_id = T2.id GROUP BY T2.region_name ORDER BY COUNT(T1.person_id) DESC LIMIT 1
+SELECT T2.city_name FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id ORDER BY T3.games_year LIMIT 1
+SELECT P1 , ( SELECT MAX(P2) - MIN(P2) FROM ( SELECT COUNT(T2.person_id) AS P2 FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T1.games_name IN ('1988 Winter', '1988 Summer') GROUP BY T1.season ) ORDER BY P2 DESC LIMIT 1 ) FROM ( SELECT T1.season AS P1, COUNT(T2.person_id) AS P2 FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T1.games_name IN ('1988 Winter', '1988 Summer') GROUP BY T1.season ) ORDER BY P2 DESC LIMIT 1
+SELECT age FROM games_competitor GROUP BY age ORDER BY COUNT(person_id) DESC LIMIT 1
+SELECT T2.city_name FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T3.games_name IN ('1976 Summer', '1976 Winter')
+SELECT T1.full_name FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id INNER JOIN competitor_event AS T3 ON T2.id = T3.competitor_id INNER JOIN medal AS T4 ON T3.medal_id = T4.id WHERE T4.id != 4 GROUP BY T1.full_name ORDER BY COUNT(T4.id) DESC LIMIT 1
+SELECT T1.region_name FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.full_name = 'Estelle Nze Minko'
+SELECT DISTINCT T1.sport_name FROM sport AS T1 INNER JOIN event AS T2 ON T1.id = T2.sport_id INNER JOIN competitor_event AS T3 ON T2.id = T3.event_id INNER JOIN games_competitor AS T4 ON T3.competitor_id = T4.id INNER JOIN person AS T5 ON T4.person_id = T5.id WHERE T5.full_name = 'Chin Eei Hui'
+SELECT T1.full_name FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id ORDER BY T2.age DESC LIMIT 1
+SELECT T1.games_name FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.gender = 'F' GROUP BY T1.games_name ORDER BY COUNT(T2.person_id) DESC LIMIT 1
+SELECT COUNT(T1.person_id) FROM games_competitor AS T1 INNER JOIN games_city AS T2 ON T1.games_id = T2.games_id INNER JOIN city AS T3 ON T2.city_id = T3.id WHERE T3.city_name = 'Sapporo'
+SELECT T1.games_name FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.full_name = 'Morten Aleksander Djupvik'
+SELECT COUNT(DISTINCT T2.event_name) FROM sport AS T1 INNER JOIN event AS T2 ON T1.id = T2.sport_id WHERE T1.sport_name = 'Modern Pentathlon'
+SELECT AVG(T2.age) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.games_name = '1992 Summer'
+SELECT games_year FROM games WHERE season != 'Winter' GROUP BY games_year HAVING COUNT(season) = 1
+SELECT COUNT(T2.person_id) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T1.games_name = '2014 Winter'
+SELECT COUNT(T3.id) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id INNER JOIN person_region AS T4 ON T3.id = T4.person_id INNER JOIN noc_region AS T5 ON T4.region_id = T5.id WHERE T1.games_name = '2016 Summer' AND T5.region_name = 'China'
+SELECT COUNT(T2.competitor_id) FROM event AS T1 INNER JOIN competitor_event AS T2 ON T1.id = T2.event_id WHERE T1.event_name LIKE 'Ice Hockey Men%s Ice Hockey' AND T2.medal_id = 1
+SELECT DISTINCT T5.full_name FROM event AS T1 INNER JOIN competitor_event AS T2 ON T1.id = T2.event_id INNER JOIN games_competitor AS T3 ON T2.competitor_id = T3.id INNER JOIN sport AS T4 ON T1.sport_id = T4.id INNER JOIN person AS T5 ON T3.person_id = T5.id WHERE T4.sport_name = 'Cycling' AND T2.medal_id = 1
+SELECT DISTINCT T1.medal_name FROM medal AS T1 INNER JOIN competitor_event AS T2 ON T1.id = T2.medal_id INNER JOIN games_competitor AS T3 ON T2.competitor_id = T3.id INNER JOIN person AS T4 ON T3.person_id = T4.id WHERE T4.full_name = 'Lee Chong Wei' AND T2.medal_id <> 4
+SELECT CAST(COUNT(CASE WHEN T3.gender = 'F' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T2.person_id) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.games_name = '2002 Winter' AND T2.age < 20
+SELECT CAST(COUNT(CASE WHEN T3.gender = 'M' THEN 1 ELSE NULL END) AS REAL) / COUNT(CASE WHEN T3.gender = 'F' THEN 1 ELSE NULL END) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.games_name = '2012 Summer'
+SELECT ( SELECT T1.games_name FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T1.season = 'Summer' GROUP BY T1.games_year ORDER BY COUNT(T2.person_id) DESC LIMIT 1 ) AS HIGHEST , ( SELECT T1.games_name FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T1.season = 'Summer' GROUP BY T1.games_year ORDER BY COUNT(T2.person_id) LIMIT 1 ) AS LOWEST
+SELECT AVG(T5.height) FROM sport AS T1 INNER JOIN event AS T2 ON T1.id = T2.sport_id INNER JOIN competitor_event AS T3 ON T2.id = T3.event_id INNER JOIN games_competitor AS T4 ON T3.competitor_id = T4.id INNER JOIN person AS T5 ON T4.person_id = T5.id WHERE T1.sport_name = 'Basketball' AND T5.gender = 'M'
+SELECT COUNT(T2.person_id) FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.region_name = 'Philippines' AND T3.gender = 'F'
+SELECT T1.region_name FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.full_name = 'Yao Ming'
+SELECT T2.age FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id WHERE T1.full_name = 'Michael Fred Phelps, II' ORDER BY T2.age LIMIT 1
+SELECT COUNT(T1.id) FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id INNER JOIN competitor_event AS T3 ON T2.id = T3.competitor_id INNER JOIN event AS T4 ON T3.event_id = T4.id WHERE T1.full_name = 'Ian James Thorpe' AND T4.event_name LIKE 'Swimming Men%s 200 metres Freestyle'
+SELECT COUNT(T1.id) FROM event AS T1 INNER JOIN competitor_event AS T2 ON T1.id = T2.event_id INNER JOIN games_competitor AS T3 ON T2.competitor_id = T3.id INNER JOIN person AS T4 ON T3.person_id = T4.id WHERE T4.full_name = 'Larysa Semenivna Latynina (Diriy-)' AND T1.event_name LIKE 'Gymnastics Women%s Individual All-Around' AND T2.medal_id = 1
+SELECT T4.city_name FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id INNER JOIN games_city AS T3 ON T2.games_id = T3.games_id INNER JOIN city AS T4 ON T3.city_id = T4.id WHERE T1.full_name = 'Carl Lewis Borack'
+SELECT T2.city_name FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T3.games_name = '1992 Summer'
+SELECT COUNT(T2.person_id) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T1.games_name = '2016 Summer' AND T2.age > 59
+SELECT COUNT(T2.person_id) FROM competitor_event AS T1 INNER JOIN games_competitor AS T2 ON T1.competitor_id = T2.id INNER JOIN event AS T3 ON T1.event_id = T3.id WHERE T3.event_name LIKE 'Gymnastics Men%s Parallel Bars, Teams' AND T2.age = 10
+SELECT region_name FROM noc_region WHERE noc = 'COL'
+SELECT id FROM sport WHERE sport_name = 'Hockey'
+SELECT id FROM city WHERE city_name = 'Rio de Janeiro'
+SELECT COUNT(T1.competitor_id) FROM competitor_event AS T1 INNER JOIN event AS T2 ON T1.event_id = T2.id INNER JOIN medal AS T3 ON T1.medal_id = T3.id WHERE T2.event_name LIKE 'Rowing Women%s Coxed Eights' AND T3.medal_name = 'Gold'
+SELECT COUNT(T2.event_name) FROM sport AS T1 INNER JOIN event AS T2 ON T1.id = T2.sport_id WHERE T1.sport_name = 'Cycling'
+SELECT T1.region_name FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.full_name = 'Vijay Singh Chauhan'
+SELECT T3.games_year FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T2.city_name = 'Roma'
+SELECT COUNT(T2.games_id) FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id WHERE T1.full_name = 'Prithipal Singh'
+SELECT COUNT(T2.person_id) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T1.games_name = '1984 Summer' AND T2.age > 50
+SELECT COUNT(T2.event_name) FROM sport AS T1 INNER JOIN event AS T2 ON T1.id = T2.sport_id WHERE T1.sport_name = 'Athletics'
+SELECT T3.full_name FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.region_name = 'Russia' ORDER BY T3.weight DESC LIMIT 1
+SELECT T3.height FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.region_name = 'Portugal' ORDER BY T3.height DESC LIMIT 1
+SELECT T2.city_name FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T3.games_name = '1968 Winter'
+SELECT T2.region_name FROM person_region AS T1 INNER JOIN noc_region AS T2 ON T1.region_id = T2.id GROUP BY T2.region_name ORDER BY COUNT(T1.person_id) DESC LIMIT 1
+SELECT CAST(COUNT(CASE WHEN T3.height > 175 THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T2.person_id) FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.region_name = 'Vanuatu'
+SELECT AVG(T3.weight) FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.region_name = 'Tonga' AND T3.gender = 'M'
+SELECT COUNT(T3.id) FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T2.city_name = 'London' AND T3.games_year BETWEEN 1900 AND 1992
+SELECT T3.games_name FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T2.city_name = 'Los Angeles'
+SELECT T3.games_name FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T2.city_name = 'Beijing' AND T3.games_year = 2008
+SELECT CAST(COUNT(CASE WHEN T2.age > 30 THEN 1 END) AS REAL) * 100 / COUNT(T2.person_id) FROM competitor_event AS T1 INNER JOIN games_competitor AS T2 ON T1.competitor_id = T2.id WHERE T1.medal_id = 1
+SELECT T2.age FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.games_name = '2012 Summer' AND T3.full_name = 'A Lamusi'
+SELECT COUNT(T2.person_id) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T1.games_name = '2000 Summer' AND T2.age = 31
+SELECT COUNT(T2.person_id) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.games_name = '1948 Summer' AND T3.gender = 'M'
+SELECT T3.full_name FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.games_name = '1936 Summer'
+SELECT T3.full_name FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.games_name = '2014 Winter' ORDER BY T2.age LIMIT 1
+SELECT AVG(T2.age) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.games_name = '1988 Winter'
+SELECT CAST(COUNT(CASE WHEN T3.gender = 'F' AND T3.height > 170 THEN 1 END) AS REAL) * 100 / COUNT(T2.person_id) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.games_year = 1988
+SELECT T1.sport_name FROM sport AS T1 INNER JOIN event AS T2 ON T1.id = T2.sport_id WHERE T2.event_name LIKE 'Cross Country Skiing Men%s 10/15 kilometres Pursuit'
+SELECT T1.region_id FROM person_region AS T1 INNER JOIN person AS T2 ON T1.person_id = T2.id WHERE T2.full_name = 'Christine Jacoba Aaftink'
+SELECT T2.height FROM person_region AS T1 INNER JOIN person AS T2 ON T1.person_id = T2.id WHERE T1.region_id = 7
+SELECT T1.games_id FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id WHERE T2.city_name = 'London'
+SELECT T2.event_name FROM sport AS T1 INNER JOIN event AS T2 ON T1.id = T2.sport_id WHERE T1.sport_name = 'Basketball'
+SELECT DISTINCT T1.medal_name FROM medal AS T1 INNER JOIN competitor_event AS T2 ON T1.id = T2.medal_id WHERE T2.competitor_id = 9
+SELECT T2.event_id FROM medal AS T1 INNER JOIN competitor_event AS T2 ON T1.id = T2.medal_id WHERE T1.medal_name = 'Gold'
+SELECT T2.city_name FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T3.games_year = 1992
+SELECT T2.region_name FROM person_region AS T1 INNER JOIN noc_region AS T2 ON T1.region_id = T2.id GROUP BY T2.region_name ORDER BY COUNT(T1.person_id) DESC LIMIT 1
+SELECT T1.full_name FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id ORDER BY T2.age DESC LIMIT 1
+SELECT DISTINCT T1.sport_name FROM sport AS T1 INNER JOIN event AS T2 ON T1.id = T2.sport_id INNER JOIN competitor_event AS T3 ON T2.id = T3.event_id INNER JOIN games_competitor AS T4 ON T3.competitor_id = T4.id INNER JOIN person AS T5 ON T4.person_id = T5.id WHERE T5.full_name = 'John Aalberg'
+SELECT COUNT(T2.person_id) FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.region_name = 'Belgium' AND T3.gender = 'M'
+SELECT COUNT(T2.event_name) FROM sport AS T1 INNER JOIN event AS T2 ON T1.id = T2.sport_id WHERE T1.sport_name = 'Football'
+SELECT T4.city_name FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id INNER JOIN games_city AS T3 ON T2.games_id = T3.games_id INNER JOIN city AS T4 ON T3.city_id = T4.id WHERE T1.full_name = 'John Aalberg'
+SELECT COUNT(T2.person_id) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T1.games_name = '1992 Winter' AND T2.age > 30
+SELECT T1.games_name FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN games_city AS T3 ON T2.games_id = T3.games_id INNER JOIN city AS T4 ON T3.city_id = T4.id WHERE T4.city_name = 'Barcelona' GROUP BY T1.id ORDER BY COUNT(T2.person_id) DESC LIMIT 1
+SELECT T3.full_name FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.region_name = 'Argentina'
+SELECT AVG(T2.age) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person_region AS T3 ON T2.person_id = T3.person_id INNER JOIN noc_region AS T4 ON T3.region_id = T4.id WHERE T1.games_name = '2012 Summer' AND T4.region_name = 'Argentina'
+SELECT CAST(COUNT(CASE WHEN T4.medal_name = 'Bronze' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T2.person_id) FROM competitor_event AS T1 INNER JOIN games_competitor AS T2 ON T1.competitor_id = T2.id INNER JOIN event AS T3 ON T1.event_id = T3.id INNER JOIN medal AS T4 ON T1.medal_id = T4.id WHERE T3.event_name LIKE 'Basketball Men%s Basketball'
+SELECT T1.games_name FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.full_name = 'Georgios Abaris'
+SELECT AVG(T2.age) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T1.games_name = '1924 Winter'
+SELECT T1.noc FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.weight = 77
+SELECT T3.games_name FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T2.city_name = 'Paris'
+SELECT T3.full_name FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.games_name = '2000 Summer'
+SELECT T4.city_name FROM games_competitor AS T1 INNER JOIN games AS T2 ON T1.games_id = T2.id INNER JOIN games_city AS T3 ON T1.games_id = T3.games_id INNER JOIN city AS T4 ON T3.city_id = T4.id ORDER BY T1.age DESC LIMIT 1
+SELECT T1.full_name FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id ORDER BY T2.age LIMIT 1
+SELECT T1.games_id FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id WHERE T2.city_name = 'Tokyo'
+SELECT T1.noc, T1.region_name FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id ORDER BY T3.weight DESC LIMIT 1
+SELECT T1.games_year, T1.season FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.full_name = 'Sohail Abbas'
+SELECT T2.city_name FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T3.games_name = '2004 Summer'
+SELECT DISTINCT T1.season FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.height = 180 AND T3.weight = 73
+SELECT DISTINCT T1.full_name FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id INNER JOIN competitor_event AS T3 ON T2.id = T3.competitor_id INNER JOIN medal AS T4 ON T3.medal_id = T4.id WHERE T4.medal_name = 'Gold'
+SELECT T2.age FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id ORDER BY T1.height DESC LIMIT 1
+SELECT CAST(COUNT(CASE WHEN T2.age = 28 THEN 1 END) AS REAL) * 100 / COUNT(T2.person_id) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T1.games_name = '2014 Winter'
+SELECT DISTINCT T1.region_name FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.gender = 'M' AND T3.height * 100 > ( SELECT AVG(height) FROM person WHERE gender = 'M' ) * 87
+SELECT COUNT(T1.person_id) FROM person_region AS T1 INNER JOIN noc_region AS T2 ON T1.region_id = T2.id WHERE T2.region_name = 'Finland'
+SELECT COUNT(T1.games_id) FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id WHERE T2.city_name = 'London'
+SELECT T1.region_name FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T3.full_name = 'Peter Kohnke'
+SELECT T1.full_name FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id ORDER BY T2.age LIMIT 1
+SELECT COUNT(T2.person_id) FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id WHERE T1.region_name = 'Australia'
+SELECT COUNT(T2.person_id) FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.region_name = 'Belgium' AND T3.gender = 'M'
+SELECT CAST(COUNT(CASE WHEN T1.gender = 'F' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T1.id) FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id INNER JOIN competitor_event AS T3 ON T2.id = T3.competitor_id INNER JOIN event AS T4 ON T3.event_id = T4.id WHERE T4.event_name = 'Equestrianism Mixed Three-Day Event, Individual'
+SELECT T5.region_name FROM medal AS T1 INNER JOIN competitor_event AS T2 ON T1.id = T2.medal_id INNER JOIN games_competitor AS T3 ON T2.competitor_id = T3.id INNER JOIN person_region AS T4 ON T3.person_id = T4.person_id INNER JOIN noc_region AS T5 ON T4.region_id = T5.id WHERE T1.id != 4 GROUP BY T5.region_name ORDER BY COUNT(T2.competitor_id) DESC LIMIT 1
+SELECT COUNT(T5.id) FROM sport AS T1 INNER JOIN event AS T2 ON T1.id = T2.sport_id INNER JOIN competitor_event AS T3 ON T2.id = T3.event_id INNER JOIN games_competitor AS T4 ON T3.competitor_id = T4.id INNER JOIN person AS T5 ON T4.person_id = T5.id INNER JOIN games AS T6 ON T4.games_id = T6.id WHERE T1.sport_name = 'Canoeing' AND T6.games_name = '2008 Summer' AND T5.weight * 10000.0 / (T5.height * T5.height) BETWEEN 25.0 AND 30
+SELECT COUNT(person_id) FROM person_region WHERE region_id = ( SELECT T1.region_id FROM person_region AS T1 INNER JOIN person AS T2 ON T1.person_id = T2.id WHERE T2.full_name = 'Clara Hughes' )
+SELECT AVG(T2.age) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN person_region AS T3 ON T2.person_id = T3.person_id INNER JOIN noc_region AS T4 ON T3.region_id = T4.id WHERE T1.games_name = '2016 Summer' AND T4.region_name = 'USA'
+SELECT T2.city_name FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T3.games_name = '1920 Summer'
+SELECT COUNT(T3.id) FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T2.city_name = 'Paris' AND T3.season = 'Summer'
+SELECT AVG(T2.age) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T1.season = 'Winter'
+SELECT full_name FROM person ORDER BY weight DESC LIMIT 1
+SELECT COUNT(T1.person_id) FROM games_competitor AS T1 INNER JOIN games_city AS T2 ON T1.games_id = T2.games_id INNER JOIN city AS T3 ON T2.city_id = T3.id WHERE T3.city_name = 'Barcelona'
+SELECT COUNT(T1.games_id) FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id WHERE T2.city_name = 'Barcelona'
+SELECT T3.full_name FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.region_name = 'Greece'
+SELECT AVG(T1.height) FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id WHERE T2.age BETWEEN 22 AND 28
+SELECT T1.full_name FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id WHERE T2.id = 90991
+SELECT CAST(T1.weight AS REAL) / (T1.height * T1.height) FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id WHERE T2.id = 147420
+SELECT city_name FROM city WHERE city_name LIKE 'M%'
+SELECT COUNT(games_year) FROM games WHERE games_year BETWEEN '1990' AND '1999'
+SELECT COUNT(T1.games_id) FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id WHERE T2.city_name = 'London'
+SELECT COUNT(T2.person_id) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T1.games_name = '1984 Summer' AND T2.age = 20
+SELECT T2.city_name FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id WHERE T1.games_id = 3
+SELECT DISTINCT T1.games_name FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T2.games_id = 13
+SELECT CAST(COUNT(CASE WHEN T2.age < 35 THEN 1 END) AS REAL) * 100 / COUNT(T2.games_id) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T1.season = 'Summer'
+SELECT AVG(T3.height) FROM noc_region AS T1 INNER JOIN person_region AS T2 ON T1.id = T2.region_id INNER JOIN person AS T3 ON T2.person_id = T3.id WHERE T1.region_name = 'Finland' AND T3.gender = 'M'
+SELECT COUNT(T3.id) FROM games_city AS T1 INNER JOIN city AS T2 ON T1.city_id = T2.id INNER JOIN games AS T3 ON T1.games_id = T3.id WHERE T2.city_name = 'London'
+SELECT COUNT(T3.event_id) , CAST(COUNT(CASE WHEN T4.id = '1' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T4.id) FROM person AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.person_id INNER JOIN competitor_event AS T3 ON T2.id = T3.competitor_id INNER JOIN medal AS T4 ON T3.medal_id = T4.id WHERE T1.full_name = 'Michael Fred Phelps, II'
+SELECT T1.games_name FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id INNER JOIN games_city AS T3 ON T2.games_id = T3.games_id INNER JOIN city AS T4 ON T3.city_id = T4.id WHERE T4.city_name = 'Los Angeles' GROUP BY T1.id ORDER BY COUNT(T2.person_id) DESC LIMIT 1
+SELECT weight FROM person WHERE full_name = 'Dagfinn Sverre Aarskog'
+SELECT CAST(COUNT(CASE WHEN T2.age > 24 AND T1.season = 'Winter' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T2.games_id) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id
+SELECT COUNT(T2.person_id) FROM games AS T1 INNER JOIN games_competitor AS T2 ON T1.id = T2.games_id WHERE T1.season = 'Summer' AND T2.age < 30

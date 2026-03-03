@@ -1,0 +1,24 @@
+table_name,column_name,column_type
+characters,hero,string
+characters,movie_title,string
+characters,release_date,string
+characters,song,string
+characters,villian,string
+director,director,string
+director,name,string
+movies_total_gross,MPAA_rating,string
+movies_total_gross,genre,string
+movies_total_gross,inflation_adjusted_gross,string
+movies_total_gross,movie_title,string
+movies_total_gross,release_date,string
+movies_total_gross,total_gross,string
+revenue,Disney Consumer Products[NI 2],num
+revenue,Disney Interactive[NI 3][Rev 1],num
+revenue,Disney Media Networks,string
+revenue,Studio Entertainment[NI 1],num
+revenue,Total,num
+revenue,Walt Disney Parks and Resorts,string
+revenue,Year,num
+voice-actors,character,string
+voice-actors,movie,string
+voice-actors,voice-actor,string

@@ -1,0 +1,41 @@
+nl_question
+How many institutions are there?
+Count the number of institutions.
+List the names of institutions in ascending alphabetical order.
+What are the names of institutions, ordered alphabetically?
+List the names of institutions in ascending order of founded year.
+What are the names of institutions, ordered by the years in which they were founded?
+What are the cities and provinces of institutions?
+Return the cities and provinces of institutions.
+What are the maximum and minimum enrollment of all institutions?
+Return the maximum and minimum enrollment across all institutions.
+What are the affiliations of institutions that are not in city "Vancouver"?
+Return the affiliations of instituions that are not in the city of Vancouver.
+What are the stadiums of institutions in descending order of the capacity.
+Return the stadiums of institutions, ordered by capacity descending.
+What is the stadium of the institution with the largest enrollment?
+Give the stadium of the institution which is the greatest enrollment.
+What are the names and nicknames of institutions?
+Return the names of institutions, as well as their nicknames.
+What is the nickname of the institution with the smallest enrollment?
+Return the nickname of the institution with the lowest enrollment.
+List the names of institutions in descending order of the number of championships.
+What are the names of institutions, ordered descending by their number of championships?
+List the names of institutions with at least one championship.
+What are the names of institutions that have 1 or more championships?
+What is the total number of championship of institution with public affiliation?
+Return the total number of championships of institutions that have a Public affiliation.
+What are different types of affiliations of institutions and the corresponding number of institutions?
+How many institutions are there for each type of affiliation?
+What is the most common type of affiliation for institutions?
+Return the most common type of affiliation across all institutions.
+In which years were more than one institution founded?
+Return the years in which more than 1 institution was founded, as well as the number of institutions founded in each of those.
+List the nicknames of institutions in descending order of capacity.
+What are the nicknames of institutions, ordered descending by their capacities?
+What are the total enrollment of institutions in city `` Vancouver '' or `` Calgary '' ?
+Return all the enrollments of institutions in either the city of Vancouver or the city of Calgary .
+Show the provinces that have both institutions founded before 1920 and institutions founded after 1950.
+What are the provinces that have not only institutions founded before 1920, but also institutions founded after 1950?
+How many distinct provinces are the institutions in?
+Count the number of different provinces that have institutions.

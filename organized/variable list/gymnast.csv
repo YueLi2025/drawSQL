@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+gymnast,Gymnast_ID,num
+gymnast,Floor_Exercise_Points,num
+gymnast,Pommel_Horse_Points,num
+gymnast,Rings_Points,num
+gymnast,Vault_Points,num
+gymnast,Parallel_Bars_Points,num
+gymnast,Horizontal_Bar_Points,num
+gymnast,Total_Points,num
+people,People_ID,num
+people,Name,string
+people,Age,num
+people,Height,num
+people,Hometown,string

@@ -1,0 +1,41 @@
+nl_question
+List details of all the channel in alphabetical order .
+What is the list of channel details ordered alphabetically ?
+How many services are there?
+Count the number of services.
+What is the most common analytical layer type code?
+Find the analytical layer type code that appears most often.
+Find all the services that has been used by the customer with details "Hardy Kutch".
+Which services were used by the customer with details "Hardy Kutch"? Give me the service details.
+Find the details of the services that have been used by more than 3 times .
+Which services were used by customers by more than 3 times? Give me the service details.
+Find the details of the customer who has used services the most times.
+return the details of the customer with largest count of used services.
+Find the name of the customer who has used the most types of services .
+Which customer has used the most types of services ? Give me the customer details .
+Find the details of the customer who has never used any services .
+Which customers never used any services ? Give me the customer details .
+Find the details of the customers who have used the least-used service .
+Which customers used the least commonly-used service ? Give me the distinct customer details .
+How many distinct customer and services details are there?
+Count the total number of available customers and services details.
+Find all the customers whose name contains "Kutch".
+What are the details of the customers who have "Kutch" in part of their details?
+Find the name of all the services which either have been used by customer "Hardy Kutch" or have been rated as "good" in one of the customer interactions.
+Which services are used by the customer "Hardy Kutch" or are rated as "good" in a customer interaction? Give me the service details.
+Find the names of all the services which both have been used by customer "Hardy Kutch" and have been rated "bad" in one of the customer interactions.
+Which services are both used by the customer "Hardy Kutch" and are rated as "bad" in a customer interaction? Give me the service details.
+Find details of all the services that have interacted with `` 15 ij '' for the the channel details.
+Give me the details of all the services that have interacted with the channel with detail "15 ij".
+Find all the details of the customers who have been involved in an interaction with status `` Stuck '' and service and channel detail `` bad '' .
+Which customers have experienced status "Stuck" and service and channel detail "bad" in  an interaction? Give me the customer details.
+How many integration platforms are successful?
+Count the number of integration platforms that have "Success" in the details.
+List the details of all the customers who are associated with a failed integration platform .
+Which customers have integration platform details "Fail" in interactions? Give me the customer details.
+Which service ( s ) has never been used by any customer ? List their details .
+Find details of the services that no customer has ever used . Return the service details .
+Find all the layer type codes with their corresponding usage count.
+For each analytical layer, return the analytical layer type code and the number of times it was used.
+Find details of all the services that have been marked as `` unsatisfied '' in customers and services details .
+Which services have been rated as "unsatisfied" in customers and services details? Give me the service_details.

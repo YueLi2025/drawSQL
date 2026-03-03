@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+driver,Driver_ID,num
+driver,Name,string
+driver,Citizenship,string
+driver,Racing_Series,string
+vehicle,Vehicle_ID,num
+vehicle,Model,string
+vehicle,Build_Year,string
+vehicle,Top_Speed,num
+vehicle,Power,num
+vehicle,Builder,string
+vehicle,Total_Production,string
+vehicle_driver,Driver_ID,num
+vehicle_driver,Vehicle_ID,num

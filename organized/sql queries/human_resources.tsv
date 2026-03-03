@@ -1,0 +1,48 @@
+sql_query
+SELECT ssn FROM employee WHERE gender = 'M' AND CAST(REPLACE(SUBSTR(salary, 4), ',', '') AS REAL) > 70000
+SELECT educationrequired FROM position WHERE positiontitle = 'Regional Manager'
+SELECT T2.locationcity FROM employee AS T1  INNER JOIN location AS T2  ON T1.locationID = T2.locationID WHERE T1.lastname = 'Adams' AND T1.firstname = 'Sandy'
+SELECT COUNT(*) FROM employee AS T1 INNER JOIN location AS T2  ON T1.locationID = T2.locationID WHERE T2.state = 'NY' AND T1.performance = 'Good'
+SELECT CAST(REPLACE(SUBSTR(T1.salary, 4), ',', '') AS REAL) - CAST(REPLACE(SUBSTR(T2.minsalary, 4), ',', '') AS REAL) AS diff FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE T1.lastname = 'Johnson' AND T1.firstname = 'James'
+SELECT T1.firstname, T1.lastname FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE T2.positiontitle = 'Trainee'
+SELECT T1.firstname, T1.lastname FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE (T1.lastname = 'Adams' AND T1.firstname = 'Sandy') OR (T1.lastname = 'Rodriguez' AND T1.firstname = 'Jose') ORDER BY T2.educationrequired DESC LIMIT 1
+SELECT T2.zipcode FROM employee AS T1  INNER JOIN location AS T2  ON T1.locationID = T2.locationID WHERE T1.gender = 'M' AND T1.performance = 'Good'
+SELECT COUNT(*) FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE CAST(REPLACE(SUBSTR(T1.salary, 4), ',', '') AS REAL) > 20000 AND T2.positiontitle = 'Trainee'
+SELECT AVG(CAST(REPLACE(SUBSTR(T1.salary, 4), ',', '') AS REAL)) AS avg FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE T2.positiontitle = 'Trainee'
+SELECT T2.locationcity FROM employee AS T1  INNER JOIN location AS T2  ON T1.locationID = T2.locationID WHERE T1.firstname = 'Jose' AND T1.lastname = 'Rodriguez'
+SELECT T2.state FROM employee AS T1  INNER JOIN location AS T2  ON T1.locationID = T2.locationID WHERE T1.firstname = 'Emily' AND T1.lastname = 'Wood'
+SELECT T2.educationrequired FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE T1.firstname = 'David' AND T1.lastname = 'Whitehead' AND T1.gender = 'M'
+SELECT T1.firstname, T1.lastname FROM employee AS T1  INNER JOIN location AS T2  ON T1.locationID = T2.locationID WHERE T2.locationcity = 'Boston' ORDER BY T1.salary DESC LIMIT 1
+SELECT T1.firstname, T1.lastname, T1.ssn FROM employee AS T1  INNER JOIN location AS T2  ON T1.locationID = T2.locationID WHERE T2.locationcity = 'New York City' AND T1.performance = 'Good'
+SELECT T2.address FROM employee AS T1  INNER JOIN location AS T2  ON T1.locationID = T2.locationID INNER JOIN position AS T3  ON T3.positionID = T1.positionID WHERE T3.positiontitle = 'Manager' ORDER BY T1.salary DESC LIMIT 1
+SELECT T2.maxsalary FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE T1.firstname = 'Tracy' AND T1.lastname = 'Coulter'
+SELECT firstname, lastname FROM employee WHERE CAST(REPLACE(SUBSTR(salary, 4), ',', '') AS REAL) = ( SELECT MAX(CAST(REPLACE(SUBSTR(salary, 4), ',', '') AS REAL)) FROM employee )
+SELECT COUNT(*) FROM position WHERE CAST(REPLACE(SUBSTR(maxsalary, 4), ',', '') AS REAL) < 100000
+SELECT minsalary FROM position ORDER BY educationrequired DESC LIMIT 1
+SELECT T2.address, T2.locationcity, T2.state, T2.zipcode FROM employee AS T1  INNER JOIN location AS T2  ON T1.locationID = T2.locationID GROUP BY T2.address, T2.locationcity, T2.state, T2.zipcode ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T2.positiontitle FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE T1.performance = 'Poor' GROUP BY T2.positiontitle ORDER BY COUNT(T2.positiontitle) DESC LIMIT 1
+SELECT T2.positiontitle FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE T2.educationrequired = '2 year degree' AND T1.gender = 'F' GROUP BY T2.positiontitle ORDER BY COUNT(T2.positiontitle) DESC LIMIT 1
+SELECT COUNT(*) FROM employee AS T1  INNER JOIN location AS T2  ON T1.locationID = T2.locationID INNER JOIN position AS T3  ON T3.positionID = T1.positionID WHERE T3.positiontitle = 'Account Representative' AND T1.performance = 'Good' AND T2.state = 'IL'
+SELECT T2.state FROM employee AS T1  INNER JOIN location AS T2  ON T1.locationID = T2.locationID INNER JOIN position AS T3  ON T3.positionID = T1.positionID WHERE T3.positiontitle = 'Account Representative' AND T1.performance = 'Good' GROUP BY T2.state ORDER BY COUNT(T2.state) DESC LIMIT 1
+SELECT T1.hiredate, T2.positiontitle, T1.salary FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE T1.firstname = 'Emily' AND T1.lastname = 'Wood'
+SELECT T2.maxsalary, T2.minsalary, T2.positiontitle FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE T1.firstname = 'Bill' AND T1.lastname = 'Marlin'
+SELECT T1.firstname, T1.lastname, T1.hiredate, T1.performance FROM employee AS T1  INNER JOIN location AS T2  ON T1.locationID = T2.locationID WHERE T2.state = 'UT'
+SELECT T2.educationrequired, T1.firstname, T1.lastname, T1.salary FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE T1.performance = 'Poor' AND T2.positiontitle = 'Account Representative'
+SELECT T1.firstname, T1.lastname, T3.positiontitle, T2.locationcity, T2.officephone FROM employee AS T1  INNER JOIN location AS T2  ON T1.locationID = T2.locationID INNER JOIN position AS T3  ON T3.positionID = T1.positionID WHERE T2.state = 'CO'
+SELECT SUM(CAST(REPLACE(SUBSTR(T1.salary, 4), ',', '') AS REAL)) / 12 AS avg, T1.firstname, T1.lastname , T2.positiontitle, T3.locationcity FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID INNER JOIN location AS T3  ON T1.locationID = T3.locationID WHERE CAST(REPLACE(SUBSTR(T1.salary, 4), ',', '') AS REAL) = ( SELECT MAX(CAST(REPLACE(SUBSTR(T1.salary, 4), ',', '') AS REAL)) FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID INNER JOIN location AS T3  ON T1.locationID = T3.locationID )
+SELECT COUNT(*) FROM employee WHERE performance = 'Good'
+SELECT T2.officephone FROM employee AS T1  INNER JOIN location AS T2  ON T1.locationID = T2.locationID WHERE T1.lastname = 'Adams' AND T1.firstname = 'Sandy'
+SELECT COUNT(*) FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE T2.positiontitle = 'Account Representative'
+SELECT COUNT(*) FROM employee WHERE gender = 'F'
+SELECT COUNT(*) FROM employee WHERE performance = 'Poor' AND CAST(REPLACE(SUBSTR(salary, 4), ',', '') AS REAL) > 50000
+SELECT salary FROM employee ORDER BY hiredate ASC LIMIT 1
+SELECT COUNT(*) FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE T2.positiontitle = 'Regional Manager' AND T1.gender = 'M'
+SELECT AVG(CAST(REPLACE(SUBSTR(T1.salary, 4), ',', '') AS REAL)) FROM employee AS T1 INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE T1.performance = 'Poor' AND T2.positiontitle = 'Manager'
+SELECT locationcity, address FROM location WHERE zipcode > 90000
+SELECT positiontitle FROM position WHERE educationrequired = '4 year degree'
+SELECT T1.firstname, T1.lastname, T2.locationcity, T2.address, T2.zipcode FROM employee AS T1  INNER JOIN location AS T2  ON T1.locationID = T2.locationID INNER JOIN position AS T3  ON T3.positionID = T1.positionID WHERE T3.positiontitle = 'Manager' AND T1.performance = 'Poor'
+SELECT COUNT(*) FROM employee AS T1  INNER JOIN location AS T2  ON T1.locationID = T2.locationID WHERE T2.address = '450 Peachtree Rd' AND T1.gender = 'M'
+SELECT firstname, lastname, performance FROM employee ORDER BY salary ASC LIMIT 1
+SELECT maxsalary FROM position WHERE positiontitle = 'Trainee'
+SELECT positiontitle FROM position WHERE positiontitle = 'Account Representative' OR positiontitle = 'Trainee' ORDER BY minsalary ASC LIMIT 1
+SELECT T2.positiontitle FROM employee AS T1  INNER JOIN position AS T2  ON T1.positionID = T2.positionID WHERE T1.firstname = 'Kenneth' AND T1.lastname = 'Charles'

@@ -1,0 +1,119 @@
+sql_query
+SELECT device_id FROM gender_age WHERE age = ( SELECT MAX(age) FROM gender_age )
+SELECT gender FROM gender_age WHERE age = ( SELECT MIN(age) FROM gender_age )
+SELECT T1.device_model FROM phone_brand_device_model2 AS T1 INNER JOIN gender_age AS T2 ON T2.device_id = T1.device_id ORDER BY T2.age DESC LIMIT 1
+SELECT COUNT(T1.app_id) FROM app_labels AS T1 INNER JOIN label_categories AS T2 ON T2.label_id = T1.label_id WHERE T2.category = 'Home Decoration'
+SELECT COUNT(T1.gender) FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T2.device_id = T1.device_id WHERE T1.gender = 'F' AND T2.device_model = 'ZenFone 5'
+SELECT T4.category FROM events_relevant AS T1 INNER JOIN app_events_relevant AS T2 ON T1.event_id = T2.event_id INNER JOIN app_labels AS T3 ON T3.app_id = T2.app_id INNER JOIN label_categories AS T4 ON T3.label_id = T4.label_id ORDER BY T1.timestamp LIMIT 2
+SELECT COUNT(T2.app_id) FROM label_categories AS T1 INNER JOIN app_labels AS T2 ON T2.label_id = T1.label_id WHERE T1.category = 'MOBA'
+SELECT T1.gender, T1.age FROM gender_age AS T1 INNER JOIN events AS T2 ON T2.device_id = T1.device_id WHERE T2.event_id = 15251
+SELECT COUNT(T2.event_id) FROM gender_age AS T1 INNER JOIN events AS T2 ON T2.device_id = T1.device_id WHERE T1.gender = 'M' AND SUBSTR(`timestamp`, 1, 10) = '2016-05-04' AND T1.age = 88
+SELECT DISTINCT T1.age, T1.gender, COUNT(T2.event_id) FROM gender_age AS T1 INNER JOIN `events` AS T2 ON T2.device_id = T1.device_id WHERE T2.longitude = -102 AND T2.latitude = 38 GROUP BY T1.age, T1.gender, T2.longitude, T2.latitude
+SELECT DISTINCT T1.phone_brand, T1.device_model FROM phone_brand_device_model2 AS T1 INNER JOIN events AS T2 ON T2.device_id = T1.device_id WHERE T2.longitude = 80 AND T2.latitude = 44
+SELECT DISTINCT T1.category FROM label_categories AS T1 INNER JOIN app_labels AS T2 ON T2.label_id = T1.label_id INNER JOIN app_events AS T3 ON T3.app_id = T2.app_id WHERE T3.event_id = 155
+SELECT T2.age FROM phone_brand_device_model2 AS T1 INNER JOIN gender_age AS T2 ON T2.device_id = T1.device_id WHERE T1.device_model = 'Galaxy Note 2'
+SELECT device_model FROM phone_brand_device_model2 WHERE device_id IN ( SELECT device_id FROM gender_age WHERE age = ( SELECT MAX(age) FROM gender_age ) )
+SELECT DISTINCT T1.category FROM label_categories AS T1 INNER JOIN app_labels AS T2 ON T1.label_id = T2.label_id INNER JOIN app_events AS T3 ON T2.app_id = T3.app_id WHERE T3.event_id = 2 AND T3.is_active = 0
+SELECT T2.timestamp FROM app_events AS T1 INNER JOIN events AS T2 ON T2.event_id = T1.event_id WHERE T1.is_active = 0 AND T2.event_id = 2 ORDER BY T2.timestamp LIMIT 1
+SELECT T2.event_id FROM phone_brand_device_model2 AS T1 INNER JOIN events AS T2 ON T2.device_id = T1.device_id WHERE T1.phone_brand = 'vivo'
+SELECT COUNT(T1.device_id) FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T1.gender = 'F' AND T2.phone_brand = 'vivo' AND T1.age < 30
+SELECT MIN(age) FROM gender_age WHERE gender = 'F'
+SELECT COUNT(device_id) FROM phone_brand_device_model2 WHERE phone_brand = 'vivo'
+SELECT device_model FROM phone_brand_device_model2 WHERE phone_brand = 'OPPO' LIMIT 15
+SELECT COUNT(T1.device_id) FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.phone_brand = 'OPPO' AND T1.gender = 'M'
+SELECT COUNT(T1.device_id) FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.device_model = 'Galaxy Ace Plus' AND T1.gender = 'M'
+SELECT T.device_model FROM ( SELECT T2.device_model, COUNT(T2.device_model) AS num FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T1.gender = 'F' GROUP BY T2.device_model ) AS T ORDER BY T.num DESC LIMIT 5
+SELECT COUNT(T2.app_id) FROM label_categories AS T1 INNER JOIN app_labels AS T2 ON T1.label_id = T2.label_id WHERE T1.category = 'game-Fishing'
+SELECT COUNT(T2.device_id) FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T1.gender = 'F' AND T2.phone_brand = 'E派'
+SELECT device_id FROM gender_age WHERE age = ( SELECT MIN(age) FROM gender_age )
+SELECT T2.app_id FROM label_categories AS T1 INNER JOIN app_labels AS T2 ON T1.label_id = T2.label_id WHERE T1.category = 'Securities'
+SELECT COUNT(T2.app_id) FROM label_categories AS T1 INNER JOIN app_labels AS T2 ON T1.label_id = T2.label_id INNER JOIN app_events AS T3 ON T2.app_id = T3.app_id WHERE T3.is_active = 0 AND T1.category = 'Property Industry 1.0' AND T3.event_id = 2
+SELECT COUNT(*) FROM ( SELECT COUNT(DISTINCT T1.category) AS result FROM label_categories AS T1 INNER JOIN app_labels AS T2 ON T1.label_id = T2.label_id INNER JOIN app_events AS T3 ON T2.app_id = T3.app_id WHERE T3.event_id = 2 AND T3.is_active = 0 GROUP BY T1.category ) T
+SELECT T2.app_id FROM label_categories AS T1 INNER JOIN app_labels AS T2 ON T1.label_id = T2.label_id WHERE T1.category = 'game-Rowing'
+SELECT T2.phone_brand, T2.device_model FROM events AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T1.event_id = 6701
+SELECT COUNT(T1.device_id) FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.device_model = 'Galaxy Note 2' AND T1.age < 30
+SELECT COUNT(T1.device_id) FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T1.gender = 'F' AND T2.device_model = 'MI 3'
+SELECT COUNT(T1.device_id) FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.device_model = 'ELIFE E7 Mini' AND T1.age > 20
+SELECT COUNT(T1.device_id) FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T1.gender = 'M' AND T2.phone_brand = 'HTC'
+SELECT COUNT(T1.device_id) FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T1.age BETWEEN 20 AND 60 AND T2.phone_brand = 'TCL'
+SELECT COUNT(T1.device_id) FROM gender_age AS T1 INNER JOIN events_relevant AS T2 ON T1.device_id = T2.device_id INNER JOIN app_events_relevant AS T3 ON T2.event_id = T3.event_id WHERE T1.age < 23 AND T1.gender = 'F' AND T3.is_active = 0 AND T3.is_installed = 1
+SELECT device_id FROM gender_age WHERE gender = 'F' LIMIT 3
+SELECT IIF(SUM(IIF(T1.gender = 'M', 1, 0)) - SUM(IIF(T1.gender = 'F', 1, 0)) > 0, 'M', 'F') AS gender FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.device_model = 'Galaxy Note 2'
+SELECT COUNT(T1.app_id) FROM app_labels AS T1 INNER JOIN label_categories AS T2 ON T1.label_id = T2.label_id WHERE T2.category = 'Equity Fund'
+SELECT COUNT(T1.device_id) FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.device_model = 'Galaxy Note 3' AND T1.gender = 'M'
+SELECT T.phone_brand FROM ( SELECT T2.phone_brand, COUNT(T2.phone_brand) AS num FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T1.age BETWEEN 20 AND 30 GROUP BY T2.phone_brand ) AS T ORDER BY T.num DESC LIMIT 1
+SELECT COUNT(is_active) FROM app_events WHERE event_id = 2 AND is_active = 1
+SELECT app_id , IIF(is_installed = 1, 'YES', 'NO') AS status FROM app_events WHERE event_id = 844
+SELECT COUNT(event_id) FROM events WHERE SUBSTR(`timestamp`, 1, 10) = '2016-04-30'
+SELECT COUNT(T2.app_id) FROM label_categories AS T1 INNER JOIN app_labels AS T2 ON T2.label_id = T1.label_id WHERE T1.category = 'science fiction'
+SELECT COUNT(device_id) FROM gender_age WHERE gender = 'M'
+SELECT DISTINCT T2.longitude, T2.latitude FROM app_events AS T1 INNER JOIN events AS T2 ON T2.event_id = T1.event_id WHERE T2.event_id = 2 AND T1.is_active = 0
+SELECT COUNT(T1.event_id) FROM events AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.event_id = T2.device_id WHERE STRFTIME('%Y', T1.timestamp) = '2016' AND T2.phone_brand = 'vivo'
+SELECT T.category FROM ( SELECT T1.category, COUNT(T2.app_id) AS num FROM label_categories AS T1 INNER JOIN app_labels AS T2 ON T1.label_id = T2.label_id GROUP BY T1.label_id ) AS T ORDER BY T.num DESC LIMIT 1
+SELECT AVG(age) FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.phone_brand = 'vivo'
+SELECT T1.device_model FROM phone_brand_device_model2 AS T1 INNER JOIN gender_age AS T2 ON T1.device_id = T2.device_id WHERE T2.`group` = 'M39+' AND T2.gender = 'M' LIMIT 10
+SELECT COUNT(T1.app_id) FROM app_labels AS T1 INNER JOIN label_categories AS T2 ON T1.label_id = T2.label_id WHERE T2.category = 'game-Art Style'
+SELECT COUNT(event_id) FROM events WHERE SUBSTR(`timestamp`, 1, 10) = '2016-05-06'
+SELECT COUNT(device_id) FROM phone_brand_device_model2 WHERE phone_brand = 'vivo'
+SELECT COUNT(device_id) FROM gender_age WHERE age > 30 AND gender = 'F'
+SELECT gender FROM gender_age WHERE age = ( SELECT MAX(age) FROM gender_age )
+SELECT MIN(age) FROM gender_age WHERE gender = 'F'
+SELECT T1.device_model FROM phone_brand_device_model2 AS T1 INNER JOIN gender_age AS T2 ON T1.device_id = T2.device_id WHERE T2.gender = 'F'
+SELECT T.device_model FROM ( SELECT T2.device_model, COUNT(T2.device_model) AS num FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T1.age > 30 AND T1.gender = 'F' GROUP BY T2.device_model ) AS T ORDER BY T.num DESC LIMIT 1
+SELECT T.category FROM ( SELECT T2.category, COUNT(T1.app_id) AS num FROM app_labels AS T1 INNER JOIN label_categories AS T2 ON T1.label_id = T2.label_id GROUP BY T2.category ) AS T ORDER BY T.num DESC LIMIT 3
+SELECT SUM(IIF(T1.gender = 'M', 1, 0)) / SUM(IIF(T1.gender = 'F', 1, 0)) AS per FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.phone_brand = 'vivo' AND T2.device_model = 'X5Pro'
+SELECT timestamp FROM events WHERE event_id = 12
+SELECT COUNT(label_id) FROM label_categories WHERE category = 'game-card'
+SELECT COUNT(T1.device_id) FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.device_model = 'Desire 820' AND T1.gender = 'M'
+SELECT COUNT(T1.device_id) FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T1.age BETWEEN 20 AND 50 AND T2.device_model = 'Galaxy Premier'
+SELECT COUNT(app_id) FROM app_labels WHERE label_id = 7
+SELECT T2.app_id FROM label_categories AS T1 INNER JOIN app_labels AS T2 ON T1.label_id = T2.label_id WHERE T1.category = 'game-stress reliever'
+SELECT COUNT(T1.device_id) FROM gender_age AS T1 INNER JOIN events_relevant AS T2 ON T1.device_id = T2.device_id INNER JOIN app_events_relevant AS T3 ON T2.event_id = T3.event_id WHERE T1.gender = 'M' AND T3.is_active = 0 AND T1.age < 23
+SELECT COUNT(T2.app_id) FROM label_categories AS T1 INNER JOIN app_labels AS T2 ON T1.label_id = T2.label_id WHERE T1.category = 'comics'
+SELECT COUNT(T1.device_id) FROM gender_age AS T1 INNER JOIN events_relevant AS T2 ON T1.device_id = T2.device_id WHERE T2.longitude = 114 AND T1.gender = 'M'
+SELECT T1.gender FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.device_model = 'Desire 826' AND T2.phone_brand = 'HTC'
+SELECT COUNT(device_id) FROM phone_brand_device_model2 WHERE phone_brand = 'OPPO'
+SELECT COUNT(event_id) FROM events WHERE device_id = 4069764298338760000
+SELECT COUNT(gender) FROM gender_age WHERE gender = 'M' AND `group` = 'M32-38'
+SELECT label_id FROM label_categories WHERE category IN ('online shopping', 'online malls')
+SELECT T1.app_id, T2.timestamp FROM app_events AS T1 INNER JOIN events AS T2 ON T2.event_id = T1.event_id WHERE T2.event_id = 82
+SELECT COUNT(T1.device_id) FROM phone_brand_device_model2 AS T1 INNER JOIN events AS T2 ON T2.device_id = T1.device_id WHERE T1.phone_brand = 'vivo' AND T2.event_id = 2
+SELECT MAX(age) FROM gender_age WHERE gender = 'M'
+SELECT COUNT(T1.app_id) FROM app_labels AS T1 INNER JOIN label_categories AS T2 ON T1.label_id = T2.label_id WHERE T2.category = 'Financial Information'
+SELECT T1.category FROM label_categories AS T1 INNER JOIN app_labels AS T2 ON T1.label_id = T2.label_id ORDER BY T2.label_id LIMIT 3
+SELECT COUNT(device_id) FROM phone_brand_device_model2 WHERE device_model = '中兴'
+SELECT COUNT(app_id) FROM app_labels WHERE label_id = 48
+SELECT COUNT(label_id) FROM label_categories WHERE category LIKE 'game%'
+SELECT T1.label_id, T2.app_id FROM label_categories AS T1 INNER JOIN app_labels AS T2 ON T1.label_id = T2.label_id WHERE T1.category = 'Chinese Classical Mythology'
+SELECT COUNT(T1.app_id), T2.longitude, T2.latitude FROM app_events AS T1 INNER JOIN events AS T2 ON T1.event_id = T2.event_id WHERE T1.event_id = 79641 GROUP BY T2.longitude, T2.latitude
+SELECT T1.`group` FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.phone_brand = 'vivo'
+SELECT SUM(T1.age) / COUNT(T1.device_id) AS avg FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.device_model = 'R7'
+SELECT T1.`group` FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.phone_brand = 'LG'
+SELECT COUNT(device_model) FROM phone_brand_device_model2 WHERE phone_brand = 'HTC'
+SELECT device_id FROM gender_age_train WHERE age BETWEEN 29 AND 31 AND gender = 'F'
+SELECT event_id FROM events WHERE longitude = 0 AND latitude = 0 LIMIT 3
+SELECT category, label_id FROM label_categories WHERE category LIKE '%game%' LIMIT 5
+SELECT COUNT(gender) FROM gender_age WHERE age > 50 AND gender = 'F'
+SELECT longitude, latitude FROM `events` WHERE SUBSTR(`timestamp`, 1, 10) = '2016-05-08'
+SELECT T2.age, T2.gender FROM phone_brand_device_model2 AS T1 INNER JOIN gender_age AS T2 ON T2.device_id = T1.device_id WHERE T1.phone_brand = 'LG' AND T1.device_model = 'L70'
+SELECT SUM(IIF(T1.category = 'Industry tag', 1, 0)) * 100 / COUNT(T2.app_id) AS per FROM label_categories AS T1 INNER JOIN app_labels AS T2 ON T2.label_id = T1.label_id
+SELECT COUNT(event_id) FROM `events` WHERE SUBSTR(`timestamp`, 1, 4) = '2016' AND device_id = 29182687948017100
+SELECT MAX(age) FROM gender_age
+SELECT COUNT(device_id) FROM gender_age WHERE age < 30 AND gender = 'F'
+SELECT COUNT(T1.device_id) FROM phone_brand_device_model2 AS T1 INNER JOIN gender_age AS T2 ON T2.device_id = T1.device_id WHERE T2.gender = 'F' AND T1.device_model = 'Galaxy Note 2'
+SELECT COUNT(T1.app_id) FROM app_labels AS T1 INNER JOIN label_categories AS T2 ON T2.label_id = T1.label_id WHERE T2.category = 'Securities'
+SELECT SUM(IIF(T1.`group` = 'M23-26', 1.0, 0)) / COUNT(T1.device_id) AS per FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.phone_brand = 'vivo'
+SELECT `group` FROM gender_age WHERE age = '24'
+SELECT timestamp FROM events WHERE event_id = '887711'
+SELECT COUNT(T1.device_id) FROM phone_brand_device_model2 AS T1 INNER JOIN gender_age AS T2 ON T1.device_id = T2.device_id WHERE T1.device_model = 'Galaxy S5' AND T2.gender = 'M'
+SELECT T1.longitude, T1.latitude FROM events AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.device_model = 'Galaxy Note 2'
+SELECT T2.device_model FROM events AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T1.longitude = 121 AND T1.latitude = 31
+SELECT IIF(SUM(IIF(T2.category = 'Securities', 1, 0)) - SUM(IIF(T2.category = 'Finance', 1, 0)) > 0, 'Securities', 'Finance') AS diff FROM app_labels AS T1 INNER JOIN label_categories AS T2 ON T1.label_id = T2.label_id
+SELECT T2.device_model FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T1.`group` = 'M23-26'
+SELECT AVG(T1.age) FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.phone_brand = 'vivo' AND T1.gender = 'F'
+SELECT SUM(IIF(T2.category = 'Securities', 1, 0)) / SUM(IIF(T2.category = 'Finance', 1, 0)) AS per FROM app_labels AS T1 INNER JOIN label_categories AS T2 ON T1.label_id = T2.label_id
+SELECT label_id FROM label_categories WHERE category = 'Third-party card management'
+SELECT COUNT(event_id) FROM events WHERE device_id = 3915082290673130000
+SELECT COUNT(event_id) FROM events WHERE longitude = -156
+SELECT COUNT(device_id) FROM phone_brand_device_model2 WHERE device_model = 'A51'
+SELECT T1.`group` FROM gender_age AS T1 INNER JOIN phone_brand_device_model2 AS T2 ON T1.device_id = T2.device_id WHERE T2.phone_brand = 'LG' AND T2.device_model = 'Nexus 4'

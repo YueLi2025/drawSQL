@@ -1,0 +1,85 @@
+nl_question
+Please list the names of the courses that are less important than Machine Learning Theory.
+Please list the full names of all the students who took the course Machine Learning Theory.
+Among the students who took the course Machine Learning Theory, how many of them are undergraduates?
+Which professor advised Willie Rechert to work as a research assistant? Please give his or her full name.
+What is the average satisfying degree of the course Machine Learning Theory?
+Which student has the highest gpa? Give the full name.
+For the 3-credit course with the easiest difficulty, how many students get an "A" in that course?
+How many students took the hardest course?
+For the professor who is working with Harrietta Lydford, how is his popularity?
+For the professors who advise more than 2 students, which professor has a higher teaching ability? Give the full name.
+How many courses does Alvera McQuillin take?
+Give the phone number of the only student who obtained "A" in the course "Intro to BlockChain".
+What is the percentage of Professor Ogdon Zywicki's research assistants are taught postgraduate students?
+How many courses have the highest difficulty?
+Among the most important courses, what is the name of the most difficult course?
+How many students have the highest intelligence among those taking a bachelor's degree?
+Among the most popular professors, how many are females?
+How many students got an A in Applied Deep Learning?
+Among the easiest courses, what is the name of the course where most students got an A?
+How many courses does the student with the highest GPA this semester take?
+What is the name of the course with the highest satisfaction from students?
+What are the names of the courses that the students with the lowest intelligence are least satisfied with?
+Which of the two courses, "Advanced Operating System" or "Intro to BlockChain', did most of the students receive an A in?
+What is the average number of students who registered for the courses with a difficulty of 4?
+How many students, who have a GPA between 3 to 4, failed a course?
+What is the average GPA of the students with the highest research capability and high salary? List the full names of the students.
+List the professors' IDs and students' IDs with the lowest research ability.
+List the courses' IDs and students' IDs who failed to pass the course.
+Describe the names and credits of the least difficult courses.
+Describe the students' full names and grades in Intro to BlockChain course.
+Describe the full names and graduated universities of the professors who advised Olia Rabier.
+Name the students of the Advanced Database Systems course with the highest satisfaction.
+Describe the full names, emails and intelligence of the students with the highest capability and salary.
+What is the name of the most difficult course?
+Among the students with a gpa of 3.1 to 3.7, how many of them are undergraduate students?
+Give the student's last name that gave the highest student satisfaction for the course "Intro to Database 2".
+Among undergraduate students, list the name of the course with the highest student satisfaction.
+List the capability of research postgraduate students with an intellegence level of 4 and above.
+In students with a grade of B, how many of them have an intellegence level of 3?
+List the course's name where students acquired a grade of D.
+What is the capability on research of the student named Alvera McQuillin?
+Find the most important and most difficult courses.
+What is the average teaching ability of the most popular professors?
+Name the students with above-average capability.
+What is the average capability of students with less than a 2.5 GPA?
+List the full name of the professors who advised students with intelligence 1.
+Calculate the difference between the average satisfaction of the students with high salaries and no salary.
+Among the professors with more than average teaching ability, list the full name and email address of the professors who advise two or more students.
+What is the first and last name of students with highest gpa?
+What is the salary range of the student with an email of grosellg@hku.hk?
+Among research postgraduate students, give the name of the course with the student satisfaction value of 1.
+Among the students with a capability below 3, what is the difference of undergraduate students from research postgraduate students?
+How many professors are more popular than Zhou Zhihua?
+Please list the full names of all the students who are research assistants with the highest research capability.
+Among the students who got a B in the course Machine Learning Theory, how many of them have a gpa of over 3?
+Please list the names of the courses taken by Laughton Antonio.
+Which student failed the course Intro to Database 2? Please give his or her full name.
+Which student is more satisfied with the course Machine Learning Theory, Willie Rechert or Laughton Antonio?
+Among the professors who have more than 3 research assistants, how many of them are male?
+What is the average gpa of Ogdon Zywicki's research assistants?
+Give the number of research postgraduate students.
+Which professor is Oliy Spratling working with? Give the full name.
+How many research assistants does the female professor with the lowest teaching ability have?
+What is the full name of the professor who graduated from an Ivy League School?
+How many research postgraduate students are there?
+What are the GPAs of the unpaid Research Assistants?
+How many students does Ogdon Zywicki advise?
+Name the professor who got graduation from the University of Boston.
+List the research assistants' full names, capabilities and GPAs who were under the supervision of Merwyn Conkay.
+How many of the professors are female?
+What is the credit of the course named "Computer Vision"?
+Among the students with high salary, what is total number of students with a GPA higher than 3?
+Calculate the average satisfaction of the good students with their courses.
+What percentage of students are highly satisfied with the Intro to Database 2 course?
+List the student's first and last name that got a C in the course named "Applied Deep Learning".
+What is the percentage of students who get a "B" in the course "Computer Network"?
+Provide the full names and emails of unpaid research assistants.
+Among students registered for the most difficult course, list the students' full names who got grade A.
+What is the difficulty of the course in which a student with level of intellengence of 5 got an A grade?
+Of courses with 3 credit, how many students have GPA of 3.2?
+Give the full name and capability of students who failed in any courses.
+How many research assistants does Sauveur Skyme have?
+Who were the students who failed the course "Applied Deep Learning"? Give the full name.
+Among students with low salary, how many of them have a gpa of 3.5?

@@ -1,0 +1,9 @@
+table_name,column_name,column_type
+Answer,AnswerText,string
+Answer,QuestionID,num
+Answer,SurveyID,num
+Answer,UserID,num
+Question,questionid,num
+Question,questiontext,string
+Survey,Description,string
+Survey,SurveyID,num

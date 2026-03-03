@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+advisedBy,p_id,num
+advisedBy,p_id_dummy,string
+course,courseLevel,string
+course,course_id,num
+person,hasPosition,string
+person,inPhase,string
+person,p_id,num
+person,professor,boolean
+person,student,boolean
+person,yearsInProgram,string
+taughtBy,course_id,num
+taughtBy,p_id,num

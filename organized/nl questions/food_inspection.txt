@@ -1,0 +1,66 @@
+nl_question
+Please list the names of all the restaurants that have met all requirements in one inspection.
+What was the type of inspection Tiramisu Kitchen had on 2014/1/14?
+What is the description of the low risk violation of Tiramisu Kitchen on 2014/1/14?
+Please list the descriptions of all the high risk violations of Tiramisu Kitchen.
+How many routine inspections did Tiramisu Kitchen have?
+Among the routine inspections of Tiramisu Kitchen, how many of them have a score of over 70?
+Which restaurant had more low risk violation in inspections, Tiramisu Kitchen or OMNI S.F. Hotel - 2nd Floor Pantry?
+How many high risk violations do the restaurants in San Francisco have in total?
+Which restaurant has the highest total number of high risk violations?
+Tell the Id number of the business with the most number of violations.
+Which business had the most number of high risk violations? Give the name of the business.
+How many kinds of violations did "Stacks Restaurant" have on 2016/10/4?
+Give the description of the moderate risk violation which "Chez Fayala, Inc." had on 2016/7/1.
+Which business had the lowest score for the unscheduled routine inspection on 2016/9/26? Give the name of the business.
+How many unscheduled routine inspections did "Soma Restaurant And Bar" have?
+Give the address of the business with the most number of the low risk violations.
+Which business was the first one to get a low risk violation because of "Permit license or inspection report not posted"? Give the name of the business.
+For the business whose business certificate number is 304977, how many violations did it have on 2013/10/7?
+What percentage of the violations for "Melody Lounge" are moderate risks?
+What are the names of the establishments that met all of the required standards in 2013?
+In 2016, which city has the highest number of establishments with the highest health and safety hazards?
+What is the name of the establishment with the lowest inspection score of all time?
+How many high risks violations did the Tiramisu Kitchen violate?
+In 2013, what are the names of the establishments with contaminated or adulterated food?
+What are the names of the establishments that met all the required standards for 4 consecutive years?
+Between 2014 to 2016, what is the average inpsection score of the establishment owned by Yiu Tim Chan in 808 Pacific Ave, San Francisco?
+What is the average score of the establishments owned by the owner with the highest number of establishments?
+What is the name of the establishment with the highest number of low risk violations in 2014?
+Among the top 5 owners with highest number of establishments, which owner has the highest number of high risk violations? Give the name of the owner.
+Which establishment has the highest number of inspections done? Give the name of the establishment and calculate for its average score per inspection.
+How many eateries got highest inspection in 2013?
+Provide eateries' IDs, risk categories and descriptions with violation ID of 103101.
+When did eateries from San Bruno city get highest score in inspection?
+Mention the violation type ID and description of high risk category for STARBUCKS.
+Describe the violation dates, risk categories, descriptions and names of the eateries under Jade Chocolates LLC.
+Among violations on 3rd June, 2014, describe any 5 names, located cities and tax codes of the eateries with high risk category.
+What was the inspection type when El Aji Peruvian Restaurant got highest inspection score?
+List the eateries' names and addresses which had reinspection on 2nd February, 2015.
+List down the owner's name with a zip code 94104.
+List owner's name of businesses with a 100 score.
+Among the businesses within the postal code 94117, what is total number of businesses with a high risk category?
+In businesses that violates 103157 on May 27, 2016 , what is the name of the business that has an unscheduled inspection?
+Who is the owner of the business that has a high risk violation of 103109 and described as unclean or unsanitary food contact surfaces?
+Among the owners from Cameron Park, what is the business name of the business with a score of 100?
+What is the owner's name of the of the business that violates 103156 on June 12, 2014?
+List the business' name and risk category of businesses with a score greater than the 80% of average score of all businesses.
+How many restaurants' owners are in California?
+Among the inspections carried out in 2016, how many of them are routine?
+Among the restaurants being inspected in 2016, how many of them are in San Francisco?
+How many low risk violations were found in the inspection on 2014/1/14 for Tiramisu Kitchen?
+Please list the names of the restaurants that had a low risk violation in inspections in 2014.
+Give the name of the business which met all the required standards during the unscheduled routine inspection on 2016/9/28.
+How many eateries are located in Hayward?
+How many establishments have an inspection score of no more than 50?
+List down the eateries' IDs with structural inspection type in February 2016.
+List the inspection dates, scores and inspection types for the eateries with tax code AA.
+Provide eateries' IDs, names and addresses which were inspected on 30th July, 2016.
+Who were the owners of eateries which had highest health hazard by improper cooking time or temperatures?
+What is the total number of businesses with a tax code H25?
+In businesses with a score lower than 95 and located around the postal code of 94110, what is the percentage of businesses with a risk category of low risk?
+How many restaurants have met all requirements in the inspection?
+What is the average scores of Tiramisu Kitchen in all inspections?
+How many foodborne illness investigations were done in 2014?
+How many owners have 5 or more establishments?
+In the violations in 2014, how many of them have a low risk category?

@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+furniture,Furniture_ID,num
+furniture,Name,string
+furniture,Num_of_Component,num
+furniture,Market_Rate,num
+furniture_manufacte,Manufacturer_ID,num
+furniture_manufacte,Furniture_ID,num
+furniture_manufacte,Price_in_Dollar,num
+manufacturer,Manufacturer_ID,num
+manufacturer,Open_Year,num
+manufacturer,Name,string
+manufacturer,Num_of_Factories,num
+manufacturer,Num_of_Shops,num

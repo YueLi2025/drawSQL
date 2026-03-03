@@ -1,0 +1,17 @@
+nl_question
+list the local authorities and services provided by all stations.
+show all train numbers and names ordered by their time from early to late.
+Give me the times and numbers of all trains that go to Chennai, ordered by time.
+How many trains have 'Express' in their names?
+Find the number and time of the train that goes from Chennai to Guruvayur.
+Find the number of trains starting from each origin.
+Find the name of the train whose route runs through greatest number of stations.
+Find the number of trains for each station, as well as the station network name and services.
+What is the average high temperature for each day of week?
+Give me the maximum low temperature and average precipitation at the Amersham station.
+Find names and times of trains that run through stations for the local authority Chiltern.
+How many different services are provided by all stations?
+Find the id and local authority of the station with has the highest average high temperature.
+Find the id and local authority of the station whose maximum precipitation is higher than 50.
+show the lowest low temperature and highest wind speed in miles per hour.
+Find the origins from which more than 1 train starts.

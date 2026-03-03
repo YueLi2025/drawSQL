@@ -1,0 +1,12 @@
+table_name,column_name,column_type
+body_builder,Body_Builder_ID,num
+body_builder,People_ID,num
+body_builder,Snatch,num
+body_builder,Clean_Jerk,num
+body_builder,Total,num
+people,People_ID,num
+people,Name,string
+people,Height,num
+people,Weight,num
+people,Birth_Date,string
+people,Birth_Place,string

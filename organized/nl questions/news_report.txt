@@ -1,0 +1,19 @@
+nl_question
+How many journalists are there?
+List the names of journalists in ascending order of years working.
+What are the nationalities and ages of journalists?
+Show the names of journalists from "England" or "Wales".
+What is the average number of years spent working as a journalist?
+What is the nationality of the journalist with the largest number of years working?
+Show the different nationalities and the number of journalists of each nationality.
+Show the most common nationality for journalists.
+Show the nations that have both journalists with more than 10 years of working and journalists with less than 3 years of working.
+Show the dates, places, and names of events in descending order of the attendance.
+Show the names of journalists and the dates of the events they reported.
+Show the names of journalists and the names of the events they reported in ascending order
+Show the names of journalists and the number of events they reported.
+Show the names of journalists that have reported more than one event.
+List the names of journalists who have not reported any event.
+what are the average and maximum attendances of all events?
+Find the average age and experience working length of journalists working on different role type.
+List the event venues and names that have the top 2 most number of people attended.

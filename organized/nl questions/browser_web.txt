@@ -1,0 +1,19 @@
+nl_question
+How many main stream browsers whose market share is at least 5 exist?
+List the name of browsers in descending order by market share.
+List the ids, names and market shares of all browsers.
+What is the maximum, minimum and average market share of the listed browsers?
+What is the id and market share of the browser Safari?
+What are the name and os of web client accelerators that do not work with only a 'Broadband' type connection?
+What is the name of the browser that became compatible with the accelerator 'CProxy' after year 1998 ?
+What are the ids and names of the web accelerators that are compatible with two or more browsers?
+What is the id and name of the browser that is compatible with the most web accelerators?
+When did the web accelerator 'CACHEbox' and browser 'Internet Explorer' become compatible?
+How many different kinds of clients are supported by the web clients accelerators?
+How many accelerators are not compatible with the browsers listed ?
+What distinct accelerator names are compatible with the browswers that have market share higher than 15?
+List the names of the browser that are compatible with both 'CACHEbox' and 'Fasterfox'.
+Show the accelerator names and supporting operating systems that are not compatible with the browser named 'Opera'.
+Which accelerator name contains substring "Opera"?
+Find the number of web accelerators used for each Operating system.
+give me names of all compatible browsers and accelerators in the descending order of compatible year

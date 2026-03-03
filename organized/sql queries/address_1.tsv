@@ -1,0 +1,81 @@
+sql_query
+SELECT count(*) FROM City
+SELECT count(*) FROM City
+select distinct state from city
+SELECT DISTINCT state FROM City
+SELECT count(DISTINCT country) FROM City
+SELECT count(DISTINCT country) FROM City
+SELECT city_name ,  city_code ,  state ,  country FROM City
+SELECT city_name ,  city_code ,  state ,  country FROM City
+SELECT latitude ,  longitude FROM City WHERE city_name  =  "Baltimore"
+SELECT latitude ,  longitude FROM City WHERE city_name  =  "Baltimore"
+SELECT city_name FROM City WHERE state  =  "PA"
+SELECT city_name FROM City WHERE state  =  "PA"
+SELECT count(*) FROM City WHERE country  =  "CANADA"
+SELECT count(*) FROM City WHERE country  =  "CANADA"
+SELECT city_name FROM City WHERE country  =  "USA" ORDER BY latitude
+SELECT city_name FROM City WHERE country  =  "USA" ORDER BY latitude
+SELECT state ,  count(*) FROM City GROUP BY state
+SELECT state ,  count(*) FROM City GROUP BY state
+select country ,  count(*) from city group by country
+SELECT country ,  count(*) FROM City GROUP BY country
+SELECT state FROM City GROUP BY state HAVING count(*)  >=  2
+SELECT state FROM City GROUP BY state HAVING count(*)  >=  2
+SELECT state FROM City GROUP BY state ORDER BY count(*) DESC LIMIT 1
+SELECT state FROM City GROUP BY state ORDER BY count(*) DESC LIMIT 1
+SELECT country FROM City GROUP BY country ORDER BY count(*) ASC LIMIT 1
+SELECT country FROM City GROUP BY country ORDER BY count(*) ASC LIMIT 1
+SELECT T2.Fname ,  T2.Lname FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code WHERE T1.state  =  "MD"
+SELECT T2.Fname ,  T2.Lname FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code WHERE T1.state  =  "MD"
+SELECT count(*) FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code WHERE T1.country  =  "CHINA"
+SELECT count(*) FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code WHERE T1.country  =  "CHINA"
+SELECT T2.Fname ,  T2.Major FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code WHERE T1.city_name  =  "Baltimore"
+SELECT T2.Fname ,  T2.Major FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code WHERE T1.city_name  =  "Baltimore"
+SELECT T1.country ,  count(*) FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code GROUP BY T1.country
+SELECT T1.country ,  count(*) FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code GROUP BY T1.country
+SELECT T1.city_name ,  count(*) FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code GROUP BY T1.city_code
+SELECT T1.city_name ,  count(*) FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code GROUP BY T1.city_code
+SELECT T1.state FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code GROUP BY T1.state ORDER BY count(*) DESC LIMIT 1
+SELECT T1.state FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code GROUP BY T1.state ORDER BY count(*) DESC LIMIT 1
+SELECT T1.country FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code GROUP BY T1.country ORDER BY count(*) LIMIT 1
+SELECT T1.country FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code GROUP BY T1.country ORDER BY count(*) LIMIT 1
+SELECT T1.city_name FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code GROUP BY T1.city_code HAVING count(*)  >=  3
+SELECT T1.city_name FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code GROUP BY T1.city_code HAVING count(*)  >=  3
+SELECT T1.state FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code GROUP BY T1.state HAVING count(*)  >  5
+SELECT T1.state FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code GROUP BY T1.state HAVING count(*)  >  5
+SELECT StuID FROM Student EXCEPT SELECT StuID FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code WHERE country  =  "USA"
+SELECT StuID FROM Student EXCEPT SELECT StuID FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code WHERE country  =  "USA"
+SELECT StuID FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code WHERE T1.state  =  "PA"  AND T2.sex  =  'F'
+SELECT StuID FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code WHERE T1.state  =  "PA"  AND T2.sex  =  'F'
+SELECT StuID FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code WHERE T2.sex  =  'M' AND T1.country != "USA"
+SELECT StuID FROM City AS T1 JOIN Student AS T2 ON T1.city_code  =  T2.city_code WHERE T2.sex  =  'M' AND T1.country != "USA"
+SELECT distance FROM Direct_distance WHERE city1_code  =  "BAL" AND city2_code  =  "CHI"
+SELECT distance FROM Direct_distance WHERE city1_code  =  "BAL" AND city2_code  =  "CHI"
+SELECT distance FROM Direct_distance AS T1 JOIN City AS T2 ON T1.city1_code  =  T2.city_code JOIN City AS T3 ON T1.city2_code  =  T3.city_code WHERE T2.city_name  =  "Boston" AND T3.city_name  =  "Newark"
+SELECT distance FROM Direct_distance AS T1 JOIN City AS T2 ON T1.city1_code  =  T2.city_code JOIN City AS T3 ON T1.city2_code  =  T3.city_code WHERE T2.city_name  =  "Boston" AND T3.city_name  =  "Newark"
+SELECT avg(distance) ,  min(distance) ,  max(distance) FROM Direct_distance
+SELECT avg(distance) ,  min(distance) ,  max(distance) FROM Direct_distance
+SELECT city1_code ,  city2_code FROM Direct_distance ORDER BY distance DESC LIMIT 1
+SELECT city1_code ,  city2_code FROM Direct_distance ORDER BY distance DESC LIMIT 1
+SELECT city1_code ,  city2_code FROM Direct_distance WHERE distance  >  (SELECT avg(distance) FROM Direct_distance)
+SELECT city1_code ,  city2_code FROM Direct_distance WHERE distance  >  (SELECT avg(distance) FROM Direct_distance)
+SELECT city1_code ,  city2_code FROM Direct_distance WHERE distance  <  1000
+SELECT city1_code ,  city2_code FROM Direct_distance WHERE distance  <  1000
+SELECT sum(distance) FROM Direct_distance WHERE city1_code  =  "BAL"
+SELECT sum(distance) FROM Direct_distance WHERE city1_code  =  "BAL"
+SELECT avg(distance) FROM Direct_distance AS T1 JOIN City AS T2 ON T1.city1_code  =  T2.city_code WHERE T2.city_name  =  "Boston"
+SELECT avg(distance) FROM Direct_distance AS T1 JOIN City AS T2 ON T1.city1_code  =  T2.city_code WHERE T2.city_name  =  "Boston"
+SELECT T3.city_name FROM Direct_distance AS T1 JOIN City AS T2 ON T1.city1_code  =  T2.city_code JOIN City AS T3 ON T1.city2_code  =  T3.city_code WHERE T2.city_name  =  "Chicago" ORDER BY distance LIMIT 1
+SELECT T3.city_name FROM Direct_distance AS T1 JOIN City AS T2 ON T1.city1_code  =  T2.city_code JOIN City AS T3 ON T1.city2_code  =  T3.city_code WHERE T2.city_name  =  "Chicago" ORDER BY distance LIMIT 1
+SELECT T3.city_name FROM Direct_distance AS T1 JOIN City AS T2 ON T1.city1_code  =  T2.city_code JOIN City AS T3 ON T1.city2_code  =  T3.city_code WHERE T2.city_name  =  "Boston" ORDER BY distance DESC LIMIT 1
+SELECT T3.city_name FROM Direct_distance AS T1 JOIN City AS T2 ON T1.city1_code  =  T2.city_code JOIN City AS T3 ON T1.city2_code  =  T3.city_code WHERE T2.city_name  =  "Boston" ORDER BY distance DESC LIMIT 1
+SELECT city1_code ,  sum(distance) FROM Direct_distance GROUP BY city1_code
+SELECT city1_code ,  sum(distance) FROM Direct_distance GROUP BY city1_code
+SELECT T2.city_name ,  avg(distance) FROM Direct_distance AS T1 JOIN City AS T2 ON T1.city1_code  =  T2.city_code GROUP BY T1.city1_code
+SELECT T2.city_name ,  avg(distance) FROM Direct_distance AS T1 JOIN City AS T2 ON T1.city1_code  =  T2.city_code GROUP BY T1.city1_code
+SELECT distance FROM Direct_distance AS T1 JOIN Student AS T2 ON T1.city1_code  =  T2.city_code JOIN Student AS T3 ON T1.city2_code  =  T3.city_code WHERE T2.Fname  =  "Linda" AND T2.Lname  =  "Smith" AND T3.Fname  =  "Tracy" AND T3.Lname  =  "Kim"
+SELECT distance FROM Direct_distance AS T1 JOIN Student AS T2 ON T1.city1_code  =  T2.city_code JOIN Student AS T3 ON T1.city2_code  =  T3.city_code WHERE T2.Fname  =  "Linda" AND T2.Lname  =  "Smith" AND T3.Fname  =  "Tracy" AND T3.Lname  =  "Kim"
+SELECT T3.Fname ,  T3.Lname FROM Direct_distance AS T1 JOIN Student AS T2 ON T1.city1_code  =  T2.city_code JOIN Student AS T3 ON T1.city2_code  =  T3.city_code WHERE T2.Fname  =  "Linda" AND T2.Lname  =  "Smith" ORDER BY distance DESC LIMIT 1
+SELECT T3.Fname ,  T3.Lname FROM Direct_distance AS T1 JOIN Student AS T2 ON T1.city1_code  =  T2.city_code JOIN Student AS T3 ON T1.city2_code  =  T3.city_code WHERE T2.Fname  =  "Linda" AND T2.Lname  =  "Smith" ORDER BY distance DESC LIMIT 1
+SELECT state FROM Student AS T1 JOIN City AS T2 ON T1.city_code  =  T2.city_code WHERE T1.Fname  =  "Linda"
+SELECT state FROM Student AS T1 JOIN City AS T2 ON T1.city_code  =  T2.city_code WHERE T1.Fname  =  "Linda"

@@ -1,0 +1,127 @@
+nl_question
+What is the total number of households in Arecibo county?
+Which residential area in Arecibo county has the highest average house value? Please give its zip_code.
+Please list the numbers of males in all the residential areas in Arecibo county.
+Among all the residential areas in Arecibo county, what is the zip_code of the one with the highest white population?
+In which county is the residential area with the highest average income per household located?
+Please list the names of all the counties with at least one residential area that implements daylight saving.
+Please list the zip_codes of all the residential areas in Huntingdon county with over 30 employees.
+What is the bad alias of the residential area with the highest average house value?
+Please list the bad alias of all the residential areas with a median female age of over 32.
+What is the average median female age of all the residential areas in the Arecibo county?
+What is the area code of the city with the female median age over 32 years old?
+What is the alias of the city called Hartford?
+How many counties are there in Alabama?
+What are the precise locations of the cities with an area code of 787?
+What is the difference in the most populated city of Allentown-Bethlehem-Easton, PA-NJ in 2020 against its population in 2010?
+List all the zip codes in the county of New Castle in Delaware.
+Which state is Outagamie County in? Give the full name of the state.
+What party does the area with the zip code 91701 belong to?
+How many males are there in New Haven County's residential areas?
+Give the location coordinates of the city with area code 636.
+Show the zip code of the county represented by Buchanan Vernon.
+Which state is area code 878 in? Give the name of the state.
+How many counties are there in Virginia State?
+Give the name and the position of the cbsa officer from the area with the zip code 45503.
+Tell the name of the county which is represented by Hartzler Vicky.
+Which city and state has the bad alias of Lawrenceville?
+Name both the alias and the bad alias of zip code 38015.
+What is the zip code of the district represented by Steven A King?
+What is the area code of Phillips county in Montana?
+Name 10 cities with their states that are under the Lexington-Fayette, KY office of the Canada Border Services Agency.
+Calculate the ratio between the number of representatives in Alabama and the number of representatives in Illinois.
+State the male population for all zip code which were under the Berlin, NH CBSA.
+List all the bad alias for zip codes in Puerto Rico.
+What is the longitude and latitude for the district represented by Grayson Alan?
+What is the state for area code of 787?
+How many zip codes are under Barre, VT?
+Among the zip code under Saint Croix county, which zip code has the biggest land area?
+Among the cities with an area code 939, which city has the highest Asian population?
+Give the name of the country and state of the city with elevation of 1039.
+What is the area code of the city with the largest land area?
+Give the area code of the city with the white population ranging between 1700 to 2000.
+Among the cities with area code 608, how many cities implement daylight savings?
+Provide the average elevation of the cities with alias Amherst.
+What is the difference in the number of cities with P.O. box only and cities with Post Office among the cities with area code 787?
+Among the postal points in the District of Columbia, how many of them have an area with above 20000 black population?
+Provide the city where zip code 19019 is located and the alias of that city.
+List the bad alias of the postal point located in Camuy.
+Among the daylight savings areas in the Midwest region, how many postal points are there in Illinois?
+Provide the countries and the zip codes in the Virgin Islands.
+Provide the zip codes and the alias of Greeneville.
+Provide the zip codes and their affiliated organization for the postal point under Kingsport-Bristol, TN-VA.
+Provide the zip codes and the congress representatives' names of the postal points which are affiliated with Readers Digest.
+Which city has the most bad aliases?
+List all the counties in Georgia.
+List all the locations of postal points with the area code "410".
+What is the name of the CBSA of the city with the highest average house value?
+What are the bad aliases of the postal points from East Setauket?
+List all the cities with micro CBSA.
+What are the states with an above-average female population?
+What is the name and the position of the CBSA officer in the city of Cabo Rojo?
+Indicate the country name of the city Las Marias.
+How many cities does congressman Pierluisi Pedro represent?
+Provide the names of bad aliases in the city of Aguadilla.
+Indicate the name of the congressman represent in Guanica.
+Which state has the most bad aliases?
+Which state has greater than 50 CBSA officers of metro type?
+Indicate the name of the country with a population greater than 10000 in 2010.
+Calculate the percentage of households in residential areas of countries over 10000.
+Among the types of postal points in Saint Croix, what percentage of postal points is the post office?
+Among the area code 787, list the country of the cities with a postal point type of unique postal office.
+Among the cities with alias St Thomas, provide the type of postal point for each city.
+List down the names of the cities belonging to Noble, Oklahoma.
+Among the listed cities, provide the area code of the city with the largest water area.
+Provide the alias of the city with the highest population in year 2020.
+What is the elevation of the city belonging to Hampden, Massachusetts?
+List the area code of the city with the highest Hispanic population.
+Give the alias of the cities with an Asian population of 7.
+Among the cities with alias Ponce, what is the percentage of cities with a country level FIPS code of less than 20?
+List down the country of the cities with a population greater than 97% of the average population of all countries in 2020.
+Count the number of postal points in the district represented by Kirkpatrick Ann.
+Provide the zip codes and coordinates of the postal points under Allentown-Bethlehem-Easton, PA-NJ.
+Provide the zip codes, cities, and locations of the postal points that have Shared Reshipper as a bad alias.
+Count the number of postal points under New York-Newark-Jersey City, NY-NJ-PA.
+How many postal points are there under the congress representative in Puerto Rico?
+Describe the number of postal points and the countries in West Virginia.
+Provide the congress representatives' IDs of the postal points in East Springfield.
+Who is the CBSA officer of the post point in the area with the highest number of employees?
+How many postal points with unique post office types are there in Ohio?
+What is the highest gender ratio of the residential areas in Arecibo county?
+For the county represented by Thompson Bennie G, how many bad aliases does it have?
+Calculate the average male median age of all the residential areas in Windham county.
+What is the CBSA name and type in York, ME?
+Name the county that has the bad alias of Druid Hills.
+List all representatives of districts which have more than 30 000 population in 2020.
+State the county for Arecibo City.
+Calculate the difference between the 2020 population and the 2010 population for the districts represented by Griffin Tim.
+Provide the alias and elevation of the city with zip code 1028.
+List down the area code and country of the city named Savoy.
+What are the alias of the cities with 0 population in 2010?
+Among the postal points in Texas, provide the zip codes and cities of postal points which have total beneficiaries of above 10000.
+Provide the zip codes and CBSA officers of the postal point in Oxford.
+What are the zip code for the Senate house?
+What was the population of Wilcox County in 2010?
+What is the name of the state with the most counties?
+What is the average household income in the city known as "Danzig"?
+Provide the population of Arecibo in 2020.
+What is the elevation of the city with the alias East Longmeadow?
+Give the country and area code of the city with zip code 1116.
+What is the average of the white population in the cities with area code 920?
+Who are the congress representatives of the postal points in Garfield?
+Calculate the average number of beneficiaries per postal point in Guam.
+How many post offices are there in New York?
+Calculate the average of 2020's population in each zip code.
+Which CBSAs have more than 10 zip codes?
+What percentage of households are in "Coroyell" out of its state?
+What is the difference in the number of bad alias between Aguada city and Aguadilla city?
+Provide the zip codes and area codes of the postal points with the community post office type at the elevation above 6000.
+How many postal points are there under the congress representative from the House of Representatives in Mississippi?
+Among all the residential areas in Delaware, how many of them implement daylight saving?
+Please list the Asian populations of all the residential areas with the bad alias "URB San Joaquin".
+For the county where DeSantis Ron is from, what is the average female median age?
+Name the bad alias of Geneva, AL.
+Based on the population in 2020, calculate the percentage for the population of Asian in the zip code where the CBSA was Atmore, AL.
+Among the cities belonging to the country named Arroyo, calculate the percentage of increase in the population in these cities from 2010 to 2020.
+Compare the numbers of postal points under Smith Adrian and Heck Joe.
+In cities that do not implement daylight savings, what is the total number of cities?

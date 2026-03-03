@@ -1,0 +1,8 @@
+table_name,column_name,column_type
+Boxes,Code,string
+Boxes,Contents,string
+Boxes,Value,num
+Boxes,Warehouse,num
+Warehouses,Code,num
+Warehouses,Location,string
+Warehouses,Capacity,num

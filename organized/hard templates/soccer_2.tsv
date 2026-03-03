@@ -1,0 +1,107 @@
+hard_templates
+SELECT sum(enr) FROM table_name
+SELECT sum(enr) FROM table_name
+SELECT avg(enr) FROM table_name
+SELECT avg(enr) FROM table_name
+SELECT count(*) FROM table_name
+SELECT count(*) FROM table_name
+SELECT count(*) FROM table_name WHERE HS > num
+SELECT count(*) FROM table_name WHERE HS > num
+SELECT count(*) FROM table_name WHERE enr > num
+SELECT count(*) FROM table_name WHERE enr > num
+SELECT avg(HS) FROM table_name
+SELECT avg(HS) FROM table_name
+SELECT pName , HS FROM table_name WHERE HS < num
+SELECT pName , HS FROM table_name WHERE HS < num
+SELECT count(DISTINCT cName) FROM table_name
+SELECT count(DISTINCT cName) FROM table_name
+SELECT count(DISTINCT pPos) FROM table_name
+SELECT count(DISTINCT pPos) FROM table_name
+SELECT count(*) FROM table_name WHERE col_name = string
+SELECT count(*) FROM table_name WHERE col_name = string
+SELECT count(*) FROM table_name WHERE pPos = string
+SELECT count(*) FROM table_name WHERE pPos = string
+SELECT avg(HS) , max(HS) , min(HS) FROM table_name
+SELECT avg(HS) , max(HS) , min(HS) FROM table_name
+SELECT avg(enr) FROM table_name WHERE col_name = string
+SELECT avg(enr) FROM table_name WHERE col_name = string
+SELECT pName FROM table_name WHERE HS BETWEEN num AND num
+SELECT pName FROM table_name WHERE HS BETWEEN num AND num
+SELECT DISTINCT pName FROM table_name WHERE pName LIKE string
+SELECT DISTINCT pName FROM table_name WHERE pName LIKE string
+SELECT cName , enr FROM table_name WHERE enr > num AND col_name = string
+SELECT cName , enr FROM table_name WHERE enr > num AND col_name = string
+SELECT * FROM table_name ORDER BY enr
+SELECT * FROM table_name ORDER BY enr
+SELECT cName FROM table_name WHERE enr > num ORDER BY cName
+SELECT cName FROM table_name WHERE enr > num ORDER BY cName
+SELECT pName FROM table_name WHERE yCard = string ORDER BY HS DESC
+SELECT pName FROM table_name WHERE yCard = string ORDER BY HS DESC
+SELECT DISTINCT cName FROM table_name ORDER BY cName
+SELECT DISTINCT cName FROM table_name ORDER BY cName
+SELECT pPos FROM table_name GROUP BY pPos ORDER BY count(*) DESC LIMIT num
+SELECT pPos FROM table_name GROUP BY pPos ORDER BY count(*) DESC LIMIT num
+SELECT count(*) , cName FROM table_name GROUP BY cName ORDER BY count(*) DESC
+SELECT count(*) , cName FROM table_name GROUP BY cName ORDER BY count(*) DESC
+SELECT min(table_alias1.col_name) , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name
+SELECT min(table_alias1.col_name) , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias0.col_name
+SELECT cName FROM table_name ORDER BY enr DESC LIMIT num
+SELECT cName FROM table_name ORDER BY enr DESC LIMIT num
+SELECT cName , col_name , min(enr) FROM table_name GROUP BY col_name
+SELECT cName , col_name , min(enr) FROM table_name GROUP BY col_name
+SELECT DISTINCT col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT DISTINCT col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name
+SELECT DISTINCT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT DISTINCT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name ORDER BY table_alias0.col_name
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name ORDER BY table_alias0.col_name
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias2.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name JOIN table_name AS table_alias2 ON table_alias1.col_name = table_alias2.col_name WHERE table_alias2.col_name = string
+SELECT avg(table_alias0.col_name) , max(table_alias0.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT avg(table_alias0.col_name) , max(table_alias0.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT avg(table_alias0.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT avg(table_alias0.col_name) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT max(table_alias0.col_name) , pPos FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name > num GROUP BY table_alias1.col_name
+SELECT max(table_alias0.col_name) , pPos FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name > num GROUP BY table_alias1.col_name
+SELECT table_alias0.col_name FROM tryout AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name LIKE string
+SELECT table_alias0.col_name FROM tryout AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name LIKE string
+SELECT cName FROM tryout WHERE col_name = string AND pPos = string
+SELECT cName FROM tryout WHERE col_name = string AND pPos = string
+SELECT table_alias1.col_name FROM tryout AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = (SELECT cName FROM table_name ORDER BY enr DESC LIMIT num )
+SELECT table_alias1.col_name FROM tryout AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = (SELECT cName FROM table_name ORDER BY enr DESC LIMIT num )
+SELECT DISTINCT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT DISTINCT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT cName FROM table_name WHERE enr < num AND col_name = string UNION SELECT cName FROM table_name WHERE enr > num AND col_name = string
+SELECT cName FROM table_name WHERE enr < num AND col_name = string UNION SELECT cName FROM table_name WHERE enr > num AND col_name = string
+SELECT cName FROM tryout WHERE pPos = string INTERSECT SELECT cName FROM tryout WHERE pPos = string
+SELECT cName FROM tryout WHERE pPos = string INTERSECT SELECT cName FROM tryout WHERE pPos = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string INTERSECT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string INTERSECT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT COUNT(*) FROM (SELECT cName FROM tryout WHERE pPos = string INTERSECT SELECT cName FROM tryout WHERE pPos = string )
+SELECT COUNT(*) FROM (SELECT cName FROM tryout WHERE pPos = string INTERSECT SELECT cName FROM tryout WHERE pPos = string )
+SELECT cName FROM tryout WHERE pPos = string EXCEPT SELECT cName FROM tryout WHERE pPos = string
+SELECT cName FROM tryout WHERE pPos = string EXCEPT SELECT cName FROM tryout WHERE pPos = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string EXCEPT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string EXCEPT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string
+SELECT COUNT(*) FROM (SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string EXCEPT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string )
+SELECT COUNT(*) FROM (SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string EXCEPT SELECT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string )
+SELECT DISTINCT col_name FROM table_name WHERE enr < (SELECT max(enr) FROM table_name)
+SELECT DISTINCT col_name FROM table_name WHERE enr < (SELECT max(enr) FROM table_name)
+SELECT DISTINCT cName FROM table_name WHERE enr > (SELECT min(enr) FROM table_name WHERE col_name = string )
+SELECT DISTINCT cName FROM table_name WHERE enr > (SELECT min(enr) FROM table_name WHERE col_name = string )
+SELECT cName FROM table_name WHERE enr > (SELECT max(enr) FROM table_name WHERE col_name = string )
+SELECT cName FROM table_name WHERE enr > (SELECT max(enr) FROM table_name WHERE col_name = string )
+SELECT sum(enr) FROM table_name WHERE cName NOT IN (SELECT cName FROM table_name WHERE pPos = string )
+SELECT sum(enr) FROM table_name WHERE cName NOT IN (SELECT cName FROM table_name WHERE pPos = string )
+SELECT count(DISTINCT col_name ) FROM table_name WHERE enr > (SELECT avg(enr) FROM table_name)
+SELECT count(DISTINCT col_name ) FROM table_name WHERE enr > (SELECT avg(enr) FROM table_name)
+SELECT count(DISTINCT col_name ) FROM table_name WHERE enr < (SELECT avg(enr) FROM table_name)
+SELECT count(DISTINCT col_name ) FROM table_name WHERE enr < (SELECT avg(enr) FROM table_name)

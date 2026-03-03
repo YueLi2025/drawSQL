@@ -1,0 +1,91 @@
+sql_query
+SELECT count(*) FROM Agencies
+SELECT count(*) FROM Agencies
+SELECT agency_id ,  agency_details FROM Agencies
+SELECT agency_id ,  agency_details FROM Agencies
+SELECT count(*) FROM Clients
+SELECT count(*) FROM Clients
+SELECT client_id ,  client_details FROM Clients
+SELECT client_id ,  client_details FROM Clients
+SELECT agency_id ,  count(*) FROM Clients GROUP BY agency_id
+SELECT agency_id ,  count(*) FROM Clients GROUP BY agency_id
+SELECT T1.agency_id ,  T1.agency_details FROM Agencies AS T1 JOIN Clients AS T2 ON T1.agency_id  =  T2.agency_id GROUP BY T1.agency_id ORDER BY count(*) DESC LIMIT 1
+SELECT T1.agency_id ,  T1.agency_details FROM Agencies AS T1 JOIN Clients AS T2 ON T1.agency_id  =  T2.agency_id GROUP BY T1.agency_id ORDER BY count(*) DESC LIMIT 1
+SELECT T1.agency_id ,  T1.agency_details FROM Agencies AS T1 JOIN Clients AS T2 ON T1.agency_id  =  T2.agency_id GROUP BY T1.agency_id HAVING count(*)  >=  2
+SELECT T1.agency_id ,  T1.agency_details FROM Agencies AS T1 JOIN Clients AS T2 ON T1.agency_id  =  T2.agency_id GROUP BY T1.agency_id HAVING count(*)  >=  2
+SELECT T2.agency_details FROM Clients AS T1 JOIN Agencies AS T2 ON T1.agency_id  =  T2.agency_id WHERE T1.client_details  =  'Mac'
+SELECT T2.agency_details FROM Clients AS T1 JOIN Agencies AS T2 ON T1.agency_id  =  T2.agency_id WHERE T1.client_details  =  'Mac'
+SELECT T1.client_details ,  T2.agency_details FROM Clients AS T1 JOIN Agencies AS T2 ON T1.agency_id  =  T2.agency_id
+SELECT T1.client_details ,  T2.agency_details FROM Clients AS T1 JOIN Agencies AS T2 ON T1.agency_id  =  T2.agency_id
+SELECT sic_code ,  count(*) FROM Clients GROUP BY sic_code
+SELECT sic_code ,  count(*) FROM Clients GROUP BY sic_code
+SELECT client_id ,  client_details FROM Clients WHERE sic_code  =  "Bad";
+SELECT client_id ,  client_details FROM Clients WHERE sic_code  =  "Bad";
+SELECT T1.agency_id ,  T1.agency_details FROM Agencies AS T1 JOIN Clients AS T2 ON T1.agency_id  =  T2.agency_id
+SELECT T1.agency_id ,  T1.agency_details FROM Agencies AS T1 JOIN Clients AS T2 ON T1.agency_id  =  T2.agency_id
+SELECT agency_id FROM Agencies EXCEPT SELECT agency_id FROM Clients
+SELECT agency_id FROM Agencies EXCEPT SELECT agency_id FROM Clients
+SELECT count(*) FROM Invoices
+SELECT count(*) FROM Invoices
+SELECT invoice_id ,  invoice_status ,  invoice_details FROM Invoices
+SELECT invoice_id ,  invoice_status ,  invoice_details FROM Invoices
+SELECT client_id ,  count(*) FROM Invoices GROUP BY client_id
+SELECT client_id ,  count(*) FROM Invoices GROUP BY client_id
+SELECT T1.client_id ,  T2.client_details FROM Invoices AS T1 JOIN Clients AS T2 ON T1.client_id  =  T2.client_id GROUP BY T1.client_id ORDER BY count(*) DESC LIMIT 1
+SELECT T1.client_id ,  T2.client_details FROM Invoices AS T1 JOIN Clients AS T2 ON T1.client_id  =  T2.client_id GROUP BY T1.client_id ORDER BY count(*) DESC LIMIT 1
+SELECT client_id FROM Invoices GROUP BY client_id HAVING count(*)  >=  2
+SELECT client_id FROM Invoices GROUP BY client_id HAVING count(*)  >=  2
+SELECT invoice_status ,  count(*) FROM Invoices GROUP BY invoice_status
+SELECT invoice_status ,  count(*) FROM Invoices GROUP BY invoice_status
+SELECT invoice_status FROM Invoices GROUP BY invoice_status ORDER BY count(*) DESC LIMIT 1
+SELECT invoice_status FROM Invoices GROUP BY invoice_status ORDER BY count(*) DESC LIMIT 1
+SELECT T1.invoice_status ,  T1.invoice_details ,  T2.client_id ,  T2.client_details ,  T3.agency_id ,  T3.agency_details FROM Invoices AS T1 JOIN Clients AS T2 ON T1.client_id  =  T2.client_id JOIN Agencies AS T3 ON T2.agency_id  =  T3.agency_id
+SELECT T1.invoice_status ,  T1.invoice_details ,  T2.client_id ,  T2.client_details ,  T3.agency_id ,  T3.agency_details FROM Invoices AS T1 JOIN Clients AS T2 ON T1.client_id  =  T2.client_id JOIN Agencies AS T3 ON T2.agency_id  =  T3.agency_id
+SELECT meeting_type ,  other_details FROM meetings
+SELECT meeting_type ,  other_details FROM meetings
+SELECT meeting_outcome ,  purpose_of_meeting FROM meetings
+SELECT meeting_outcome ,  purpose_of_meeting FROM meetings
+SELECT T1.payment_id ,  T1.payment_details FROM Payments AS T1 JOIN Invoices AS T2 ON T1.invoice_id  =  T2.invoice_id WHERE T2.invoice_status  =  'Working'
+SELECT T1.payment_id ,  T1.payment_details FROM Payments AS T1 JOIN Invoices AS T2 ON T1.invoice_id  =  T2.invoice_id WHERE T2.invoice_status  =  'Working'
+SELECT invoice_id ,  invoice_status FROM Invoices EXCEPT SELECT T1.invoice_id ,  T1.invoice_status FROM Invoices AS T1 JOIN Payments AS T2 ON T1.invoice_id  =  T2.invoice_id
+SELECT invoice_id ,  invoice_status FROM Invoices EXCEPT SELECT T1.invoice_id ,  T1.invoice_status FROM Invoices AS T1 JOIN Payments AS T2 ON T1.invoice_id  =  T2.invoice_id
+SELECT count(*) FROM Payments
+SELECT count(*) FROM Payments
+SELECT payment_id ,  invoice_id ,  payment_details FROM Payments
+SELECT payment_id ,  invoice_id ,  payment_details FROM Payments
+SELECT DISTINCT T1.invoice_id ,  T1.invoice_status FROM Invoices AS T1 JOIN Payments AS T2 ON T1.invoice_id  =  T2.invoice_id
+SELECT DISTINCT T1.invoice_id ,  T1.invoice_status FROM Invoices AS T1 JOIN Payments AS T2 ON T1.invoice_id  =  T2.invoice_id
+SELECT invoice_id ,  count(*) FROM Payments GROUP BY invoice_id
+SELECT invoice_id ,  count(*) FROM Payments GROUP BY invoice_id
+SELECT T1.invoice_id ,  T2.invoice_status ,  T2.invoice_details FROM Payments AS T1 JOIN Invoices AS T2 ON T1.invoice_id  =  T2.invoice_id GROUP BY T1.invoice_id ORDER BY count(*) DESC LIMIT 1
+SELECT T1.invoice_id ,  T2.invoice_status ,  T2.invoice_details FROM Payments AS T1 JOIN Invoices AS T2 ON T1.invoice_id  =  T2.invoice_id GROUP BY T1.invoice_id ORDER BY count(*) DESC LIMIT 1
+SELECT count(*) FROM Staff
+SELECT count(*) FROM Staff
+SELECT agency_id ,  count(*) FROM Staff GROUP BY agency_id
+SELECT agency_id ,  count(*) FROM Staff GROUP BY agency_id
+SELECT T1.agency_id ,  T2.agency_details FROM Staff AS T1 JOIN Agencies AS T2 ON T1.agency_id  =  T2.agency_id GROUP BY T1.agency_id ORDER BY count(*) DESC LIMIT 1
+SELECT T1.agency_id ,  T2.agency_details FROM Staff AS T1 JOIN Agencies AS T2 ON T1.agency_id  =  T2.agency_id GROUP BY T1.agency_id ORDER BY count(*) DESC LIMIT 1
+SELECT meeting_outcome ,  count(*) FROM Meetings GROUP BY meeting_outcome
+SELECT meeting_outcome ,  count(*) FROM Meetings GROUP BY meeting_outcome
+SELECT client_id ,  count(*) FROM Meetings GROUP BY client_id
+SELECT client_id ,  count(*) FROM Meetings GROUP BY client_id
+SELECT meeting_type ,  count(*) FROM Meetings GROUP BY meeting_type
+SELECT meeting_type ,  count(*) FROM Meetings GROUP BY meeting_type
+SELECT T1.meeting_id ,  T1.meeting_outcome ,  T1.meeting_type ,  T2.client_details FROM meetings AS T1 JOIN clients AS T2 ON T1.client_id  =  T2.client_id
+SELECT T1.meeting_id ,  T1.meeting_outcome ,  T1.meeting_type ,  T2.client_details FROM meetings AS T1 JOIN clients AS T2 ON T1.client_id  =  T2.client_id
+SELECT meeting_id ,  count(*) FROM Staff_in_meetings GROUP BY meeting_id
+SELECT meeting_id ,  count(*) FROM Staff_in_meetings GROUP BY meeting_id
+SELECT staff_id ,  count(*) FROM Staff_in_meetings GROUP BY staff_id ORDER BY count(*) ASC LIMIT 1;
+SELECT staff_id ,  count(*) FROM Staff_in_meetings GROUP BY staff_id ORDER BY count(*) ASC LIMIT 1;
+SELECT count(DISTINCT staff_id) FROM Staff_in_meetings
+SELECT count(DISTINCT staff_id) FROM Staff_in_meetings
+SELECT count(*) FROM Staff WHERE staff_id NOT IN ( SELECT staff_id FROM Staff_in_meetings )
+SELECT count(*) FROM Staff WHERE staff_id NOT IN ( SELECT staff_id FROM Staff_in_meetings )
+SELECT T1.client_id ,  T1.client_details FROM Clients AS T1 JOIN meetings AS T2 ON T1.client_id  =  T2.client_id UNION SELECT T1.client_id ,  T1.client_details FROM Clients AS T1 JOIN invoices AS T2 ON T1.client_id  =  T2.client_id
+SELECT T1.client_id ,  T1.client_details FROM Clients AS T1 JOIN meetings AS T2 ON T1.client_id  =  T2.client_id UNION SELECT T1.client_id ,  T1.client_details FROM Clients AS T1 JOIN invoices AS T2 ON T1.client_id  =  T2.client_id
+SELECT staff_id ,  staff_details FROM staff WHERE staff_details LIKE "%s%" GROUP BY staff_id HAVING count(*)  >=  1
+SELECT staff_id ,  staff_details FROM staff WHERE staff_details LIKE "%s%" GROUP BY staff_id HAVING count(*)  >=  1
+SELECT T1.client_id ,  T1.sic_code ,  T1.agency_id FROM clients AS T1 JOIN meetings AS T2 ON T1.client_id  =  T2.client_id GROUP BY T1.client_id HAVING count(*)  =  1 INTERSECT SELECT T1.client_id ,  T1.sic_code ,  T1.agency_id FROM clients AS T1 JOIN invoices AS T2 ON T1.client_id  =  T2.client_id
+SELECT T1.client_id ,  T1.sic_code ,  T1.agency_id FROM clients AS T1 JOIN meetings AS T2 ON T1.client_id  =  T2.client_id GROUP BY T1.client_id HAVING count(*)  =  1 INTERSECT SELECT T1.client_id ,  T1.sic_code ,  T1.agency_id FROM clients AS T1 JOIN invoices AS T2 ON T1.client_id  =  T2.client_id
+SELECT T1.start_date_time ,  T1.end_date_time ,  T2.client_details ,  T4.staff_details FROM meetings AS T1 JOIN clients AS T2 ON T1.client_id  =  T2.client_id JOIN staff_in_meetings AS T3 ON T1.meeting_id  =  T3.meeting_id JOIN staff AS T4 ON T3.staff_id  =  T4.staff_id
+SELECT T1.start_date_time ,  T1.end_date_time ,  T2.client_details ,  T4.staff_details FROM meetings AS T1 JOIN clients AS T2 ON T1.client_id  =  T2.client_id JOIN staff_in_meetings AS T3 ON T1.meeting_id  =  T3.meeting_id JOIN staff AS T4 ON T3.staff_id  =  T4.staff_id

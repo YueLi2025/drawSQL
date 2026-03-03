@@ -1,0 +1,45 @@
+sql_query
+SELECT model FROM headphone ORDER BY price DESC LIMIT 1
+SELECT model FROM headphone ORDER BY price DESC LIMIT 1
+SELECT DISTINCT model FROM headphone ORDER BY model
+SELECT DISTINCT model FROM headphone ORDER BY model
+SELECT CLASS FROM headphone GROUP BY CLASS ORDER BY count(*) DESC LIMIT 1
+SELECT CLASS FROM headphone GROUP BY CLASS ORDER BY count(*) DESC LIMIT 1
+SELECT CLASS FROM headphone GROUP BY CLASS HAVING count(*)  >  2
+SELECT CLASS FROM headphone GROUP BY CLASS HAVING count(*)  >  2
+SELECT count(*) ,  CLASS FROM headphone WHERE price  >  200 GROUP BY CLASS
+SELECT count(*) ,  CLASS FROM headphone WHERE price  >  200 GROUP BY CLASS
+SELECT count(DISTINCT earpads) FROM headphone
+SELECT count(DISTINCT earpads) FROM headphone
+SELECT earpads FROM headphone GROUP BY earpads ORDER BY count(*) DESC LIMIT 2
+SELECT earpads FROM headphone GROUP BY earpads ORDER BY count(*) DESC LIMIT 2
+SELECT model ,  CLASS ,  construction FROM headphone ORDER BY price LIMIT 1
+SELECT model ,  CLASS ,  construction FROM headphone ORDER BY price LIMIT 1
+SELECT construction ,  avg(price) FROM headphone GROUP BY construction
+SELECT construction ,  avg(price) FROM headphone GROUP BY construction
+SELECT CLASS FROM headphone WHERE earpads  =  'Bowls' INTERSECT SELECT CLASS FROM headphone WHERE earpads  =  'Comfort Pads'
+SELECT CLASS FROM headphone WHERE earpads  =  'Bowls' INTERSECT SELECT CLASS FROM headphone WHERE earpads  =  'Comfort Pads'
+SELECT earpads FROM headphone EXCEPT SELECT earpads FROM headphone WHERE construction  =  'Plastic'
+SELECT earpads FROM headphone EXCEPT SELECT earpads FROM headphone WHERE construction  =  'Plastic'
+SELECT model FROM headphone WHERE price  <  (SELECT avg(price) FROM headphone)
+SELECT model FROM headphone WHERE price  <  (SELECT avg(price) FROM headphone)
+SELECT name FROM store ORDER BY date_opened
+SELECT name FROM store ORDER BY date_opened
+SELECT name ,  parking FROM store WHERE neighborhood  =  'Tarzana'
+SELECT name ,  parking FROM store WHERE neighborhood  =  'Tarzana'
+SELECT count(DISTINCT neighborhood) FROM store
+SELECT count(DISTINCT neighborhood) FROM store
+SELECT count(*) ,  neighborhood FROM store GROUP BY neighborhood
+SELECT count(*) ,  neighborhood FROM store GROUP BY neighborhood
+SELECT t1.name ,  sum(t2.quantity) FROM store AS t1 JOIN stock AS t2 ON t1.store_id  =  t2.store_id GROUP BY t2.store_id ORDER BY sum(t2.quantity) DESC LIMIT 1
+SELECT t1.name ,  sum(t2.quantity) FROM store AS t1 JOIN stock AS t2 ON t1.store_id  =  t2.store_id GROUP BY t2.store_id ORDER BY sum(t2.quantity) DESC LIMIT 1
+SELECT name FROM store WHERE store_id NOT IN (SELECT store_id FROM stock)
+SELECT name FROM store WHERE store_id NOT IN (SELECT store_id FROM stock)
+SELECT model FROM headphone WHERE headphone_id NOT IN (SELECT headphone_id FROM stock)
+SELECT model FROM headphone WHERE headphone_id NOT IN (SELECT headphone_id FROM stock)
+SELECT t1.model FROM headphone AS t1 JOIN stock AS t2 ON t1.headphone_id  =  t2.headphone_id GROUP BY t1.model ORDER BY sum(t2.quantity) DESC LIMIT 1
+SELECT t1.model FROM headphone AS t1 JOIN stock AS t2 ON t1.headphone_id  =  t2.headphone_id GROUP BY t1.model ORDER BY sum(t2.quantity) DESC LIMIT 1
+SELECT sum(t2.quantity) FROM store AS t1 JOIN stock AS t2 ON t1.store_id  =  t2.store_id WHERE t1.name  =  'Woodman'
+SELECT sum(t2.quantity) FROM store AS t1 JOIN stock AS t2 ON t1.store_id  =  t2.store_id WHERE t1.name  =  'Woodman'
+SELECT Neighborhood FROM store EXCEPT SELECT t1.Neighborhood FROM store AS t1 JOIN stock AS t2 ON t1.store_id  =  t2.store_id
+SELECT Neighborhood FROM store EXCEPT SELECT t1.Neighborhood FROM store AS t1 JOIN stock AS t2 ON t1.store_id  =  t2.store_id

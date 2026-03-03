@@ -1,0 +1,31 @@
+sql_query
+SELECT count(*) FROM party
+SELECT count(*) FROM party
+SELECT Party_Theme FROM party ORDER BY Number_of_hosts ASC
+SELECT Party_Theme FROM party ORDER BY Number_of_hosts ASC
+SELECT Party_Theme ,  LOCATION FROM party
+SELECT Party_Theme ,  LOCATION FROM party
+SELECT First_year ,  Last_year FROM party WHERE Party_Theme  =  "Spring" OR Party_Theme  =  "Teqnology"
+SELECT First_year ,  Last_year FROM party WHERE Party_Theme  =  "Spring" OR Party_Theme  =  "Teqnology"
+SELECT avg(Number_of_hosts) FROM party
+SELECT avg(Number_of_hosts) FROM party
+SELECT LOCATION FROM party ORDER BY Number_of_hosts DESC LIMIT 1
+SELECT LOCATION FROM party ORDER BY Number_of_hosts DESC LIMIT 1
+SELECT Nationality ,  COUNT(*) FROM HOST GROUP BY Nationality
+SELECT Nationality ,  COUNT(*) FROM HOST GROUP BY Nationality
+SELECT Nationality FROM HOST GROUP BY Nationality ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Nationality FROM HOST GROUP BY Nationality ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Nationality FROM HOST WHERE Age  >  45 INTERSECT SELECT Nationality FROM HOST WHERE Age  <  35
+SELECT Nationality FROM HOST WHERE Age  >  45 INTERSECT SELECT Nationality FROM HOST WHERE Age  <  35
+SELECT T3.Party_Theme ,  T2.Name FROM party_host AS T1 JOIN HOST AS T2 ON T1.Host_ID  =  T2.Host_ID JOIN party AS T3 ON T1.Party_ID  =  T3.Party_ID
+SELECT T3.Party_Theme ,  T2.Name FROM party_host AS T1 JOIN HOST AS T2 ON T1.Host_ID  =  T2.Host_ID JOIN party AS T3 ON T1.Party_ID  =  T3.Party_ID
+SELECT T3.Location ,  T2.Name FROM party_host AS T1 JOIN HOST AS T2 ON T1.Host_ID  =  T2.Host_ID JOIN party AS T3 ON T1.Party_ID  =  T3.Party_ID ORDER BY T2.Age
+SELECT T3.Location ,  T2.Name FROM party_host AS T1 JOIN HOST AS T2 ON T1.Host_ID  =  T2.Host_ID JOIN party AS T3 ON T1.Party_ID  =  T3.Party_ID ORDER BY T2.Age
+SELECT T3.Location FROM party_host AS T1 JOIN HOST AS T2 ON T1.Host_ID  =  T2.Host_ID JOIN party AS T3 ON T1.Party_ID  =  T3.Party_ID WHERE T2.Age  >  50
+SELECT T3.Location FROM party_host AS T1 JOIN HOST AS T2 ON T1.Host_ID  =  T2.Host_ID JOIN party AS T3 ON T1.Party_ID  =  T3.Party_ID WHERE T2.Age  >  50
+SELECT T2.Name FROM party_host AS T1 JOIN HOST AS T2 ON T1.Host_ID  =  T2.Host_ID JOIN party AS T3 ON T1.Party_ID  =  T3.Party_ID WHERE T3.Number_of_hosts  >  20
+SELECT T2.Name FROM party_host AS T1 JOIN HOST AS T2 ON T1.Host_ID  =  T2.Host_ID JOIN party AS T3 ON T1.Party_ID  =  T3.Party_ID WHERE T3.Number_of_hosts  >  20
+SELECT Name ,  Nationality FROM HOST ORDER BY Age DESC LIMIT 1
+SELECT Name ,  Nationality FROM HOST ORDER BY Age DESC LIMIT 1
+SELECT Name FROM HOST WHERE Host_ID NOT IN (SELECT Host_ID FROM party_host)
+SELECT Name FROM HOST WHERE Host_ID NOT IN (SELECT Host_ID FROM party_host)

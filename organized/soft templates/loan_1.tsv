@@ -1,0 +1,81 @@
+soft_templates
+SELECT count(*) FROM variable
+SELECT count(*) FROM variable
+SELECT sum( variable ) FROM variable
+SELECT sum( variable ) FROM variable
+SELECT sum( variable ) FROM variable WHERE variable = string
+SELECT sum( variable ) FROM variable WHERE variable = string
+SELECT avg( variable ) FROM variable WHERE variable = string
+SELECT avg( variable ) FROM variable WHERE variable = string
+SELECT avg( variable ) FROM variable
+SELECT avg( variable ) FROM variable
+SELECT variable , variable FROM variable WHERE variable = string
+SELECT variable , variable FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable = string
+SELECT variable FROM variable WHERE variable = string
+SELECT cust_name FROM variable ORDER BY acc_bal
+SELECT cust_name FROM variable ORDER BY acc_bal
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY sum(variable)
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY sum(variable)
+SELECT variable , acc_type , variable FROM variable WHERE no_of_loans = num
+SELECT variable , acc_type , variable FROM variable WHERE no_of_loans = num
+SELECT count(DISTINCT variable ) FROM variable
+SELECT count(DISTINCT variable ) FROM variable
+SELECT count(DISTINCT variable ) FROM variable
+SELECT count(DISTINCT variable ) FROM variable
+SELECT count(DISTINCT acc_type) FROM variable
+SELECT count(DISTINCT acc_type) FROM variable
+SELECT cust_name , acc_bal FROM variable WHERE cust_name LIKE string
+SELECT cust_name , acc_bal FROM variable WHERE cust_name LIKE string
+SELECT sum(acc_bal) FROM variable WHERE variable = string OR variable = string
+SELECT sum(acc_bal) FROM variable WHERE variable = string OR variable = string
+SELECT cust_name FROM variable WHERE acc_type = string INTERSECT SELECT cust_name FROM variable WHERE acc_type = string
+SELECT cust_name FROM variable WHERE acc_type = string INTERSECT SELECT cust_name FROM variable WHERE acc_type = string
+SELECT cust_name FROM variable EXCEPT SELECT cust_name FROM variable WHERE acc_type = string
+SELECT cust_name FROM variable EXCEPT SELECT cust_name FROM variable WHERE acc_type = string
+SELECT cust_name FROM variable EXCEPT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT cust_name FROM variable EXCEPT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string INTERSECT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string INTERSECT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT cust_name FROM variable WHERE variable < (SELECT avg( variable ) FROM variable)
+SELECT cust_name FROM variable WHERE variable < (SELECT avg( variable ) FROM variable)
+SELECT variable FROM variable ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable ORDER BY variable DESC LIMIT num
+SELECT cust_name FROM variable ORDER BY variable LIMIT num
+SELECT cust_name FROM variable ORDER BY variable LIMIT num
+SELECT cust_name , acc_type , acc_bal FROM variable ORDER BY variable DESC LIMIT num
+SELECT cust_name , acc_type , acc_bal FROM variable ORDER BY variable DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY sum(variable) DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY sum(variable) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY sum( variable ) DESC LIMIT num
+SELECT variable FROM variable GROUP BY variable ORDER BY sum( variable ) DESC LIMIT num
+SELECT avg(acc_bal) , acc_type FROM variable WHERE variable < num GROUP BY acc_type
+SELECT avg(acc_bal) , acc_type FROM variable WHERE variable < num GROUP BY acc_type
+SELECT sum(acc_bal) , variable FROM variable WHERE variable > num GROUP BY variable
+SELECT sum(acc_bal) , variable FROM variable WHERE variable > num GROUP BY variable
+SELECT sum( variable ) , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable
+SELECT sum( variable ) , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable HAVING count(*) > num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable HAVING count(*) > num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable HAVING sum(variable) > num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable HAVING sum(variable) > num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY sum(variable) DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY sum(variable) DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable < num GROUP BY variable ORDER BY sum(variable) DESC LIMIT num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable < num GROUP BY variable ORDER BY sum(variable) DESC LIMIT num
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT DISTINCT variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT DISTINCT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT DISTINCT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable > num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable > num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable < num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable < num
+SELECT sum(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT sum(variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT avg( variable ) FROM variable WHERE cust_id IN (SELECT cust_id FROM variable)
+SELECT avg( variable ) FROM variable WHERE cust_id IN (SELECT cust_id FROM variable)
+SELECT avg( variable ) FROM variable WHERE cust_id NOT IN (SELECT cust_id FROM variable)
+SELECT avg( variable ) FROM variable WHERE cust_id NOT IN (SELECT cust_id FROM variable)

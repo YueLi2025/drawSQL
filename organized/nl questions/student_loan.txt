@@ -1,0 +1,163 @@
+nl_question
+Among the students that have been absent from school for more than 5 months, how many of them are male?
+Among the students from the navy department, how many of them have payment due?
+How many female students are disabled?
+How many disabled students have never been absent from school?
+Please list the departments the students are absent from school for 9 months are in.
+Which department has the most disabled students?
+Please list all the female students that have filed for bankruptcy.
+What is the percentage of male students in the navy department?
+Does student348 have a due payment?
+Is student281 disabled and which school is the student enrolled in?
+Name 5 students with due payments that are enlisted alongside which organization they were enlisted.
+Name all disabled students that are enrolled in SMC.
+How many male students have no due payments?
+Which students that are in the marines have been absent for 6 months?
+Count the number of students from UCSD enlisted in the peace corps.
+What is the percentage ratio of students who are enlisted in foreign legions that have a due payment?
+List out student IDs that have the longest absence duration from school.
+What is the longest students absence duration from school?
+How many students were absence for 4 month?
+Does disable students join organization. If yes, please indicate the organization joined by the students.
+What is the employment, disability, gender and school debt status for student180 and student117?
+How many female students are not joining any of the organization?
+Mention the name of disabled students who have never been absent from school.
+How many unemployed students are enlisted in the navy organization?
+Count the number of male students who belong to foreign legion.
+List out the number of female students who enlisted in the air force.
+State the unemployed students who enlisted in marines.
+State name of unemployed students who have the longest duration of absense from school.
+Mention the name of unemployed students who have never been absent from school.
+How many disabled students have been absent for 3 months from school?
+State name of students who filed for bankruptcy and have the longest duration of absense from school.
+What is the gender of student1000?
+Which students have absents the most?
+Which school has the highest number of disabled students?
+List all the organisations of students who filed for bankcrupcy.
+How many SMC's students that absent for 7 months?
+Find the percentage of male students enlisted in the fire department.
+How many male stuents do not have payment due?
+How many students are enlisted in the Peace Corps organization are enrolled in UCSD school?
+Among the unemployed students, how many of them have no payment due?
+How many female students have no payment due?
+How many female students are enlisted in the Navy organization?
+List at least 5 students who have payment due and are enlisted in Peace Corps organization?
+How many disabled students are female?
+Calculate the percentage of students who have never been absent.
+What is the ratio of students who have payment due and those who do not have payment due?
+Provide the students' names and schools who enrolled for 15 months.
+Among all students, calculate the percentage of disabled students.
+Among students who have been absent for nine months, how many of them are disabled?
+List down the student names who did not file for bankruptcy.
+Calculate the number of students who are not disabled.
+Define the gender of "student995" and his/her enrolled schools.
+Among the students with disabilities, list any five students' names who are unemployed.
+Among the students with payment due, how many of them are unemployed?
+Calculate the percentage of female students.
+Which school have the highest student enrollment? How many of those students are filed for bankruptcy?
+List out students that enrolled in occ school and enlisted in a fire department.
+Which male students are unemployed, disable and were absent for 5 month?
+List out female students that enrolled in occ school and ulca?
+What is the school and organization enrolled by student211?
+What is the average absent month for a unemployed male students?
+Calculate the ratio of unemployed students who have never been absent from school.
+State the number of male students who do not have payment due.
+State the number of students who filed for bankruptcy and have payment due.
+State the number of disabled students who have payment due.
+State name of students who have been absent for 5 months from school and do not have payment due.
+Give the number of students who enlisted in marines and have payment due.
+Count the number of female students who belong to marines organization.
+Calculate the average duration of absense of female students.
+How many disabled students have payment due?
+Among the students that filed for bankruptcy, how many of them have been enrolled in OCC?
+How many disabled students are male?
+List the names of disabled students enlisted in the navy.
+Among all students, calculate the percentage of male students.
+Provide the name of disabled male students that are unemployed.
+How many male students are enrolled at OCC?
+Among the students enrolled in UCLA, what is the percentage of male students in the air force department?
+Calculate the average number of disabled female students enrolled in UCI.
+What is the name of the student with the longest duration of absence?
+What is the name of the organization which most of the students are enlisted in?
+Among the students that have a payment due, how many students are unemployed?
+How many female students have enlisted for the Army?
+List the names of the disabled students who were absent from school for more than 5 months.
+How many bankrupt students are there in the Marines?
+Among the students who filed for bankruptcy, how many students are disabled?
+How many months did a student in the Air Force miss school the most?
+Among the students who filed for bankruptcy with an absence in school of no more than 6 months, how many students enlisted for the fire department?
+For the students who have been absent from school for the longest time, how many months have they been absent?
+How many students belong to the navy department?
+What is the longest time for a student from the navy department to be absent from school?
+What is the average time for a disabled student to be absent from school?
+Name all students enlisted in the foreign legion.
+What percentage of students who enlisted in the navy make up the number of students enrolled in OCC?
+How many unemployed and bankrupt students that have payment dues?
+Please check if student 124 is disabled male.
+How many female students joined a marines and air force organization?
+What is the average of absence for an employed students?
+What is the average absence period of a disabled student?
+How many students enlisted in the fire-department?
+State the number of students do not have payment due.
+Give the number of students who have payment due.
+Calculate the average duration of absense of disabled students.
+What is the percentage of unemployed students who have been absent for 5 months from school?
+How many unemployed disabled students have been absent for 8 months from school?
+Among the students enlisted in marines, how many of them are disabled?
+How many unemployed students still have payment due?
+List all the disabled female students.
+Calculate the ratio between unemployed students and disabled students.
+How many students are enlisted in the Army organization?
+How many students are enrolled in UCLA school?
+How many students are enlisted in the Navy organization?
+How many unemployed students have never been absent?
+List at least 10 students who have no payment due and are enlisted in Fire Department organization.
+How many unemployed students have payment due?
+Calculate the ratio in percentage between the average number of female and male students who joined Fire Department organization.
+How many students enlisted in the navy?
+How many unemployed students filed for bankruptcy?
+List any ten male students who enlisted for foreign legion.
+How many students are enrolled in smc during month 1?
+List out student names that enrolled in two schools and two organizations?
+How many students is disabled and unemployed at the same time?
+How many male students filed for bankruptcy as compare to female students?
+List out the number of disabled students who enlisted in marines.
+List out the number of students who have the longest duration of absense from school and enlisted in the peace corps.
+How many students in the Air Force?
+How many students have been absent less than 4 months?
+State name of female students who filed for bankruptcy.
+How many students have absent from school?
+Among the male students, list down the names of students with payment due.
+Among students with 1 month of absenses, how many of them are enlisted in the air force department?
+What are the names of the students who joined the Marines?
+How many students enlisted in the Navy?
+Which organization has the least number of male students?
+Among the students that have filed for bankruptcy, how many of them have been absent from school for over 5 months?
+How many months has student217 been absent?
+Which organization did student285 enlist?
+List all students in the air force and which school they were enrolled at.
+What is the total number of students in the school?
+What is the number of unemployed and bankrupt students?
+What is the average absence period of a student?
+How many students have been absent above 2 months?
+Mention the name of students who filed for bankruptcy and have never been absent from school.
+How many students have been absents for more than 6 months?
+How many students has the longest absense from school for 5 months?
+Calculate the average enlisted students per organization.
+List any five female students' names who enlisted for the air force.
+How many students are filed for bankruptcy?
+What is the organization enlisted by student168?
+What is the percentage difference between the attendence of disabled and non-disable students? Do the disable students show better attendance than non-disable students?
+What is the status of payment of student 124?
+Mention the status of payment of student 299.
+How many students have never been absent in school?
+How many disabled students have zero absences?
+How many employed disabled students have zero absences?
+How many students are disabled?
+How many students are enlisted in the army?
+How many male students join more than one organization?
+How many unemployed students are enlisted in the Army organization?
+Calculate the average number of female students who are disabled and who joined Foreign Legion organization.
+List down the enrolled schools and duration of student214.
+How many disabled male students joined an organization?
+List out the number of students who filed for bankruptcy and enlisted in navy.

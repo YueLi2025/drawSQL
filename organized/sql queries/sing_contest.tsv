@@ -1,0 +1,21 @@
+sql_query
+SELECT count(*) FROM songs WHERE name LIKE "%Love%"
+SELECT name FROM songs ORDER BY name
+select name , language from songs
+SELECT max(voice_sound_quality) ,  min(voice_sound_quality) FROM performance_score
+SELECT T1.voice_sound_quality ,  T1.rhythm_tempo ,  T1.stage_presence FROM performance_score AS T1 JOIN participants AS T2 ON T1.participant_id  =  T2.id WHERE T2.name  =  'Freeway'
+SELECT id ,  LANGUAGE ,  original_artist FROM songs WHERE name != 'Love'
+SELECT name ,  original_artist FROM songs WHERE english_translation  =  'All the streets of love'
+SELECT DISTINCT T2.stage_presence FROM songs AS T1 JOIN performance_score AS T2 ON T1.id  =  T2.songs_id WHERE T1.language  =  'English'
+SELECT T1.id ,  T1.Name FROM participants AS T1 JOIN performance_score AS T2 ON T2.participant_id  =  T1.id GROUP BY T1.id HAVING count(*)  >=  2
+SELECT T1.id ,  T1.Name ,  T1.popularity FROM participants AS T1 JOIN performance_score AS T2 ON T2.participant_id  =  T1.id GROUP BY T1.id ORDER BY count(*)
+SELECT T1.id ,  T1.name FROM participants AS T1 JOIN performance_score AS T2 ON T2.participant_id  =  T1.id WHERE T2.voice_sound_quality  =  5 OR T2.rhythm_tempo  =  5
+SELECT T1.voice_sound_quality FROM performance_score AS T1 JOIN songs AS T2 ON T1.songs_id  =  T2.id WHERE T2.name  =  ' The Balkan Girls ' AND T2.language  =  'English'
+SELECT T1.id ,  T1.name FROM songs AS T1 JOIN performance_score AS T2 ON T1.id  =  T2.songs_id GROUP BY T1.id ORDER BY count(*) DESC LIMIT 1
+SELECT count(*) FROM performance_score WHERE stage_presence  <  7 OR stage_presence  >  9
+SELECT count(*) FROM songs WHERE id NOT IN ( SELECT songs_id FROM performance_score );
+SELECT avg(T2.rhythm_tempo) ,  T1.language FROM songs AS T1 JOIN performance_score AS T2 ON T2.songs_id  =  T1.id GROUP BY T1.language
+SELECT DISTINCT T1.name FROM participants AS T1 JOIN performance_score AS T2 ON T2.participant_id  =  T1.id JOIN songs AS T3 ON T3.id  =  T2.songs_id WHERE T3.language  =  'English'
+SELECT T1.name ,  T1.popularity FROM participants AS T1 JOIN performance_score AS T2 ON T2.participant_id  =  T1.id JOIN songs AS T3 ON T3.id  =  T2.songs_id WHERE T3.language  =  'Croatian' INTERSECT SELECT T1.name ,  T1.popularity FROM participants AS T1 JOIN performance_score AS T2 ON T2.participant_id  =  T1.id JOIN songs AS T3 ON T3.id  =  T2.songs_id WHERE T3.language  =  'English'
+SELECT name FROM songs WHERE name LIKE "%Is%"
+select t2.original_artist from performance_score as t1 join songs as t2 on t2.id  =  t1.songs_id where t1.rhythm_tempo  >  5 order by t1.voice_sound_quality desc

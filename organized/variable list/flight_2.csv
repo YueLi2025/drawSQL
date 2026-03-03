@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+airlines,uid,num
+airlines,Airline,string
+airlines,Abbreviation,string
+airlines,Country,string
+airports,City,string
+airports,AirportCode,string
+airports,AirportName,string
+airports,Country,string
+airports,CountryAbbrev,string
+flights,Airline,num
+flights,FlightNo,num
+flights,SourceAirport,string
+flights,DestAirport,string

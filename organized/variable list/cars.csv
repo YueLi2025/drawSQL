@@ -1,0 +1,17 @@
+table_name,column_name,column_type
+country,country,string
+country,origin,num
+data,ID,num
+data,acceleration,num
+data,car_name,string
+data,cylinders,num
+data,displacement,num
+data,horsepower,num
+data,model,num
+data,mpg,num
+data,weight,string
+price,ID,num
+price,price,num
+production,ID,num
+production,country,num
+production,model_year,num

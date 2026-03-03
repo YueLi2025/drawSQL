@@ -1,0 +1,49 @@
+sql_query
+SELECT count(*) FROM film
+SELECT count(*) FROM film
+SELECT DISTINCT Director FROM film
+SELECT DISTINCT Director FROM film
+SELECT avg(Gross_in_dollar) FROM film
+SELECT avg(Gross_in_dollar) FROM film
+SELECT Low_Estimate ,  High_Estimate FROM film_market_estimation
+SELECT Low_Estimate ,  High_Estimate FROM film_market_estimation
+SELECT TYPE FROM film_market_estimation WHERE YEAR  =  1995
+SELECT TYPE FROM film_market_estimation WHERE YEAR  =  1995
+SELECT max(Number_cities) ,  min(Number_cities) FROM market
+SELECT max(Number_cities) ,  min(Number_cities) FROM market
+SELECT count(*) FROM market WHERE Number_cities  <  300
+SELECT count(*) FROM market WHERE Number_cities  <  300
+SELECT Country FROM market ORDER BY Country ASC
+SELECT Country FROM market ORDER BY Country ASC
+SELECT Country FROM market ORDER BY Number_cities DESC
+SELECT Country FROM market ORDER BY Number_cities DESC
+SELECT T1.Title ,  T2.Type FROM film AS T1 JOIN film_market_estimation AS T2 ON T1.Film_ID  =  T2.Film_ID
+SELECT T1.Title ,  T2.Type FROM film AS T1 JOIN film_market_estimation AS T2 ON T1.Film_ID  =  T2.Film_ID
+SELECT DISTINCT T1.Director FROM film AS T1 JOIN film_market_estimation AS T2 ON T1.Film_ID  =  T2.Film_ID WHERE T2.Year  =  1995
+SELECT DISTINCT T1.Director FROM film AS T1 JOIN film_market_estimation AS T2 ON T1.Film_ID  =  T2.Film_ID WHERE T2.Year  =  1995
+SELECT avg(T2.Number_cities) FROM film_market_estimation AS T1 JOIN market AS T2 ON T1.Market_ID  =  T2.Market_ID WHERE T1.Low_Estimate  >  10000
+SELECT avg(T2.Number_cities) FROM film_market_estimation AS T1 JOIN market AS T2 ON T1.Market_ID  =  T2.Market_ID WHERE T1.Low_Estimate  >  10000
+SELECT T2.Country ,  T1.Year FROM film_market_estimation AS T1 JOIN market AS T2 ON T1.Market_ID  =  T2.Market_ID
+SELECT T2.Country ,  T1.Year FROM film_market_estimation AS T1 JOIN market AS T2 ON T1.Market_ID  =  T2.Market_ID
+SELECT T1.Year FROM film_market_estimation AS T1 JOIN market AS T2 ON T1.Market_ID  =  T2.Market_ID WHERE T2.Country  =  "Japan" ORDER BY T1.Year DESC
+SELECT T1.Year FROM film_market_estimation AS T1 JOIN market AS T2 ON T1.Market_ID  =  T2.Market_ID WHERE T2.Country  =  "Japan" ORDER BY T1.Year DESC
+SELECT Studio ,  COUNT(*) FROM film GROUP BY Studio
+SELECT Studio ,  COUNT(*) FROM film GROUP BY Studio
+SELECT Studio FROM film GROUP BY Studio ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Studio FROM film GROUP BY Studio ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Studio FROM film GROUP BY Studio HAVING COUNT(*)  >=  2
+SELECT Studio FROM film GROUP BY Studio HAVING COUNT(*)  >=  2
+SELECT Title FROM film WHERE Film_ID NOT IN (SELECT Film_ID FROM film_market_estimation)
+SELECT Title FROM film WHERE Film_ID NOT IN (SELECT Film_ID FROM film_market_estimation)
+SELECT Studio FROM film WHERE Director  =  "Nicholas Meyer" INTERSECT SELECT Studio FROM film WHERE Director  =  "Walter Hill"
+SELECT Studio FROM film WHERE Director  =  "Nicholas Meyer" INTERSECT SELECT Studio FROM film WHERE Director  =  "Walter Hill"
+SELECT title ,  Studio FROM film WHERE Studio LIKE "%Universal%"
+SELECT title ,  Studio FROM film WHERE Studio LIKE "%Universal%"
+SELECT Studio FROM film EXCEPT SELECT Studio FROM film WHERE Director  =  "Walter Hill"
+SELECT Studio FROM film EXCEPT SELECT Studio FROM film WHERE Director  =  "Walter Hill"
+SELECT Studio FROM film GROUP BY Studio HAVING avg(Gross_in_dollar)  >=  4500000
+SELECT Studio FROM film GROUP BY Studio HAVING avg(Gross_in_dollar)  >=  4500000
+SELECT t1.title FROM film AS T1 JOIN film_market_estimation AS T2  ON T1.Film_ID  =  T2.Film_ID ORDER BY high_estimate DESC LIMIT 1
+SELECT t1.title FROM film AS T1 JOIN film_market_estimation AS T2  ON T1.Film_ID  =  T2.Film_ID ORDER BY high_estimate DESC LIMIT 1
+SELECT title ,  director FROM film WHERE film_id NOT IN (SELECT film_id FROM film_market_estimation AS T1 JOIN market AS T2 ON T1.market_id  =  T2.Market_ID WHERE country  =  'China')
+SELECT title ,  director FROM film WHERE film_id NOT IN (SELECT film_id FROM film_market_estimation AS T1 JOIN market AS T2 ON T1.market_id  =  T2.Market_ID WHERE country  =  'China')

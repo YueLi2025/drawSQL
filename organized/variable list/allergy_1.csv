@@ -1,0 +1,13 @@
+table_name,column_name,column_type
+Allergy_Type,Allergy,string
+Allergy_Type,AllergyType,string
+Has_Allergy,StuID,num
+Has_Allergy,Allergy,string
+Student,StuID,num
+Student,LName,string
+Student,Fname,string
+Student,Age,num
+Student,Sex,string
+Student,Major,num
+Student,Advisor,num
+Student,city_code,string

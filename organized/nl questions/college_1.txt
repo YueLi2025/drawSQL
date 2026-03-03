@@ -1,0 +1,165 @@
+nl_question
+Find the number of professors in accounting department.
+How many professors are in the accounting dept?
+How many professors are teaching class with code ACCT-211?
+How many professors teach a class with the code ACCT-211?
+What is the first and last name of the professor in biology department?
+What are the first and last name of all biology professors?
+What are the first names and date of birth of professors teaching course ACCT-211?
+What are the first names and birthdates of the professors in charge of ACCT-211?
+How many classes are professor whose last name is Graztevski has?
+How many classes does the professor whose last name is Graztevski teach?
+What is the code of the school where the accounting department belongs to?
+What is the school code of the accounting department?
+How many credits does course CIS-220 have, and what its description?
+What is the description for the CIS-220 and how many credits does it have?
+what is the address of history department?
+Where is the history department?
+How many different locations does the school with code BUS has?
+What are the different locations of the school with the code BUS?
+How many different locations does each school have?
+Count different addresses of each school.
+Find the description and credit for the course QM-261?
+What is the course description and number of credits for QM-261?
+Find the number of departments in each school.
+How many departments are in each school?
+Find the number of different departments in each school whose number of different departments is less than 5.
+How many different departments are there in each school that has less than 5 apartments?
+How many sections does each course has?
+How many sections does each course have?
+What is the total credit does each department offer?
+How many credits does the department offer?
+Find the number of classes offered for all class rooms that held at least 2 classes.
+For each classroom with at least 2 classes, how many classes are offered?
+Find the number of classes in each department.
+How many classes are held in each department?
+Find the number of classes in each school.
+How many classes exist for each school?
+What is the number of professors for different school?
+How many different professors are there for the different schools?
+Find the count and code of the job has most employees.
+What is the count and code of the job with the most employee?
+Which school has the smallest amount of professors?
+Which school has the fewest professors?
+Find the number of professors with a Ph.D. degree in each department.
+How many professors have a Ph.D. in each department?
+Find the number of students for each department.
+How many students are in each department?
+Find the total number of hours have done for all students in each department.
+How many hours do the students spend studying in each department?
+Find the max, average, and minimum gpa of all students in each department.
+What is the highest, lowest, and average student GPA for every department?
+What is the name and the average gpa of department whose students have the highest average gpa?
+Which department has the highest average student GPA, and what is the average gpa?
+how many schools exist in total?
+How many schools are there in the department?
+How many different classes are there?
+How many unique classes are offered?
+How many courses are offered?
+What are the number of different course codes?
+How many departments does the college has?
+How many different departments are there?
+How many courses are offered by the Computer Info. Systems department?
+How many courses does the department of Computer Information Systmes offer?
+How many sections does course ACCT-211 has?
+What is the number of different class sections offered in the course ACCT-211?
+Find the total credits of all classes offered by each department.
+What are the total number of credits offered by each department?
+Find the name of the department that offers the largest number of credits of all classes.
+Which department offers the most credits all together?
+How many students enrolled in class ACCT-211?
+What are the total number of students enrolled in ACCT-211?
+What is the first name of each student enrolled in class ACCT-211?
+What are the first names of all students in course ACCT-211?
+What is the first name of students enrolled in class ACCT-211 and got grade C?
+What are the first names of all students who took ACCT-211 and received a C?
+Find the total number of employees.
+How many employees are there all together?
+How many professors do have a Ph.D. degree?
+What is the total number of professors with a Ph.D. ?
+How many students are enrolled in the class taught by some professor from the accounting department?
+How many students are enrolled in some classes that are taught by an accounting professor?
+What is the name of the department that has the largest number of students enrolled?
+What is the name of the department with the most students enrolled?
+list names of all departments ordered by their names.
+What are the names of all departments in alphabetical order?
+List the codes of all courses that take place in room KLR209.
+What are the codes of all the courses that are located in room KLR209?
+List the first name of all employees with job code PROF ordered by their date of birth.
+What are the first names of all employees that are professors ordered by date of birth?
+Find the first names and offices of all professors sorted by alphabetical order of their first name.
+What are the first names and office locations for all professors sorted alphabetically by first name?
+What is the first and last name of the oldest employee?
+What are the first and last names of the employee with the earliest date of birth?
+What is the first, last name, gpa of the youngest one among students whose GPA is above 3?
+What is the first and last name of the youngest student with a GPA above 3, and what is their GPA?
+What is the first name of students who got grade C in any class?
+What are the first names of all students who got a grade C in a class?
+What is the name of department where has the smallest number of professors?
+What is the name of the department with the fewest professors?
+What is the name of department where has the largest number of professors with a Ph.D. degree?
+Which department has the most professors with a Ph.D.?
+What are the first names of the professors who do not teach a class.
+What are the first names of all professors not teaching any classes?
+What is the first names of the professors from the history department who do not teach a class.
+What are the first names of all history professors who do not teach?
+What is the last name and office of the professor from the history department?
+What are the last name and office of all history professors?
+What is department name and office for the professor whose last name is Heffington?
+What is the name of the department and office location for the professor with the last name of Heffington?
+Find the last name and hire date of the professor who is in office DRE 102.
+What is the last name of the professor whose office is located in DRE 102, and when were they hired?
+What is the code of the course which the student whose last name is Smithson took?
+What are the course codes for every class that the student with the last name Smithson took?
+What are the description and credit of the course which the student whose last name is Smithson took?
+How many credits is the course that the student with the last name Smithson took, and what is its description?
+How many professors who has a either Ph.D. or MA degree?
+How many professors attained either Ph.D. or Masters degrees?
+How many professors who are from either Accounting or Biology department?
+What is the number of professors who are in the Accounting or Biology departments?
+Find the first name of the professor who is teaching two courses with code CIS-220 and QM-261.
+What is the first name of the professor who is teaching CIS-220 and QM-261?
+Find the first name of student who is taking classes from accounting and Computer Info. Systems departments
+What are the first names of all students taking accoutning and Computer Information Systems classes?
+What is the average gpa of the students enrolled in the course with code ACCT-211?
+What is the average GPA of students taking ACCT-211?
+What is the first name, gpa and phone number of the top 5 students with highest gpa?
+What is the first name, GPA, and phone number of the students with the top 5 GPAs?
+What is the department name of the students with lowest gpa belongs to?
+What is the name of the department with the student that has the lowest GPA?
+Find the first name and gpa of the students whose gpa is lower than the average gpa of all students.
+What is the first name and GPA of every student that has a GPA lower than average?
+Find the name and address of the department that has the highest number of students.
+What is the name and address of the department with the most students?
+Find the name, address, number of students in the departments that have the top 3 highest number of students.
+What is the name, address, and number of students in the departments that have the 3 most students?
+Find the first name and office of the professor who is in the history department and has a Ph.D. degree.
+What are the first names and office of the professors who are in the history department and have a Ph.D?
+Find the first names of all instructors who have taught some course and the course code.
+What are the first names of all teachers who have taught a course and the corresponding course codes?
+Find the first names of all instructors who have taught some course and the course description.
+What are the first names of all teachers who have taught a course and the corresponding descriptions?
+Find the first names and offices of all instructors who have taught some course and also find the course description.
+What are the first names, office locations of all lecturers who have taught some course?
+Find the first names and offices of all instructors who have taught some course and the course description and the department name.
+What are the first names, office locations, and departments of all instructors, and also what are the descriptions of the courses they teach?
+Find names of all students who took some course and the course description.
+What are the names of all students who took a class and the corresponding course descriptions?
+Find names of all students who took some course and got A or C.
+What are the names of all students taking a course who received an A or C?
+Find the first names of all professors in the Accounting department who is teaching some course and the class room.
+What are the first names of all Accounting professors who teach and what are the classrooms of the courses they teach?
+Find the first names and degree of all professors who are teaching some class in Computer Info. Systems department.
+What are the different first names and highest degree attained for professors teaching in the Computer Information Systems department?
+What is the last name of the student who got a grade A in the class with code 10018.
+What is the last name of the student who received an A in the class with the code 10018?
+Find the first name and office of history professor who did not get a Ph.D. degree.
+What are the first names and offices of history professors who don't have Ph.D.s?
+Find the first names of professors who are teaching more than one class.
+What are the first names of all professors who teach more than one class?
+Find the first names of students who took exactly one class.
+What are the first names of student who only took one course?
+Find the name of department that offers the class whose description has the word "Statistics".
+What is the name of the department that offers a course that has a description including the word "Statistics"?
+What is the first name of the student whose last name starting with the letter S and is taking ACCT-211 class?
+What is the first name of the student whose last name starts with the letter S and is taking ACCT-211?

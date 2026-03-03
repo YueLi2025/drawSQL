@@ -1,0 +1,85 @@
+nl_question
+How many documents do we have?
+Count the number of documents.
+List document IDs, document names, and document descriptions for all documents.
+What are the ids, names, and descriptions for all documents?
+What is the document name and template id for document with description with the letter 'w' in it?
+Return the names and template ids for documents that contain the letter w in their description.
+What is the document id, template id and description for document named "Robbin CV"?
+Return the document id, template id, and description for the document with the name Robbin CV.
+How many different templates do all document use?
+Count the number of different templates used for documents.
+How many documents are using the template with type code 'PPT'?
+Count the number of documents that use the PPT template type.
+Show all template ids and number of documents using each template.
+What are all different template ids used for documents, and how many times were each of them used?
+What is the id and type code for the template used by the most documents?
+Return the id and type code of the template that is used for the greatest number of documents.
+Show ids for all templates that are used by more than one document.
+What are the template ids of any templates used in more than a single document?
+Show ids for all templates not used by any document.
+What are the ids for templates that are not used in any documents?
+How many templates do we have?
+Count the number of templates.
+Show template ids, version numbers, and template type codes for all templates.
+What are the ids, version numbers, and type codes for each template?
+Show all distinct template type codes for all templates.
+What are the different template type codes?
+What are the ids of templates with template type code PP or PPT?
+Return the ids of templates that have the code PP or PPT.
+How many templates have template type code CV?
+Count the number of templates of the type CV.
+What is the version number and template type code for the template with version number later than 5?
+Return the version numbers and template type codes of templates with a version number greater than 5.
+Show all template type codes and number of templates for each.
+What are the different template type codes, and how many templates correspond to each?
+Which template type code has most number of templates?
+Return the type code of the template type that the most templates belong to.
+Show all template type codes with less than three templates.
+What are the codes of template types that have fewer than 3 templates?
+What the smallest version number and its template type code?
+Return the lowest version number, along with its corresponding template type code.
+What is the template type code of the template used by document with the name "Data base"?
+Return the template type code of the template that is used by a document named Data base.
+Show all document names using templates with template type code BK.
+What are the names of documents that use templates with the code BK?
+Show all template type codes and the number of documents using each type.
+What are the different template type codes, and how many documents use each type?
+Which template type code is used by most number of documents?
+Return the code of the template type that is most commonly used in documents.
+Show all template type codes that are not used by any document.
+What are the codes of template types that are not used for any document?
+Show all template type codes and descriptions.
+What are the type codes and descriptions for all template types?
+What is the template type descriptions for template type code "AD".
+Return the template type description of the template type with the code AD.
+What is the template type code for template type description "Book".
+Return the type code of the template type with the description "Book".
+What are the distinct template type descriptions for the templates ever used by any document?
+Return the different descriptions for templates that have been used in a document.
+What are the template ids with template type description "Presentation".
+Return the ids corresponding to templates with the description 'Presentation'.
+How many paragraphs in total?
+Count the number of paragraphs.
+How many paragraphs for the document with name 'Summer Show'?
+Count the number of paragraphs in the document named 'Summer Show'.
+Show paragraph details for paragraph with text 'Korea ' .
+What are the details for the paragraph that includes the text 'Korea ' ?
+Show all paragraph ids and texts for the document with name 'Welcome to NY'.
+What are the ids and texts of paragraphs in the document titled 'Welcome to NY'?
+Show all paragraph texts for the document "Customer reviews".
+What are the paragraph texts for the document with the name 'Customer reviews'?
+Show all document ids and the number of paragraphs in each document. Order by document id.
+Return the different document ids along with the number of paragraphs corresponding to each, ordered by id.
+Show all document ids, names and the number of paragraphs in each document.
+What are the ids and names of each document, as well as the number of paragraphs in each?
+List all document ids with at least two paragraphs.
+What are the ids of documents that have 2 or more paragraphs?
+What is the document id and name with greatest number of paragraphs?
+Return the id and name of the document with the most paragraphs.
+What is the document id with least number of paragraphs?
+Return the id of the document with the fewest paragraphs.
+What is the document id with 1 to 2 paragraphs?
+Give the ids of documents that have between one and two paragraphs.
+Show the document id with paragraph text 'Brazil' and 'Ireland'.
+What are the ids of documents that contain the paragraph text 'Brazil' and 'Ireland'?

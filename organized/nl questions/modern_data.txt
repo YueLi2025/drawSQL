@@ -1,0 +1,2 @@
+Calculate the total income from Meat Lovers pizzas priced at $12 and Vegetarian pizzas at $10. Include any extra toppings charged at $1 each. Ensure that canceled orders are filtered out. How much money has Pizza Runner earned in total?
+Based on our customer pizza order information, summarize the total quantity of each ingredient used in the pizzas we delivered. Output the name and quantity for each ingredient.

@@ -1,0 +1,83 @@
+soft_templates
+SELECT SUM(CASE WHEN `variable` = variable THEN variable ELSE variable END) - SUM(CASE WHEN `variable` = variable THEN variable ELSE variable END) FROM variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT COUNT(variable) FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable.`variable-variable` = variable AND SUBSTR(variable, INSTR(variable, variable) + variable) > variable
+SELECT variable FROM `variable` AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT `variable-variable` FROM `variable-variable` WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE CAST(SUBSTR(variable, INSTR(variable, variable) + variable) AS variable) BETWEEN variable AND variable ORDER BY CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable) DESC LIMIT variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable.`variable-variable` FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT COUNT(variable) FROM ( SELECT variable FROM `variable-variable` AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND `variable-variable` = variable GROUP BY variable ) AS variable
+SELECT variable FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable.`variable-variable` = variable GROUP BY variable ORDER BY COUNT(variable) DESC LIMIT variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable) DESC LIMIT variable
+SELECT COUNT(*) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable AND variable = variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT variable, variable.`variable-variable` FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable
+SELECT DISTINCT variable FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable IS NULL ORDER BY CAST(REPLACE(trim(variable, variable), variable, variable) AS variable) DESC LIMIT variable
+SELECT variable, COUNT(DISTINCT variable.`variable-variable`) FROM `variable-variable` AS variable INNER JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY COUNT(DISTINCT variable.`variable-variable`) DESC LIMIT variable
+SELECT variable.`variable-variable` FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable IS NOT NULL GROUP BY variable
+SELECT variable FROM `variable-variable` AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable.`variable-variable` = variable ORDER BY CAST(REPLACE(trim(variable, variable), variable, variable) AS variable) DESC LIMIT variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY CAST(REPLACE(trim(variable, variable), variable, variable) AS variable) DESC LIMIT variable
+SELECT SUM(CAST(REPLACE(trim(variable, variable), variable, variable) AS variable)) / COUNT(variable) FROM `variable-variable` AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable.`variable-variable` = variable
+SELECT variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable, variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND SUBSTR(variable, variable(variable) - variable, variable(variable)) = variable
+SELECT variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable, variable FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable.`variable-variable` = variable AND CAST(REPLACE(trim(variable, variable), variable, variable) AS variable) * variable / CAST(REPLACE(trim(variable, variable), variable, variable) AS variable) * variable < variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable ORDER BY CAST(REPLACE(trim(variable, variable), variable, variable) AS variable) DESC LIMIT variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
+SELECT DISTINCT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE CAST(REPLACE(trim(variable, variable), variable, variable) AS variable) > variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable ORDER BY CAST(REPLACE(trim(variable, variable), variable, variable) AS variable) DESC LIMIT variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable FROM variable ORDER BY SUBSTR(variable, variable(variable) - variable, variable(variable)) DESC LIMIT variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable ORDER BY CAST(REPLACE(trim(variable, variable), variable, variable) AS variable) ASC LIMIT variable
+SELECT SUM(`variable variable variable and variable`) / SUM(variable) * variable FROM variable WHERE variable = variable
+SELECT SUM(CAST(REPLACE(trim(variable, variable), variable, variable) AS variable)) / SUM(CAST(REPLACE(trim(variable, variable), variable, variable) AS variable)) FROM variable WHERE SUBSTR(variable, variable(variable) - variable, variable(variable)) = variable GROUP BY SUBSTR(variable, variable(variable) - variable, variable(variable)) = variable
+SELECT variable, MAX(variable), MAX(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT CAST(COUNT(CASE WHEN CAST(REPLACE(trim(variable, variable), variable, variable) AS variable) > variable THEN variable ELSE NULL END) AS variable) * variable / COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE SUBSTR(variable, INSTR(variable, variable) + variable, variable) = variable AND variable = variable
+SELECT variable FROM `variable-variable` AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable.`variable-variable` = variable
+SELECT COUNT(variable) FROM ( SELECT variable FROM `variable` AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable GROUP BY variable ) variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable AND variable.`variable-variable` = variable
+SELECT variable FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable AND variable.`variable-variable` = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY CAST(REPLACE(SUBSTR(variable, variable), variable, variable) AS variable) DESC LIMIT variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
+SELECT COUNT(variable) FROM variable WHERE variable = variable
+SELECT COUNT(variable) FROM variable WHERE variable = variable AND variable = variable AND CAST(SUBSTR(variable, INSTR(variable, variable) + variable) AS variable) BETWEEN variable AND variable
+SELECT COUNT(variable) FROM ( SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable GROUP BY variable ) variable
+SELECT variable.`variable-variable` FROM variable AS variable INNER JOIN `variable-variable` AS variable INNER JOIN variable AS variable ON variable = variable AND variable = variable WHERE variable = variable AND variable = variable AND variable.`variable-variable` != variable GROUP BY variable.`variable-variable`
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable GROUP BY variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable AND CAST(SUBSTR(variable, INSTR(variable, variable) + variable) AS variable) BETWEEN variable AND variable GROUP BY variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT variable, variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable, variable, variable FROM `variable-variable` AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable.`variable-variable` = variable
+SELECT CAST(COUNT(CASE WHEN variable = variable THEN variable ELSE NULL END) AS variable) * variable / COUNT(variable), variable(variable), variable(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE SUBSTR(variable, variable(variable) - variable, variable(variable)) BETWEEN variable AND variable
+SELECT `variable-variable` FROM `variable-variable` WHERE variable = variable AND variable = variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT COUNT(variable) FROM variable WHERE SUBSTR(variable, variable(variable) - variable, variable(variable)) BETWEEN variable AND variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable IS NULL
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable FROM variable ORDER BY SUBSTR(variable, variable(variable) - variable, variable(variable)) ASC LIMIT variable
+SELECT COUNT(variable) FROM variable WHERE SUBSTR(variable, variable(variable) - variable, variable(variable)) BETWEEN variable AND variable
+SELECT `variable-variable` FROM `variable-variable` WHERE variable = variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT COUNT(variable) FROM `variable` WHERE variable = variable
+SELECT variable.`variable-variable` FROM `variable-variable` AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable, variable FROM variable WHERE variable = variable AND variable = variable
+SELECT variable FROM variable WHERE variable = variable
+SELECT variable FROM variable WHERE variable = variable ORDER BY CAST(REPLACE(trim(variable, variable), variable, variable) AS variable) DESC LIMIT variable
+SELECT variable, variable FROM variable WHERE SUBSTR(variable, variable(variable) - variable, variable(variable)) = variable
+SELECT COUNT(variable) FROM `variable-variable` WHERE variable = variable
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND SUBSTR(variable, variable(variable) - variable, variable(variable)) < variable
+SELECT variable, variable.`variable-variable` FROM `variable-variable` AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
+SELECT variable.`variable-variable`, variable FROM `variable-variable` AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable

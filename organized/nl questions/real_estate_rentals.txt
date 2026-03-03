@@ -1,0 +1,73 @@
+nl_question
+Which countries and cities are included in addresses?
+What are the countries and cities for each address?
+In which states are each of the the properties located?
+Give the states or provinces corresponding to each property.
+How is the feature rooftop described?
+Return the description of the feature 'rooftop'.
+What are the feature name and description of the most commonly seen feature across properties?
+Give the feature name and description for the most common feature across all properties.
+What is the minimum number of rooms in a property?
+What is the lowest room count across all the properties?
+How many properties have 1 parking lot or 1 garage?
+Count the number of properties that have 1 parking lot or 1 garage.
+For users whose description contain the string 'Mother', which age categories are they in?
+What are the age categories for users whose description contains the string Mother?
+What is the first name of the user who owns the greatest number of properties?
+Return the first name of the user who owns the most properties.
+List the average room count of the properties with gardens.
+On average, how many rooms do properties with garden features have?
+In which cities are there any properties equipped with a swimming pool?
+Return the cities in which there exist properties that have swimming pools.
+Which property had the lowest price requested by the vendor? List the id and the price.
+What is the id of the property that had the lowest requested price from the vendor, and what was that price?
+On average, how many rooms does a property have?
+What is the average number of rooms in a property?
+How many kinds of room sizes are listed?
+Return the number of different room sizes.
+What are the ids of users who have searched at least twice, and what did they search?
+Return the ids of users who have performed two or more searches, as well as their search sequence.
+When was the time of the latest search by a user?
+What was the time of the most recent search?
+What are all the user searches time and content? Sort the result descending by content.
+Return the search strings and corresonding time stamps for all user searches, sorted by search string descending.
+What are the zip codes of properties which do not belong to users who own at most 2 properties?
+Return the zip codes for properties not belonging to users who own two or fewer properties.
+What are the users making only one search? List both category and user id.
+What are the ids of users who have only made one search, and what are their category codes?
+What is the age range category of the user who made the first search?
+Return the age category for the user who made the earliest search.
+Find the login names of all senior citizen users ordered by their first names.
+What are the login names of all senior citizens, sorted by first name?
+How many searches do buyers make in total?
+Count the number of searches made by buyers.
+When did the user with login name ratione register?
+What was the registration date for the user whose login name is ratione?
+List the first name, middle name and last name, and log in name of all the seller users, whose seller value is 1.
+What are the first, middle, last, and login names for all users who are sellers?
+Where do the Senior Citizens live? List building, street, and the city.
+What are the buildings, streets, and cities corresponding to the addresses of senior citizens?
+How many properties are there with at least 2 features?
+Count the number of properties with at least two features.
+How many photos does each property have?
+Count the number of property photos each property has by id.
+How many photos does each owner has of his or her properties? List user id and number of photos.
+What are the user ids of property owners who have property photos, and how many do each of them have?
+What is the total max price of the properties owned by single mothers or students?
+Give the total max price corresponding to any properties owned by single mothers or students.
+What are the date stamps and property names for each item of property history, ordered by date stamp?
+Return the date stamp and property name for each property history event, sorted by date stamp.
+What is the description of the most common property type? List the description and code.
+What is the most common property type, and what is its description.
+What is the detailed description of the age category code 'Over 60'?
+Give the category description of the age category 'Over 60'.
+What are the different room sizes, and how many of each are there?
+Return the number of rooms with each different room size.
+In which country does the user with first name Robbie live?
+Return the country in which the user with first name Robbie lives.
+What are the first, middle and last names of users who own the property they live in?
+Return the full names of users who live in properties that they own.
+List the search content of the users who do not own a single property.
+What search strings were entered by users who do not own any properties?
+List the last names and ids of users who have at least 2 properties and searched at most twice.
+What are the last names and ids of users who have searched two or fewer times, and own two or more properties?

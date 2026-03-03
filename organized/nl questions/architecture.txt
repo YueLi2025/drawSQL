@@ -1,0 +1,18 @@
+nl_question
+How many architects are female?
+List the name, nationality and id of all male architects ordered by their names lexicographically.
+What is the maximum length in meters for the bridges and what are the architects' names?
+What is the average length in feet of the bridges?
+What are the names and year of construction for the mills of 'Grondzeiler' type?
+What are the distinct names and nationalities of the architects who have ever built a mill?
+What are the names of the mills which are not located in 'Donceel'?
+What are the distinct types of mills that are built by American or Canadian architects?
+What are the ids and names of the architects who built at least 3 bridges ?
+What is the id, name and nationality of the architect who built most mills?
+What are the ids, names and genders of the architects who built two bridges or one mill?
+What is the location of the bridge named 'Kolob Arch' or 'Rainbow Bridge'?
+Which of the mill names contains the french word 'Moulin'?
+What are the distinct name of the mills built by the architects who have also built a bridge longer than 80 meters?
+What is the most common mill type, and how many are there?
+How many architects haven't built a mill before year 1850?
+show the name of all bridges that was designed by american archtect, and sort the result by the bridge feet length.

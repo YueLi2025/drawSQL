@@ -1,0 +1,67 @@
+nl_question
+Among the flights on 2018/8/1, how many of them were scheduled to depart from John F. Kennedy International in New York?
+How many flights on 2018/8/1 were operated by American Airlines Inc.?
+Among the flights operated by American Airlines Inc., how many of them were scheduled to land in New York?
+Among the flights operated by American Airlines Inc. on 2018/8/1, how many of them were cancelled?
+Which airline operated more flights on 2018/8/1, American Airlines Inc. or Endeavor Air Inc.?
+How many flights on average does American Airlines Inc. operate every day in August, 2018?
+Give the number of planes that took off from Los Angeles International airport on 2018/8/27.
+How many flights of Alaska Airlines were delayed on 2018/8/2?
+Tell the number of fights landed earlier on Miami Airport on 2018/8/12.
+How many flights from American Airlines were cancelled due to a type A cancellation code?
+How many planes of Spirit Air Lines took off on 2018/8/7?
+For the flight with the tail number 'N702SK', which air carrier does it belong to?
+Tell the number of flights that landed at Lake Charles Regional Airport on 2018/8/15.
+What is the description of the airline code 19049?
+How long was the longest minute delay caused by a weather problem in airport id 12264?
+How many planes does Southwest Airlines Co. have?
+List the tail numbers of all the aircraft that arrived on time at Meadows Field airport in August of 2018?
+Among the airports whose destination is Logan International, what is the airline id of the carrier operator with the highest delay in minutes due to security?
+Give the name of the airline to which tail number N202NN belongs to.
+What is the name of the airline that flew the most flights to Chicago Midway International?
+Which airport did Republic Airline fly the most from?
+Which airline does the aircraft with the fastest flight belong to?
+Please list any three airports with their codes.
+What is the actual departure time of JetBlue Airways with the plane's tail number N903JB to Fort Lauderdale-Hollywood International Airport on the 20th of August 2018?
+Which flight carrier operator flies from Atlantic City to Fort Lauderdale?
+List the tail number of flights that flew on August 17, 2018.
+How many flights of air carrier called JetBlue Airways: B6 have 0 new arrival delay?
+Provide the air carrier description of all flights arriving at Miami.
+What is the air carrier's description of the cancelled flights?
+List the air carrier's description of the flights with 0 departure delay.
+Among the flights with air carrier "Southwest Airlines Co.: WN", provide the tail number of flights with an actual elapsed time lower than the 80% of the average actual elapsed time of listed flights.
+How many flights were there on 2018/8/1?
+Please list the dates of the flights that were cancelled due to the most serious reason.
+Please list the departure airports of the flights on 2018/8/1 that were delayed.
+For the flight on 2018/8/1 that was delayed for the longest time, which was the destination airport of this flight?
+Among the flights departing from John F. Kennedy International, how many of them arrived earlier than scheduled?
+Among all the flights scheduled to depart from John F. Kennedy International on 2018/8/1, when was the earliest one scheduled to depart?
+Please list the flight numbers of all the flights operated by American Airlines Inc. that were scheduled to depart from John F. Kennedy International.
+How many flights operated by American Airlines Inc. on 2018/8/1 were faster than scheduled?
+What is the average departure delay time of flights operated by American Airlines Inc.?
+Provide the number of airplanes that landed on Oakland Airport on 2018/8/7.
+What is the percentage of flights from Los Angeles International airport that were cancelled due to a type C cancellation code?
+How many flights departed on time on 8/1/2018?
+What are the codes of the airport found in Ankara, Turkey?
+What is the IATA code of the Anita Bay Airport in Anita Bay, Alaska?
+What is the code of Mississippi Valley Airlines?
+What is the only flight destination for flights from Albany?
+How many flights from Charlotte Douglas International Airport to Austin - Bergstrom International Airport experienced serious reasons that cause flight cancellation?
+What is the total number of flights that have Oklahoma as their origin?
+How many airports have a code starting with the letter C?
+List the description of the airports that have code that ends with number 3?
+Give the code of the airport described as Driftwood Bay, AK: Driftwood Bay Airport.
+How many cancelled flights are there?
+Provide the origin of the flight that has the shortest actual elapsed time.
+List the air carrier description and code of the flight with the shortest arrival time.
+What is the total number of flights that flew on August 2, 2018 with air carrier described as Horizon Air?
+Among the flights with air carrier named Republic Airline, how many of the flights have departure delay of 30 minutes and above?
+Give the air carrier description of the flights that have an earlier arrival and departure.
+List the air carrier's description with arrival time lower than the 40% of the average arrival time of flights that flew to Phoenix.
+Among the flights of the air carrier described as American Airlines, what is the percentage of the flights with earlier departure?
+Please list the destination cities of all the flights that were cancelled on 2018/8/1.
+What is the percentage of flights which landed at Pittsburgh were faster than scheduled?
+What is the scheduled local departure time and the actual departure time of the flight from Philadelphia to Harrisburg with the plane's tail number N627AE on the 13th of August 2018?
+How many flights on the 1st of August 2018 were coming from Allentown, Pennsylvania?
+Among the flights on 2018/8/1, how many of them departed from an airport in New York?
+On August 2018, which day had the highest number of cancelled flights due to the most serious reasons in Dallas/Fort Worth International?

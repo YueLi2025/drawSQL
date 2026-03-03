@@ -1,0 +1,73 @@
+nl_question
+Find the number of students in total.
+How many students are there in total?
+Find the number of voting records in total.
+How many voting records do we have?
+Find the distinct number of president votes.
+How many distinct president votes are recorded?
+Find the maximum age of all the students.
+What is the oldest age among the students?
+Find the last names of students with major 50.
+What are the last names of students studying major 50?
+Find the first names of students with age above 22.
+What are the first names of all the students aged above 22?
+What are the majors of male (sex is M) students?
+List the major of each male student.
+What is the average age of female (sex is F) students?
+Find the average age of female students.
+What are the maximum and minimum age of students with major 600?
+Tell me the ages of the oldest and youngest students studying major 600.
+Who are the advisors for students that live in a city with city code "BAL"?
+Show the advisors of the students whose city of residence has city code "BAL".
+What are the distinct secretary votes in the fall election cycle?
+Return all the distinct secretary votes made in the fall election cycle.
+What are the distinct president votes on 08/30/2015?
+Show all the distinct president votes made on 08/30/2015.
+Report the distinct registration date and the election cycle.
+What are the distinct registration dates and the election cycles?
+Report the distinct president vote and the vice president vote.
+List all the distinct president votes and the vice president votes.
+Find the distinct last names of the students who have class president votes.
+What are the distinct last names of the students who have class president votes?
+Find the distinct first names of the students who have class senator votes.
+What are the distinct first names of the students who have class president votes?
+Find the distinct ages of students who have secretary votes in the fall election cycle.
+What are the distinct ages of students who have secretary votes in the fall election cycle?
+Find the distinct Advisor of students who have treasurer votes in the spring election cycle.
+Who served as an advisor for students who have treasurer votes in the spring election cycle?
+Find the distinct majors of students who have treasurer votes.
+What are the distinct majors that students with treasurer votes are studying?
+Find the first and last names of all the female (sex is F) students who have president votes.
+What are the first and last names of all the female students who have president votes?
+Find the first and last name of all the students of age 18 who have vice president votes.
+What are the first names and last names of the students who are 18 years old and have vice president votes.
+How many male (sex is M) students have class senator votes in the fall election cycle?
+Count the number of male students who had class senator votes in the fall election cycle.
+Find the number of students whose city code is NYC and who have class senator votes in the spring election cycle.
+Which students live in the city with code "NYC" and have class senator votes in the spring election cycle? Count the numbers.
+Find the average age of students who live in the city with code "NYC" and have secretary votes in the spring election cycle.
+What is the average age of students who have city code "NYC" and have secretary votes for the spring election cycle?
+Find the average age of female (sex is F) students who have secretary votes in the spring election cycle.
+What is the average age of the female students with secretary votes in the spring election cycle?
+Find the distinct first names of all the students who have vice president votes and whose city code is not PIT.
+What are the distinct first names of the students who have vice president votes and reside in a city whose city code is not PIT?
+Find the distinct last names of all the students who have president votes and whose advisor is not 2192.
+What are the distinct last names of the students who have president votes but do not have 2192 as the advisor?
+Find the distinct last names of all the students who have president votes and whose advisor is 8741.
+What are the distinct last names of the students who have president votes and have 8741 as the advisor?
+For each advisor, report the total number of students advised by him or her.
+How many students does each advisor have?
+Report all advisors that advise more than 2 students.
+Which advisors have more than two students?
+Report all majors that have less than 3 students.
+What are the majors only less than three students are studying?
+For each election cycle, report the number of voting records.
+Count the number of voting records for each election cycle.
+Which major has the most students?
+Find the major that is studied by the largest number of students.
+What is the most common major among female (sex is F) students?
+Find the major that is studied by the most female students.
+What is the city_code of the city that the most students live in?
+Return the code of the city that has the most students.
+Report the distinct advisors who have more than 2 students.
+Which advisors are advising more than 2 students?

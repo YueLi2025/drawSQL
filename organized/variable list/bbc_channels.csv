@@ -1,0 +1,17 @@
+table_name,column_name,column_type
+channel,Channel_ID,num
+channel,Name,string
+channel,Analogue_terrestrial_channel,string
+channel,Digital_terrestrial_channel,string
+channel,Internet,string
+director,Director_ID,num
+director,Name,string
+director,Age,num
+director_admin,Director_ID,num
+director_admin,Channel_ID,num
+director_admin,Is_first_director,boolean
+program,Program_ID,num
+program,Start_Year,num
+program,Title,string
+program,Director_ID,num
+program,Channel_ID,num

@@ -1,0 +1,16 @@
+table_name,column_name,column_type
+Championship,Institution_ID,num
+Championship,Nickname,string
+Championship,Joined,num
+Championship,Number_of_Championships,num
+institution,Institution_ID,num
+institution,Name,string
+institution,Team,string
+institution,City,string
+institution,Province,string
+institution,Founded,num
+institution,Affiliation,string
+institution,Enrollment,num
+institution,Endowment,string
+institution,Stadium,string
+institution,Capacity,num

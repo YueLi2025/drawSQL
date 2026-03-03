@@ -1,0 +1,87 @@
+sql_query
+SELECT count(*) FROM Video_games
+SELECT count(*) FROM Video_games
+SELECT count(DISTINCT gtype) FROM Video_games
+SELECT count(DISTINCT gtype) FROM Video_games
+SELECT DISTINCT gtype FROM Video_games
+SELECT DISTINCT gtype FROM Video_games
+SELECT gname ,  gtype FROM Video_games ORDER BY gname
+SELECT gname ,  gtype FROM Video_games ORDER BY gname
+SELECT gname FROM Video_games WHERE gtype  =  "Collectible card game"
+SELECT gname FROM Video_games WHERE gtype  =  "Collectible card game"
+SELECT gtype FROM Video_games WHERE gname  =  "Call of Destiny"
+SELECT gtype FROM Video_games WHERE gname  =  "Call of Destiny"
+SELECT count(*) FROM Video_games WHERE gtype  =  "Massively multiplayer online game"
+SELECT count(*) FROM Video_games WHERE gtype  =  "Massively multiplayer online game"
+SELECT gtype ,  count(*) FROM Video_games GROUP BY gtype
+SELECT gtype ,  count(*) FROM Video_games GROUP BY gtype
+SELECT gtype FROM Video_games GROUP BY gtype ORDER BY count(*) DESC LIMIT 1
+SELECT gtype FROM Video_games GROUP BY gtype ORDER BY count(*) DESC LIMIT 1
+SELECT gtype FROM Video_games GROUP BY gtype ORDER BY count(*) LIMIT 1
+SELECT gtype FROM Video_games GROUP BY gtype ORDER BY count(*) LIMIT 1
+SELECT StuID FROM Student WHERE city_code  =  "CHI"
+SELECT StuID FROM Student WHERE city_code  =  "CHI"
+SELECT StuID FROM Student WHERE Advisor  =  1121
+SELECT StuID FROM Student WHERE Advisor  =  1121
+SELECT Fname FROM Student WHERE Major  =  600
+SELECT Fname FROM Student WHERE Major  =  600
+SELECT major ,  avg(age) ,  min(age) ,  max(age) FROM Student GROUP BY major
+SELECT major ,  avg(age) ,  min(age) ,  max(age) FROM Student GROUP BY major
+SELECT advisor FROM Student GROUP BY advisor HAVING count(*)  >=  2
+SELECT advisor FROM Student GROUP BY advisor HAVING count(*)  >=  2
+SELECT count(DISTINCT sportname) FROM Sportsinfo
+SELECT count(DISTINCT sportname) FROM Sportsinfo
+SELECT count(DISTINCT StuID) FROM Sportsinfo
+SELECT count(DISTINCT StuID) FROM Sportsinfo
+SELECT StuID FROM Sportsinfo WHERE onscholarship  =  'Y'
+SELECT StuID FROM Sportsinfo WHERE onscholarship  =  'Y'
+SELECT T2.Lname FROM Sportsinfo AS T1 JOIN Student AS T2 ON T1.StuID  =  T2.StuID WHERE T1.onscholarship  =  'Y'
+SELECT T2.Lname FROM Sportsinfo AS T1 JOIN Student AS T2 ON T1.StuID  =  T2.StuID WHERE T1.onscholarship  =  'Y'
+SELECT sum(gamesplayed) FROM Sportsinfo
+SELECT sum(gamesplayed) FROM Sportsinfo
+SELECT sum(gamesplayed) FROM Sportsinfo WHERE sportname  =  "Football" AND onscholarship  =  'Y'
+SELECT sum(gamesplayed) FROM Sportsinfo WHERE sportname  =  "Football" AND onscholarship  =  'Y'
+SELECT sportname ,  count(*) FROM Sportsinfo GROUP BY sportname
+SELECT sportname ,  count(*) FROM Sportsinfo GROUP BY sportname
+SELECT StuID ,  count(*) ,  sum(gamesplayed) FROM Sportsinfo GROUP BY StuID
+SELECT StuID ,  count(*) ,  sum(gamesplayed) FROM Sportsinfo GROUP BY StuID
+SELECT StuID FROM Sportsinfo GROUP BY StuID HAVING sum(hoursperweek)  >  10
+SELECT StuID FROM Sportsinfo GROUP BY StuID HAVING sum(hoursperweek)  >  10
+SELECT T2.Fname ,  T2.Lname FROM Sportsinfo AS T1 JOIN Student AS T2 ON T1.StuID  =  T2.StuID GROUP BY T1.StuID ORDER BY count(*) DESC LIMIT 1
+SELECT T2.Fname ,  T2.Lname FROM Sportsinfo AS T1 JOIN Student AS T2 ON T1.StuID  =  T2.StuID GROUP BY T1.StuID ORDER BY count(*) DESC LIMIT 1
+SELECT sportname FROM Sportsinfo WHERE onscholarship  =  'Y' GROUP BY sportname ORDER BY count(*) DESC LIMIT 1
+SELECT sportname FROM Sportsinfo WHERE onscholarship  =  'Y' GROUP BY sportname ORDER BY count(*) DESC LIMIT 1
+SELECT StuID FROM Student EXCEPT SELECT StuID FROM Sportsinfo
+SELECT StuID FROM Student EXCEPT SELECT StuID FROM Sportsinfo
+SELECT StuID FROM Student WHERE major  =  600 INTERSECT SELECT StuID FROM Sportsinfo WHERE onscholarship  =  'Y'
+SELECT StuID FROM Student WHERE major  =  600 INTERSECT SELECT StuID FROM Sportsinfo WHERE onscholarship  =  'Y'
+SELECT StuID FROM Student WHERE sex  =  'F' INTERSECT SELECT StuID FROM Sportsinfo WHERE sportname  =  "Football"
+SELECT StuID FROM Student WHERE sex  =  'F' INTERSECT SELECT StuID FROM Sportsinfo WHERE sportname  =  "Football"
+SELECT StuID FROM Student WHERE sex  =  'M' EXCEPT SELECT StuID FROM Sportsinfo WHERE sportname  =  "Football"
+SELECT StuID FROM Student WHERE sex  =  'M' EXCEPT SELECT StuID FROM Sportsinfo WHERE sportname  =  "Football"
+SELECT sum(hoursperweek) ,  sum(gamesplayed) FROM Sportsinfo AS T1 JOIN Student AS T2 ON T1.StuID  =  T2.StuID WHERE T2.Fname  =  "David" AND T2.Lname  =  "Shieber"
+SELECT sum(hoursperweek) ,  sum(gamesplayed) FROM Sportsinfo AS T1 JOIN Student AS T2 ON T1.StuID  =  T2.StuID WHERE T2.Fname  =  "David" AND T2.Lname  =  "Shieber"
+SELECT sum(hoursperweek) ,  sum(gamesplayed) FROM Sportsinfo AS T1 JOIN Student AS T2 ON T1.StuID  =  T2.StuID WHERE T2.age  <  20
+SELECT sum(hoursperweek) ,  sum(gamesplayed) FROM Sportsinfo AS T1 JOIN Student AS T2 ON T1.StuID  =  T2.StuID WHERE T2.age  <  20
+SELECT count(DISTINCT StuID) FROM Plays_games
+SELECT count(DISTINCT StuID) FROM Plays_games
+SELECT StuID FROM Student EXCEPT SELECT StuID FROM Plays_games
+SELECT StuID FROM Student EXCEPT SELECT StuID FROM Plays_games
+SELECT StuID FROM Sportsinfo INTERSECT SELECT StuID FROM Plays_games
+SELECT StuID FROM Sportsinfo INTERSECT SELECT StuID FROM Plays_games
+SELECT gameid ,  sum(hours_played) FROM Plays_games GROUP BY gameid
+SELECT gameid ,  sum(hours_played) FROM Plays_games GROUP BY gameid
+SELECT Stuid ,  sum(hours_played) FROM Plays_games GROUP BY Stuid
+SELECT Stuid ,  sum(hours_played) FROM Plays_games GROUP BY Stuid
+SELECT gname FROM Plays_games AS T1 JOIN Video_games AS T2 ON T1.gameid  =  T2.gameid GROUP BY T1.gameid ORDER BY sum(hours_played) DESC LIMIT 1
+SELECT gname FROM Plays_games AS T1 JOIN Video_games AS T2 ON T1.gameid  =  T2.gameid GROUP BY T1.gameid ORDER BY sum(hours_played) DESC LIMIT 1
+SELECT gname FROM Plays_games AS T1 JOIN Video_games AS T2 ON T1.gameid  =  T2.gameid GROUP BY T1.gameid HAVING sum(hours_played)  >=  1000
+SELECT gname FROM Plays_games AS T1 JOIN Video_games AS T2 ON T1.gameid  =  T2.gameid GROUP BY T1.gameid HAVING sum(hours_played)  >=  1000
+SELECT Gname FROM Plays_games AS T1 JOIN Video_games AS T2 ON T1.gameid  =  T2.gameid JOIN Student AS T3 ON T3.Stuid  =  T1.Stuid WHERE T3.Lname  =  "Smith" AND T3.Fname  =  "Linda"
+SELECT Gname FROM Plays_games AS T1 JOIN Video_games AS T2 ON T1.gameid  =  T2.gameid JOIN Student AS T3 ON T3.Stuid  =  T1.Stuid WHERE T3.Lname  =  "Smith" AND T3.Fname  =  "Linda"
+SELECT T2.lname ,  T2.fname FROM SportsInfo AS T1 JOIN Student AS T2 ON T1.StuID  =  T2.StuID WHERE T1.SportName  =  "Football" OR T1.SportName  =  "Lacrosse"
+SELECT T2.lname ,  T2.fname FROM SportsInfo AS T1 JOIN Student AS T2 ON T1.StuID  =  T2.StuID WHERE T1.SportName  =  "Football" OR T1.SportName  =  "Lacrosse"
+SELECT fname ,  age FROM Student WHERE StuID IN (SELECT StuID FROM Sportsinfo WHERE SportName  =  "Football" INTERSECT SELECT StuID FROM Sportsinfo WHERE SportName  =  "Lacrosse")
+SELECT fname ,  age FROM Student WHERE StuID IN (SELECT StuID FROM Sportsinfo WHERE SportName  =  "Football" INTERSECT SELECT StuID FROM Sportsinfo WHERE SportName  =  "Lacrosse")
+SELECT lname ,  sex FROM Student WHERE StuID IN (SELECT T1.StuID FROM Plays_games AS T1 JOIN Video_games AS T2 ON T1.GameID  =  T2.GameID WHERE T2.Gname  =  "Call of Destiny" INTERSECT SELECT T1.StuID FROM Plays_games AS T1 JOIN Video_games AS T2 ON T1.GameID  =  T2.GameID WHERE T2.Gname  =  "Works of Widenius")
+SELECT lname ,  sex FROM Student WHERE StuID IN (SELECT T1.StuID FROM Plays_games AS T1 JOIN Video_games AS T2 ON T1.GameID  =  T2.GameID WHERE T2.Gname  =  "Call of Destiny" INTERSECT SELECT T1.StuID FROM Plays_games AS T1 JOIN Video_games AS T2 ON T1.GameID  =  T2.GameID WHERE T2.Gname  =  "Works of Widenius")

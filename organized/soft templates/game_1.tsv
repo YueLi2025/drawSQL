@@ -1,0 +1,87 @@
+soft_templates
+SELECT count(*) FROM variable
+SELECT count(*) FROM variable
+SELECT count(DISTINCT gtype) FROM variable
+SELECT count(DISTINCT gtype) FROM variable
+SELECT DISTINCT gtype FROM variable
+SELECT DISTINCT gtype FROM variable
+SELECT gname , gtype FROM variable ORDER BY gname
+SELECT gname , gtype FROM variable ORDER BY gname
+SELECT gname FROM variable WHERE gtype = string
+SELECT gname FROM variable WHERE gtype = string
+SELECT gtype FROM variable WHERE gname = string
+SELECT gtype FROM variable WHERE gname = string
+SELECT count(*) FROM variable WHERE gtype = string
+SELECT count(*) FROM variable WHERE gtype = string
+SELECT gtype , count(*) FROM variable GROUP BY gtype
+SELECT gtype , count(*) FROM variable GROUP BY gtype
+SELECT gtype FROM variable GROUP BY gtype ORDER BY count(*) DESC LIMIT num
+SELECT gtype FROM variable GROUP BY gtype ORDER BY count(*) DESC LIMIT num
+SELECT gtype FROM variable GROUP BY gtype ORDER BY count(*) LIMIT num
+SELECT gtype FROM variable GROUP BY gtype ORDER BY count(*) LIMIT num
+SELECT StuID FROM variable WHERE variable = string
+SELECT StuID FROM variable WHERE variable = string
+SELECT StuID FROM variable WHERE variable = num
+SELECT StuID FROM variable WHERE variable = num
+SELECT Fname FROM variable WHERE variable = num
+SELECT Fname FROM variable WHERE variable = num
+SELECT variable , avg( variable ) , min( variable ) , max( variable ) FROM variable GROUP BY variable
+SELECT variable , avg( variable ) , min( variable ) , max( variable ) FROM variable GROUP BY variable
+SELECT variable FROM variable GROUP BY variable HAVING count(*) >= num
+SELECT variable FROM variable GROUP BY variable HAVING count(*) >= num
+SELECT count(DISTINCT sportname) FROM variable
+SELECT count(DISTINCT sportname) FROM variable
+SELECT count(DISTINCT StuID) FROM variable
+SELECT count(DISTINCT StuID) FROM variable
+SELECT StuID FROM variable WHERE onscholarship = string
+SELECT StuID FROM variable WHERE onscholarship = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string
+SELECT sum(gamesplayed) FROM variable
+SELECT sum(gamesplayed) FROM variable
+SELECT sum(gamesplayed) FROM variable WHERE sportname = string AND onscholarship = string
+SELECT sum(gamesplayed) FROM variable WHERE sportname = string AND onscholarship = string
+SELECT sportname , count(*) FROM variable GROUP BY sportname
+SELECT sportname , count(*) FROM variable GROUP BY sportname
+SELECT StuID , count(*) , sum(gamesplayed) FROM variable GROUP BY StuID
+SELECT StuID , count(*) , sum(gamesplayed) FROM variable GROUP BY StuID
+SELECT StuID FROM variable GROUP BY StuID HAVING sum(hoursperweek) > num
+SELECT StuID FROM variable GROUP BY StuID HAVING sum(hoursperweek) > num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(*) DESC LIMIT num
+SELECT sportname FROM variable WHERE onscholarship = string GROUP BY sportname ORDER BY count(*) DESC LIMIT num
+SELECT sportname FROM variable WHERE onscholarship = string GROUP BY sportname ORDER BY count(*) DESC LIMIT num
+SELECT StuID FROM variable EXCEPT SELECT StuID FROM variable
+SELECT StuID FROM variable EXCEPT SELECT StuID FROM variable
+SELECT StuID FROM variable WHERE variable = num INTERSECT SELECT StuID FROM variable WHERE onscholarship = string
+SELECT StuID FROM variable WHERE variable = num INTERSECT SELECT StuID FROM variable WHERE onscholarship = string
+SELECT StuID FROM variable WHERE variable = string INTERSECT SELECT StuID FROM variable WHERE sportname = string
+SELECT StuID FROM variable WHERE variable = string INTERSECT SELECT StuID FROM variable WHERE sportname = string
+SELECT StuID FROM variable WHERE variable = string EXCEPT SELECT StuID FROM variable WHERE sportname = string
+SELECT StuID FROM variable WHERE variable = string EXCEPT SELECT StuID FROM variable WHERE sportname = string
+SELECT sum(hoursperweek) , sum(gamesplayed) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT sum(hoursperweek) , sum(gamesplayed) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT sum(hoursperweek) , sum(gamesplayed) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable < num
+SELECT sum(hoursperweek) , sum(gamesplayed) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable < num
+SELECT count(DISTINCT StuID) FROM variable
+SELECT count(DISTINCT StuID) FROM variable
+SELECT StuID FROM variable EXCEPT SELECT StuID FROM variable
+SELECT StuID FROM variable EXCEPT SELECT StuID FROM variable
+SELECT StuID FROM variable INTERSECT SELECT StuID FROM variable
+SELECT StuID FROM variable INTERSECT SELECT StuID FROM variable
+SELECT gameid , sum( variable ) FROM variable GROUP BY gameid
+SELECT gameid , sum( variable ) FROM variable GROUP BY gameid
+SELECT Stuid , sum( variable ) FROM variable GROUP BY Stuid
+SELECT Stuid , sum( variable ) FROM variable GROUP BY Stuid
+SELECT gname FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY sum( variable ) DESC LIMIT num
+SELECT gname FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY sum( variable ) DESC LIMIT num
+SELECT gname FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable HAVING sum( variable ) >= num
+SELECT gname FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable HAVING sum( variable ) >= num
+SELECT Gname FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT Gname FROM variable AS variable JOIN variable AS variable ON variable = variable JOIN variable AS variable ON variable = variable WHERE variable = string AND variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string OR variable = string
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string OR variable = string
+SELECT fname , variable FROM variable WHERE StuID IN (SELECT StuID FROM variable WHERE SportName = string INTERSECT SELECT StuID FROM variable WHERE SportName = string )
+SELECT fname , variable FROM variable WHERE StuID IN (SELECT StuID FROM variable WHERE SportName = string INTERSECT SELECT StuID FROM variable WHERE SportName = string )
+SELECT lname , variable FROM variable WHERE StuID IN (SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string INTERSECT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string )
+SELECT lname , variable FROM variable WHERE StuID IN (SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string INTERSECT SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = string )

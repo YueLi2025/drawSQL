@@ -1,0 +1,8 @@
+table_name,column_name,column_type
+AssignedTo,Scientist,num
+AssignedTo,Project,string
+Projects,Code,string
+Projects,Name,string
+Projects,Hours,num
+Scientists,SSN,num
+Scientists,Name,string

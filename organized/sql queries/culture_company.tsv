@@ -1,0 +1,39 @@
+sql_query
+SELECT count(*) FROM book_club
+SELECT count(*) FROM book_club
+SELECT book_title ,  author_or_editor FROM book_club WHERE YEAR  >  1989
+SELECT book_title ,  author_or_editor FROM book_club WHERE YEAR  >  1989
+SELECT DISTINCT publisher FROM book_club
+SELECT DISTINCT publisher FROM book_club
+SELECT YEAR ,  book_title ,  publisher FROM book_club ORDER BY YEAR DESC
+SELECT YEAR ,  book_title ,  publisher FROM book_club ORDER BY YEAR DESC
+SELECT publisher ,  count(*) FROM book_club GROUP BY publisher
+SELECT publisher ,  count(*) FROM book_club GROUP BY publisher
+SELECT publisher FROM book_club GROUP BY publisher ORDER BY count(*) DESC LIMIT 1
+SELECT publisher FROM book_club GROUP BY publisher ORDER BY count(*) DESC LIMIT 1
+SELECT category ,  count(*) FROM book_club GROUP BY category
+SELECT category ,  count(*) FROM book_club GROUP BY category
+SELECT category FROM book_club WHERE YEAR  >  1989 GROUP BY category HAVING count(*)  >=  2
+SELECT category FROM book_club WHERE YEAR  >  1989 GROUP BY category HAVING count(*)  >=  2
+SELECT publisher FROM book_club WHERE YEAR  =  1989 INTERSECT SELECT publisher FROM book_club WHERE YEAR  =  1990
+SELECT publisher FROM book_club WHERE YEAR  =  1989 INTERSECT SELECT publisher FROM book_club WHERE YEAR  =  1990
+SELECT publisher FROM book_club EXCEPT SELECT publisher FROM book_club WHERE YEAR  =  1989
+SELECT publisher FROM book_club EXCEPT SELECT publisher FROM book_club WHERE YEAR  =  1989
+SELECT title ,  YEAR ,  director FROM movie ORDER BY budget_million
+SELECT title ,  YEAR ,  director FROM movie ORDER BY budget_million
+SELECT COUNT (DISTINCT director) FROM movie
+SELECT COUNT (DISTINCT director) FROM movie
+SELECT title ,  director FROM movie WHERE YEAR  <=  2000 ORDER BY gross_worldwide DESC LIMIT 1
+SELECT title ,  director FROM movie WHERE YEAR  <=  2000 ORDER BY gross_worldwide DESC LIMIT 1
+SELECT director FROM movie WHERE YEAR  =  2000 INTERSECT SELECT director FROM movie WHERE YEAR  =  1999
+SELECT director FROM movie WHERE YEAR  =  2000 INTERSECT SELECT director FROM movie WHERE YEAR  =  1999
+SELECT director FROM movie WHERE YEAR  =  1999 OR YEAR  =  2000
+SELECT director FROM movie WHERE YEAR  =  1999 OR YEAR  =  2000
+SELECT avg(budget_million) ,  max(budget_million) ,  min(budget_million) FROM movie WHERE YEAR  <  2000
+SELECT avg(budget_million) ,  max(budget_million) ,  min(budget_million) FROM movie WHERE YEAR  <  2000
+SELECT T1.company_name FROM culture_company AS T1 JOIN book_club AS T2 ON T1.book_club_id  =  T2.book_club_id WHERE T2.publisher  =  'Alyson'
+SELECT T1.company_name FROM culture_company AS T1 JOIN book_club AS T2 ON T1.book_club_id  =  T2.book_club_id WHERE T2.publisher  =  'Alyson'
+SELECT T1.title ,  T3.book_title FROM movie AS T1 JOIN culture_company AS T2 ON T1.movie_id  =  T2.movie_id JOIN book_club AS T3 ON T3.book_club_id  =  T2.book_club_id WHERE T2.incorporated_in  =  'China'
+SELECT T1.title ,  T3.book_title FROM movie AS T1 JOIN culture_company AS T2 ON T1.movie_id  =  T2.movie_id JOIN book_club AS T3 ON T3.book_club_id  =  T2.book_club_id WHERE T2.incorporated_in  =  'China'
+SELECT T2.company_name FROM movie AS T1 JOIN culture_company AS T2 ON T1.movie_id  =  T2.movie_id WHERE T1.year  =  1999
+SELECT T2.company_name FROM movie AS T1 JOIN culture_company AS T2 ON T1.movie_id  =  T2.movie_id WHERE T1.year  =  1999

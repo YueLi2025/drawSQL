@@ -1,0 +1,75 @@
+soft_templates
+SELECT roomName FROM variable WHERE basePrice < num AND variable = num AND variable = string ;
+SELECT roomName FROM variable WHERE basePrice < num AND variable = num AND variable = string ;
+SELECT roomName , RoomId FROM variable WHERE basePrice > num AND maxOccupancy > num ;
+SELECT roomName , RoomId FROM variable WHERE basePrice > num AND maxOccupancy > num ;
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(*) DESC LIMIT num ;
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(*) DESC LIMIT num ;
+SELECT variable FROM variable WHERE FirstName = string AND LastName = string ;
+SELECT variable FROM variable WHERE FirstName = string AND LastName = string ;
+SELECT count(*) FROM variable WHERE FirstName = string AND LastName = string ;
+SELECT count(*) FROM variable WHERE FirstName = string AND LastName = string ;
+SELECT variable , variable , variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY variable DESC LIMIT num ;
+SELECT variable , variable , variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY variable DESC LIMIT num ;
+SELECT variable FROM variable WHERE CheckIn = string AND FirstName = string AND LastName = string ;
+SELECT variable FROM variable WHERE CheckIn = string AND FirstName = string AND LastName = string ;
+SELECT variable FROM variable WHERE CheckIn = string AND FirstName = string AND LastName = string ;
+SELECT variable FROM variable WHERE CheckIn = string AND FirstName = string AND LastName = string ;
+SELECT sum( variable ) FROM variable WHERE bedtype = string ;
+SELECT sum( variable ) FROM variable WHERE bedtype = string ;
+SELECT roomName , variable FROM variable WHERE bedtype = string ORDER BY basePrice;
+SELECT roomName , variable FROM variable WHERE bedtype = string ORDER BY basePrice;
+SELECT roomName , basePrice FROM variable ORDER BY basePrice ASC LIMIT num ;
+SELECT roomName , basePrice FROM variable ORDER BY basePrice ASC LIMIT num ;
+SELECT variable FROM variable WHERE roomName = string ;
+SELECT variable FROM variable WHERE roomName = string ;
+SELECT bedType , avg(basePrice) FROM variable GROUP BY bedType;
+SELECT bedType , avg(basePrice) FROM variable GROUP BY bedType;
+SELECT sum(maxOccupancy) FROM variable WHERE variable = string ;
+SELECT sum(maxOccupancy) FROM variable WHERE variable = string ;
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(variable) ASC LIMIT num ;
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY count(variable) ASC LIMIT num ;
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = variable + variable;
+SELECT count(*) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = variable + variable;
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable - variable > num
+SELECT variable , variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable - variable > num
+SELECT count(*) FROM Rooms;
+SELECT count(*) FROM Rooms;
+SELECT count(*) FROM variable WHERE bedType = string ;
+SELECT count(*) FROM variable WHERE bedType = string ;
+SELECT bedType , count(*) FROM variable GROUP BY bedType;
+SELECT bedType , count(*) FROM variable GROUP BY bedType;
+SELECT roomName FROM variable ORDER BY maxOccupancy DESC LIMIT num ;
+SELECT roomName FROM variable ORDER BY maxOccupancy DESC LIMIT num ;
+SELECT RoomId , roomName FROM variable ORDER BY basePrice DESC LIMIT num ;
+SELECT RoomId , roomName FROM variable ORDER BY basePrice DESC LIMIT num ;
+SELECT roomName , bedType FROM variable WHERE variable = string ;
+SELECT roomName , bedType FROM variable WHERE variable = string ;
+SELECT variable , count(*) FROM variable WHERE bedType = string GROUP BY variable ;
+SELECT variable , count(*) FROM variable WHERE bedType = string GROUP BY variable ;
+SELECT variable , avg(basePrice) , min(basePrice) FROM variable GROUP BY variable ;
+SELECT variable , avg(basePrice) , min(basePrice) FROM variable GROUP BY variable ;
+SELECT roomName FROM variable ORDER BY basePrice;
+SELECT roomName FROM variable ORDER BY basePrice;
+SELECT variable , count(*) FROM variable WHERE basePrice > num GROUP BY variable ;
+SELECT variable , count(*) FROM variable WHERE basePrice > num GROUP BY variable ;
+SELECT bedType , avg(basePrice) FROM variable GROUP BY bedType;
+SELECT bedType , avg(basePrice) FROM variable GROUP BY bedType;
+SELECT roomName FROM variable WHERE bedType = string OR bedType = string ;
+SELECT roomName FROM variable WHERE bedType = string OR bedType = string ;
+SELECT count(DISTINCT bedType) FROM Rooms;
+SELECT count(DISTINCT bedType) FROM Rooms;
+SELECT RoomId , roomName FROM variable ORDER BY basePrice DESC LIMIT num ;
+SELECT RoomId , roomName FROM variable ORDER BY basePrice DESC LIMIT num ;
+SELECT roomName FROM variable WHERE basePrice > ( SELECT avg(basePrice) FROM variable );
+SELECT roomName FROM variable WHERE basePrice > ( SELECT avg(basePrice) FROM variable );
+SELECT count(*) FROM variable WHERE roomid NOT IN (SELECT DISTINCT variable FROM variable)
+SELECT count(*) FROM variable WHERE roomid NOT IN (SELECT DISTINCT variable FROM variable)
+SELECT variable , count(*) , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable
+SELECT variable , count(*) , variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable HAVING count(*) > num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable GROUP BY variable HAVING count(*) > num
+SELECT roomname FROM variable WHERE baseprice BETWEEN num AND num
+SELECT roomname FROM variable WHERE baseprice BETWEEN num AND num
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE firstname LIKE string
+SELECT variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE firstname LIKE string

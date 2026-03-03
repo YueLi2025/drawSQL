@@ -1,0 +1,16 @@
+nl_question
+How many performances are there?
+List the hosts of performances in ascending order of attendance.
+What are the dates and locations of performances?
+Show the attendances of the performances at location "TD Garden" or "Bell Centre"
+What is the average number of attendees for performances?
+What is the date of the performance with the highest number of attendees?
+Show different locations and the number of performances at each location.
+Show the most common location of performances.
+Show the locations that have at least two performances.
+Show the locations that have both performances with more than 2000 attendees and performances with less than 1000 attendees.
+Show the names of members and the location of the performances they attended.
+Show the names of members and the location of performances they attended in ascending alphabetical order of their names.
+Show the dates of performances with attending members whose roles are "Violin".
+Show the names of members and the dates of performances they attended in descending order of attendance of the performances.
+List the names of members who did not attend any performance.

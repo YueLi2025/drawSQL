@@ -1,0 +1,16 @@
+table_name,column_name,column_type
+Affiliation,affiliation_id,num
+Affiliation,name,string
+Affiliation,address,string
+Author,author_id,num
+Author,name,string
+Author,email,string
+Author_list,paper_id,string
+Author_list,author_id,num
+Author_list,affiliation_id,num
+Citation,paper_id,string
+Citation,cited_paper_id,string
+Paper,paper_id,string
+Paper,title,string
+Paper,venue,string
+Paper,year,num

@@ -1,0 +1,48 @@
+nl_question
+Please list the social security numbers of the male employees with a salary of over $70,000 a year.
+What is the required education for the position of regional manager?
+In which city's office does Sandy Adams work at?
+Among the employees working at the office in New York, how many of them have a good job performance?
+How much higher is James Johnson's salary from the minimum salary of his title?
+Please list the full names of the employees who are working as a Trainee.
+Which employee's job position requires a higher education level, Jose Rodriguez or Sandy Adams?
+Please list the zip codes of the offices where all the male employees with a good job performance work at.
+Among the employees who work as a Trainee, how many of them have a salary of over &20,000 a year?
+What is the average salary of the employees who work as a Trainee?
+State the name of the city where Jose Rodriguez works.
+In which state does Emily Wood work?
+What is the education required for David Whitehead to reach his current position?
+Who is the highest paid employee in "Boston"? Give the full name.
+Who is the employee in “New York City” with a good performance? Give the social security number of the employee.
+Give the full address of the office of the highest paid manager.
+What is the max salary for 'Tracy Coulter' if he/she stays on his/her position?
+Who is the employee with the highest salary? Specify his/her full name.
+How many positions have a maximum salary of no more than US$1000,000?
+How much is the minimum salary given to the position with the most complex work?
+What is the full office location address where most of the employees work at?
+Which position has the highest amount of poor performing employees?
+Which position has the highest number of female employees with a 2 year degree?
+How many Account Representatives are there in Illinois with satisfying performance?
+In which state can you find the highest amount of good performing Account Representatives?
+When was Emily Wood hired? Mention her position and salary.
+What are the maximum and minimum salary range and position title of Bill Marlin?
+Mention the full name, hired date and performance status of the employee whose location is in Utah state.
+What is the education required to be account representative? Mention account representative full name and salary who got poor in performance status.
+Describe the employees' full name, positions, located city and office phone number within Colorado state.
+Calculate the monthly average salary of the employee with highest salary. Mention his name, position title and location city.
+How many emplyees have a good job performance?
+What is the office phone number of the location at which Sandy Adams works?
+How many employees work as an Account Representative?
+Give the number of female employees.
+How many employees whose performance is poor have a salary of over $50,000 per year?
+How much is the salary of the first ever employee that was hired?
+How many male Regional Managers are there?
+What is the average salary of the worst performing managers?
+Which city and address has zip code of above 90000?
+Which positions are suitable with 4 years degree education?
+Among the employees with poor performance, provide the managers' full names, location city, address and its zip code.
+How many male employees work at the address 450 Peachtree Rd?
+Mention the employee's full name and performance status who got the lowest in salary per year.
+What is the maximum salary of position "Trainer"?
+Which position has a lower minimum salary, Account Representative or Trainee?
+What is Kenneth Charles's position title?

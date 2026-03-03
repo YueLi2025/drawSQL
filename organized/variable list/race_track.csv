@@ -1,0 +1,11 @@
+table_name,column_name,column_type
+race,Race_ID,num
+race,Name,string
+race,Class,string
+race,Date,string
+race,Track_ID,string
+track,Track_ID,num
+track,Name,string
+track,Location,string
+track,Seating,num
+track,Year_Opened,num

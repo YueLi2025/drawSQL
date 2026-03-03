@@ -1,0 +1,17 @@
+nl_question
+How many heads of the departments are older than 56 ?
+List the name, born state and age of the heads of departments ordered by age.
+List the creation year, name and budget of each department.
+What are the maximum and minimum budget of the departments?
+What is the average number of employees of the departments whose rank is between 10 and 15?
+What are the names of the heads who are born outside the California state?
+What are the distinct creation years of the departments managed by a secretary born in state 'Alabama'?
+What are the names of the states where at least 3 heads were born?
+In which year were most departments established?
+Show the name and number of employees for the departments managed by heads whose temporary acting value is 'Yes'?
+How many acting statuses are there?
+How many departments are led by heads who are not mentioned?
+What are the distinct ages of the heads who are acting?
+List the states where both the secretary of 'Treasury' department and the secretary of 'Homeland Security' were born.
+Which department has more than 1 head at a time? List the id, name and the number of heads.
+Which head's name has the substring 'Ha'? List the id and name.

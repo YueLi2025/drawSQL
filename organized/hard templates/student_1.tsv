@@ -1,0 +1,69 @@
+hard_templates
+SELECT count(*) FROM table_name
+SELECT count(*) FROM table_name
+SELECT lastname FROM table_name WHERE classroom = num
+SELECT lastname FROM table_name WHERE classroom = num
+SELECT firstname FROM table_name WHERE classroom = num
+SELECT firstname FROM table_name WHERE classroom = num
+SELECT DISTINCT firstname FROM table_name WHERE classroom = num
+SELECT DISTINCT firstname FROM table_name WHERE classroom = num
+SELECT DISTINCT classroom , col_name FROM table_name
+SELECT DISTINCT classroom , col_name FROM table_name
+SELECT DISTINCT col_name FROM table_name WHERE classroom = num
+SELECT DISTINCT col_name FROM table_name WHERE classroom = num
+SELECT DISTINCT col_name FROM table_name WHERE classroom = num
+SELECT DISTINCT col_name FROM table_name WHERE classroom = num
+SELECT DISTINCT classroom FROM table_name WHERE col_name = num
+SELECT DISTINCT classroom FROM table_name WHERE col_name = num
+SELECT DISTINCT classroom FROM table_name WHERE col_name = num
+SELECT DISTINCT classroom FROM table_name WHERE col_name = num
+SELECT DISTINCT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE col_name = num
+SELECT DISTINCT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE col_name = num
+SELECT DISTINCT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE col_name = num
+SELECT DISTINCT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE col_name = num
+SELECT firstname FROM table_name WHERE classroom = num
+SELECT firstname FROM table_name WHERE classroom = num
+SELECT lastname FROM table_name WHERE classroom = num
+SELECT lastname FROM table_name WHERE classroom = num
+SELECT DISTINCT firstname , lastname FROM table_name
+SELECT DISTINCT firstname , lastname FROM table_name
+SELECT DISTINCT firstname , lastname FROM table_name
+SELECT DISTINCT firstname , lastname FROM table_name
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string AND table_alias0.col_name = string
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string AND table_alias0.col_name = string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string AND table_alias0.col_name = string
+SELECT table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string AND table_alias0.col_name = string
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string AND table_alias0.col_name = string
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string AND table_alias0.col_name = string
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string AND table_alias0.col_name = string
+SELECT count(*) FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = string AND table_alias0.col_name = string
+SELECT DISTINCT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = num EXCEPT SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT DISTINCT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = num EXCEPT SELECT table_alias0.col_name , table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias1.col_name = string AND table_alias1.col_name = string
+SELECT DISTINCT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = num AND table_alias1.col_name != string AND table_alias1.col_name != string
+SELECT DISTINCT table_alias0.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name WHERE table_alias0.col_name = num AND table_alias1.col_name != string AND table_alias1.col_name != string
+SELECT col_name , count(DISTINCT classroom) , count(*) FROM table_name GROUP BY col_name
+SELECT col_name , count(DISTINCT classroom) , count(*) FROM table_name GROUP BY col_name
+SELECT classroom , count(DISTINCT col_name ) FROM table_name GROUP BY classroom
+SELECT classroom , count(DISTINCT col_name ) FROM table_name GROUP BY classroom
+SELECT classroom FROM table_name GROUP BY classroom ORDER BY count(*) DESC LIMIT num
+SELECT classroom FROM table_name GROUP BY classroom ORDER BY count(*) DESC LIMIT num
+SELECT classroom , count(*) FROM table_name GROUP BY classroom
+SELECT classroom , count(*) FROM table_name GROUP BY classroom
+SELECT classroom , count(*) FROM table_name WHERE col_name = string GROUP BY classroom
+SELECT classroom , count(*) FROM table_name WHERE col_name = string GROUP BY classroom
+SELECT classroom , count(*) FROM table_name WHERE col_name = string GROUP BY classroom
+SELECT classroom , count(*) FROM table_name WHERE col_name = string GROUP BY classroom
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name , table_alias1.col_name ORDER BY count(*) DESC LIMIT num
+SELECT table_alias1.col_name , table_alias1.col_name FROM table_name AS table_alias0 JOIN table_name AS table_alias1 ON table_alias0.col_name = table_alias1.col_name GROUP BY table_alias1.col_name , table_alias1.col_name ORDER BY count(*) DESC LIMIT num
+SELECT count(*) , classroom FROM table_name GROUP BY classroom
+SELECT count(*) , classroom FROM table_name GROUP BY classroom

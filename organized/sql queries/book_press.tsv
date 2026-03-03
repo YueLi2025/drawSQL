@@ -1,0 +1,45 @@
+sql_query
+SELECT name FROM press ORDER BY Year_Profits_billion DESC
+SELECT name FROM press ORDER BY Year_Profits_billion DESC
+SELECT name FROM press WHERE Year_Profits_billion  >  15 OR Month_Profits_billion  >  1
+SELECT name FROM press WHERE Year_Profits_billion  >  15 OR Month_Profits_billion  >  1
+SELECT avg(Year_Profits_billion) ,  max(Year_Profits_billion) FROM press
+SELECT avg(Year_Profits_billion) ,  max(Year_Profits_billion) FROM press
+SELECT name FROM press ORDER BY Month_Profits_billion DESC LIMIT 1
+SELECT name FROM press ORDER BY Month_Profits_billion DESC LIMIT 1
+SELECT name FROM press WHERE Month_Profits_billion  =  (SELECT min(Month_Profits_billion) FROM press) OR Month_Profits_billion  =  (SELECT max(Month_Profits_billion) FROM press)
+SELECT name FROM press WHERE Month_Profits_billion  =  (SELECT min(Month_Profits_billion) FROM press) OR Month_Profits_billion  =  (SELECT max(Month_Profits_billion) FROM press)
+SELECT count(*) FROM author WHERE age  <  30
+SELECT count(*) FROM author WHERE age  <  30
+SELECT avg(age) ,  gender FROM author GROUP BY gender
+SELECT avg(age) ,  gender FROM author GROUP BY gender
+SELECT count(*) ,  gender FROM author WHERE age  >  30 GROUP BY gender
+SELECT count(*) ,  gender FROM author WHERE age  >  30 GROUP BY gender
+SELECT title FROM book ORDER BY release_date DESC
+SELECT title FROM book ORDER BY release_date DESC
+SELECT count(*) ,  book_series FROM book GROUP BY book_series
+SELECT count(*) ,  book_series FROM book GROUP BY book_series
+SELECT title ,  release_date FROM book ORDER BY sale_amount DESC LIMIT 5
+SELECT title ,  release_date FROM book ORDER BY sale_amount DESC LIMIT 5
+SELECT book_series FROM book WHERE sale_amount  >  1000 INTERSECT SELECT book_series FROM book WHERE sale_amount  <  500
+SELECT book_series FROM book WHERE sale_amount  >  1000 INTERSECT SELECT book_series FROM book WHERE sale_amount  <  500
+SELECT t1.name FROM author AS t1 JOIN book AS t2 ON t1.author_id  =  t2.author_id WHERE t2.book_series  =  'MM' INTERSECT SELECT t1.name FROM author AS t1 JOIN book AS t2 ON t1.author_id  =  t2.author_id WHERE t2.book_series  =  'LT'
+SELECT t1.name FROM author AS t1 JOIN book AS t2 ON t1.author_id  =  t2.author_id WHERE t2.book_series  =  'MM' INTERSECT SELECT t1.name FROM author AS t1 JOIN book AS t2 ON t1.author_id  =  t2.author_id WHERE t2.book_series  =  'LT'
+SELECT name ,  age FROM author WHERE author_id NOT IN (SELECT author_id FROM book)
+select name from author where author_id not in (select author_id from book)
+SELECT t1.name FROM author AS t1 JOIN book AS t2 ON t1.author_id  =  t2.author_id GROUP BY t2.author_id HAVING count(*)  >  1
+SELECT t1.name FROM author AS t1 JOIN book AS t2 ON t1.author_id  =  t2.author_id GROUP BY t2.author_id HAVING count(*)  >  1
+SELECT t1.name ,  t2.title ,  t3.name FROM author AS t1 JOIN book AS t2 ON t1.author_id  =  t2.author_id JOIN press AS t3 ON t2.press_id  =  t3.press_id ORDER BY t2.sale_amount DESC LIMIT 3
+SELECT t1.name ,  t2.title ,  t3.name FROM author AS t1 JOIN book AS t2 ON t1.author_id  =  t2.author_id JOIN press AS t3 ON t2.press_id  =  t3.press_id ORDER BY t2.sale_amount DESC LIMIT 3
+SELECT sum(t1.sale_amount) ,  t2.name FROM book AS t1 JOIN press AS t2 ON t1.press_id  =  t2.press_id GROUP BY t1.press_id
+SELECT sum(t1.sale_amount) ,  t2.name FROM book AS t1 JOIN press AS t2 ON t1.press_id  =  t2.press_id GROUP BY t1.press_id
+SELECT count(*) ,  t2.name FROM book AS t1 JOIN press AS t2 ON t1.press_id  =  t2.press_id WHERE sale_amount  >  1000 GROUP BY t2.name
+SELECT count(*) ,  t2.name FROM book AS t1 JOIN press AS t2 ON t1.press_id  =  t2.press_id WHERE sale_amount  >  1000 GROUP BY t2.name
+SELECT t1.name FROM author AS t1 JOIN book AS t2 ON t1.author_id  =  t2.author_id ORDER BY t2.sale_amount DESC LIMIT 1
+SELECT t1.name FROM author AS t1 JOIN book AS t2 ON t1.author_id  =  t2.author_id ORDER BY t2.sale_amount DESC LIMIT 1
+SELECT t1.name ,  t1.gender FROM author AS t1 JOIN book AS t2 ON t1.author_id  =  t2.author_id GROUP BY t2.author_id ORDER BY count(*) DESC LIMIT 1
+SELECT t1.name ,  t1.gender FROM author AS t1 JOIN book AS t2 ON t1.author_id  =  t2.author_id GROUP BY t2.author_id ORDER BY count(*) DESC LIMIT 1
+SELECT name FROM author EXCEPT SELECT t1.name FROM author AS t1 JOIN book AS t2 ON t1.author_id  =  t2.author_id JOIN press AS t3 ON t2.press_id  =  t3.press_id WHERE t3.name  =  'Accor'
+SELECT name FROM author EXCEPT SELECT t1.name FROM author AS t1 JOIN book AS t2 ON t1.author_id  =  t2.author_id JOIN press AS t3 ON t2.press_id  =  t3.press_id WHERE t3.name  =  'Accor'
+SELECT t2.name ,  t2.Year_Profits_billion FROM book AS t1 JOIN press AS t2 ON t1.press_id  =  t2.press_id GROUP BY t2.press_id HAVING count(*)  >  2
+SELECT t2.name ,  t2.Year_Profits_billion FROM book AS t1 JOIN press AS t2 ON t1.press_id  =  t2.press_id GROUP BY t2.press_id HAVING count(*)  >  2

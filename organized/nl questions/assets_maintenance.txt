@@ -1,0 +1,32 @@
+nl_question
+Which assets have 2 parts and have less than 2 fault logs? List the asset id and detail.
+How many assets does each maintenance contract contain? List the number and the contract id.
+How many assets does each third party company supply? List the count and the company id.
+Which third party companies have at least 2 maintenance engineers or have at least 2 maintenance contracts? List the company id and name.
+What is the name and id of the staff who recorded the fault log but has not contacted any visiting engineers?
+Which engineer has visited the most times? Show the engineer id, first name and last name.
+Which parts have more than 2 faults? Show the part name and id.
+List all every engineer's first name, last name, details and coresponding skill description.
+For all the faults of different parts, what are all the decriptions of the skills required to fix them? List the name of the faults and the skill description.
+How many assets can each parts be used in? List the part name and the number.
+What are all the fault descriptions and the fault status of all the faults recoreded in the logs?
+How many engineer visits are required at most for a single fault log? List the number and the log entry id.
+What are all the distinct last names of all the engineers?
+How many fault status codes are recorded in the fault log parts table?
+Which engineers have never visited to maintain the assets? List the engineer first name and last name.
+List the asset id, details, make and model for every asset.
+When was the first asset acquired?
+Which part fault requires the most number of skills to fix? List part id and name.
+Which kind of part has the least number of faults? List the part name.
+Among those engineers who have visited, which engineer makes the least number of visits? List the engineer id, first name and last name.
+Which staff have contacted which engineers? List the staff name and the engineer first name and last name.
+Which fault log included the most number of faulty parts? List the fault log id, description and record time.
+Which skill is used in fixing the most number of faults? List the skill id and description.
+What are all the distinct asset models?
+List the all the assets make, model, details by the disposed date ascendingly.
+Which part has the least chargeable amount? List the part id and amount.
+Which company started the earliest the maintenance contract? Show the company name.
+What is the description of the type of the company who concluded its contracts most recently?
+Which gender makes up the majority of the staff?
+How many engineers did each staff contact? List both the contact staff name and number of engineers contacted.
+Which assets did not incur any fault log? List the asset model.

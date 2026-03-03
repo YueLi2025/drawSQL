@@ -1,0 +1,52 @@
+sql_query
+SELECT SUBSTR(CAST(date AS TEXT), -4) FROM weather GROUP BY SUBSTR(CAST(date AS TEXT), -4) ORDER BY SUM(CASE WHEN events LIKE '%Rain%' OR events LIKE '%rain%' THEN 1 ELSE 0 END) DESC LIMIT 1
+SELECT T2.mean_humidity FROM trip AS T1 INNER JOIN weather AS T2 ON T2.zip_code = T1.zip_code WHERE T1.id = 4275
+SELECT SUM(IIF(zip_code = 94107 AND date = '8/29/2013', mean_temperature_f, 0)) FROM weather
+SELECT T2.city FROM trip AS T1 INNER JOIN station AS T2 ON T2.name = T1.start_station_name WHERE T1.id = 4069
+SELECT DISTINCT T1.city FROM station AS T1 INNER JOIN trip AS T2 ON T2.start_station_name = T1.name WHERE SUBSTR(CAST(T2.start_date AS TEXT), INSTR(T2.start_date, '/') + 1) - SUBSTR(CAST(T2.start_date AS TEXT), INSTR(T2.start_date, ' ') - 5) <> SUBSTR(CAST(T2.end_date AS TEXT), INSTR(T2.end_date, '/') + 1) - SUBSTR(CAST(T2.end_date AS TEXT), INSTR(T2.end_date, ' ') - 5)
+SELECT SUM(CASE WHEN city = 'San Jose' AND SUBSTR(installation_date, -4) = '2014' THEN 1 ELSE 0 END) FROM station UNION SELECT name FROM station WHERE city = 'San Jose' AND SUBSTR(installation_date, -4) = '2014'
+SELECT max_temperature_f, date FROM weather WHERE max_temperature_f = ( SELECT MAX(max_temperature_f) FROM weather WHERE max_temperature_f IS NOT NULL AND max_temperature_f IS NOT '' )
+SELECT T2.max_gust_speed_mph, T2.cloud_cover FROM trip AS T1 INNER JOIN weather AS T2 ON T2.zip_code = T1.zip_code AND T2.date = SUBSTR(CAST(T1.start_date AS TEXT), 1, INSTR(T1.start_date, ' ') - 1) WHERE T1.bike_id = 10 AND T2.mean_temperature_f > 62 AND T1.subscription_type = 'Customer' AND T1.start_station_name = 'MLK Library' AND T1.end_station_name = 'San Salvador at 1st' AND T1.duration = 386
+SELECT SUM(IIF(zip_code = 94107 AND date = '8/29/2013', max_temperature_f - min_temperature_f, 0)) FROM weather
+SELECT SUM(CASE WHEN city = 'Redwood City' AND SUBSTR(installation_date, -4) < '2014' THEN dock_count ELSE 0 END) NUM FROM station
+SELECT CAST(duration AS REAL) / 60  FROM trip WHERE bike_id = 426 AND end_station_name = '2nd at South Park' AND start_station_name = 'Market at 4th' AND start_date LIKE '8/29/2013%' AND end_date LIKE '8/29/2013%'
+SELECT name FROM station WHERE installation_date = '12/31/2013' AND city = 'Mountain View'
+SELECT city, SUM(dock_count) FROM station WHERE name = 'Townsend at 7th'
+SELECT start_station_name, end_station_name FROM trip WHERE duration = ( SELECT MAX(duration) FROM trip )
+SELECT CAST(COUNT(subscription_type) AS REAL) * 100 / ( SELECT COUNT(subscription_type) FROM trip ) FROM trip WHERE subscription_type = 'Subscriber'
+SELECT T2.start_station_name, T1.city FROM station AS T1 INNER JOIN trip AS T2 ON T2.start_station_name = T1.name GROUP BY T2.start_station_name ORDER BY COUNT(T2.start_station_name) DESC LIMIT 1
+SELECT T2.end_station_name, T2.start_date FROM station AS T1 INNER JOIN trip AS T2 ON T2.end_station_name = T1.name WHERE T1.lat = 37.331415 AND T1.long = -121.8932
+SELECT MAX(duration) FROM trip WHERE start_date LIKE '8/29/2013%' AND end_date LIKE '8/29/2013%'
+SELECT bike_id FROM trip WHERE start_date LIKE '8/29/2013%' AND end_date LIKE '8/29/2013%' AND end_station_name = 'California Ave Caltrain Station' AND start_station_name = 'University and Emerson' AND duration = ( SELECT MAX(duration) FROM trip WHERE start_date LIKE '8/29/2013%' AND end_date LIKE '8/29/2013%' AND end_station_name = 'California Ave Caltrain Station' AND start_station_name = 'University and Emerson' )
+SELECT MIN(T2.duration), T2.bike_id FROM station AS T1 INNER JOIN trip AS T2 ON T2.start_station_name = T1.name WHERE T2.start_date LIKE '10/20/2014%' AND T1.lat = 37.789625 AND T1.long = -122.400811
+SELECT T2.max_humidity FROM trip AS T1 INNER JOIN weather AS T2 ON T2.zip_code = T1.zip_code WHERE T1.start_date LIKE '8/29/2013%' AND T1.bike_id = 496 AND T1.start_station_name = 'Powell Street BART'
+SELECT T1.start_station_name, T1.end_station_name, T2.city FROM trip AS T1 LEFT JOIN station AS T2 ON T2.name = T1.start_station_name WHERE T1.duration = ( SELECT MAX(T1.duration) FROM trip AS T1 LEFT JOIN station AS T2 ON T2.name = T1.start_station_name )
+SELECT T1.id FROM trip AS T1 INNER JOIN weather AS T2 ON T2.zip_code = T1.zip_code WHERE T1.bike_id = 10 AND T2.mean_temperature_f > 62 AND T1.subscription_type = 'Subscriber'
+SELECT T1.start_date FROM trip AS T1 INNER JOIN weather AS T2 ON T2.zip_code = T1.zip_code AND T2.date = SUBSTR(CAST(T1.start_date AS TEXT), 1, INSTR(T1.start_date, ' ') - 1) WHERE T2.date LIKE '8/%/2013' AND T1.start_station_name = 'Market at 10th' AND T1.end_station_name = 'South Van Ness at Market' AND T2.min_temperature_f = ( SELECT MIN(T2.min_temperature_f) FROM trip AS T1 INNER JOIN weather AS T2 ON T2.zip_code = T1.zip_code AND T2.date = SUBSTR(CAST(T1.start_date AS TEXT), 1, INSTR(T1.start_date, ' ') - 1) WHERE T2.date LIKE '8/%/2013' AND T1.start_station_name = 'Market at 10th' AND T1.end_station_name = 'South Van Ness at Market' )
+SELECT AVG(T1.duration) FROM trip AS T1 INNER JOIN weather AS T2 ON T2.zip_code = T1.zip_code WHERE (T2.events = 'Rain' AND T2.precipitation_inches > 0.8) OR (T2.events = 'rain' AND T2.precipitation_inches > 0.8)
+SELECT DISTINCT T1.start_station_name, T2.city FROM trip AS T1 INNER JOIN station AS T2 ON T2.name = T1.start_station_name WHERE T1.duration > ( SELECT AVG(T1.duration) FROM trip AS T1 LEFT JOIN station AS T2 ON T2.name = T1.start_station_name )
+SELECT COUNT(T2.city) FROM trip AS T1 INNER JOIN station AS T2 ON T2.name = T1.end_station_name WHERE T2.city = 'Mountain View' AND T1.start_date LIKE '%2006%'
+SELECT COUNT(T1.subscription_type) FROM trip AS T1 INNER JOIN station AS T2 ON T2.name = T1.end_station_name WHERE T1.subscription_type = 'Subscriber' AND T2.city = 'San Jose'
+SELECT SUBSTR(CAST(T1.start_date AS TEXT), INSTR(T1.start_date, ' '), -4) FROM trip AS T1 INNER JOIN station AS T2 ON T2.name = T1.start_station_name WHERE T2.city = 'San Francisco' GROUP BY T1.start_station_name ORDER BY COUNT(T1.id) DESC LIMIT 1
+SELECT CAST(SUM(CASE WHEN T1.duration > 800 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.id) FROM trip AS T1 INNER JOIN station AS T2 ON T2.name = T1.start_station_name WHERE T2.city = 'San Jose'
+SELECT AVG(duration) FROM trip WHERE start_date LIKE '%2015%' AND start_station_name = 'South Van Ness at Market'
+SELECT SUM(IIF(start_station_id = end_station_id, 1, 0)) FROM trip
+SELECT T1.id FROM trip AS T1 INNER JOIN weather AS T2 ON T2.zip_code = T1.zip_code ORDER BY T2.max_temperature_f DESC LIMIT 1
+SELECT T1.duration FROM trip AS T1 INNER JOIN weather AS T2 ON T2.zip_code = T1.zip_code WHERE T2.max_wind_Speed_mph = 30 ORDER BY T1.duration DESC LIMIT 1
+SELECT AVG(T2.mean_temperature_f) FROM trip AS T1 INNER JOIN weather AS T2 ON T2.zip_code = T1.zip_code WHERE SUBSTR(CAST(T2.date AS TEXT), -4) = '2013' AND T1.start_station_name = 'Market at 4th'
+SELECT COUNT(T2.id) FROM station AS T1 INNER JOIN trip AS T2 ON T1.id = T2.start_station_id WHERE T2.subscription_type = 'Subscriber' AND T2.start_date LIKE '8/%/2013%' AND T1.dock_count > 20
+SELECT T2.lat, T2.long FROM trip AS T1 INNER JOIN station AS T2 ON T2.name = T1.start_station_name WHERE T1.duration = ( SELECT MAX(T1.duration) FROM trip AS T1 INNER JOIN station AS T2 ON T2.name = T1.start_station_name )
+SELECT T2.installation_date FROM trip AS T1 INNER JOIN station AS T2 ON T2.name = T1.start_station_name WHERE T1.id = 4069
+SELECT COUNT(T1.id) FROM trip AS T1 INNER JOIN station AS T2 ON T2.ID = T1.start_station_id WHERE T2.city = 'San Francisco' AND T1.subscription_type = 'Subscriber'
+SELECT DISTINCT end_station_name FROM trip WHERE start_station_name = '2nd at South Park'
+SELECT SUM(IIF(zip_code = 94041 AND events = 'Rain', 1, 0)) FROM weather
+SELECT MAX(duration), CAST(MAX(duration) AS REAL) / 86400 FROM trip
+SELECT (max_temperature_f - 32) / 1.8000 , (mean_temperature_f - 32) / 1.8000 , (min_temperature_f - 32) / 1.8000 FROM weather WHERE SUBSTR(CAST(date AS TEXT), 1, INSTR(date, '/') - 1) = '8' AND SUBSTR(CAST(date AS TEXT), -4) = '2013' AND zip_code = 94107
+SELECT CAST(SUM(IIF(subscription_type = 'Subscriber', 1, 0)) AS REAL) / SUM(IIF(subscription_type = 'Customer', 1, 0)) FROM trip WHERE start_station_name = '2nd at South Park' AND end_station_name = '2nd at South Park'
+SELECT DISTINCT T2.city FROM trip AS T1 INNER JOIN station AS T2 ON T2.name = T1.start_station_name WHERE T1.zip_code = 94107
+SELECT CAST(SUM(T1.duration) AS REAL) / 3600 FROM trip AS T1 LEFT JOIN station AS T2 ON T2.name = T1.start_station_name WHERE T2.city = 'Palo Alto'
+SELECT COUNT(CASE WHEN subscription_type = 'Subscriber' AND start_station_name = 'Market at 4th' THEN id END) FROM trip
+SELECT AVG(T1.duration), T2.lat, T2.long FROM trip AS T1 LEFT JOIN station AS T2 ON T2.name = T1.start_station_name LEFT JOIN station AS T3 ON T3.name = T1.end_station_name WHERE T1.start_station_name = 'Santa Clara at Almaden'
+SELECT T1.name, T1.lat, T1.long FROM station AS T1 INNER JOIN trip AS T2 ON T2.end_station_name = T1.name WHERE T2.start_station_name = 'Market at 4th' AND T2.end_date = '8/29/2013 12:45'
+SELECT COUNT(T1.id), T2.dock_count FROM trip AS T1 INNER JOIN station AS T2 ON T2.name = T1.start_station_name WHERE T1.end_station_name = 'MLK Library' AND T1.subscription_type = 'Subscriber' AND T2.dock_count = 19
+SELECT AVG(T1.duration), T2.installation_date FROM trip AS T1 INNER JOIN station AS T2 ON T2.name = T1.start_station_name WHERE T1.start_station_name = 'Mountain View City Hall' AND T1.subscription_type = 'Subscriber' AND T1.end_station_name = 'Mountain View City Hall'

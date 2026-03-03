@@ -1,0 +1,19 @@
+nl_question
+How many editors are there?
+List the names of editors in ascending order of age.
+What are the names and ages of editors?
+List the names of editors who are older than 25.
+Show the names of editors of age either 24 or 25.
+What is the name of the youngest editor?
+What are the different ages of editors? Show each age along with the number of editors of that age.
+Please show the most common age of editors.
+Show the distinct themes of journals.
+Show the names of editors and the theme of journals for which they serve on committees.
+For each journal_committee, find the editor name and the journal theme.
+Show the names and ages of editors and the theme of journals for which they serve on committees, in ascending alphabetical order of theme.
+Show the names of editors that are on the committee of journals with sales bigger than 3000.
+Show the id, name of each editor and the number of journal committees they are on.
+Show the names of editors that are on at least two journal committees.
+List the names of editors that are not on any journal committee.
+List the date, theme and sales of the journal which did not have any of the listed editors serving on committee.
+What is the average sales of the journals that have an editor whose work type is 'Photo'?

@@ -1,0 +1,79 @@
+sql_query
+SELECT * FROM warehouses
+SELECT * FROM warehouses
+SELECT DISTINCT T1.contents FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE LOCATION  =  'New York'
+SELECT DISTINCT T1.contents FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE LOCATION  =  'New York'
+SELECT CONTENTS FROM boxes WHERE Value  >  150
+SELECT CONTENTS FROM boxes WHERE Value  >  150
+SELECT warehouse ,  avg(value) FROM boxes GROUP BY warehouse
+SELECT warehouse ,  avg(value) FROM boxes GROUP BY warehouse
+SELECT avg(value) ,  sum(value) FROM boxes
+SELECT avg(value) ,  sum(value) FROM boxes
+SELECT avg(capacity) ,  sum(capacity) FROM warehouses
+SELECT avg(capacity) ,  sum(capacity) FROM warehouses
+SELECT avg(value) ,  max(value) ,  CONTENTS FROM boxes GROUP BY CONTENTS
+SELECT avg(value) ,  max(value) ,  CONTENTS FROM boxes GROUP BY CONTENTS
+SELECT CONTENTS FROM boxes ORDER BY value DESC LIMIT 1
+SELECT CONTENTS FROM boxes ORDER BY value DESC LIMIT 1
+SELECT avg(value) FROM boxes
+SELECT avg(value) FROM boxes
+SELECT DISTINCT CONTENTS FROM boxes
+SELECT DISTINCT CONTENTS FROM boxes
+SELECT count(DISTINCT CONTENTS) FROM boxes
+SELECT count(DISTINCT CONTENTS) FROM boxes
+SELECT count(DISTINCT LOCATION) FROM warehouses
+SELECT count(DISTINCT LOCATION) FROM warehouses
+SELECT T1.code FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T2.location  =  'Chicago' OR T2.location  =  'New York'
+SELECT T1.code FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T2.location  =  'Chicago' OR T2.location  =  'New York'
+SELECT sum(T1.value) FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T2.location  =  'Chicago' OR T2.location  =  'New York'
+SELECT sum(T1.value) FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T2.location  =  'Chicago' OR T2.location  =  'New York'
+SELECT T1.contents FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T2.location  =  'Chicago' INTERSECT SELECT T1.contents FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T2.location  =  'New York'
+SELECT T1.contents FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T2.location  =  'Chicago' INTERSECT SELECT T1.contents FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T2.location  =  'New York'
+SELECT CONTENTS FROM boxes EXCEPT SELECT T1.contents FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T2.location  =  'New York'
+SELECT CONTENTS FROM boxes EXCEPT SELECT T1.contents FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T2.location  =  'New York'
+SELECT T2.location FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T1.contents  =  'Rocks' EXCEPT SELECT T2.location FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T1.contents  =  'Scissors'
+SELECT T2.location FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T1.contents  =  'Rocks' EXCEPT SELECT T2.location FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T1.contents  =  'Scissors'
+SELECT DISTINCT warehouse FROM boxes WHERE CONTENTS  =  'Rocks' OR CONTENTS  =  'Scissors'
+SELECT DISTINCT warehouse FROM boxes WHERE CONTENTS  =  'Rocks' OR CONTENTS  =  'Scissors'
+SELECT T2.location FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T1.contents  =  'Rocks' INTERSECT SELECT T2.location FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T1.contents  =  'Scissors'
+SELECT T2.location FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T1.contents  =  'Rocks' INTERSECT SELECT T2.location FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T1.contents  =  'Scissors'
+SELECT code ,  CONTENTS FROM boxes ORDER BY value
+SELECT code ,  CONTENTS FROM boxes ORDER BY value
+SELECT code ,  CONTENTS FROM boxes ORDER BY value LIMIT 1
+SELECT code ,  CONTENTS FROM boxes ORDER BY value LIMIT 1
+SELECT DISTINCT CONTENTS FROM boxes WHERE value  >  (SELECT avg(value) FROM boxes)
+SELECT DISTINCT CONTENTS FROM boxes WHERE value  >  (SELECT avg(value) FROM boxes)
+SELECT DISTINCT CONTENTS FROM boxes ORDER BY CONTENTS
+SELECT DISTINCT CONTENTS FROM boxes ORDER BY CONTENTS
+SELECT code FROM boxes WHERE value  >  (SELECT min(value) FROM boxes WHERE CONTENTS  =  'Rocks')
+SELECT code FROM boxes WHERE value  >  (SELECT min(value) FROM boxes WHERE CONTENTS  =  'Rocks')
+SELECT code ,  CONTENTS FROM boxes WHERE value  >  (SELECT max(value) FROM boxes WHERE CONTENTS  =  'Scissors')
+SELECT code ,  CONTENTS FROM boxes WHERE value  >  (SELECT max(value) FROM boxes WHERE CONTENTS  =  'Scissors')
+SELECT sum(T1.value) FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code ORDER BY T2.capacity DESC LIMIT 1
+SELECT sum(T1.value) FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code ORDER BY T2.capacity DESC LIMIT 1
+SELECT warehouse ,  avg(value) FROM boxes GROUP BY warehouse HAVING avg(value)  >  150
+SELECT warehouse ,  avg(value) FROM boxes GROUP BY warehouse HAVING avg(value)  >  150
+SELECT sum(value) ,  count(*) ,  CONTENTS FROM boxes GROUP BY CONTENTS
+SELECT sum(value) ,  count(*) ,  CONTENTS FROM boxes GROUP BY CONTENTS
+SELECT sum(capacity) ,  avg(capacity) ,  max(capacity) ,  LOCATION FROM warehouses GROUP BY LOCATION
+SELECT sum(capacity) ,  avg(capacity) ,  max(capacity) ,  LOCATION FROM warehouses GROUP BY LOCATION
+SELECT sum(capacity) FROM warehouses
+SELECT sum(capacity) FROM warehouses
+SELECT max(T1.value) ,  T2.location FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code GROUP BY T2.location
+SELECT max(T1.value) ,  T2.location FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code GROUP BY T2.location
+SELECT Warehouse ,  count(*) FROM boxes GROUP BY warehouse
+select warehouse ,  count(*) from boxes group by warehouse
+SELECT count(DISTINCT LOCATION) FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T1.contents  =  'Rocks'
+SELECT count(DISTINCT LOCATION) FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T1.contents  =  'Rocks'
+SELECT T1.code ,  T2.location FROM boxes AS T1 JOIN warehouses AS T2 ON T1.Warehouse  =  T2.Code
+SELECT T1.code ,  T2.location FROM boxes AS T1 JOIN warehouses AS T2 ON T1.Warehouse  =  T2.Code
+SELECT T1.code FROM boxes AS T1 JOIN Warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T2.location  =  'Chicago'
+SELECT T1.code FROM boxes AS T1 JOIN Warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T2.location  =  'Chicago'
+SELECT count(*) ,  warehouse FROM boxes GROUP BY warehouse
+SELECT count(*) ,  warehouse FROM boxes GROUP BY warehouse
+SELECT count(DISTINCT CONTENTS) ,  warehouse FROM boxes GROUP BY warehouse
+SELECT count(DISTINCT CONTENTS) ,  warehouse FROM boxes GROUP BY warehouse
+SELECT T2.code FROM boxes AS T1 JOIN Warehouses AS T2 ON T1.warehouse  =  T2.code GROUP BY T2.code HAVING count(*)  >  T2.capacity
+SELECT T2.code FROM boxes AS T1 JOIN Warehouses AS T2 ON T1.warehouse  =  T2.code GROUP BY T2.code HAVING count(*)  >  T2.capacity
+SELECT sum(T1.value) FROM boxes AS T1 JOIN Warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T2.location != 'Chicago'
+SELECT sum(T1.value) FROM boxes AS T1 JOIN Warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T2.location != 'Chicago'

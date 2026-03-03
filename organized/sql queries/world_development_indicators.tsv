@@ -1,0 +1,106 @@
+sql_query
+SELECT T2.Description FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.ShortName = 'Aruba' AND T2.Seriescode = 'SM.POP.TOTL'
+SELECT T1.SHORTNAME, T2.Description FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.Region = 'Latin America & Caribbean' AND T2.Seriescode = 'SM.POP.TOTL'
+SELECT COUNT(T1.Countrycode) FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T2.Seriescode = 'SM.POP.TOTL' AND T1.IncomeGroup = 'Low income'
+SELECT COUNT(T1.Countrycode) FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.LendingCategory = 'IDA' AND T2.Seriescode = 'SM.POP.TOTL' AND IncomeGroup = 'Low income'
+SELECT COUNT(T1.Countrycode) FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.IncomeGroup = 'High income: OECD' AND T1.CurrencyUnit = 'Euro' AND T2.Seriescode = 'SP.DYN.AMRT.FE'
+SELECT T2.Description FROM Country AS T1 INNER JOIN FootNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.ShortName = 'Aruba' AND T2.Seriescode = 'AG.LND.FRST.K2' AND T2.Year = 'YR1990'
+SELECT T2.Year FROM Country AS T1 INNER JOIN FootNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.ShortName = 'Aruba' AND T2.Seriescode = 'AG.LND.FRST.K2'
+SELECT AVG(T2.Value) FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.Alpha2Code = '1A' AND T2.IndicatorName LIKE 'adolescent fertility rate%'
+SELECT SeriesCode FROM Series WHERE Topic = 'Environment: Emissions' AND LicenseType = 'Restricted'
+SELECT T2.Description FROM Series AS T1 INNER JOIN SeriesNotes AS T2 ON T1.SeriesCode = T2.Seriescode WHERE T1.SeriesCode = 'SP.DYN.TO65.MA.ZS' AND T1.Topic = 'Health: Mortality' AND T2.Year = 'YR1967'
+SELECT T2.Source FROM CountryNotes AS T1 INNER JOIN Series AS T2 ON T1.Seriescode = T2.SeriesCode INNER JOIN Country AS T3 ON T1.Countrycode = T3.CountryCode INNER JOIN SeriesNotes AS T4 ON T2.SeriesCode = T4.Seriescode WHERE T4.Year LIKE '%2002%' AND T2.IndicatorName = 'Net migration'
+SELECT  CAST(SUM(CASE WHEN Region = 'Sub-Saharan Africa' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(CountryCode) FROM Country WHERE SystemOfTrade = 'Special trade system'
+SELECT DISTINCT T1.CountryCode, T1.CurrencyUnit, T1.IncomeGroup FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.CurrencyUnit = 'Pound sterling' AND T1.IncomeGroup LIKE '%high income%'
+SELECT T1.CountryCode FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.IncomeGroup = 'Low income' AND T2.Seriescode = 'DT.DOD.DECT.CD'
+SELECT T2.seriescode, T1.Wb2Code FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T2.Description = 'Data sources : Eurostat'
+SELECT CAST(SUM(CASE WHEN ExternalDebtReportingStatus = 'Actual' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(CountryCode) FROM Country WHERE region = 'Middle East & North Africa'
+SELECT SUM(CASE WHEN IncomeGroup = 'Lower middle income' THEN 1 ELSE 0 END) * 100.0 / COUNT(CountryCode) persentage FROM Country WHERE Region = 'Sub-Saharan Africa'
+SELECT DISTINCT T3.Topic FROM CountryNotes AS T1 INNER JOIN Country AS T2 ON T1.Countrycode = T2.CountryCode INNER JOIN Series AS T3 ON T1.Seriescode = T3.SeriesCode WHERE T2.ShortName = 'Austria'
+SELECT T2.Description FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode INNER JOIN Series AS T3 ON T2.Seriescode = T3.SeriesCode WHERE T1.ShortName = 'Aruba' AND T3.Topic = 'Environment: Energy production & use'
+SELECT T1.Region FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode INNER JOIN Series AS T3 ON T2.Seriescode = T3.SeriesCode WHERE T3.IndicatorName = 'Inflation, consumer prices (annual %)'
+SELECT COUNT(T1.Countrycode)  FROM CountryNotes AS T1 INNER JOIN Series AS T2 ON T1.Seriescode = T2.SeriesCode WHERE T2.IndicatorName = 'Stocks traded, turnover ratio of domestic shares (%)'
+SELECT COUNT(CountryCode) FROM Country WHERE LendingCategory = 'IDA' AND OtherGroups = 'HIPC'
+SELECT T2.Description FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.LendingCategory = 'IDA' AND T2.Seriescode = 'SM.POP.TOTL'
+SELECT CountryCode, Alpha2Code FROM Country WHERE Region = 'East Asia & Pacific' AND IncomeGroup = 'High income: nonOECD'
+SELECT IndicatorName, AggregationMethod FROM Series WHERE Topic = 'Economic Policy & Debt: Balance of payments: Capital & financial account'
+SELECT DISTINCT T1.Wb2code, T1.LendingCategory FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T2.Description = 'Data source : Human Mortality Database by University of California, Berkeley, and Max Planck Institute for Demographic Research.' AND T1.LendingCategory != ''
+SELECT TableName, SourceOfMostRecentIncomeAndExpenditureData FROM Country WHERE Region = 'South Asia' AND IncomeGroup = 'Low income'
+SELECT CountryCode, ShortName FROM Country LIMIT 10
+SELECT TableName FROM Country WHERE CurrencyUnit = 'Euro'
+SELECT CountryCode, Region FROM Country WHERE (IncomeGroup = 'High income: OECD' OR IncomeGroup = 'High income: nonOECD') AND Region LIKE '%Asia%'
+SELECT ShortName FROM Country WHERE VitalRegistrationComplete = 'Yes'
+SELECT SUM(CASE WHEN GovernmentAccountingConcept = 'Budgetary central government' THEN 1 ELSE 0 END), SUM(CASE WHEN GovernmentAccountingConcept = 'Consolidated central government' THEN 1 ELSE 0 END) central_nums FROM country WHERE ExternalDebtReportingStatus = 'Actual'
+SELECT DISTINCT T2.LongName FROM CountryNotes AS T1 INNER JOIN Country AS T2 ON T1.Countrycode = T2.CountryCode WHERE T1.Description = 'Sources: UN Energy Statistics (2014)' LIMIT 3
+SELECT T1.Seriescode, T1.Description FROM CountryNotes AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.CountryCode WHERE T2.ShortName = 'Germany'
+SELECT ShortName, ExternalDebtReportingStatus FROM Country WHERE LendingCategory = 'IDA'
+SELECT COUNT(T2.SeriesCode) FROM Country AS T1 INNER JOIN FootNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.ShortName = 'Aruba' AND T2.Year = 'YR2002'
+SELECT T2.SeriesCode, T2.CountryCode FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.Region = 'Latin America & Caribbean' AND t1.incomegroup = 'Low income'
+SELECT T1.CountryCode, T2.SeriesCode FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.CurrencyUnit = 'Australian dollar' AND T1.IncomeGroup = 'Lower middle income'
+SELECT DISTINCT T1.CountryCode, T2.CountryName FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.CurrencyUnit = 'Euro' AND (T1.IncomeGroup = 'High income: OECD' OR T1.IncomeGroup = 'High income: nonOECD')
+SELECT T1.TableName, T1.CurrencyUnit FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T2.SeriesCode = 'FP.CPI.TOTL'
+SELECT DISTINCT T1.TableName FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T2.Description = 'Covers mainland Tanzania only.'
+SELECT T2.Description, T2.Seriescode FROM Country AS T1 INNER JOIN FootNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.TableName = 'Benin' AND T2.Year = 'YR2005'
+SELECT ShortName FROM country WHERE currencyunit = 'U.S. dollar' LIMIT 3
+SELECT LongName FROM Country WHERE IncomeGroup = 'Low income' AND Region = 'South Asia'
+SELECT LongName FROM Country WHERE SystemOfTrade = 'Special trade system' LIMIT 2
+SELECT T1.SHORTNAME FROM Country AS T1 INNER JOIN FootNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T2.Description = 'Data are classified as official aid.' AND T2.Seriescode = 'DC.DAC.AUSL.CD' AND T2.Year LIKE '%2002%'
+SELECT COUNT(T2.Year) FROM Country AS T1 INNER JOIN FootNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.ShortName = 'Aruba' AND T2.Seriescode = 'BX.KLT.DINV.CD.WD'
+SELECT CAST(SUM(Value) AS REAL) / COUNT(CountryCode) FROM Indicators WHERE CountryName = 'Algeria' AND Year > 1974 AND Year < 1981 AND IndicatorName = 'Adjusted net enrolment rate, primary, both sexes (%)'
+SELECT COUNT(T2.CountryCode)  FROM Indicators AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.CountryCode WHERE T2.Region = 'Middle East & North Africa' AND T1.IndicatorName = 'CO2 emissions FROM gaseous fuel consumption (kt)' AND T1.Year = 1970 AND T1.Value > 600
+SELECT DISTINCT T1.Description FROM FootNotes AS T1 INNER JOIN Country AS T2 ON T1.Countrycode = T2.CountryCode WHERE T1.Year = 'YR1981' AND T2.ShortName = 'Albania'
+SELECT DISTINCT T1.Description FROM FootNotes AS T1 INNER JOIN Country AS T2 ON T1.Countrycode = T2.CountryCode WHERE T1.Year = 'YR1984' AND T2.ShortName = 'The Bahamas' AND T1.Seriescode = 'SH.DTH.IMRT'
+SELECT T2.Topic, T2.Seriescode, T2.LicenseType FROM Indicators AS T1 INNER JOIN Series AS T2 ON T1.IndicatorName = T2.IndicatorName WHERE T1.Year = 1961 AND T1.CountryName = 'Haiti' AND T1.IndicatorName = 'Total reserves minus gold (current US$)' AND T1.Value = 3000000
+SELECT DISTINCT T2.Source FROM Footnotes AS T1 INNER JOIN Series AS T2 ON T1.Seriescode = T2.SeriesCode INNER JOIN Country AS T3 ON T1.Countrycode = T3.CountryCode WHERE T3.Region = 'Latin America & Caribbean' AND T2.IndicatorName = 'Children out of school, primary'
+SELECT DISTINCT T1.CountryCode, T2.Value FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.LatestTradeData = 2013 AND T2.IndicatorName LIKE 'GDP growth (annual %)' AND T2.year = 2014 AND T2.Value > 0 ORDER BY T2.Value ASC
+SELECT COUNT(CountryCode) FROM Country WHERE Region = 'South Asia' AND IncomeGroup = 'Low income'
+SELECT T1.CountryCode FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.IncomeGroup = 'Upper middle income' AND T2.IndicatorName = 'CO2 emissions (kt)' ORDER BY T2.Value ASC LIMIT 1
+SELECT MIN(T2.Value) FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.OtherGroups = 'HIPC' AND T2.IndicatorName = 'International migrant stock, total'
+SELECT DISTINCT T2.IndicatorName FROM Footnotes AS T1 INNER JOIN Series AS T2 ON T1.Seriescode = T2.SeriesCode WHERE T1.Year = 'YR2000' AND T2.Topic = 'Education: Inputs'
+SELECT CAST(SUM(CASE WHEN T2.value > 50 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.CountryCode) FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.Region = 'South Asia' AND T2.IndicatorName = 'Life expectancy at birth, female (years)'
+SELECT CountryName FROM Indicators WHERE Year BETWEEN 1960 AND 1965 AND IndicatorName = 'Death rate, crude (per 1,000 people)' ORDER BY Value DESC LIMIT 1
+SELECT IndicatorName FROM Indicators WHERE CountryName = 'Arab World' AND Year = 1960 AND Value > 50
+SELECT CountryName FROM Indicators WHERE IndicatorName = 'Merchandise imports by the reporting economy (current US$)' ORDER BY Value DESC LIMIT 1
+SELECT DISTINCT T2.IndicatorName FROM Indicators AS T1 INNER JOIN Series AS T2 ON T1.IndicatorName = T2.IndicatorName WHERE T1.Year = 1965 AND T1.Value > 100 AND T2.Periodicity = 'Annual'
+SELECT DISTINCT T1.IndicatorName FROM Indicators AS T1 INNER JOIN Series AS T2 ON T1.IndicatorName = T2.IndicatorName WHERE T1.Year >= 1968 AND T1.Year < 1971 AND T2.LicenseType = 'Open' AND T1.Value < 100
+SELECT T1.IndicatorName FROM Indicators AS T1 INNER JOIN Series AS T2 ON T1.IndicatorName = T2.IndicatorName WHERE T1.CountryName = 'Sudan' AND T1.Year = 1961 AND T2.Periodicity = 'Annual'
+SELECT DISTINCT T2.SeriesCode FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.CurrencyUnit = 'Euro'
+SELECT T2.SeriesCode FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.CurrencyUnit = 'Hong Kong dollar'
+SELECT DISTINCT T2.CountryName FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.IncomeGroup = 'Low income'
+SELECT COUNT(ShortName) FROM Country WHERE ShortName LIKE 'A%' UNION SELECT alpha2code FROM country WHERE shortname LIKE 'A%'
+SELECT LongName FROM Country WHERE NationalAccountsBaseYear < '1980' AND NationalAccountsBaseYear != ''
+SELECT DISTINCT T2.Description FROM Country AS T1 INNER JOIN FootNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T1.TableName = 'Finland' AND T2.Year = 'YR2000'
+SELECT DISTINCT T1.LongName FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T2.Year = 1980 AND T2.IndicatorName IS NOT NULL
+SELECT T1.currencyunit, T2.IndicatorCode FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.TableName = 'Malaysia' AND T2.Year = 1970
+SELECT COUNT(T2.Description) FROM Country AS T1 INNER JOIN FootNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T2.Year = 'YR1980' UNION ALL SELECT DISTINCT T1.TableName FROM Country AS T1 INNER JOIN FootNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T2.Year = 'YR1980'
+SELECT T2.CountryName FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.IncomeGroup = 'Low income' AND T2.IndicatorName = 'Adolescent fertility rate (births per 1,000 women ages 15-19)' ORDER BY T2.Value LIMIT 1
+SELECT SUM(T2.Value) FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.IncomeGroup LIKE '%middle income' AND T2.Year = 1960 AND T2.IndicatorName = 'Urban population'
+SELECT COUNT(CountryCode) FROM Country WHERE SystemOfNationalAccounts = 'Country uses the 1993 System of National Accounts methodology.'
+SELECT ShortName, LongName FROM Country WHERE LatestPopulationCensus >= 2010 AND LatestPopulationCensus < 2013 AND VitalRegistrationComplete = 'Yes'
+SELECT CountryName FROM Indicators WHERE Year = 1960 AND IndicatorName = 'CO2 emissions (metric tons per capita)' ORDER BY Value DESC LIMIT 1
+SELECT T1.ShortName FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T2.SeriesCode = 'SP.DYN.CBRT.IN'
+SELECT DISTINCT T1.CountryCode FROM Country AS T1 INNER JOIN FootNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T2.Description = 'Data are classified as official aid.'
+SELECT DISTINCT T1.ShortName FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T2.Description = 'Estimates are based on regression.'
+SELECT MAX(T2.Value) FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.IncomeGroup = 'Upper middle income' AND T2.Year = 1960 AND T2.IndicatorName = 'Population, total'
+SELECT COUNT(CountryCode)  FROM Country WHERE SystemOfNationalAccounts = 'Country uses the 1968 System of National Accounts methodology.'
+SELECT DISTINCT T1.ShortName FROM Country AS T1 INNER JOIN footnotes AS T2 ON T1.CountryCode = T2.CountryCode INNER JOIN Series AS T3 ON T2.Seriescode = T3.SeriesCode WHERE T1.IncomeGroup = 'Upper middle income' AND T1.Region = 'East Asia & Pacific' AND T3.Topic = 'Social Protection & Labor: Migration'
+SELECT DISTINCT T1.LongName FROM Country AS T1 INNER JOIN footnotes AS T2 ON T1.CountryCode = T2.Countrycode INNER JOIN Series AS T3 ON T2.Seriescode = T3.SeriesCode WHERE T3.Topic = 'Poverty: Shared prosperity'
+SELECT DISTINCT T1.TableName FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.LatestTradeData = 2013 AND T2.IndicatorCode = 'SP.DYN.CDRT.IN'
+SELECT CountryName FROM Indicators WHERE IndicatorName LIKE 'Arable land (% of land area)' ORDER BY Value DESC LIMIT 1
+SELECT DISTINCT Topic FROM Series WHERE LicenseType = 'Restricted'
+SELECT CountryCode FROM Country WHERE IncomeGroup = 'Upper middle income' AND ExternalDebtReportingStatus = 'Preliminary'
+SELECT MAX(T1.Value) FROM Indicators AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.Year >= 1961 AND T1.Year < 1981 AND T1.IndicatorName LIKE 'Agricultural land (% of land area)' AND T2.LongName = 'Republic of Benin'
+SELECT T1.Value FROM Indicators AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.CountryCode WHERE T2.LongName = 'Commonwealth of Australia' AND T1.IndicatorName = 'Deposit interest rate (%)' AND T1.Year = 1979
+SELECT T2.CountryCode FROM Indicators AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.IndicatorName LIKE 'Land under cereal production%' AND T1.Value = 3018500 AND T1.Year = 1980 AND T2.ExternalDebtReportingStatus = 'Actual'
+SELECT CAST(SUM(CASE WHEN T1.Value > 50 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T2.CountryCode) FROM Indicators AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.Year = 1961 AND T2.Region = 'Latin America & Caribbean' AND indicatorname = 'Agricultural land (% of land area)'
+SELECT LongName FROM Country WHERE IncomeGroup = 'Low income' AND Region = 'South Asia'
+SELECT DISTINCT IndicatorCode FROM Indicators WHERE CountryName = 'Brazil' AND IndicatorName = 'Mobile cellular subscriptions'
+SELECT MAX(T1.value), T1.year FROM indicators AS T1 INNER JOIN country AS T2 ON T1.CountryCode = T2.CountryCode WHERE T2.Region = 'Sub-Saharan Africa' AND T1.IndicatorName = 'Out-of-school children of primary school age, female (number)'
+SELECT DISTINCT T3.Seriescode FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode INNER JOIN CountryNotes AS T3 ON T2.CountryCode = T3.Countrycode WHERE T2.IndicatorName = 'Number of infant deaths' AND T1.LongName = 'Islamic State of Afghanistan' AND T2.Year = 1965
+SELECT DISTINCT T1.IndicatorCode FROM Indicators AS T1 INNER JOIN Country AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.Year = 1960 AND T2.LongName = 'Republic of Albania'
+SELECT T1.LendingCategory FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T2.IndicatorName = 'Cereal production (metric tons)' AND T2.Value = 6140000 AND T2.Year = 1966
+SELECT T2.Year FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T1.Alpha2Code = '1A' AND T2.IndicatorName = 'Adolescent fertility rate (births per 1,000 women ages 15-19)'
+SELECT T1.LongName FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T2.IndicatorName = 'Arms exports (SIPRI trend indicator values)' AND T2.Year = 1960 AND T2.Value = 3000000
+SELECT T1.Alpha2Code FROM Country AS T1 INNER JOIN Indicators AS T2 ON T1.CountryCode = T2.CountryCode WHERE T2.IndicatorName = 'Rural population' AND T2.Year = 1960
+SELECT T2.Description FROM Country AS T1 INNER JOIN CountryNotes AS T2 ON T1.CountryCode = T2.Countrycode WHERE T2.Seriescode = 'SP.ADO.TFRT' AND T1.ShortName = 'Australia'
+SELECT T1.Value FROM Indicators AS T1 INNER JOIN Series AS T2 ON T1.IndicatorName = T2.IndicatorName INNER JOIN Country AS T3 ON T1.CountryCode = T3.CountryCode WHERE T2.LongDefinition = 'Adolescent fertility rate is the number of births per 1,000 women ages 15-19.' AND T3.ShortName = 'Arab World' AND T1.Year = 1960

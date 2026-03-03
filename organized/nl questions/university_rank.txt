@@ -1,0 +1,45 @@
+nl_question
+Show name, city, and state for all universities in  alphabetical order of university name.
+What are the names, cities, and states of all universities in alphabetical order (by name of the university).
+How many universities are in Illinois or Ohio?
+What is the total number of universities located in Illinois or Ohio?
+What is the maximum, average, and minimum enrollment for universities?
+What is the maximum, average, and minimum enrollment for all universities?
+List team name for all universities with enrollments above the average.
+What are the names of all teams from universities that have more people enrolled than average ?
+Show all home conferences.
+What are the different home conferences from the university table?
+Show all home conferences and the number of universities in each conference.
+For every home conference, how many universities attended that conference?
+Which state has most number of universities?
+What is the state with the most universities?
+Show all home conferences with average enrollment of universities above 2000.
+What are the home conferences that have an average university enrollment above 2000?
+Which conference has the least number of total enrollment?
+What are the home conferences with the fewest number of people enrolled?
+List all major name and major code in the order of their major code
+What are the names and codes for all majors ordered by their code?
+Show all majors and major ranks for the university with name Augustana College.
+What are the ranks and names of all majors at Augustana College?
+What is the name, city, state of the university with a rank 1 on Accounting major?
+What is the name, city, and state of the university with number 1 ranked Accounting major?
+What is the name of the university that has most number of majors with rank 1?
+What is the name of the university with the most majors ranked number 1?
+Show all university names without a major with rank 1?
+What are the names of all universities without any majors ranked number 1?
+Show all university names with both major Accounting and major Urban Education.
+What are the names of all universities that have both Accounting and Urban Education majors?
+What is the name and overall ranking of universities in Wisconsin state?
+What is the name and rank of every university in Wisconsin?
+What is the university name with highest research point?
+What is the name of the university with the most research points?
+List all university names in ascending order of their reputation points.
+What are the names of all universities in ascending order of reputation points?
+What is the name of university with major Accounting ranked 3 or above?
+What are the names of the university with an Accounting major ranked 3 or higher?
+What is the total enrollment of universities with a overall rank 5 or below?
+What is the total number of students enrolled in an university with a rank of 5 or below?
+Find the name and Citation point of the universities whose reputation points are top 3 and above.
+What is the name and citation point of the unversities with the top 3 reputation points?
+which states do have more than two universities with enrollment smaller than 3000?
+What are the states that have more than 2 universities with an enrollment less than 3000?

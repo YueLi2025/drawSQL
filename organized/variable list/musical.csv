@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+actor,Actor_ID,num
+actor,Name,string
+actor,Musical_ID,num
+actor,Character,string
+actor,Duration,string
+actor,age,num
+musical,Musical_ID,num
+musical,Name,string
+musical,Year,num
+musical,Award,string
+musical,Category,string
+musical,Nominee,string
+musical,Result,string

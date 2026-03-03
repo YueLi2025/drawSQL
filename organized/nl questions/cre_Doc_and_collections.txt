@@ -1,0 +1,81 @@
+nl_question
+List all collections' subset. List the subsets' names.
+What are the collection susbset names?
+What is detail of collection subset with name 'Top collection'?
+What collection details are there on the subset named 'Top collection'?
+List all documents's subset. List the subset's name.
+What are the document subset names?
+What is the detail of document subset with name 'Best for 2000'?
+What are the details on the document subsets that are named 'Best for 2000'?
+List document id of all documents.
+What is the object id of the document objects?
+What is the parent document of document owned by Marlin? List the document id.
+What are the document object ids of the objects owned by Marlin?
+What is the owner of document with the Description 'Braeden Collection'?
+What are the owners of the document objects described as the 'Braeden Collection'?
+What is the owner of the parent document of document owned by 'Marlin'?
+Who is the owner of the parent document of every documents where 'Marlin' is the owner?
+What are the different descriptions of all the parent documents?
+What is the unique description of every parent document?
+How many documents owned by Marlin?
+What is the count of documents owned by Marlin?
+List all documents ids that are not the parent of other documents.
+What are the ids of the documents that are not parent documents?
+How many child documents does each parent document has? List the document id and the number.
+What is the number of child documents for each parent document, and what are the ids of the parent documents?
+List the name of all collections.
+what are the collection names?
+What is the description of collection named Best?
+What are the collection descriptions that are named as 'Best'?
+What is the name of the parent collection of the collection named Nice?
+What are the names of all parent collections of the collection named Nice?
+Which collection is not the parent of other collection? List the collection's name.
+What are the names of the collections that are not the parent of the other collections?
+List document that have more than one child. List the document id.
+What are the ids of the documents that have more than one child?
+How many child collection does the collection named Best has?
+What is the number of child collections belonging to the collection named Best?
+List all document which is related to document owned by Ransom . List the document id .
+What are the document object ids of the related to the document owned by Ransom ?
+List collection subset id, name and number of collections in each subset.
+What are the collection subset ids, names, and number of collections for each subset?
+Which document has most of child? List the document id and the number of child.
+For each document object id, how many children do they have?
+Which document has least number of related documents? List the document id and the number of related documents.
+What is the document object id with the least number of documents ?
+Which document has between 2 and 4 number of documents ? List the document id and the number of related documents .
+What are the ids of the dcouments that have between 2 and 4 related documents and how many related items are there?
+List all owner of documents that is related to documents owned by Braeden.
+What are the different owners of documents that are related to ones owned by Braeden?
+Which unique subset does document owned by Braeden belong to? List the subset name.
+What are the different subset names of all documents owned by Braeden?
+List subset id, name and number of different documents in each subset.
+What is the subset id, name, and number of different documents for each subset?
+Which document subset has most of number of distinct documents ? List subset id , name and number of documents .
+For the document subset with the most number of different documents , what are the ids and names of the subset , as well as the number of documents ?
+For document subset named 'Best for 2000', List all document id that in this subset.
+For the document subset named 'Best for 2000', what are the document ids in that subset?
+List all document subsets of documents that related to each document id. List the name of document subset and the document id.
+What are the different subsets of documents related to each document id , list the name of the document subset and id of the actual document ?
+List the Collection Name that document owned by 'Ransom ' belong to .
+What is the collection name of a document owned by 'Ransom'?
+How many collections does each document belong to? List the count and the document id.
+For each document object id, how many collections does it belong to?
+How many documents does collection named 'Best' has?
+What is the number of documents in the collection named 'Best'?
+List the document id of all documents in collection named Best.
+What is the number of document object ids in the collection named Best?
+Which collection have most number of documents? List collection name, id and number of documents.
+For ever collection named 'Best', what is the name and id of the one with the most documents, and how many documents does it have?
+List id of documents that in document subset Best for 2000 and collection named Best.
+What are the different document object ids in the subset named 'Best for 2000' and in the collection named 'Best'?
+List id of documents that in collection named Best but not in document subset Best for 2000.
+What are the different document object ids that are in the collection named Best but not in the subset named 'Best for 2000'?
+List id of documents that in document subset Best for 2000 or in collection named Best.
+What are the different document ids that are in the subset named 'Best for 2000' or in the collection named 'Best'?
+List all name of collections that are related to collection named Best.
+What are the names of the collections that are related to the collection named Best?
+How many collections that are related to collection named Best?
+How many different collections are related to the one named 'Best'?
+Which collection subset does collection name Best in? List collection subset name.
+What are the collection subsets that the collection named 'Best' in?

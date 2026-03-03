@@ -1,0 +1,20 @@
+sql_query
+SELECT count(*) FROM flight WHERE velocity  >  200
+SELECT vehicle_flight_number ,  date ,  pilot FROM flight ORDER BY altitude ASC
+SELECT id ,  country ,  city ,  name FROM airport ORDER BY name
+SELECT max(group_equity_shareholding) FROM operate_company
+SELECT avg(velocity) FROM flight WHERE pilot  =  'Thompson'
+SELECT T1.name ,  T1.type FROM operate_company AS T1 JOIN flight AS t2 ON T1.id  =  T2.company_id
+SELECT name FROM airport WHERE country != 'Iceland'
+SELECT DISTINCT T1.type FROM operate_company AS T1 JOIN flight AS t2 ON T1.id  =  T2.company_id WHERE T2.velocity  <  200
+SELECT T1.id ,  T1.name FROM operate_company AS T1 JOIN flight AS t2 ON T1.id  =  T2.company_id GROUP BY T1.id HAVING count(*)  >  1
+SELECT T1.id ,  T1.name ,  T1.IATA FROM airport AS T1 JOIN flight AS T2 ON T1.id  =  T2.airport_id GROUP BY T2.id ORDER BY count(*) DESC LIMIT 1
+SELECT DISTINCT T2.pilot FROM airport AS T1 JOIN flight AS T2 ON T1.id  =  T2.airport_id WHERE T1.country  =  'United States' OR T1.name  =  'Billund Airport'
+SELECT TYPE ,  count(*) FROM operate_company GROUP BY TYPE ORDER BY count(*) DESC LIMIT 1
+SELECT count(*) FROM airport WHERE id NOT IN ( SELECT airport_id FROM flight WHERE pilot  =  'Thompson' );
+SELECT T2.pilot FROM operate_company AS T1 JOIN flight AS t2 ON T1.id  =  T2.company_id WHERE T1.principal_activities  =  'Cargo' INTERSECT SELECT T2.pilot FROM operate_company AS T1 JOIN flight AS t2 ON T1.id  =  T2.company_id WHERE T1.principal_activities  =  'Catering services'
+SELECT name FROM airport WHERE name LIKE '%international%'
+SELECT T3.id ,  count(*) FROM operate_company AS T1 JOIN flight AS t2 ON T1.id  =  T2.company_id JOIN airport AS T3 ON T2.airport_id  =  T3.id GROUP BY T3.id
+SELECT count(*) ,  country FROM airport GROUP BY country
+SELECT country FROM airport GROUP BY country HAVING count(*)  >  2
+SELECT pilot FROM flight GROUP BY pilot ORDER BY count(*) DESC LIMIT 1

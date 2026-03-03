@@ -1,0 +1,81 @@
+nl_question
+How many accounts do we have?
+Count the number of accounts.
+Show ids, customer ids, names for all accounts.
+What are the account ids, customer ids, and account names for all the accounts?
+Show other account details for account with name 338.
+What are the other account details for the account with the name 338?
+What is the first name, last name, and phone of the customer with account name 162?
+Give the full name and phone of the customer who has the account name 162.
+How many accounts does the customer with first name Art and last name Turcotte have?
+Return the number of accounts that the customer with the first name Art and last name Turcotte has.
+Show all customer ids and the number of accounts for each customer.
+How many accounts are there for each customer id?
+Show the customer id and number of accounts with most accounts.
+What is the customer id of the customer with the most accounts, and how many accounts does this person have?
+What is the customer first, last name and id with least number of accounts.
+Give the full name and customer id of the customer with the fewest accounts.
+Show the number of all customers without an account.
+How many customers do not have an account?
+Show the first names and last names of customers without any account.
+What are the full names of customers who do not have any accounts?
+Show distinct first and last names for all customers with an account.
+What are the full names of customers who have accounts?
+How many customers have an account?
+Count the number of customers who hold an account.
+How many customers do we have?
+Count the number of customers.
+Show ids, first names, last names, and phones for all customers.
+What are the ids, full names, and phones of each customer?
+What is the phone and email for customer with first name Aniyah and last name Feest?
+Return the phone and email of the customer with the first name Aniyah and last name Feest.
+Show the number of customer cards.
+How many customer cards are there?
+Show ids, customer ids, card type codes, card numbers for all cards.
+What are card ids, customer ids, card types, and card numbers for each customer card?
+Show the date valid from and the date valid to for the card with card number '4560596484842'.
+What are the valid from and valid to dates for the card with the number 4560596484842?
+What is the first name, last name, and phone of the customer with card 4560596484842.
+Return the full name and phone of the customer who has card number 4560596484842.
+How many cards does customer Art Turcotte have?
+Count the number of cards the customer with the first name Art and last name Turcotte has.
+How many debit cards do we have?
+Count the number of customer cards of the type Debit.
+How many credit cards does customer Blanche Huels have?
+Count the number of credit cards that the customer with first name Blanche and last name Huels has.
+Show all customer ids and the number of cards owned by each customer.
+What are the different customer ids, and how many cards does each one hold?
+What is the customer id with most number of cards, and how many does he have?
+Return the id of the customer who has the most cards, as well as the number of cards.
+Show id, first and last names for all customers with at least two cards.
+What are the ids and full names of customers who hold two or more cards?
+What is the customer id, first and last name with least number of accounts.
+Return the id and full name of the customer who has the fewest accounts.
+Show all card type codes and the number of cards in each type.
+What are the different card types, and how many cards are there of each?
+What is the card type code with most number of cards?
+Return the code of the card type that is most common.
+Show card type codes with at least 5 cards.
+What are the codes of card types that have 5 or more cards?
+Show all card type codes and the number of customers holding cards in each type.
+What are the different card type codes, and how many different customers hold each type?
+Show the customer ids and firstname without a credit card.
+What are the ids and first names of customers who do not hold a credit card?
+Show all card type codes.
+What are the different card type codes?
+Show the number of card types.
+How many different card types are there?
+Show all transaction types.
+What are the different types of transactions?
+Show the number of transaction types.
+How many different types of transactions are there?
+What is the average and total transaction amount?
+Return the average transaction amount, as well as the total amount of all transactions.
+Show the card type codes and the number of transactions.
+What are the different card types, and how many transactions have been made with each?
+Show the transaction type and the number of transactions.
+What are the different transaction types, and how many transactions of each have taken place?
+What is the transaction type that has processed the greatest total amount in transactions?
+Return the type of transaction with the highest total amount.
+Show the account id and the number of transactions for each account
+What are the different account ids that have made financial transactions, as well as how many transactions correspond to each?

@@ -1,0 +1,22 @@
+nl_question
+How many books are there?
+List the writers of the books in ascending alphabetical order.
+List the titles of the books in ascending order of issues.
+What are the titles of the books whose writer is not "Elaine Lee"?
+What are the title and issues of the books?
+What are the dates of publications in descending order of price?
+What are the distinct publishers of publications with price higher than 5000000?
+List the publisher of the publication with the highest price.
+List the publication dates of publications with 3 lowest prices.
+Show the title and publication dates of books.
+Show writers who have published a book with price more than 4000000.
+Show the titles of books in descending order of publication price.
+Show publishers that have more than one publication.
+Show different publishers together with the number of publications they have.
+Please show the most common publication date.
+List the writers who have written more than one book.
+List the titles of books that are not published.
+Show the publishers that have publications with price higher than 10000000 and publications with price lower than 5000000.
+What is the number of distinct publication dates?
+How many distinct publication dates are there in our record?
+Show the prices of publications whose publisher is either "Person" or "Wiley"

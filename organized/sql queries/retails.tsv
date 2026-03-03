@@ -1,0 +1,156 @@
+sql_query
+SELECT l_orderkey FROM lineitem WHERE l_orderkey IN (4, 36) ORDER BY l_shipdate DESC LIMIT 1
+SELECT COUNT(T1.c_custkey) FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey WHERE T2.n_name = 'BRAZIL'
+SELECT T1.c_phone FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey WHERE T1.c_mktsegment = 'HOUSEHOLD' AND T2.n_name = 'BRAZIL'
+SELECT COUNT(T1.c_custkey) FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey WHERE T2.n_name = 'GERMANY' AND T1.c_acctbal > 1000
+SELECT T2.n_name FROM supplier AS T1 INNER JOIN nation AS T2 ON T1.s_nationkey = T2.n_nationkey WHERE T1.s_suppkey = 34
+SELECT T3.r_name FROM nation AS T1 INNER JOIN supplier AS T2 ON T1.n_nationkey = T2.s_nationkey INNER JOIN region AS T3 ON T1.n_regionkey = T3.r_regionkey WHERE T2.s_name = 'Supplier#000000129'
+SELECT T3.r_name FROM nation AS T1 INNER JOIN customer AS T2 ON T1.n_nationkey = T2.c_nationkey INNER JOIN region AS T3 ON T1.n_regionkey = T3.r_regionkey WHERE T2.c_custkey = 106936
+SELECT CAST(SUM(IIF(c_acctbal < 0, 1, 0)) AS REAL) * 100 / COUNT(c_custkey) FROM customer
+SELECT T1.n_name, T1.n_nationkey FROM nation AS T1 INNER JOIN region AS T2 ON T1.n_regionkey = T2.r_regionkey WHERE T2.r_name = 'AFRICA'
+SELECT T3.s_name FROM part AS T1 INNER JOIN partsupp AS T2 ON T1.p_partkey = T2.ps_partkey INNER JOIN supplier AS T3 ON T2.ps_suppkey = T3.s_suppkey WHERE T1.p_name = 'smoke red pale saddle plum'
+SELECT COUNT(T3.s_name) FROM region AS T1 INNER JOIN nation AS T2 ON T1.r_regionkey = T2.n_regionkey INNER JOIN supplier AS T3 ON T2.n_nationkey = T3.s_nationkey WHERE T3.s_acctbal < 0 AND T1.r_name = 'MIDDLE EAST'
+SELECT T1.n_name FROM nation AS T1 INNER JOIN region AS T2 ON T1.n_regionkey = T2.r_regionkey WHERE T2.r_comment = 'furiously express accounts wake sly'
+SELECT COUNT(o_orderkey) FROM orders WHERE o_orderpriority = '1-URGENT' GROUP BY o_orderdate ORDER BY o_orderdate DESC LIMIT 1
+SELECT COUNT(T1.n_nationkey) FROM nation AS T1 INNER JOIN region AS T2 ON T1.n_regionkey = T2.r_regionkey INNER JOIN supplier AS T3 ON T1.n_nationkey = T3.s_nationkey WHERE T2.r_name = 'EUROPE'
+SELECT T3.p_name FROM partsupp AS T1 INNER JOIN supplier AS T2 ON T1.ps_suppkey = T2.s_suppkey INNER JOIN part AS T3 ON T1.ps_partkey = T3.p_partkey WHERE T2.s_name = 'Supplier#000000034'
+SELECT CAST(SUM(IIF(T2.n_name = 'IRAN', 1, 0)) AS REAL) * 100 / COUNT(T2.n_name) FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey WHERE T1.c_mktsegment = 'HOUSEHOLD'
+SELECT l_linenumber FROM lineitem WHERE l_discount = 0.1 LIMIT 3
+SELECT c_name FROM customer WHERE c_acctbal < 0 LIMIT 3
+SELECT T1.p_name FROM part AS T1 INNER JOIN partsupp AS T2 ON T1.p_partkey = T2.ps_partkey WHERE T2.ps_supplycost < 10 AND T1.p_container = 'WRAP BAG' LIMIT 2
+SELECT T2.n_name FROM supplier AS T1 INNER JOIN nation AS T2 ON T1.s_nationkey = T2.n_nationkey WHERE T1.s_suppkey = 1
+SELECT T.r_name FROM ( SELECT T1.r_name, COUNT(T2.n_name) AS num FROM region AS T1 INNER JOIN nation AS T2 ON T1.r_regionkey = T2.n_regionkey GROUP BY T1.r_name ) AS T ORDER BY T.num LIMIT 1
+SELECT T1.n_name, T3.r_name FROM nation AS T1 INNER JOIN customer AS T2 ON T1.n_nationkey = T2.c_nationkey INNER JOIN region AS T3 ON T1.n_regionkey = T3.r_regionkey WHERE T2.c_name = 'Customer#000000008'
+SELECT c_name FROM customer WHERE c_acctbal = ( SELECT MIN(c_acctbal) FROM customer )
+SELECT T2.ps_supplycost FROM part AS T1 INNER JOIN partsupp AS T2 ON T1.p_partkey = T2.ps_partkey WHERE T1.p_name = 'violet olive rose ivory sandy'
+SELECT T.r_name FROM ( SELECT T3.r_name, COUNT(T2.c_custkey) AS num FROM nation AS T1 INNER JOIN customer AS T2 ON T1.n_nationkey = T2.c_nationkey INNER JOIN region AS T3 ON T1.n_regionkey = T3.r_regionkey GROUP BY T3.r_name ) AS T ORDER BY T.num DESC LIMIT 1
+SELECT T2.s_address FROM partsupp AS T1 INNER JOIN supplier AS T2 ON T1.ps_suppkey = T2.s_suppkey INNER JOIN part AS T3 ON T1.ps_partkey = T3.p_partkey ORDER BY T3.p_size DESC LIMIT 1
+SELECT COUNT(T1.c_name) FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey WHERE T1.c_mktsegment = 'HOUSEHOLD' AND T2.n_name = 'GERMANY'
+SELECT T1.s_phone FROM supplier AS T1 INNER JOIN nation AS T2 ON T1.s_nationkey = T2.n_nationkey WHERE T2.n_name = 'JAPAN'
+SELECT T1.s_name FROM supplier AS T1 INNER JOIN nation AS T2 ON T1.s_nationkey = T2.n_nationkey WHERE T1.s_acctbal < 0 AND T2.n_name = 'ARGENTINA'
+SELECT COUNT(T1.r_name) FROM region AS T1 INNER JOIN nation AS T2 ON T1.r_regionkey = T2.n_regionkey WHERE T2.n_name = 'ALGERIA'
+SELECT CAST(SUM(IIF(T1.r_name = 'America', 1, 0)) AS REAL) * 100 / COUNT(T2.n_name) FROM region AS T1 INNER JOIN nation AS T2 ON T1.r_regionkey = T2.n_regionkey
+SELECT CAST(SUM(IIF(T1.c_mktsegment = 'HOUSEHOLD', 1, 0)) AS REAL) * 100 / COUNT(T1.c_mktsegment) FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey WHERE T2.n_name = 'INDONESIA'
+SELECT p_name FROM part WHERE p_type = 'PROMO BRUSHED STEEL'
+SELECT COUNT(p_partkey) FROM part WHERE p_type = 'PROMO BRUSHED STEEL' AND p_mfgr = 'Manufacturer#5'
+SELECT p_name FROM part WHERE p_retailprice = ( SELECT MAX(p_retailprice) FROM part )
+SELECT s_name FROM supplier ORDER BY s_acctbal DESC LIMIT 3
+SELECT T2.s_name FROM partsupp AS T1 INNER JOIN supplier AS T2 ON T1.ps_suppkey = T2.s_suppkey INNER JOIN part AS T3 ON T1.ps_partkey = T3.p_partkey WHERE T3.p_name = 'hot spring dodger dim light'
+SELECT MIN(T1.ps_supplycost) FROM partsupp AS T1 INNER JOIN part AS T2 ON T1.ps_partkey = T2.p_partkey WHERE T2.p_name = 'hot spring dodger dim light'
+SELECT SUM(T1.ps_availqty) FROM partsupp AS T1 INNER JOIN part AS T2 ON T1.ps_partkey = T2.p_partkey WHERE T2.p_name = 'hot spring dodger dim light'
+SELECT T3.s_phone FROM part AS T1 INNER JOIN partsupp AS T2 ON T1.p_partkey = T2.ps_partkey INNER JOIN supplier AS T3 ON T2.ps_suppkey = T3.s_suppkey WHERE T1.p_name = 'hot spring dodger dim light' ORDER BY T2.ps_availqty DESC LIMIT 1
+SELECT COUNT(T3.s_name) FROM part AS T1 INNER JOIN partsupp AS T2 ON T1.p_partkey = T2.ps_partkey INNER JOIN supplier AS T3 ON T2.ps_suppkey = T3.s_suppkey INNER JOIN nation AS T4 ON T3.s_nationkey = T4.n_nationkey WHERE T1.p_name = 'hot spring dodger dim light' AND T4.n_name = 'VIETNAM'
+SELECT T3.s_name FROM part AS T1 INNER JOIN partsupp AS T2 ON T1.p_partkey = T2.ps_partkey INNER JOIN supplier AS T3 ON T2.ps_suppkey = T3.s_suppkey WHERE T1.p_brand = 'Brand#55'
+SELECT COUNT(T1.n_nationkey) FROM nation AS T1 INNER JOIN region AS T2 ON T1.n_regionkey = T2.r_regionkey INNER JOIN supplier AS T3 ON T1.n_nationkey = T3.s_nationkey WHERE T2.r_name = 'EUROPE' AND T3.s_acctbal < 0
+SELECT T2.s_phone FROM lineitem AS T1 INNER JOIN supplier AS T2 ON T1.l_suppkey = T2.s_suppkey WHERE T1.l_orderkey = 1
+SELECT T1.l_shipdate FROM lineitem AS T1 INNER JOIN part AS T2 ON T1.l_partkey = T2.p_partkey WHERE T1.l_orderkey = 1 AND T2.p_name = 'burnished seashell gainsboro navajo chocolate'
+SELECT T1.l_quantity FROM lineitem AS T1 INNER JOIN part AS T2 ON T1.l_partkey = T2.p_partkey WHERE T1.l_orderkey = 1 AND T2.p_name = 'burnished seashell gainsboro navajo chocolate'
+SELECT T2.n_name FROM supplier AS T1 INNER JOIN nation AS T2 ON T1.s_nationkey = T2.n_nationkey GROUP BY T1.s_nationkey ORDER BY COUNT(T1.s_name) LIMIT 1
+SELECT T2.ps_supplycost FROM part AS T1 INNER JOIN partsupp AS T2 ON T1.p_partkey = T2.ps_partkey WHERE T1.p_name = 'medium metallic grey dodger linen'
+SELECT SUM(T2.l_quantity) FROM orders AS T1 INNER JOIN lineitem AS T2 ON T1.o_orderkey = T2.l_orderkey WHERE T1.o_orderdate = '1995-10-05' AND T1.o_custkey = 101660
+SELECT T2.l_extendedprice * (1 - T2.l_discount), T3.p_name FROM orders AS T1 INNER JOIN lineitem AS T2 ON T1.o_orderkey = T2.l_orderkey INNER JOIN part AS T3 ON T2.l_partkey = T3.p_partkey WHERE T1.o_custkey = 111511 AND T1.o_orderkey = 53159
+SELECT COUNT(l_linenumber) FROM lineitem WHERE l_orderkey = 5 AND l_returnflag = 'R'
+SELECT MAX(l_shipdate) FROM lineitem WHERE l_orderkey = 1
+SELECT COUNT(n_nationkey) FROM nation WHERE n_regionkey = 2
+SELECT COUNT(T1.c_name) FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey WHERE T2.n_name = 'MOROCCO' AND T1.c_acctbal < 0
+SELECT COUNT(ps_suppkey) FROM partsupp WHERE ps_availqty < 10
+SELECT p_name FROM part WHERE p_type = 'MEDIUM PLATED BRASS' LIMIT 5
+SELECT T1.n_name FROM nation AS T1 INNER JOIN region AS T2 ON T1.n_regionkey = T2.r_regionkey WHERE T2.r_name = 'ASIA'
+SELECT COUNT(T1.n_name) FROM nation AS T1 INNER JOIN customer AS T2 ON T1.n_nationkey = T2.c_nationkey INNER JOIN region AS T3 ON T1.n_regionkey = T3.r_regionkey WHERE T2.c_acctbal < 0 AND T3.r_name = 'ASIA'
+SELECT s_suppkey, s_acctbal FROM supplier ORDER BY s_acctbal DESC LIMIT 10
+SELECT CAST(SUM(IIF(T1.c_mktsegment = 'AUTOMOBILE', 1, 0)) AS REAL) * 100 / COUNT(T1.c_name) FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey WHERE T2.n_name = 'FRANCE'
+SELECT COUNT(T1.s_suppkey) FROM supplier AS T1 INNER JOIN nation AS T2 ON T1.s_nationkey = T2.n_nationkey WHERE T1.s_acctbal < 0 AND T2.n_name = 'EGYPT'
+SELECT T2.ps_supplycost FROM part AS T1 INNER JOIN partsupp AS T2 ON T1.p_partkey = T2.ps_partkey WHERE T1.p_type = 'LARGE BURNISHED COPPER'
+SELECT COUNT(T1.s_suppkey) FROM supplier AS T1 INNER JOIN nation AS T2 ON T1.s_nationkey = T2.n_nationkey WHERE T2.n_name = 'GERMANY' AND T1.s_comment LIKE '%carefully regular packages%'
+SELECT T1.p_name FROM part AS T1 INNER JOIN partsupp AS T2 ON T1.p_partkey = T2.ps_partkey WHERE T2.ps_availqty > 9998 LIMIT 3
+SELECT COUNT(T1.s_suppkey) FROM supplier AS T1 INNER JOIN nation AS T2 ON T1.s_nationkey = T2.n_nationkey WHERE T1.s_acctbal < 0 AND T2.n_name = 'JAPAN'
+SELECT o_orderdate FROM orders WHERE o_orderpriority = '1-URGENT'
+SELECT T2.n_name FROM region AS T1 INNER JOIN nation AS T2 ON T1.r_regionkey = T2.n_regionkey WHERE T1.r_name = 'EUROPE'
+SELECT p_brand FROM part WHERE p_type = 'PROMO BRUSHED STEEL'
+SELECT COUNT(p_partkey) FROM part WHERE p_container = 'JUMBO CASE'
+SELECT MIN(p_size) FROM part WHERE p_container = 'JUMBO CASE'
+SELECT COUNT(s_suppkey) FROM supplier WHERE s_acctbal < 0
+SELECT COUNT(T1.l_linenumber) FROM lineitem AS T1 INNER JOIN supplier AS T2 ON T1.l_suppkey = T2.s_suppkey WHERE T1.l_orderkey = 4 AND T2.s_acctbal < 0
+SELECT T1.l_extendedprice * (1 - T1.l_discount) FROM lineitem AS T1 INNER JOIN part AS T2 ON T1.l_partkey = T2.p_partkey WHERE T2.p_name = 'burnished seashell gainsboro navajo chocolate' AND T1.l_orderkey = 1
+SELECT COUNT(c_custkey) FROM customer WHERE c_mktsegment = 'FURNITURE'
+SELECT CAST(SUM(IIF(T2.n_name = 'GERMANY', 1, 0)) AS REAL) * 100 / COUNT(T1.c_custkey) FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey
+SELECT CAST(SUM(IIF(T2.r_name = 'EUROPE', 1, 0)) AS REAL) * 100 / COUNT(T1.n_name) FROM nation AS T1 INNER JOIN region AS T2 ON T1.n_regionkey = T2.r_regionkey
+SELECT CAST(SUM(IIF(T2.n_name = 'JAPAN', 1, 0)) AS REAL) * 100 / COUNT(T1.s_name) FROM supplier AS T1 INNER JOIN nation AS T2 ON T1.s_nationkey = T2.n_nationkey WHERE T1.s_acctbal < 0
+SELECT p_partkey FROM part WHERE p_retailprice > ( SELECT AVG(p_retailprice) FROM part )
+SELECT CAST(SUM(IIF(T3.s_acctbal < ( SELECT AVG(supplier.s_acctbal) FROM supplier ), 1, 0)) AS REAL) * 100 / COUNT(T1.n_nationkey) FROM nation AS T1 INNER JOIN region AS T2 ON T1.n_regionkey = T2.r_regionkey INNER JOIN supplier AS T3 ON T1.n_nationkey = T3.s_nationkey WHERE T2.r_name = 'EUROPE'
+SELECT c_custkey FROM customer WHERE c_acctbal < 0
+SELECT o_totalprice, o_orderpriority FROM orders WHERE o_orderkey = 33
+SELECT JULIANDAY(T2.l_receiptdate) - JULIANDAY(T2.l_commitdate), T1.o_clerk FROM orders AS T1 INNER JOIN lineitem AS T2 ON T1.o_orderkey = T2.l_orderkey WHERE T1.o_orderkey = 6
+SELECT MAX(s_acctbal) FROM supplier
+SELECT T2.n_name FROM supplier AS T1 INNER JOIN nation AS T2 ON T1.s_nationkey = T2.n_nationkey WHERE T1.s_acctbal = 4393.04
+SELECT CAST(SUM(IIF(T1.r_name = 'ASIA', 1, 0)) AS REAL) * 100 / COUNT(T1.r_regionkey) FROM region AS T1 INNER JOIN nation AS T2 ON T1.r_regionkey = T2.n_regionkey INNER JOIN supplier AS T3 ON T2.n_nationkey = T3.s_nationkey
+SELECT o_totalprice FROM orders WHERE o_orderkey = 32
+SELECT c_name FROM customer WHERE c_acctbal < 0
+SELECT COUNT(p_partkey) FROM part WHERE p_retailprice > 1900
+SELECT T.p_name FROM ( SELECT p_name, p_size FROM part WHERE p_name IN ('pink powder drab lawn cyan', 'cornflower sky burlywood green beige') ) AS T ORDER BY p_size DESC LIMIT 1
+SELECT c_mktsegment FROM customer WHERE c_acctbal = ( SELECT MIN(c_acctbal) FROM customer )
+SELECT o_comment FROM orders WHERE o_totalprice = ( SELECT MAX(o_totalprice) FROM orders )
+SELECT COUNT(T1.o_orderpriority) FROM orders AS T1 INNER JOIN customer AS T2 ON T1.o_custkey = T2.c_custkey WHERE T2.c_mktsegment = 'HOUSEHOLD' AND T1.o_orderpriority = '1-URGENT'
+SELECT SUM(T3.o_totalprice) FROM nation AS T1 INNER JOIN customer AS T2 ON T1.n_nationkey = T2.c_nationkey INNER JOIN orders AS T3 ON T2.c_custkey = T3.o_custkey WHERE T1.n_name = 'GERMANY'
+SELECT T3.o_orderkey FROM nation AS T1 INNER JOIN customer AS T2 ON T1.n_nationkey = T2.c_nationkey INNER JOIN orders AS T3 ON T2.c_custkey = T3.o_custkey WHERE T1.n_name = 'GERMANY' ORDER BY T3.o_orderdate LIMIT 1
+SELECT AVG(T3.o_totalprice) FROM nation AS T1 INNER JOIN customer AS T2 ON T1.n_nationkey = T2.c_nationkey INNER JOIN orders AS T3 ON T2.c_custkey = T3.o_custkey WHERE T1.n_name = 'GERMANY'
+SELECT T2.l_suppkey FROM orders AS T1 INNER JOIN lineitem AS T2 ON T1.o_orderkey = T2.l_orderkey WHERE T1.o_totalprice = 218195.43 AND T2.l_returnflag = 'R'
+SELECT JULIANDAY(T2.l_receiptdate) - JULIANDAY(T2.l_commitdate) FROM orders AS T1 INNER JOIN lineitem AS T2 ON T1.o_orderkey = T2.l_orderkey WHERE T1.o_custkey = '129301' AND T1.o_orderdate = '1996-07-27'
+SELECT c_name FROM customer WHERE c_acctbal = ( SELECT MIN(c_acctbal) FROM customer )
+SELECT COUNT(c_custkey) FROM customer WHERE c_acctbal < 0
+SELECT COUNT(c_custkey) FROM customer WHERE c_mktsegment = 'AUTOMOBILE'
+SELECT l_orderkey FROM lineitem ORDER BY l_extendedprice DESC LIMIT 2
+SELECT T2.l_shipdate FROM orders AS T1 INNER JOIN lineitem AS T2 ON T1.o_orderkey = T2.l_orderkey ORDER BY T1.o_totalprice DESC LIMIT 1
+SELECT T.n_name FROM ( SELECT T2.n_name, COUNT(T1.c_custkey) AS num FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey GROUP BY T2.n_name ) AS T ORDER BY T.num DESC LIMIT 1
+SELECT COUNT(T2.o_orderkey) FROM lineitem AS T1 INNER JOIN orders AS T2 ON T2.o_orderkey = T1.l_orderkey WHERE JULIANDAY(T1.l_shipdate) - JULIANDAY(T2.o_orderdate) = 1 AND T2.o_orderpriority = '1-URGENT'
+SELECT COUNT(T1.c_custkey) FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey WHERE T1.c_acctbal < 0 AND T1.c_mktsegment = 'HOUSEHOLD' AND T2.n_name = 'RUSSIA'
+SELECT T.c_mktsegment FROM ( SELECT T1.c_mktsegment, COUNT(T1.c_custkey) AS num FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey WHERE T2.n_name = 'UNITED STATES' GROUP BY T1.c_mktsegment ) AS T ORDER BY T.num DESC LIMIT 1
+SELECT T1.n_name FROM nation AS T1 INNER JOIN region AS T2 ON T1.n_regionkey = T2.r_regionkey WHERE T2.r_name = 'ASIA'
+SELECT T2.p_name FROM partsupp AS T1 INNER JOIN part AS T2 ON T1.ps_partkey = T2.p_partkey WHERE T1.ps_supplycost = 1000 AND T2.p_mfgr = 'Manufacturer#3'
+SELECT T1.l_extendedprice * (1 - T1.l_discount) - T2.ps_supplycost * T1.l_quantity AS num FROM lineitem AS T1 INNER JOIN partsupp AS T2 ON T1.l_suppkey = T2.ps_suppkey INNER JOIN part AS T3 ON T2.ps_partkey = T3.p_partkey WHERE T1.l_receiptdate = '1996-05-07' AND T1.l_shipinstruct = 'DELIVER IN PERSON' AND T3.p_name = 'smoke turquoise purple blue salmon'
+SELECT COUNT(l_linenumber) FROM lineitem WHERE l_shipdate = '1993-12-04'
+SELECT o_orderdate FROM orders WHERE o_totalprice = ( SELECT MAX(o_totalprice) FROM orders )
+SELECT COUNT(T1.c_custkey) FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey WHERE T2.n_name = 'INDIA'
+SELECT SUM(T1.o_totalprice) FROM orders AS T1 INNER JOIN customer AS T2 ON T1.o_custkey = T2.c_custkey WHERE T2.c_name = 'Customer#000000013'
+SELECT T2.p_name FROM partsupp AS T1 INNER JOIN part AS T2 ON T1.ps_partkey = T2.p_partkey INNER JOIN lineitem AS T3 ON T1.ps_partkey = T3.l_partkey WHERE T3.l_discount = 0.1 AND T3.l_shipdate = '1995-12-01' AND T3.l_shipmode = 'RAIL'
+SELECT T2.p_name FROM partsupp AS T1 INNER JOIN part AS T2 ON T1.ps_partkey = T2.p_partkey INNER JOIN supplier AS T3 ON T1.ps_suppkey = T3.s_suppkey WHERE T1.ps_supplycost > 900 AND T3.s_name = 'Supplier#000000018'
+SELECT COUNT(c_custkey) FROM customer WHERE c_mktsegment = 'FURNITURE' AND c_nationkey = 1
+SELECT c_phone FROM customer ORDER BY c_acctbal DESC LIMIT 1
+SELECT o_orderpriority FROM orders WHERE o_totalprice = ( SELECT MAX(o_totalprice) FROM orders )
+SELECT COUNT(T1.o_orderkey) FROM orders AS T1 INNER JOIN customer AS T2 ON T1.o_custkey = T2.c_custkey INNER JOIN nation AS T3 ON T2.c_nationkey = T3.n_nationkey WHERE T3.n_name = 'UNITED STATES'
+SELECT COUNT(T1.c_custkey) FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey WHERE T1.c_mktsegment = 'AUTOMOBILE' AND T2.n_name = 'BRAZIL'
+SELECT COUNT(T1.s_suppkey) FROM supplier AS T1 INNER JOIN nation AS T2 ON T1.s_nationkey = T2.n_nationkey WHERE T2.n_name = 'GERMANY'
+SELECT T2.c_name, T2.c_mktsegment FROM orders AS T1 INNER JOIN customer AS T2 ON T1.o_custkey = T2.c_custkey WHERE T1.o_totalprice = 199180.63
+SELECT T1.n_name, T3.r_name FROM nation AS T1 INNER JOIN customer AS T2 ON T1.n_nationkey = T2.c_nationkey INNER JOIN region AS T3 ON T1.n_regionkey = T3.r_regionkey WHERE T2.c_address = 'wH55UnX7 VI'
+SELECT T2.n_name FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey INNER JOIN ( SELECT AVG(c_acctbal) * 0.8 AS avg_acctbal FROM customer ) AS T3 WHERE T1.c_acctbal > T3.avg_acctbal
+SELECT c_name, c_phone FROM customer WHERE c_acctbal > 9000
+SELECT o_orderkey FROM orders WHERE o_totalprice BETWEEN 200000 AND 300000
+SELECT CAST(SUM(IIF(ps_supplycost > 500, 1, 0)) AS REAL) * 100 / COUNT(ps_suppkey) FROM partsupp
+SELECT T2.ps_partkey FROM supplier AS T1 INNER JOIN partsupp AS T2 ON T1.s_suppkey = T2.ps_suppkey WHERE T1.s_name = 'Supplier#000000654' ORDER BY T2.ps_supplycost DESC LIMIT 5
+SELECT T1.p_name FROM part AS T1 INNER JOIN partsupp AS T2 ON T1.p_partkey = T2.ps_partkey ORDER BY T2.ps_availqty DESC LIMIT 10
+SELECT COUNT(T2.l_partkey) FROM orders AS T1 INNER JOIN lineitem AS T2 ON T1.o_orderkey = T2.l_orderkey WHERE T2.l_shipmode = 'RAIL' AND T1.o_orderpriority = '3-MEDIUM'
+SELECT l_orderkey FROM lineitem ORDER BY l_extendedprice * (1 - l_discount) LIMIT 3
+SELECT COUNT(l_linenumber) FROM lineitem WHERE l_quantity > 10 AND l_returnflag = 'R'
+SELECT T1.p_name FROM part AS T1 INNER JOIN partsupp AS T2 ON T1.p_partkey = T2.ps_partkey WHERE T2.ps_availqty < 10 ORDER BY T2.ps_supplycost LIMIT 1
+SELECT COUNT(T1.o_clerk) FROM orders AS T1 INNER JOIN customer AS T2 ON T1.o_custkey = T2.c_custkey WHERE T2.c_address = 'uFTe2u518et8Q8UC'
+SELECT c_mktsegment, c_name, c_address, c_phone FROM customer WHERE c_custkey = 3
+SELECT COUNT(l_linenumber) FROM lineitem WHERE l_quantity > 40 AND l_shipmode = 'AIR'
+SELECT IIF(SUM(IIF(l_shipmode = 'RAIL', 1, 0)) - SUM(IIF(l_shipmode = 'MAIL', 1, 0)), 'RAIL', 'MAIL') AS result FROM lineitem WHERE l_shipinstruct = 'DELIVER IN PERSON'
+SELECT SUM(IIF(l_returnflag = 'A', 1, 0)) - SUM(IIF(l_returnflag = 'N', 1, 0)) AS diff FROM lineitem WHERE l_extendedprice < 16947.7
+SELECT T2.c_name FROM orders AS T1 INNER JOIN customer AS T2 ON T1.o_custkey = T2.c_custkey WHERE T1.o_totalprice = 191918.92 AND T1.o_custkey = 93697
+SELECT COUNT(l_linenumber) FROM lineitem WHERE l_shipinstruct = 'DELIVER IN PERSON'
+SELECT COUNT(ps_suppkey) FROM partsupp WHERE ps_availqty < 10
+SELECT SUM(T1.o_totalprice) FROM orders AS T1 INNER JOIN customer AS T2 ON T1.o_custkey = T2.c_custkey WHERE T2.c_phone = '627-220-3983'
+SELECT DISTINCT T2.l_shipmode FROM orders AS T1 INNER JOIN lineitem AS T2 ON T1.o_orderkey = T2.l_orderkey WHERE T1.o_orderdate = '1994-12-31'
+SELECT T.s_acctbal FROM ( SELECT T1.s_acctbal, COUNT(T2.ps_suppkey) AS num FROM supplier AS T1 INNER JOIN partsupp AS T2 ON T1.s_suppkey = T2.ps_suppkey GROUP BY T1.s_suppkey ) AS T ORDER BY T.num DESC LIMIT 1
+SELECT T2.c_phone FROM orders AS T1 INNER JOIN customer AS T2 ON T1.o_custkey = T2.c_custkey WHERE T1.o_totalprice > 300000
+SELECT T1.o_clerk FROM orders AS T1 INNER JOIN lineitem AS T2 ON T1.o_orderkey = T2.l_orderkey WHERE T2.l_shipmode = 'MAIL'
+SELECT T2.c_phone FROM orders AS T1 INNER JOIN customer AS T2 ON T1.o_custkey = T2.c_custkey WHERE T1.o_orderpriority = '1-URGENT'
+SELECT T1.o_orderkey, T2.l_shipdate FROM orders AS T1 INNER JOIN lineitem AS T2 ON T1.o_orderkey = T2.l_orderkey ORDER BY T1.o_totalprice DESC LIMIT 5
+SELECT T2.c_name FROM orders AS T1 INNER JOIN customer AS T2 ON T1.o_custkey = T2.c_custkey WHERE T1.o_totalprice > 300000
+SELECT T2.s_name FROM partsupp AS T1 INNER JOIN supplier AS T2 ON T1.ps_suppkey = T2.s_suppkey INNER JOIN part AS T3 ON T1.ps_partkey = T3.p_partkey WHERE T3.p_name = 'hot spring dodger dim light' ORDER BY T1.ps_supplycost LIMIT 1
+SELECT AVG(T1.ps_supplycost) FROM partsupp AS T1 INNER JOIN supplier AS T2 ON T1.ps_suppkey = T2.s_suppkey INNER JOIN part AS T3 ON T1.ps_partkey = T3.p_partkey WHERE T3.p_name = 'hot spring dodger dim light'
+SELECT COUNT(l_orderkey) FROM lineitem WHERE STRFTIME('%Y', l_shipdate) = '1994' AND l_returnflag = 'R' AND l_shipmode = 'TRUCK'
+SELECT SUM(T3.o_totalprice) FROM customer AS T1 INNER JOIN nation AS T2 ON T1.c_nationkey = T2.n_nationkey INNER JOIN orders AS T3 ON T1.c_custkey = T3.o_custkey WHERE T2.n_name = 'ARGENTINA'
+SELECT T.n_name FROM ( SELECT T2.n_name, SUM(T1.s_acctbal) AS num FROM supplier AS T1 INNER JOIN nation AS T2 ON T1.s_nationkey = T2.n_nationkey WHERE T1.s_acctbal < 0 GROUP BY T1.s_nationkey ) AS T ORDER BY T.num LIMIT 2
+SELECT T1.o_clerk FROM orders AS T1 INNER JOIN lineitem AS T2 ON T1.o_orderkey = T2.l_orderkey ORDER BY T2.l_extendedprice DESC LIMIT 1

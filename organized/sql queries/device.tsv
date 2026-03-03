@@ -1,0 +1,41 @@
+sql_query
+SELECT count(*) FROM device
+SELECT count(*) FROM device
+SELECT Carrier FROM device ORDER BY Carrier ASC
+SELECT Carrier FROM device ORDER BY Carrier ASC
+SELECT Carrier FROM device WHERE Software_Platform != 'Android'
+SELECT Carrier FROM device WHERE Software_Platform != 'Android'
+SELECT Shop_Name FROM shop ORDER BY Open_Year ASC
+SELECT Shop_Name FROM shop ORDER BY Open_Year ASC
+SELECT avg(Quantity) FROM stock
+SELECT avg(Quantity) FROM stock
+SELECT Shop_Name ,  LOCATION FROM shop ORDER BY Shop_Name ASC
+SELECT Shop_Name ,  LOCATION FROM shop ORDER BY Shop_Name ASC
+SELECT count(DISTINCT Software_Platform) FROM device
+SELECT count(DISTINCT Software_Platform) FROM device
+SELECT Open_Date ,  Open_Year FROM shop WHERE Shop_Name  =  "Apple"
+SELECT Open_Date ,  Open_Year FROM shop WHERE Shop_Name  =  "Apple"
+SELECT Shop_Name FROM shop ORDER BY Open_Year DESC LIMIT 1
+SELECT Shop_Name FROM shop ORDER BY Open_Year DESC LIMIT 1
+SELECT T3.Shop_Name ,  T2.Carrier FROM stock AS T1 JOIN device AS T2 ON T1.Device_ID  =  T2.Device_ID JOIN shop AS T3 ON T1.Shop_ID  =  T3.Shop_ID
+SELECT T3.Shop_Name ,  T2.Carrier FROM stock AS T1 JOIN device AS T2 ON T1.Device_ID  =  T2.Device_ID JOIN shop AS T3 ON T1.Shop_ID  =  T3.Shop_ID
+SELECT T2.Shop_Name FROM stock AS T1 JOIN shop AS T2 ON T1.Shop_ID  =  T2.Shop_ID GROUP BY T1.Shop_ID HAVING COUNT(*)  >  1
+SELECT T2.Shop_Name FROM stock AS T1 JOIN shop AS T2 ON T1.Shop_ID  =  T2.Shop_ID GROUP BY T1.Shop_ID HAVING COUNT(*)  >  1
+SELECT T2.Shop_Name FROM stock AS T1 JOIN shop AS T2 ON T1.Shop_ID  =  T2.Shop_ID GROUP BY T1.Shop_ID ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T2.Shop_Name FROM stock AS T1 JOIN shop AS T2 ON T1.Shop_ID  =  T2.Shop_ID GROUP BY T1.Shop_ID ORDER BY COUNT(*) DESC LIMIT 1
+SELECT T2.Shop_Name FROM stock AS T1 JOIN shop AS T2 ON T1.Shop_ID  =  T2.Shop_ID GROUP BY T1.Shop_ID ORDER BY SUM(T1.quantity) DESC LIMIT 1
+SELECT T2.Shop_Name FROM stock AS T1 JOIN shop AS T2 ON T1.Shop_ID  =  T2.Shop_ID GROUP BY T1.Shop_ID ORDER BY SUM(T1.quantity) DESC LIMIT 1
+SELECT Software_Platform ,  COUNT(*) FROM device GROUP BY Software_Platform
+SELECT Software_Platform ,  COUNT(*) FROM device GROUP BY Software_Platform
+SELECT Software_Platform FROM device GROUP BY Software_Platform ORDER BY COUNT(*) DESC
+SELECT Software_Platform FROM device GROUP BY Software_Platform ORDER BY COUNT(*) DESC
+SELECT Software_Platform FROM device GROUP BY Software_Platform ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Software_Platform FROM device GROUP BY Software_Platform ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Shop_Name FROM shop WHERE Shop_ID NOT IN (SELECT Shop_ID FROM stock)
+SELECT Shop_Name FROM shop WHERE Shop_ID NOT IN (SELECT Shop_ID FROM stock)
+SELECT LOCATION FROM shop WHERE Open_Year  >  2012 INTERSECT SELECT LOCATION FROM shop WHERE Open_Year  <  2008
+SELECT LOCATION FROM shop WHERE Open_Year  >  2012 INTERSECT SELECT LOCATION FROM shop WHERE Open_Year  <  2008
+SELECT Carrier FROM device WHERE Device_ID NOT IN (SELECT Device_ID FROM stock)
+SELECT Carrier FROM device WHERE Device_ID NOT IN (SELECT Device_ID FROM stock)
+SELECT T2.Carrier FROM stock AS T1 JOIN device AS T2 ON T1.Device_ID  =  T2.Device_ID GROUP BY T1.Device_ID HAVING COUNT(*)  >  1
+SELECT T2.Carrier FROM stock AS T1 JOIN device AS T2 ON T1.Device_ID  =  T2.Device_ID GROUP BY T1.Device_ID HAVING COUNT(*)  >  1

@@ -1,0 +1,41 @@
+sql_query
+SELECT count(*) FROM entrepreneur
+SELECT count(*) FROM entrepreneur
+SELECT Company FROM entrepreneur ORDER BY Money_Requested DESC
+SELECT Company FROM entrepreneur ORDER BY Money_Requested DESC
+SELECT Company ,  Investor FROM entrepreneur
+SELECT Company ,  Investor FROM entrepreneur
+SELECT avg(Money_Requested) FROM entrepreneur
+SELECT avg(Money_Requested) FROM entrepreneur
+SELECT Name FROM People ORDER BY Weight ASC
+SELECT Name FROM People ORDER BY Weight ASC
+SELECT T2.Name FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID
+SELECT T2.Name FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID
+SELECT T2.Name FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID WHERE T1.Investor != "Rachel Elnaugh"
+SELECT T2.Name FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID WHERE T1.Investor != "Rachel Elnaugh"
+SELECT Weight FROM people ORDER BY Height ASC LIMIT 1
+SELECT Weight FROM people ORDER BY Height ASC LIMIT 1
+SELECT T2.Name FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Weight DESC LIMIT 1
+SELECT T2.Name FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Weight DESC LIMIT 1
+SELECT sum(T1.Money_Requested) FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID WHERE T2.Height  >  1.85
+SELECT sum(T1.Money_Requested) FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID WHERE T2.Height  >  1.85
+SELECT T2.Date_of_Birth FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID WHERE T1.Investor  =  "Simon Woodroffe" OR T1.Investor  =  "Peter Jones"
+SELECT T2.Date_of_Birth FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID WHERE T1.Investor  =  "Simon Woodroffe" OR T1.Investor  =  "Peter Jones"
+SELECT T2.Weight FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Money_Requested DESC
+SELECT T2.Weight FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Money_Requested DESC
+SELECT Investor ,  COUNT(*) FROM entrepreneur GROUP BY Investor
+SELECT Investor ,  COUNT(*) FROM entrepreneur GROUP BY Investor
+SELECT Investor FROM entrepreneur GROUP BY Investor ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Investor FROM entrepreneur GROUP BY Investor ORDER BY COUNT(*) DESC LIMIT 1
+SELECT Investor FROM entrepreneur GROUP BY Investor HAVING COUNT(*)  >=  2
+SELECT Investor FROM entrepreneur GROUP BY Investor HAVING COUNT(*)  >=  2
+SELECT T2.Name ,  T1.Company FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Money_Requested
+SELECT T2.Name ,  T1.Company FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Money_Requested
+SELECT Name FROM people WHERE People_ID NOT IN (SELECT People_ID FROM entrepreneur)
+SELECT Name FROM people WHERE People_ID NOT IN (SELECT People_ID FROM entrepreneur)
+SELECT Investor FROM entrepreneur WHERE Money_Requested  >  140000 INTERSECT SELECT Investor FROM entrepreneur WHERE Money_Requested  <  120000
+SELECT Investor FROM entrepreneur WHERE Money_Requested  >  140000 INTERSECT SELECT Investor FROM entrepreneur WHERE Money_Requested  <  120000
+SELECT count(DISTINCT Company) FROM entrepreneur
+SELECT count(DISTINCT Company) FROM entrepreneur
+SELECT T1.Company FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Height DESC LIMIT 1
+SELECT T1.Company FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Height DESC LIMIT 1

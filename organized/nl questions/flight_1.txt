@@ -1,0 +1,97 @@
+nl_question
+How many aircrafts do we have?
+How many aircrafts exist in the database?
+Show name and distance for all aircrafts.
+What are the names and distances for all airplanes?
+Show ids for all aircrafts with more than 1000 distance.
+What are the ids of all aircrafts that can cover a distance of more than 1000?
+How many aircrafts have distance between 1000 and 5000?
+What is the count of aircrafts that have a distance between 1000 and 5000?
+What is the name and distance for aircraft with id 12?
+What is the name and distance for the aircraft that has an id of 12?
+What is the minimum, average, and maximum distance of all aircrafts.
+Return the minimum, average and maximum distances traveled across all aircrafts.
+Show the id and name of the aircraft with the maximum distance.
+What is the id and name of the aircraft that can cover the maximum distance?
+Show the name of aircrafts with top three lowest distances.
+What are the aircrafts with top 3 shortest lengthes? List their names.
+Show names for all aircrafts with distances more than the average.
+What are the names of all aircrafts that can cover more distances than average?
+How many employees do we have?
+What is the number of employees?
+Show name and salary for all employees sorted by salary.
+What is the name and salary of all employees in order of salary?
+Show ids for all employees with at least 100000 salary.
+What is the id of every employee who has at least a salary of  100000?
+How many employees have salary between 100000 and 200000?
+What is the number of employees that have a salary between 100000 and 200000?
+What is the name and salary for employee with id 242518965?
+What is the name and salary of the employee with the id 242518965?
+What is average and maximum salary of all employees.
+What is the average and largest salary of all employees?
+Show the id and name of the employee with maximum salary.
+What is the id and name of the employee with the highest salary?
+Show the name of employees with three lowest salaries.
+What is the name of the 3 employees who get paid the least?
+Show names for all employees with salary more than the average.
+What are the names of all employees who have a salary higher than average?
+Show the id and salary of Mark Young.
+What is the id and salary of the employee named Mark Young?
+How many flights do we have?
+What is the number of flights?
+Show flight number, origin, destination of all flights in the alphabetical order of the departure cities.
+What is the flight number, origin, and destination for all flights in alphabetical order by departure cities?
+Show all flight number from Los Angeles.
+What are the numbers of all flights coming from Los Angeles?
+Show origins of all flights with destination Honolulu.
+What are the origins of all flights that are headed to Honolulu?
+Show me the departure date and arrival date for all flights from Los Angeles to Honolulu.
+What are the departure and arrival dates of all flights from LA to Honolulu?
+Show flight number for all flights with more than 2000 distance.
+What are the numbers of all flights that can cover a distance of more than 2000?
+What is the average price for flights from Los Angeles to Honolulu.
+What is the average price for flights from LA to Honolulu?
+Show origin and destination for flights with price higher than 300.
+What is the origin and destination for all flights whose price is higher than 300?
+Show the flight number and distance of the flight with maximum price.
+What is the flight number and its distance for the one with the maximum price?
+Show the flight number of flights with three lowest distances.
+What are the numbers of the shortest flights?
+What is the average distance and average price for flights from Los Angeles.
+What is the average distance and price for all flights from LA?
+Show all origins and the number of flights from each origin.
+For each origin, how many flights came from there?
+Show all destinations and the number of flights to each destination.
+What are the destinations and number of flights to each one?
+Which origin has most number of flights?
+What place has the most flights coming from there?
+Which destination has least number of flights?
+What destination has the fewest number of flights?
+What is the aircraft name for the flight with number 99
+What is the name of the aircraft that was on flight number 99?
+Show all flight numbers with aircraft Airbus A340-300.
+What are the flight numbers for the aircraft Airbus A340-300?
+Show aircraft names and number of flights for each aircraft.
+What is the name of each aircraft and how many flights does each one complete?
+Show names for all aircraft with at least two flights.
+What are the names for all aircrafts with at least 2 flights?
+How many employees have certificate.
+What is the count of distinct employees with certificates?
+Show ids for all employees who don't have a certificate.
+What are the ids of all employees that don't have certificates?
+Show names for all aircrafts of which John Williams has certificates.
+What are the names of all aircrafts that John Williams have certificates to be able to fly?
+Show names for all employees who have certificate of Boeing 737-800.
+What are the names of all employees who have a certificate to fly Boeing 737-800?
+Show names for all employees who have certificates on both Boeing 737-800 and Airbus A340-300.
+What are the names of all employees who can fly both the Boeing 737-800 and the Airbus A340-300?
+Show names for all employees who do not have certificate of Boeing 737-800.
+What are the names of all employees who are not certified to fly Boeing 737-800s?
+Show the name of aircraft which fewest people have its certificate.
+What are the names of the aircraft that the least people are certified to fly?
+Show the name and distance of the aircrafts with more than 5000 distance and which at least 5 people have its certificate.
+What is the name and distance of every aircraft that can cover a distance of more than 5000 and which at least 5 people can fly?
+what is the salary and name of the employee who has the most number of aircraft certificates?
+What is the salaray and name of the employee that is certified to fly the most planes?
+What is the salary and name of the employee who has the most number of certificates on aircrafts with distance more than 5000?
+What is the salaray and name of the employee with the most certificates to fly planes more than 5000?

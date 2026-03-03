@@ -1,0 +1,78 @@
+nl_question
+What is the last name of the customer who placed an order for sales id 178?
+What is the last name of sales person for sales id 100?
+Sum up the number sales ids handled by employees called Morningstar, Heather and Dean.
+Calculate the total price of products purchased by Adam.
+Calculate the total quantity of products with name starting with alphabet "c".
+Write down the name of products whose sale quantity is more than 950.
+What is the full name of employee who sold 1000 units?
+Tally the product name and quantity of the first ten sales.
+What is the difference in price between HL Mountain Frame - Black, 42 and LL Mountain Frame - Black, 42?
+Name the most expensive and the least expensive products available, excluding free gifts.
+In sales ID between 30 and 40, who is the customer that bought a total quantity of 403?
+Among the sales ID ranges from 1 to 200, what is the percentage of the products with a price ranging from 200 to 300?
+What is the name of the most expensive product?
+How many types of "HL Touring Frames" are there?
+How many customers share the most common last name?
+How many chainring bolts were sold under sales ID 551971?
+Among the employee names, what is the most common middle initial?
+Find and list the products that sold below the average quantity.
+List down product names of free gifts.
+List down the product name for products from id 1 to 10.
+What is the first name of employee who handled sales for customer called Abigail?
+How many free gifts have customer with id 11782 received?
+What is the full name of customers who dealt with sales person with id 5?
+Among customers with IDs from 1 to 100, what is the highest price of products they purchased?
+Calculate the total price for products from id 400 to 500.
+Among the products, how many of them are freebies?
+What is the total sales amount for Reflector?
+What is the best selling colour for HL Mountain Frame, 42?
+How many sales people are handling all the customers?
+Identify the name of the sales person with employee ID 7.
+Give the product's name brought by Aaron Alexander.
+How many customers are named Madison?
+How many free or gift products are there?
+Among the "Mountain-500 Black" product types, which type was purchased the most?
+How many employees sold "ML Road Frame-W - Yellow, 40"?
+How many employees sold over 20,000 quantities of "Touring-2000 Blue, 50"?
+List the first name of all the customers whose last name is Chen.
+What is the average price of products that cost between 100 and 200?
+Calculate the average quantity per sales from sales id 20 to 30.
+List down all of the product names that were placed by sales person with id 10.
+List the product ID of the top five products, by descending order, in terms of price.
+Name the customers who received 'Touring Rim' as a free gift.
+How many customers have the first name Abigail?
+How many of the employees have the last name "Ringer" ?
+Among the products with product ID lower than 15, how many of them costs 10 and below?
+Among the products that have price ranges from 100 to 150, what is the customer ID and sales ID of the product with a quantity lower than 25?
+In sales with a quantity of 60, how many of them have a price not greater than 500?
+How many sales ids are there for customer id 80?
+Count the total quantity for sales from id 1 to 10.
+List down the product id for products with the highest quantity.
+Calculate the total sales ids that were sales of Flat Washer 8.
+List down the first name of customers who placed order for product id 1.
+List down product ids that were purchased by customers called Abby.
+Write down all of the product ids that were placed by Meander.
+Calculate the total quantity of products purchased by customer called Adrian.
+Calculate the total number of sales closed by Michel E. DeFrance?
+Name the sales person who helped Elizabeth A. White to purchase Road-250 Black, 48.
+How many sales transactions were given by the customer named Joe L. Lopez?
+Find the number of customers handled by each of the sales people.
+Among all the customers who have purchased ML Bottom Bracket, identify the percentage of sales by Albert I. Ringer?
+Indicate the quantity of Blade products sold.
+List the first names of employees with trading quantity for more than 500.
+List the first names of customers who have purchased products from sale person id 1.
+Calculate the total trading quantity of Abraham sold to Aaron Alexander.
+Among the customers whose first name is Cameron, who bought the product in the most quantity?
+Please provide sales ID for products named Hex Nut with a price greater than 100.
+Identify customer IDs who bought products priced from 1000 to 2000.
+Calculate the total quantity of products that are gifts.
+Calculate the percentage of sold blades in the total number of transactions.
+Give the product ID and name of the product with the highest prices among the quantity ranges from 400 to 500.
+In customers with the first name of Erica, how many of them bought a quantity below 200?
+What is the price and quantity of the product named Seat Tube?
+List the customer's ID and last name of the customer that purchased a product with a quantity greater than 90% of the average quantity of all listed products.
+How much is the total amount of sales handled by Heather McBadden?
+How many "Mountain-100 Silver, 38" were sold by Stearns MacFeather?
+What is the total cost of all the "Road-650, Red, 60" products that Abraham E. Bennet sold?
+Which product has the highest total amount of quantity sold? Calculate its overall total price.
