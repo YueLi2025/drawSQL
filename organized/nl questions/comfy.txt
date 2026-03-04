@@ -1,0 +1,25 @@
+nl_question
+Show me all of our components.
+How many activity log entries do we have in total?
+Show me all of our activity log entries.
+Can you look up the activity log entry with id=num?
+Find the activity log entry where class_name=string.
+How many activity log entries were created since created_at=date?
+What are the most recent activity log entries ordered by class_name?
+How many component groups do we have in total?
+Who are the most active users based on activity count?
+How many metrics do we have in total?
+Break down the activity log entries by class_name — how many in each?
+Are there any activity log entries that don't have a match in related tables?
+For each group, what are the top 3 activity log entries?
+How did the number of activity log entries change month over month?
+Which activity log entries have duplicate or repeated values?
+Show me each component group along with its related details from other tables.
+Pull together a report on activity log entries joining all related tables.
+Who or what is the best in each group of activity log entries?
+Which activity log entries are above average compared to others in their group?
+Do a multi-step analysis: group activity log entries, filter, then rank the results.
+Show the running total of activity log entries over time based on created_at.
+Find activity log entries that exist in one table but not in a related table.
+Combine data from actions, component_groups, and components in a single report.
+Rank all activity log entries within their groups and show the top performers.

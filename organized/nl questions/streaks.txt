@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many users do we have in total?
+Show me all of our users.
+Can you look up the user with id=num?
+What are the most recent users ordered by level_id?
+How many streaks do we have in total?
+Show me all of our streaks.
+Can you look up the streak with id=num?
+Who are the most active users based on activity count?
+Show me each user along with its related details from other tables.
+Break down the users by level_id — how many in each?
+Are there any users that don't have a match in related tables?
+For each group, what are the top 3 users?
+Which users have duplicate or repeated values?
+How many streaks were added since created_at=date?
+Break down the streaks by user_id — how many in each?
+Pull together a report on users joining all related tables.
+Who or what is the best in each group of users?
+Which users are above average compared to others in their group?
+Do a multi-step analysis: group users, filter, then rank the results.
+Find users that exist in one table but not in a related table.
+Combine data from users, streaks, and streak_histories in a single report.
+Rank all users within their groups and show the top performers.
+Pull together a report on streaks joining all related tables.

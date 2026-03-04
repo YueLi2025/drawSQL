@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many messages do we have in total?
+Show me all of our messages.
+Can you look up the message with id=num?
+How many messages were created since created_at=date?
+What are the most recent messages ordered by message?
+How many conversations do we have in total?
+Show me all of our conversations.
+Who are the most active users based on activity count?
+How many users do we have in total?
+Break down the messages by message — how many in each?
+Are there any messages that don't have a match in related tables?
+For each group, what are the top 3 messages?
+How did the number of messages change month over month?
+Which messages have duplicate or repeated values?
+Show me each conversation along with its related details from other tables.
+Pull together a report on messages joining all related tables.
+Who or what is the best in each group of messages?
+Which messages are above average compared to others in their group?
+Do a multi-step analysis: group messages, filter, then rank the results.
+Show the running total of messages over time based on created_at.
+Find messages that exist in one table but not in a related table.
+Combine data from messages, conversations, and users in a single report.
+Rank all messages within their groups and show the top performers.

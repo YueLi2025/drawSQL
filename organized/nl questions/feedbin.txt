@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many activity log entries do we have in total?
+Show me all of our activity log entries.
+Can you look up the activity log entry with id=num?
+Find the activity log entry where title=string.
+Which activity log entries have status=num?
+How many activity log entries were created since created_at=date?
+What are the most recent activity log entries ordered by user_id?
+Who are the most active users based on activity count?
+Show me each activity log entry along with its related details from other tables.
+How many activity log entries were added since created_at=date?
+Break down the activity log entries by action_type — how many in each?
+Are there any activity log entries that don't have a match in related tables?
+For each group, what are the top 3 activity log entries?
+How did the number of activity log entries change month over month?
+Which activity log entries have duplicate or repeated values?
+Pull together a report on activity log entries joining all related tables.
+Who or what is the best in each group of activity log entries?
+Which activity log entries are above average compared to others in their group?
+Do a multi-step analysis: group activity log entries, filter, then rank the results.
+Show the running total of activity log entries over time based on created_at.
+Find activity log entries that exist in one table but not in a related table.
+Combine data from actions, authentication_tokens, and billing_events in a single report.
+Rank all activity log entries within their groups and show the top performers.

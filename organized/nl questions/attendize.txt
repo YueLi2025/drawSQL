@@ -1,0 +1,25 @@
+nl_question
+Show me all of our orders.
+How many account payment gateways do we have in total?
+Show me all of our account payment gateways.
+Can you look up the account payment gateway with id=num?
+How many account payment gateways were created since created_at=date?
+What are the most recent account payment gateways ordered by account_id?
+How many accounts do we have in total?
+Show me all of our accounts.
+Who are the most active users based on activity count?
+How many events do we have in total?
+Break down the account payment gateways by account_id — how many in each?
+Are there any account payment gateways that don't have a match in related tables?
+For each group, what are the top 3 account payment gateways?
+How did the number of account payment gateways change month over month?
+Which account payment gateways have duplicate or repeated values?
+Show me each account along with its related details from other tables.
+Pull together a report on account payment gateways joining all related tables.
+Who or what is the best in each group of account payment gateways?
+Which account payment gateways are above average compared to others in their group?
+Do a multi-step analysis: group account payment gateways, filter, then rank the results.
+Show the running total of account payment gateways over time based on created_at.
+Find account payment gateways that exist in one table but not in a related table.
+Combine data from account_payment_gateways, accounts, and affiliates in a single report.
+Rank all account payment gateways within their groups and show the top performers.

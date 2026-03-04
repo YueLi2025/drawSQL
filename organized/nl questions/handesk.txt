@@ -1,0 +1,25 @@
+nl_question
+How many tickets have status=num indicating open?
+Which tickets were created since created_at=date?
+Show me all of our user settings.
+How many members are on each team?
+How many attachments do we have in total?
+Show me all of our attachments.
+Can you look up the attachment with id=num?
+How many attachments were created since created_at=date?
+What's the average resolution time for tickets?
+Who are the most active users based on activity count?
+How many leads do we have in total?
+Break down the attachments by attachable_type — how many in each?
+Are there any attachments that don't have a match in related tables?
+For each group, what are the top 3 attachments?
+How did the number of attachments change month over month?
+Which attachments have duplicate or repeated values?
+Pull together a report on attachments joining all related tables.
+Who or what is the best in each group of attachments?
+Which attachments are above average compared to others in their group?
+Do a multi-step analysis: group attachments, filter, then rank the results.
+Show the running total of attachments over time based on created_at.
+Find attachments that exist in one table but not in a related table.
+Combine data from attachments, comments, and ideas in a single report.
+Rank all attachments within their groups and show the top performers.

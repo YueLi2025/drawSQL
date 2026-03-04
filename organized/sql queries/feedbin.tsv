@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM users WHERE created_at >= 'date';
+SELECT COUNT(*) FROM actions;
+SELECT * FROM actions;
+SELECT * FROM actions WHERE id = num;
+SELECT * FROM actions WHERE title = string;
+SELECT * FROM actions WHERE status = num;
+SELECT COUNT(*) FROM actions WHERE created_at >= 'date';
+SELECT * FROM actions ORDER BY created_at DESC LIMIT 1;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT t.*, c.* FROM actions t LEFT JOIN actions c ON c.id = t.user_id;
+SELECT COUNT(*) FROM actions WHERE created_at >= 'date';
+SELECT action_type, COUNT(*) as count FROM actions GROUP BY action_type;
+SELECT * FROM actions WHERE id NOT IN (SELECT id FROM actions WHERE id IS NOT NULL)
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY action_type ORDER BY id DESC) as rn FROM actions ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM actions WHERE created_at >= 'date' GROUP BY period ORDER BY period;
+SELECT id, COUNT(*) as count FROM actions GROUP BY id HAVING COUNT(*) > 1
+SELECT * FROM actions LEFT JOIN users ON actions.id = users.plan_id LEFT JOIN actions ON actions.id = actions.user_id LEFT JOIN recently_read_entries ON actions.id = recently_read_entries.user_id LEFT JOIN feed_stats ON actions.id = feed_stats.feed_id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY action_type ORDER BY id DESC) as rn FROM actions ) WHERE rn = 1;
+SELECT * FROM actions WHERE id > (SELECT AVG(id) FROM actions)
+WITH grouped AS ( SELECT action_type, COUNT(*) as cnt FROM actions GROUP BY action_type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM actions ORDER BY created_at;
+SELECT * FROM actions WHERE id NOT IN (SELECT id FROM actions WHERE id IS NOT NULL)
+SELECT * FROM actions LEFT JOIN authentication_tokens ON authentication_tokens.user_id = actions.id LEFT JOIN billing_events ON billing_events.user_id = actions.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY action_type ORDER BY id DESC) as rn FROM actions ) WHERE rn <= num;

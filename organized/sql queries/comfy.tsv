@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM components LIMIT num
+SELECT COUNT(*) FROM actions;
+SELECT * FROM actions;
+SELECT * FROM actions WHERE id = num;
+SELECT * FROM actions WHERE class_name = string;
+SELECT COUNT(*) FROM actions WHERE created_at >= 'date';
+SELECT * FROM actions ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM component_groups;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM metrics;
+SELECT class_name, COUNT(*) as count FROM actions GROUP BY class_name;
+SELECT a.* FROM actions a LEFT JOIN components b ON a.taggable_id = b.id WHERE b.id IS NULL
+SELECT * FROM actions ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM actions WHERE created_at >= 'date' GROUP BY information ORDER BY created_at;
+SELECT username, COUNT(*) as count FROM actions GROUP BY username HAVING COUNT(*) > 1
+SELECT t.*, c.* FROM component_groups t LEFT JOIN components c ON c.group_id = t.id;
+SELECT * FROM incident_components LEFT JOIN incidents ON incident_components.incident_id = incidents.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY class_name ORDER BY id DESC) as rn FROM actions ) WHERE rn = 1;
+SELECT * FROM actions WHERE user_id > (SELECT AVG(user_id) FROM actions)
+WITH grouped AS ( SELECT class_name, COUNT(*) as cnt FROM actions GROUP BY class_name ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM actions ORDER BY created_at;
+SELECT a.* FROM actions a LEFT JOIN components b ON a.taggable_id = b.id WHERE b.id IS NULL
+SELECT * FROM actions LEFT JOIN component_groups ON component_groups.id = actions.group_id LEFT JOIN components ON components.id = actions.taggable_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY class_name ORDER BY id DESC) as rn FROM actions;

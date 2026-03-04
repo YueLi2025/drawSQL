@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM user WHERE date_joined >= 'date';
+SELECT COUNT(*) FROM alert_acknowledgement;
+SELECT * FROM alert_acknowledgement;
+SELECT * FROM alert_acknowledgement WHERE id = num;
+SELECT * FROM alert_acknowledgement ORDER BY time DESC LIMIT 1;
+SELECT COUNT(*) FROM alert_plugin;
+SELECT * FROM alert_plugin;
+SELECT * FROM alert_plugin WHERE id = num;
+SELECT u.id, u.username, COUNT(su.service_id) as service_count FROM user u JOIN service_user su ON u.id = su.user_id GROUP BY u.id, u.username ORDER BY service_count DESC LIMIT 1
+SELECT time, COUNT(*) as count FROM alert_acknowledgement GROUP BY time;
+SELECT a.* FROM alert_acknowledgement a LEFT JOIN user b ON a.cancelled_user_id = b.id WHERE b.id IS NULL
+SELECT * FROM alert_acknowledgement ORDER BY id DESC LIMIT 3;
+SELECT time, COUNT(*) as count FROM alert_acknowledgement GROUP BY time HAVING COUNT(*) > 1
+SELECT t.*, c.* FROM alert_plugin t LEFT JOIN alert_plugin_instance c ON c.alert_plugin_id = t.id;
+SELECT polumorphic_ctype, COUNT(*) as count FROM alert_plugin GROUP BY polumorphic_ctype;
+SELECT * FROM alert_plugin WHERE id NOT IN (SELECT DISTINCT alert_plugin_id FROM alert_plugin_instance WHERE alert_plugin_id IS NOT NULL);
+SELECT a.* FROM alert_acknowledgement a JOIN user b ON a.cancelled_user_id = b.id JOIN service c ON a.service_id = c.id
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY time ORDER BY id DESC) as rn FROM alert_acknowledgement ) WHERE rn = 1;
+SELECT * FROM status_check t1 WHERE value > ( SELECT AVG(value) FROM status_check t2 WHERE t2.check_type = t1.check_type );
+WITH grouped AS ( SELECT time, COUNT(*) as cnt FROM alert_acknowledgement GROUP BY time ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT a.* FROM alert_acknowledgement a LEFT JOIN user b ON a.cancelled_user_id = b.id WHERE b.id IS NULL
+SELECT * FROM alert_acknowledgement LEFT JOIN alert_plugin ON alert_plugin.id = alert_acknowledgement.alert_plugin_id LEFT JOIN alert_plugin_user_data ON alert_plugin_user_data.id = alert_acknowledgement.id LEFT JOIN user ON user.id = alert_acknowledgement.created_by;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY service_id ORDER BY time DESC) as rn FROM alert_acknowledgement
+SELECT a.* FROM alert_acknowledgement a JOIN user b ON a.cancelled_user_id = b.id JOIN service c ON a.service_id = c.id

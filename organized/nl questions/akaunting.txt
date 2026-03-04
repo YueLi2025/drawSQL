@@ -1,0 +1,25 @@
+nl_question
+Show me all of our bills.
+How many accounts do we have in total?
+Show me all of our accounts.
+Can you look up the account with id=num?
+Find the account where name=string.
+Which accounts have enabled=num?
+How many accounts were created since created_at=date?
+What are the most recent accounts ordered by company_id?
+Who are the most active users based on activity count?
+Show me each account along with its related details from other tables.
+How many invoices do we have in total?
+Break down the accounts by company_id — how many in each?
+Are there any accounts that don't have a match in related tables?
+For each group, what are the top 3 accounts?
+How did the number of accounts change month over month?
+Which accounts have duplicate or repeated values?
+Pull together a report on accounts joining all related tables.
+Who or what is the best in each group of accounts?
+Which accounts are above average compared to others in their group?
+Do a multi-step analysis: group accounts, filter, then rank the results.
+Show the running total of accounts over time based on created_at.
+Find accounts that exist in one table but not in a related table.
+Combine data from accounts, bill_histories, and bill_item_taxes in a single report.
+Rank all accounts within their groups and show the top performers.

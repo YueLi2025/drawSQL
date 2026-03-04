@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM servers WHERE id = num;
+SELECT COUNT(*) FROM channels;
+SELECT * FROM channels;
+SELECT * FROM channels WHERE id = num;
+SELECT * FROM channels WHERE name = string;
+SELECT COUNT(*) FROM channels WHERE created_at >= 'date';
+SELECT * FROM channels ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM check_urls;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM projects;
+SELECT type, COUNT(*) as count FROM channels GROUP BY type;
+SELECT a.* FROM channels a LEFT JOIN projects b ON a.project_id = b.id WHERE b.id IS NULL
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY type ORDER BY id DESC) as rn FROM channels ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM channels WHERE created_at >= 'date' GROUP BY on_link_down ORDER BY deleted_at;
+SELECT name, COUNT(*) as count FROM channels GROUP BY name HAVING COUNT(*) > 1
+SELECT * FROM deployments LIMIT num
+SELECT * FROM channels LEFT JOIN projects ON channels.project_id = projects.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY expiration ORDER BY value DESC) as rn FROM cache ) WHERE rn = 1;
+SELECT * FROM channels WHERE on_deployment_success > (SELECT AVG(on_deployment_success) FROM channels)
+WITH grouped AS ( SELECT expiration, COUNT(*) as cnt FROM cache GROUP BY expiration ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM channels ORDER BY created_at;
+SELECT a.* FROM channels a LEFT JOIN projects b ON a.project_id = b.id WHERE b.id IS NULL
+SELECT * FROM channels LEFT JOIN check_urls ON check_urls.id = channels.id LEFT JOIN command_server ON command_server.id = channels.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY type ORDER BY id DESC) as rn FROM channels ) WHERE rn <= num;

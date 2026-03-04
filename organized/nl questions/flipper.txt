@@ -1,0 +1,25 @@
+nl_question
+How many flipper features do we have in total?
+Show me all of our flipper features.
+Can you look up the flipper feature with id=num?
+How many flipper features were created since created_at=date?
+How many flipper gates do we have in total?
+Show me all of our flipper gates.
+Can you look up the flipper gate with id=num?
+How many flipper gates were created since created_at=date?
+How many flipper features were added since created_at=date?
+Are there any flipper features that don't have a match in related tables?
+For each group, what are the top 3 flipper features?
+How did the number of flipper features change month over month?
+Which flipper features have duplicate or repeated values?
+What's our total and average value across all flipper gates?
+Which flipper gate has the highest value?
+How many flipper gates were added since created_at=date?
+Pull together a report on flipper features joining all related tables.
+Who or what is the best in each group of flipper features?
+Which flipper features are above average compared to others in their group?
+Do a multi-step analysis: group flipper features, filter, then rank the results.
+Show the running total of flipper features over time based on created_at.
+Find flipper features that exist in one table but not in a related table.
+Rank all flipper features within their groups and show the top performers.
+Pull together a report on flipper gates joining all related tables.

@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM subjects LIMIT num
+SELECT COUNT(*) FROM app_installation_permissions;
+SELECT * FROM app_installation_permissions;
+SELECT * FROM app_installation_permissions WHERE id = num;
+SELECT COUNT(*) FROM app_installation_permissions WHERE created_at >= 'date';
+SELECT * FROM app_installation_permissions ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM app_installations;
+SELECT * FROM app_installations;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM notifications;
+SELECT app_installation_id, COUNT(*) as count FROM app_installation_permissions GROUP BY app_installation_id;
+SELECT a.* FROM app_installation_permissions a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM app_installation_permissions ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM app_installation_permissions WHERE created_at >= 'date' GROUP BY app_installation_id ORDER BY created_at;
+SELECT app_installation_id, COUNT(*) as count FROM app_installation_permissions GROUP BY app_installation_id HAVING COUNT(*) > 1
+SELECT * FROM app_installation_permissions;
+SELECT * FROM app_installation_permissions LEFT JOIN app_installations ON app_installation_permissions.app_installation_id = app_installations.id LEFT JOIN users ON app_installation_permissions.user_id = users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY app_installation_id ORDER BY id DESC) as rn FROM app_installation_permissions ) WHERE rn = 1;
+SELECT * FROM app_installation_permissions WHERE app_installation_id > (SELECT AVG(app_installation_id) FROM app_installation_permissions)
+WITH grouped AS ( SELECT app_installation_id, COUNT(*) as cnt FROM app_installation_permissions GROUP BY app_installation_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM app_installation_permissions ORDER BY created_at;
+SELECT a.* FROM app_installation_permissions a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM app_installation_permissions LEFT JOIN app_installations ON app_installations.id = app_installation_permissions.app_installation_id LEFT JOIN comments ON comments.id = app_installation_permissions.id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY app_installation_id ORDER BY created_at DESC) as rn FROM app_installation_permissions

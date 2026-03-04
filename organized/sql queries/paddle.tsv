@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM customers;
+SELECT COUNT(*) FROM customers;
+SELECT * FROM customers;
+SELECT * FROM customers WHERE id = num;
+SELECT COUNT(*) FROM customers WHERE updated_at >= 'date';
+SELECT * FROM customers ORDER BY updated_at DESC LIMIT 1;
+SELECT COUNT(*) FROM subscriptions;
+SELECT * FROM subscriptions;
+SELECT * FROM customers LIMIT num;
+SELECT COUNT(*) FROM receipts;
+SELECT billable_type, COUNT(*) as count FROM customers GROUP BY billable_type;
+SELECT * FROM customers WHERE id NOT IN (SELECT customers_id FROM subscriptions WHERE customers_id IS NOT NULL)
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY billable_type ORDER BY id DESC) as rn FROM customers ) WHERE rn <= num;
+SELECT strftime('string', updated_at) as period, COUNT(*) as count FROM customers WHERE updated_at >= 'date' GROUP BY billable_id ORDER BY created_at;
+SELECT billable_id, COUNT(*) as count FROM customers GROUP BY billable_id HAVING COUNT(*) > 1
+SELECT SUM(quantity) as total, AVG(quantity) as average FROM subscriptions;
+SELECT c.*, s.name as subscription_name, s.paddle_status FROM customers c LEFT JOIN subscriptions s ON c.billable_id = s.billable_id AND c.billable_type = s.billable_type
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY billable_type ORDER BY id DESC) as rn FROM customers ) WHERE rn = 1;
+SELECT * FROM customers WHERE billable_id > (SELECT AVG(billable_id) FROM customers)
+WITH grouped AS ( SELECT billable_type, COUNT(*) as cnt FROM customers GROUP BY billable_type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY updated_at) as running_count FROM customers ORDER BY updated_at;
+SELECT * FROM customers WHERE id NOT IN (SELECT customers_id FROM subscriptions WHERE customers_id IS NOT NULL)
+SELECT * FROM customers LEFT JOIN subscriptions ON subscriptions.id = customers.id LEFT JOIN receipts ON receipts.id = customers.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY billable_type ORDER BY id DESC) as rn FROM customers ) WHERE rn <= num;

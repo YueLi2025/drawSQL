@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many members are on each team?
+How many personal access tokens do we have in total?
+Show me all of our personal access tokens.
+Can you look up the personal access token with id=num?
+Find the personal access token where name=string.
+How many personal access tokens were created since created_at=date?
+What are the most recent personal access tokens ordered by tokenable_type?
+Who are the most active users based on activity count?
+How many teams do we have in total?
+Break down the personal access tokens by tokenable_type — how many in each?
+Are there any personal access tokens that don't have a match in related tables?
+For each group, what are the top 3 personal access tokens?
+How did the number of personal access tokens change month over month?
+Which personal access tokens have duplicate or repeated values?
+Show me all of our team user.
+Pull together a report on personal access tokens joining all related tables.
+Who or what is the best in each group of personal access tokens?
+Which personal access tokens are above average compared to others in their group?
+Do a multi-step analysis: group personal access tokens, filter, then rank the results.
+Show the running total of personal access tokens over time based on created_at.
+Find personal access tokens that exist in one table but not in a related table.
+Combine data from personal_access_tokens, team_user, and teams in a single report.
+Rank all personal access tokens within their groups and show the top performers.

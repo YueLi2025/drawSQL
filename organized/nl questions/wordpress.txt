@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many metadata do we have in total?
+Show me all of our metadata.
+Can you look up the metadata with id=num?
+What are the most recent metadata ordered by meta_id?
+How many wp terms do we have in total?
+Show me all of our wp terms.
+Can you look up the wp term with id=num?
+Who are the most active users based on activity count?
+Break down the metadata by meta_id — how many in each?
+Are there any metadata that don't have a match in related tables?
+For each group, what are the top 3 metadata?
+Which metadata have duplicate or repeated values?
+Show me each wp term along with its related details from other tables.
+Break down the wp terms by term_group — how many in each?
+Are there any wp terms that don't have a match in related tables?
+Pull together a report on metadata joining all related tables.
+Who or what is the best in each group of metadata?
+Which metadata are above average compared to others in their group?
+Do a multi-step analysis: group metadata, filter, then rank the results.
+Find metadata that exist in one table but not in a related table.
+Combine data from wp_termmeta, wp_terms, and wp_term_taxonomy in a single report.
+Rank all metadata within their groups and show the top performers.
+Pull together a report on wp terms joining all related tables.

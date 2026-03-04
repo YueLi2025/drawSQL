@@ -1,0 +1,25 @@
+nl_question
+Show me all of our users.
+How many threads do we have in total?
+Show me all of our threads.
+Can you look up the thread with id=num?
+How many threads were created since created_at=date?
+What are the most recent threads ordered by subject?
+How many messages do we have in total?
+Show me all of our messages.
+Who are the most active users based on activity count?
+Show me each thread along with its related details from other tables.
+How many participants do we have in total?
+Break down the threads by subject — how many in each?
+Are there any threads that don't have a match in related tables?
+For each group, what are the top 3 threads?
+How did the number of threads change month over month?
+Which threads have duplicate or repeated values?
+Pull together a report on threads joining all related tables.
+Who or what is the best in each group of threads?
+Which threads are above average compared to others in their group?
+Do a multi-step analysis: group threads, filter, then rank the results.
+Show the running total of threads over time based on created_at.
+Find threads that exist in one table but not in a related table.
+Combine data from threads, messages, and participants in a single report.
+Rank all threads within their groups and show the top performers.

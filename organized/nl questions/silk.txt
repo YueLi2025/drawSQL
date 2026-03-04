@@ -1,0 +1,25 @@
+nl_question
+How many silk profile do we have in total?
+Show me all of our silk profile.
+Can you look up the silk profile with id=num?
+Find the silk profile where name=string.
+How many silk profile were created since file_path=date?
+What are the most recent silk profile ordered by name?
+How many silk profile queries do we have in total?
+Show me all of our silk profile queries.
+Show me each silk profile along with its related details from other tables.
+How many silk request do we have in total?
+Break down the silk profile by name — how many in each?
+Are there any silk profile that don't have a match in related tables?
+For each group, what are the top 3 silk profile?
+How did the number of silk profile change month over month?
+Which silk profile have duplicate or repeated values?
+Break down the silk profile queries by profile_id — how many in each?
+Pull together a report on silk profile joining all related tables.
+Who or what is the best in each group of silk profile?
+Which silk profile are above average compared to others in their group?
+Do a multi-step analysis: group silk profile, filter, then rank the results.
+Show the running total of silk profile over time based on file_path.
+Find silk profile that exist in one table but not in a related table.
+Combine data from silk_profile, silk_profile_queries, and silk_request in a single report.
+Rank all silk profile within their groups and show the top performers.

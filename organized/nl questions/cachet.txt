@@ -1,0 +1,25 @@
+nl_question
+How many incidents did we have since occurred_at=date?
+Which components have status=num indicating they are down?
+How many people are subscribed to get status updates?
+What maintenance is scheduled between scheduled_at=date and scheduled_at=date?
+How many users signed up since created_at=date?
+How many activity log entries do we have in total?
+Show me all of our activity log entries.
+Can you look up the activity log entry with id=num?
+What's the latest update on each incident?
+How many components do we have in each group?
+Who are the most active users based on activity count?
+How many activity log entries were added since created_at=date?
+Break down the activity log entries by class_name — how many in each?
+Are there any activity log entries that don't have a match in related tables?
+For each group, what are the top 3 activity log entries?
+How did the number of activity log entries change month over month?
+Pull together a report on activity log entries joining all related tables.
+Who or what is the best in each group of activity log entries?
+Which activity log entries are above average compared to others in their group?
+Do a multi-step analysis: group activity log entries, filter, then rank the results.
+Show the running total of activity log entries over time based on created_at.
+Find activity log entries that exist in one table but not in a related table.
+Combine data from actions, component_groups, and components in a single report.
+Rank all activity log entries within their groups and show the top performers.

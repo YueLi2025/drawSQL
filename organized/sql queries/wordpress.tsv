@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM wp_termmeta WHERE term_id >= 'date';
+SELECT COUNT(*) FROM wp_termmeta;
+SELECT * FROM wp_termmeta;
+SELECT * FROM wp_termmeta WHERE id = num;
+SELECT * FROM wp_termmeta ORDER BY term_id DESC LIMIT 1;
+SELECT COUNT(*) FROM wp_terms;
+SELECT * FROM wp_terms;
+SELECT * FROM wp_termmeta WHERE id = num;
+SELECT u.ID, u.user_login, COUNT(um.umeta_id) as activity_count FROM wp_users u JOIN wp_usermeta um ON u.ID = um.user_id GROUP BY u.ID ORDER BY activity_count DESC LIMIT 1
+SELECT meta_id, COUNT(*) as count FROM wp_termmeta GROUP BY meta_id;
+SELECT a.* FROM wp_termmeta a LEFT JOIN wp_terms b ON a.term_id = b.term_id WHERE b.term_id IS NULL
+SELECT * FROM wp_termmeta ORDER BY id DESC LIMIT 3;
+SELECT meta_id, COUNT(*) as count FROM wp_termmeta GROUP BY meta_id HAVING COUNT(*) > 1
+SELECT * FROM wp_termmeta;
+SELECT term_group, COUNT(*) as count FROM wp_terms GROUP BY term_group;
+SELECT * FROM wp_terms WHERE id NOT IN (SELECT DISTINCT term_id FROM wp_termmeta WHERE term_id IS NOT NULL);
+SELECT * FROM wp_comments LEFT JOIN wp_users ON wp_comments.user_id = wp_users.ID;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY term_id ORDER BY id DESC) as rn FROM wp_termmeta ) WHERE rn = 1;
+SELECT * FROM wp_termmeta WHERE meta_id > (SELECT AVG(meta_id) FROM wp_termmeta)
+WITH grouped AS ( SELECT term_id, COUNT(*) as cnt FROM wp_termmeta GROUP BY term_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT a.* FROM wp_termmeta a LEFT JOIN wp_terms b ON a.term_id = b.term_id WHERE b.term_id IS NULL
+SELECT * FROM wp_termmeta LEFT JOIN wp_terms ON wp_terms.term_id = wp_termmeta.term_id LEFT JOIN wp_term_taxonomy ON wp_term_taxonomy.term_taxonomy_id = wp_termmeta.term_taxonomy_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY meta_key ORDER BY id DESC) as rn FROM wp_termmeta;
+SELECT * FROM wp_comments LEFT JOIN wp_users ON wp_comments.user_id = wp_users.ID;

@@ -1,0 +1,17 @@
+table_name,column_name,column_type
+messages,id,num
+messages,message,string
+messages,is_seen,boolean
+messages,deleted_from_sender,boolean
+messages,deleted_from_receiver,boolean
+messages,user_id,num
+messages,conversation_id,num
+messages,created_at,date
+messages,updated_at,date
+conversations,id,num
+conversations,user_one,num
+conversations,user_two,num
+conversations,status,boolean
+conversations,created_at,date
+conversations,updated_at,date
+users,id,num

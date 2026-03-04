@@ -33,7 +33,7 @@ SELECT variable, variable FROM variable AS variable INNER JOIN variable AS varia
 SELECT COUNT(*) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable AND variable = variable AND variable = variable
 SELECT COUNT(*) FROM variable WHERE variable = variable
 SELECT variable(SUM(CASE WHEN variable = variable THEN variable ELSE variable END) > SUM(CASE WHEN variable = variable THEN variable ELSE variable END), variable, variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable AND variable = variable
-SELECT variable FROM ( SELECT DISTINCT CASE WHEN variable > variable THEN variable ELSE NULL END AS variable FROM variable variable INNER JOIN variable variable ON variable = variable WHERE variable = variable AND variable = variable AND variable = variable ) WHERE variable IS NOT NULL
+SELECT variable FROM ( SELECT DISTINCT CASE WHEN variable > variable THEN variable ELSE NULL END AS variable FROM variable INNER JOIN variable ON variable = variable WHERE variable = variable AND variable = variable AND variable = variable ) WHERE variable IS NOT NULL
 SELECT AVG(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
 SELECT variable FROM ( SELECT DISTINCT CASE WHEN variable = variable THEN variable ELSE NULL END AS variable FROM variable ) WHERE variable IS NOT NULL
 SELECT variable FROM ( SELECT DISTINCT CASE WHEN variable = variable THEN variable ELSE NULL END AS variable FROM variable ) WHERE variable IS NOT NULL

@@ -1,0 +1,25 @@
+soft_template
+SELECT * FROM variable LIMIT num
+SELECT * FROM variable LIMIT num;
+SELECT COUNT(*) FROM variable;
+SELECT * FROM variable;
+SELECT * FROM variable WHERE variable = num;
+SELECT COUNT(*) FROM variable WHERE variable >= 'date';
+SELECT * FROM variable WHERE variable BETWEEN num AND num
+SELECT * FROM variable ORDER BY variable DESC LIMIT num;
+SELECT variable, COUNT(*) as variable FROM variable LEFT JOIN variable ON variable = variable GROUP BY variable ORDER BY variable DESC;
+SELECT SUM(variable) as variable, AVG(variable) as variable FROM variable;
+SELECT * FROM variable ORDER BY variable DESC LIMIT num;
+SELECT COUNT(*) FROM variable;
+SELECT variable, COUNT(*) as variable FROM variable GROUP BY variable;
+SELECT * FROM variable WHERE variable NOT IN(SELECT ar_internal_metadata_id FROM variable WHERE ar_internal_metadata_id IS NOT others)
+SELECT * FROM variable ORDER BY variable DESC LIMIT num;
+SELECT strftime('string', variable) as variable, COUNT(*) as variable FROM variable WHERE variable >= 'date' GROUP BY variable ORDER BY variable;
+SELECT * FROM variable LEFT JOIN variable ON variable = variable LEFT JOIN variable ON variable = variable;
+SELECT * FROM(SELECT *, ROW_NUMBER() OVER(PARTITION BY variable ORDER BY variable DESC) as variable FROM variable) WHERE variable = num;
+SELECT variable, COUNT(*) as variable FROM variable GROUP BY variable HAVING COUNT(*) >(SELECT AVG(variable) FROM(SELECT COUNT(*) as variable FROM variable GROUP BY variable) t)
+WITH variable AS(SELECT variable, COUNT(*) as variable FROM variable GROUP BY variable) SELECT * FROM variable WHERE variable > num ORDER BY variable DESC;
+SELECT *, SUM(variable) OVER(ORDER BY variable) as variable FROM variable ORDER BY variable;
+SELECT * FROM variable WHERE variable NOT IN(SELECT ar_internal_metadata_id FROM variable WHERE ar_internal_metadata_id IS NOT others)
+SELECT * FROM variable LEFT JOIN variable ON variable = variable LEFT JOIN variable ON variable = variable;
+SELECT *, ROW_NUMBER() OVER(PARTITION BY variable ORDER BY variable DESC) as variable FROM variable;

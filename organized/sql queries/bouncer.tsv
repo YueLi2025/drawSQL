@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM abilities;
+SELECT * FROM abilities;
+SELECT * FROM abilities WHERE id = num;
+SELECT * FROM abilities WHERE name = string;
+SELECT COUNT(*) FROM abilities WHERE created_at >= 'date';
+SELECT * FROM abilities ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM assigned_roles;
+SELECT * FROM assigned_roles;
+SELECT t.*, c.* FROM abilities t LEFT JOIN permissions c ON c.ability_id = t.id;
+SELECT COUNT(*) FROM roles;
+SELECT entity_type, COUNT(*) as count FROM abilities GROUP BY entity_type;
+SELECT * FROM abilities WHERE id NOT IN (SELECT DISTINCT ability_id FROM permissions WHERE ability_id IS NOT NULL);
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY entity_type ORDER BY id DESC) as rn FROM abilities ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM abilities WHERE created_at >= 'date' GROUP BY title ORDER BY created_at;
+SELECT name, COUNT(*) as count FROM abilities GROUP BY name HAVING COUNT(*) > 1
+SELECT entity_type, COUNT(*) as count FROM assigned_roles GROUP BY entity_type;
+SELECT * FROM permissions LEFT JOIN abilities ON permissions.ability_id = abilities.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY entity_type ORDER BY id DESC) as rn FROM abilities ) WHERE rn = 1;
+SELECT * FROM abilities WHERE entity_id > (SELECT AVG(entity_id) FROM abilities)
+WITH grouped AS ( SELECT entity_type, COUNT(*) as cnt FROM abilities GROUP BY entity_type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM abilities ORDER BY created_at;
+SELECT * FROM abilities WHERE id NOT IN (SELECT DISTINCT ability_id FROM permissions WHERE ability_id IS NOT NULL);
+SELECT * FROM abilities LEFT JOIN assigned_roles ON assigned_roles.id = abilities.ability_id LEFT JOIN permissions ON permissions.id = abilities.ability_id LEFT JOIN roles ON roles.id = abilities.ability_id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY entity_type ORDER BY id DESC) as rn FROM abilities ) WHERE rn <= num;

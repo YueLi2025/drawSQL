@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM websites;
+SELECT * FROM websites;
+SELECT * FROM websites WHERE id = num;
+SELECT COUNT(*) FROM websites WHERE created_at >= 'date';
+SELECT * FROM websites ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM hostnames;
+SELECT * FROM hostnames;
+SELECT * FROM websites WHERE id = num;
+SELECT t.*, c.* FROM websites t LEFT JOIN hostnames c ON c.website_id = t.id;
+SELECT COUNT(*) FROM websites WHERE created_at >= 'date';
+SELECT uuid, COUNT(*) as count FROM websites GROUP BY uuid;
+SELECT * FROM websites WHERE id NOT IN (SELECT DISTINCT website_id FROM hostnames WHERE website_id IS NOT NULL);
+SELECT * FROM websites ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM websites WHERE created_at >= 'date' GROUP BY managed_by_database_connection ORDER BY deleted_at;
+SELECT uuid, COUNT(*) as count FROM websites GROUP BY uuid HAVING COUNT(*) > 1
+SELECT COUNT(*) FROM hostnames WHERE created_at >= 'date';
+SELECT * FROM hostnames LEFT JOIN websites ON hostnames.website_id = websites.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY uuid ORDER BY id DESC) as rn FROM websites ) WHERE rn = 1;
+SELECT uuid, COUNT(*) as count FROM websites GROUP BY uuid HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) as cnt FROM websites GROUP BY uuid) t)
+WITH grouped AS ( SELECT uuid, COUNT(*) as cnt FROM websites GROUP BY uuid ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM websites ORDER BY created_at;
+SELECT * FROM websites WHERE id NOT IN (SELECT DISTINCT website_id FROM hostnames WHERE website_id IS NOT NULL);
+SELECT *, ROW_NUMBER() OVER (PARTITION BY uuid ORDER BY id DESC) as rn FROM websites;
+SELECT * FROM hostnames LEFT JOIN websites ON hostnames.website_id = websites.id;

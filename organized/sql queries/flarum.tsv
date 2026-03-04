@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM posts WHERE id = num;
+SELECT COUNT(*) FROM access_tokens;
+SELECT * FROM access_tokens;
+SELECT * FROM api_keys WHERE id = num;
+SELECT COUNT(*) FROM access_tokens WHERE created_at >= 'date';
+SELECT * FROM access_tokens ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM api_keys;
+SELECT * FROM api_keys;
+SELECT * FROM users ORDER BY read_flags_at DESC LIMIT 1;
+SELECT COUNT(*) FROM discussions;
+SELECT token, COUNT(*) as count FROM access_tokens GROUP BY token;
+SELECT a.* FROM access_tokens a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM access_tokens ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM access_tokens WHERE created_at >= 'date' GROUP BY user_id ORDER BY lifetime_seconds;
+SELECT token, COUNT(*) as count FROM access_tokens GROUP BY token HAVING COUNT(*) > 1
+SELECT * FROM tags LIMIT num
+SELECT * FROM access_tokens LEFT JOIN users ON access_tokens.user_id = users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY id DESC) as rn FROM access_tokens ) WHERE rn = 1;
+SELECT * FROM access_tokens WHERE user_id > (SELECT AVG(user_id) FROM access_tokens)
+WITH grouped AS ( SELECT user_id, COUNT(*) as cnt FROM access_tokens GROUP BY user_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM access_tokens ORDER BY created_at;
+SELECT a.* FROM access_tokens a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM access_tokens LEFT JOIN api_keys ON api_keys.id = access_tokens.id LEFT JOIN discussion_tag ON discussion_tag.id = access_tokens.id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY token ORDER BY id DESC) as rn FROM access_tokens;

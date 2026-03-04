@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM api_ping LIMIT num
+SELECT user_id, COUNT(*) as member_count FROM accounts_member GROUP BY user_id;
+SELECT COUNT(*) FROM accounts_profile;
+SELECT * FROM accounts_profile;
+SELECT * FROM accounts_profile WHERE id = num;
+SELECT COUNT(*) FROM accounts_profile WHERE next_report_date >= 'date';
+SELECT * FROM accounts_profile ORDER BY next_report_date DESC LIMIT 1;
+SELECT COUNT(*) FROM accounts_project;
+SELECT * FROM auth_user ORDER BY date_joined DESC LIMIT 1;
+SELECT COUNT(*) FROM api_check;
+SELECT next_report_date, COUNT(*) as count FROM accounts_profile GROUP BY next_report_date;
+SELECT a.* FROM accounts_profile a LEFT JOIN auth_user b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM accounts_profile ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', next_report_date) as period, COUNT(*) as count FROM accounts_profile WHERE next_report_date >= 'date' GROUP BY sms_sent ORDER BY last_active_date;
+SELECT next_report_date, COUNT(*) as count FROM accounts_profile GROUP BY next_report_date HAVING COUNT(*) > 1
+SELECT t.*, c.* FROM accounts_project t LEFT JOIN accounts_member c ON c.project_id = t.id;
+SELECT * FROM accounts_project LEFT JOIN api_check ON accounts_project.owner_id = api_check.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY next_report_date ORDER BY id DESC) as rn FROM accounts_profile ) WHERE rn = 1;
+SELECT * FROM accounts_profile WHERE reports_allowed > (SELECT AVG(reports_allowed) FROM accounts_profile)
+WITH grouped AS ( SELECT next_report_date, COUNT(*) as cnt FROM accounts_profile GROUP BY next_report_date ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY next_report_date) as running_count FROM accounts_profile ORDER BY next_report_date;
+SELECT a.* FROM accounts_profile a LEFT JOIN auth_user b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM accounts_profile LEFT JOIN accounts_project ON accounts_project.id = accounts_profile.project_id LEFT JOIN accounts_member ON accounts_member.id = accounts_profile.id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY token ORDER BY id DESC) as rn FROM accounts_profile;

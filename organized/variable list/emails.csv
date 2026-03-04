@@ -1,0 +1,17 @@
+table_name,column_name,column_type
+heya_campaign_memberships,id,num
+heya_campaign_memberships,user_type,string
+heya_campaign_memberships,user_id,num
+heya_campaign_memberships,campaign_gid,string
+heya_campaign_memberships,concurrent,num
+heya_campaign_memberships,last_sent_at,date
+heya_campaign_memberships,created_at,date
+heya_campaign_memberships,updated_at,date
+heya_campaign_receipts,id,num
+heya_campaign_receipts,user_type,string
+heya_campaign_receipts,user_id,num
+heya_campaign_receipts,step_gid,string
+heya_campaign_receipts,sent_at,date
+heya_campaign_receipts,created_at,date
+heya_campaign_receipts,updated_at,date
+users,id,num

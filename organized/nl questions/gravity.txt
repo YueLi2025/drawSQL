@@ -1,0 +1,25 @@
+nl_question
+Show me all of our invite.
+How many account do we have in total?
+Show me all of our account.
+Can you look up the account with id=num?
+Find the account where email=string.
+Which account have active=num?
+How many account were created since date_created=date?
+What are the most recent account ordered by email?
+Who are the most active users based on activity count?
+Show me each account along with its related details from other tables.
+How many user do we have in total?
+Break down the account by email — how many in each?
+Are there any account that don't have a match in related tables?
+For each group, what are the top 3 account?
+How did the number of account change month over month?
+Which account have duplicate or repeated values?
+Pull together a report on account joining all related tables.
+Who or what is the best in each group of account?
+Which account are above average compared to others in their group?
+Do a multi-step analysis: group account, filter, then rank the results.
+Show the running total of account over time based on date_created.
+Find account that exist in one table but not in a related table.
+Combine data from account, invite, and user in a single report.
+Rank all account within their groups and show the top performers.

@@ -1,0 +1,25 @@
+nl_question
+Can you look up the attachment with id=num?
+How many activities do we have in total?
+Show me all of our activities.
+Can you look up the activity with id=num?
+How many activities were created since created_at=date?
+What are the most recent activities ordered by extra?
+How many api tokens do we have in total?
+Show me all of our api tokens.
+Who are the most active users based on activity count?
+How many pages do we have in total?
+Break down the activities by entity_type — how many in each?
+Are there any activities that don't have a match in related tables?
+For each group, what are the top 3 activities?
+How did the number of activities change month over month?
+Which activities have duplicate or repeated values?
+Show me all of our page revisions.
+Pull together a report on activities joining all related tables.
+Who or what is the best in each group of activities?
+Which activities are above average compared to others in their group?
+Do a multi-step analysis: group activities, filter, then rank the results.
+Show the running total of activities over time based on created_at.
+Find activities that exist in one table but not in a related table.
+Combine data from activities, api_tokens, and attachments in a single report.
+Rank all activities within their groups and show the top performers.

@@ -1,0 +1,25 @@
+nl_question
+Show me all of our subjects.
+How many app installation permissions do we have in total?
+Show me all of our app installation permissions.
+Can you look up the app installation permission with id=num?
+How many app installation permissions were created since created_at=date?
+What are the most recent app installation permissions ordered by app_installation_id?
+How many app installations do we have in total?
+Show me all of our app installations.
+Who are the most active users based on activity count?
+How many notifications do we have in total?
+Break down the app installation permissions by app_installation_id — how many in each?
+Are there any app installation permissions that don't have a match in related tables?
+For each group, what are the top 3 app installation permissions?
+How did the number of app installation permissions change month over month?
+Which app installation permissions have duplicate or repeated values?
+Show me each app installation along with its related details from other tables.
+Pull together a report on app installation permissions joining all related tables.
+Who or what is the best in each group of app installation permissions?
+Which app installation permissions are above average compared to others in their group?
+Do a multi-step analysis: group app installation permissions, filter, then rank the results.
+Show the running total of app installation permissions over time based on created_at.
+Find app installation permissions that exist in one table but not in a related table.
+Combine data from app_installation_permissions, app_installations, and comments in a single report.
+Rank all app installation permissions within their groups and show the top performers.

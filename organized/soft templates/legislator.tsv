@@ -40,7 +40,7 @@ SELECT variable FROM variable AS variable INNER JOIN `variable-variable` AS vari
 SELECT variable FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable GROUP BY variable
 SELECT variable, variable FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable
 SELECT variable, variable FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable AND variable = variable
-SELECT SUM(CASE WHEN variable = variable THEN variable ELSE variable END) - SUM(CASE WHEN variable = variable THEN variable ELSE variable END) FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable AND strftime(variable, variable) BETWEEN variable AND variable
+SELECT SUM(CASE WHEN variable = variable THEN variable ELSE variable END) - SUM(CASE WHEN variable = variable THEN variable ELSE variable END) FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable AND strftime(string, variable) BETWEEN variable AND variable
 SELECT variable, variable FROM variable WHERE variable = variable
 SELECT CASE WHEN variable IS NULL THEN variable ELSE variable END AS variable FROM variable WHERE variable = variable AND variable = variable
 SELECT variable, variable FROM variable WHERE variable = variable
@@ -94,10 +94,10 @@ SELECT CAST(SUM(CASE WHEN variable IS NOT NULL THEN variable ELSE variable END) 
 SELECT variable, variable FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable IS NULL
 SELECT variable FROM `variable-variable` AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
 SELECT COUNT(*) FROM `variable-variable` WHERE variable = variable AND variable = variable AND end LIKE variable
-SELECT variable FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable AND strftime(variable, variable) >= variable AND variable = variable AND variable = variable
+SELECT variable FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable AND strftime(string, variable) >= variable AND variable = variable AND variable = variable
 SELECT variable FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable IS NOT NULL AND variable IS NOT NULL AND variable IS NOT NULL AND variable IS NOT NULL
-SELECT CASE WHEN SUM(CAST(strftime(variable, variable) AS variable) - CAST(strftime(variable, variable) AS variable)) = variable THEN variable END FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable AND variable = variable AND variable = variable
-SELECT COUNT(*) FROM variable WHERE strftime(variable, variable) > variable AND variable IS NULL
+SELECT CASE WHEN SUM(CAST(strftime(string, variable) AS variable) - CAST(strftime(string, variable) AS variable)) = variable THEN variable END FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable AND variable = variable AND variable = variable
+SELECT COUNT(*) FROM variable WHERE strftime(string, variable) > variable AND variable IS NULL
 SELECT COUNT(*) FROM variable WHERE variable IS NOT NULL AND variable IS NOT NULL
 SELECT COUNT(variable) FROM variable WHERE variable = variable AND variable IS NOT NULL
 SELECT COUNT(variable) FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = ( SELECT MIN(variable) FROM variable )
@@ -115,7 +115,7 @@ SELECT COUNT(variable) FROM ( SELECT variable FROM variable AS variable INNER JO
 SELECT COUNT(*) FROM variable WHERE variable = variable
 SELECT variable FROM variable WHERE variable LIKE variable
 SELECT variable, variable FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable
-SELECT COUNT(*) FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE STRFTIME(variable, variable) = variable AND variable = variable AND variable = variable
+SELECT COUNT(*) FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE strftime(string, variable) = variable AND variable = variable AND variable = variable
 SELECT variable, variable FROM variable ORDER BY variable LIMIT variable
 SELECT variable FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable
 SELECT variable, variable FROM variable AS variable INNER JOIN `variable-variable` AS variable ON variable = variable WHERE variable = variable

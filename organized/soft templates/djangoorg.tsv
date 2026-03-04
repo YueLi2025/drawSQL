@@ -1,0 +1,25 @@
+soft_template
+SELECT COUNT(*) FROM variable WHERE variable >= 'date';
+SELECT COUNT(*) FROM variable;
+SELECT * FROM variable;
+SELECT * FROM variable WHERE variable = num;
+SELECT COUNT(*) FROM variable;
+SELECT * FROM variable;
+SELECT * FROM variable WHERE variable = num;
+SELECT * FROM variable WHERE variable = string;
+SELECT * FROM variable ORDER BY variable DESC LIMIT num;
+SELECT variable, variable FROM variable LEFT JOIN variable ON variable = variable;
+SELECT * FROM variable WHERE variable NOT IN(SELECT DISTINCT variable FROM variable WHERE variable IS NOT others);
+SELECT * FROM variable ORDER BY variable DESC LIMIT num;
+SELECT variable, COUNT(*) as variable FROM variable GROUP BY variable HAVING COUNT(*) > num
+SELECT variable, variable FROM variable LEFT JOIN variable ON variable = variable;
+SELECT COUNT(*) FROM variable WHERE variable >= 'date';
+SELECT variable, COUNT(*) as variable FROM variable GROUP BY variable;
+SELECT * FROM variable LEFT JOIN variable ON variable = variable LEFT JOIN variable ON variable = variable;
+SELECT * FROM(SELECT *, ROW_NUMBER() OVER(PARTITION BY variable ORDER BY variable DESC) as variable FROM variable) WHERE variable = num;
+SELECT * FROM variable WHERE variable >(SELECT AVG(variable) FROM variable)
+WITH variable AS(SELECT variable, COUNT(*) as variable FROM variable GROUP BY variable) SELECT * FROM variable WHERE variable > num ORDER BY variable DESC;
+SELECT * FROM variable WHERE variable NOT IN(SELECT DISTINCT variable FROM variable WHERE variable IS NOT others);
+SELECT * FROM variable LEFT JOIN variable ON variable = variable LEFT JOIN variable ON variable = variable;
+SELECT * FROM variable ORDER BY variable DESC
+SELECT * FROM variable LEFT JOIN variable ON variable = variable LEFT JOIN variable ON variable = variable;

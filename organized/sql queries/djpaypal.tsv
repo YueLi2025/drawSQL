@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM djpaypal_billingagreement;
+SELECT COUNT(*) FROM djpaypal_billingagreement WHERE start_date >= 'date';
+SELECT COUNT(*) FROM djpaypal_billingagreement;
+SELECT * FROM djpaypal_billingagreement;
+SELECT * FROM djpaypal_billingagreement WHERE id = num;
+SELECT * FROM djpaypal_billingagreement WHERE name = string;
+SELECT COUNT(*) FROM djpaypal_billingagreement WHERE start_date >= 'date';
+SELECT * FROM djpaypal_billingagreement ORDER BY start_date DESC LIMIT 1;
+SELECT * FROM djpaypal_billingagreement LIMIT num;
+SELECT id, COUNT(*) OVER (ORDER BY id DESC) as rank FROM djpaypal_billingagreement ORDER BY id DESC LIMIT 1
+SELECT t.*, c.* FROM djpaypal_billingagreement t LEFT JOIN djpaypal_preparedbillingagreement c ON c.executed_agreement_id = t.id;
+SELECT COUNT(*) FROM djpaypal_billingagreement WHERE start_date >= 'date';
+SELECT name, COUNT(*) as count FROM djpaypal_billingagreement GROUP BY name;
+SELECT * FROM djpaypal_billingagreement WHERE id NOT IN (SELECT DISTINCT executed_agreement_id FROM djpaypal_preparedbillingagreement WHERE executed_agreement_id IS NOT NULL);
+SELECT * FROM djpaypal_billingagreement ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', start_date) as period, COUNT(*) as count FROM djpaypal_billingagreement WHERE start_date >= 'date' GROUP BY period ORDER BY period;
+SELECT * FROM djpaypal_billingagreement LEFT JOIN djpaypal_sale ON djpaypal_billingagreement.id = djpaypal_sale.billing_agreement_id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM djpaypal_billingagreement ) WHERE rn = 1;
+SELECT * FROM djpaypal_billingagreement WHERE id > (SELECT AVG(id) FROM djpaypal_billingagreement)
+WITH grouped AS ( SELECT name, COUNT(*) as cnt FROM djpaypal_billingagreement GROUP BY name ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY start_date) as running_count FROM djpaypal_billingagreement ORDER BY start_date;
+SELECT * FROM djpaypal_billingagreement WHERE id NOT IN (SELECT DISTINCT executed_agreement_id FROM djpaypal_preparedbillingagreement WHERE executed_agreement_id IS NOT NULL);
+SELECT * FROM djpaypal_billingagreement LEFT JOIN djpaypal_billingplan ON djpaypal_billingplan.id = djpaypal_billingagreement.executed_agreement_id LEFT JOIN djpaypal_billingplan_payment_definitions ON djpaypal_billingplan_payment_definitions.billingplan_id = djpaypal_billingagreement.id;
+SELECT * FROM djpaypal_billingagreement ORDER BY id DESC

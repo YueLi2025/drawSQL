@@ -1,0 +1,25 @@
+nl_question
+Show me all of our system files.
+How many backend access log do we have in total?
+Show me all of our backend access log.
+Can you look up the backend access log with id=num?
+How many backend access log were created since created_at=date?
+What are the most recent backend access log ordered by user_id?
+How many users do we have in total?
+Show me all of our users.
+Who are the most active users based on activity count?
+How many backend users do we have in total?
+Break down the backend access log by user_id — how many in each?
+Are there any backend access log that don't have a match in related tables?
+For each group, what are the top 3 backend access log?
+How did the number of backend access log change month over month?
+Which backend access log have duplicate or repeated values?
+Show me each user along with its related details from other tables.
+Pull together a report on backend access log joining all related tables.
+Who or what is the best in each group of backend access log?
+Which backend access log are above average compared to others in their group?
+Do a multi-step analysis: group backend access log, filter, then rank the results.
+Show the running total of backend access log over time based on created_at.
+Find backend access log that exist in one table but not in a related table.
+Combine data from backend_access_log, backend_user_groups, and backend_user_preferences in a single report.
+Rank all backend access log within their groups and show the top performers.

@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many authority permission do we have in total?
+Show me all of our authority permission.
+Can you look up the authority permission with id=num?
+Find the authority permission where codename=string.
+How many authority permission were created since date_requested=date?
+What are the most recent authority permission ordered by codename?
+How many users do we have in total?
+Who are the most active users based on activity count?
+How many django content type do we have in total?
+Break down the authority permission by content_type_id — how many in each?
+Are there any authority permission that don't have a match in related tables?
+For each group, what are the top 3 authority permission?
+How did the number of authority permission change month over month?
+Which authority permission have duplicate or repeated values?
+Show me each user along with its related details from other tables.
+Pull together a report on authority permission joining all related tables.
+Who or what is the best in each group of authority permission?
+Which authority permission are above average compared to others in their group?
+Do a multi-step analysis: group authority permission, filter, then rank the results.
+Show the running total of authority permission over time based on date_requested.
+Find authority permission that exist in one table but not in a related table.
+Combine data from authority_permission, auth_user, and auth_group in a single report.
+Rank all authority permission within their groups and show the top performers.

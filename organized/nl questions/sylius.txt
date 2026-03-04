@@ -1,0 +1,25 @@
+nl_question
+Show me all of our sylius channel.
+How many messenger messages do we have in total?
+Show me all of our messenger messages.
+Can you look up the messenger message with id=num?
+Find the messenger message where queue_name=string.
+How many messenger messages were created since created_at=date?
+What are the most recent messenger messages ordered by body?
+How many sylius address do we have in total?
+Who are the most active users based on activity count?
+How many sylius admin user do we have in total?
+Break down the messenger messages by body — how many in each?
+Are there any messenger messages that don't have a match in related tables?
+For each group, what are the top 3 messenger messages?
+How did the number of messenger messages change month over month?
+Which messenger messages have duplicate or repeated values?
+Show me each sylius addres along with its related details from other tables.
+Pull together a report on messenger messages joining all related tables.
+Who or what is the best in each group of messenger messages?
+Which messenger messages are above average compared to others in their group?
+Do a multi-step analysis: group messenger messages, filter, then rank the results.
+Show the running total of messenger messages over time based on created_at.
+Find messenger messages that exist in one table but not in a related table.
+Combine data from messenger_messages, sylius_address, and sylius_address_log_entries in a single report.
+Rank all messenger messages within their groups and show the top performers.

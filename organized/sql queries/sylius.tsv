@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM sylius_channel LIMIT num
+SELECT COUNT(*) FROM messenger_messages;
+SELECT * FROM messenger_messages;
+SELECT * FROM messenger_messages WHERE id = num;
+SELECT * FROM messenger_messages WHERE queue_name = string;
+SELECT COUNT(*) FROM messenger_messages WHERE created_at >= 'date';
+SELECT * FROM messenger_messages ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM sylius_address;
+SELECT customer_id, COUNT(*) as order_count FROM sylius_order GROUP BY customer_id ORDER BY order_count DESC LIMIT 1
+SELECT COUNT(*) FROM sylius_admin_user;
+SELECT body, COUNT(*) as count FROM messenger_messages GROUP BY body;
+SELECT a.* FROM messenger_messages a LEFT JOIN sylius_catalog_promotion_channels b ON a.id = b.catalog_promotion_id WHERE b.catalog_promotion_id IS NULL
+SELECT * FROM messenger_messages ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM messenger_messages WHERE created_at >= 'date' GROUP BY headers ORDER BY created_at;
+SELECT body, COUNT(*) as count FROM messenger_messages GROUP BY body HAVING COUNT(*) > 1
+SELECT * FROM messenger_messages;
+SELECT * FROM messenger_messages LEFT JOIN sylius_catalog_promotion_channels ON messenger_messages.id = sylius_catalog_promotion_channels.catalog_promotion_id LEFT JOIN sylius_product_image_product_variants ON messenger_messages.id = sylius_product_image_product_variants.image_id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY body ORDER BY id DESC) as rn FROM messenger_messages ) WHERE rn = 1;
+SELECT body, COUNT(*) as count FROM messenger_messages GROUP BY body HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) as cnt FROM messenger_messages GROUP BY body) t)
+WITH grouped AS ( SELECT body, COUNT(*) as cnt FROM messenger_messages GROUP BY body ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM messenger_messages ORDER BY created_at;
+SELECT a.* FROM messenger_messages a LEFT JOIN sylius_catalog_promotion_channels b ON a.id = b.catalog_promotion_id WHERE b.catalog_promotion_id IS NULL
+SELECT * FROM messenger_messages LEFT JOIN sylius_address ON sylius_address.id = messenger_messages.billing_address_id LEFT JOIN sylius_address_log_entries ON sylius_address_log_entries.id = messenger_messages.id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY body ORDER BY id DESC) as rn FROM messenger_messages;

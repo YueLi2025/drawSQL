@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+tags,id,num
+tags,name,string
+tags,created_at,num
+tags,updated_at,num
+tags,taggings_count,num
+taggings,id,num
+taggings,taggable_id,num
+taggings,taggable_type,num
+taggings,tag_id,num
+taggings,context,string
+taggings,tagger_id,num
+taggings,tagger_type,num
+taggings,created_at,date

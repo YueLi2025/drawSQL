@@ -116,7 +116,7 @@ SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON var
 SELECT COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
 SELECT COUNT(variable) FROM variable AS variable WHERE variable = variable
 SELECT CAST(COUNT(variable) AS variable) / COUNT(DISTINCT variable) FROM variable AS variable
-SELECT MIN(variable) FROM variable variable
+SELECT MIN(variable) FROM variable
 SELECT COUNT(*) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable DESC LIMIT variable
 SELECT SUM(CASE WHEN variable = variable THEN variable ELSE variable END) / SUM(CASE WHEN variable = variable THEN variable ELSE variable END) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable
@@ -124,7 +124,7 @@ SELECT variable FROM ( SELECT variable, COUNT(variable) FROM variable AS variabl
 SELECT variable FROM variable AS variable WHERE variable LIKE variable
 SELECT variable FROM ( SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable ORDER BY variable LIMIT variable ) variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
-SELECT SUM(CASE WHEN variable = variable THEN variable ELSE variable END) - SUM(CASE WHEN variable = variable THEN variable ELSE variable END) FROM variable variable
+SELECT SUM(CASE WHEN variable = variable THEN variable ELSE variable END) - SUM(CASE WHEN variable = variable THEN variable ELSE variable END) FROM variable
 SELECT SUM(CASE WHEN variable = variable THEN variable ELSE variable END) AS variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable
 SELECT COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
 SELECT COUNT(CASE WHEN variable = variable THEN variable ELSE NULL END) - COUNT(CASE WHEN variable = variable THEN variable ELSE NULL END) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable
@@ -134,7 +134,7 @@ SELECT SUM(variable) FROM variable AS variable INNER JOIN variable AS variable O
 SELECT SUM(CASE WHEN variable = variable THEN variable ELSE variable END) - SUM(CASE WHEN variable = variable THEN variable ELSE variable END) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable
 SELECT DISTINCT variable FROM variable AS variable WHERE variable = variable
 SELECT variable FROM variable AS variable WHERE variable BETWEEN variable AND variable
-SELECT SUM(variable) * variable FROM variable variable
+SELECT SUM(variable) * variable FROM variable
 SELECT variable FROM ( SELECT variable, COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable GROUP BY variable ORDER BY COUNT(variable) ASC LIMIT variable ) variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable GROUP BY variable ORDER BY COUNT(DISTINCT variable) DESC LIMIT variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable

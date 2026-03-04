@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM contacts WHERE id = num;
+SELECT COUNT(*) FROM access_tokens;
+SELECT * FROM access_tokens;
+SELECT * FROM access_tokens WHERE id = num;
+SELECT COUNT(*) FROM access_tokens WHERE created_at >= 'date';
+SELECT * FROM access_tokens ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM users;
+SELECT * FROM users;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM messages;
+SELECT owner_type, COUNT(*) as count FROM access_tokens GROUP BY owner_type;
+SELECT a.* FROM access_tokens a LEFT JOIN conversations b ON a.conversation_id = b.id WHERE b.id IS NULL
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY owner_type ORDER BY id DESC) as rn FROM access_tokens ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM access_tokens WHERE created_at >= 'date' GROUP BY owner_type ORDER BY created_at;
+SELECT owner_type, COUNT(*) as count FROM access_tokens GROUP BY owner_type HAVING COUNT(*) > 1
+SELECT * FROM conversations LIMIT num
+SELECT * FROM account_users LEFT JOIN accounts ON account_users.account_id = accounts.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY owner_type ORDER BY id DESC) as rn FROM access_tokens ) WHERE rn = 1;
+SELECT * FROM access_tokens WHERE owner_id > (SELECT AVG(owner_id) FROM access_tokens)
+WITH grouped AS ( SELECT owner_type, COUNT(*) as cnt FROM access_tokens GROUP BY owner_type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM access_tokens ORDER BY created_at;
+SELECT a.* FROM access_tokens a LEFT JOIN conversations b ON a.conversation_id = b.id WHERE b.id IS NULL
+SELECT * FROM access_tokens LEFT JOIN account_users ON account_users.id = access_tokens.id LEFT JOIN accounts ON accounts.id = access_tokens.account_id LEFT JOIN users ON users.id = access_tokens.user_id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY owner_type ORDER BY id DESC) as rn FROM access_tokens ) WHERE rn <= num;

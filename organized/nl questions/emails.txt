@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many team members do we have in total?
+Show me all of our team members.
+Can you look up the team member with id=num?
+How many team members were created since created_at=date?
+What are the most recent team members ordered by user_type?
+How many heya campaign receipts do we have in total?
+Show me all of our heya campaign receipts.
+Who are the most active users based on activity count?
+How many users do we have in total?
+Break down the team members by user_type — how many in each?
+Are there any team members that don't have a match in related tables?
+For each group, what are the top 3 team members?
+How did the number of team members change month over month?
+Which team members have duplicate or repeated values?
+How many heya campaign receipts were added since created_at=date?
+Pull together a report on team members joining all related tables.
+Who or what is the best in each group of team members?
+Which team members are above average compared to others in their group?
+Do a multi-step analysis: group team members, filter, then rank the results.
+Show the running total of team members over time based on created_at.
+Find team members that exist in one table but not in a related table.
+Combine data from heya_campaign_memberships, heya_campaign_receipts, and users in a single report.
+Rank all team members within their groups and show the top performers.

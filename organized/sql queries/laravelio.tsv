@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM subscriptions WHERE id = num;
+SELECT COUNT(*) FROM likes;
+SELECT * FROM likes;
+SELECT * FROM failed_jobs WHERE id = num;
+SELECT COUNT(*) FROM likes WHERE created_at >= 'date';
+SELECT * FROM likes ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM notifications;
+SELECT * FROM notifications;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM threads;
+SELECT likeable_type, COUNT(*) as count FROM likes GROUP BY likeable_type;
+SELECT a.* FROM likes a LEFT JOIN threads b ON a.likeable_id = b.id WHERE b.id IS NULL
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY likeable_type ORDER BY id DESC) as rn FROM likes ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM likes WHERE created_at >= 'date' GROUP BY likeable_id ORDER BY created_at;
+SELECT user_id, COUNT(*) as count FROM likes GROUP BY user_id HAVING COUNT(*) > 1
+SELECT * FROM replies LIMIT num
+SELECT * FROM likes LEFT JOIN replies ON likes.likeable_id = replies.id LEFT JOIN users ON likes.user_id = users.id LEFT JOIN threads ON likes.likeable_id = threads.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY connection ORDER BY id DESC) as rn FROM failed_jobs ) WHERE rn = 1;
+SELECT * FROM likes WHERE user_id > (SELECT AVG(user_id) FROM likes)
+WITH grouped AS ( SELECT connection, COUNT(*) as cnt FROM failed_jobs GROUP BY connection ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM likes ORDER BY created_at;
+SELECT a.* FROM likes a LEFT JOIN threads b ON a.likeable_id = b.id WHERE b.id IS NULL
+SELECT * FROM likes LEFT JOIN notifications ON notifications.id = likes.id LEFT JOIN password_resets ON password_resets.id = likes.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY likeable_type ORDER BY id DESC) as rn FROM likes ) WHERE rn <= num;

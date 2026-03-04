@@ -1,0 +1,25 @@
+nl_question
+What rooms have price between num and num?
+Can you look up the statuse with id=num?
+How many account logs do we have in total?
+Show me all of our account logs.
+Can you look up the account log with id=num?
+How many account logs were created since created_at=date?
+What are the most recent account logs ordered by user_id?
+How many activities do we have in total?
+Who are the most active users based on activity count?
+How many profiles do we have in total?
+Break down the account logs by item_type — how many in each?
+Are there any account logs that don't have a match in related tables?
+For each group, what are the top 3 account logs?
+How did the number of account logs change month over month?
+Which account logs have duplicate or repeated values?
+Show me all of our media.
+Pull together a report on account logs joining all related tables.
+Who or what is the best in each group of account logs?
+Which account logs are above average compared to others in their group?
+Do a multi-step analysis: group account logs, filter, then rank the results.
+Show the running total of account logs over time based on created_at.
+Find account logs that exist in one table but not in a related table.
+Combine data from account_logs, activities, and avatars in a single report.
+Rank all account logs within their groups and show the top performers.

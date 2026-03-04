@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM subscriptions WHERE id = num;
+SELECT team_id, COUNT(*) as member_count FROM team_subscriptions GROUP BY team_id;
+SELECT COUNT(*) FROM announcements;
+SELECT * FROM announcements;
+SELECT * FROM announcements WHERE id = num;
+SELECT COUNT(*) FROM announcements WHERE created_at >= 'date';
+SELECT * FROM announcements ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM api_tokens;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM teams;
+SELECT user_id, COUNT(*) as count FROM announcements GROUP BY user_id;
+SELECT a.* FROM announcements a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM announcements ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM announcements WHERE created_at >= 'date' GROUP BY action_url ORDER BY created_at;
+SELECT user_id, COUNT(*) as count FROM announcements GROUP BY user_id HAVING COUNT(*) > 1
+SELECT * FROM invoices LIMIT num
+SELECT * FROM announcements LEFT JOIN users ON announcements.user_id = users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY id DESC) as rn FROM announcements ) WHERE rn = 1;
+SELECT * FROM announcements WHERE user_id > (SELECT AVG(user_id) FROM announcements)
+WITH grouped AS ( SELECT user_id, COUNT(*) as cnt FROM announcements GROUP BY user_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM announcements ORDER BY created_at;
+SELECT a.* FROM announcements a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM announcements LEFT JOIN api_tokens ON api_tokens.id = announcements.id LEFT JOIN invitations ON invitations.id = announcements.id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY body ORDER BY id DESC) as rn FROM announcements;

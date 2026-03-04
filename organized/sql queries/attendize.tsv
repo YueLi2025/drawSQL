@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM orders LIMIT num
+SELECT COUNT(*) FROM account_payment_gateways;
+SELECT * FROM account_payment_gateways;
+SELECT * FROM account_payment_gateways WHERE id = num;
+SELECT COUNT(*) FROM account_payment_gateways WHERE created_at >= 'date';
+SELECT * FROM account_payment_gateways ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM accounts;
+SELECT * FROM accounts;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM events;
+SELECT account_id, COUNT(*) as count FROM account_payment_gateways GROUP BY account_id;
+SELECT a.* FROM account_payment_gateways a LEFT JOIN payment_gateways b ON a.payment_gateway_id = b.id WHERE b.id IS NULL
+SELECT * FROM account_payment_gateways ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM account_payment_gateways WHERE created_at >= 'date' GROUP BY config ORDER BY deleted_at;
+SELECT account_id, COUNT(*) as count FROM account_payment_gateways GROUP BY account_id HAVING COUNT(*) > 1
+SELECT * FROM account_payment_gateways;
+SELECT * FROM account_payment_gateways LEFT JOIN accounts ON account_payment_gateways.account_id = accounts.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY account_id ORDER BY id DESC) as rn FROM account_payment_gateways ) WHERE rn = 1;
+SELECT * FROM account_payment_gateways WHERE account_id > (SELECT AVG(account_id) FROM account_payment_gateways)
+WITH grouped AS ( SELECT account_id, COUNT(*) as cnt FROM account_payment_gateways GROUP BY account_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM account_payment_gateways ORDER BY created_at;
+SELECT a.* FROM account_payment_gateways a LEFT JOIN payment_gateways b ON a.payment_gateway_id = b.id WHERE b.id IS NULL
+SELECT * FROM account_payment_gateways LEFT JOIN accounts ON accounts.id = account_payment_gateways.account_id LEFT JOIN affiliates ON affiliates.id = account_payment_gateways.id LEFT JOIN payment_gateways ON payment_gateways.id = account_payment_gateways.payment_gateway_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY config ORDER BY id DESC) as rn FROM account_payment_gateways;

@@ -1,0 +1,14 @@
+table_name,column_name,column_type
+easy_thumbnails_source,id,num
+easy_thumbnails_source,storage_hash,string
+easy_thumbnails_source,name,string
+easy_thumbnails_source,modified,date
+easy_thumbnails_thumbnail,id,num
+easy_thumbnails_thumbnail,storage_hash,string
+easy_thumbnails_thumbnail,name,string
+easy_thumbnails_thumbnail,modified,date
+easy_thumbnails_thumbnail,source_id,num
+easy_thumbnails_thumbnaildimensions,id,num
+easy_thumbnails_thumbnaildimensions,thumbnail_id,num
+easy_thumbnails_thumbnaildimensions,width,num
+easy_thumbnails_thumbnaildimensions,height,num

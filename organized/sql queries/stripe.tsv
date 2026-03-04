@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM users;
+SELECT * FROM subscription_items LIMIT num
+SELECT COUNT(*) FROM users;
+SELECT * FROM users;
+SELECT * FROM subscriptions WHERE id = num;
+SELECT COUNT(*) FROM users WHERE created_at >= 'date';
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM subscriptions;
+SELECT * FROM users LIMIT num;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM subscriptions;
+SELECT pm_type, COUNT(*) as count FROM users GROUP BY pm_type
+SELECT a.* FROM users a LEFT JOIN subscriptions b ON a.subscription_id = b.id WHERE b.id IS NULL
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY pm_type ORDER BY id DESC) as rn FROM users ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM users WHERE created_at >= 'date' GROUP BY pm_type ORDER BY created_at;
+SELECT stripe_id, COUNT(*) as count FROM users GROUP BY stripe_id HAVING COUNT(*) > 1
+SELECT * FROM subscription_items LEFT JOIN subscriptions ON subscription_items.subscription_id = subscriptions.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY pm_type ORDER BY id DESC) as rn FROM users ) WHERE rn = 1;
+SELECT stripe_id, COUNT(*) as count FROM users GROUP BY stripe_id HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) as cnt FROM users GROUP BY stripe_id) t)
+WITH grouped AS ( SELECT pm_type, COUNT(*) as cnt FROM users GROUP BY pm_type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM users ORDER BY created_at;
+SELECT a.* FROM users a LEFT JOIN subscriptions b ON a.subscription_id = b.id WHERE b.id IS NULL
+SELECT * FROM users LEFT JOIN subscriptions ON subscriptions.id = users.subscription_id LEFT JOIN subscription_items ON subscription_items.id = users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY pm_type ORDER BY id DESC) as rn FROM users ) WHERE rn <= num;

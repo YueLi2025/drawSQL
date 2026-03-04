@@ -1,0 +1,25 @@
+nl_question
+How many robots rule do we have in total?
+Show me all of our robots rule.
+Can you look up the robots rule with id=num?
+What are the most recent robots rule ordered by robot?
+How many robots rule allowed do we have in total?
+Show me all of our robots rule allowed.
+Can you look up the robots rule allowed with id=num?
+What are the most recent robots rule allowed ordered by rule_id?
+Show me each robots rule along with its related details from other tables.
+Break down the robots rule by robot — how many in each?
+Are there any robots rule that don't have a match in related tables?
+For each group, what are the top 3 robots rule?
+Which robots rule have duplicate or repeated values?
+Break down the robots rule allowed by rule_id — how many in each?
+Are there any robots rule allowed that don't have a match in related tables?
+For each group, what are the top 3 robots rule allowed?
+Pull together a report on robots rule joining all related tables.
+Who or what is the best in each group of robots rule?
+Which robots rule are above average compared to others in their group?
+Do a multi-step analysis: group robots rule, filter, then rank the results.
+Find robots rule that exist in one table but not in a related table.
+Combine data from robots_rule, robots_rule_allowed, and robots_rule_disallowed in a single report.
+Rank all robots rule within their groups and show the top performers.
+Pull together a report on robots rule allowed joining all related tables.

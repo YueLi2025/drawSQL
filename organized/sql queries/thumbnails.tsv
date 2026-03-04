@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM easy_thumbnails_source;
+SELECT * FROM easy_thumbnails_source;
+SELECT * FROM easy_thumbnails_source WHERE id = num;
+SELECT * FROM easy_thumbnails_source WHERE name = string;
+SELECT * FROM easy_thumbnails_source ORDER BY storage_hash DESC LIMIT 1;
+SELECT COUNT(*) FROM easy_thumbnails_thumbnail;
+SELECT * FROM easy_thumbnails_thumbnail;
+SELECT * FROM easy_thumbnails_thumbnail WHERE id = num;
+SELECT t.*, c.* FROM easy_thumbnails_source t LEFT JOIN easy_thumbnails_thumbnail c ON c.source_id = t.id;
+SELECT storage_hash, COUNT(*) as count FROM easy_thumbnails_source GROUP BY storage_hash;
+SELECT * FROM easy_thumbnails_source WHERE id NOT IN (SELECT DISTINCT source_id FROM easy_thumbnails_thumbnail WHERE source_id IS NOT NULL);
+SELECT * FROM easy_thumbnails_source ORDER BY id DESC LIMIT 3;
+SELECT name, COUNT(*) as count FROM easy_thumbnails_source GROUP BY name HAVING COUNT(*) > 1
+SELECT t.*, c.* FROM easy_thumbnails_thumbnail t LEFT JOIN easy_thumbnails_thumbnaildimensions c ON c.thumbnail_id = t.id;
+SELECT storage_hash, COUNT(*) as count FROM easy_thumbnails_thumbnail GROUP BY storage_hash;
+SELECT * FROM easy_thumbnails_thumbnail WHERE id NOT IN (SELECT DISTINCT thumbnail_id FROM easy_thumbnails_thumbnaildimensions WHERE thumbnail_id IS NOT NULL);
+SELECT * FROM easy_thumbnails_thumbnail LEFT JOIN easy_thumbnails_source ON easy_thumbnails_thumbnail.source_id = easy_thumbnails_source.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY storage_hash ORDER BY id DESC) as rn FROM easy_thumbnails_source ) WHERE rn = 1;
+SELECT storage_hash, COUNT(*) as count FROM easy_thumbnails_source GROUP BY storage_hash HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) as cnt FROM easy_thumbnails_source GROUP BY storage_hash) t)
+WITH grouped AS ( SELECT storage_hash, COUNT(*) as cnt FROM easy_thumbnails_source GROUP BY storage_hash ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT * FROM easy_thumbnails_source WHERE id NOT IN (SELECT DISTINCT source_id FROM easy_thumbnails_thumbnail WHERE source_id IS NOT NULL);
+SELECT * FROM easy_thumbnails_source LEFT JOIN easy_thumbnails_thumbnail ON easy_thumbnails_thumbnail.id = easy_thumbnails_source.source_id LEFT JOIN easy_thumbnails_thumbnaildimensions ON easy_thumbnails_thumbnaildimensions.id = easy_thumbnails_source.source_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY storage_hash ORDER BY id DESC) as rn FROM easy_thumbnails_source;
+SELECT * FROM easy_thumbnails_thumbnail LEFT JOIN easy_thumbnails_source ON easy_thumbnails_thumbnail.source_id = easy_thumbnails_source.id;

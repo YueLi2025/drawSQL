@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM silk_profile;
+SELECT * FROM silk_profile;
+SELECT * FROM silk_profile WHERE id = num;
+SELECT * FROM silk_profile WHERE name = string;
+SELECT COUNT(*) FROM silk_profile WHERE file_path >= 'date';
+SELECT * FROM silk_profile ORDER BY file_path DESC LIMIT 1;
+SELECT COUNT(*) FROM silk_profile;
+SELECT * FROM silk_profile;
+SELECT t.*, c.* FROM silk_profile t LEFT JOIN silk_profile_queries c ON c.profile_id = t.id;
+SELECT COUNT(*) FROM silk_request;
+SELECT name, COUNT(*) as count FROM silk_profile GROUP BY name;
+SELECT * FROM silk_profile WHERE id NOT IN (SELECT DISTINCT profile_id FROM silk_profile_queries WHERE profile_id IS NOT NULL);
+SELECT * FROM silk_profile ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', file_path) as period, COUNT(*) as count FROM silk_profile WHERE file_path >= 'date' GROUP BY file_path ORDER BY time_taken;
+SELECT name, COUNT(*) as count FROM silk_profile GROUP BY name HAVING COUNT(*) > 1
+SELECT name, COUNT(*) as count FROM silk_profile GROUP BY name;
+SELECT * FROM silk_profile LEFT JOIN silk_request ON silk_profile.request_id = silk_request.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM silk_profile ) WHERE rn = 1;
+SELECT * FROM silk_profile WHERE time_taken > (SELECT AVG(time_taken) FROM silk_profile)
+WITH grouped AS ( SELECT name, COUNT(*) as cnt FROM silk_profile GROUP BY name ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY file_path) as running_count FROM silk_profile ORDER BY file_path;
+SELECT * FROM silk_profile WHERE id NOT IN (SELECT DISTINCT profile_id FROM silk_profile_queries WHERE profile_id IS NOT NULL);
+SELECT * FROM silk_profile LEFT JOIN silk_profile_queries ON silk_profile_queries.id = silk_profile.profile_id LEFT JOIN silk_request ON silk_request.id = silk_profile.request_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM silk_profile;

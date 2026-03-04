@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM permission_user LIMIT num
+SELECT COUNT(*) FROM roles;
+SELECT * FROM roles;
+SELECT * FROM roles WHERE id = num;
+SELECT * FROM roles WHERE name = string;
+SELECT COUNT(*) FROM roles WHERE created_at >= 'date';
+SELECT * FROM roles ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM permissions;
+SELECT * FROM users ORDER BY id DESC LIMIT 1;
+SELECT t.*, c.* FROM roles t LEFT JOIN role_user c ON c.role_id = t.id;
+SELECT COUNT(*) FROM permission_role;
+SELECT name, COUNT(*) as count FROM roles GROUP BY name;
+SELECT * FROM roles WHERE id NOT IN (SELECT DISTINCT role_id FROM role_user WHERE role_id IS NOT NULL);
+SELECT * FROM roles ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM roles WHERE created_at >= 'date' GROUP BY name ORDER BY created_at;
+SELECT name, COUNT(*) as count FROM roles GROUP BY name HAVING COUNT(*) > 1
+SELECT * FROM role_user LEFT JOIN roles ON role_user.role_id = roles.id LEFT JOIN users ON role_user.user_id = users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM roles ) WHERE rn = 1;
+SELECT name, COUNT(*) as count FROM roles GROUP BY name HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) as cnt FROM roles GROUP BY name) t)
+WITH grouped AS ( SELECT name, COUNT(*) as cnt FROM roles GROUP BY name ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM roles ORDER BY created_at;
+SELECT * FROM roles WHERE id NOT IN (SELECT DISTINCT role_id FROM role_user WHERE role_id IS NOT NULL);
+SELECT * FROM roles LEFT JOIN permissions ON permissions.id = roles.role_id LEFT JOIN role_user ON role_user.id = roles.role_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM roles;

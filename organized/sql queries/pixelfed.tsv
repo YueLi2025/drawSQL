@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM account_logs WHERE item_id BETWEEN num AND num
+SELECT * FROM statuses WHERE id = num;
+SELECT COUNT(*) FROM account_logs;
+SELECT * FROM account_logs;
+SELECT * FROM account_logs WHERE id = num;
+SELECT COUNT(*) FROM account_logs WHERE created_at >= 'date';
+SELECT * FROM account_logs ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM activities;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM profiles;
+SELECT item_type, COUNT(*) as count FROM account_logs GROUP BY item_type;
+SELECT a.* FROM account_logs a LEFT JOIN reports b ON a.report_id = b.id WHERE b.id IS NULL
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY item_type ORDER BY id DESC) as rn FROM account_logs ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM account_logs WHERE created_at >= 'date' GROUP BY message ORDER BY created_at;
+SELECT user_id, COUNT(*) as count FROM account_logs GROUP BY user_id HAVING COUNT(*) > 1
+SELECT * FROM media LIMIT num
+SELECT * FROM avatars LEFT JOIN profiles ON avatars.profile_id = profiles.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY item_type ORDER BY id DESC) as rn FROM account_logs ) WHERE rn = 1;
+SELECT * FROM account_logs WHERE user_id > (SELECT AVG(user_id) FROM account_logs)
+WITH grouped AS ( SELECT item_type, COUNT(*) as cnt FROM account_logs GROUP BY item_type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM account_logs ORDER BY created_at;
+SELECT a.* FROM account_logs a LEFT JOIN reports b ON a.report_id = b.id WHERE b.id IS NULL
+SELECT * FROM account_logs LEFT JOIN activities ON activities.id = account_logs.id LEFT JOIN avatars ON avatars.id = account_logs.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY item_type ORDER BY id DESC) as rn FROM account_logs ) WHERE rn <= num;

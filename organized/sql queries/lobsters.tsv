@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM moderations LIMIT num
+SELECT * FROM ar_internal_metadata LIMIT num;
+SELECT COUNT(*) FROM ar_internal_metadata;
+SELECT * FROM ar_internal_metadata;
+SELECT * FROM comments WHERE id = num;
+SELECT COUNT(*) FROM ar_internal_metadata WHERE created_at >= 'date';
+SELECT * FROM ar_internal_metadata WHERE value BETWEEN num AND num
+SELECT * FROM ar_internal_metadata ORDER BY created_at DESC LIMIT 1;
+SELECT pushover_mentions.*, COUNT(*) as activity_count FROM users u LEFT JOIN replying_comments a ON a.user_id = u.id GROUP BY pushover_mentions.id ORDER BY created_at DESC;
+SELECT SUM(value) as total, AVG(value) as average FROM ar_internal_metadata;
+SELECT * FROM ar_internal_metadata ORDER BY value DESC LIMIT num;
+SELECT COUNT(*) FROM stories;
+SELECT value, COUNT(*) as count FROM ar_internal_metadata GROUP BY value;
+SELECT * FROM ar_internal_metadata WHERE id NOT IN (SELECT ar_internal_metadata_id FROM comments WHERE ar_internal_metadata_id IS NOT NULL)
+SELECT * FROM ar_internal_metadata ORDER BY value DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM ar_internal_metadata WHERE created_at >= 'date' GROUP BY value ORDER BY updated_at;
+SELECT * FROM comments LEFT JOIN replying_comments ON comments.user_id = replying_comments.parent_comment_id LEFT JOIN stories ON comments.story_id = stories.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY created_at ORDER BY value DESC) as rn FROM ar_internal_metadata ) WHERE rn = 1;
+SELECT value, COUNT(*) as count FROM ar_internal_metadata GROUP BY value HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) as cnt FROM ar_internal_metadata GROUP BY value) t)
+WITH grouped AS ( SELECT created_at, COUNT(*) as cnt FROM ar_internal_metadata GROUP BY created_at ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, SUM(value) OVER (ORDER BY created_at) as running_total FROM ar_internal_metadata ORDER BY created_at;
+SELECT * FROM ar_internal_metadata WHERE id NOT IN (SELECT ar_internal_metadata_id FROM comments WHERE ar_internal_metadata_id IS NOT NULL)
+SELECT * FROM ar_internal_metadata LEFT JOIN comments ON comments.id = ar_internal_metadata.comment_id LEFT JOIN domains ON domains.id = ar_internal_metadata.domain_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY value ORDER BY value DESC) as rn FROM ar_internal_metadata;

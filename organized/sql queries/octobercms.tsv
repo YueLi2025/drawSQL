@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM system_files LIMIT num
+SELECT COUNT(*) FROM backend_access_log;
+SELECT * FROM backend_access_log;
+SELECT * FROM backend_access_log WHERE id = num;
+SELECT COUNT(*) FROM backend_access_log WHERE created_at >= 'date';
+SELECT * FROM backend_access_log ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM backend_access_log;
+SELECT * FROM backend_access_log;
+SELECT user_id, COUNT(*) as access_count FROM backend_access_log GROUP BY user_id ORDER BY access_count DESC LIMIT 1
+SELECT COUNT(*) FROM backend_users;
+SELECT user_id, COUNT(*) as count FROM backend_access_log GROUP BY user_id;
+SELECT a.* FROM backend_access_log a LEFT JOIN backend_users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM backend_access_log ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM backend_access_log WHERE created_at >= 'date' GROUP BY ip_address ORDER BY created_at;
+SELECT user_id, COUNT(*) as count FROM backend_access_log GROUP BY user_id HAVING COUNT(*) > 1
+SELECT * FROM backend_access_log;
+SELECT * FROM backend_access_log LEFT JOIN backend_users ON backend_access_log.user_id = backend_users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY id DESC) as rn FROM backend_access_log ) WHERE rn = 1;
+SELECT * FROM backend_access_log WHERE user_id > (SELECT AVG(user_id) FROM backend_access_log)
+WITH grouped AS ( SELECT user_id, COUNT(*) as cnt FROM backend_access_log GROUP BY user_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM backend_access_log ORDER BY created_at;
+SELECT a.* FROM backend_access_log a LEFT JOIN backend_users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM backend_access_log LEFT JOIN backend_user_groups ON backend_user_groups.id = backend_access_log.user_group_id LEFT JOIN backend_user_preferences ON backend_user_preferences.id = backend_access_log.id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY ip_address ORDER BY id DESC) as rn FROM backend_access_log;

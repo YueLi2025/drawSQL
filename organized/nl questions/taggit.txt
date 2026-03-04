@@ -1,0 +1,25 @@
+nl_question
+How many taggit tag do we have in total?
+Show me all of our taggit tag.
+Can you look up the taggit tag with id=num?
+Find the taggit tag where name=string.
+What are the most recent taggit tag ordered by name?
+How many taggit taggeditem do we have in total?
+Show me all of our taggit taggeditem.
+Can you look up the taggit taggeditem with id=num?
+Show me each taggit tag along with its related details from other tables.
+Break down the taggit tag by name — how many in each?
+Are there any taggit tag that don't have a match in related tables?
+For each group, what are the top 3 taggit tag?
+Which taggit tag have duplicate or repeated values?
+Break down the taggit taggeditem by content_type_id — how many in each?
+Are there any taggit taggeditem that don't have a match in related tables?
+For each group, what are the top 3 taggit taggeditem?
+Pull together a report on taggit tag joining all related tables.
+Who or what is the best in each group of taggit tag?
+Which taggit tag are above average compared to others in their group?
+Do a multi-step analysis: group taggit tag, filter, then rank the results.
+Find taggit tag that exist in one table but not in a related table.
+Rank all taggit tag within their groups and show the top performers.
+Pull together a report on taggit taggeditem joining all related tables.
+Who or what is the best in each group of taggit taggeditem?

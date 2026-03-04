@@ -1,0 +1,25 @@
+nl_question
+Which customers have status=string for their subscription?
+How many users signed up since created_at=date?
+How many djpaypal billingagreement do we have in total?
+Show me all of our djpaypal billingagreement.
+Can you look up the djpaypal billingagreement with id=num?
+Find the djpaypal billingagreement where name=string.
+How many djpaypal billingagreement were created since start_date=date?
+What are the most recent djpaypal billingagreement ordered by name?
+How much revenue since created_at=date?
+Who are the most active users based on activity count?
+Show me each djpaypal billingagreement along with its related details from other tables.
+How many djpaypal billingagreement were added since start_date=date?
+Break down the djpaypal billingagreement by name — how many in each?
+Are there any djpaypal billingagreement that don't have a match in related tables?
+For each group, what are the top 3 djpaypal billingagreement?
+How did the number of djpaypal billingagreement change month over month?
+Pull together a report on djpaypal billingagreement joining all related tables.
+Who or what is the best in each group of djpaypal billingagreement?
+Which djpaypal billingagreement are above average compared to others in their group?
+Do a multi-step analysis: group djpaypal billingagreement, filter, then rank the results.
+Show the running total of djpaypal billingagreement over time based on start_date.
+Find djpaypal billingagreement that exist in one table but not in a related table.
+Combine data from djpaypal_billingagreement, djpaypal_billingplan, and djpaypal_billingplan_payment_definitions in a single report.
+List all djpaypal billingagreement ordered by id descending.

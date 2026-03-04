@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM assets LIMIT num
+SELECT COUNT(*) FROM accessories;
+SELECT * FROM accessories;
+SELECT * FROM accessories WHERE id = num;
+SELECT * FROM accessories WHERE name = string;
+SELECT COUNT(*) FROM accessories WHERE created_at >= 'date';
+SELECT * FROM accessories ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM users;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT t.*, c.* FROM accessories t LEFT JOIN accessories_users c ON c.accessory_id = t.id;
+SELECT COUNT(*) FROM settings;
+SELECT category_id, COUNT(*) as count FROM accessories GROUP BY category_id;
+SELECT * FROM accessories WHERE id NOT IN (SELECT DISTINCT accessory_id FROM accessories_users WHERE accessory_id IS NOT NULL);
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY category_id ORDER BY id DESC) as rn FROM components ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM accessories WHERE created_at >= 'date' GROUP BY model_number ORDER BY created_at;
+SELECT name, COUNT(*) as count FROM accessories GROUP BY name HAVING COUNT(*) > 1
+SELECT * FROM accessories LEFT JOIN users ON accessories.user_id = users.id LEFT JOIN categories ON accessories.category_id = categories.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY category_id ORDER BY id DESC) as rn FROM accessories ) WHERE rn = 1;
+SELECT * FROM accessories WHERE category_id > (SELECT AVG(category_id) FROM accessories)
+WITH grouped AS ( SELECT category_id, COUNT(*) as cnt FROM accessories GROUP BY category_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM accessories ORDER BY created_at;
+SELECT * FROM accessories WHERE id NOT IN (SELECT DISTINCT accessory_id FROM accessories_users WHERE accessory_id IS NOT NULL);
+SELECT * FROM accessories LEFT JOIN accessories_users ON accessories_users.id = accessories.accessory_id LEFT JOIN action_logs ON action_logs.id = accessories.accessory_id LEFT JOIN users ON users.id = accessories.user_id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY category_id ORDER BY id DESC) as rn FROM accessories ) WHERE rn <= num;

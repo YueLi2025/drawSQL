@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM users WHERE id >= 'date';
+SELECT COUNT(*) FROM messages;
+SELECT * FROM messages;
+SELECT * FROM messages WHERE id = num;
+SELECT COUNT(*) FROM messages WHERE created_at >= 'date';
+SELECT * FROM messages ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM conversations;
+SELECT * FROM conversations;
+SELECT * FROM users ORDER BY id DESC LIMIT 1;
+SELECT COUNT(*) FROM users;
+SELECT message, COUNT(*) as count FROM messages GROUP BY message;
+SELECT a.* FROM messages a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM messages ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM messages WHERE created_at >= 'date' GROUP BY message ORDER BY created_at;
+SELECT message, COUNT(*) as count FROM messages GROUP BY message HAVING COUNT(*) > 1
+SELECT * FROM messages;
+SELECT * FROM conversations LEFT JOIN users ON conversations.user_two = users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY message ORDER BY id DESC) as rn FROM messages ) WHERE rn = 1;
+SELECT * FROM messages WHERE user_id > (SELECT AVG(user_id) FROM messages)
+WITH grouped AS ( SELECT message, COUNT(*) as cnt FROM messages GROUP BY message ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM messages ORDER BY created_at;
+SELECT a.* FROM messages a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM messages LEFT JOIN conversations ON conversations.id = messages.conversation_id LEFT JOIN users ON users.id = messages.user_two;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY message ORDER BY id DESC) as rn FROM messages;

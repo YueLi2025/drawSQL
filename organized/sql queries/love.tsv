@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM love_reactant_reaction_counters;
+SELECT * FROM love_reactant_reaction_counters;
+SELECT * FROM love_reactant_reaction_counters WHERE id = num;
+SELECT COUNT(*) FROM love_reactant_reaction_counters WHERE created_at >= 'date';
+SELECT * FROM love_reactant_reaction_counters ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM love_reactant_reaction_totals;
+SELECT * FROM love_reactant_reaction_totals;
+SELECT * FROM love_reactant_reaction_counters WHERE id = num;
+SELECT COUNT(*) FROM love_reactions;
+SELECT reaction_type_id, COUNT(*) as count FROM love_reactant_reaction_counters GROUP BY reaction_type_id;
+SELECT a.* FROM love_reactant_reaction_counters a LEFT JOIN love_reaction_types b ON a.reaction_type_id = b.id WHERE b.id IS NULL
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY reaction_type_id ORDER BY id DESC) as rn FROM love_reactant_reaction_counters ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM love_reactant_reaction_counters WHERE created_at >= 'date' GROUP BY reactant_id ORDER BY created_at;
+SELECT reactant_id, COUNT(*) as count FROM love_reactant_reaction_counters GROUP BY reactant_id HAVING COUNT(*) > 1
+SELECT * FROM love_reaction_types LIMIT num
+SELECT reactant_id, COUNT(*) as count FROM love_reactant_reaction_totals GROUP BY reactant_id;
+SELECT * FROM love_reactant_reaction_counters LEFT JOIN love_reaction_types ON love_reactant_reaction_counters.reaction_type_id = love_reaction_types.id LEFT JOIN love_reactants ON love_reactant_reaction_counters.reactant_id = love_reactants.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY reaction_type_id ORDER BY id DESC) as rn FROM love_reactant_reaction_counters ) WHERE rn = 1;
+SELECT * FROM love_reactant_reaction_counters WHERE reactant_id > (SELECT AVG(reactant_id) FROM love_reactant_reaction_counters)
+WITH grouped AS ( SELECT reaction_type_id, COUNT(*) as cnt FROM love_reactant_reaction_counters GROUP BY reaction_type_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM love_reactant_reaction_counters ORDER BY created_at;
+SELECT a.* FROM love_reactant_reaction_counters a LEFT JOIN love_reaction_types b ON a.reaction_type_id = b.id WHERE b.id IS NULL
+SELECT * FROM love_reactant_reaction_counters LEFT JOIN love_reactant_reaction_totals ON love_reactant_reaction_totals.id = love_reactant_reaction_counters.id LEFT JOIN love_reactants ON love_reactants.id = love_reactant_reaction_counters.reactant_id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY reaction_type_id ORDER BY id DESC) as rn FROM love_reactant_reaction_counters ) WHERE rn <= num;

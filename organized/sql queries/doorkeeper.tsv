@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM users WHERE id >= 'date';
+SELECT COUNT(*) FROM oauth_access_grants;
+SELECT * FROM oauth_access_grants;
+SELECT * FROM oauth_access_grants WHERE id = num;
+SELECT COUNT(*) FROM oauth_access_grants WHERE created_at >= 'date';
+SELECT * FROM oauth_access_grants ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM oauth_access_tokens;
+SELECT * FROM oauth_access_tokens;
+SELECT * FROM users ORDER BY id DESC LIMIT 1;
+SELECT COUNT(*) FROM oauth_applications;
+SELECT resource_owner_id, COUNT(*) as count FROM oauth_access_grants GROUP BY resource_owner_id;
+SELECT a.* FROM oauth_access_grants a LEFT JOIN users b ON a.resource_owner_id = b.id WHERE b.id IS NULL
+SELECT * FROM oauth_access_grants ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM oauth_access_grants WHERE created_at >= 'date' GROUP BY scopes ORDER BY created_at;
+SELECT resource_owner_id, COUNT(*) as count FROM oauth_access_grants GROUP BY resource_owner_id HAVING COUNT(*) > 1
+SELECT * FROM users LIMIT num;
+SELECT * FROM oauth_access_grants LEFT JOIN users ON oauth_access_grants.resource_owner_id = users.id LEFT JOIN oauth_applications ON oauth_access_grants.application_id = oauth_applications.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY resource_owner_id ORDER BY id DESC) as rn FROM oauth_access_grants ) WHERE rn = 1;
+SELECT * FROM oauth_access_grants WHERE resource_owner_id > (SELECT AVG(resource_owner_id) FROM oauth_access_grants)
+WITH grouped AS ( SELECT resource_owner_id, COUNT(*) as cnt FROM oauth_access_grants GROUP BY resource_owner_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM oauth_access_grants ORDER BY created_at;
+SELECT a.* FROM oauth_access_grants a LEFT JOIN users b ON a.resource_owner_id = b.id WHERE b.id IS NULL
+SELECT * FROM oauth_access_grants LEFT JOIN oauth_access_tokens ON oauth_access_tokens.id = oauth_access_grants.id LEFT JOIN oauth_applications ON oauth_applications.id = oauth_access_grants.application_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY token ORDER BY id DESC) as rn FROM oauth_access_grants;

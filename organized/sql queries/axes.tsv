@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM axes_accessattempt WHERE path_info >= 'date';
+SELECT COUNT(*) FROM axes_accessattempt;
+SELECT * FROM axes_accessattempt;
+SELECT * FROM axes_accessattempt WHERE id = num;
+SELECT * FROM axes_accessattempt WHERE username = string;
+SELECT COUNT(*) FROM axes_accessattempt WHERE path_info >= 'date';
+SELECT * FROM axes_accessattempt ORDER BY path_info DESC LIMIT 1;
+SELECT COUNT(*) FROM axes_accesslog;
+SELECT username, COUNT(*) as attempt_count FROM axes_accessattempt GROUP BY username ORDER BY attempt_count DESC LIMIT 1
+SELECT COUNT(*) FROM axes_accesslog;
+SELECT user_agent, COUNT(*) as count FROM axes_accessattempt GROUP BY user_agent;
+SELECT * FROM axes_accessattempt WHERE id NOT IN (SELECT axes_accessattempt_id FROM axes_accesslog WHERE axes_accessattempt_id IS NOT NULL)
+SELECT * FROM axes_accessattempt ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', path_info) as period, COUNT(*) as count FROM axes_accessattempt WHERE path_info >= 'date' GROUP BY post_data ORDER BY attempt_time;
+SELECT username, COUNT(*) as count FROM axes_accessattempt GROUP BY username HAVING COUNT(*) > 1
+SELECT COUNT(*) FROM axes_accesslog WHERE path_info >= 'date';
+SELECT a.*, l.attempt_time as log_attempt_time FROM axes_accessattempt a LEFT JOIN axes_accesslog l ON a.ip_address = l.ip_address
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY user_agent ORDER BY id DESC) as rn FROM axes_accessattempt ) WHERE rn = 1;
+SELECT * FROM axes_accessattempt WHERE failures_since_start > (SELECT AVG(failures_since_start) FROM axes_accessattempt)
+WITH grouped AS ( SELECT user_agent, COUNT(*) as cnt FROM axes_accessattempt GROUP BY user_agent ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY path_info) as running_count FROM axes_accessattempt ORDER BY path_info;
+SELECT * FROM axes_accessattempt WHERE id NOT IN (SELECT axes_accessattempt_id FROM axes_accesslog WHERE axes_accessattempt_id IS NOT NULL)
+SELECT *, ROW_NUMBER() OVER (PARTITION BY user_agent ORDER BY id DESC) as rn FROM axes_accessattempt;
+SELECT l.*, a.attempt_time as last_attempt FROM axes_accesslog l LEFT JOIN axes_accessattempt a ON l.ip_address = a.ip_address

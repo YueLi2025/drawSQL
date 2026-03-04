@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM tickets WHERE status = num;
+SELECT * FROM tickets WHERE created_at >= 'date';
+SELECT * FROM user_settings LIMIT num
+SELECT team_id, COUNT(*) as member_count FROM memberships GROUP BY team_id;
+SELECT COUNT(*) FROM attachments;
+SELECT * FROM attachments;
+SELECT * FROM attachments WHERE id = num;
+SELECT COUNT(*) FROM attachments WHERE created_at >= 'date';
+SELECT AVG(julianday(updated_at) - julianday(created_at)) as avg_days FROM tickets;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM leads;
+SELECT attachable_type, COUNT(*) as count FROM attachments GROUP BY attachable_type;
+SELECT * FROM attachments WHERE id NOT IN (SELECT attachments_id FROM comments WHERE attachments_id IS NOT NULL)
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY attachable_type ORDER BY id DESC) as rn FROM attachments ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM attachments WHERE created_at >= 'date' GROUP BY attachable_id ORDER BY created_at;
+SELECT path, COUNT(*) as count FROM attachments GROUP BY path HAVING COUNT(*) > 1
+SELECT * FROM comments LEFT JOIN tickets ON comments.ticket_id = tickets.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY attachable_type ORDER BY id DESC) as rn FROM attachments ) WHERE rn = 1;
+SELECT * FROM attachments WHERE attachable_id > (SELECT AVG(attachable_id) FROM attachments)
+WITH grouped AS ( SELECT attachable_type, COUNT(*) as cnt FROM attachments GROUP BY attachable_type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM attachments ORDER BY created_at;
+SELECT * FROM attachments WHERE id NOT IN (SELECT attachments_id FROM comments WHERE attachments_id IS NOT NULL)
+SELECT * FROM attachments LEFT JOIN comments ON comments.id = attachments.id LEFT JOIN ideas ON ideas.id = attachments.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY attachable_type ORDER BY id DESC) as rn FROM attachments ) WHERE rn <= num;

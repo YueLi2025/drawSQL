@@ -1,0 +1,25 @@
+soft_template
+SELECT * FROM variable;
+SELECT COUNT(*) FROM variable;
+SELECT * FROM variable;
+SELECT * FROM variable WHERE variable = num;
+SELECT COUNT(*) FROM variable WHERE variable >= 'date';
+SELECT * FROM variable WHERE variable BETWEEN num AND num
+SELECT * FROM variable ORDER BY variable DESC LIMIT num;
+SELECT COUNT(*) FROM variable;
+SELECT * FROM variable LIMIT num;
+SELECT SUM(variable) as variable, AVG(variable) as variable FROM variable;
+SELECT * FROM variable ORDER BY variable DESC LIMIT num;
+SELECT COUNT(*) FROM variable;
+SELECT variable, COUNT(*) as variable FROM variable GROUP BY variable;
+SELECT * FROM variable WHERE variable NOT IN(SELECT pay_charges_id FROM variable WHERE pay_charges_id IS NOT others)
+SELECT * FROM(SELECT *, ROW_NUMBER() OVER(PARTITION BY variable ORDER BY variable DESC) as variable FROM variable) WHERE variable <= num;
+SELECT strftime('string', variable) as variable, COUNT(*) as variable FROM variable WHERE variable >= 'date' GROUP BY variable ORDER BY variable;
+SELECT variable, variable, variable FROM variable LEFT JOIN variable ON variable = variable AND variable = variable
+SELECT * FROM(SELECT *, ROW_NUMBER() OVER(PARTITION BY variable
+SELECT * FROM variable WHERE variable >(SELECT AVG(variable) FROM variable)
+WITH variable AS(SELECT variable, COUNT(*) as variable FROM variable GROUP BY variable) SELECT * FROM variable WHERE variable > num ORDER BY variable DESC;
+SELECT *, SUM(variable) OVER(ORDER BY variable) as variable FROM variable ORDER BY variable;
+SELECT * FROM variable WHERE variable NOT IN(SELECT pay_charges_id FROM variable WHERE pay_charges_id IS NOT others)
+SELECT * FROM(SELECT *, ROW_NUMBER() OVER(PARTITION BY variable ORDER BY variable DESC) as variable FROM variable) WHERE variable <= num;
+SELECT variable, variable as variable, variable FROM variable LEFT JOIN variable ON variable = variable

@@ -1,0 +1,25 @@
+nl_question
+Show me all of our links.
+How many clicks do we have in total?
+Show me all of our clicks.
+Can you look up the click with id=num?
+How many clicks were created since created_at=date?
+What are the most recent clicks ordered by country?
+How many links do we have in total?
+Show me all of our links.
+Who are the most active users based on activity count?
+How many users do we have in total?
+Break down the clicks by ip — how many in each?
+Are there any clicks that don't have a match in related tables?
+For each group, what are the top 3 clicks?
+How did the number of clicks change month over month?
+Which clicks have duplicate or repeated values?
+Show me each link along with its related details from other tables.
+Pull together a report on clicks joining all related tables.
+Who or what is the best in each group of clicks?
+Which clicks are above average compared to others in their group?
+Do a multi-step analysis: group clicks, filter, then rank the results.
+Show the running total of clicks over time based on created_at.
+Find clicks that exist in one table but not in a related table.
+Combine data from clicks, links, and users in a single report.
+Rank all clicks within their groups and show the top performers.

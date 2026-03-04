@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM users WHERE id >= 'date';
+SELECT COUNT(*) FROM permission_role;
+SELECT * FROM permission_role;
+SELECT * FROM permission_role WHERE id = num;
+SELECT * FROM permission_role ORDER BY role_id DESC LIMIT 1;
+SELECT COUNT(*) FROM users;
+SELECT * FROM users;
+SELECT * FROM permissions WHERE id = num;
+SELECT * FROM users ORDER BY id DESC LIMIT 1;
+SELECT permission_id, COUNT(*) as count FROM permission_role GROUP BY permission_id;
+SELECT a.* FROM permission_role a LEFT JOIN permissions b ON a.permission_id = b.id WHERE b.id IS NULL
+SELECT * FROM permission_role ORDER BY id DESC LIMIT 3;
+SELECT permission_id, COUNT(*) as count FROM permission_role GROUP BY permission_id HAVING COUNT(*) > 1
+SELECT id, COUNT(*) as count FROM users GROUP BY id
+SELECT * FROM users WHERE id NOT IN (SELECT DISTINCT user_id FROM permission_user WHERE user_id IS NOT NULL);
+SELECT * FROM users ORDER BY id DESC LIMIT 3;
+SELECT * FROM permission_role LEFT JOIN permissions ON permission_role.permission_id = permissions.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY role_id ORDER BY id DESC) as rn FROM permission_role ) WHERE rn = 1;
+SELECT * FROM permission_role WHERE permission_id > (SELECT AVG(permission_id) FROM permission_role)
+WITH grouped AS ( SELECT role_id, COUNT(*) as cnt FROM permission_role GROUP BY role_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT a.* FROM permission_role a LEFT JOIN permissions b ON a.permission_id = b.id WHERE b.id IS NULL
+SELECT * FROM permission_role LEFT JOIN permission_user ON permission_user.id = permission_role.id LEFT JOIN permissions ON permissions.id = permission_role.permission_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY role_id ORDER BY permission_id DESC) as rn FROM permission_role
+SELECT * FROM permission_role LEFT JOIN permissions ON permission_role.permission_id = permissions.id;

@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many users do we have in total?
+Show me all of our users.
+Can you look up the user with id=num?
+How many organizations organization do we have in total?
+Show me all of our organizations organization.
+Can you look up the organizations organization with id=num?
+Find the organizations organization where name=string.
+Who are the most active users based on activity count?
+Show me each user along with its related details from other tables.
+Are there any users that don't have a match in related tables?
+For each group, what are the top 3 users?
+Which users have duplicate or repeated values?
+Show me each organizations organization along with its related details from other tables.
+How many organizations organization were added since created=date?
+Break down the organizations organization by name — how many in each?
+Pull together a report on users joining all related tables.
+Who or what is the best in each group of users?
+Which users are above average compared to others in their group?
+Do a multi-step analysis: group users, filter, then rank the results.
+Find users that exist in one table but not in a related table.
+Combine data from auth_user, organizations_organization, and organizations_organizationowner in a single report.
+List all users ordered by id descending.
+Pull together a report on organizations organization joining all related tables.

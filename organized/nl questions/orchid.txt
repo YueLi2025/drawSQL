@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many attachmentable do we have in total?
+Show me all of our attachmentable.
+Can you look up the attachmentable with id=num?
+How many attachmentable were created since attachmentable_type=date?
+What are the most recent attachmentable ordered by attachmentable_type?
+How many attachments do we have in total?
+Show me all of our attachments.
+Who are the most active users based on activity count?
+How many notifications do we have in total?
+Break down the attachmentable by attachmentable_type — how many in each?
+Are there any attachmentable that don't have a match in related tables?
+For each group, what are the top 3 attachmentable?
+How did the number of attachmentable change month over month?
+Which attachmentable have duplicate or repeated values?
+Show me each attachment along with its related details from other tables.
+Pull together a report on attachmentable joining all related tables.
+Who or what is the best in each group of attachmentable?
+Which attachmentable are above average compared to others in their group?
+Do a multi-step analysis: group attachmentable, filter, then rank the results.
+Show the running total of attachmentable over time based on attachmentable_type.
+Find attachmentable that exist in one table but not in a related table.
+Combine data from attachmentable, attachments, and notifications in a single report.
+Rank all attachmentable within their groups and show the top performers.

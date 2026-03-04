@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM users LIMIT num;
+SELECT COUNT(*) FROM threads;
+SELECT * FROM threads;
+SELECT * FROM threads WHERE id = num;
+SELECT COUNT(*) FROM threads WHERE created_at >= 'date';
+SELECT * FROM threads ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM messages;
+SELECT * FROM messages;
+SELECT * FROM users ORDER BY id DESC LIMIT 1;
+SELECT t.*, c.* FROM threads t LEFT JOIN messages c ON c.thread_id = t.id;
+SELECT COUNT(*) FROM participants;
+SELECT subject, COUNT(*) as count FROM threads GROUP BY subject;
+SELECT * FROM threads WHERE id NOT IN (SELECT DISTINCT thread_id FROM messages WHERE thread_id IS NOT NULL);
+SELECT * FROM threads ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM threads WHERE created_at >= 'date' GROUP BY subject ORDER BY deleted_at;
+SELECT subject, COUNT(*) as count FROM threads GROUP BY subject HAVING COUNT(*) > 1
+SELECT * FROM messages LEFT JOIN threads ON messages.thread_id = threads.id LEFT JOIN users ON messages.user_id = users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY subject ORDER BY id DESC) as rn FROM threads ) WHERE rn = 1;
+SELECT subject, COUNT(*) as count FROM threads GROUP BY subject HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) as cnt FROM threads GROUP BY subject) t)
+WITH grouped AS ( SELECT subject, COUNT(*) as cnt FROM threads GROUP BY subject ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM threads ORDER BY created_at;
+SELECT * FROM threads WHERE id NOT IN (SELECT DISTINCT thread_id FROM messages WHERE thread_id IS NOT NULL);
+SELECT * FROM threads LEFT JOIN messages ON messages.id = threads.thread_id LEFT JOIN participants ON participants.id = threads.thread_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY subject ORDER BY id DESC) as rn FROM threads;

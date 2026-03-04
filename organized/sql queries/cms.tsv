@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM bootstrap4_alerts_bootstrap4alerts;
+SELECT * FROM bootstrap4_alerts_bootstrap4alerts;
+SELECT * FROM bootstrap4_alerts_bootstrap4alerts WHERE id = num;
+SELECT COUNT(*) FROM bootstrap4_alerts_bootstrap4alerts WHERE attributes >= 'date';
+SELECT * FROM bootstrap4_alerts_bootstrap4alerts ORDER BY attributes DESC LIMIT 1;
+SELECT COUNT(*) FROM bootstrap4_badge_bootstrap4badge;
+SELECT * FROM bootstrap4_badge_bootstrap4badge;
+SELECT * FROM bootstrap4_badge_bootstrap4badge WHERE id = num;
+SELECT t.*, c.* FROM bootstrap4_alerts_bootstrap4alerts t LEFT JOIN cms_cmsplugin c ON c.id = t.cmsplugin_ptr_id;
+SELECT COUNT(*) FROM bootstrap4_grid_bootstrap4gridcolumn;
+SELECT tag_type, COUNT(*) as count FROM bootstrap4_alerts_bootstrap4alerts GROUP BY tag_type;
+SELECT * FROM bootstrap4_alerts_bootstrap4alerts WHERE id NOT IN (SELECT DISTINCT id FROM cms_cmsplugin WHERE id IS NOT NULL);
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY tag_type ORDER BY id DESC) as rn FROM bootstrap4_alerts_bootstrap4alerts ) WHERE rn <= num;
+SELECT strftime('string', attributes) as period, COUNT(*) as count FROM bootstrap4_alerts_bootstrap4alerts WHERE attributes >= 'date' GROUP BY tag_type ORDER BY tag_type;
+SELECT cmsplugin_ptr_id, COUNT(*) as count FROM bootstrap4_alerts_bootstrap4alerts GROUP BY cmsplugin_ptr_id HAVING COUNT(*) > 1
+SELECT t.*, c.* FROM bootstrap4_badge_bootstrap4badge t LEFT JOIN cms_cmsplugin c ON c.id = t.cmsplugin_ptr_id;
+SELECT * FROM cms_cmsplugin LEFT JOIN bootstrap4_link_bootstrap4link ON cms_cmsplugin.id = bootstrap4_link_bootstrap4link.cmsplugin_ptr_id LEFT JOIN bootstrap4_tabs_bootstrap4tab ON cms_cmsplugin.id = bootstrap4_tabs_bootstrap4tab.cmsplugin_ptr_id LEFT JOIN bootstrap4_content_bootstrap4code ON cms_cmsplugin.id = bootstrap4_content_bootstrap4code.cmsplugin_ptr_id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY tag_type ORDER BY id DESC) as rn FROM bootstrap4_alerts_bootstrap4alerts ) WHERE rn = 1;
+SELECT * FROM bootstrap4_alerts_bootstrap4alerts WHERE cmsplugin_ptr_id > (SELECT AVG(cmsplugin_ptr_id) FROM bootstrap4_alerts_bootstrap4alerts)
+WITH grouped AS ( SELECT tag_type, COUNT(*) as cnt FROM bootstrap4_alerts_bootstrap4alerts GROUP BY tag_type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY attributes) as running_count FROM bootstrap4_alerts_bootstrap4alerts ORDER BY attributes;
+SELECT * FROM bootstrap4_alerts_bootstrap4alerts WHERE id NOT IN (SELECT DISTINCT id FROM cms_cmsplugin WHERE id IS NOT NULL);
+SELECT * FROM bootstrap4_alerts_bootstrap4alerts LEFT JOIN bootstrap4_badge_bootstrap4badge ON bootstrap4_badge_bootstrap4badge.cmsplugin_ptr_id = bootstrap4_alerts_bootstrap4alerts.id LEFT JOIN bootstrap4_card_bootstrap4card ON bootstrap4_card_bootstrap4card.cmsplugin_ptr_id = bootstrap4_alerts_bootstrap4alerts.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY tag_type ORDER BY id DESC) as rn FROM bootstrap4_alerts_bootstrap4alerts ) WHERE rn <= num;

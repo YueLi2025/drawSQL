@@ -1,0 +1,25 @@
+nl_question
+Show me all of our oauth2 provider grant.
+How many users do we have in total?
+Show me all of our users.
+Can you look up the user with id=num?
+Find the user where username=string.
+How many users were created since date_joined=date?
+What are the most recent users ordered by password?
+How many oauth2 provider accesstoken do we have in total?
+Who are the most active users based on activity count?
+Show me each user along with its related details from other tables.
+How many oauth2 provider application do we have in total?
+Break down the users by password — how many in each?
+Are there any users that don't have a match in related tables?
+For each group, what are the top 3 users?
+How did the number of users change month over month?
+Which users have duplicate or repeated values?
+Pull together a report on users joining all related tables.
+Who or what is the best in each group of users?
+Which users are above average compared to others in their group?
+Do a multi-step analysis: group users, filter, then rank the results.
+Show the running total of users over time based on date_joined.
+Find users that exist in one table but not in a related table.
+Combine data from auth_user, oauth2_provider_accesstoken, and oauth2_provider_application in a single report.
+Rank all users within their groups and show the top performers.

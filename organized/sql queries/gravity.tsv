@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM invite LIMIT num
+SELECT COUNT(*) FROM account;
+SELECT * FROM account;
+SELECT * FROM account WHERE id = num;
+SELECT * FROM account WHERE email = string;
+SELECT * FROM account WHERE active = num;
+SELECT COUNT(*) FROM account WHERE date_created >= 'date';
+SELECT * FROM account ORDER BY date_created DESC LIMIT 1;
+SELECT a.id, a.email, COUNT(u.id) as user_count FROM account a JOIN user u ON a.id = u.account_id GROUP BY a.id, a.email ORDER BY user_count DESC LIMIT 1
+SELECT t.*, c.* FROM account t LEFT JOIN invite c ON c.account_id = t.id;
+SELECT COUNT(*) FROM user;
+SELECT email, COUNT(*) as count FROM account GROUP BY email;
+SELECT * FROM account WHERE id NOT IN (SELECT DISTINCT account_id FROM invite WHERE account_id IS NOT NULL);
+SELECT * FROM account ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', date_created) as period, COUNT(*) as count FROM account WHERE date_created >= 'date' GROUP BY stripe_subscription_id ORDER BY date_created;
+SELECT email, COUNT(*) as count FROM account GROUP BY email HAVING COUNT(*) > 1
+SELECT * FROM invite LEFT JOIN account ON invite.account_id = account.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY email ORDER BY id DESC) as rn FROM account ) WHERE rn = 1;
+SELECT * FROM account WHERE active > (SELECT AVG(active) FROM account)
+WITH grouped AS ( SELECT email, COUNT(*) as cnt FROM account GROUP BY email ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY date_created) as running_count FROM account ORDER BY date_created;
+SELECT * FROM account WHERE id NOT IN (SELECT DISTINCT account_id FROM invite WHERE account_id IS NOT NULL);
+SELECT * FROM account LEFT JOIN invite ON invite.id = account.account_id LEFT JOIN user ON user.id = account.account_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY active ORDER BY id DESC) as rn FROM account;

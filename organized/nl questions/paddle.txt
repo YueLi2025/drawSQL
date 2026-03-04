@@ -1,0 +1,25 @@
+nl_question
+Which customers have status=string for their subscription?
+How many customers do we have in total?
+Show me all of our customers.
+Can you look up the customer with id=num?
+How many customers were created since updated_at=date?
+What are the most recent customers ordered by billable_id?
+How many subscriptions do we have in total?
+Show me all of our subscriptions.
+How much revenue since created_at=date?
+How many receipts do we have in total?
+Break down the customers by billable_type — how many in each?
+Are there any customers that don't have a match in related tables?
+For each group, what are the top 3 customers?
+How did the number of customers change month over month?
+Which customers have duplicate or repeated values?
+What's our total and average quantity across all subscriptions?
+Pull together a report on customers joining all related tables.
+Who or what is the best in each group of customers?
+Which customers are above average compared to others in their group?
+Do a multi-step analysis: group customers, filter, then rank the results.
+Show the running total of customers over time based on updated_at.
+Find customers that exist in one table but not in a related table.
+Combine data from customers, subscriptions, and receipts in a single report.
+Rank all customers within their groups and show the top performers.

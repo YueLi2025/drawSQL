@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM flipper_features;
+SELECT * FROM flipper_features;
+SELECT * FROM flipper_features WHERE id = num;
+SELECT COUNT(*) FROM flipper_features WHERE created_at >= 'date';
+SELECT COUNT(*) FROM flipper_gates;
+SELECT * FROM flipper_gates;
+SELECT * FROM flipper_features WHERE id = num;
+SELECT COUNT(*) FROM flipper_gates WHERE created_at >= 'date';
+SELECT COUNT(*) FROM flipper_features WHERE created_at >= 'date';
+SELECT * FROM flipper_features WHERE id NOT IN (SELECT flipper_features_id FROM flipper_gates WHERE flipper_features_id IS NOT NULL)
+SELECT * FROM flipper_features ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM flipper_features WHERE created_at >= 'date' GROUP BY key ORDER BY created_at;
+SELECT created_at, COUNT(*) as count FROM flipper_features GROUP BY created_at HAVING COUNT(*) > 1
+SELECT SUM(value) as total, AVG(value) as average FROM flipper_gates;
+SELECT * FROM flipper_gates ORDER BY value DESC LIMIT num;
+SELECT COUNT(*) FROM flipper_gates WHERE created_at >= 'date';
+SELECT f.*, g.key as gate_key, g.value as gate_value FROM flipper_features f LEFT JOIN flipper_gates g ON f.key = g.feature_key
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY created_at ORDER BY id DESC) as rn FROM flipper_features ) WHERE rn = 1;
+SELECT * FROM flipper_features WHERE created_at > (SELECT AVG(created_at) FROM flipper_features)
+WITH grouped AS ( SELECT created_at, COUNT(*) as cnt FROM flipper_features GROUP BY created_at ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM flipper_features ORDER BY created_at;
+SELECT * FROM flipper_features WHERE id NOT IN (SELECT flipper_features_id FROM flipper_gates WHERE flipper_features_id IS NOT NULL)
+SELECT *, ROW_NUMBER() OVER (PARTITION BY key ORDER BY created_at DESC) as rn FROM flipper_features
+SELECT g.*, f.created_at as feature_created_at FROM flipper_gates g LEFT JOIN flipper_features f ON g.feature_key = f.key

@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM tracker_sessions LIMIT num
+SELECT COUNT(*) FROM tracker_agents;
+SELECT * FROM tracker_agents;
+SELECT * FROM tracker_agents WHERE id = num;
+SELECT * FROM tracker_agents WHERE name = string;
+SELECT COUNT(*) FROM tracker_agents WHERE created_at >= 'date';
+SELECT * FROM tracker_agents ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM tracker_connections;
+SELECT user_id, COUNT(*) as session_count FROM tracker_sessions GROUP BY user_id ORDER BY session_count DESC LIMIT 1
+SELECT t.*, c.* FROM tracker_agents t LEFT JOIN tracker_sessions c ON c.agent_id = t.id;
+SELECT COUNT(*) FROM tracker_geoip;
+SELECT name, COUNT(*) as count FROM tracker_agents GROUP BY name;
+SELECT * FROM tracker_agents WHERE id NOT IN (SELECT DISTINCT agent_id FROM tracker_sessions WHERE agent_id IS NOT NULL);
+SELECT * FROM tracker_agents ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM tracker_agents WHERE created_at >= 'date' GROUP BY name_hash ORDER BY created_at;
+SELECT name, COUNT(*) as count FROM tracker_agents GROUP BY name HAVING COUNT(*) > 1
+SELECT * FROM tracker_log LEFT JOIN tracker_referers ON tracker_log.referer_id = tracker_referers.id LEFT JOIN tracker_route_paths ON tracker_log.route_path_id = tracker_route_paths.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM tracker_agents ) WHERE rn = 1;
+SELECT name, COUNT(*) as count FROM tracker_agents GROUP BY name HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) as cnt FROM tracker_agents GROUP BY name) t)
+WITH grouped AS ( SELECT name, COUNT(*) as cnt FROM tracker_agents GROUP BY name ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM tracker_agents ORDER BY created_at;
+SELECT * FROM tracker_agents WHERE id NOT IN (SELECT DISTINCT agent_id FROM tracker_sessions WHERE agent_id IS NOT NULL);
+SELECT * FROM tracker_agents LEFT JOIN tracker_connections ON tracker_connections.id = tracker_agents.agent_id LEFT JOIN tracker_cookies ON tracker_cookies.id = tracker_agents.agent_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM tracker_agents;

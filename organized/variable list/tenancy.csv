@@ -1,0 +1,16 @@
+table_name,column_name,column_type
+websites,id,num
+websites,uuid,string
+websites,created_at,date
+websites,updated_at,date
+websites,deleted_at,date
+websites,managed_by_database_connection,string
+hostnames,id,num
+hostnames,fqdn,string
+hostnames,redirect_to,string
+hostnames,force_https,boolean
+hostnames,under_maintenance_since,date
+hostnames,website_id,num
+hostnames,created_at,date
+hostnames,updated_at,date
+hostnames,deleted_at,date

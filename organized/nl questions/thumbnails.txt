@@ -1,0 +1,25 @@
+nl_question
+How many easy thumbnails source do we have in total?
+Show me all of our easy thumbnails source.
+Can you look up the easy thumbnails source with id=num?
+Find the easy thumbnails source where name=string.
+What are the most recent easy thumbnails source ordered by storage_hash?
+How many easy thumbnails thumbnail do we have in total?
+Show me all of our easy thumbnails thumbnail.
+Can you look up the easy thumbnails thumbnail with id=num?
+Show me each easy thumbnails source along with its related details from other tables.
+Break down the easy thumbnails source by storage_hash — how many in each?
+Are there any easy thumbnails source that don't have a match in related tables?
+For each group, what are the top 3 easy thumbnails source?
+Which easy thumbnails source have duplicate or repeated values?
+Show me each easy thumbnails thumbnail along with its related details from other tables.
+Break down the easy thumbnails thumbnail by storage_hash — how many in each?
+Are there any easy thumbnails thumbnail that don't have a match in related tables?
+Pull together a report on easy thumbnails source joining all related tables.
+Who or what is the best in each group of easy thumbnails source?
+Which easy thumbnails source are above average compared to others in their group?
+Do a multi-step analysis: group easy thumbnails source, filter, then rank the results.
+Find easy thumbnails source that exist in one table but not in a related table.
+Combine data from easy_thumbnails_source, easy_thumbnails_thumbnail, and easy_thumbnails_thumbnaildimensions in a single report.
+Rank all easy thumbnails source within their groups and show the top performers.
+Pull together a report on easy thumbnails thumbnail joining all related tables.

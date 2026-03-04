@@ -1,0 +1,25 @@
+nl_question
+Show me all of our canvas tags.
+How many posts do we have in total?
+Show me all of our posts.
+Can you look up the post with id=num?
+Find the post where title=string.
+How many posts were created since created_at=date?
+What are the most recent posts ordered by slug?
+What are the most recent posts ordered by tag_id?
+Who are the most active users based on activity count?
+Show me each post along with its related details from other tables.
+How many canvas user meta do we have in total?
+Break down the posts by slug — how many in each?
+Are there any posts that don't have a match in related tables?
+For each group, what are the top 3 posts?
+How did the number of posts change month over month?
+Which posts have duplicate or repeated values?
+Pull together a report on posts joining all related tables.
+Who or what is the best in each group of posts?
+Which posts are above average compared to others in their group?
+Do a multi-step analysis: group posts, filter, then rank the results.
+Show the running total of posts over time based on created_at.
+Find posts that exist in one table but not in a related table.
+Combine data from canvas_posts, canvas_posts_tags, and canvas_posts_topics in a single report.
+Rank all posts within their groups and show the top performers.

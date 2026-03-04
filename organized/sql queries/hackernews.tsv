@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM accounts_emailverification LIMIT num
+SELECT * FROM accounts_customuser LIMIT num;
+SELECT COUNT(*) FROM accounts_customuser;
+SELECT * FROM accounts_customuser;
+SELECT * FROM accounts_customuser WHERE id = num;
+SELECT * FROM accounts_customuser WHERE username = string;
+SELECT COUNT(*) FROM accounts_customuser WHERE date_joined >= 'date';
+SELECT * FROM accounts_customuser ORDER BY date_joined DESC LIMIT 1;
+SELECT u.id, u.username, COUNT(v.id) as vote_count FROM accounts_customuser u JOIN news_vote v ON u.id = v.user_id GROUP BY u.id, u.username ORDER BY vote_count DESC LIMIT 1
+SELECT t.*, c.* FROM accounts_customuser t LEFT JOIN accounts_emailverification c ON c.user_id = t.id;
+SELECT COUNT(*) FROM news_item;
+SELECT password, COUNT(*) as count FROM accounts_customuser GROUP BY password;
+SELECT * FROM accounts_customuser WHERE id NOT IN (SELECT DISTINCT user_id FROM accounts_emailverification WHERE user_id IS NOT NULL);
+SELECT * FROM accounts_customuser ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', date_joined) as period, COUNT(*) as count FROM accounts_customuser WHERE date_joined >= 'date' GROUP BY parent_id ORDER BY date_joined;
+SELECT email, COUNT(*) as count FROM accounts_customuser GROUP BY email HAVING COUNT(*) > 1
+SELECT * FROM accounts_customuser LEFT JOIN emaildigest_anonymoussubscription ON accounts_customuser.id = emaildigest_anonymoussubscription.subscription_ptr_id LEFT JOIN accounts_invitation ON accounts_customuser.used_invitation_id = accounts_invitation.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY last_login ORDER BY id DESC) as rn FROM accounts_customuser ) WHERE rn = 1;
+SELECT * FROM accounts_customuser WHERE is_superuser > (SELECT AVG(is_superuser) FROM accounts_customuser)
+WITH grouped AS ( SELECT last_login, COUNT(*) as cnt FROM accounts_customuser GROUP BY last_login ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY date_joined) as running_count FROM accounts_customuser ORDER BY date_joined;
+SELECT * FROM accounts_customuser WHERE id NOT IN (SELECT DISTINCT user_id FROM accounts_emailverification WHERE user_id IS NOT NULL);
+SELECT * FROM accounts_customuser LEFT JOIN accounts_customuser_groups ON accounts_customuser_groups.id = accounts_customuser.user_id LEFT JOIN accounts_customuser_user_permissions ON accounts_customuser_user_permissions.id = accounts_customuser.user_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY level ORDER BY id DESC) as rn FROM accounts_customuser;

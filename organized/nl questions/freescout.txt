@@ -1,0 +1,25 @@
+nl_question
+How many tickets have status=num indicating open?
+Which tickets were created since created_at=date?
+Show me all of our threads.
+How many activity logs do we have in total?
+Show me all of our activity logs.
+Can you look up the activity log with id=num?
+Find the activity log where log_name=string.
+How many activity logs were created since created_at=date?
+What's the average resolution time for conversations?
+Who are the most active users based on activity count?
+How many mailboxes do we have in total?
+Break down the activity logs by subject_type — how many in each?
+Are there any activity logs that don't have a match in related tables?
+For each group, what are the top 3 activity logs?
+How did the number of activity logs change month over month?
+Which activity logs have duplicate or repeated values?
+Pull together a report on activity logs joining all related tables.
+Who or what is the best in each group of activity logs?
+Which activity logs are above average compared to others in their group?
+Do a multi-step analysis: group activity logs, filter, then rank the results.
+Show the running total of activity logs over time based on created_at.
+Find activity logs that exist in one table but not in a related table.
+Combine data from activity_logs, attachments, and conversation_folder in a single report.
+Rank all activity logs within their groups and show the top performers.

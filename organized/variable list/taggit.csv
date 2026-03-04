@@ -1,0 +1,8 @@
+table_name,column_name,column_type
+taggit_tag,id,num
+taggit_tag,name,string
+taggit_tag,slug,string
+taggit_taggeditem,id,num
+taggit_taggeditem,object_id,num
+taggit_taggeditem,content_type_id,num
+taggit_taggeditem,tag_id,num

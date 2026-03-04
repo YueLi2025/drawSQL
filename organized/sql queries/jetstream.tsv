@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM users WHERE created_at >= 'date';
+SELECT team_id, COUNT(*) as member_count FROM team_user GROUP BY team_id;
+SELECT COUNT(*) FROM personal_access_tokens;
+SELECT * FROM personal_access_tokens;
+SELECT * FROM personal_access_tokens WHERE id = num;
+SELECT * FROM personal_access_tokens WHERE name = string;
+SELECT COUNT(*) FROM personal_access_tokens WHERE created_at >= 'date';
+SELECT * FROM personal_access_tokens ORDER BY created_at DESC LIMIT 1;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM teams;
+SELECT tokenable_type, COUNT(*) as count FROM personal_access_tokens GROUP BY tokenable_type;
+SELECT a.* FROM personal_access_tokens a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY tokenable_type ORDER BY id DESC) as rn FROM personal_access_tokens ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM personal_access_tokens WHERE created_at >= 'date' GROUP BY tokenable_type ORDER BY created_at;
+SELECT name, COUNT(*) as count FROM personal_access_tokens GROUP BY name HAVING COUNT(*) > 1
+SELECT * FROM team_user LIMIT num
+SELECT * FROM team_user LEFT JOIN users ON team_user.user_id = users.id LEFT JOIN teams ON team_user.team_id = teams.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY tokenable_type ORDER BY id DESC) as rn FROM personal_access_tokens ) WHERE rn = 1;
+SELECT * FROM personal_access_tokens WHERE tokenable_id > (SELECT AVG(tokenable_id) FROM personal_access_tokens)
+WITH grouped AS ( SELECT tokenable_type, COUNT(*) as cnt FROM personal_access_tokens GROUP BY tokenable_type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM personal_access_tokens ORDER BY created_at;
+SELECT a.* FROM personal_access_tokens a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM personal_access_tokens LEFT JOIN team_user ON team_user.id = personal_access_tokens.id LEFT JOIN teams ON teams.id = personal_access_tokens.team_id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY tokenable_type ORDER BY id DESC) as rn FROM personal_access_tokens ) WHERE rn <= num;

@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM robots_rule;
+SELECT * FROM robots_rule;
+SELECT * FROM robots_rule WHERE id = num;
+SELECT * FROM robots_rule ORDER BY robot DESC LIMIT 1;
+SELECT COUNT(*) FROM robots_rule;
+SELECT * FROM robots_rule;
+SELECT * FROM robots_rule WHERE id = num;
+SELECT * FROM robots_rule ORDER BY robot DESC LIMIT 1;
+SELECT t.*, c.* FROM robots_rule t LEFT JOIN robots_rule_allowed c ON c.rule_id = t.id;
+SELECT robot, COUNT(*) as count FROM robots_rule GROUP BY robot;
+SELECT * FROM robots_rule WHERE id NOT IN (SELECT DISTINCT rule_id FROM robots_rule_allowed WHERE rule_id IS NOT NULL);
+SELECT * FROM robots_rule ORDER BY id DESC LIMIT 3;
+SELECT robot, COUNT(*) as count FROM robots_rule GROUP BY robot HAVING COUNT(*) > 1
+SELECT robot, COUNT(*) as count FROM robots_rule GROUP BY robot;
+SELECT * FROM robots_rule WHERE id NOT IN (SELECT DISTINCT rule_id FROM robots_rule_allowed WHERE rule_id IS NOT NULL);
+SELECT * FROM robots_rule ORDER BY id DESC LIMIT 3;
+SELECT * FROM robots_rule_allowed LEFT JOIN robots_url ON robots_rule_allowed.url_id = robots_url.id LEFT JOIN robots_rule ON robots_rule_allowed.rule_id = robots_rule.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY robot ORDER BY id DESC) as rn FROM robots_rule ) WHERE rn = 1;
+SELECT * FROM robots_rule WHERE crawl_delay > (SELECT AVG(crawl_delay) FROM robots_rule)
+WITH grouped AS ( SELECT robot, COUNT(*) as cnt FROM robots_rule GROUP BY robot ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT * FROM robots_rule WHERE id NOT IN (SELECT DISTINCT rule_id FROM robots_rule_allowed WHERE rule_id IS NOT NULL);
+SELECT * FROM robots_rule LEFT JOIN robots_rule_allowed ON robots_rule_allowed.id = robots_rule.rule_id LEFT JOIN robots_rule_disallowed ON robots_rule_disallowed.id = robots_rule.rule_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY robot ORDER BY id DESC) as rn FROM robots_rule;
+SELECT * FROM robots_rule_allowed LEFT JOIN robots_url ON robots_rule_allowed.url_id = robots_url.id LEFT JOIN robots_rule ON robots_rule_allowed.rule_id = robots_rule.id;

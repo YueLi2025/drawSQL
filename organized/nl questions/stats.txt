@@ -1,0 +1,25 @@
+nl_question
+Show me all of our tracker sessions.
+How many tracker agents do we have in total?
+Show me all of our tracker agents.
+Can you look up the tracker agent with id=num?
+Find the tracker agent where name=string.
+How many tracker agents were created since created_at=date?
+What are the most recent tracker agents ordered by name?
+How many tracker connections do we have in total?
+Who are the most active users based on activity count?
+Show me each tracker agent along with its related details from other tables.
+How many tracker geoip do we have in total?
+Break down the tracker agents by name — how many in each?
+Are there any tracker agents that don't have a match in related tables?
+For each group, what are the top 3 tracker agents?
+How did the number of tracker agents change month over month?
+Which tracker agents have duplicate or repeated values?
+Pull together a report on tracker agents joining all related tables.
+Who or what is the best in each group of tracker agents?
+Which tracker agents are above average compared to others in their group?
+Do a multi-step analysis: group tracker agents, filter, then rank the results.
+Show the running total of tracker agents over time based on created_at.
+Find tracker agents that exist in one table but not in a related table.
+Combine data from tracker_agents, tracker_connections, and tracker_cookies in a single report.
+Rank all tracker agents within their groups and show the top performers.

@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM users WHERE created_at >= 'date';
+SELECT COUNT(*) FROM api_keys;
+SELECT * FROM api_keys;
+SELECT * FROM api_keys WHERE id = num;
+SELECT * FROM api_keys WHERE name = string;
+SELECT COUNT(*) FROM api_keys WHERE created_at >= 'date';
+SELECT * FROM api_keys ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM api_log;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM users;
+SELECT name, COUNT(*) as count FROM api_keys GROUP BY name;
+SELECT a.* FROM api_keys a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM api_keys ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM api_keys WHERE created_at >= 'date' GROUP BY name ORDER BY created_at;
+SELECT name, COUNT(*) as count FROM api_keys GROUP BY name HAVING COUNT(*) > 1
+SELECT * FROM api_log LIMIT num
+SELECT * FROM api_keys LEFT JOIN users ON api_keys.user_id = users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM api_keys ) WHERE rn = 1;
+SELECT * FROM api_keys WHERE user_id > (SELECT AVG(user_id) FROM api_keys)
+WITH grouped AS ( SELECT name, COUNT(*) as cnt FROM api_keys GROUP BY name ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM api_keys ORDER BY created_at;
+SELECT a.* FROM api_keys a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM api_keys LEFT JOIN api_log ON api_log.id = api_keys.id LEFT JOIN password_resets ON password_resets.id = api_keys.id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM api_keys;

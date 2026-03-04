@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM notifications WHERE id = num;
+SELECT COUNT(*) FROM appointments;
+SELECT * FROM appointments;
+SELECT * FROM appointments WHERE id = num;
+SELECT COUNT(*) FROM appointments WHERE created_at >= 'date';
+SELECT * FROM appointments ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM business_contact;
+SELECT * FROM business_contact;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM businesses;
+SELECT issuer_id, COUNT(*) as count FROM appointments GROUP BY issuer_id;
+SELECT a.* FROM appointments a LEFT JOIN contacts b ON a.contact_id = b.id WHERE b.id IS NULL
+SELECT * FROM categories ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM appointments WHERE created_at >= 'date' GROUP BY status ORDER BY start_at;
+SELECT issuer_id, COUNT(*) as count FROM appointments GROUP BY issuer_id HAVING COUNT(*) > 1
+SELECT * FROM contacts LIMIT num
+SELECT * FROM appointments LEFT JOIN contacts ON appointments.contact_id = contacts.id LEFT JOIN services ON appointments.service_id = services.id LEFT JOIN businesses ON appointments.business_id = businesses.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY issuer_id ORDER BY id DESC) as rn FROM appointments ) WHERE rn = 1;
+SELECT * FROM appointments WHERE issuer_id > (SELECT AVG(issuer_id) FROM appointments)
+WITH grouped AS ( SELECT issuer_id, COUNT(*) as cnt FROM appointments GROUP BY issuer_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM appointments ORDER BY created_at;
+SELECT a.* FROM appointments a LEFT JOIN contacts b ON a.contact_id = b.id WHERE b.id IS NULL
+SELECT * FROM appointments LEFT JOIN business_contact ON business_contact.id = appointments.id LEFT JOIN business_user ON business_user.id = appointments.id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY status ORDER BY id DESC) as rn FROM appointments;

@@ -1,0 +1,25 @@
+nl_question
+How many love reactant reaction counters do we have in total?
+Show me all of our love reactant reaction counters.
+Can you look up the love reactant reaction counter with id=num?
+How many love reactant reaction counters were created since created_at=date?
+What are the most recent love reactant reaction counters ordered by reactant_id?
+How many love reactant reaction totals do we have in total?
+Show me all of our love reactant reaction totals.
+Can you look up the love reactant reaction total with id=num?
+How many love reactions do we have in total?
+Break down the love reactant reaction counters by reaction_type_id — how many in each?
+Are there any love reactant reaction counters that don't have a match in related tables?
+For each group, what are the top 3 love reactant reaction counters?
+How did the number of love reactant reaction counters change month over month?
+Which love reactant reaction counters have duplicate or repeated values?
+Show me all of our love reaction types.
+Break down the love reactant reaction totals by reactant_id — how many in each?
+Pull together a report on love reactant reaction counters joining all related tables.
+Who or what is the best in each group of love reactant reaction counters?
+Which love reactant reaction counters are above average compared to others in their group?
+Do a multi-step analysis: group love reactant reaction counters, filter, then rank the results.
+Show the running total of love reactant reaction counters over time based on created_at.
+Find love reactant reaction counters that exist in one table but not in a related table.
+Combine data from love_reactant_reaction_counters, love_reactant_reaction_totals, and love_reactants in a single report.
+Rank all love reactant reaction counters within their groups and show the top performers.

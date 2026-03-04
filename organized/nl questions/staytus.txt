@@ -1,0 +1,25 @@
+nl_question
+How many people are subscribed to get status updates?
+Can you look up the nifty attachment with id=num?
+How many api tokens do we have in total?
+Show me all of our api tokens.
+Can you look up the api token with id=num?
+Find the api token where name=string.
+How many api tokens were created since created_at=date?
+What are the most recent api tokens ordered by name?
+Who are the most active users based on activity count?
+How many maintenances do we have in total?
+Break down the api tokens by name — how many in each?
+Are there any api tokens that don't have a match in related tables?
+For each group, what are the top 3 api tokens?
+How did the number of api tokens change month over month?
+Which api tokens have duplicate or repeated values?
+Show me all of our issues.
+Pull together a report on api tokens joining all related tables.
+Who or what is the best in each group of api tokens?
+Which api tokens are above average compared to others in their group?
+Do a multi-step analysis: group api tokens, filter, then rank the results.
+Show the running total of api tokens over time based on created_at.
+Find api tokens that exist in one table but not in a related table.
+Combine data from api_tokens, email_templates, and history_items in a single report.
+Rank all api tokens within their groups and show the top performers.

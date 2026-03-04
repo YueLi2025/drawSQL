@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM users WHERE created_at >= 'date';
+SELECT COUNT(*) FROM relationships;
+SELECT * FROM relationships;
+SELECT * FROM relationships WHERE id = num;
+SELECT COUNT(*) FROM relationships WHERE created_at >= 'date';
+SELECT * FROM relationships ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM tweets;
+SELECT * FROM tweets;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM users;
+SELECT follower_id, COUNT(*) as count FROM relationships GROUP BY follower_id;
+SELECT a.* FROM relationships a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM relationships ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM relationships WHERE created_at >= 'date' GROUP BY follower_id ORDER BY created_at;
+SELECT follower_id, COUNT(*) as count FROM relationships GROUP BY follower_id HAVING COUNT(*) > 1
+SELECT COUNT(*) FROM tweets WHERE created_at >= 'date';
+SELECT * FROM relationships LEFT JOIN users ON relationships.follower_id = users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY follower_id ORDER BY id DESC) as rn FROM relationships ) WHERE rn = 1;
+SELECT * FROM relationships WHERE follower_id > (SELECT AVG(follower_id) FROM relationships)
+WITH grouped AS ( SELECT follower_id, COUNT(*) as cnt FROM relationships GROUP BY follower_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM relationships ORDER BY created_at;
+SELECT a.* FROM relationships a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM relationships LEFT JOIN tweets ON tweets.id = relationships.id LEFT JOIN users ON users.id = relationships.user_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY follower_id ORDER BY created_at DESC) as rn FROM relationships

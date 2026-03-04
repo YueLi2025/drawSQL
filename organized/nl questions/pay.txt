@@ -1,0 +1,25 @@
+nl_question
+Which customers have status=string for their subscription?
+How many pay charges do we have in total?
+Show me all of our pay charges.
+Can you look up the pay charge with id=num?
+How many pay charges were created since created_at=date?
+What pay charges have amount between num and num?
+What are the most recent pay charges ordered by owner_type?
+How many subscriptions do we have in total?
+How much revenue since created_at=date?
+What's our total and average amount across all pay charges?
+Which pay charge has the highest amount?
+How many pay subscriptions do we have in total?
+Break down the pay charges by owner_type — how many in each?
+Are there any pay charges that don't have a match in related tables?
+For each group, what are the top 3 pay charges?
+How did the number of pay charges change month over month?
+Pull together a report on pay charges joining all related tables.
+Which pay charge has the best amount in each owner_type?
+Which pay charges have amount above average compared to others in their group?
+Do a multi-step analysis: group pay charges, filter, then rank the results.
+Show the running total of pay charges over time based on created_at.
+Find pay charges that exist in one table but not in a related table.
+Rank all pay charges by amount within each owner_type and show percentiles.
+Pull together a report on subscriptions joining all related tables.

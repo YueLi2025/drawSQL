@@ -45,7 +45,7 @@ SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON var
 SELECT variable FROM variable GROUP BY variable HAVING COUNT(DISTINCT variable) > variable
 SELECT variable FROM variable WHERE variable = variable ORDER BY variable - variable DESC LIMIT variable
 SELECT DISTINCT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
-SELECT variable, variable, variable , variable - strftime(variable, variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
+SELECT variable, variable, variable , variable - strftime(string, variable) FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
 SELECT DISTINCT variable, variable FROM variable AS variable JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable BETWEEN variable AND variable
 SELECT variable, variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable DESC LIMIT variable
 SELECT variable, variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable != variable AND variable = variable
@@ -102,7 +102,7 @@ SELECT variable, variable, variable FROM variable WHERE variable = variable AND 
 SELECT COUNT(DISTINCT variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable <= variable AND variable = variable
 SELECT COUNT(DISTINCT variable) FROM variable WHERE variable BETWEEN variable AND variable
 SELECT MAX(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
-SELECT variable - strftime(variable, variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable AND variable = variable
+SELECT variable - strftime(string, variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable AND variable = variable
 SELECT AVG(DISTINCT variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
 SELECT DISTINCT variable, variable, variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable > variable AND variable = variable
 SELECT variable FROM variable WHERE variable = ( SELECT variable FROM variable WHERE variable = variable GROUP BY variable ORDER BY SUM(variable + variable) DESC LIMIT variable )

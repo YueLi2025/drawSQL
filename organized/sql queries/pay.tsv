@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM pay_charges;
+SELECT COUNT(*) FROM pay_charges;
+SELECT * FROM pay_charges;
+SELECT * FROM pay_charges WHERE id = num;
+SELECT COUNT(*) FROM pay_charges WHERE created_at >= 'date';
+SELECT * FROM pay_charges WHERE amount BETWEEN num AND num
+SELECT * FROM pay_charges ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM pay_charges;
+SELECT * FROM pay_charges LIMIT num;
+SELECT SUM(amount) as total, AVG(amount) as average FROM pay_charges;
+SELECT * FROM pay_charges ORDER BY amount DESC LIMIT num;
+SELECT COUNT(*) FROM pay_subscriptions;
+SELECT owner_type, COUNT(*) as count FROM pay_charges GROUP BY owner_type;
+SELECT * FROM pay_charges WHERE id NOT IN (SELECT pay_charges_id FROM pay_subscriptions WHERE pay_charges_id IS NOT NULL)
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY owner_type ORDER BY amount DESC) as rn FROM pay_charges ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM pay_charges WHERE created_at >= 'date' GROUP BY card_exp_month ORDER BY created_at;
+SELECT c.*, s.processor_plan, s.quantity FROM pay_charges c LEFT JOIN pay_subscriptions s ON c.owner_id = s.owner_id AND c.owner_type = s.processor
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY owner_type
+SELECT * FROM pay_charges WHERE owner_id > (SELECT AVG(owner_id) FROM pay_charges)
+WITH grouped AS ( SELECT owner_type, COUNT(*) as cnt FROM pay_charges GROUP BY owner_type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, SUM(amount) OVER (ORDER BY created_at) as running_total FROM pay_charges ORDER BY created_at;
+SELECT * FROM pay_charges WHERE id NOT IN (SELECT pay_charges_id FROM pay_subscriptions WHERE pay_charges_id IS NOT NULL)
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY owner_type ORDER BY amount DESC) as rn FROM pay_charges ) WHERE rn <= num;
+SELECT s.*, c.amount as charge_amount, c.processor_id FROM pay_subscriptions s LEFT JOIN pay_charges c ON s.owner_id = c.owner_id

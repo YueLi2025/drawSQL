@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM roles LIMIT num
+SELECT COUNT(*) FROM users;
+SELECT * FROM users;
+SELECT * FROM users WHERE id = num;
+SELECT COUNT(*) FROM users WHERE avatar >= 'date';
+SELECT * FROM users ORDER BY avatar DESC LIMIT 1;
+SELECT COUNT(*) FROM data_types;
+SELECT * FROM data_types;
+SELECT * FROM users ORDER BY settings DESC LIMIT 1;
+SELECT t.*, c.* FROM users t LEFT JOIN user_roles c ON c.user_id = t.id;
+SELECT COUNT(*) FROM translations;
+SELECT avatar, COUNT(*) as count FROM users GROUP BY avatar
+SELECT * FROM users WHERE id NOT IN (SELECT DISTINCT user_id FROM user_roles WHERE user_id IS NOT NULL);
+SELECT * FROM users ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', avatar) as period, COUNT(*) as count FROM users WHERE avatar >= 'date' GROUP BY settings ORDER BY settings;
+SELECT avatar, COUNT(*) as count FROM users GROUP BY avatar HAVING COUNT(*) > 1
+SELECT * FROM menu_items LEFT JOIN menu_items ON menu_items.parent_id = menu_items.id LEFT JOIN menus ON menu_items.menu_id = menus.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY avatar ORDER BY id DESC) as rn FROM users ) WHERE rn = 1;
+SELECT * FROM users WHERE role_id > (SELECT AVG(role_id) FROM users)
+WITH grouped AS ( SELECT avatar, COUNT(*) as cnt FROM users GROUP BY avatar ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY avatar) as running_count FROM users ORDER BY avatar;
+SELECT * FROM users WHERE id NOT IN (SELECT DISTINCT user_id FROM user_roles WHERE user_id IS NOT NULL);
+SELECT * FROM users LEFT JOIN data_types ON data_types.id = users.user_id LEFT JOIN menus ON menus.id = users.user_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY avatar ORDER BY id DESC) as rn FROM users;

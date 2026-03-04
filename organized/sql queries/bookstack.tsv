@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM attachments WHERE id = num;
+SELECT COUNT(*) FROM activities;
+SELECT * FROM activities;
+SELECT * FROM activities WHERE id = num;
+SELECT COUNT(*) FROM activities WHERE created_at >= 'date';
+SELECT * FROM activities ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM api_tokens;
+SELECT * FROM api_tokens;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM pages;
+SELECT entity_type, COUNT(*) as count FROM activities GROUP BY entity_type;
+SELECT a.* FROM activities a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY entity_type ORDER BY id DESC) as rn FROM activities ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM activities WHERE created_at >= 'date' GROUP BY book_id ORDER BY created_at;
+SELECT extra, COUNT(*) as count FROM activities GROUP BY extra HAVING COUNT(*) > 1
+SELECT * FROM page_revisions LIMIT num
+SELECT * FROM activities LEFT JOIN books ON activities.book_id = books.id LEFT JOIN users ON activities.user_id = users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY entity_type ORDER BY id DESC) as rn FROM activities ) WHERE rn = 1;
+SELECT * FROM activities WHERE book_id > (SELECT AVG(book_id) FROM activities)
+WITH grouped AS ( SELECT entity_type, COUNT(*) as cnt FROM activities GROUP BY entity_type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM activities ORDER BY created_at;
+SELECT a.* FROM activities a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM activities LEFT JOIN api_tokens ON api_tokens.id = activities.id LEFT JOIN attachments ON attachments.id = activities.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY entity_type ORDER BY id DESC) as rn FROM activities ) WHERE rn <= num;

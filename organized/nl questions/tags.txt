@@ -1,0 +1,25 @@
+nl_question
+How many tags do we have in total?
+Show me all of our tags.
+Can you look up the tag with id=num?
+Find the tag where name=string.
+How many tags were created since created_at=date?
+What are the most recent tags ordered by name?
+How many taggables do we have in total?
+Show me all of our taggables.
+Show me each tag along with its related details from other tables.
+How many tags were added since created_at=date?
+Break down the tags by type — how many in each?
+Are there any tags that don't have a match in related tables?
+For each group, what are the top 3 tags?
+How did the number of tags change month over month?
+Which tags have duplicate or repeated values?
+Break down the taggables by taggable_type — how many in each?
+Pull together a report on tags joining all related tables.
+Who or what is the best in each group of tags?
+Which tags are above average compared to others in their group?
+Do a multi-step analysis: group tags, filter, then rank the results.
+Show the running total of tags over time based on created_at.
+Find tags that exist in one table but not in a related table.
+Rank all tags within their groups and show the top performers.
+Pull together a report on taggables joining all related tables.

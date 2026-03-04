@@ -1,0 +1,25 @@
+nl_question
+Show me all of our larametrics requests.
+How many metrics do we have in total?
+Show me all of our metrics.
+Can you look up the metric with id=num?
+Find the metric where email=string.
+How many metrics were created since created_at=date?
+What are the most recent metrics ordered by level?
+What are the most recent metrics ordered by model?
+Who are the most active users based on activity count?
+How many larametrics models do we have in total?
+Break down the metrics by level — how many in each?
+Are there any metrics that don't have a match in related tables?
+For each group, what are the top 3 metrics?
+How did the number of metrics change month over month?
+Which metrics have duplicate or repeated values?
+Break down the metrics by model — how many in each?
+Pull together a report on metrics joining all related tables.
+Who or what is the best in each group of metrics?
+Which metrics are above average compared to others in their group?
+Do a multi-step analysis: group metrics, filter, then rank the results.
+Show the running total of metrics over time based on created_at.
+Find metrics that exist in one table but not in a related table.
+Combine data from larametrics_logs, larametrics_models, and larametrics_notifications in a single report.
+Rank all metrics within their groups and show the top performers.

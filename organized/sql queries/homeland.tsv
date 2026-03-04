@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM replies LIMIT num
+SELECT team_id, COUNT(*) as member_count FROM team_users GROUP BY team_id;
+SELECT COUNT(*) FROM users;
+SELECT * FROM users;
+SELECT * FROM users WHERE id = num;
+SELECT * FROM users WHERE name = string;
+SELECT COUNT(*) FROM users WHERE created_at >= 'date';
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT t.*, c.* FROM users t LEFT JOIN users c ON c.id = t.location_id;
+SELECT COUNT(*) FROM topics;
+SELECT login, COUNT(*) as count FROM users GROUP BY login
+SELECT a.* FROM users a LEFT JOIN topics b ON a.id = b.user_id WHERE b.user_id IS NULL
+SELECT * FROM users ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM users WHERE created_at >= 'date' GROUP BY email_md5 ORDER BY created_at;
+SELECT email, COUNT(*) as count FROM users GROUP BY email HAVING COUNT(*) > 1
+SELECT * FROM users LEFT JOIN users ON users.id = users.location_id LEFT JOIN topics ON users.id = topics.user_id LEFT JOIN notes ON users.id = notes.user_id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY login ORDER BY id DESC) as rn FROM users ) WHERE rn = 1;
+SELECT * FROM users WHERE location_id > (SELECT AVG(location_id) FROM users)
+WITH grouped AS ( SELECT login, COUNT(*) as cnt FROM users GROUP BY login ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM users ORDER BY created_at;
+SELECT a.* FROM users a LEFT JOIN topics b ON a.id = b.user_id WHERE b.user_id IS NULL
+SELECT * FROM users LEFT JOIN user_ssos ON user_ssos.location_id = users.id LEFT JOIN topics ON topics.location_id = users.id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY state ORDER BY id DESC) as rn FROM users;

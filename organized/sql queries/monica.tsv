@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM statistics LIMIT num
+SELECT * FROM accounts LIMIT num;
+SELECT COUNT(*) FROM accounts;
+SELECT * FROM accounts;
+SELECT * FROM accounts WHERE id = num;
+SELECT COUNT(*) FROM accounts WHERE created_at >= 'date';
+SELECT * FROM accounts ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM activities;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT t.*, c.* FROM accounts t LEFT JOIN activities c ON c.account_id = t.id;
+SELECT COUNT(*) FROM contacts;
+SELECT has_access_to_paid_version_for_free, COUNT(*) as count FROM accounts GROUP BY has_access_to_paid_version_for_free;
+SELECT * FROM accounts WHERE id NOT IN (SELECT DISTINCT account_id FROM activities WHERE account_id IS NOT NULL);
+SELECT * FROM accounts ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM accounts WHERE created_at >= 'date' GROUP BY has_access_to_paid_version_for_free ORDER BY created_at;
+SELECT has_access_to_paid_version_for_free, COUNT(*) as count FROM accounts GROUP BY has_access_to_paid_version_for_free HAVING COUNT(*) > 1
+SELECT * FROM activities LEFT JOIN accounts ON activities.account_id = accounts.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY has_access_to_paid_version_for_free ORDER BY id DESC) as rn FROM accounts ) WHERE rn = 1;
+SELECT * FROM accounts WHERE has_access_to_paid_version_for_free > (SELECT AVG(has_access_to_paid_version_for_free) FROM accounts)
+WITH grouped AS ( SELECT has_access_to_paid_version_for_free, COUNT(*) as cnt FROM accounts GROUP BY has_access_to_paid_version_for_free ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM accounts ORDER BY created_at;
+SELECT * FROM accounts WHERE id NOT IN (SELECT DISTINCT account_id FROM activities WHERE account_id IS NOT NULL);
+SELECT * FROM accounts LEFT JOIN activities ON activities.id = accounts.account_id LEFT JOIN activity_contact ON activity_contact.id = accounts.account_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY api_key ORDER BY id DESC) as rn FROM accounts;

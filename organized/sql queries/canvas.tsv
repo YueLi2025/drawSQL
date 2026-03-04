@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM canvas_tags LIMIT num
+SELECT COUNT(*) FROM canvas_posts;
+SELECT * FROM canvas_posts;
+SELECT * FROM canvas_posts WHERE id = num;
+SELECT * FROM canvas_posts WHERE title = string;
+SELECT COUNT(*) FROM canvas_posts WHERE created_at >= 'date';
+SELECT * FROM canvas_posts ORDER BY created_at DESC LIMIT 1;
+SELECT * FROM canvas_posts ORDER BY created_at DESC LIMIT 1;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT t.*, c.* FROM canvas_posts t LEFT JOIN canvas_posts_tags c ON c.post_id = t.id;
+SELECT COUNT(*) FROM canvas_user_meta;
+SELECT slug, COUNT(*) as count FROM canvas_posts GROUP BY slug;
+SELECT * FROM canvas_posts WHERE id NOT IN (SELECT DISTINCT post_id FROM canvas_posts_tags WHERE post_id IS NOT NULL);
+SELECT * FROM canvas_posts ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM canvas_posts WHERE created_at >= 'date' GROUP BY title ORDER BY deleted_at;
+SELECT title, COUNT(*) as count FROM canvas_posts GROUP BY title HAVING COUNT(*) > 1
+SELECT * FROM canvas_posts_tags LEFT JOIN canvas_posts ON canvas_posts_tags.post_id = canvas_posts.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY slug ORDER BY id DESC) as rn FROM canvas_posts ) WHERE rn = 1;
+SELECT * FROM canvas_posts WHERE user_id > (SELECT AVG(user_id) FROM canvas_posts)
+WITH grouped AS ( SELECT slug, COUNT(*) as cnt FROM canvas_posts GROUP BY slug ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM canvas_posts ORDER BY created_at;
+SELECT * FROM canvas_posts WHERE id NOT IN (SELECT DISTINCT post_id FROM canvas_posts_tags WHERE post_id IS NOT NULL);
+SELECT * FROM canvas_posts LEFT JOIN canvas_posts_tags ON canvas_posts_tags.id = canvas_posts.post_id LEFT JOIN canvas_posts_topics ON canvas_posts_topics.id = canvas_posts.post_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY slug ORDER BY id DESC) as rn FROM canvas_posts;

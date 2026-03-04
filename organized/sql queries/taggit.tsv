@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM taggit_tag;
+SELECT * FROM taggit_tag;
+SELECT * FROM taggit_tag WHERE id = num;
+SELECT * FROM taggit_tag WHERE name = string;
+SELECT * FROM taggit_tag ORDER BY name DESC LIMIT 1;
+SELECT COUNT(*) FROM taggit_tag;
+SELECT * FROM taggit_tag;
+SELECT * FROM taggit_tag WHERE id = num;
+SELECT t.*, c.* FROM taggit_tag t LEFT JOIN taggit_taggeditem c ON c.tag_id = t.id;
+SELECT name, COUNT(*) as count FROM taggit_tag GROUP BY name;
+SELECT * FROM taggit_tag WHERE id NOT IN (SELECT DISTINCT tag_id FROM taggit_taggeditem WHERE tag_id IS NOT NULL);
+SELECT * FROM taggit_tag ORDER BY id DESC LIMIT 3;
+SELECT name, COUNT(*) as count FROM taggit_tag GROUP BY name HAVING COUNT(*) > 1
+SELECT name, COUNT(*) as count FROM taggit_tag GROUP BY name;
+SELECT * FROM taggit_tag WHERE id NOT IN (SELECT DISTINCT tag_id FROM taggit_taggeditem WHERE tag_id IS NOT NULL);
+SELECT * FROM taggit_tag ORDER BY id DESC LIMIT 3;
+SELECT * FROM taggit_taggeditem LEFT JOIN taggit_tag ON taggit_taggeditem.tag_id = taggit_tag.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM taggit_tag ) WHERE rn = 1;
+SELECT name, COUNT(*) as count FROM taggit_tag GROUP BY name HAVING COUNT(*) > (SELECT AVG(cnt) FROM (SELECT COUNT(*) as cnt FROM taggit_tag GROUP BY name) t)
+WITH grouped AS ( SELECT name, COUNT(*) as cnt FROM taggit_tag GROUP BY name ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT * FROM taggit_tag WHERE id NOT IN (SELECT DISTINCT tag_id FROM taggit_taggeditem WHERE tag_id IS NOT NULL);
+SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM taggit_tag;
+SELECT * FROM taggit_taggeditem LEFT JOIN taggit_tag ON taggit_taggeditem.tag_id = taggit_tag.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM taggit_tag ) WHERE rn = 1;

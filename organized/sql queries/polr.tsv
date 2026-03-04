@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM links LIMIT num
+SELECT COUNT(*) FROM clicks;
+SELECT * FROM clicks;
+SELECT * FROM clicks WHERE id = num;
+SELECT COUNT(*) FROM clicks WHERE created_at >= 'date';
+SELECT * FROM clicks ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM links;
+SELECT * FROM links;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM users;
+SELECT ip, COUNT(*) as count FROM clicks GROUP BY ip;
+SELECT a.* FROM clicks a LEFT JOIN links b ON a.link_id = b.id WHERE b.id IS NULL
+SELECT * FROM clicks ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM clicks WHERE created_at >= 'date' GROUP BY referer ORDER BY created_at;
+SELECT ip, COUNT(*) as count FROM clicks GROUP BY ip HAVING COUNT(*) > 1
+SELECT * FROM clicks;
+SELECT * FROM clicks LEFT JOIN links ON clicks.link_id = links.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY ip ORDER BY id DESC) as rn FROM clicks ) WHERE rn = 1;
+SELECT * FROM clicks WHERE link_id > (SELECT AVG(link_id) FROM clicks)
+WITH grouped AS ( SELECT ip, COUNT(*) as cnt FROM clicks GROUP BY ip ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM clicks ORDER BY created_at;
+SELECT a.* FROM clicks a LEFT JOIN links b ON a.link_id = b.id WHERE b.id IS NULL
+SELECT * FROM clicks LEFT JOIN links ON links.id = clicks.link_id LEFT JOIN users ON users.id = clicks.creator;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY ip ORDER BY id DESC) as rn FROM clicks;

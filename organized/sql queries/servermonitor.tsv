@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM checks WHERE created_at >= 'date';
+SELECT COUNT(*) FROM checks;
+SELECT * FROM checks;
+SELECT * FROM checks WHERE id = num;
+SELECT * FROM checks WHERE status != num AND enabled = num;
+SELECT COUNT(*) FROM checks WHERE created_at >= 'date';
+SELECT * FROM checks ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM hosts;
+SELECT host_id, COUNT(*) as check_count FROM checks GROUP BY host_id ORDER BY check_count DESC LIMIT 1
+SELECT COUNT(*) FROM hosts;
+SELECT type, COUNT(*) as count FROM checks GROUP BY type;
+SELECT a.* FROM checks a LEFT JOIN hosts b ON a.host_id = b.id WHERE b.id IS NULL
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY type ORDER BY id DESC) as rn FROM checks ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM checks WHERE created_at >= 'date' GROUP BY status ORDER BY last_ran_at;
+SELECT host_id, COUNT(*) as count FROM checks GROUP BY host_id HAVING COUNT(*) > 1
+SELECT * FROM checks;
+SELECT * FROM checks LEFT JOIN hosts ON checks.host_id = hosts.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY type ORDER BY id DESC) as rn FROM checks ) WHERE rn = 1;
+SELECT * FROM checks WHERE host_id > (SELECT AVG(host_id) FROM checks)
+WITH grouped AS ( SELECT type, COUNT(*) as cnt FROM checks GROUP BY type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM checks ORDER BY created_at;
+SELECT a.* FROM checks a LEFT JOIN hosts b ON a.host_id = b.id WHERE b.id IS NULL
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY type ORDER BY id DESC) as rn FROM checks ) WHERE rn <= num;
+SELECT * FROM checks LEFT JOIN hosts ON checks.host_id = hosts.id;

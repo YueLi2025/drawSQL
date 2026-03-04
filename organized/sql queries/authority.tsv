@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM auth_user WHERE date_joined >= 'date';
+SELECT COUNT(*) FROM authority_permission;
+SELECT * FROM authority_permission;
+SELECT * FROM authority_permission WHERE id = num;
+SELECT * FROM authority_permission WHERE codename = string;
+SELECT COUNT(*) FROM authority_permission WHERE date_requested >= 'date';
+SELECT * FROM authority_permission ORDER BY date_requested DESC LIMIT 1;
+SELECT COUNT(*) FROM auth_user;
+SELECT * FROM auth_user ORDER BY date_joined DESC LIMIT 1;
+SELECT COUNT(*) FROM django_content_type;
+SELECT content_type_id, COUNT(*) as count FROM authority_permission GROUP BY content_type_id;
+SELECT a.* FROM authority_permission a LEFT JOIN django_content_type b ON a.content_type_id = b.id WHERE b.id IS NULL
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY content_type_id ORDER BY id DESC) as rn FROM authority_permission ) WHERE rn <= num;
+SELECT strftime('string', date_requested) as period, COUNT(*) as count FROM authority_permission WHERE date_requested >= 'date' GROUP BY approved ORDER BY date_requested;
+SELECT codename, COUNT(*) as count FROM authority_permission GROUP BY codename HAVING COUNT(*) > 1
+SELECT * FROM authority_permission;
+SELECT * FROM authority_permission LEFT JOIN django_content_type ON authority_permission.content_type_id = django_content_type.id LEFT JOIN auth_group ON authority_permission.group_id = auth_group.id LEFT JOIN auth_user ON authority_permission.user_id = auth_user.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY content_type_id ORDER BY id DESC) as rn FROM authority_permission ) WHERE rn = 1;
+SELECT * FROM authority_permission WHERE object_id > (SELECT AVG(object_id) FROM authority_permission)
+WITH grouped AS ( SELECT content_type_id, COUNT(*) as cnt FROM authority_permission GROUP BY content_type_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY date_requested) as running_count FROM authority_permission ORDER BY date_requested;
+SELECT a.* FROM authority_permission a LEFT JOIN django_content_type b ON a.content_type_id = b.id WHERE b.id IS NULL
+SELECT * FROM authority_permission LEFT JOIN auth_user ON auth_user.id = authority_permission.user_id LEFT JOIN auth_group ON auth_group.id = authority_permission.group_id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY content_type_id ORDER BY id DESC) as rn FROM authority_permission ) WHERE rn <= num;

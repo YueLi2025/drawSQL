@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many api keys do we have in total?
+Show me all of our api keys.
+Can you look up the api key with id=num?
+Find the api key where name=string.
+How many api keys were created since created_at=date?
+What are the most recent api keys ordered by name?
+How many api log do we have in total?
+Who are the most active users based on activity count?
+How many users do we have in total?
+Break down the api keys by name — how many in each?
+Are there any api keys that don't have a match in related tables?
+For each group, what are the top 3 api keys?
+How did the number of api keys change month over month?
+Which api keys have duplicate or repeated values?
+Show me all of our api log.
+Pull together a report on api keys joining all related tables.
+Who or what is the best in each group of api keys?
+Which api keys are above average compared to others in their group?
+Do a multi-step analysis: group api keys, filter, then rank the results.
+Show the running total of api keys over time based on created_at.
+Find api keys that exist in one table but not in a related table.
+Combine data from api_keys, api_log, and password_resets in a single report.
+Rank all api keys within their groups and show the top performers.

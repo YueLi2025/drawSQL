@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM users WHERE id >= 'date';
+SELECT COUNT(*) FROM heya_campaign_memberships;
+SELECT * FROM heya_campaign_memberships;
+SELECT * FROM heya_campaign_memberships WHERE id = num;
+SELECT COUNT(*) FROM heya_campaign_memberships WHERE created_at >= 'date';
+SELECT * FROM heya_campaign_memberships ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM heya_campaign_receipts;
+SELECT * FROM heya_campaign_receipts;
+SELECT * FROM users ORDER BY id DESC LIMIT 1;
+SELECT COUNT(*) FROM users;
+SELECT user_type, COUNT(*) as count FROM heya_campaign_memberships GROUP BY user_type;
+SELECT a.* FROM heya_campaign_memberships a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY user_type ORDER BY id DESC) as rn FROM heya_campaign_memberships ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM heya_campaign_memberships WHERE created_at >= 'date' GROUP BY concurrent ORDER BY created_at;
+SELECT user_type, COUNT(*) as count FROM heya_campaign_memberships GROUP BY user_type HAVING COUNT(*) > 1
+SELECT COUNT(*) FROM heya_campaign_receipts WHERE created_at >= 'date';
+SELECT * FROM heya_campaign_memberships LEFT JOIN users ON heya_campaign_memberships.user_id = users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY user_type ORDER BY id DESC) as rn FROM heya_campaign_memberships ) WHERE rn = 1;
+SELECT * FROM heya_campaign_memberships WHERE user_id > (SELECT AVG(user_id) FROM heya_campaign_memberships)
+WITH grouped AS ( SELECT user_type, COUNT(*) as cnt FROM heya_campaign_memberships GROUP BY user_type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM heya_campaign_memberships ORDER BY created_at;
+SELECT a.* FROM heya_campaign_memberships a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM heya_campaign_memberships LEFT JOIN heya_campaign_receipts ON heya_campaign_receipts.id = heya_campaign_memberships.id LEFT JOIN users ON users.id = heya_campaign_memberships.user_id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY user_type ORDER BY id DESC) as rn FROM heya_campaign_memberships ) WHERE rn <= num;

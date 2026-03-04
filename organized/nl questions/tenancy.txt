@@ -1,0 +1,25 @@
+nl_question
+How many websites do we have in total?
+Show me all of our websites.
+Can you look up the website with id=num?
+How many websites were created since created_at=date?
+What are the most recent websites ordered by uuid?
+How many hostnames do we have in total?
+Show me all of our hostnames.
+Can you look up the hostname with id=num?
+Show me each website along with its related details from other tables.
+How many websites were added since created_at=date?
+Break down the websites by uuid — how many in each?
+Are there any websites that don't have a match in related tables?
+For each group, what are the top 3 websites?
+How did the number of websites change month over month?
+Which websites have duplicate or repeated values?
+How many hostnames were added since created_at=date?
+Pull together a report on websites joining all related tables.
+Who or what is the best in each group of websites?
+Which websites are above average compared to others in their group?
+Do a multi-step analysis: group websites, filter, then rank the results.
+Show the running total of websites over time based on created_at.
+Find websites that exist in one table but not in a related table.
+Rank all websites within their groups and show the top performers.
+Pull together a report on hostnames joining all related tables.

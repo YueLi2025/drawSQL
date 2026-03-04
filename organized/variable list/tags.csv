@@ -1,0 +1,11 @@
+table_name,column_name,column_type
+tags,id,num
+tags,name,string
+tags,slug,string
+tags,type,string
+tags,order_column,num
+tags,created_at,date
+tags,updated_at,date
+taggables,tag_id,num
+taggables,taggable_id,num
+taggables,taggable_type,string

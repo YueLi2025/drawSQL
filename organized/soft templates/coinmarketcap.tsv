@@ -3,15 +3,15 @@ SELECT variable FROM variable WHERE variable = variable
 SELECT variable FROM variable WHERE variable = variable
 SELECT variable FROM variable WHERE variable LIKE variable AND variable = variable
 SELECT variable FROM variable WHERE variable(variable) - variable(replace(variable, variable, variable)) = variable
-SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable LIKE variable AND variable = ( SELECT MAX(variable) FROM variable WHERE STRFTIME(variable, variable) = variable )
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable LIKE variable AND variable = ( SELECT MAX(variable) FROM variable WHERE strftime(string, variable) = variable )
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable BETWEEN variable AND variable UNION ALL SELECT AVG(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable BETWEEN variable AND variable
-SELECT variable, variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND STRFTIME(variable, variable) = variable
+SELECT variable, variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND strftime(string, variable) = variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable DESC LIMIT variable
 SELECT variable, variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = ( SELECT MAX(variable) FROM variable )
-SELECT CAST(SUM(variable) AS variable) / variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND STRFTIME(variable, variable) = variable
+SELECT CAST(SUM(variable) AS variable) / variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND strftime(string, variable) = variable
 SELECT variable, MAX(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable DESC LIMIT variable
-SELECT AVG(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND STRFTIME(variable, variable) = variable
+SELECT AVG(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND strftime(string, variable) = variable
 SELECT variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable LIMIT variable
 SELECT variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = ( SELECT MIN(variable) FROM variable )
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
@@ -23,16 +23,16 @@ SELECT variable - variable FROM variable AS variable INNER JOIN variable AS vari
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = ( SELECT MAX(variable) FROM variable WHERE variable = variable )
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable > variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable IN (variable, variable) ORDER BY variable DESC LIMIT variable
-SELECT AVG(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE STRFTIME(variable, variable) = variable AND variable = variable
-SELECT COUNT(variable) variable FROM variable WHERE STRFTIME(variable, variable) = variable UNION ALL SELECT variable FROM variable WHERE STRFTIME(variable, variable) = variable
+SELECT AVG(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE strftime(string, variable) = variable AND variable = variable
+SELECT COUNT(variable) variable FROM variable WHERE strftime(string, variable) = variable UNION ALL SELECT variable FROM variable WHERE strftime(string, variable) = variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = ( SELECT MAX(variable) FROM variable )
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = ( SELECT MAX(variable) FROM variable )
-SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE STRFTIME(variable, variable) = variable AND variable IS NULL
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE strftime(string, variable) = variable AND variable IS NULL
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable DESC LIMIT variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable DESC LIMIT variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable <= variable
 SELECT DISTINCT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND (variable IS NULL OR variable = variable)
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable DESC LIMIT variable
-SELECT COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND STRFTIME(variable, variable) = variable
+SELECT COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND strftime(string, variable) = variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable > variable

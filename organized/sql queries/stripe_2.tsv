@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM subscriptions;
+SELECT * FROM receipts LIMIT num
+SELECT COUNT(*) FROM subscriptions;
+SELECT * FROM subscriptions;
+SELECT * FROM subscriptions WHERE id = num;
+SELECT * FROM subscriptions WHERE name = string;
+SELECT COUNT(*) FROM subscriptions WHERE updated_at >= 'date';
+SELECT * FROM subscriptions WHERE quantity BETWEEN num AND num
+SELECT * FROM subscriptions LIMIT num;
+SELECT * FROM users ORDER BY trial_ends_at DESC LIMIT 1;
+SELECT t.*, c.* FROM subscriptions t LEFT JOIN subscription_items c ON c.subscription_id = t.id;
+SELECT SUM(quantity) as total, AVG(quantity) as average FROM subscriptions;
+SELECT * FROM subscriptions ORDER BY quantity DESC LIMIT num;
+SELECT COUNT(*) FROM subscription_items;
+SELECT user_id, COUNT(*) as count FROM subscriptions GROUP BY user_id;
+SELECT * FROM subscriptions WHERE id NOT IN (SELECT DISTINCT subscription_id FROM subscription_items WHERE subscription_id IS NOT NULL);
+SELECT * FROM subscriptions LEFT JOIN users ON subscriptions.user_id = users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY quantity DESC) as rn FROM subscriptions ) WHERE rn = 1;
+SELECT * FROM subscriptions WHERE user_id > (SELECT AVG(user_id) FROM subscriptions)
+WITH grouped AS ( SELECT user_id, COUNT(*) as cnt FROM subscriptions GROUP BY user_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, SUM(quantity) OVER (ORDER BY updated_at) as running_total FROM subscriptions ORDER BY updated_at;
+SELECT * FROM subscriptions WHERE id NOT IN (SELECT DISTINCT subscription_id FROM subscription_items WHERE subscription_id IS NOT NULL);
+SELECT * FROM subscriptions LEFT JOIN users ON users.id = subscriptions.subscription_id LEFT JOIN subscription_items ON subscription_items.id = subscriptions.subscription_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY quantity DESC) as rn FROM subscriptions;

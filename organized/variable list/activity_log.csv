@@ -1,0 +1,11 @@
+table_name,column_name,column_type
+activity_log,id,num
+activity_log,log_name,string
+activity_log,description,string
+activity_log,subject_id,num
+activity_log,subject_type,string
+activity_log,causer_id,num
+activity_log,causer_type,string
+activity_log,properties,string
+activity_log,created_at,date
+activity_log,updated_at,date

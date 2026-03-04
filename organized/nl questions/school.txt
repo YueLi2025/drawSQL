@@ -1,0 +1,25 @@
+nl_question
+What rooms have price between num and num?
+Show me all of our grades.
+How many account sectors do we have in total?
+Show me all of our account sectors.
+Can you look up the account sector with id=num?
+Find the account sector where name=string.
+How many account sectors were created since created_at=date?
+What are the most recent account sectors ordered by name?
+Who are the most active users based on activity count?
+How many courses do we have in total?
+Break down the account sectors by type — how many in each?
+Are there any account sectors that don't have a match in related tables?
+For each group, what are the top 3 account sectors?
+How did the number of account sectors change month over month?
+Which account sectors have duplicate or repeated values?
+What's our total and average amount across all accounts?
+Pull together a report on account sectors joining all related tables.
+Who or what is the best in each group of account sectors?
+Which account sectors are above average compared to others in their group?
+Do a multi-step analysis: group account sectors, filter, then rank the results.
+Show the running total of account sectors over time based on created_at.
+Find account sectors that exist in one table but not in a related table.
+Combine data from account_sectors, accounts, and attendances in a single report.
+Rank all account sectors within their groups and show the top performers.

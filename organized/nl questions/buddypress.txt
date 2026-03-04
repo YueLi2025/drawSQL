@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many members are on each team?
+How many bp notifications do we have in total?
+Show me all of our bp notifications.
+Can you look up the bp notification with id=num?
+Find the bp notification where component_name=string.
+How many bp notifications were created since date_notified=date?
+What are the most recent bp notifications ordered by user_id?
+Who are the most active users based on activity count?
+Show me each bp notification along with its related details from other tables.
+How many bp activity do we have in total?
+Break down the bp notifications by user_id — how many in each?
+Are there any bp notifications that don't have a match in related tables?
+For each group, what are the top 3 bp notifications?
+How did the number of bp notifications change month over month?
+Which bp notifications have duplicate or repeated values?
+Pull together a report on bp notifications joining all related tables.
+Who or what is the best in each group of bp notifications?
+Which bp notifications are above average compared to others in their group?
+Do a multi-step analysis: group bp notifications, filter, then rank the results.
+Show the running total of bp notifications over time based on date_notified.
+Find bp notifications that exist in one table but not in a related table.
+Combine data from bp_notifications, bp_notifications_meta, and bp_activity in a single report.
+Rank all bp notifications within their groups and show the top performers.

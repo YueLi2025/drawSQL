@@ -150,7 +150,7 @@ SELECT variable, variable FROM variable AS variable INNER JOIN variable AS varia
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable > variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable LIMIT variable
 SELECT AVG(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
-SELECT COUNT(variable) FROM variable WHERE STRFTIME(variable, variable) = variable AND variable = variable AND variable = variable
+SELECT COUNT(variable) FROM variable WHERE strftime(string, variable) = variable AND variable = variable AND variable = variable
 SELECT SUM(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
 SELECT variable FROM ( SELECT variable, SUM(variable) AS variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable < variable GROUP BY variable ) AS variable ORDER BY variable LIMIT variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable ORDER BY variable DESC LIMIT variable

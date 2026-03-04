@@ -1,0 +1,25 @@
+nl_question
+How many permissions do we have in total?
+Show me all of our permissions.
+Can you look up the permission with id=num?
+Find the permission where name=string.
+How many permissions were created since created_at=date?
+What are the most recent permissions ordered by name?
+How many roles do we have in total?
+Show me all of our roles.
+Show me each permission along with its related details from other tables.
+How many model has permissions do we have in total?
+Break down the permissions by name — how many in each?
+Are there any permissions that don't have a match in related tables?
+For each group, what are the top 3 permissions?
+How did the number of permissions change month over month?
+Which permissions have duplicate or repeated values?
+Show me each role along with its related details from other tables.
+Pull together a report on permissions joining all related tables.
+Who or what is the best in each group of permissions?
+Which permissions are above average compared to others in their group?
+Do a multi-step analysis: group permissions, filter, then rank the results.
+Show the running total of permissions over time based on created_at.
+Find permissions that exist in one table but not in a related table.
+Combine data from permissions, roles, and model_has_permissions in a single report.
+Rank all permissions within their groups and show the top performers.

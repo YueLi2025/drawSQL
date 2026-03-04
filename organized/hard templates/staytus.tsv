@@ -1,0 +1,25 @@
+hard_template
+SELECT COUNT ( * ) FROM table_name ;
+SELECT * FROM table_name WHERE col_name = num ;
+SELECT COUNT ( * ) FROM table_name ;
+SELECT * FROM table_name ;
+SELECT * FROM table_name WHERE col_name = num ;
+SELECT * FROM table_name WHERE col_name = string ;
+SELECT COUNT ( * ) FROM table_name WHERE col_name >= 'date' ;
+SELECT * FROM table_name ORDER BY col_name DESC LIMIT num ;
+SELECT * FROM table_name ORDER BY col_name DESC LIMIT num ;
+SELECT COUNT ( * ) FROM table_name ;
+SELECT col_name , COUNT ( * ) as column_alias0 FROM table_name GROUP BY col_name ;
+SELECT * FROM table_name WHERE col_name NOT IN ( SELECT api_tokens_id FROM table_name WHERE api_tokens_id IS NOT others )
+SELECT * FROM table_name ORDER BY col_name DESC LIMIT num ;
+SELECT strftime ( 'string' , col_name ) as column_alias0 , COUNT ( * ) as column_alias1 FROM table_name WHERE col_name >= 'date' GROUP BY col_name ORDER BY col_name ;
+SELECT col_name , COUNT ( * ) as column_alias0 FROM table_name GROUP BY col_name HAVING COUNT ( * ) > num
+SELECT * FROM table_name LIMIT num
+SELECT * FROM table_name LEFT JOIN table_name ON table_name . col_name = table_name . col_name LEFT JOIN table_name ON table_name . col_name = table_name . col_name ;
+SELECT * FROM ( SELECT * , ROW_NUMBER ( ) OVER ( PARTITION BY col_name ORDER BY col_name DESC ) as column_alias0 FROM table_name ) WHERE column_alias0 = num ;
+SELECT col_name , COUNT ( * ) as column_alias0 FROM table_name GROUP BY col_name HAVING COUNT ( * ) > ( SELECT AVG ( column_alias1 ) FROM ( SELECT COUNT ( * ) as column_alias1 FROM table_name GROUP BY col_name ) t )
+WITH CTE AS ( SELECT col_name , COUNT ( * ) as column_alias0 FROM table_name GROUP BY col_name ) SELECT * FROM CTE WHERE column_alias0 > num ORDER BY column_alias0 DESC ;
+SELECT * , COUNT ( * ) OVER ( ORDER BY col_name ) as column_alias0 FROM table_name ORDER BY col_name ;
+SELECT * FROM table_name WHERE col_name NOT IN ( SELECT api_tokens_id FROM table_name WHERE api_tokens_id IS NOT others )
+SELECT * FROM table_name LEFT JOIN table_name ON table_name . col_name = table_name . col_name LEFT JOIN table_name ON table_name . col_name = table_name . col_name ;
+SELECT * , ROW_NUMBER ( ) OVER ( PARTITION BY col_name ORDER BY col_name DESC ) as column_alias0 FROM table_name ;

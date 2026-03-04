@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many checks do we have in total?
+Show me all of our checks.
+Can you look up the check with id=num?
+Which checks have status=string?
+How many checks were created since created_at=date?
+What are the most recent checks ordered by host_id?
+How many hosts do we have in total?
+Who are the most active users based on activity count?
+How many hosts do we have in total?
+Break down the checks by type — how many in each?
+Are there any checks that don't have a match in related tables?
+For each group, what are the top 3 checks?
+How did the number of checks change month over month?
+Which checks have duplicate or repeated values?
+Show me each host along with its related details from other tables.
+Pull together a report on checks joining all related tables.
+Who or what is the best in each group of checks?
+Which checks are above average compared to others in their group?
+Do a multi-step analysis: group checks, filter, then rank the results.
+Show the running total of checks over time based on created_at.
+Find checks that exist in one table but not in a related table.
+Rank all checks within their groups and show the top performers.
+Pull together a report on hosts joining all related tables.

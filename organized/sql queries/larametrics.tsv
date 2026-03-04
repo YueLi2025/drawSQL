@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM larametrics_requests LIMIT num
+SELECT COUNT(*) FROM larametrics_logs;
+SELECT * FROM larametrics_logs;
+SELECT * FROM larametrics_logs WHERE id = num;
+SELECT * FROM larametrics_logs WHERE email = string;
+SELECT COUNT(*) FROM larametrics_logs WHERE created_at >= 'date';
+SELECT * FROM larametrics_logs ORDER BY created_at DESC LIMIT 1;
+SELECT * FROM larametrics_logs ORDER BY created_at DESC LIMIT 1;
+SELECT * FROM users ORDER BY id DESC LIMIT 1;
+SELECT COUNT(*) FROM larametrics_models;
+SELECT level, COUNT(*) as count FROM larametrics_logs GROUP BY level;
+SELECT a.* FROM larametrics_logs a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM larametrics_logs ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM larametrics_logs WHERE created_at >= 'date' GROUP BY message ORDER BY created_at;
+SELECT email, COUNT(*) as count FROM larametrics_logs GROUP BY email HAVING COUNT(*) > 1
+SELECT level, COUNT(*) as count FROM larametrics_logs GROUP BY level;
+SELECT * FROM larametrics_logs LEFT JOIN users ON larametrics_logs.user_id = users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY level ORDER BY id DESC) as rn FROM larametrics_logs ) WHERE rn = 1;
+SELECT * FROM larametrics_logs WHERE user_id > (SELECT AVG(user_id) FROM larametrics_logs)
+WITH grouped AS ( SELECT level, COUNT(*) as cnt FROM larametrics_logs GROUP BY level ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM larametrics_logs ORDER BY created_at;
+SELECT a.* FROM larametrics_logs a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM larametrics_logs LEFT JOIN larametrics_models ON larametrics_models.id = larametrics_logs.id LEFT JOIN larametrics_notifications ON larametrics_notifications.id = larametrics_logs.id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY level ORDER BY id DESC) as rn FROM larametrics_logs;

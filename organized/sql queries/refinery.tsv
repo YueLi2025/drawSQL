@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM users WHERE id >= 'date';
+SELECT COUNT(*) FROM ticketit_statuses;
+SELECT * FROM ticketit_statuses;
+SELECT * FROM ticketit WHERE id = num;
+SELECT * FROM ticketit_statuses WHERE name = 'string
+SELECT * FROM ticketit_statuses ORDER BY name DESC LIMIT 1;
+SELECT COUNT(*) FROM ticketit_priorities;
+SELECT * FROM ticketit_priorities;
+SELECT * FROM users ORDER BY id DESC LIMIT 1;
+SELECT t.*, c.* FROM ticketit t LEFT JOIN ticketit_comments c ON c.ticket_id = t.id;
+SELECT name, COUNT(*) as count FROM ticketit_statuses GROUP BY name;
+SELECT * FROM ticketit_statuses WHERE id NOT IN (SELECT DISTINCT status_id FROM ticketit WHERE status_id IS NOT NULL);
+SELECT * FROM ticketit_statuses ORDER BY id DESC LIMIT 3;
+SELECT name, COUNT(*) as count FROM ticketit_statuses GROUP BY name HAVING COUNT(*) > 1
+SELECT t.*, c.* FROM ticketit t LEFT JOIN ticketit_comments c ON c.ticket_id = t.id;
+SELECT name, COUNT(*) as count FROM ticketit_priorities GROUP BY name;
+SELECT * FROM ticketit_categories_users LEFT JOIN users ON ticketit_categories_users.user_id = users.id LEFT JOIN ticketit_categories ON ticketit_categories_users.category_id = ticketit_categories.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM ticketit_statuses ) WHERE rn = 1;
+SELECT * FROM ticketit_settings WHERE value > (SELECT AVG(value) FROM ticketit_settings);
+WITH grouped AS ( SELECT name, COUNT(*) as cnt FROM ticketit_statuses GROUP BY name ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT * FROM ticketit_statuses WHERE id NOT IN (SELECT DISTINCT status_id FROM ticketit WHERE status_id IS NOT NULL);
+SELECT * FROM ticketit_statuses LEFT JOIN ticketit_priorities ON ticketit_priorities.id = ticketit_statuses.status_id LEFT JOIN ticketit_categories ON ticketit_categories.id = ticketit_statuses.category_id LEFT JOIN ticketit ON ticketit.id = ticketit_statuses.status_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM ticketit_statuses;
+SELECT * FROM ticketit_categories_users LEFT JOIN users ON ticketit_categories_users.user_id = users.id LEFT JOIN ticketit_categories ON ticketit_categories_users.category_id = ticketit_categories.id;

@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM posts LIMIT num
+SELECT aspect_id, COUNT(*) as member_count FROM aspect_memberships GROUP BY aspect_id;
+SELECT COUNT(*) FROM account_deletions;
+SELECT * FROM account_deletions;
+SELECT * FROM account_deletions WHERE id = num;
+SELECT COUNT(*) FROM account_deletions WHERE completed_at >= 'date';
+SELECT * FROM account_deletions ORDER BY completed_at DESC LIMIT 1;
+SELECT COUNT(*) FROM account_deletions;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM o_auth_applications;
+SELECT person_id, COUNT(*) as count FROM account_deletions GROUP BY person_id;
+SELECT a.* FROM account_deletions a LEFT JOIN contacts b ON a.contact_id = b.id WHERE b.id IS NULL
+SELECT * FROM account_deletions ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', completed_at) as period, COUNT(*) as count FROM account_deletions WHERE completed_at >= 'date' GROUP BY person_id ORDER BY completed_at;
+SELECT person_id, COUNT(*) as count FROM account_deletions GROUP BY person_id HAVING COUNT(*) > 1
+SELECT COUNT(*) FROM account_deletions WHERE completed_at >= 'date';
+SELECT a.* FROM aspects a JOIN aspect_visibilities b ON b.aspect_id = a.id JOIN aspect_memberships c ON c.aspect_id = a.id
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY person_id ORDER BY id DESC) as rn FROM account_deletions ) WHERE rn = 1;
+SELECT * FROM account_deletions WHERE person_id > (SELECT AVG(person_id) FROM account_deletions)
+WITH grouped AS ( SELECT person_id, COUNT(*) as cnt FROM account_deletions GROUP BY person_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY completed_at) as running_count FROM account_deletions ORDER BY completed_at;
+SELECT a.* FROM account_deletions a LEFT JOIN contacts b ON a.contact_id = b.id WHERE b.id IS NULL
+SELECT * FROM account_deletions LEFT JOIN aspect_memberships ON aspect_memberships.id = account_deletions.id LEFT JOIN aspect_visibilities ON aspect_visibilities.id = account_deletions.id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY person_id ORDER BY id DESC) as rn FROM account_deletions

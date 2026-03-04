@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM bp_notifications WHERE date_notified >= 'date';
+SELECT group_id, COUNT(*) as member_count FROM bp_groups_members GROUP BY group_id;
+SELECT COUNT(*) FROM bp_notifications;
+SELECT * FROM bp_notifications;
+SELECT * FROM bp_notifications WHERE id = num;
+SELECT * FROM bp_notifications WHERE component_name = string;
+SELECT COUNT(*) FROM bp_notifications WHERE date_notified >= 'date';
+SELECT * FROM bp_notifications ORDER BY date_notified DESC LIMIT 1;
+SELECT user_id, COUNT(*) as activity_count FROM bp_activity GROUP BY user_id ORDER BY activity_count DESC LIMIT 1
+SELECT t.*, c.* FROM bp_notifications t LEFT JOIN bp_notifications_meta c ON c.notification_id = t.id;
+SELECT COUNT(*) FROM bp_activity;
+SELECT user_id, COUNT(*) as count FROM bp_notifications GROUP BY user_id;
+SELECT * FROM bp_notifications WHERE id NOT IN (SELECT DISTINCT notification_id FROM bp_notifications_meta WHERE notification_id IS NOT NULL);
+SELECT * FROM bp_notifications ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', date_notified) as period, COUNT(*) as count FROM bp_notifications WHERE date_notified >= 'date' GROUP BY component_name ORDER BY date_notified;
+SELECT user_id, COUNT(*) as count FROM bp_notifications GROUP BY user_id HAVING COUNT(*) > 1
+SELECT a.* FROM bp_notifications a JOIN wp_users b ON a.initiator_user_id = b.id JOIN bp_notifications_meta c ON c.notification_id = a.id
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY id DESC) as rn FROM bp_notifications ) WHERE rn = 1;
+SELECT * FROM bp_notifications WHERE user_id > (SELECT AVG(user_id) FROM bp_notifications)
+WITH grouped AS ( SELECT user_id, COUNT(*) as cnt FROM bp_notifications GROUP BY user_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY date_notified) as running_count FROM bp_notifications ORDER BY date_notified;
+SELECT * FROM bp_notifications WHERE id NOT IN (SELECT DISTINCT notification_id FROM bp_notifications_meta WHERE notification_id IS NOT NULL);
+SELECT * FROM bp_notifications LEFT JOIN bp_notifications_meta ON bp_notifications_meta.id = bp_notifications.notification_id LEFT JOIN bp_activity ON bp_activity.id = bp_notifications.activity_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY component_name ORDER BY id DESC) as rn FROM bp_notifications;

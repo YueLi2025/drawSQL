@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM tags;
+SELECT * FROM tags;
+SELECT * FROM tags WHERE id = num;
+SELECT * FROM tags WHERE name = string;
+SELECT COUNT(*) FROM tags WHERE created_at >= 'date';
+SELECT * FROM tags ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM taggings;
+SELECT * FROM taggings;
+SELECT t.*, c.* FROM tags t LEFT JOIN taggings c ON c.taggable_id = t.id;
+SELECT COUNT(*) FROM tags WHERE created_at >= 'date';
+SELECT name, COUNT(*) as count FROM tags GROUP BY name;
+SELECT * FROM tags WHERE id NOT IN (SELECT DISTINCT taggable_id FROM taggings WHERE taggable_id IS NOT NULL);
+SELECT * FROM tags ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM tags WHERE created_at >= 'date' GROUP BY name ORDER BY created_at;
+SELECT name, COUNT(*) as count FROM tags GROUP BY name HAVING COUNT(*) > 1
+SELECT COUNT(*) FROM taggings WHERE created_at >= 'date';
+SELECT * FROM taggings LEFT JOIN tags ON taggings.taggable_id = tags.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM tags ) WHERE rn = 1;
+SELECT * FROM tags WHERE taggings_count > (SELECT AVG(taggings_count) FROM tags)
+WITH grouped AS ( SELECT name, COUNT(*) as cnt FROM tags GROUP BY name ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM tags ORDER BY created_at;
+SELECT * FROM tags WHERE id NOT IN (SELECT DISTINCT taggable_id FROM taggings WHERE taggable_id IS NOT NULL);
+SELECT *, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) as rn FROM tags;
+SELECT * FROM taggings LEFT JOIN tags ON taggings.taggable_id = tags.id;

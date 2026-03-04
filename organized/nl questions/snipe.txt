@@ -1,0 +1,25 @@
+nl_question
+Show me all of our assets.
+How many accessories do we have in total?
+Show me all of our accessories.
+Can you look up the accessory with id=num?
+Find the accessory where name=string.
+How many accessories were created since created_at=date?
+What are the most recent accessories ordered by name?
+How many users do we have in total?
+Who are the most active users based on activity count?
+Show me each accessory along with its related details from other tables.
+How many settings do we have in total?
+Break down the accessories by category_id — how many in each?
+Are there any accessories that don't have a match in related tables?
+For each group, what are the top 3 accessories?
+How did the number of accessories change month over month?
+Which accessories have duplicate or repeated values?
+Pull together a report on accessories joining all related tables.
+Who or what is the best in each group of accessories?
+Which accessories are above average compared to others in their group?
+Do a multi-step analysis: group accessories, filter, then rank the results.
+Show the running total of accessories over time based on created_at.
+Find accessories that exist in one table but not in a related table.
+Combine data from accessories, accessories_users, and action_logs in a single report.
+Rank all accessories within their groups and show the top performers.

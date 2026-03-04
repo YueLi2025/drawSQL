@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many oauth access grants do we have in total?
+Show me all of our oauth access grants.
+Can you look up the oauth access grant with id=num?
+How many oauth access grants were created since created_at=date?
+What are the most recent oauth access grants ordered by resource_owner_id?
+How many oauth access tokens do we have in total?
+Show me all of our oauth access tokens.
+Who are the most active users based on activity count?
+How many oauth applications do we have in total?
+Break down the oauth access grants by resource_owner_id — how many in each?
+Are there any oauth access grants that don't have a match in related tables?
+For each group, what are the top 3 oauth access grants?
+How did the number of oauth access grants change month over month?
+Which oauth access grants have duplicate or repeated values?
+Show me all of our users.
+Pull together a report on oauth access grants joining all related tables.
+Who or what is the best in each group of oauth access grants?
+Which oauth access grants are above average compared to others in their group?
+Do a multi-step analysis: group oauth access grants, filter, then rank the results.
+Show the running total of oauth access grants over time based on created_at.
+Find oauth access grants that exist in one table but not in a related table.
+Combine data from oauth_access_grants, oauth_access_tokens, and oauth_applications in a single report.
+Rank all oauth access grants within their groups and show the top performers.

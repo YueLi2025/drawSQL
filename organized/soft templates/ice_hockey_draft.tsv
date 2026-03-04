@@ -5,7 +5,7 @@ SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON var
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
 SELECT COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable > variable
 SELECT COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable > variable AND variable = variable
-SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = ( SELECT MAX(variable) FROM variable variable )
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = ( SELECT MAX(variable) FROM variable )
 SELECT ( SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ) - ( SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable )
 SELECT COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable > variable AND variable = variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable > variable AND variable = variable
@@ -49,16 +49,16 @@ SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON var
 SELECT CAST(COUNT(CASE WHEN variable IN (variable, variable, variable, variable) THEN variable ELSE NULL END) AS variable) * variable / COUNT(variable) FROM variable WHERE variable = variable
 SELECT variable FROM variable WHERE variable = variable
 SELECT DISTINCT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
-SELECT COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable > variable AND strftime(variable, variable) = variable
+SELECT COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable > variable AND strftime(string, variable) = variable
 SELECT DISTINCT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
-SELECT COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND strftime(variable, variable) = variable
+SELECT COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND strftime(string, variable) = variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable AND variable = variable AND variable = variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable > variable
 SELECT variable FROM ( SELECT variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable DESC ) AS variable WHERE variable = ( SELECT MAX(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable )
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable > variable AND variable = ( SELECT MAX(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable > variable )
 SELECT CAST(variable AS variable) / (CAST(variable AS variable) / variable * (CAST(variable AS variable) / variable)) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
-SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = ( SELECT variable FROM variable variable ORDER BY variable DESC LIMIT variable )
+SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = ( SELECT variable FROM variable ORDER BY variable DESC LIMIT variable )
 SELECT variable - variable AS variable FROM ( SELECT variable, variable AS variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable AND variable = variable ) AS variable INNER JOIN ( SELECT variable, variable AS variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable AND variable = variable ) AS variable ON variable = variable
 SELECT CAST(COUNT(CASE WHEN variable = variable AND variable > variable THEN variable ELSE NULL END) AS variable) * variable / COUNT(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable
 SELECT DISTINCT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable

@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM account_emailconfirmation WHERE created >= 'date';
+SELECT team_id, COUNT(*) as member_count FROM teams_invitation GROUP BY team_id;
+SELECT COUNT(*) FROM account_emailaddress;
+SELECT * FROM account_emailaddress;
+SELECT * FROM account_emailaddress WHERE id = num;
+SELECT * FROM account_emailaddress WHERE email = string;
+SELECT * FROM account_emailaddress ORDER BY email DESC LIMIT 1;
+SELECT COUNT(*) FROM account_emailconfirmation;
+SELECT id, COUNT(*) OVER (ORDER BY id DESC) as rank FROM account_emailaddress ORDER BY id DESC LIMIT 1
+SELECT t.*, c.* FROM account_emailaddress t LEFT JOIN account_emailconfirmation c ON c.email_address_id = t.id;
+SELECT email, COUNT(*) as count FROM account_emailaddress GROUP BY email;
+SELECT * FROM account_emailaddress WHERE id NOT IN (SELECT DISTINCT email_address_id FROM account_emailconfirmation WHERE email_address_id IS NOT NULL);
+SELECT * FROM account_emailaddress ORDER BY id DESC LIMIT 3;
+SELECT id, COUNT(*) as count FROM account_emailaddress GROUP BY id HAVING COUNT(*) > 1
+SELECT COUNT(*) FROM account_emailconfirmation WHERE created >= 'date';
+SELECT created, COUNT(*) as count FROM account_emailconfirmation GROUP BY created;
+SELECT * FROM account_emailaddress LEFT JOIN users_customuser ON account_emailaddress.user_id = users_customuser.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY email ORDER BY id DESC) as rn FROM account_emailaddress ) WHERE rn = 1;
+SELECT * FROM djstripe_plan t1 WHERE amount > ( SELECT AVG(amount) FROM djstripe_plan t2 WHERE t2.usage_type = t1.usage_type );
+WITH grouped AS ( SELECT email, COUNT(*) as cnt FROM account_emailaddress GROUP BY email ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT * FROM account_emailaddress WHERE id NOT IN (SELECT id FROM account_emailaddress WHERE id IS NOT NULL)
+SELECT * FROM account_emailaddress LEFT JOIN account_emailconfirmation ON account_emailconfirmation.id = account_emailaddress.email_address_id LEFT JOIN auth_group ON auth_group.id = account_emailaddress.group_id;
+SELECT * FROM account_emailaddress ORDER BY id DESC
+SELECT * FROM account_emailaddress LEFT JOIN users_customuser ON account_emailaddress.user_id = users_customuser.id;

@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM reversion_version LIMIT num;
+SELECT COUNT(*) FROM auth_user;
+SELECT * FROM auth_user;
+SELECT * FROM auth_user WHERE id = num;
+SELECT COUNT(*) FROM reversion_revision;
+SELECT * FROM reversion_revision;
+SELECT * FROM reversion_revision WHERE id = num;
+SELECT COUNT(*) FROM reversion_revision WHERE date_created >= 'date';
+SELECT * FROM auth_user ORDER BY id DESC LIMIT 1;
+SELECT t.*, c.* FROM auth_user t LEFT JOIN reversion_revision c ON c.user_id = t.id;
+SELECT * FROM auth_user WHERE id NOT IN (SELECT DISTINCT user_id FROM reversion_revision WHERE user_id IS NOT NULL);
+SELECT * FROM auth_user ORDER BY id DESC LIMIT 3;
+SELECT id, COUNT(*) as count FROM auth_user GROUP BY id HAVING COUNT(*) > 1
+SELECT t.*, c.* FROM reversion_revision t LEFT JOIN reversion_version c ON c.revision_id = t.id;
+SELECT COUNT(*) FROM django_content_type;
+SELECT date_created, COUNT(*) as count FROM reversion_revision GROUP BY date_created;
+SELECT * FROM reversion_version LEFT JOIN reversion_revision ON reversion_version.revision_id = reversion_revision.id LEFT JOIN django_content_type ON reversion_version.content_type_id = django_content_type.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY id ORDER BY id DESC) as rn FROM auth_user ) WHERE rn = 1;
+SELECT * FROM auth_user WHERE id > (SELECT AVG(id) FROM auth_user)
+WITH grouped AS ( SELECT id, COUNT(*) as cnt FROM auth_user GROUP BY id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT * FROM auth_user WHERE id NOT IN (SELECT DISTINCT user_id FROM reversion_revision WHERE user_id IS NOT NULL);
+SELECT * FROM auth_user LEFT JOIN reversion_revision ON reversion_revision.id = auth_user.user_id LEFT JOIN reversion_version ON reversion_version.id = auth_user.user_id;
+SELECT * FROM auth_user ORDER BY id DESC
+SELECT * FROM reversion_version LEFT JOIN reversion_revision ON reversion_version.revision_id = reversion_revision.id LEFT JOIN django_content_type ON reversion_version.content_type_id = django_content_type.id;

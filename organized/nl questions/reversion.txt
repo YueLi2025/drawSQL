@@ -1,0 +1,25 @@
+nl_question
+Show me all of our reversion version.
+How many users do we have in total?
+Show me all of our users.
+Can you look up the user with id=num?
+How many reversion revision do we have in total?
+Show me all of our reversion revision.
+Can you look up the reversion revision with id=num?
+How many reversion revision were created since date_created=date?
+Who are the most active users based on activity count?
+Show me each user along with its related details from other tables.
+Are there any users that don't have a match in related tables?
+For each group, what are the top 3 users?
+Which users have duplicate or repeated values?
+Show me each reversion revision along with its related details from other tables.
+How many django content type do we have in total?
+Break down the reversion revision by date_created — how many in each?
+Pull together a report on users joining all related tables.
+Who or what is the best in each group of users?
+Which users are above average compared to others in their group?
+Do a multi-step analysis: group users, filter, then rank the results.
+Find users that exist in one table but not in a related table.
+Combine data from auth_user, reversion_revision, and reversion_version in a single report.
+List all users ordered by id descending.
+Pull together a report on reversion revision joining all related tables.

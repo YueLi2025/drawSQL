@@ -1,0 +1,25 @@
+nl_question
+Can you look up the contact with id=num?
+How many access tokens do we have in total?
+Show me all of our access tokens.
+Can you look up the access token with id=num?
+How many access tokens were created since created_at=date?
+What are the most recent access tokens ordered by owner_type?
+How many users do we have in total?
+Show me all of our users.
+Who are the most active users based on activity count?
+How many messages do we have in total?
+Break down the access tokens by owner_type — how many in each?
+Are there any access tokens that don't have a match in related tables?
+For each group, what are the top 3 access tokens?
+How did the number of access tokens change month over month?
+Which access tokens have duplicate or repeated values?
+Show me all of our conversations.
+Pull together a report on access tokens joining all related tables.
+Who or what is the best in each group of access tokens?
+Which access tokens are above average compared to others in their group?
+Do a multi-step analysis: group access tokens, filter, then rank the results.
+Show the running total of access tokens over time based on created_at.
+Find access tokens that exist in one table but not in a related table.
+Combine data from access_tokens, account_users, and accounts in a single report.
+Rank all access tokens within their groups and show the top performers.

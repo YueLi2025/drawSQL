@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM oauth2_provider_grant LIMIT num
+SELECT COUNT(*) FROM auth_user;
+SELECT * FROM auth_user;
+SELECT * FROM auth_user WHERE id = num;
+SELECT * FROM auth_user WHERE username = string;
+SELECT COUNT(*) FROM auth_user WHERE date_joined >= 'date';
+SELECT * FROM auth_user ORDER BY date_joined DESC LIMIT 1;
+SELECT COUNT(*) FROM oauth2_provider_accesstoken;
+SELECT * FROM auth_user ORDER BY date_joined DESC LIMIT 1;
+SELECT t.*, c.* FROM auth_user t LEFT JOIN oauth2_provider_accesstoken c ON c.user_id = t.id;
+SELECT COUNT(*) FROM oauth2_provider_application;
+SELECT password, COUNT(*) as count FROM auth_user GROUP BY password
+SELECT * FROM auth_user WHERE id NOT IN (SELECT DISTINCT user_id FROM oauth2_provider_accesstoken WHERE user_id IS NOT NULL);
+SELECT * FROM auth_user ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', date_joined) as period, COUNT(*) as count FROM auth_user WHERE date_joined >= 'date' GROUP BY is_staff ORDER BY date_joined;
+SELECT email, COUNT(*) as count FROM auth_user GROUP BY email HAVING COUNT(*) > 1
+SELECT * FROM oauth2_provider_accesstoken LEFT JOIN oauth2_provider_application ON oauth2_provider_accesstoken.application_id = oauth2_provider_application.id LEFT JOIN auth_user ON oauth2_provider_accesstoken.user_id = auth_user.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY password ORDER BY id DESC) as rn FROM auth_user ) WHERE rn = 1;
+SELECT * FROM auth_user WHERE is_superuser > (SELECT AVG(is_superuser) FROM auth_user)
+WITH grouped AS ( SELECT password, COUNT(*) as cnt FROM auth_user GROUP BY password ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY date_joined) as running_count FROM auth_user ORDER BY date_joined;
+SELECT * FROM auth_user WHERE id NOT IN (SELECT DISTINCT user_id FROM oauth2_provider_accesstoken WHERE user_id IS NOT NULL);
+SELECT * FROM auth_user LEFT JOIN oauth2_provider_accesstoken ON oauth2_provider_accesstoken.id = auth_user.user_id LEFT JOIN oauth2_provider_application ON oauth2_provider_application.id = auth_user.application_id;
+SELECT *, ROW_NUMBER() OVER (PARTITION BY password ORDER BY id DESC) as rn FROM auth_user;

@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many auth group do we have in total?
+Show me all of our auth group.
+Can you look up the auth group with id=num?
+Find the auth group where name=string.
+What are the most recent auth group ordered by name?
+How many users do we have in total?
+Show me all of our users.
+Who are the most active users based on activity count?
+Show me each auth group along with its related details from other tables.
+Break down the auth group by name — how many in each?
+Are there any auth group that don't have a match in related tables?
+For each group, what are the top 3 auth group?
+Which auth group have duplicate or repeated values?
+Show me each user along with its related details from other tables.
+How many users were added since date_joined=date?
+Pull together a report on auth group joining all related tables.
+Who or what is the best in each group of auth group?
+Which auth group are above average compared to others in their group?
+Do a multi-step analysis: group auth group, filter, then rank the results.
+Find auth group that exist in one table but not in a related table.
+Combine data from auth_group, auth_user, and filer_clipboard in a single report.
+Rank all auth group within their groups and show the top performers.
+Pull together a report on users joining all related tables.

@@ -1,0 +1,25 @@
+nl_question
+Can you look up the notification with id=num?
+How many appointments do we have in total?
+Show me all of our appointments.
+Can you look up the appointment with id=num?
+How many appointments were created since created_at=date?
+What are the most recent appointments ordered by issuer_id?
+How many business contact do we have in total?
+Show me all of our business contact.
+Who are the most active users based on activity count?
+How many businesses do we have in total?
+Break down the appointments by issuer_id — how many in each?
+Are there any appointments that don't have a match in related tables?
+For each group, what are the top 3 appointments?
+How did the number of appointments change month over month?
+Which appointments have duplicate or repeated values?
+Show me all of our contacts.
+Pull together a report on appointments joining all related tables.
+Who or what is the best in each group of appointments?
+Which appointments are above average compared to others in their group?
+Do a multi-step analysis: group appointments, filter, then rank the results.
+Show the running total of appointments over time based on created_at.
+Find appointments that exist in one table but not in a related table.
+Combine data from appointments, business_contact, and business_user in a single report.
+Rank all appointments within their groups and show the top performers.

@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM permissions LIMIT num
+SELECT COUNT(*) FROM activities;
+SELECT * FROM activities;
+SELECT * FROM activities WHERE id = num;
+SELECT COUNT(*) FROM activities WHERE occurred_at >= 'date';
+SELECT * FROM activities ORDER BY occurred_at DESC LIMIT 1;
+SELECT COUNT(*) FROM groups;
+SELECT * FROM groups;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM verifications;
+SELECT type, COUNT(*) as count FROM activities GROUP BY type;
+SELECT a.* FROM activities a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY type ORDER BY id DESC) as rn FROM activities ) WHERE rn <= num;
+SELECT strftime('string', occurred_at) as period, COUNT(*) as count FROM activities WHERE occurred_at >= 'date' GROUP BY type ORDER BY occurred_at;
+SELECT ip_address, COUNT(*) as count FROM activities GROUP BY ip_address HAVING COUNT(*) > 1
+SELECT * FROM activities;
+SELECT * FROM activities LEFT JOIN users ON activities.user_id = users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY type ORDER BY id DESC) as rn FROM activities ) WHERE rn = 1;
+SELECT * FROM activities WHERE user_id > (SELECT AVG(user_id) FROM activities)
+WITH grouped AS ( SELECT type, COUNT(*) as cnt FROM activities GROUP BY type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY occurred_at) as running_count FROM activities ORDER BY occurred_at;
+SELECT a.* FROM activities a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM activities LEFT JOIN groups ON groups.id = activities.group_id LEFT JOIN password_resets ON password_resets.id = activities.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY type ORDER BY id DESC) as rn FROM activities ) WHERE rn <= num;

@@ -1,0 +1,25 @@
+nl_question
+Show me all of our moderations.
+How many members are on each team?
+How many metadata do we have in total?
+Show me all of our metadata.
+Can you look up the metadata with id=num?
+How many metadata were created since created_at=date?
+What metadata have value between num and num?
+What are the most recent metadata ordered by value?
+Who are the most active users based on activity count?
+What's our total and average value across all metadata?
+Which metadata has the highest value?
+How many stories do we have in total?
+Break down the metadata by value — how many in each?
+Are there any metadata that don't have a match in related tables?
+For each group, what are the top 3 metadata?
+How did the number of metadata change month over month?
+Pull together a report on metadata joining all related tables.
+Who or what is the best in each group of metadata?
+Which metadata have value above average compared to others in their group?
+Do a multi-step analysis: group metadata, filter, then rank the results.
+Show the running total of metadata over time based on created_at.
+Find metadata that exist in one table but not in a related table.
+Combine data from ar_internal_metadata, comments, and domains in a single report.
+Rank all metadata within their groups and show the top performers.

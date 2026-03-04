@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many ticketit statuses do we have in total?
+Show me all of our ticketit statuses.
+Can you look up the ticketit status with id=num?
+Find the ticketit status where name=string.
+What are the most recent ticketit statuses ordered by name?
+How many ticketit priorities do we have in total?
+Show me all of our ticketit priorities.
+Who are the most active users based on activity count?
+Show me each ticketit status along with its related details from other tables.
+Break down the ticketit statuses by name — how many in each?
+Are there any ticketit statuses that don't have a match in related tables?
+For each group, what are the top 3 ticketit statuses?
+Which ticketit statuses have duplicate or repeated values?
+Show me each ticketit priority along with its related details from other tables.
+Break down the ticketit priorities by name — how many in each?
+Pull together a report on ticketit statuses joining all related tables.
+Who or what is the best in each group of ticketit statuses?
+Which ticketit statuses are above average compared to others in their group?
+Do a multi-step analysis: group ticketit statuses, filter, then rank the results.
+Find ticketit statuses that exist in one table but not in a related table.
+Combine data from ticketit_statuses, ticketit_priorities, and ticketit_categories in a single report.
+Rank all ticketit statuses within their groups and show the top performers.
+Pull together a report on ticketit priorities joining all related tables.

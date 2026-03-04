@@ -1,0 +1,25 @@
+nl_question
+Can you look up the server with id=num?
+How many channels do we have in total?
+Show me all of our channels.
+Can you look up the channel with id=num?
+Find the channel where name=string.
+How many channels were created since created_at=date?
+What are the most recent channels ordered by name?
+How many check urls do we have in total?
+Who are the most active users based on activity count?
+How many projects do we have in total?
+Break down the channels by type — how many in each?
+Are there any channels that don't have a match in related tables?
+For each group, what are the top 3 channels?
+How did the number of channels change month over month?
+Which channels have duplicate or repeated values?
+Show me all of our deployments.
+Pull together a report on channels joining all related tables.
+Who or what is the best in each group of channels?
+Which channels are above average compared to others in their group?
+Do a multi-step analysis: group channels, filter, then rank the results.
+Show the running total of channels over time based on created_at.
+Find channels that exist in one table but not in a related table.
+Combine data from channels, check_urls, and command_server in a single report.
+Rank all channels within their groups and show the top performers.

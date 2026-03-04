@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM activity_logs LIMIT num;
+SELECT * FROM activity_logs LIMIT num;
+SELECT * FROM threads LIMIT num
+SELECT COUNT(*) FROM activity_logs;
+SELECT * FROM activity_logs;
+SELECT * FROM activity_logs WHERE id = num;
+SELECT * FROM activity_logs WHERE log_name = string;
+SELECT COUNT(*) FROM activity_logs WHERE created_at >= 'date';
+SELECT AVG(julianday(closed_at) - julianday(created_at)) as avg_days FROM conversations WHERE closed_at IS NOT NULL;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM mailboxes;
+SELECT subject_type, COUNT(*) as count FROM activity_logs GROUP BY subject_type;
+SELECT a.* FROM activity_logs a LEFT JOIN folders b ON a.folder_id = b.id WHERE b.id IS NULL
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY subject_type ORDER BY id DESC) as rn FROM activity_logs ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM activity_logs WHERE created_at >= 'date' GROUP BY properties ORDER BY created_at;
+SELECT log_name, COUNT(*) as count FROM activity_logs GROUP BY log_name HAVING COUNT(*) > 1
+SELECT * FROM attachments LEFT JOIN threads ON attachments.thread_id = threads.id LEFT JOIN users ON attachments.user_id = users.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY subject_type ORDER BY id DESC) as rn FROM activity_logs ) WHERE rn = 1;
+SELECT * FROM activity_logs WHERE subject_id > (SELECT AVG(subject_id) FROM activity_logs)
+WITH grouped AS ( SELECT subject_type, COUNT(*) as cnt FROM activity_logs GROUP BY subject_type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM activity_logs ORDER BY created_at;
+SELECT a.* FROM activity_logs a LEFT JOIN folders b ON a.folder_id = b.id WHERE b.id IS NULL
+SELECT * FROM activity_logs LEFT JOIN attachments ON attachments.id = activity_logs.id LEFT JOIN conversation_folder ON conversation_folder.id = activity_logs.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY subject_type ORDER BY id DESC) as rn FROM activity_logs ) WHERE rn <= num;

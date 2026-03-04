@@ -1,0 +1,9 @@
+table_name,column_name,column_type
+flipper_features,id,num
+flipper_features,created_at,date
+flipper_features,updated_at,date
+flipper_gates,id,num
+flipper_gates,feature_key,string
+flipper_gates,value,string
+flipper_gates,created_at,date
+flipper_gates,updated_at,date

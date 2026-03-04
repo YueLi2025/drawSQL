@@ -1,0 +1,25 @@
+nl_question
+Show me all of our api ping.
+How many members are on each team?
+How many accounts profile do we have in total?
+Show me all of our accounts profile.
+Can you look up the accounts profile with id=num?
+How many accounts profile were created since next_report_date=date?
+What are the most recent accounts profile ordered by next_report_date?
+How many accounts project do we have in total?
+Who are the most active users based on activity count?
+How many api check do we have in total?
+Break down the accounts profile by next_report_date — how many in each?
+Are there any accounts profile that don't have a match in related tables?
+For each group, what are the top 3 accounts profile?
+How did the number of accounts profile change month over month?
+Which accounts profile have duplicate or repeated values?
+Show me each accounts project along with its related details from other tables.
+Pull together a report on accounts profile joining all related tables.
+Who or what is the best in each group of accounts profile?
+Which accounts profile are above average compared to others in their group?
+Do a multi-step analysis: group accounts profile, filter, then rank the results.
+Show the running total of accounts profile over time based on next_report_date.
+Find accounts profile that exist in one table but not in a related table.
+Combine data from accounts_profile, accounts_project, and accounts_member in a single report.
+Rank all accounts profile within their groups and show the top performers.

@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM accounts WHERE amount BETWEEN num AND num
+SELECT * FROM grades LIMIT num
+SELECT COUNT(*) FROM account_sectors;
+SELECT * FROM account_sectors;
+SELECT * FROM account_sectors WHERE id = num;
+SELECT * FROM account_sectors WHERE name = string;
+SELECT COUNT(*) FROM account_sectors WHERE created_at >= 'date';
+SELECT * FROM account_sectors ORDER BY created_at DESC LIMIT 1;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1;
+SELECT COUNT(*) FROM courses;
+SELECT type, COUNT(*) as count FROM account_sectors GROUP BY type;
+SELECT a.* FROM account_sectors a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY type ORDER BY id DESC) as rn FROM account_sectors ) WHERE rn <= num;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM account_sectors WHERE created_at >= 'date' GROUP BY type ORDER BY created_at;
+SELECT name, COUNT(*) as count FROM account_sectors GROUP BY name HAVING COUNT(*) > 1
+SELECT SUM(amount) as total, AVG(amount) as average FROM accounts;
+SELECT * FROM account_sectors LEFT JOIN users ON account_sectors.user_id = users.id LEFT JOIN schools ON account_sectors.school_id = schools.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY type ORDER BY id DESC) as rn FROM account_sectors ) WHERE rn = 1;
+SELECT * FROM account_sectors WHERE school_id > (SELECT AVG(school_id) FROM account_sectors)
+WITH grouped AS ( SELECT type, COUNT(*) as cnt FROM account_sectors GROUP BY type ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM account_sectors ORDER BY created_at;
+SELECT a.* FROM account_sectors a LEFT JOIN users b ON a.user_id = b.id WHERE b.id IS NULL
+SELECT * FROM account_sectors LEFT JOIN accounts ON accounts.id = account_sectors.id LEFT JOIN attendances ON attendances.id = account_sectors.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY type ORDER BY id DESC) as rn FROM account_sectors ) WHERE rn <= num;

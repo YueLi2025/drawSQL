@@ -1,0 +1,15 @@
+table_name,column_name,column_type
+auth_user,id,num
+django_content_type,id,num
+reversion_revision,id,num
+reversion_revision,date_created,date
+reversion_revision,comment,string
+reversion_revision,user_id,num
+reversion_version,id,num
+reversion_version,object_id,string
+reversion_version,format,string
+reversion_version,serialized_data,string
+reversion_version,object_repr,string
+reversion_version,content_type_id,num
+reversion_version,revision_id,num
+reversion_version,db,string

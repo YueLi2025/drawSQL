@@ -1,0 +1,25 @@
+sql_query
+SELECT COUNT(*) FROM auth_user WHERE id >= 'date';
+SELECT COUNT(*) FROM auth_user;
+SELECT * FROM auth_user;
+SELECT * FROM auth_user WHERE id = num;
+SELECT COUNT(*) FROM organizations_organization;
+SELECT * FROM organizations_organization;
+SELECT * FROM organizations_organization WHERE id = num;
+SELECT * FROM organizations_organization WHERE name = string;
+SELECT * FROM auth_user ORDER BY id DESC LIMIT 1;
+SELECT t.*, c.* FROM auth_user t LEFT JOIN organizations_organizationuser c ON c.user_id = t.id;
+SELECT * FROM auth_user WHERE id NOT IN (SELECT DISTINCT user_id FROM organizations_organizationuser WHERE user_id IS NOT NULL);
+SELECT * FROM auth_user ORDER BY id DESC LIMIT 3;
+SELECT id, COUNT(*) as count FROM auth_user GROUP BY id HAVING COUNT(*) > 1
+SELECT t.*, c.* FROM organizations_organization t LEFT JOIN organizations_organizationowner c ON c.organization_id = t.id;
+SELECT COUNT(*) FROM organizations_organization WHERE created >= 'date';
+SELECT name, COUNT(*) as count FROM organizations_organization GROUP BY name;
+SELECT * FROM organizations_organizationowner LEFT JOIN organizations_organization ON organizations_organizationowner.organization_id = organizations_organization.id LEFT JOIN organizations_organizationuser ON organizations_organizationowner.organization_user_id = organizations_organizationuser.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY id ORDER BY id DESC) as rn FROM auth_user ) WHERE rn = 1;
+SELECT * FROM auth_user WHERE id > (SELECT AVG(id) FROM auth_user)
+WITH grouped AS ( SELECT id, COUNT(*) as cnt FROM auth_user GROUP BY id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT * FROM auth_user WHERE id NOT IN (SELECT DISTINCT user_id FROM organizations_organizationuser WHERE user_id IS NOT NULL);
+SELECT * FROM auth_user LEFT JOIN organizations_organization ON organizations_organization.id = auth_user.user_id LEFT JOIN organizations_organizationowner ON organizations_organizationowner.id = auth_user.user_id;
+SELECT * FROM auth_user ORDER BY id DESC
+SELECT * FROM organizations_organizationowner LEFT JOIN organizations_organization ON organizations_organizationowner.organization_id = organizations_organization.id LEFT JOIN organizations_organizationuser ON organizations_organizationowner.organization_user_id = organizations_organizationuser.id;

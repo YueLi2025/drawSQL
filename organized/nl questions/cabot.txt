@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many alert acknowledgement do we have in total?
+Show me all of our alert acknowledgement.
+Can you look up the alert acknowledgement with id=num?
+What are the most recent alert acknowledgement ordered by time?
+How many alert plugin do we have in total?
+Show me all of our alert plugin.
+Can you look up the alert plugin with id=num?
+Who are the most active users based on activity count?
+Break down the alert acknowledgement by time — how many in each?
+Are there any alert acknowledgement that don't have a match in related tables?
+For each group, what are the top 3 alert acknowledgement?
+Which alert acknowledgement have duplicate or repeated values?
+Show me each alert plugin along with its related details from other tables.
+Break down the alert plugin by polumorphic_ctype — how many in each?
+Are there any alert plugin that don't have a match in related tables?
+Pull together a report on alert acknowledgement joining all related tables.
+Who or what is the best in each group of alert acknowledgement?
+Which alert acknowledgement are above average compared to others in their group?
+Do a multi-step analysis: group alert acknowledgement, filter, then rank the results.
+Find alert acknowledgement that exist in one table but not in a related table.
+Combine data from alert_acknowledgement, alert_plugin, and alert_plugin_user_data in a single report.
+Rank all alert acknowledgement within their groups and show the top performers.
+Pull together a report on alert plugin joining all related tables.

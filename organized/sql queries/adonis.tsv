@@ -1,0 +1,25 @@
+sql_query
+SELECT * FROM permission_user LIMIT num
+SELECT COUNT(*) FROM users;
+SELECT * FROM users;
+SELECT * FROM role_user WHERE id = num;
+SELECT COUNT(*) FROM users WHERE id >= 'date';
+SELECT * FROM users ORDER BY id DESC LIMIT 1;
+SELECT COUNT(*) FROM roles;
+SELECT * FROM roles;
+SELECT * FROM users ORDER BY id DESC LIMIT 1;
+SELECT COUNT(*) FROM permissions;
+SELECT id, COUNT(*) as count FROM users GROUP BY id
+SELECT * FROM users WHERE id NOT IN (SELECT DISTINCT user_id FROM role_user WHERE user_id IS NOT NULL);
+SELECT * FROM users ORDER BY id DESC LIMIT 3;
+SELECT strftime('string', created_at) as period, COUNT(*) as count FROM users GROUP BY period ORDER BY period
+SELECT id, COUNT(*) as count FROM users GROUP BY id HAVING COUNT(*) > 1
+SELECT * FROM role_user;
+SELECT * FROM permission_role LEFT JOIN permissions ON permission_role.permission_id = permissions.id LEFT JOIN roles ON permission_role.permission_id = roles.id;
+SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (PARTITION BY role_id ORDER BY id DESC) as rn FROM role_user ) WHERE rn = 1;
+SELECT * FROM users WHERE id > (SELECT AVG(id) FROM users)
+WITH grouped AS ( SELECT role_id, COUNT(*) as cnt FROM role_user GROUP BY role_id ) SELECT * FROM grouped WHERE cnt > num ORDER BY cnt DESC;
+SELECT *, COUNT(*) OVER (ORDER BY created_at) as running_count FROM users ORDER BY created_at
+SELECT * FROM users WHERE id NOT IN (SELECT DISTINCT user_id FROM role_user WHERE user_id IS NOT NULL);
+SELECT * FROM role_user LEFT JOIN roles ON roles.id = role_user.role_id LEFT JOIN permissions ON permissions.id = role_user.permission_id;
+SELECT * FROM users ORDER BY id DESC

@@ -1,0 +1,25 @@
+nl_question
+Can you look up the subscription with id=num?
+How many members are on each team?
+How many announcements do we have in total?
+Show me all of our announcements.
+Can you look up the announcement with id=num?
+How many announcements were created since created_at=date?
+What are the most recent announcements ordered by user_id?
+How many api tokens do we have in total?
+Who are the most active users based on activity count?
+How many teams do we have in total?
+Break down the announcements by user_id — how many in each?
+Are there any announcements that don't have a match in related tables?
+For each group, what are the top 3 announcements?
+How did the number of announcements change month over month?
+Which announcements have duplicate or repeated values?
+Show me all of our invoices.
+Pull together a report on announcements joining all related tables.
+Who or what is the best in each group of announcements?
+Which announcements are above average compared to others in their group?
+Do a multi-step analysis: group announcements, filter, then rank the results.
+Show the running total of announcements over time based on created_at.
+Find announcements that exist in one table but not in a related table.
+Combine data from announcements, api_tokens, and invitations in a single report.
+Rank all announcements within their groups and show the top performers.

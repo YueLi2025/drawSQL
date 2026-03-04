@@ -1,0 +1,25 @@
+nl_question
+How many bootstrap4 alerts bootstrap4alerts do we have in total?
+Show me all of our bootstrap4 alerts bootstrap4alerts.
+Can you look up the bootstrap4 alerts bootstrap4alert with id=num?
+How many bootstrap4 alerts bootstrap4alerts were created since attributes=date?
+What are the most recent bootstrap4 alerts bootstrap4alerts ordered by cmsplugin_ptr_id?
+How many bootstrap4 badge bootstrap4badge do we have in total?
+Show me all of our bootstrap4 badge bootstrap4badge.
+Can you look up the bootstrap4 badge bootstrap4badge with id=num?
+Show me each bootstrap4 alerts bootstrap4alert along with its related details from other tables.
+How many bootstrap4 grid bootstrap4gridcolumn do we have in total?
+Break down the bootstrap4 alerts bootstrap4alerts by tag_type — how many in each?
+Are there any bootstrap4 alerts bootstrap4alerts that don't have a match in related tables?
+For each group, what are the top 3 bootstrap4 alerts bootstrap4alerts?
+How did the number of bootstrap4 alerts bootstrap4alerts change month over month?
+Which bootstrap4 alerts bootstrap4alerts have duplicate or repeated values?
+Show me each bootstrap4 badge bootstrap4badge along with its related details from other tables.
+Pull together a report on bootstrap4 alerts bootstrap4alerts joining all related tables.
+Who or what is the best in each group of bootstrap4 alerts bootstrap4alerts?
+Which bootstrap4 alerts bootstrap4alerts are above average compared to others in their group?
+Do a multi-step analysis: group bootstrap4 alerts bootstrap4alerts, filter, then rank the results.
+Show the running total of bootstrap4 alerts bootstrap4alerts over time based on attributes.
+Find bootstrap4 alerts bootstrap4alerts that exist in one table but not in a related table.
+Combine data from bootstrap4_alerts_bootstrap4alerts, bootstrap4_badge_bootstrap4badge, and bootstrap4_card_bootstrap4card in a single report.
+Rank all bootstrap4 alerts bootstrap4alerts within their groups and show the top performers.

@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many members are on each team?
+How many account emailaddress do we have in total?
+Show me all of our account emailaddress.
+Can you look up the account emailaddres with id=num?
+Find the account emailaddres where email=string.
+What are the most recent account emailaddress ordered by email?
+How many account emailconfirmation do we have in total?
+Who are the most active users based on activity count?
+Show me each account emailaddres along with its related details from other tables.
+Break down the account emailaddress by email — how many in each?
+Are there any account emailaddress that don't have a match in related tables?
+For each group, what are the top 3 account emailaddress?
+Which account emailaddress have duplicate or repeated values?
+How many account emailconfirmation were added since created=date?
+Break down the account emailconfirmation by created — how many in each?
+Pull together a report on account emailaddress joining all related tables.
+Who or what is the best in each group of account emailaddress?
+Which account emailaddress are above average compared to others in their group?
+Do a multi-step analysis: group account emailaddress, filter, then rank the results.
+Find account emailaddress that exist in one table but not in a related table.
+Combine data from account_emailaddress, account_emailconfirmation, and auth_group in a single report.
+List all account emailaddress ordered by id descending.
+Pull together a report on account emailconfirmation joining all related tables.

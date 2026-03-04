@@ -38,7 +38,7 @@ SELECT COUNT(*) FROM variable WHERE variable > variable
 SELECT variable FROM variable ORDER BY variable - variable DESC LIMIT variable
 SELECT variable FROM variable WHERE variable = variable AND variable = variable
 SELECT COUNT(*) FROM variable WHERE variable > variable AND variable > variable
-SELECT COUNT(*) FROM variable WHERE variable IS NULL AND strftime(variable, variable) < variable
+SELECT COUNT(*) FROM variable WHERE variable IS NULL AND strftime(string, variable) < variable
 SELECT COUNT(*) FROM variable WHERE variable < variable OR variable > variable
 SELECT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable ORDER BY variable DESC LIMIT variable
 SELECT AVG(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable

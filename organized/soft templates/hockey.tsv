@@ -102,7 +102,7 @@ SELECT DISTINCT variable, variable FROM variable WHERE variable = variable
 SELECT DISTINCT variable FROM variable WHERE variable IS NOT NULL AND variable IS NOT NULL
 SELECT DISTINCT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable > variable
 SELECT variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable
-SELECT SUM(variable), STRFTIME(variable, variable) - variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable GROUP BY variable
+SELECT SUM(variable), strftime(string, variable) - variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable GROUP BY variable
 SELECT DISTINCT variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable IS NULL
 SELECT SUM(variable) FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable = variable
 SELECT DISTINCT variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable INNER JOIN ( SELECT variable, variable FROM variable WHERE variable = variable ORDER BY variable / (variable + variable) DESC LIMIT variable ) AS variable ON variable = variable AND variable = variable
@@ -114,7 +114,7 @@ SELECT variable, variable, variable - variable FROM variable WHERE variable IS N
 SELECT AVG(variable) FROM variable WHERE variable > variable
 SELECT variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable IN (variable, variable) GROUP BY variable HAVING COUNT(DISTINCT variable) > variable
 SELECT variable, variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable IS NOT NULL ORDER BY variable DESC LIMIT variable
-SELECT variable, variable , variable, STRFTIME(variable, variable) - variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable >= variable AND variable <= variable GROUP BY variable
+SELECT variable, variable , variable, strftime(string, variable) - variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE variable = variable AND variable >= variable AND variable <= variable GROUP BY variable
 SELECT variable, variable, variable FROM variable AS variable INNER JOIN variable AS variable ON variable = variable WHERE CAST(variable AS variable) / variable IS NOT NULL ORDER BY CAST(variable AS variable) / variable LIMIT variable
 SELECT variable, variable, variable FROM variable WHERE variable IS NOT NULL AND variable IS NOT NULL
 SELECT variable, variable, variable FROM variable WHERE variable IS NULL AND variable LIKE variable

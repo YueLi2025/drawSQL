@@ -1,0 +1,25 @@
+nl_question
+Show me all of our permission user.
+How many roles do we have in total?
+Show me all of our roles.
+Can you look up the role with id=num?
+Find the role where name=string.
+How many roles were created since created_at=date?
+What are the most recent roles ordered by name?
+How many permissions do we have in total?
+Who are the most active users based on activity count?
+Show me each role along with its related details from other tables.
+How many permission role do we have in total?
+Break down the roles by name — how many in each?
+Are there any roles that don't have a match in related tables?
+For each group, what are the top 3 roles?
+How did the number of roles change month over month?
+Which roles have duplicate or repeated values?
+Pull together a report on roles joining all related tables.
+Who or what is the best in each group of roles?
+Which roles are above average compared to others in their group?
+Do a multi-step analysis: group roles, filter, then rank the results.
+Show the running total of roles over time based on created_at.
+Find roles that exist in one table but not in a related table.
+Combine data from roles, permissions, and role_user in a single report.
+Rank all roles within their groups and show the top performers.

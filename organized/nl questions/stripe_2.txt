@@ -1,0 +1,25 @@
+nl_question
+Which customers have status=string for their subscription?
+Show me all of our receipts.
+How many subscriptions do we have in total?
+Show me all of our subscriptions.
+Can you look up the subscription with id=num?
+Find the subscription where name=string.
+How many subscriptions were created since updated_at=date?
+What subscriptions have quantity between num and num?
+How much revenue since created_at=date?
+Who are the most active users based on activity count?
+Show me each subscription along with its related details from other tables.
+What's our total and average quantity across all subscriptions?
+Which subscription has the highest quantity?
+How many subscription items do we have in total?
+Break down the subscriptions by user_id — how many in each?
+Are there any subscriptions that don't have a match in related tables?
+Pull together a report on subscriptions joining all related tables.
+Who or what is the best in each group of subscriptions?
+Which subscriptions have quantity above average compared to others in their group?
+Do a multi-step analysis: group subscriptions, filter, then rank the results.
+Show the running total of subscriptions over time based on updated_at.
+Find subscriptions that exist in one table but not in a related table.
+Combine data from subscriptions, users, and subscription_items in a single report.
+Rank all subscriptions within their groups and show the top performers.

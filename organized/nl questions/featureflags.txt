@@ -1,0 +1,25 @@
+nl_question
+Show me all of our feature user.
+How many features do we have in total?
+Show me all of our features.
+Can you look up the feature with id=num?
+Find the feature where name=string.
+Which features have active=boolean?
+How many features were created since created_at=date?
+What are the most recent features ordered by name?
+Who are the most active users based on activity count?
+Show me each feature along with its related details from other tables.
+How many feature groups do we have in total?
+Break down the features by name — how many in each?
+Are there any features that don't have a match in related tables?
+For each group, what are the top 3 features?
+How did the number of features change month over month?
+Which features have duplicate or repeated values?
+Pull together a report on features joining all related tables.
+Who or what is the best in each group of features?
+Which features are above average compared to others in their group?
+Do a multi-step analysis: group features, filter, then rank the results.
+Show the running total of features over time based on created_at.
+Find features that exist in one table but not in a related table.
+Combine data from features, feature_groups, and feature_feature_groups in a single report.
+Rank all features within their groups and show the top performers.

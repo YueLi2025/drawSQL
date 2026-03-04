@@ -1,0 +1,25 @@
+nl_question
+How many users signed up since created_at=date?
+How many relationships do we have in total?
+Show me all of our relationships.
+Can you look up the relationship with id=num?
+How many relationships were created since created_at=date?
+What are the most recent relationships ordered by follower_id?
+How many tweets do we have in total?
+Show me all of our tweets.
+Who are the most active users based on activity count?
+How many users do we have in total?
+Break down the relationships by follower_id — how many in each?
+Are there any relationships that don't have a match in related tables?
+For each group, what are the top 3 relationships?
+How did the number of relationships change month over month?
+Which relationships have duplicate or repeated values?
+How many tweets were added since created_at=date?
+Pull together a report on relationships joining all related tables.
+Who or what is the best in each group of relationships?
+Which relationships are above average compared to others in their group?
+Do a multi-step analysis: group relationships, filter, then rank the results.
+Show the running total of relationships over time based on created_at.
+Find relationships that exist in one table but not in a related table.
+Combine data from relationships, tweets, and users in a single report.
+Rank all relationships within their groups and show the top performers.

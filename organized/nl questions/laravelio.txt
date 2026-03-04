@@ -1,0 +1,25 @@
+nl_question
+Can you look up the subscription with id=num?
+How many likes do we have in total?
+Show me all of our likes.
+Can you look up the like with id=num?
+How many likes were created since created_at=date?
+What are the most recent likes ordered by user_id?
+How many notifications do we have in total?
+Show me all of our notifications.
+Who are the most active users based on activity count?
+How many threads do we have in total?
+Break down the likes by likeable_type — how many in each?
+Are there any likes that don't have a match in related tables?
+For each group, what are the top 3 likes?
+How did the number of likes change month over month?
+Which likes have duplicate or repeated values?
+Show me all of our replies.
+Pull together a report on likes joining all related tables.
+Who or what is the best in each group of likes?
+Which likes are above average compared to others in their group?
+Do a multi-step analysis: group likes, filter, then rank the results.
+Show the running total of likes over time based on created_at.
+Find likes that exist in one table but not in a related table.
+Combine data from likes, notifications, and password_resets in a single report.
+Rank all likes within their groups and show the top performers.
